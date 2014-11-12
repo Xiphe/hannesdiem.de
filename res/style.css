@@ -1,3 +1,44 @@
+/* ICOMOON
+****************************/
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('icomoon/fonts/icomoon.eot?1fkqrs');
+    src:url('icomoon/fonts/icomoon.eot?#iefix1fkqrs') format('embedded-opentype'),
+        url('icomoon/fonts/icomoon.woff?1fkqrs') format('woff'),
+        url('icomoon/fonts/icomoon.ttf?1fkqrs') format('truetype'),
+        url('icomoon/fonts/icomoon.svg?1fkqrs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+    content: "\e600";
+}
+.icon-youtube:before {
+    content: "\e601";
+}
+.icon-flattr:before {
+    content: "\e602";
+}
+
+
+/* LOGO
+****************************/
 .logo_wrap {
     position: relative;
     z-index: 0;
@@ -65,4 +106,17 @@ and (max-width : 500px) {
             background-size: 150px 150px;
         }
     }
+}
+
+/* FOOTER
+****************************/
+
+.social_wrap .social {
+    text-decoration: none;
+    line-height: 1em;
+    font-size: 1em;
+    color: #0a3351;
+}
+.social_wrap .social:hover {
+    color: #2283c9;
 }
