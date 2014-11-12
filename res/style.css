@@ -1,0 +1,68 @@
+.logo_wrap {
+    position: relative;
+    z-index: 0;
+    height: 0px;
+}
+.logo_wrap:last-child {
+    z-index: 1;
+}
+.logo {
+    height: 500px;
+    width: 500px;
+}
+#logo {
+    margin: 100px auto;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+#logo_mask {
+    background: url('img/maske.png') center center repeat transparent;
+}
+#logo_bg {
+    background: white url('img/wasser.jpg');
+    -webkit-animation:spin 120s linear infinite;
+    -moz-animation:spin 120s linear infinite;
+    animation:spin 120s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+@media
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi){
+    #logo {
+        background-image: url('img/maske_2x.png');
+        background-size: 500px 500px;
+    }
+    #logo_bg {
+        background-size: 500px 500px;
+    }
+}
+
+@media only screen
+and (max-width : 500px) {
+    header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 150px;
+        height: 150px;
+    }
+    .logo {
+        height: 150px;
+        width: 150px;
+    }
+    @media
+    (-webkit-min-device-pixel-ratio: 1.5),
+    (min-resolution: 144dpi){
+        #logo {
+            background-size: 150px 150px;
+        }
+        #logo_bg {
+            background-size: 150px 150px;
+        }
+    }
+}
