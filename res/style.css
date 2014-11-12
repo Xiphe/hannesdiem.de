@@ -75,7 +75,7 @@
 @media
 (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 144dpi){
-    #logo {
+    #logo_mask {
         background-image: url('img/maske_2x.png');
         background-size: 500px 500px;
     }
@@ -86,7 +86,7 @@
 
 @media only screen
 and (max-width : 500px) {
-    header {
+    #logo {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 150px;
@@ -99,7 +99,7 @@ and (max-width : 500px) {
     @media
     (-webkit-min-device-pixel-ratio: 1.5),
     (min-resolution: 144dpi){
-        #logo {
+        #logo_mask {
             background-size: 150px 150px;
         }
         #logo_bg {
