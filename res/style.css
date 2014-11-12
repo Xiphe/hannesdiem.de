@@ -61,11 +61,32 @@
     background: url('img/maske.png') center center no-repeat transparent;
 }
 #logo_bg {
-    background-position: 0px 0px;
     background: white url('img/wasser.jpg');
+    background-position: 0px 0px;
     -webkit-animation: move 60s linear infinite, spin 240s linear infinite;
     -moz-animation: move 60s linear infinite, spin 120s linear infinite;
     animation: move 60s linear infinite, spin 120s linear infinite;
+}
+#logo_drops {
+    background: transparent url('img/drops.gif');
+    background-position: center 0px;
+    -webkit-animation: movedown 90s linear infinite;
+    -moz-animation: movedown 90s linear infinite;
+    animation: movedown 90s linear infinite;
+}
+#logo_drops2 {
+    background: transparent url('img/drops2.gif');
+    background-position: center 0px;
+    -webkit-animation: movedown 83s linear infinite;
+    -moz-animation: movedown 83s linear infinite;
+    animation: movedown 83s linear infinite;
+}
+#logo_drops3 {
+    background: transparent url('img/drops3.gif');
+    background-position: center 0px;
+    -webkit-animation: movedown 111s linear infinite;
+    -moz-animation: movedown 111s linear infinite;
+    animation: movedown 111s linear infinite;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -76,6 +97,9 @@
 @-webkit-keyframes move { 100% { background-position: 1500px 0px; } }
 @keyframes move { 100% { background-position: 1500px 0px; } }
 
+@-moz-keyframes movedown { 100% { background-position: center 2000px; } }
+@-webkit-keyframes movedown { 100% { background-position: center 2000px; } }
+@keyframes movedown { 100% { background-position: center 2000px; } }
 
 @media
 (-webkit-min-device-pixel-ratio: 1.5),
@@ -86,6 +110,9 @@
     }
     #logo_bg {
         background-size: 500px 500px;
+    }
+    #logo_drops, #logo_drops2, #logo_drops3 {
+        background-size: 450px 2000px;
     }
 }
 
@@ -100,6 +127,9 @@ and (max-width : 500px) {
     .logo {
         height: 150px;
         width: 150px;
+    }
+    #logo_drops, #logo_drops2, #logo_drops3 {
+        background-size: 150px 500px;
     }
     @media
     (-webkit-min-device-pixel-ratio: 1.5),
