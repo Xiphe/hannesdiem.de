@@ -58,18 +58,23 @@
     overflow: hidden;
 }
 #logo_mask {
-    background: url('img/maske.png') center center repeat transparent;
+    background: url('img/maske.png') center center no-repeat transparent;
 }
 #logo_bg {
+    background-position: 0px 0px;
     background: white url('img/wasser.jpg');
-    -webkit-animation:spin 120s linear infinite;
-    -moz-animation:spin 120s linear infinite;
-    animation:spin 120s linear infinite;
+    -webkit-animation: move 60s linear infinite, spin 240s linear infinite;
+    -moz-animation: move 60s linear infinite, spin 120s linear infinite;
+    animation: move 60s linear infinite, spin 120s linear infinite;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes move { 100% { background-position: 1500px 0px; } }
+@-webkit-keyframes move { 100% { background-position: 1500px 0px; } }
+@keyframes move { 100% { background-position: 1500px 0px; } }
 
 
 @media
