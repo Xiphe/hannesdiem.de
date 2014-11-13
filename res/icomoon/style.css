@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?1fkqrs');
-	src:url('fonts/icomoon.eot?#iefix1fkqrs') format('embedded-opentype'),
-		url('fonts/icomoon.woff?1fkqrs') format('woff'),
-		url('fonts/icomoon.ttf?1fkqrs') format('truetype'),
-		url('fonts/icomoon.svg?1fkqrs#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-pga79y');
+	src:url('fonts/icomoon.eot?#iefix-pga79y') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-pga79y') format('woff'),
+		url('fonts/icomoon.ttf?-pga79y') format('truetype'),
+		url('fonts/icomoon.svg?-pga79y#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -31,4 +31,7 @@
 }
 .icon-flattr:before {
 	content: "\e602";
+}
+.icon-soundcloud:before {
+	content: "\e603";
 }
