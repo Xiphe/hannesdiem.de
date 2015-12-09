@@ -2,11 +2,11 @@
 markdown: redcarpet
 highlighter: pygments
 paginate: 5
-language: 'en-uk'
+language: 'de-de'
 
 # Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+name: 'Hannes Diem'
+description: '...über die Musik, das Leben und den ganzen Rest'
 
 # Author's info
 author: 'Casper McFadden'
@@ -14,14 +14,13 @@ author: 'Casper McFadden'
 username: casper
 bio: 'A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.'
 location: 'Maine, USA'
-url: 'http://biomadeira.github.io/jasper/'
-image: 'assets/images/casper.png'
+url: 'http://diem-musik.de'
 
-short_url: 'biomadeira.github.io/jasper/'
-google_analytics: UA-69281367-1
-disqus: username
+short_url: 'diem-musik.de'
+google_analytics: UA-65675428-2
+disqus: diemmusik
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /jasper/
+baseurl: /
 
 # Permalinks
 permalink: /:title
@@ -54,13 +53,12 @@ exclude: [vendor]
 # or "master" otherwise
 safe: false
 lsi: false
-username: biomadeira
-repo: jasper
+username: Xiphe
+repo: diem-musik.de
 branch: master
-relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url:  https://biomadeira.github.io/jasper/
-source_url:      https://github.com/biomadeira/jasper/
+destination: ../diem-musik.de-pages/
+production_url:  http://diem-musik.de
+source_url:      https://github.com/Xiphe/diem-musik.de
 
 exclude:
   - README.md
@@ -71,3 +69,4 @@ exclude:
   - "*.Rmd"
   - vendor
   - .travis.yml
+  - GHOST.txt

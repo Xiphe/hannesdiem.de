@@ -776,7 +776,7 @@ body.nav-opened .nav {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 38px;
+    height: 56px;
     padding: 1px 0 5px 0;
     width: auto;
 }
@@ -1172,7 +1172,6 @@ body:not(.post-template) .post-title {
    to be flexible at smaller screen sizes while the share
    links remain at a fixed width the whole time */
 .post-footer .share {
-    position: absolute;
     top: 6rem;
     right: 0;
     width: 140px;
