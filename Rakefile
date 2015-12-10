@@ -63,6 +63,12 @@ namespace :site do
     # Generate the site
     sh "bundle exec jekyll build"
 
+    # Add .nojekyll
+    Dir.chdir(CONFIG["destination"]) { sh "touch .nojekyll" }
+
+    # Add CNAME
+    Dir.chdir(CONFIG["destination"]) { sh "echo #{CONFIG['short_url']} > ../diem-musik.de-pages/CNAME" }
+
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
     Dir.chdir(CONFIG["destination"]) do
