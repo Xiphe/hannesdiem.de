@@ -1,21 +1,21 @@
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.content and page.except_desc != false %}{{page.content | excerptify | uri_escape }}{% else %}{{ site.description }}{% endif %}" />
 
-    <link rel="canonical" href="{{ site.baseurl }}" />
+    <link rel="canonical" href="{{ site.url }}{% if page.url %}{{ page.url | uri_escape }}{% else %}{{ site.baseurl }}{% endif %}" />
     <meta name="referrer" content="origin" />
 
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:type" content="website" />
-    {% id site.fb_app_id %}<meta property="fb:app_id" content="{{ site.fb_app_id }}" />{% endif %}
+    {% if site.fb_app_id %}<meta property="fb:app_id" content="{{ site.fb_app_id }}" />{% endif %}
     <meta property="og:title" content="{% if page.title %}{{ page.title | uri_escape }} - {% endif %}{{ site.name }}" />
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.content and page.except_desc != false %}{{page.content | excerptify | uri_escape }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:url" content="{% if page.url %}{{ page.url | uri_escape }}{% else %}{{ site.baseurl }}{% endif %}" />
+    <meta property="og:url" content="{{ site.url }}{% if page.url %}{{ page.url | uri_escape }}{% else %}{{ site.baseurl }}{% endif %}" />
     {% if page.cover %}<meta property="og:image" content="{{ site.baseurl }}{{ page.cover }}" />{% endif %}
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{% if page.title %}{{ page.title | uri_escape }} - {% endif %}{{ site.name }}" />
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.content and page.except_desc != false %}{{page.content | excerptify | uri_escape }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:url" content="{% if page.url %}{{ page.url | uri_escape }}{% else %}{{ site.baseurl }}{% endif %}" />
+    <meta name="twitter:url" content="{{ site.url }}{% if page.url %}{{ page.url | uri_escape }}{% else %}{{ site.baseurl }}{% endif %}" />
     {% if page.cover %}<meta name="twitter:image:src" content="{{ site.baseurl }}{{ page.cover }}" />{% endif %}
 
     <meta name="generator" content="Jekyll 3.0.0" />
