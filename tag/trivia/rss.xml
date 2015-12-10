@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Obligatorischer "Hallo Welt" Post</title>
+	  <link>//obligatorisches-hallo-welt</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2015-12-08T20:00:00+00:00</pubDate>
+	  <guid>//obligatorisches-hallo-welt</guid>
+	  <description><![CDATA[
+	     <p>Was wäre eine Webseite ohne diesen ganz speziellen Post, der erst mal &quot;Hallo&quot; sagt? Gerade wenn es News bzw. Blog-Einträge gibt, ist es meines Wissens nach unumgänglich: Der erste solche Eintrag muss sich mit der Neuigkeit befassen, dass es die Webseite, auf der eben dieser Beitrag zu lesen ist, sich nunmehr im Internet befindet.</p>
+
+<p>Klassische Titel solcher Beiträge wären:</p>
+
+<ul>
+<li>Wir sind Online!</li>
+<li>Willkommen auf unserer neuen Webseite!</li>
+<li>Hallo Welt!</li>
+<li>Hier gibt es bald großes zu sehen!</li>
+<li>Test!</li>
+<li>Obligatorischer &quot;Hallo Welt&quot; Post</li>
+</ul>
+
+<p>Wohlwissend, dass genau dieser Text zu dem Zeitpunkt an dem tatsächlich auch Besucher auf der Webseite landen, hoffentlich durch inhaltlich relevantere Inhalte verdrängt ist (was sich vermutlich gegenseitig bedingt), heiße ich hiermit die Welt Willkommen auf meiner neuen Webseite, die jetzt Online ist und auf der es bald großes zu sehen gibt!</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

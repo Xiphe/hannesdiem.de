@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Hannes Diem</title>
+    <link>http://diem-musik.de</link>
+    <description>...über die Musik, das Leben und den ganzen Rest</description>
+    <pubDate>Tue, 08 Dec 2015 20:00:00 +0000</pubDate>
+    <item>
+      <title>Obligatorischer &quot;Hallo Welt&quot; Post</title>
+      <link>http://diem-musik.de/obligatorisches-hallo-welt</link>
+      <description>Was wäre eine Webseite ohne diesen ganz speziellen Post, der erst mal &quot;Hallo&quot; sagt? Gerade wenn es News bzw. Blog-Einträge gibt, ist es meines Wissens nach unumgänglich: Der erste solche Eintrag muss sich mit der Neuigkeit befassen, dass es die Webseite, auf der eben dieser Beitrag zu lesen ist, sich nunmehr im Internet befindet.
+
+</description>
+      <pubDate>Tue, 08 Dec 2015 20:00:00 +0000</pubDate>
+      <dc:date>2015-12-08T20:00:00+00:00</dc:date>
+    </item>
+    <dc:date>2015-12-08T20:00:00+00:00</dc:date>
+  </channel>
+</rss>
