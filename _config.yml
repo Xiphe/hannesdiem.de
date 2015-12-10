@@ -70,3 +70,4 @@ exclude:
   - vendor
   - .travis.yml
   - GHOST.txt
+  - LICENSE.txt
