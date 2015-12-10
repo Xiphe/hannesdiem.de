@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>EP - Hannes Diem</title>
+	  <link>//ep-hannes-diem/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2010-08-01T20:00:00+00:00</pubDate>
+	  <guid>//ep-hannes-diem/</guid>
+	  <description><![CDATA[
+	     <p><img class="cover"src="/assets/images/releases/diem_ep.jpg" alt="cover Hannes Sandro Diem EP"></p>
+
+<blockquote>
+<p>Meine Debut-EP<br>
+In vielerlei Hinsicht der Grundstein für mein heutiges Schaffen. Aus diesem Projekt ist ein Jahr später die Band &quot;Kaleidos Chaos&quot; geworden und wir haben die Titel noch bis zur Trennung im Sommer 2014 gespielt. Bei der Studioarbeit mit Jan hab ich nicht nur sau viel Spaß gehabt sondern auch unsagbar viel gelernt &lt;3</p>
+</blockquote>
+
+<p><a href="https://itunes.apple.com/de/album/hannes-diem/id377388674">iTunes</a> &bull; <a href="https://www.amazon.de/Hannes-Diem/dp/B003TUWTX4/ref=sr_1_1?&amp;keywords=hannes+diem">Amazon</a> &bull; <a href="https://open.spotify.com/album/6ImWGtLydJyENIS9DEceXi">Spotify</a></p>
+
+<p><strong>Geschrieben 2005 - 2010</strong> von Diem<br>
+<strong>Produziert und gemixt</strong> von Jan-Eric Kohrs - <a href="http://www.wunderkind-entertainment.com/">Wunderkind Entertainment</a><br>
+<strong>Gemastert</strong> von Carl Albrecht<br>
+<strong>Verlegt über</strong> <a href="http://baerensong.de/">Bärensong Musikverlag</a></p>
+
+<p><strong>Bass</strong>: Axel Feige<br>
+<strong>Strom-Gitarren</strong>: Alex Henke<br>
+<strong>Analog-Gitarren</strong>: André von Malotki<br>
+<strong>Gesang</strong>: Christina Düwel &amp; Hannes Diercks<br>
+<strong>Alles andere</strong>: Jan-Eric Kohrs &amp; Hannes Diercks</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
