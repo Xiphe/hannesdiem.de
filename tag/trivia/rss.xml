@@ -13,12 +13,12 @@
    
 	<item>
 	  <title>Obligatorischer "Hallo Welt" Post</title>
-	  <link>//obligatorisches-hallo-welt</link>
+	  <link>//obligatorisches-hallo-welt/</link>
 	  <author>Casper McFadden</author>
 	  <pubDate>2015-12-08T20:00:00+00:00</pubDate>
-	  <guid>//obligatorisches-hallo-welt</guid>
+	  <guid>//obligatorisches-hallo-welt/</guid>
 	  <description><![CDATA[
-	     <p>Was wäre eine Webseite ohne diesen ganz speziellen Post, der erst mal &quot;Hallo&quot; sagt? Gerade wenn es News bzw. Blog-Einträge gibt, ist es meines Wissens nach unumgänglich: Der erste solche Eintrag muss sich mit der Neuigkeit befassen, dass es die Webseite, auf der eben dieser Beitrag zu lesen ist, sich nunmehr im Internet befindet.</p>
+	     <p>Was wäre &quot;eine Webseite&quot; ohne diesen ganz speziellen Post, der erst mal &quot;Hallo&quot; sagt? Gerade wenn es News bzw. Blog-Einträge gibt, ist es meines Wissens nach unumgänglich: Der erste solche Eintrag muss sich mit der Neuigkeit befassen, dass es die Webseite, auf der eben dieser Beitrag zu lesen ist, sich nunmehr im Internet befindet.</p>
 
 <p>Klassische Titel solcher Beiträge wären:</p>
 
