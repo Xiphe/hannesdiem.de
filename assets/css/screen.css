@@ -1122,6 +1122,13 @@ body:not(.post-template) .post-title {
     transform: translateX(-50%);
 }
 
+img.cover {
+    border-radius: 4px;
+    padding: 0;
+    margin: 30px 0;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .footnotes {
     font-style: italic;
     font-size: 1.3rem;
@@ -1416,7 +1423,7 @@ body:not(.post-template) .post-title {
 }
 
 .read-next-story .post:before {
-    content: "Read This Next";
+    content: "Auch Interessant";
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -1427,7 +1434,7 @@ body:not(.post-template) .post-title {
     transition: all 0.5s ease;
 }
 .read-next-story.prev .post:before {
-    content: "You Might Enjoy";
+    content: "Hammer Story";
 }
 
 .read-next-story h2 {
