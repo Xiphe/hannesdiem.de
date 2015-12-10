@@ -27,6 +27,7 @@ Quelle: http://www.e-recht24.de
  - [Cover Diem Himmel](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_diem_himmel.jpg)
  - [Cover Diem Logo Floating](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_diem_logo_floating.jpg)
  - [Cover Diem Logo Scatter](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_logo_scatter.jpg)
+ - [Small Path](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_small_path.jpg)
 
 #### Diem Logo
 

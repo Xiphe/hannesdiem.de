@@ -25,6 +25,7 @@ Copyright (C) 2015 - Hannes Diercks
  - [cover_diem_himmel.jpg](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_diem_himmel.jpg)
  - [cover_diem_logo_floating.jpg](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_diem_logo_floating.jpg)
  - [cover_logo_scatter.jpg](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_logo_scatter.jpg)
+ - [cover_small_path.jpg](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_small_path.jpg)
 
 ### code-modifications by [Xiphe](https://github.com/Xiphe) and [biomadeira/jasper](https://github.com/biomadeira/jasper) released under
 
