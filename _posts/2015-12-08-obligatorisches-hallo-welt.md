@@ -8,7 +8,7 @@ navigation: true
 logo: 'assets/images/logo.svg'
 ---
 
-Was wäre eine Webseite ohne diesen ganz speziellen Post, der erst mal "Hallo" sagt? Gerade wenn es News bzw. Blog-Einträge gibt, ist es meines Wissens nach unumgänglich: Der erste solche Eintrag muss sich mit der Neuigkeit befassen, dass es die Webseite, auf der eben dieser Beitrag zu lesen ist, sich nunmehr im Internet befindet.
+Was wäre "eine Webseite" ohne diesen ganz speziellen Post, der erst mal "Hallo" sagt? Gerade wenn es News bzw. Blog-Einträge gibt, ist es meines Wissens nach unumgänglich: Der erste solche Eintrag muss sich mit der Neuigkeit befassen, dass es die Webseite, auf der eben dieser Beitrag zu lesen ist, sich nunmehr im Internet befindet.
 
 Klassische Titel solcher Beiträge wären:
 
