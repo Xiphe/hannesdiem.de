@@ -176,16 +176,16 @@ table { border-collapse: collapse; border-spacing: 0; }
     font-style: normal;
 }
 
-.icon-facebook:before {
+.social.icon-facebook:before {
     content: "\e600";
 }
-.icon-youtube:before {
+.social.icon-youtube:before {
     content: "\e601";
 }
-.icon-flattr:before {
+.social.icon-flattr:before {
     content: "\e602";
 }
-.icon-soundcloud:before {
+.social.icon-soundcloud:before {
     content: "\e603";
 }
 
