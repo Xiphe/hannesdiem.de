@@ -6,6 +6,7 @@
 
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:type" content="website" />
+    {% id site.fb_app_id %}<meta property="fb:app_id" content="{{ site.fb_app_id }}" />{% endif %}
     <meta property="og:title" content="{% if page.title %}{{ page.title | uri_escape }} - {% endif %}{{ site.name }}" />
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.content and page.except_desc != false %}{{page.content | excerptify | uri_escape }}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:url" content="{% if page.url %}{{ page.url | uri_escape }}{% else %}{{ site.baseurl }}{% endif %}" />

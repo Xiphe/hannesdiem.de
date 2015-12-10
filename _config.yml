@@ -27,6 +27,8 @@ permalink: /:title
 # permalink: /author/:username
 # permalink: /tag/:tag
 
+fb_app_id: 727902270677409
+
 
 # gems and other configs
 gems: [jekyll-paginate]
