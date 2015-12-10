@@ -1,5 +1,7 @@
 ## diem-musik.de
 
+[![Build Status](https://travis-ci.org/Xiphe/diem-musik.de.svg?branch=master)](https://travis-ci.org/Xiphe/diem-musik.de)
+
 based on [biomadeira/jasper](https://github.com/biomadeira/jasper)
 
 This repo generates [diem-musik.de](http://diem-musik.de)
