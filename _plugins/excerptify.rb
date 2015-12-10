@@ -48,7 +48,7 @@ end
 
 module Excerptify
   def excerptify(text)
-    return "#{strip_html(text)[0..197]}..."
+    return "#{strip_html(text)[0..197]}...".gsub('"', '&quot;')
   end
 end
 
