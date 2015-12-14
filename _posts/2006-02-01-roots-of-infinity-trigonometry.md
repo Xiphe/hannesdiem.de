@@ -12,6 +12,8 @@ logo: 'assets/images/logo.svg'
 
 > Das Album meiner allerersten Band "Roots of Infinity"
 
+<!-- more -->
+
 [iTunes](https://itunes.apple.com/us/album/trigonometry/id793517248) &bull; [Amazon](http://www.amazon.de/gp/product/B000MGAZ9I?qid=1449784703)
 
 __Geschrieben 2005 - 2006__ von Hege Winckler, Axel Feige und Hannes Diercks  
