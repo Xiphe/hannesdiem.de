@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover_unbeschrieben.jpg'
+cover: 'assets/images/cover/unbeschrieben.jpg'
 title: EP - Diem & Kaleidos Chaos — Unbeschrieben
 date: 2015-04-01 20:00:00
 tags: veroeffentlichungen alben kaleidos-chaos
