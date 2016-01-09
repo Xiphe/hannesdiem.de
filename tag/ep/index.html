@@ -35,11 +35,11 @@
     <link rel="shortcut icon" href="/assets/images/favicon.ico" >
 
     <!-- [[! Styles'n'Scripts ]] -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css"
+    <!--[if IE]>
+    <link async rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link async rel="stylesheet" type="text/css"
           href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css" />
-
+    <![endif]-->
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
 
 </head>
@@ -47,7 +47,7 @@
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
+    <a href="#" class="nav-close" style="display: none;">
         <span class="hidden">Close</span>
     </a>
     <ul>
@@ -111,7 +111,7 @@
             <h2 class="post-title"><a href="/ep-hannes-diem/">EP - Hannes Diem</a></h2>
         </header>
         <section class="post-excerpt">
-            <p>Meine Debut-EP In vielerlei Hinsicht der Grundstein für mein heutiges Schaffen. Aus diesem Projekt ist ein Jahr später die Band &quot;Kaleidos Chaos&quot; geworden und wir haben die Titel noch bis zur Trennung im Sommer 2014 gespielt. Bei der Studi...</p>
+            <p><img class="cover" src="/assets/images/releases/diem_ep.jpg" alt="cover Hannes Sandro Diem EP"> Meine Debut-EP In vielerlei Hinsicht der Grundstein für mein heutiges Schaffen. Aus diesem Projekt ist ein Jahr später die Band "Kaleidos Chaos" geworden u...</p>
             <a class="read-more" href="/ep-hannes-diem/"> weiterlesen&nbsp;&raquo;</a>
         </section>
         <footer class="post-meta">
@@ -157,16 +157,20 @@
             <a href="https://www.youtube.com/channel/UCONYaNqDnjsfxIjkWgd_f8w" title="YouTube" class="icon-youtube social"></a>
           </section>
 
-          <section class="copyright"><a href="/">Hannes Diem</a> &copy; 2015 &bull; <a href="/impressum.html">Impressum</a> &bull; <a href="/datenschutz.html">Datenschutz</a></section>
+          <section class="copyright"><a href="/">Hannes Diem</a> &copy; 2016 &bull; <a href="/impressum.html">Impressum</a> &bull; <a href="/datenschutz.html">Datenschutz</a></section>
 
 
           <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> using <a href="https://github.com/biomadeira/jasper">Jasper</a></section>
         </footer>
     </div>
+    <!--[if !IE]> -->
+    <link async rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link async rel="stylesheet" type="text/css"
+          href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <!-- <![endif]-->
     <!-- [[! Ghost outputs important scripts and data with this tag ]] -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <!-- [[! The main JavaScript file for Casper ]] -->
-    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
 
     <!-- Add Google Analytics  -->

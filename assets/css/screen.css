@@ -453,18 +453,6 @@ table.plain tbody > tr:nth-child(odd) > th {
     background: transparent;
 }
 
-iframe, .fluid-width-video-wrapper {
-    display: block;
-    margin: 1.75em 0;
-}
-
-/* When a video is inside the fitvids wrapper, drop the
-margin on the iframe, cause it breaks stuff. */
-.fluid-width-video-wrapper iframe {
-    margin: 0;
-}
-
-
 /* ==========================================================================
    3. Utilities - These things get used a lot
    ========================================================================== */
@@ -552,6 +540,10 @@ body.nav-opened .site-wrapper {
 }
 
 /* Navigation */
+.menu-button,
+.nav-close {
+    display: block !important;
+}
 body.nav-opened .nav-cover {
     position: fixed;
     top: 0;
@@ -1107,20 +1099,26 @@ body:not(.post-template) .post-title {
 /* Keep images centered, and allow images wider than the main
    text column to break out. */
 .post-content img,
+.post-content iframe,
+.content iframe,
 .content img {
-    display: block;
-    max-width: 126%;
-    height: auto;
-    padding: 0.6em 0;
     /* Centers an image by (1) pushing its left edge to the
        center of its container and (2) shifting the entire image
        in the opposite direction by half its own width.
        Works for images that are larger than their containers. */
     position: relative;
+    display: block;
     left: 50%;
+    max-width: 100%;
     -webkit-transform: translateX(-50%); /* for Safari and iOS */
     -ms-transform: translateX(-50%); /* for IE9 */
     transform: translateX(-50%);
+}
+.post-content img,
+.content img {
+    max-width: 126%;
+    height: auto;
+    padding: 0.6em 0;
 }
 
 img.cover {
@@ -1128,6 +1126,11 @@ img.cover {
     padding: 0;
     margin: 30px 0;
     box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+iframe.cover {
+    margin: 30px 0;
+    border-radius: 3px;
 }
 
 .footnotes {

@@ -8,7 +8,16 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Tue, 08 Dec 2015 20:00:00 +0000</pubDate>
+    <pubDate>Fri, 01 Jan 2016 20:00:00 +0000</pubDate>
+    <item>
+      <title>aethermonolog - Podcast vom 32c3 mit Klartexter</title>
+      <link>http://diem-musik.de/podcast-vom-32c3/</link>
+      <description>Kai und ich waren auf dem [32. Chaos Communication Congress](https://events.ccc.de/category/32c3/) unterwegs und haben die Gunst der Stunde genutzt dort im [Sendezentrum](http://das-sendezentrum.de/) eine Episode für seinen Podcasts auf zu nehmen.
+
+</description>
+      <pubDate>Fri, 01 Jan 2016 20:00:00 +0000</pubDate>
+      <dc:date>2016-01-01T20:00:00+00:00</dc:date>
+    </item>
     <item>
       <title>Obligatorischer &quot;Hallo Welt&quot; Post</title>
       <link>http://diem-musik.de/obligatorisches-hallo-welt/</link>
@@ -37,6 +46,15 @@
       <dc:date>2015-02-11T20:00:00+00:00</dc:date>
     </item>
     <item>
+      <title>Songwriting Session - Wiedergeboren II</title>
+      <link>http://diem-musik.de/wiedergeboren-II/</link>
+      <description>&lt;iframe class=&quot;cover&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/GS8NmhEAOvE&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</description>
+      <pubDate>Sun, 12 Oct 2014 20:00:00 +0000</pubDate>
+      <dc:date>2014-10-12T20:00:00+00:00</dc:date>
+    </item>
+    <item>
       <title>EP - Hannes Diem</title>
       <link>http://diem-musik.de/ep-hannes-diem/</link>
       <description>&lt;img class=&quot;cover&quot;src=&quot;/assets/images/releases/diem_ep.jpg&quot; alt=&quot;cover Hannes Sandro Diem EP&quot;&gt;
@@ -54,6 +72,6 @@
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2015-12-08T20:00:00+00:00</dc:date>
+    <dc:date>2016-01-01T20:00:00+00:00</dc:date>
   </channel>
 </rss>
