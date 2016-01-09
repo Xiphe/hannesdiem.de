@@ -1,54 +1,43 @@
-require 'liquid'
-require 'uri'
-
-# https://gist.github.com/rklemme/2923072
-HTML_TAG_REPLACEMENTS = {
-  'br' => "\n",
-}
-HTML_QUOTE_REPLACEMENTS = {
-  'quot' => '"',
-  'amp' => '&',
-}
-
-def strip_html(str, tag = HTML_TAG_REPLACEMENTS, quot = HTML_QUOTE_REPLACEMENTS)
-  str.gsub %r{
-    # first alternative: remove tags
-    <
-      (?:
-        (?:(\w+) # tag name
-	  # alternative: attributes
-          (?:
-	    \s+
-	    \w+  # attr name
-	    =
-	    (?:"[^"]*"|'[^']*') # attr value
-	  )*
-	  /? # optional tag closes also
-        )
-        |
-        # alternative: closing tag
-        (/\w+)
-       )
-    >
-    |
-    # second alternative: replace HTML entities
-    &
-    (\w+)
-    ;
-  }x do |m|
-    tg = $1 || $2
-
-    if tg
-      tag[tg]
-    else
-      quot[$3]
-    end
-  end
-end
+require 'nokogiri'
 
 module Excerptify
-  def excerptify(text)
-    return "#{strip_html(text.split('<!-- more -->')[0]).gsub(/\s+/, ' ').strip[0..247]}...".gsub('"', '&quot;')
+  def excerptify(text, opt = 'few')
+    textBeforeMore = text.split('<!-- more -->')[0]
+    doc = Nokogiri.HTML(textBeforeMore)
+    doc.css('*').each do |el|
+      if opt == 'all' and el.name != 'body' and el.name != 'html'
+        el.replace( doc.create_element "foo", el.content.strip )
+      else
+        if ([
+          "div",
+          "p",
+          "span",
+          "section",
+        ]).include?(el.name)
+          el.name = 'foo'
+        elsif ![
+          "html",
+          "body",
+          "img",
+          "iframe"
+        ].include?(el.name)
+          el.replace( doc.create_element "foo", el.content.strip )
+        end
+      end
+    end
+    excerpt = doc.css('body').inner_html
+      .gsub(/<foo>/, '')
+      .gsub(/<\/foo>/, '')
+      .gsub(/\s+/, ' ')
+      .strip
+      .strip[0..250]
+      .gsub('"', opt == 'all' ? '&quot;' : '"')
+
+    if (excerpt[-1, 1] =~ /\w/)
+      return "#{excerpt}..."
+    end
+
+    return excerpt
   end
 end
 
