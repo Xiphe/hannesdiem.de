@@ -552,6 +552,10 @@ body.nav-opened .site-wrapper {
 }
 
 /* Navigation */
+.menu-button,
+.nav-close {
+    display: block !important;
+}
 body.nav-opened .nav-cover {
     position: fixed;
     top: 0;
