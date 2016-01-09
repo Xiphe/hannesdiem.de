@@ -24,10 +24,12 @@ Quelle: http://www.e-recht24.de
 
 #### (C) 2014-2015 - [Federkiel Fotografie](https://www.facebook.com/FederkielFotografie)
 
- - [Cover Diem Himmel](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_diem_himmel.jpg)
- - [Cover Diem Logo Floating](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_diem_logo_floating.jpg)
- - [Cover Diem Logo Scatter](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_logo_scatter.jpg)
- - [Small Path](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_small_path.jpg)
+ - [Diem Himmel](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover/diem_himmel.jpg)
+ - [Diem Logo Floating](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover/diem_logo_floating.jpg)
+ - [Diem Logo Scatter](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover/logo_scatter.jpg)
+ - [Small Path](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover/small_path.jpg)
+ - [Unbeschrieben Sonnenuntergang](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover/unbeschrieben.jpg)
+
 
 #### Diem Logo
 
