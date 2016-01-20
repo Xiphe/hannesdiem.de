@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Fri, 01 Jan 2016 20:00:00 +0000</pubDate>
+    <pubDate>Wed, 20 Jan 2016 20:00:00 +0000</pubDate>
+    <item>
+      <title>Projekt - Band for a Weekend</title>
+      <link>http://diem-musik.de/projekt-band-for-a-weekend/</link>
+      <description>Was Passiert wenn man eine gute Hand voll Musikerinnen und Musiker für ein Wochenende in ein Haus einsperrt und sagt:
+&gt; “Macht mal was geiles bis Sonntag Abend!”?
+
+</description>
+      <pubDate>Wed, 20 Jan 2016 20:00:00 +0000</pubDate>
+      <dc:date>2016-01-20T20:00:00+00:00</dc:date>
+    </item>
     <item>
       <title>aethermonolog - Podcast vom 32c3 mit Klartexter</title>
       <link>http://diem-musik.de/podcast-vom-32c3/</link>
@@ -72,6 +82,6 @@
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-01-01T20:00:00+00:00</dc:date>
+    <dc:date>2016-01-20T20:00:00+00:00</dc:date>
   </channel>
 </rss>
