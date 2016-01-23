@@ -8,7 +8,16 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Wed, 20 Jan 2016 20:00:00 +0000</pubDate>
+    <pubDate>Sat, 23 Jan 2016 20:00:00 +0000</pubDate>
+    <item>
+      <title>Diem &amp; Klartexter - Irgendwann</title>
+      <link>http://diem-musik.de/irgendwann/</link>
+      <description>&lt;img class=&quot;cover&quot;src=&quot;/assets/images/releases/irgendwann.jpg&quot; alt=&quot;cover Diem &amp; Klartexter - Irgendwann&quot;&gt;
+
+</description>
+      <pubDate>Sat, 23 Jan 2016 20:00:00 +0000</pubDate>
+      <dc:date>2016-01-23T20:00:00+00:00</dc:date>
+    </item>
     <item>
       <title>Projekt - Band for a Weekend</title>
       <link>http://diem-musik.de/projekt-band-for-a-weekend/</link>
@@ -82,6 +91,6 @@
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-01-20T20:00:00+00:00</dc:date>
+    <dc:date>2016-01-23T20:00:00+00:00</dc:date>
   </channel>
 </rss>
