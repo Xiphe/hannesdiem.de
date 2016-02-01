@@ -8,7 +8,16 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 23 Jan 2016 20:00:00 +0000</pubDate>
+    <pubDate>Mon, 01 Feb 2016 20:00:00 +0000</pubDate>
+    <item>
+      <title>Update! EP - Diem &amp; Kaleidos Chaos — Unbeschrieben</title>
+      <link>http://diem-musik.de/unbeschrieben/</link>
+      <description>&lt;img class=&quot;cover&quot;src=&quot;/assets/images/releases/unbeschrieben.jpg&quot; alt=&quot;cover unbeschrieben EP&quot;&gt;
+
+</description>
+      <pubDate>Mon, 01 Feb 2016 20:00:00 +0000</pubDate>
+      <dc:date>2016-02-01T20:00:00+00:00</dc:date>
+    </item>
     <item>
       <title>Diem &amp; Klartexter - Irgendwann</title>
       <link>http://diem-musik.de/irgendwann/</link>
@@ -47,15 +56,6 @@
       <dc:date>2015-12-08T20:00:00+00:00</dc:date>
     </item>
     <item>
-      <title>EP - Diem &amp; Kaleidos Chaos — Unbeschrieben</title>
-      <link>http://diem-musik.de/unbeschrieben/</link>
-      <description>&lt;img class=&quot;cover&quot;src=&quot;/assets/images/releases/unbeschrieben.jpg&quot; alt=&quot;cover unbeschrieben EP&quot;&gt;
-
-</description>
-      <pubDate>Wed, 01 Apr 2015 20:00:00 +0000</pubDate>
-      <dc:date>2015-04-01T20:00:00+00:00</dc:date>
-    </item>
-    <item>
       <title>House on a Hill - Open Doors</title>
       <link>http://diem-musik.de/open-doors/</link>
       <description>&lt;img class=&quot;cover&quot;src=&quot;/assets/images/releases/open_doors.jpg&quot; alt=&quot;cover House on a Hill - Open Doors&quot;&gt;
@@ -91,6 +91,6 @@
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-01-23T20:00:00+00:00</dc:date>
+    <dc:date>2016-02-01T20:00:00+00:00</dc:date>
   </channel>
 </rss>
