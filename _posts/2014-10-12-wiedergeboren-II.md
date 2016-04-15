@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover/small_path.jpg'
+cover: small_path_jokmie
 title: Songwriting Session - Wiedergeboren II 
 date: 2014-10-12 20:00:00
 tags: songwriting youtube solo

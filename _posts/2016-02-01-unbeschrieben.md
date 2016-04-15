@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover/unbeschrieben.jpg'
+cover: unbeschrieben_shkow1
 title: Update! EP - Diem & Kaleidos Chaos — Unbeschrieben
 date: 2016-02-01 20:00:00
 tags: veroeffentlichungen alben kaleidos-chaos

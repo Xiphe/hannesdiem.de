@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover/small_path.jpg'
+cover: small_path_jokmie
 title: EP - Hannes Diem
 date: 2010-08-01 20:00:00
 tags: veroeffentlichungen ep solo

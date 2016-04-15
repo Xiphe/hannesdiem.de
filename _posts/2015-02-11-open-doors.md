@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover/open_doors.jpg'
+cover: open_doors_aiqahx
 title: House on a Hill - Open Doors
 date: 2015-02-11 20:00:00
 tags: veroeffentlichungen alben house-on-a-hill

@@ -16,9 +16,12 @@ module Excerptify
         ]).include?(el.name)
           el.name = 'foo'
         elsif ![
+          "br",
           "html",
           "body",
           "img",
+          "audio",
+          "source",
           "iframe"
         ].include?(el.name)
           el.replace( doc.create_element "foo", el.content.strip )

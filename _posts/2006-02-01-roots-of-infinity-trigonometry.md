@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover/small_path.jpg'
+cover: small_path_jokmie
 title: Roots of Infinity - Trigonometry
 date: 2006-02-01 20:00:00
 tags: veroeffentlichungen alben roots-of-infinity

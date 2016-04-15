@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover/irgendwann.jpg'
+cover: irgendwann_bf7cld
 title: Diem & Klartexter - Irgendwann
 date: 2016-01-23 20:00:00
 tags: veroeffentlichungen alben diem klartexter

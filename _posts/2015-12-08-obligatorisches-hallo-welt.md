@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover/diem_himmel.jpg'
+cover: diem_himmel_creltn
 title: Obligatorischer "Hallo Welt" Post
 date: 2015-12-08 20:00:00
 tags: trivia
