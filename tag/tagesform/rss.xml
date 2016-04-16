@@ -12,6 +12,26 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 2</title>
+	  <link>//tagesform_2/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-03-16T21:01:51+00:00</pubDate>
+	  <guid>//tagesform_2/</guid>
+	  <description><![CDATA[
+	     <p><audio controls>
+  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_2.mp3" type="audio/mpeg">
+</audio><br></p>
+
+<p>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</p>
+
+<!-- more -->
+
+<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_2.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 1</title>
 	  <link>//tagesform_1/</link>
 	  <author>Casper McFadden</author>
