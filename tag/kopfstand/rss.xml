@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 4 - aus dem Proberaum</title>
+	  <link>//tagesform_4/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-04-18T20:47:04+00:00</pubDate>
+	  <guid>//tagesform_4/</guid>
+	  <description><![CDATA[
+	     <p><audio controls>
+  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_4.mp3" type="audio/mpeg">
+</audio><br></p>
+
+<p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
+
+<!-- more -->
+
+<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_4.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+
+<p><img src="http://res.cloudinary.com/xiphe/image/upload/c_scale,w_800/v1461016398/FullSizeRender_2_dx8nc7.jpg"></p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

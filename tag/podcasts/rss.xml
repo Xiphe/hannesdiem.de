@@ -12,10 +12,32 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 4 - aus dem Proberaum</title>
+	  <link>//tagesform_4/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-04-18T20:47:04+00:00</pubDate>
+	  <guid>//tagesform_4/</guid>
+	  <description><![CDATA[
+	     <p><audio controls>
+  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_4.mp3" type="audio/mpeg">
+</audio><br></p>
+
+<p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
+
+<!-- more -->
+
+<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_4.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+
+<p><img src="http://res.cloudinary.com/xiphe/image/upload/c_scale,w_800/v1461016398/FullSizeRender_2_dx8nc7.jpg"></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 3</title>
 	  <link>//tagesform_3/</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>2016-03-17T21:25:31+00:00</pubDate>
+	  <pubDate>2016-04-17T21:25:31+00:00</pubDate>
 	  <guid>//tagesform_3/</guid>
 	  <description><![CDATA[
 	     <p><audio controls>
@@ -41,7 +63,7 @@ von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt v
 	  <title>Tagesform 2</title>
 	  <link>//tagesform_2/</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>2016-03-16T21:01:51+00:00</pubDate>
+	  <pubDate>2016-04-16T21:01:51+00:00</pubDate>
 	  <guid>//tagesform_2/</guid>
 	  <description><![CDATA[
 	     <p><audio controls>
@@ -61,7 +83,7 @@ von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt v
 	  <title>Tagesform 1</title>
 	  <link>//tagesform_1/</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>2016-03-15T22:52:40+00:00</pubDate>
+	  <pubDate>2016-04-15T20:52:40+00:00</pubDate>
 	  <guid>//tagesform_1/</guid>
 	  <description><![CDATA[
 	     <p><audio controls>
