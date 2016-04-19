@@ -12,6 +12,30 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 5 - Selbsttrollung</title>
+	  <link>//tagesform_5/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-04-19T20:32:20+00:00</pubDate>
+	  <guid>//tagesform_5/</guid>
+	  <description><![CDATA[
+	     <p><audio controls>
+  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3" type="audio/mpeg">
+</audio><br></p>
+
+<p>Über Selbsttrollung, diese Webseite, Aufnahmesetup und <a href="http://www.absolem-max.com/">Absolem Max</a> Proben.</p>
+
+<!-- more -->
+
+<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
+
+<p>Hier ist ein Link zu <a href="https://www.facebook.com/events/155714938135011/">unserem Auftritt am 28.05.2016 in der Astrastube</a>.</p>
+
+<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 4 - aus dem Proberaum</title>
 	  <link>//tagesform_4/</link>
 	  <author>Casper McFadden</author>
@@ -101,30 +125,6 @@ von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt v
 <p><img src="http://res.cloudinary.com/xiphe/image/upload/c_scale,w_600/v1460755515/tagesform1_c7ld9y.png"></p>
 
 <p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_1.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 5 - Selbsttrollung</title>
-	  <link>//tagesform_5/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-03-19T20:32:20+00:00</pubDate>
-	  <guid>//tagesform_5/</guid>
-	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Über Selbsttrollung, diese Webseite, Aufnahmesetup und <a href="http://www.absolem-max.com/">Absolem Max</a> Proben.</p>
-
-<!-- more -->
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p>Hier ist ein Link zu <a href="https://www.facebook.com/events/155714938135011/">unserem Auftritt am 28.05.2016 in der Astrastube</a>.</p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
 
 	  ]]></description>
 	</item>

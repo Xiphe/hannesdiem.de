@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Mon, 18 Apr 2016 20:47:04 +0000</pubDate>
+    <pubDate>Tue, 19 Apr 2016 20:32:20 +0000</pubDate>
+    <item>
+      <title>Tagesform 5 - Selbsttrollung</title>
+      <link>http://diem-musik.de/tagesform_5/</link>
+      <description>&lt;audio controls&gt;
+  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;&lt;br&gt;
+
+</description>
+      <pubDate>Tue, 19 Apr 2016 20:32:20 +0000</pubDate>
+      <dc:date>2016-04-19T20:32:20+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 4 - aus dem Proberaum</title>
       <link>http://diem-musik.de/tagesform_4/</link>
@@ -52,17 +63,6 @@
 </description>
       <pubDate>Fri, 15 Apr 2016 20:52:40 +0000</pubDate>
       <dc:date>2016-04-15T20:52:40+00:00</dc:date>
-    </item>
-    <item>
-      <title>Tagesform 5 - Selbsttrollung</title>
-      <link>http://diem-musik.de/tagesform_5/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
-
-</description>
-      <pubDate>Sat, 19 Mar 2016 20:32:20 +0000</pubDate>
-      <dc:date>2016-03-19T20:32:20+00:00</dc:date>
     </item>
     <item>
       <title>Update! EP - Diem &amp; Kaleidos Chaos — Unbeschrieben</title>
@@ -146,6 +146,6 @@
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-04-18T20:47:04+00:00</dc:date>
+    <dc:date>2016-04-19T20:32:20+00:00</dc:date>
   </channel>
 </rss>
