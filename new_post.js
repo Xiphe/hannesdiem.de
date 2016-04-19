@@ -14,7 +14,7 @@ function leftPad(str, length, pad) {
 }
 
 const dateStr = `${date.getFullYear()}-`
- + `${leftPad(date.getMonth(), 2, 0)}-`
+ + `${leftPad(date.getMonth() + 1, 2, 0)}-`
  + leftPad(date.getDate(), 2, 0);
 const timeStr = `${leftPad(date.getHours(), 2, 0)}:`
   + `${leftPad(date.getMinutes(), 2, 0)}:`
