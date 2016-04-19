@@ -6,6 +6,7 @@
     <ul>
         <li class="nav-home {% if page.current == 'home' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}">Home</a></li>
         <li class="nav-veroeffentlichungen {% if page.url contains 'veroeffentlichungen' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}tag/veroeffentlichungen/">Veröffentlichungen</a></li>
+        <li class="nav-tagesform {% if page.url contains 'tagesform' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}tag/tagesform/">Tagesform</a></li>
         <li class="nav-impressum {% if page.current == 'impressum' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}impressum.html">Impressum</a></li>
         <li class="nav-datenschutz {% if page.current == 'datenschutz' %} nav-current{% endif %}" role="presentation"><a href="{{ site.baseurl }}datenschutz.html">Datenschutz</a></li>
     </ul>
