@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Wed, 20 Apr 2016 20:24:07 +0000</pubDate>
+    <pubDate>Thu, 21 Apr 2016 23:28:14 +0000</pubDate>
+    <item>
+      <title>Tagesform 7 - Routinen</title>
+      <link>http://diem-musik.de/tagesform_7/</link>
+      <description>&lt;audio controls&gt;
+  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_7.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;&lt;br&gt;
+
+</description>
+      <pubDate>Thu, 21 Apr 2016 23:28:14 +0000</pubDate>
+      <dc:date>2016-04-21T23:28:14+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 6 - Verkehr</title>
       <link>http://diem-musik.de/tagesform_6/</link>
@@ -157,6 +168,6 @@
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-04-20T20:24:07+00:00</dc:date>
+    <dc:date>2016-04-21T23:28:14+00:00</dc:date>
   </channel>
 </rss>
