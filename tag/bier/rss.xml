@@ -12,6 +12,28 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 8.5 - 25:05 Uhr</title>
+	  <link>//tagesform_8.5/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-04-22T20:34:26+00:00</pubDate>
+	  <guid>//tagesform_8.5/</guid>
+	  <description><![CDATA[
+	     <p><audio controls>
+  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.5.mp3" type="audio/mpeg">
+</audio><br></p>
+
+<p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
+
+<!-- more -->
+
+<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
+
+<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.5.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 8 - Horizont</title>
 	  <link>//tagesform_8/</link>
 	  <author>Casper McFadden</author>
