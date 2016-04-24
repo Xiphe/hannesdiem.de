@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Fri, 22 Apr 2016 20:34:26 +0000</pubDate>
+    <pubDate>Sat, 23 Apr 2016 20:11:11 +0000</pubDate>
+    <item>
+      <title>Tagesform 9 - Zuhören</title>
+      <link>http://diem-musik.de/tagesform_9/</link>
+      <description>&lt;audio controls&gt;
+  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_9.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;&lt;br&gt;
+
+</description>
+      <pubDate>Sat, 23 Apr 2016 20:11:11 +0000</pubDate>
+      <dc:date>2016-04-23T20:11:11+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 8.5 - 25:05 Uhr</title>
       <link>http://diem-musik.de/tagesform_8.5/</link>
@@ -190,6 +201,6 @@
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-04-22T20:34:26+00:00</dc:date>
+    <dc:date>2016-04-23T20:11:11+00:00</dc:date>
   </channel>
 </rss>
