@@ -23,7 +23,7 @@ const fileName = path.join(__dirname, '_posts', `${dateStr}-${topic}.md`);
 
 const contents = `---
 layout: post
-cover: 'assets/images/cover/small_path.jpg'
+cover: diem_himmel_creltn
 title: ${topic}
 date: ${dateStr} ${timeStr}
 tags:
