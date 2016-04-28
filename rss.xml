@@ -8,13 +8,22 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Wed, 27 Apr 2016 20:23:46 +0000</pubDate>
+    <pubDate>Fri, 29 Apr 2016 01:05:24 +0000</pubDate>
+    <item>
+      <title>Tagesform 12</title>
+      <link>http://diem-musik.de/tagesform-12/</link>
+      <description>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;
+
+
+</description>
+      <pubDate>Fri, 29 Apr 2016 01:05:24 +0000</pubDate>
+      <dc:date>2016-04-29T01:05:24+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 11 - Bla bla</title>
       <link>http://diem-musik.de/tagesform_11/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_11.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Über Urlaub, tolle Menschen und Trivia.
+
 
 </description>
       <pubDate>Wed, 27 Apr 2016 20:23:46 +0000</pubDate>
@@ -23,9 +32,7 @@
     <item>
       <title>Tagesform 10 - commit message formate</title>
       <link>http://diem-musik.de/tagesform_10/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_10.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.
 
 </description>
       <pubDate>Mon, 25 Apr 2016 20:12:05 +0000</pubDate>
@@ -34,9 +41,9 @@
     <item>
       <title>Tagesform 9 - Zuhören</title>
       <link>http://diem-musik.de/tagesform_9/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_9.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
+keinen Erfolg beim songwriting.
+
 
 </description>
       <pubDate>Sat, 23 Apr 2016 20:11:11 +0000</pubDate>
@@ -45,9 +52,8 @@
     <item>
       <title>Tagesform 8.5 - 25:05 Uhr</title>
       <link>http://diem-musik.de/tagesform_8.5/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.5.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach'm Aufstehen ist.
+
 
 </description>
       <pubDate>Fri, 22 Apr 2016 20:34:26 +0000</pubDate>
@@ -56,9 +62,8 @@
     <item>
       <title>Tagesform 8 - Horizont</title>
       <link>http://diem-musik.de/tagesform_8/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.
+
 
 </description>
       <pubDate>Fri, 22 Apr 2016 20:26:37 +0000</pubDate>
@@ -67,9 +72,8 @@
     <item>
       <title>Tagesform 7 - Routinen</title>
       <link>http://diem-musik.de/tagesform_7/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_7.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Leicht angeheitert über das an und abgewöhnen von Routinen.
+
 
 </description>
       <pubDate>Thu, 21 Apr 2016 20:28:14 +0000</pubDate>
@@ -78,9 +82,8 @@
     <item>
       <title>Tagesform 6 - Verkehr</title>
       <link>http://diem-musik.de/tagesform_6/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_6.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Von hamburger Fußwegen und blühenden Bäumen
+
 
 </description>
       <pubDate>Wed, 20 Apr 2016 20:24:07 +0000</pubDate>
@@ -89,9 +92,7 @@
     <item>
       <title>Tagesform 5 - Selbsttrollung</title>
       <link>http://diem-musik.de/tagesform_5/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Über Selbsttrollung, diese Webseite, Aufnahmesetup und [Absolem Max](http://www.absolem-max.com/) Proben.
 
 </description>
       <pubDate>Tue, 19 Apr 2016 20:32:20 +0000</pubDate>
@@ -100,9 +101,8 @@
     <item>
       <title>Tagesform 4 - aus dem Proberaum</title>
       <link>http://diem-musik.de/tagesform_4/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_4.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)
+
 
 </description>
       <pubDate>Mon, 18 Apr 2016 20:47:04 +0000</pubDate>
@@ -111,9 +111,8 @@
     <item>
       <title>Tagesform 3</title>
       <link>http://diem-musik.de/tagesform_3/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_3.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper
+zu zucken, drei Stunden lang Snoozen kann.
 
 </description>
       <pubDate>Sun, 17 Apr 2016 21:25:31 +0000</pubDate>
@@ -122,9 +121,8 @@
     <item>
       <title>Tagesform 2</title>
       <link>http://diem-musik.de/tagesform_2/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_2.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.
+
 
 </description>
       <pubDate>Sat, 16 Apr 2016 21:01:51 +0000</pubDate>
@@ -133,9 +131,7 @@
     <item>
       <title>Tagesform 1</title>
       <link>http://diem-musik.de/tagesform_1/</link>
-      <description>&lt;audio controls&gt;
-  &lt;source src=&quot;https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_1.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
-&lt;/audio&gt;&lt;br&gt;
+      <description>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...
 
 </description>
       <pubDate>Fri, 15 Apr 2016 20:52:40 +0000</pubDate>
@@ -223,6 +219,6 @@
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-04-27T20:23:46+00:00</dc:date>
+    <dc:date>2016-04-29T01:05:24+00:00</dc:date>
   </channel>
 </rss>

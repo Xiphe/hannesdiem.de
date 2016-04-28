@@ -12,23 +12,25 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 12</title>
+	  <link>//tagesform-12/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-04-29T01:05:24+00:00</pubDate>
+	  <guid>//tagesform-12/</guid>
+	  <description><![CDATA[
+	     <p>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 11 - Bla bla</title>
 	  <link>//tagesform_11/</link>
 	  <author>Casper McFadden</author>
 	  <pubDate>2016-04-27T20:23:46+00:00</pubDate>
 	  <guid>//tagesform_11/</guid>
 	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_11.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Über Urlaub, tolle Menschen und Trivia.</p>
-
-<!-- more -->
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_11.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+	     <p>Über Urlaub, tolle Menschen und Trivia.</p>
 
 	  ]]></description>
 	</item>
@@ -40,19 +42,11 @@
 	  <pubDate>2016-04-25T20:12:05+00:00</pubDate>
 	  <guid>//tagesform_10/</guid>
 	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_10.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</p>
+	     <p>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</p>
 
 <!-- more -->
 
 <p>Hier gibt es die Slides zu besagtem Vortrag: <a href="https://docs.google.com/a/jimdo.com/presentation/d/1EXXRzbT17rbD7CFXugPZgvgMhsoVE1XXSA7UxBl3iXw/edit?usp=sharing">stop writing commitMESSages, please</a></p>
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_10.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
 
 	  ]]></description>
 	</item>
@@ -64,18 +58,8 @@
 	  <pubDate>2016-04-23T20:11:11+00:00</pubDate>
 	  <guid>//tagesform_9/</guid>
 	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_9.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
+	     <p>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
 keinen Erfolg beim songwriting.</p>
-
-<!-- more -->
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_9.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
 
 	  ]]></description>
 	</item>
@@ -87,17 +71,7 @@ keinen Erfolg beim songwriting.</p>
 	  <pubDate>2016-04-22T20:34:26+00:00</pubDate>
 	  <guid>//tagesform_8.5/</guid>
 	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.5.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
-
-<!-- more -->
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.5.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+	     <p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
 
 	  ]]></description>
 	</item>
@@ -109,17 +83,7 @@ keinen Erfolg beim songwriting.</p>
 	  <pubDate>2016-04-22T20:26:37+00:00</pubDate>
 	  <guid>//tagesform_8/</guid>
 	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</p>
-
-<!-- more -->
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+	     <p>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</p>
 
 	  ]]></description>
 	</item>
@@ -131,17 +95,7 @@ keinen Erfolg beim songwriting.</p>
 	  <pubDate>2016-04-21T20:28:14+00:00</pubDate>
 	  <guid>//tagesform_7/</guid>
 	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_7.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Leicht angeheitert über das an und abgewöhnen von Routinen.</p>
-
-<!-- more -->
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_7.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+	     <p>Leicht angeheitert über das an und abgewöhnen von Routinen.</p>
 
 	  ]]></description>
 	</item>
@@ -153,17 +107,7 @@ keinen Erfolg beim songwriting.</p>
 	  <pubDate>2016-04-20T20:24:07+00:00</pubDate>
 	  <guid>//tagesform_6/</guid>
 	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_6.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Von hamburger Fußwegen und blühenden Bäumen</p>
-
-<!-- more -->
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_6.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+	     <p>Von hamburger Fußwegen und blühenden Bäumen</p>
 
 	  ]]></description>
 	</item>
@@ -175,19 +119,11 @@ keinen Erfolg beim songwriting.</p>
 	  <pubDate>2016-04-19T20:32:20+00:00</pubDate>
 	  <guid>//tagesform_5/</guid>
 	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Über Selbsttrollung, diese Webseite, Aufnahmesetup und <a href="http://www.absolem-max.com/">Absolem Max</a> Proben.</p>
+	     <p>Über Selbsttrollung, diese Webseite, Aufnahmesetup und <a href="http://www.absolem-max.com/">Absolem Max</a> Proben.</p>
 
 <!-- more -->
 
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
 <p>Hier ist ein Link zu <a href="https://www.facebook.com/events/155714938135011/">unserem Auftritt am 28.05.2016 in der Astrastube</a>.</p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
 
 	  ]]></description>
 	</item>
@@ -199,43 +135,7 @@ keinen Erfolg beim songwriting.</p>
 	  <pubDate>2016-04-18T20:47:04+00:00</pubDate>
 	  <guid>//tagesform_4/</guid>
 	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_4.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
-
-<!-- more -->
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_4.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 3</title>
-	  <link>//tagesform_3/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-17T21:25:31+00:00</pubDate>
-	  <guid>//tagesform_3/</guid>
-	  <description><![CDATA[
-	     <p><audio controls>
-  <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_3.mp3" type="audio/mpeg">
-</audio><br></p>
-
-<p>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und den Mann, der ohne mit der Wimper
-zu zucken, drei Stunden lang Snoozen kann.</p>
-
-<!-- more -->
-
-<p><a href="/tag/tagesform/">Alle Episoden anzeigen</a></p>
-
-<p>Außerdem gibt es eine Hörprobe von Michael Jacksons &quot;Billy Jean&quot; in der bearbeitung
-von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt von <a href="http://houseonahill.de/">&quot;House on a Hill&quot;</a>.</p>
-
-<p><a href="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_3.mp3">Hier auch zum runterladen (Rechtsklick -&gt; Speichern unter...)</a></p>
+	     <p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
 
 	  ]]></description>
 	</item>
