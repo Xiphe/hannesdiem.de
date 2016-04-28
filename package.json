@@ -1,0 +1,16 @@
+{
+  "name": "diem-musik.de",
+  "version": "1.0.0",
+  "main": "new_post.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xiphe/diem-musik.de.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xiphe/diem-musik.de/issues"
+  },
+  "homepage": "https://github.com/Xiphe/diem-musik.de#readme",
+  "devDependencies": {
+    "minimist": "^1.2.0"
+  }
+}
