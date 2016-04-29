@@ -12,10 +12,22 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 13 - Weiter</title>
+	  <link>//tagesform-13/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-04-29T20:12:21+00:00</pubDate>
+	  <guid>//tagesform-13/</guid>
+	  <description><![CDATA[
+	     <p>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 12</title>
 	  <link>//tagesform-12/</link>
 	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-29T01:05:24+00:00</pubDate>
+	  <pubDate>2016-04-28T20:05:24+00:00</pubDate>
 	  <guid>//tagesform-12/</guid>
 	  <description><![CDATA[
 	     <p>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</p>
@@ -124,18 +136,6 @@ keinen Erfolg beim songwriting.</p>
 <!-- more -->
 
 <p>Hier ist ein Link zu <a href="https://www.facebook.com/events/155714938135011/">unserem Auftritt am 28.05.2016 in der Astrastube</a>.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 4 - aus dem Proberaum</title>
-	  <link>//tagesform_4/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-18T20:47:04+00:00</pubDate>
-	  <guid>//tagesform_4/</guid>
-	  <description><![CDATA[
-	     <p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
 
 	  ]]></description>
 	</item>

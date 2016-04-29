@@ -8,7 +8,25 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Fri, 29 Apr 2016 01:05:24 +0000</pubDate>
+    <pubDate>Fri, 29 Apr 2016 20:12:21 +0000</pubDate>
+    <item>
+      <title>Tagesform 13 - Weiter</title>
+      <link>http://diem-musik.de/tagesform-13/</link>
+      <description>Mit Melodien beim Aufstehen und Aufnahme-Equipment.
+
+</description>
+      <pubDate>Fri, 29 Apr 2016 20:12:21 +0000</pubDate>
+      <dc:date>2016-04-29T20:12:21+00:00</dc:date>
+    </item>
+    <item>
+      <title>Songwriting Session - Weiter</title>
+      <link>http://diem-musik.de/weiter/</link>
+      <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/tvIUHQ6VhJI&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt;
+
+</description>
+      <pubDate>Fri, 29 Apr 2016 18:16:28 +0000</pubDate>
+      <dc:date>2016-04-29T18:16:28+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 12</title>
       <link>http://diem-musik.de/tagesform-12/</link>
@@ -16,8 +34,8 @@
 
 
 </description>
-      <pubDate>Fri, 29 Apr 2016 01:05:24 +0000</pubDate>
-      <dc:date>2016-04-29T01:05:24+00:00</dc:date>
+      <pubDate>Thu, 28 Apr 2016 20:05:24 +0000</pubDate>
+      <dc:date>2016-04-28T20:05:24+00:00</dc:date>
     </item>
     <item>
       <title>Tagesform 11 - Bla bla</title>
@@ -219,6 +237,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-04-29T01:05:24+00:00</dc:date>
+    <dc:date>2016-04-29T20:12:21+00:00</dc:date>
   </channel>
 </rss>
