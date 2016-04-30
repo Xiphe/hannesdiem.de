@@ -1,0 +1,47 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Tageswerk - über die Musik, das Leben und den ganzen Rest</title>
+		<atom:link href="http://diem-musik.de/feed/tageswerk/" rel="self" type="application/rss+xml" />
+		<link>http://diem-musik.de</link>
+		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, den Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderem trivialen Tageswerk.</description>
+		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+		<language>de-DE</language>
+		<copyright>Hannes Diercks {{ site.time | date: '%Y' }}</copyright>
+		<image>
+			<title>Tageswerk - ...über die Musik, das Leben und den ganzen Rest</title>
+			<url>https://res.cloudinary.com/xiphe/image/upload/c_fill,g_south_west,h_3000,q_80,w_3000/v1460755546/tagesform_cover_jtbc9y.jpg</url>
+			<link>http://diem-musik.de</link>
+		</image>
+
+		<sy:updatePeriod>daily</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+
+		<itunes:new-feed-url>http://diem-musik.de/feed/tageswerk/</itunes:new-feed-url>
+		<itunes:author>Diem</itunes:author>
+		<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_south_west,h_3000,q_80,w_3000/v1460755546/tagesform_cover_jtbc9y.jpg" />
+		<itunes:category text="Music">
+		<itunes:category text="Technology">
+		<itunes:owner>
+			<itunes:name>Hannes Diercks</itunes:name>
+			<itunes:email>apple@xiphe.net</itunes:email>
+		</itunes:owner>{% for post in site.posts %}{% if post.tags contains 'podcasts' and post.tags contains 'tagesform' %}
+		<item>{% capture length %}{{ '/tagesform/tagesform_' | append: post.episode | append: '.mp3' | getbytes: 's3.eu-central-1.amazonaws.com' }}{% endcapture %}
+			<title>{{ post.title }}</title>
+			<link>{{ site.url }}{{ post.url }}</link>
+			<guid>{{ site.url }}{{ post.id }}</guid>
+			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>{% if post.disqus %}
+			<comments>{{ site.url }}{{ post.url }}#disqus_thread</comments>{% endif %}
+			<description>{{ post.content | excerptify: 'all', 1000, false }}</description>
+			<content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_{{ post.episode }}.mp3" length="{{ length }}" type="audio/mpeg" />
+			<itunes:subtitle>{{ post.content | excerptify: 'all' }}</itunes:subtitle>
+			<itunes:summary><![CDATA[{{ post.content }}]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/{{ post.cover }}.jpg" />
+			<itunes:duration>{{ length | toduration }}</itunes:duration>
+		</item>{% endif %}{% endfor %}
+	</channel>
+</rss>
