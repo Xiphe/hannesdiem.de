@@ -1,8 +1,8 @@
 require 'nokogiri'
 
 module Excerptify
-  def excerptify(text, opt = 'few')
-    textBeforeMore = text.split('<!-- more -->')[0]
+  def excerptify(text, opt = 'few', maxlen = 250, splitmore = true)
+    textBeforeMore = splitmore ? text.split('<!-- more -->')[0] : text.gsub(/<!-- more -->/, '')
     doc = Nokogiri.HTML(textBeforeMore)
     doc.css('*').each do |el|
       if opt == 'all' and el.name != 'body' and el.name != 'html'
@@ -33,7 +33,7 @@ module Excerptify
       .gsub(/<\/foo>/, '')
       .gsub(/\s+/, ' ')
       .strip
-      .strip[0..250]
+      .strip[0..maxlen]
       .gsub('"', opt == 'all' ? '&quot;' : '"')
 
     if (excerpt[-1, 1] =~ /\w/)
