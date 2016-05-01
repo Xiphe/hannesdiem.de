@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Tageswerk - über die Musik, das Leben und den ganzen Rest</title>
+		<atom:link href="http://diem-musik.de/feed/tageswerk/" rel="self" type="application/rss+xml" />
+		<link>http://diem-musik.de</link>
+		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, den Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderem trivialen Tageswerk.</description>
+		<lastBuildDate>Sun, 01 May 2016 00:02:33 +0000</lastBuildDate>
+		<language>de-DE</language>
+		<copyright>Hannes Diercks 2016</copyright>
+		<image>
+			<title>Tageswerk - ...über die Musik, das Leben und den ganzen Rest</title>
+			<url>https://res.cloudinary.com/xiphe/image/upload/c_fill,g_south_west,h_3000,q_80,w_3000/v1460755546/tagesform_cover_jtbc9y.jpg</url>
+			<link>http://diem-musik.de</link>
+		</image>
+
+		<sy:updatePeriod>daily</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+
+		<itunes:new-feed-url>http://diem-musik.de/feed/tageswerk/</itunes:new-feed-url>
+		<itunes:author>Diem</itunes:author>
+		<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_south_west,h_3000,q_80,w_3000/v1460755546/tagesform_cover_jtbc9y.jpg" />
+		<itunes:category text="Music">
+		<itunes:category text="Technology">
+		<itunes:owner>
+			<itunes:name>Hannes Diercks</itunes:name>
+			<itunes:email>apple@xiphe.net</itunes:email>
+		</itunes:owner>
+		<item>
+			<title>Tagesform 13 - Weiter</title>
+			<link>http://diem-musik.de/tagesform-13/</link>
+			<guid>http://diem-musik.de/tagesform-13</guid>
+			<pubDate>Fri, 29 Apr 2016 20:12:21 +0000</pubDate>
+			<description>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</description>
+			<content:encoded><![CDATA[<p>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_13.mp3" length="6235590" type="audio/mpeg" />
+			<itunes:subtitle>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:04:56</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 12 - YNAB</title>
+			<link>http://diem-musik.de/tagesform-12/</link>
+			<guid>http://diem-musik.de/tagesform-12</guid>
+			<pubDate>Thu, 28 Apr 2016 20:05:24 +0000</pubDate>
+			<description>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</description>
+			<content:encoded><![CDATA[<p>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_12.mp3" length="16605276" type="audio/mpeg" />
+			<itunes:subtitle>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:13:09</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 11 - Bla bla</title>
+			<link>http://diem-musik.de/tagesform_11/</link>
+			<guid>http://diem-musik.de/tagesform_11</guid>
+			<pubDate>Wed, 27 Apr 2016 20:23:46 +0000</pubDate>
+			<description>Über Urlaub, tolle Menschen und Trivia.</description>
+			<content:encoded><![CDATA[<p>Über Urlaub, tolle Menschen und Trivia.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_11.mp3" length="7385446" type="audio/mpeg" />
+			<itunes:subtitle>Über Urlaub, tolle Menschen und Trivia.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Über Urlaub, tolle Menschen und Trivia.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:05:51</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 10 - commit message formate</title>
+			<link>http://diem-musik.de/tagesform_10/</link>
+			<guid>http://diem-musik.de/tagesform_10</guid>
+			<pubDate>Mon, 25 Apr 2016 20:12:05 +0000</pubDate>
+			<description>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen. Hier gibt es die Slides zu besagtem Vortrag: stop writing commitMESSages, please...</description>
+			<content:encoded><![CDATA[<p>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</p>
+
+<!-- more -->
+
+<p>Hier gibt es die Slides zu besagtem Vortrag: <a href="https://docs.google.com/a/jimdo.com/presentation/d/1EXXRzbT17rbD7CFXugPZgvgMhsoVE1XXSA7UxBl3iXw/edit?usp=sharing">stop writing commitMESSages, please</a></p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_10.mp3" length="10918728" type="audio/mpeg" />
+			<itunes:subtitle>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</p>
+
+<!-- more -->
+
+<p>Hier gibt es die Slides zu besagtem Vortrag: <a href="https://docs.google.com/a/jimdo.com/presentation/d/1EXXRzbT17rbD7CFXugPZgvgMhsoVE1XXSA7UxBl3iXw/edit?usp=sharing">stop writing commitMESSages, please</a></p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:08:39</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 9 - Zuhören</title>
+			<link>http://diem-musik.de/tagesform_9/</link>
+			<guid>http://diem-musik.de/tagesform_9</guid>
+			<pubDate>Sat, 23 Apr 2016 20:11:11 +0000</pubDate>
+			<description>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und keinen Erfolg beim songwriting.</description>
+			<content:encoded><![CDATA[<p>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
+keinen Erfolg beim songwriting.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_9.mp3" length="6637142" type="audio/mpeg" />
+			<itunes:subtitle>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und keinen Erfolg beim songwriting.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
+keinen Erfolg beim songwriting.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/studio_wu3hcy.jpg" />
+			<itunes:duration>00:05:15</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 8.5 - 25:05 Uhr</title>
+			<link>http://diem-musik.de/tagesform_8.5/</link>
+			<guid>http://diem-musik.de/tagesform_8.5</guid>
+			<pubDate>Fri, 22 Apr 2016 20:34:26 +0000</pubDate>
+			<description>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach'm Aufstehen ist.</description>
+			<content:encoded><![CDATA[<p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.5.mp3" length="3809786" type="audio/mpeg" />
+			<itunes:subtitle>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach'm Aufstehen ist.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/IMG_4605_ilkljw.jpg" />
+			<itunes:duration>00:03:01</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 8 - Horizont</title>
+			<link>http://diem-musik.de/tagesform_8/</link>
+			<guid>http://diem-musik.de/tagesform_8</guid>
+			<pubDate>Fri, 22 Apr 2016 20:26:37 +0000</pubDate>
+			<description>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</description>
+			<content:encoded><![CDATA[<p>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.mp3" length="12496440" type="audio/mpeg" />
+			<itunes:subtitle>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/IMG_4605_ilkljw.jpg" />
+			<itunes:duration>00:09:54</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 7 - Routinen</title>
+			<link>http://diem-musik.de/tagesform_7/</link>
+			<guid>http://diem-musik.de/tagesform_7</guid>
+			<pubDate>Thu, 21 Apr 2016 20:28:14 +0000</pubDate>
+			<description>Leicht angeheitert über das an und abgewöhnen von Routinen.</description>
+			<content:encoded><![CDATA[<p>Leicht angeheitert über das an und abgewöhnen von Routinen.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_7.mp3" length="9759686" type="audio/mpeg" />
+			<itunes:subtitle>Leicht angeheitert über das an und abgewöhnen von Routinen.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Leicht angeheitert über das an und abgewöhnen von Routinen.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:07:44</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 6 - Verkehr</title>
+			<link>http://diem-musik.de/tagesform_6/</link>
+			<guid>http://diem-musik.de/tagesform_6</guid>
+			<pubDate>Wed, 20 Apr 2016 20:24:07 +0000</pubDate>
+			<description>Von hamburger Fußwegen und blühenden Bäumen...</description>
+			<content:encoded><![CDATA[<p>Von hamburger Fußwegen und blühenden Bäumen</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_6.mp3" length="4445672" type="audio/mpeg" />
+			<itunes:subtitle>Von hamburger Fußwegen und blühenden Bäumen...</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Von hamburger Fußwegen und blühenden Bäumen</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:03:31</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 5 - Selbsttrollung</title>
+			<link>http://diem-musik.de/tagesform_5/</link>
+			<guid>http://diem-musik.de/tagesform_5</guid>
+			<pubDate>Tue, 19 Apr 2016 20:32:20 +0000</pubDate>
+			<description>Über Selbsttrollung, diese Webseite, Aufnahmesetup und Absolem Max Proben. Hier ist ein Link zu unserem Auftritt am 28.05.2016 in der Astrastube.</description>
+			<content:encoded><![CDATA[<p>Über Selbsttrollung, diese Webseite, Aufnahmesetup und <a href="http://www.absolem-max.com/">Absolem Max</a> Proben.</p>
+
+<!-- more -->
+
+<p>Hier ist ein Link zu <a href="https://www.facebook.com/events/155714938135011/">unserem Auftritt am 28.05.2016 in der Astrastube</a>.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3" length="7699736" type="audio/mpeg" />
+			<itunes:subtitle>Über Selbsttrollung, diese Webseite, Aufnahmesetup und Absolem Max Proben.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Über Selbsttrollung, diese Webseite, Aufnahmesetup und <a href="http://www.absolem-max.com/">Absolem Max</a> Proben.</p>
+
+<!-- more -->
+
+<p>Hier ist ein Link zu <a href="https://www.facebook.com/events/155714938135011/">unserem Auftritt am 28.05.2016 in der Astrastube</a>.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:06:06</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 4 - aus dem Proberaum</title>
+			<link>http://diem-musik.de/tagesform_4/</link>
+			<guid>http://diem-musik.de/tagesform_4</guid>
+			<pubDate>Mon, 18 Apr 2016 20:47:04 +0000</pubDate>
+			<description>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</description>
+			<content:encoded><![CDATA[<p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_4.mp3" length="2864098" type="audio/mpeg" />
+			<itunes:subtitle>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/FullSizeRender_2_dx8nc7.jpg" />
+			<itunes:duration>00:02:16</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 3</title>
+			<link>http://diem-musik.de/tagesform_3/</link>
+			<guid>http://diem-musik.de/tagesform_3</guid>
+			<pubDate>Sun, 17 Apr 2016 21:25:31 +0000</pubDate>
+			<description>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper zu zucken, drei Stunden lang Snoozen kann. Außerdem gibt es eine Hörprobe von Michael Jacksons &quot;Billy Jean&quot; in der bearbeitung von &quot;The Civil Wars&quot;, geprobt von &quot;House on a Hill&quot;.</description>
+			<content:encoded><![CDATA[<p>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper
+zu zucken, drei Stunden lang Snoozen kann.</p>
+
+<!-- more -->
+
+<p>Außerdem gibt es eine Hörprobe von Michael Jacksons &quot;Billy Jean&quot; in der bearbeitung
+von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt von <a href="http://houseonahill.de/">&quot;House on a Hill&quot;</a>.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_3.mp3" length="9331204" type="audio/mpeg" />
+			<itunes:subtitle>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper zu zucken, drei Stunden lang Snoozen kann.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper
+zu zucken, drei Stunden lang Snoozen kann.</p>
+
+<!-- more -->
+
+<p>Außerdem gibt es eine Hörprobe von Michael Jacksons &quot;Billy Jean&quot; in der bearbeitung
+von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt von <a href="http://houseonahill.de/">&quot;House on a Hill&quot;</a>.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/FullSizeRender_rfjqdv.jpg" />
+			<itunes:duration>00:07:23</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 2</title>
+			<link>http://diem-musik.de/tagesform_2/</link>
+			<guid>http://diem-musik.de/tagesform_2</guid>
+			<pubDate>Sat, 16 Apr 2016 21:01:51 +0000</pubDate>
+			<description>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</description>
+			<content:encoded><![CDATA[<p>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_2.mp3" length="6334856" type="audio/mpeg" />
+			<itunes:subtitle>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:05:01</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 1</title>
+			<link>http://diem-musik.de/tagesform_1/</link>
+			<guid>http://diem-musik.de/tagesform_1</guid>
+			<pubDate>Fri, 15 Apr 2016 20:52:40 +0000</pubDate>
+			<description>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</description>
+			<content:encoded><![CDATA[<p>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</p>
+
+<!-- more -->
+
+<p><img src="http://res.cloudinary.com/xiphe/image/upload/c_scale,w_600/v1460755515/tagesform1_c7ld9y.png"></p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_1.mp3" length="4647544" type="audio/mpeg" />
+			<itunes:subtitle>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</p>
+
+<!-- more -->
+
+<p><img src="http://res.cloudinary.com/xiphe/image/upload/c_scale,w_600/v1460755515/tagesform1_c7ld9y.png"></p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:03:41</itunes:duration>
+		</item>
+	</channel>
+</rss>
