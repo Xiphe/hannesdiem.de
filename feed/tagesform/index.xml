@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 01 May 2016 00:55:29 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 01 May 2016 20:50:00 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,35 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 15 - Jetzt mit Feed</title>
+			<link>http://diem-musik.de/tagesform-15/</link>
+			<guid>http://diem-musik.de/tagesform-15</guid>
+			<pubDate>Sun, 01 May 2016 20:41:14 +0000</pubDate>
+			<description>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser Podcast jetzt aboniert werden! Einfach http://diem-musik.de/feed/tagesform/ in eine Podcast-App eures vertrauens eintagen und glücklich sein. Ansonsten just another lazy sunday.</description>
+			<content:encoded><![CDATA[<p>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat
+und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser 
+Podcast jetzt aboniert werden!</p>
+
+<p>Einfach <code>http://diem-musik.de/feed/tagesform/</code> in eine Podcast-App eures
+vertrauens eintagen und glücklich sein.</p>
+
+<p>Ansonsten just another lazy sunday.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_15.mp3" length="8265896" type="audio/mpeg" />
+			<itunes:subtitle>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser Podcast jetzt aboniert werden! Einfach http://diem-musik.de/feed/tagesform/ in eine Podcast-App eures vertraue...</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat
+und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser 
+Podcast jetzt aboniert werden!</p>
+
+<p>Einfach <code>http://diem-musik.de/feed/tagesform/</code> in eine Podcast-App eures
+vertrauens eintagen und glücklich sein.</p>
+
+<p>Ansonsten just another lazy sunday.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:06:33</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 14 - Jubiläumse</title>
 			<link>http://diem-musik.de/tagesform-14/</link>

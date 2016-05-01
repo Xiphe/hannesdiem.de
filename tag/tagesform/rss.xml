@@ -12,6 +12,25 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 15 - Jetzt mit Feed</title>
+	  <link>//tagesform-15/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-01T20:41:14+00:00</pubDate>
+	  <guid>//tagesform-15/</guid>
+	  <description><![CDATA[
+	     <p>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat
+und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser 
+Podcast jetzt aboniert werden!</p>
+
+<p>Einfach <code>http://diem-musik.de/feed/tagesform/</code> in eine Podcast-App eures
+vertrauens eintagen und glücklich sein.</p>
+
+<p>Ansonsten just another lazy sunday.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 14 - Jubiläumse</title>
 	  <link>//tagesform-14/</link>
 	  <author>Casper McFadden</author>
@@ -122,18 +141,6 @@ keinen Erfolg beim songwriting.</p>
 	  <guid>//tagesform_7/</guid>
 	  <description><![CDATA[
 	     <p>Leicht angeheitert über das an und abgewöhnen von Routinen.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 6 - Verkehr</title>
-	  <link>//tagesform_6/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-20T20:24:07+00:00</pubDate>
-	  <guid>//tagesform_6/</guid>
-	  <description><![CDATA[
-	     <p>Von hamburger Fußwegen und blühenden Bäumen</p>
 
 	  ]]></description>
 	</item>
