@@ -33,7 +33,9 @@ layout: null
 		<itunes:owner>
 			<itunes:name>Hannes Diercks</itunes:name>
 			<itunes:email>apple@xiphe.net</itunes:email>
-		</itunes:owner>{% for post in site.posts %}{% if post.tags contains 'podcasts' and post.tags contains 'tagesform' %}
+		</itunes:owner>
+		<itunes:explicit>No</itunes:explicit>
+		{% for post in site.posts %}{% if post.tags contains 'podcasts' and post.tags contains 'tagesform' %}
 		<item>{% capture length %}{{ '/tagesform/tagesform_' | append: post.episode | append: '.mp3' | getbytes: 's3.eu-central-1.amazonaws.com' }}{% endcapture %}
 			<title>{{ post.title }}</title>
 			<link>{{ site.url }}{{ post.url }}</link>
