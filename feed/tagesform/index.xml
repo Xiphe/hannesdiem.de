@@ -5,7 +5,7 @@
 		<atom:link href="http://diem-musik.de/feed/tageswerk/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, den Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderem trivialen Tageswerk.</description>
-		<lastBuildDate>Sun, 01 May 2016 00:02:33 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 01 May 2016 00:27:49 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -26,6 +26,25 @@
 			<itunes:name>Hannes Diercks</itunes:name>
 			<itunes:email>apple@xiphe.net</itunes:email>
 		</itunes:owner>
+		<item>
+			<title>Tagesform 14 - Jubiläumse</title>
+			<link>http://diem-musik.de/tagesform-14/</link>
+			<guid>http://diem-musik.de/tagesform-14</guid>
+			<pubDate>Sat, 30 Apr 2016 20:13:19 +0000</pubDate>
+			<description>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu finden sein wird.</description>
+			<content:encoded><![CDATA[<p>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, 
+der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu 
+finden sein wird.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_14.mp3" length="7716750" type="audio/mpeg" />
+			<itunes:subtitle>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu finden sein wird.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, 
+der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu 
+finden sein wird.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_14_g5zq9n.jpg" />
+			<itunes:duration>00:06:07</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 13 - Weiter</title>
 			<link>http://diem-musik.de/tagesform-13/</link>

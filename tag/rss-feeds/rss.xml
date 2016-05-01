@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 14 - Jubiläumse</title>
+	  <link>//tagesform-14/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-04-30T20:13:19+00:00</pubDate>
+	  <guid>//tagesform-14/</guid>
+	  <description><![CDATA[
+	     <p>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, 
+der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu 
+finden sein wird.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

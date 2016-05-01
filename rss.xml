@@ -8,7 +8,19 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Fri, 29 Apr 2016 20:12:21 +0000</pubDate>
+    <pubDate>Sat, 30 Apr 2016 20:13:19 +0000</pubDate>
+    <item>
+      <title>Tagesform 14 - Jubiläumse</title>
+      <link>http://diem-musik.de/tagesform-14/</link>
+      <description>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, 
+der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu 
+finden sein wird.
+
+
+</description>
+      <pubDate>Sat, 30 Apr 2016 20:13:19 +0000</pubDate>
+      <dc:date>2016-04-30T20:13:19+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 13 - Weiter</title>
       <link>http://diem-musik.de/tagesform-13/</link>
@@ -237,6 +249,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-04-29T20:12:21+00:00</dc:date>
+    <dc:date>2016-04-30T20:13:19+00:00</dc:date>
   </channel>
 </rss>
