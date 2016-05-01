@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+>
 	<channel>
 		<title>Tageswerk - über die Musik, das Leben und den ganzen Rest</title>
 		<atom:link href="http://diem-musik.de/feed/tageswerk/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, den Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderem trivialen Tageswerk.</description>
-		<lastBuildDate>Sun, 01 May 2016 00:27:49 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 01 May 2016 00:35:19 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -20,8 +25,8 @@
 		<itunes:new-feed-url>http://diem-musik.de/feed/tageswerk/</itunes:new-feed-url>
 		<itunes:author>Diem</itunes:author>
 		<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_south_west,h_3000,q_80,w_3000/v1460755546/tagesform_cover_jtbc9y.jpg" />
-		<itunes:category text="Music">
-		<itunes:category text="Technology">
+		<itunes:category text="Music" />
+		<itunes:category text="Technology" />
 		<itunes:owner>
 			<itunes:name>Hannes Diercks</itunes:name>
 			<itunes:email>apple@xiphe.net</itunes:email>
