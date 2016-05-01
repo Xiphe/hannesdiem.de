@@ -9,8 +9,8 @@
 		<title>Tagesform - über die Musik, das Leben und den ganzen Rest</title>
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
-		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, den Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 01 May 2016 00:41:20 +0000</lastBuildDate>
+		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
+		<lastBuildDate>Sun, 01 May 2016 00:55:29 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -31,6 +31,8 @@
 			<itunes:name>Hannes Diercks</itunes:name>
 			<itunes:email>apple@xiphe.net</itunes:email>
 		</itunes:owner>
+		<itunes:explicit>No</itunes:explicit>
+		
 		<item>
 			<title>Tagesform 14 - Jubiläumse</title>
 			<link>http://diem-musik.de/tagesform-14/</link>
