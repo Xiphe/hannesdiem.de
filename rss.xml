@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Mon, 02 May 2016 22:19:01 +0000</pubDate>
+    <pubDate>Tue, 03 May 2016 20:12:07 +0000</pubDate>
+    <item>
+      <title>Tagesform 17 - Afenginn</title>
+      <link>http://diem-musik.de/tagesform-17/</link>
+      <description>An diesem wunderschönen Dienstag mit wenig schlaf übers
+Cajon-Video schneiden und ein grandioses [Afenginn](http://www.afenginn.dk/) Konzert
+
+
+</description>
+      <pubDate>Tue, 03 May 2016 20:12:07 +0000</pubDate>
+      <dc:date>2016-05-03T20:12:07+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 16 - Cajongedöns</title>
       <link>http://diem-musik.de/tagesform-16/</link>
@@ -269,6 +280,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-02T22:19:01+00:00</dc:date>
+    <dc:date>2016-05-03T20:12:07+00:00</dc:date>
   </channel>
 </rss>

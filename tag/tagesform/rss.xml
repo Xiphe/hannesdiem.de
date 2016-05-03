@@ -12,6 +12,19 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 17 - Afenginn</title>
+	  <link>//tagesform-17/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-03T20:12:07+00:00</pubDate>
+	  <guid>//tagesform-17/</guid>
+	  <description><![CDATA[
+	     <p>An diesem wunderschönen Dienstag mit wenig schlaf übers
+Cajon-Video schneiden und ein grandioses <a href="http://www.afenginn.dk/">Afenginn</a> Konzert</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 16 - Cajongedöns</title>
 	  <link>//tagesform-16/</link>
 	  <author>Casper McFadden</author>
@@ -135,18 +148,6 @@ keinen Erfolg beim songwriting.</p>
 	  <guid>//tagesform_8.5/</guid>
 	  <description><![CDATA[
 	     <p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 8 - Horizont</title>
-	  <link>//tagesform_8/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-22T20:26:37+00:00</pubDate>
-	  <guid>//tagesform_8/</guid>
-	  <description><![CDATA[
-	     <p>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</p>
 
 	  ]]></description>
 	</item>
