@@ -8,7 +8,16 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Tue, 03 May 2016 20:12:07 +0000</pubDate>
+    <pubDate>Wed, 04 May 2016 22:49:32 +0000</pubDate>
+    <item>
+      <title>Tagesform 18 - Love and Peace</title>
+      <link>http://diem-musik.de/tagesform-18/</link>
+      <description>Ein Statement zur Liebe und zum Frieden.
+
+</description>
+      <pubDate>Wed, 04 May 2016 22:49:32 +0000</pubDate>
+      <dc:date>2016-05-04T22:49:32+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 17 - Afenginn</title>
       <link>http://diem-musik.de/tagesform-17/</link>
@@ -280,6 +289,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-03T20:12:07+00:00</dc:date>
+    <dc:date>2016-05-04T22:49:32+00:00</dc:date>
   </channel>
 </rss>

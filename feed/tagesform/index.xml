@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Tue, 03 May 2016 22:18:02 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 05 May 2016 02:17:40 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -34,22 +34,58 @@
 		<itunes:explicit>No</itunes:explicit>
 		
 		<item>
+			<title>Tagesform 18 - Love and Peace</title>
+			<link>http://diem-musik.de/tagesform-18/</link>
+			<guid>http://diem-musik.de/tagesform-18</guid>
+			<pubDate>Wed, 04 May 2016 22:49:32 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-18/#disqus_thread</comments>
+			<itunes:explicit>Yes</itunes:explicit>
+			<description>Ein Statement zur Liebe und zum Frieden. Mit Annekdoten, wie ich mal mit Nazis Bier getrunken und eine Gruppe Menschen verachtet habe. Ausgelößt von Kübra Gümüşay: Organisierte Liebe...</description>
+			<content:encoded><![CDATA[<p>Ein Statement zur Liebe und zum Frieden.</p>
+
+<!-- more -->
+
+<p>Mit Annekdoten, wie ich mal mit Nazis Bier getrunken
+und eine Gruppe Menschen verachtet habe.</p>
+
+<p>Ausgelößt von <a href="https://www.youtube.com/watch?v=BNLhT5hZaV8">Kübra Gümüşay: Organisierte Liebe</a></p>
+
+<p><a href="https://github.com/love-and-peace/love-and-peace/blob/master/versions/karma/v1.0-karma1/de.md"><img src="http://love-and-peace.github.io/love-and-peace/badges/karma/v1.0-karma1.svg" alt="Love and Peace"></a></p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_18.mp3" length="17111626" type="audio/mpeg" />
+			<itunes:subtitle>Ein Statement zur Liebe und zum Frieden.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ein Statement zur Liebe und zum Frieden.</p>
+
+<!-- more -->
+
+<p>Mit Annekdoten, wie ich mal mit Nazis Bier getrunken
+und eine Gruppe Menschen verachtet habe.</p>
+
+<p>Ausgelößt von <a href="https://www.youtube.com/watch?v=BNLhT5hZaV8">Kübra Gümüşay: Organisierte Liebe</a></p>
+
+<p><a href="https://github.com/love-and-peace/love-and-peace/blob/master/versions/karma/v1.0-karma1/de.md"><img src="http://love-and-peace.github.io/love-and-peace/badges/karma/v1.0-karma1.svg" alt="Love and Peace"></a></p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/love_and_peace_hipster_tf1zsv.jpg" />
+			<itunes:duration>00:13:34</itunes:duration>
+		</item>
+		<item>
 			<title>Tagesform 17 - Afenginn</title>
 			<link>http://diem-musik.de/tagesform-17/</link>
 			<guid>http://diem-musik.de/tagesform-17</guid>
 			<pubDate>Tue, 03 May 2016 20:12:07 +0000</pubDate>
 			<comments>http://diem-musik.de/tagesform-17/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
 			<description>An diesem wunderschönen Dienstag mit wenig schlaf übers Cajon-Video schneiden und ein grandioses Afenginn Konzert...</description>
 			<content:encoded><![CDATA[<p>An diesem wunderschönen Dienstag mit wenig schlaf übers
 Cajon-Video schneiden und ein grandioses <a href="http://www.afenginn.dk/">Afenginn</a> Konzert</p>
 ]]></content:encoded>
-			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_17.mp3" length="" type="audio/mpeg" />
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_17.mp3" length="12168372" type="audio/mpeg" />
 			<itunes:subtitle>An diesem wunderschönen Dienstag mit wenig schlaf übers Cajon-Video schneiden und ein grandioses Afenginn Konzert...</itunes:subtitle>
 			<itunes:summary><![CDATA[<p>An diesem wunderschönen Dienstag mit wenig schlaf übers
 Cajon-Video schneiden und ein grandioses <a href="http://www.afenginn.dk/">Afenginn</a> Konzert</p>
 ]]></itunes:summary>
 			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
-			<itunes:duration>00:00:00</itunes:duration>
+			<itunes:duration>00:09:38</itunes:duration>
 		</item>
 		<item>
 			<title>Tagesform 16 - Cajongedöns</title>
@@ -57,6 +93,7 @@ Cajon-Video schneiden und ein grandioses <a href="http://www.afenginn.dk/">Afeng
 			<guid>http://diem-musik.de/tagesform-16</guid>
 			<pubDate>Mon, 02 May 2016 22:19:01 +0000</pubDate>
 			<comments>http://diem-musik.de/tagesform-16/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Hannes macht Cajon-Videos und probt mit House on a Hill. Besagter Auftritt: 07.5.16 - HOUSE ON A HILL, feat. Claus Ulrich @ Music Club Live – HAMBURG...</description>
 			<content:encoded><![CDATA[<p>Hannes macht Cajon-Videos und probt mit House on a Hill.</p>
 
@@ -81,6 +118,7 @@ Cajon-Video schneiden und ein grandioses <a href="http://www.afenginn.dk/">Afeng
 			<guid>http://diem-musik.de/tagesform-15</guid>
 			<pubDate>Sun, 01 May 2016 20:41:14 +0000</pubDate>
 			<comments>http://diem-musik.de/tagesform-15/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser Podcast jetzt aboniert werden! Einfach http://diem-musik.de/feed/tagesform/ in eine Podcast-App eures vertrauens eintagen und glücklich sein. Ansonsten just another lazy sunday.</description>
 			<content:encoded><![CDATA[<p>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat
 und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser 
@@ -114,6 +152,7 @@ vertrauens eintagen und glücklich sein.</p>
 			<link>http://diem-musik.de/tagesform-14/</link>
 			<guid>http://diem-musik.de/tagesform-14</guid>
 			<pubDate>Sat, 30 Apr 2016 20:13:19 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu finden sein wird.</description>
 			<content:encoded><![CDATA[<p>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, 
 der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu 
@@ -133,6 +172,7 @@ finden sein wird.</p>
 			<link>http://diem-musik.de/tagesform-13/</link>
 			<guid>http://diem-musik.de/tagesform-13</guid>
 			<pubDate>Fri, 29 Apr 2016 20:12:21 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</description>
 			<content:encoded><![CDATA[<p>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</p>
 ]]></content:encoded>
@@ -148,6 +188,7 @@ finden sein wird.</p>
 			<link>http://diem-musik.de/tagesform-12/</link>
 			<guid>http://diem-musik.de/tagesform-12</guid>
 			<pubDate>Thu, 28 Apr 2016 20:05:24 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</description>
 			<content:encoded><![CDATA[<p>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</p>
 ]]></content:encoded>
@@ -163,6 +204,7 @@ finden sein wird.</p>
 			<link>http://diem-musik.de/tagesform_11/</link>
 			<guid>http://diem-musik.de/tagesform_11</guid>
 			<pubDate>Wed, 27 Apr 2016 20:23:46 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Über Urlaub, tolle Menschen und Trivia.</description>
 			<content:encoded><![CDATA[<p>Über Urlaub, tolle Menschen und Trivia.</p>
 ]]></content:encoded>
@@ -178,6 +220,7 @@ finden sein wird.</p>
 			<link>http://diem-musik.de/tagesform_10/</link>
 			<guid>http://diem-musik.de/tagesform_10</guid>
 			<pubDate>Mon, 25 Apr 2016 20:12:05 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen. Hier gibt es die Slides zu besagtem Vortrag: stop writing commitMESSages, please...</description>
 			<content:encoded><![CDATA[<p>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</p>
 
@@ -201,6 +244,7 @@ finden sein wird.</p>
 			<link>http://diem-musik.de/tagesform_9/</link>
 			<guid>http://diem-musik.de/tagesform_9</guid>
 			<pubDate>Sat, 23 Apr 2016 20:11:11 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und keinen Erfolg beim songwriting.</description>
 			<content:encoded><![CDATA[<p>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
 keinen Erfolg beim songwriting.</p>
@@ -218,6 +262,7 @@ keinen Erfolg beim songwriting.</p>
 			<link>http://diem-musik.de/tagesform_8.5/</link>
 			<guid>http://diem-musik.de/tagesform_8.5</guid>
 			<pubDate>Fri, 22 Apr 2016 20:34:26 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach'm Aufstehen ist.</description>
 			<content:encoded><![CDATA[<p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
 ]]></content:encoded>
@@ -233,6 +278,7 @@ keinen Erfolg beim songwriting.</p>
 			<link>http://diem-musik.de/tagesform_8/</link>
 			<guid>http://diem-musik.de/tagesform_8</guid>
 			<pubDate>Fri, 22 Apr 2016 20:26:37 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</description>
 			<content:encoded><![CDATA[<p>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</p>
 ]]></content:encoded>
@@ -248,6 +294,7 @@ keinen Erfolg beim songwriting.</p>
 			<link>http://diem-musik.de/tagesform_7/</link>
 			<guid>http://diem-musik.de/tagesform_7</guid>
 			<pubDate>Thu, 21 Apr 2016 20:28:14 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Leicht angeheitert über das an und abgewöhnen von Routinen.</description>
 			<content:encoded><![CDATA[<p>Leicht angeheitert über das an und abgewöhnen von Routinen.</p>
 ]]></content:encoded>
@@ -263,6 +310,7 @@ keinen Erfolg beim songwriting.</p>
 			<link>http://diem-musik.de/tagesform_6/</link>
 			<guid>http://diem-musik.de/tagesform_6</guid>
 			<pubDate>Wed, 20 Apr 2016 20:24:07 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Von hamburger Fußwegen und blühenden Bäumen...</description>
 			<content:encoded><![CDATA[<p>Von hamburger Fußwegen und blühenden Bäumen</p>
 ]]></content:encoded>
@@ -278,6 +326,7 @@ keinen Erfolg beim songwriting.</p>
 			<link>http://diem-musik.de/tagesform_5/</link>
 			<guid>http://diem-musik.de/tagesform_5</guid>
 			<pubDate>Tue, 19 Apr 2016 20:32:20 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Über Selbsttrollung, diese Webseite, Aufnahmesetup und Absolem Max Proben. Hier ist ein Link zu unserem Auftritt am 28.05.2016 in der Astrastube.</description>
 			<content:encoded><![CDATA[<p>Über Selbsttrollung, diese Webseite, Aufnahmesetup und <a href="http://www.absolem-max.com/">Absolem Max</a> Proben.</p>
 
@@ -301,6 +350,7 @@ keinen Erfolg beim songwriting.</p>
 			<link>http://diem-musik.de/tagesform_4/</link>
 			<guid>http://diem-musik.de/tagesform_4</guid>
 			<pubDate>Mon, 18 Apr 2016 20:47:04 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</description>
 			<content:encoded><![CDATA[<p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
 ]]></content:encoded>
@@ -316,6 +366,7 @@ keinen Erfolg beim songwriting.</p>
 			<link>http://diem-musik.de/tagesform_3/</link>
 			<guid>http://diem-musik.de/tagesform_3</guid>
 			<pubDate>Sun, 17 Apr 2016 21:25:31 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper zu zucken, drei Stunden lang Snoozen kann. Außerdem gibt es eine Hörprobe von Michael Jacksons &quot;Billy Jean&quot; in der bearbeitung von &quot;The Civil Wars&quot;, geprobt von &quot;House on a Hill&quot;.</description>
 			<content:encoded><![CDATA[<p>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper
 zu zucken, drei Stunden lang Snoozen kann.</p>
@@ -343,6 +394,7 @@ von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt v
 			<link>http://diem-musik.de/tagesform_2/</link>
 			<guid>http://diem-musik.de/tagesform_2</guid>
 			<pubDate>Sat, 16 Apr 2016 21:01:51 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</description>
 			<content:encoded><![CDATA[<p>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</p>
 ]]></content:encoded>
@@ -358,6 +410,7 @@ von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt v
 			<link>http://diem-musik.de/tagesform_1/</link>
 			<guid>http://diem-musik.de/tagesform_1</guid>
 			<pubDate>Fri, 15 Apr 2016 20:52:40 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
 			<description>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</description>
 			<content:encoded><![CDATA[<p>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</p>
 

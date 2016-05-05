@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 18 - Love and Peace</title>
+	  <link>//tagesform-18/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-04T22:49:32+00:00</pubDate>
+	  <guid>//tagesform-18/</guid>
+	  <description><![CDATA[
+	     <p>Ein Statement zur Liebe und zum Frieden.</p>
+
+<!-- more -->
+
+<p>Mit Annekdoten, wie ich mal mit Nazis Bier getrunken
+und eine Gruppe Menschen verachtet habe.</p>
+
+<p>Ausgelößt von <a href="https://www.youtube.com/watch?v=BNLhT5hZaV8">Kübra Gümüşay: Organisierte Liebe</a></p>
+
+<p><a href="https://github.com/love-and-peace/love-and-peace/blob/master/versions/karma/v1.0-karma1/de.md"><img src="http://love-and-peace.github.io/love-and-peace/badges/karma/v1.0-karma1.svg" alt="Love and Peace"></a></p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

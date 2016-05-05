@@ -12,6 +12,27 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 18 - Love and Peace</title>
+	  <link>//tagesform-18/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-04T22:49:32+00:00</pubDate>
+	  <guid>//tagesform-18/</guid>
+	  <description><![CDATA[
+	     <p>Ein Statement zur Liebe und zum Frieden.</p>
+
+<!-- more -->
+
+<p>Mit Annekdoten, wie ich mal mit Nazis Bier getrunken
+und eine Gruppe Menschen verachtet habe.</p>
+
+<p>Ausgelößt von <a href="https://www.youtube.com/watch?v=BNLhT5hZaV8">Kübra Gümüşay: Organisierte Liebe</a></p>
+
+<p><a href="https://github.com/love-and-peace/love-and-peace/blob/master/versions/karma/v1.0-karma1/de.md"><img src="http://love-and-peace.github.io/love-and-peace/badges/karma/v1.0-karma1.svg" alt="Love and Peace"></a></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 17 - Afenginn</title>
 	  <link>//tagesform-17/</link>
 	  <author>Casper McFadden</author>
@@ -136,18 +157,6 @@ finden sein wird.</p>
 	  <description><![CDATA[
 	     <p>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
 keinen Erfolg beim songwriting.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 8.5 - 25:05 Uhr</title>
-	  <link>//tagesform_8.5/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-22T20:34:26+00:00</pubDate>
-	  <guid>//tagesform_8.5/</guid>
-	  <description><![CDATA[
-	     <p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
 
 	  ]]></description>
 	</item>
