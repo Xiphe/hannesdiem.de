@@ -42,6 +42,7 @@ layout: null
 			<guid>{{ site.url }}{{ post.id }}</guid>
 			<pubDate>{{ post.date | date_to_rfc822 }}</pubDate>{% if post.disqus %}
 			<comments>{{ site.url }}{{ post.url }}#disqus_thread</comments>{% endif %}
+			<itunes:explicit>{% if post.explicit %}Yes{% else %}No{% endif %}</itunes:explicit>
 			<description>{{ post.content | excerptify: 'all', 1000, false }}</description>
 			<content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
 			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_{{ post.episode }}.mp3" length="{{ length }}" type="audio/mpeg" />
