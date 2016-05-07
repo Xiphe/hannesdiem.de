@@ -12,6 +12,24 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 19 - Müde</title>
+	  <link>//tagesform-19/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-06T20:20:32+00:00</pubDate>
+	  <guid>//tagesform-19/</guid>
+	  <description><![CDATA[
+	     <p>Diese Episode existiert nur um meinen inneren Schweinehund zu ärgern!</p>
+
+<!-- more --> 
+
+<p>...</p>
+
+<p>penner</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 18 - Love and Peace</title>
 	  <link>//tagesform-18/</link>
 	  <author>Casper McFadden</author>
@@ -144,19 +162,6 @@ finden sein wird.</p>
 <!-- more -->
 
 <p>Hier gibt es die Slides zu besagtem Vortrag: <a href="https://docs.google.com/a/jimdo.com/presentation/d/1EXXRzbT17rbD7CFXugPZgvgMhsoVE1XXSA7UxBl3iXw/edit?usp=sharing">stop writing commitMESSages, please</a></p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 9 - Zuhören</title>
-	  <link>//tagesform_9/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-23T20:11:11+00:00</pubDate>
-	  <guid>//tagesform_9/</guid>
-	  <description><![CDATA[
-	     <p>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
-keinen Erfolg beim songwriting.</p>
 
 	  ]]></description>
 	</item>
