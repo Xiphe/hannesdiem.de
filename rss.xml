@@ -8,7 +8,20 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 07 May 2016 20:53:59 +0000</pubDate>
+    <pubDate>Sun, 08 May 2016 20:30:45 +0000</pubDate>
+    <item>
+      <title>Tagesform 21 - Selbstverständlichkeiten</title>
+      <link>http://diem-musik.de/tagesform-21/</link>
+      <description>Nach ausgesprochen anregenden Gesprächen mit Mutter und Bruder
+spreche ich über die Kraft des Einfachen und die folgende These:
+&quot;In der Zeit, in der man eine Tätigkeit ausübt wird man zwangsläufig
+schneller oder besser darin.&quot;
+
+
+</description>
+      <pubDate>Sun, 08 May 2016 20:30:45 +0000</pubDate>
+      <dc:date>2016-05-08T20:30:45+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 20 - Lammfilet statt Blumen</title>
       <link>http://diem-musik.de/tagesform-20/</link>
@@ -318,6 +331,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-07T20:53:59+00:00</dc:date>
+    <dc:date>2016-05-08T20:30:45+00:00</dc:date>
   </channel>
 </rss>

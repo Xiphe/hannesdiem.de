@@ -12,6 +12,21 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 21 - Selbstverständlichkeiten</title>
+	  <link>//tagesform-21/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-08T20:30:45+00:00</pubDate>
+	  <guid>//tagesform-21/</guid>
+	  <description><![CDATA[
+	     <p>Nach ausgesprochen anregenden Gesprächen mit Mutter und Bruder
+spreche ich über die Kraft des Einfachen und die folgende These:
+&quot;In der Zeit, in der man eine Tätigkeit ausübt wird man zwangsläufig
+schneller oder besser darin.&quot;</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 20 - Lammfilet statt Blumen</title>
 	  <link>//tagesform-20/</link>
 	  <author>Casper McFadden</author>
@@ -148,18 +163,6 @@ finden sein wird.</p>
 	  <guid>//tagesform-12/</guid>
 	  <description><![CDATA[
 	     <p>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 11 - Bla bla</title>
-	  <link>//tagesform_11/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-27T20:23:46+00:00</pubDate>
-	  <guid>//tagesform_11/</guid>
-	  <description><![CDATA[
-	     <p>Über Urlaub, tolle Menschen und Trivia.</p>
 
 	  ]]></description>
 	</item>
