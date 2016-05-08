@@ -12,6 +12,20 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 20 - Lammfilet statt Blumen</title>
+	  <link>//tagesform-20/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-07T20:53:59+00:00</pubDate>
+	  <guid>//tagesform-20/</guid>
+	  <description><![CDATA[
+	     <p>Nach einem furiosen Auftritt mit <a href="http://houseonahill.de">House on a Hill</a>
+spreche ich über Produktivität im Urlaub und Ähnlichem.
+Außerdem ist Morgen Muttertag :)</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 19 - Müde</title>
 	  <link>//tagesform-19/</link>
 	  <author>Casper McFadden</author>
@@ -146,22 +160,6 @@ finden sein wird.</p>
 	  <guid>//tagesform_11/</guid>
 	  <description><![CDATA[
 	     <p>Über Urlaub, tolle Menschen und Trivia.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 10 - commit message formate</title>
-	  <link>//tagesform_10/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-25T20:12:05+00:00</pubDate>
-	  <guid>//tagesform_10/</guid>
-	  <description><![CDATA[
-	     <p>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</p>
-
-<!-- more -->
-
-<p>Hier gibt es die Slides zu besagtem Vortrag: <a href="https://docs.google.com/a/jimdo.com/presentation/d/1EXXRzbT17rbD7CFXugPZgvgMhsoVE1XXSA7UxBl3iXw/edit?usp=sharing">stop writing commitMESSages, please</a></p>
 
 	  ]]></description>
 	</item>

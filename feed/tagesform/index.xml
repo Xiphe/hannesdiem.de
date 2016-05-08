@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sat, 07 May 2016 03:25:33 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 08 May 2016 00:02:24 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,27 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 20 - Lammfilet statt Blumen</title>
+			<link>http://diem-musik.de/tagesform-20/</link>
+			<guid>http://diem-musik.de/tagesform-20</guid>
+			<pubDate>Sat, 07 May 2016 20:53:59 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-20/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Nach einem furiosen Auftritt mit House on a Hill spreche ich über Produktivität im Urlaub und Ähnlichem. Außerdem ist Morgen Muttertag :)</description>
+			<content:encoded><![CDATA[<p>Nach einem furiosen Auftritt mit <a href="http://houseonahill.de">House on a Hill</a>
+spreche ich über Produktivität im Urlaub und Ähnlichem.
+Außerdem ist Morgen Muttertag :)</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_20.mp3" length="8643858" type="audio/mpeg" />
+			<itunes:subtitle>Nach einem furiosen Auftritt mit House on a Hill spreche ich über Produktivität im Urlaub und Ähnlichem. Außerdem ist Morgen Muttertag :)</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Nach einem furiosen Auftritt mit <a href="http://houseonahill.de">House on a Hill</a>
+spreche ich über Produktivität im Urlaub und Ähnlichem.
+Außerdem ist Morgen Muttertag :)</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:06:51</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 19 - Müde</title>
 			<link>http://diem-musik.de/tagesform-19/</link>

@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Fri, 06 May 2016 20:20:32 +0000</pubDate>
+    <pubDate>Sat, 07 May 2016 20:53:59 +0000</pubDate>
+    <item>
+      <title>Tagesform 20 - Lammfilet statt Blumen</title>
+      <link>http://diem-musik.de/tagesform-20/</link>
+      <description>Nach einem furiosen Auftritt mit [House on a Hill](http://houseonahill.de)
+spreche ich über Produktivität im Urlaub und Ähnlichem.
+Außerdem ist Morgen Muttertag :)
+
+</description>
+      <pubDate>Sat, 07 May 2016 20:53:59 +0000</pubDate>
+      <dc:date>2016-05-07T20:53:59+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 19 - Müde</title>
       <link>http://diem-musik.de/tagesform-19/</link>
@@ -298,6 +309,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-06T20:20:32+00:00</dc:date>
+    <dc:date>2016-05-07T20:53:59+00:00</dc:date>
   </channel>
 </rss>
