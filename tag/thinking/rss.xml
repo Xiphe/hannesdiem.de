@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 21 - Selbstverständlichkeiten</title>
+	  <link>//tagesform-21/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-08T20:30:45+00:00</pubDate>
+	  <guid>//tagesform-21/</guid>
+	  <description><![CDATA[
+	     <p>Nach ausgesprochen anregenden Gesprächen mit Mutter und Bruder
+spreche ich über die Kraft des Einfachen und die folgende These:
+&quot;In der Zeit, in der man eine Tätigkeit ausübt wird man zwangsläufig
+schneller oder besser darin.&quot;</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
