@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 08 May 2016 21:44:40 +0000</lastBuildDate>
+		<lastBuildDate>Tue, 10 May 2016 21:46:14 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,35 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 22 - Feuer und Vergessen</title>
+			<link>http://diem-musik.de/tagesform-22/</link>
+			<guid>http://diem-musik.de/tagesform-22</guid>
+			<pubDate>Tue, 10 May 2016 21:24:59 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-22/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Nachdem ich mit Kai eine Episode seines aethermonologs eingesprochen habe, Zeige ich einen Schnippsel von dem was ich gestern im Proberaum gebastelt habe und rede über meine neu gewonnene Vorliebe für Synthesizer und moderne Sprache. Hier ist noch das Video der ersten Songwriting Session von Feuer und Vergessen.</description>
+			<content:encoded><![CDATA[<p>Nachdem ich mit Kai eine Episode seines <a href="http://aethermonolog.de/">aethermonologs</a> eingesprochen habe, Zeige ich einen Schnippsel von dem was ich 
+gestern im Proberaum gebastelt habe und rede über meine neu gewonnene
+Vorliebe für Synthesizer und moderne Sprache.</p>
+
+<!-- more -->
+
+<p>Hier ist noch das <a href="https://www.youtube.com/watch?v=b1-uTKl0Rqs">Video der ersten Songwriting Session von Feuer und Vergessen</a>.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_22.mp3" length="12891416" type="audio/mpeg" />
+			<itunes:subtitle>Nachdem ich mit Kai eine Episode seines aethermonologs eingesprochen habe, Zeige ich einen Schnippsel von dem was ich gestern im Proberaum gebastelt habe und rede über meine neu gewonnene Vorliebe für Synthesizer und moderne Sprache.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Nachdem ich mit Kai eine Episode seines <a href="http://aethermonolog.de/">aethermonologs</a> eingesprochen habe, Zeige ich einen Schnippsel von dem was ich 
+gestern im Proberaum gebastelt habe und rede über meine neu gewonnene
+Vorliebe für Synthesizer und moderne Sprache.</p>
+
+<!-- more -->
+
+<p>Hier ist noch das <a href="https://www.youtube.com/watch?v=b1-uTKl0Rqs">Video der ersten Songwriting Session von Feuer und Vergessen</a>.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/feuer_und_vergessen_t4h1jt.jpg" />
+			<itunes:duration>00:10:13</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 21 - Selbstverständlichkeiten</title>
 			<link>http://diem-musik.de/tagesform-21/</link>
