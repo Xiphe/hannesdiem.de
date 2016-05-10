@@ -20,6 +20,13 @@
             <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         </header>
         <section class="post-excerpt">
+            {% if post.tags contains 'podcasts' and post.tags contains 'tagesform' %}
+            <p class="audio-player-wrap">
+                <audio controls>
+                    <source src="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_{{ post.episode }}.mp3" type="audio/mpeg">
+                </audio>
+            </p>
+            {% endif %}
             <p>{{ post.content | excerptify }}</p>
             <a class="read-more" href="{{ post.url }}"> weiterlesen&nbsp;&raquo;</a>
         </section>
