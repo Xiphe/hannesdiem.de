@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 23</title>
+	  <link>//tagesform-23/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-11T21:20:26+00:00</pubDate>
+	  <guid>//tagesform-23/</guid>
+	  <description><![CDATA[
+	     <p>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne
+webseite gebaut: http://zehntausend.xiphe.net/<br>
+Heute spreche ich darüber warum ich das immer noch für nen 
+interessanten Plan halte.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

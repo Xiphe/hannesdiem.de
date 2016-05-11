@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Tue, 10 May 2016 21:46:14 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 11 May 2016 23:29:39 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,29 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 23</title>
+			<link>http://diem-musik.de/tagesform-23/</link>
+			<guid>http://diem-musik.de/tagesform-23</guid>
+			<pubDate>Wed, 11 May 2016 21:20:26 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-23/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne webseite gebaut: http://zehntausend.xiphe.net/ Heute spreche ich darüber warum ich das immer noch für nen interessanten Plan halte.</description>
+			<content:encoded><![CDATA[<p>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne
+webseite gebaut: http://zehntausend.xiphe.net/<br>
+Heute spreche ich darüber warum ich das immer noch für nen 
+interessanten Plan halte.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_23.mp3" length="11981948" type="audio/mpeg" />
+			<itunes:subtitle>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne webseite gebaut: http://zehntausend.xiphe.net/ Heute spreche ich darüber warum ich das immer noch für nen interessanten Plan halte.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne
+webseite gebaut: http://zehntausend.xiphe.net/<br>
+Heute spreche ich darüber warum ich das immer noch für nen 
+interessanten Plan halte.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:09:30</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 22 - Feuer und Vergessen</title>
 			<link>http://diem-musik.de/tagesform-22/</link>

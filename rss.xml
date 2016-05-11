@@ -8,7 +8,20 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Tue, 10 May 2016 21:24:59 +0000</pubDate>
+    <pubDate>Wed, 11 May 2016 21:20:26 +0000</pubDate>
+    <item>
+      <title>Tagesform 23</title>
+      <link>http://diem-musik.de/tagesform-23/</link>
+      <description>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne
+webseite gebaut: http://zehntausend.xiphe.net/  
+Heute spreche ich darüber warum ich das immer noch für nen 
+interessanten Plan halte.
+
+
+</description>
+      <pubDate>Wed, 11 May 2016 21:20:26 +0000</pubDate>
+      <dc:date>2016-05-11T21:20:26+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 22 - Feuer und Vergessen</title>
       <link>http://diem-musik.de/tagesform-22/</link>
@@ -342,6 +355,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-10T21:24:59+00:00</dc:date>
+    <dc:date>2016-05-11T21:20:26+00:00</dc:date>
   </channel>
 </rss>
