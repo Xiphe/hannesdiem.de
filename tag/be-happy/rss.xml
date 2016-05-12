@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 24 - Vorgesetzte und Verantwortung</title>
+	  <link>//tagesform-24/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-12T21:08:36+00:00</pubDate>
+	  <guid>//tagesform-24/</guid>
+	  <description><![CDATA[
+	     <p>Braindump über die Distribution von Befindlichkeiten an Verantwortliche
+und damit verbunden das verantwortlich machen von Verantwortlichen
+für &quot;falsche&quot; Konsequenzen zu Befindlichkeiten.</p>
+
+<p>Außerdem hatte ich 6 Bier</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

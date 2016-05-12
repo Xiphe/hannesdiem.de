@@ -12,6 +12,22 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 24 - Vorgesetzte und Verantwortung</title>
+	  <link>//tagesform-24/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-12T21:08:36+00:00</pubDate>
+	  <guid>//tagesform-24/</guid>
+	  <description><![CDATA[
+	     <p>Braindump über die Distribution von Befindlichkeiten an Verantwortliche
+und damit verbunden das verantwortlich machen von Verantwortlichen
+für &quot;falsche&quot; Konsequenzen zu Befindlichkeiten.</p>
+
+<p>Außerdem hatte ich 6 Bier</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 23 - Zehntausend Ideen</title>
 	  <link>//tagesform-23/</link>
 	  <author>Casper McFadden</author>
@@ -158,20 +174,6 @@ Podcast jetzt aboniert werden!</p>
 vertrauens eintagen und glücklich sein.</p>
 
 <p>Ansonsten just another lazy sunday.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 14 - Jubiläumse</title>
-	  <link>//tagesform-14/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-04-30T20:13:19+00:00</pubDate>
-	  <guid>//tagesform-14/</guid>
-	  <description><![CDATA[
-	     <p>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, 
-der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu 
-finden sein wird.</p>
 
 	  ]]></description>
 	</item>
