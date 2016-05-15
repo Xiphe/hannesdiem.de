@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Thu, 12 May 2016 22:28:35 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 15 May 2016 23:35:39 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,28 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 25 - Steuersch**ß</title>
+			<link>http://diem-musik.de/tagesform-25/</link>
+			<guid>http://diem-musik.de/tagesform-25</guid>
+			<pubDate>Sun, 15 May 2016 21:26:51 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich hab schlechte Laune, weil ich Steuern zahlen muss. Aber die neuste Folge vom aethermonolog podcast ist draußen #019 - Vom Songwriting in Iterationen und ich durfte, wie angekündigt mitreden.</description>
+			<content:encoded><![CDATA[<p>Ich hab schlechte Laune, weil ich Steuern zahlen muss.
+Aber die neuste Folge vom aethermonolog podcast ist draußen
+<a href="http://aethermonolog.de/episode-019.html">#019 - Vom Songwriting in Iterationen</a>
+und ich durfte, wie angekündigt mitreden.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_25.mp3" length="7735956" type="audio/mpeg" />
+			<itunes:subtitle>Ich hab schlechte Laune, weil ich Steuern zahlen muss. Aber die neuste Folge vom aethermonolog podcast ist draußen #019 - Vom Songwriting in Iterationen und ich durfte, wie angekündigt mitreden.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich hab schlechte Laune, weil ich Steuern zahlen muss.
+Aber die neuste Folge vom aethermonolog podcast ist draußen
+<a href="http://aethermonolog.de/episode-019.html">#019 - Vom Songwriting in Iterationen</a>
+und ich durfte, wie angekündigt mitreden.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:06:08</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 24 - Vorgesetzte und Verantwortung</title>
 			<link>http://diem-musik.de/tagesform-24/</link>

@@ -12,6 +12,21 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 25 - Steuersch**ß</title>
+	  <link>//tagesform-25/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-15T21:26:51+00:00</pubDate>
+	  <guid>//tagesform-25/</guid>
+	  <description><![CDATA[
+	     <p>Ich hab schlechte Laune, weil ich Steuern zahlen muss.
+Aber die neuste Folge vom aethermonolog podcast ist draußen
+<a href="http://aethermonolog.de/episode-019.html">#019 - Vom Songwriting in Iterationen</a>
+und ich durfte, wie angekündigt mitreden.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 24 - Vorgesetzte und Verantwortung</title>
 	  <link>//tagesform-24/</link>
 	  <author>Casper McFadden</author>
@@ -153,27 +168,6 @@ Cajon-Video schneiden und ein grandioses <a href="http://www.afenginn.dk/">Afeng
 <!-- more -->
 
 <p>Besagter Auftritt: <a href="http://houseonahill.de/events/house-on-a-hill-music-club-live-hamburg-3/">07.5.16 - HOUSE ON A HILL, feat. Claus Ulrich @ Music Club Live – HAMBURG</a></p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 15 - Jetzt mit Feed</title>
-	  <link>//tagesform-15/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-05-01T20:41:14+00:00</pubDate>
-	  <guid>//tagesform-15/</guid>
-	  <description><![CDATA[
-	     <p>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat
-und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser 
-Podcast jetzt aboniert werden!</p>
-
-<!-- more -->
-
-<p>Einfach <code>http://diem-musik.de/feed/tagesform/</code> in eine Podcast-App eures
-vertrauens eintagen und glücklich sein.</p>
-
-<p>Ansonsten just another lazy sunday.</p>
 
 	  ]]></description>
 	</item>

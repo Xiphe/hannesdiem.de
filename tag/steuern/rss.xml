@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 25 - Steuersch**ß</title>
+	  <link>//tagesform-25/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-15T21:26:51+00:00</pubDate>
+	  <guid>//tagesform-25/</guid>
+	  <description><![CDATA[
+	     <p>Ich hab schlechte Laune, weil ich Steuern zahlen muss.
+Aber die neuste Folge vom aethermonolog podcast ist draußen
+<a href="http://aethermonolog.de/episode-019.html">#019 - Vom Songwriting in Iterationen</a>
+und ich durfte, wie angekündigt mitreden.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
