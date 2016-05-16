@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Mon, 16 May 2016 22:39:01 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 16 May 2016 22:45:30 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -45,14 +45,14 @@
 Glücklich macht, dass mein Arbeitgeber mir in Sachen
 Arbeitszeit und Anwesenheit vertraut.</p>
 ]]></content:encoded>
-			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_26.mp3" length="" type="audio/mpeg" />
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_26.mp3" length="14432386" type="audio/mpeg" />
 			<itunes:subtitle>Mit Intro und Lampenfieber rede ich darüber warum es mich Glücklich macht, dass mein Arbeitgeber mir in Sachen Arbeitszeit und Anwesenheit vertraut.</itunes:subtitle>
 			<itunes:summary><![CDATA[<p>Mit Intro und Lampenfieber rede ich darüber warum es mich
 Glücklich macht, dass mein Arbeitgeber mir in Sachen
 Arbeitszeit und Anwesenheit vertraut.</p>
 ]]></itunes:summary>
 			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
-			<itunes:duration>00:00:00</itunes:duration>
+			<itunes:duration>00:11:26</itunes:duration>
 		</item>
 		<item>
 			<title>Tagesform 25 - Steuersch**ß</title>
