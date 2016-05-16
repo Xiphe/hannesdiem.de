@@ -8,7 +8,19 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sun, 15 May 2016 21:26:51 +0000</pubDate>
+    <pubDate>Mon, 16 May 2016 21:27:35 +0000</pubDate>
+    <item>
+      <title>Tagesform 26 - Arbeitszeit auf Vertrauensbasis</title>
+      <link>http://diem-musik.de/tagesform-26/</link>
+      <description>Mit Intro und Lampenfieber rede ich darüber warum es mich
+Glücklich macht, dass mein Arbeitgeber mir in Sachen
+Arbeitszeit und Anwesenheit vertraut.
+
+
+</description>
+      <pubDate>Mon, 16 May 2016 21:27:35 +0000</pubDate>
+      <dc:date>2016-05-16T21:27:35+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 25 - Steuersch**ß</title>
       <link>http://diem-musik.de/tagesform-25/</link>
@@ -378,6 +390,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-15T21:26:51+00:00</dc:date>
+    <dc:date>2016-05-16T21:27:35+00:00</dc:date>
   </channel>
 </rss>
