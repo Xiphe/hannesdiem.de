@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Tue, 17 May 2016 21:30:56 +0000</pubDate>
+    <pubDate>Thu, 19 May 2016 22:48:06 +0000</pubDate>
+    <item>
+      <title>Tagesform 28 - Das Bus Experiment Teil 1</title>
+      <link>http://diem-musik.de/tagesform-28/</link>
+      <description>Wie kann ich die Welt ein bisschen besser machen indem ich
+nicht mitdenkenden Menschen auf den Schlips trete?
+
+
+</description>
+      <pubDate>Thu, 19 May 2016 22:48:06 +0000</pubDate>
+      <dc:date>2016-05-19T22:48:06+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 27 - Was tun in der Pomodoro-Pause???</title>
       <link>http://diem-musik.de/tagesform-27/</link>
@@ -401,6 +412,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-17T21:30:56+00:00</dc:date>
+    <dc:date>2016-05-19T22:48:06+00:00</dc:date>
   </channel>
 </rss>

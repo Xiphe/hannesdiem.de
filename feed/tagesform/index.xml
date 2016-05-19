@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Tue, 17 May 2016 19:41:47 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 19 May 2016 20:58:33 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 28 - Das Bus Experiment Teil 1</title>
+			<link>http://diem-musik.de/tagesform-28/</link>
+			<guid>http://diem-musik.de/tagesform-28</guid>
+			<pubDate>Thu, 19 May 2016 22:48:06 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-28/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Wie kann ich die Welt ein bisschen besser machen indem ich nicht mitdenkenden Menschen auf den Schlips trete?</description>
+			<content:encoded><![CDATA[<p>Wie kann ich die Welt ein bisschen besser machen indem ich
+nicht mitdenkenden Menschen auf den Schlips trete?</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_28.mp3" length="11957732" type="audio/mpeg" />
+			<itunes:subtitle>Wie kann ich die Welt ein bisschen besser machen indem ich nicht mitdenkenden Menschen auf den Schlips trete?</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Wie kann ich die Welt ein bisschen besser machen indem ich
+nicht mitdenkenden Menschen auf den Schlips trete?</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:09:28</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 27 - Was tun in der Pomodoro-Pause???</title>
 			<link>http://diem-musik.de/tagesform-27/</link>

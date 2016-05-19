@@ -12,6 +12,19 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 28 - Das Bus Experiment Teil 1</title>
+	  <link>//tagesform-28/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-19T22:48:06+00:00</pubDate>
+	  <guid>//tagesform-28/</guid>
+	  <description><![CDATA[
+	     <p>Wie kann ich die Welt ein bisschen besser machen indem ich
+nicht mitdenkenden Menschen auf den Schlips trete?</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 27 - Was tun in der Pomodoro-Pause???</title>
 	  <link>//tagesform-27/</link>
 	  <author>Casper McFadden</author>
@@ -145,27 +158,6 @@ Außerdem ist Morgen Muttertag :)</p>
 <p>...</p>
 
 <p>penner</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 18 - Love and Peace</title>
-	  <link>//tagesform-18/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-05-04T22:49:32+00:00</pubDate>
-	  <guid>//tagesform-18/</guid>
-	  <description><![CDATA[
-	     <p>Ein Statement zur Liebe und zum Frieden.</p>
-
-<!-- more -->
-
-<p>Mit Annekdoten, wie ich mal mit Nazis Bier getrunken
-und eine Gruppe Menschen verachtet habe.</p>
-
-<p>Ausgelößt von <a href="https://www.youtube.com/watch?v=BNLhT5hZaV8">Kübra Gümüşay: Organisierte Liebe</a></p>
-
-<p><a href="https://github.com/love-and-peace/love-and-peace/blob/master/versions/karma/v1.0-karma1/de.md"><img src="http://love-and-peace.github.io/love-and-peace/badges/karma/v1.0-karma1.svg" alt="Love and Peace"></a></p>
 
 	  ]]></description>
 	</item>
