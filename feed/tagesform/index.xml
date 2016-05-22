@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sat, 21 May 2016 15:57:54 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 22 May 2016 23:25:51 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,33 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 30 - Ich bin, also kann ich mich ändern</title>
+			<link>http://diem-musik.de/tagesform-30/</link>
+			<guid>http://diem-musik.de/tagesform-30</guid>
+			<pubDate>Sun, 22 May 2016 21:13:54 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-30/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Heute spreche ich darüber warum ich Sätze wie &quot;Ich bin ein Mensch der ...&quot; nicht mag, und welche Chancen trozdem darin stecken. Inspiriert von How to Optimize Creative Output — Jarvis versus Ferriss...</description>
+			<content:encoded><![CDATA[<p>Heute spreche ich darüber warum ich Sätze wie &quot;Ich bin ein Mensch der ...&quot; 
+nicht mag, und welche Chancen trozdem darin stecken.</p>
+
+<!-- more -->
+
+<p>Inspiriert von <a href="http://fourhourworkweek.com/2016/05/13/how-to-optimize-creative-output-jarvis-versus-ferriss/">How to Optimize Creative Output — Jarvis versus Ferriss</a></p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_30.mp3" length="8795210" type="audio/mpeg" />
+			<itunes:subtitle>Heute spreche ich darüber warum ich Sätze wie &quot;Ich bin ein Mensch der ...&quot; nicht mag, und welche Chancen trozdem darin stecken.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Heute spreche ich darüber warum ich Sätze wie &quot;Ich bin ein Mensch der ...&quot; 
+nicht mag, und welche Chancen trozdem darin stecken.</p>
+
+<!-- more -->
+
+<p>Inspiriert von <a href="http://fourhourworkweek.com/2016/05/13/how-to-optimize-creative-output-jarvis-versus-ferriss/">How to Optimize Creative Output — Jarvis versus Ferriss</a></p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:06:58</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 29 - Pfand gehört in die Beweismitteltüte</title>
 			<link>http://diem-musik.de/tagesform-29/</link>
