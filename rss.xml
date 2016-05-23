@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sun, 22 May 2016 21:13:54 +0000</pubDate>
+    <pubDate>Mon, 23 May 2016 21:18:17 +0000</pubDate>
+    <item>
+      <title>Tagesform 31 - Ich gehe also denk ich</title>
+      <link>http://diem-musik.de/tagesform-31/</link>
+      <description>Zu Fuß gehen ist Teil meines kreativen Prozesses und 
+hilft auch bei schlechter Laune :)
+
+
+</description>
+      <pubDate>Mon, 23 May 2016 21:18:17 +0000</pubDate>
+      <dc:date>2016-05-23T21:18:17+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 30 - Ich bin, also kann ich mich ändern</title>
       <link>http://diem-musik.de/tagesform-30/</link>
@@ -433,6 +444,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-22T21:13:54+00:00</dc:date>
+    <dc:date>2016-05-23T21:18:17+00:00</dc:date>
   </channel>
 </rss>

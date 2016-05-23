@@ -12,6 +12,19 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 31 - Ich gehe also denk ich</title>
+	  <link>//tagesform-31/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-23T21:18:17+00:00</pubDate>
+	  <guid>//tagesform-31/</guid>
+	  <description><![CDATA[
+	     <p>Zu Fuß gehen ist Teil meines kreativen Prozesses und 
+hilft auch bei schlechter Laune :)</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 30 - Ich bin, also kann ich mich ändern</title>
 	  <link>//tagesform-30/</link>
 	  <author>Casper McFadden</author>
@@ -141,21 +154,6 @@ Vorliebe für Synthesizer und moderne Sprache.</p>
 <!-- more -->
 
 <p>Hier ist noch das <a href="https://www.youtube.com/watch?v=b1-uTKl0Rqs">Video der ersten Songwriting Session von Feuer und Vergessen</a>.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 21 - Selbstverständlichkeiten</title>
-	  <link>//tagesform-21/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-05-08T20:30:45+00:00</pubDate>
-	  <guid>//tagesform-21/</guid>
-	  <description><![CDATA[
-	     <p>Nach ausgesprochen anregenden Gesprächen mit Mutter und Bruder
-spreche ich über die Kraft des Einfachen und die folgende These:
-&quot;In der Zeit, in der man eine Tätigkeit ausübt wird man zwangsläufig
-schneller oder besser darin.&quot;</p>
 
 	  ]]></description>
 	</item>
