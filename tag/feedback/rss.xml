@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 32 - Bitte um Feedback</title>
+	  <link>//tagesform-32/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-24T21:14:15+00:00</pubDate>
+	  <guid>//tagesform-32/</guid>
+	  <description><![CDATA[
+	     <p>Was müsste ich tun damit euch dieses Format einen
+Euro im Monat wert ist?</p>
+
+<p>Ich freue mich über Feedback an <a href="mailto:tagesform@diem-musik.de">tagesform@diem-musik.de</a> oder in die Kommentare.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

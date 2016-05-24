@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Mon, 23 May 2016 21:18:17 +0000</pubDate>
+    <pubDate>Tue, 24 May 2016 21:14:15 +0000</pubDate>
+    <item>
+      <title>Tagesform 32 - Bitte um Feedback</title>
+      <link>http://diem-musik.de/tagesform-32/</link>
+      <description>Was müsste ich tun damit euch dieses Format einen
+Euro im Monat wert ist?
+
+</description>
+      <pubDate>Tue, 24 May 2016 21:14:15 +0000</pubDate>
+      <dc:date>2016-05-24T21:14:15+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 31 - Ich gehe also denk ich</title>
       <link>http://diem-musik.de/tagesform-31/</link>
@@ -444,6 +454,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-23T21:18:17+00:00</dc:date>
+    <dc:date>2016-05-24T21:14:15+00:00</dc:date>
   </channel>
 </rss>
