@@ -12,6 +12,19 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 33 - Ich hätte also könnt ich</title>
+	  <link>//tagesform-33/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-25T21:01:00+00:00</pubDate>
+	  <guid>//tagesform-33/</guid>
+	  <description><![CDATA[
+	     <p>Eine Liste von Dingen, die ich eventuell tun könnte
+wenn sie euch wichtig wären ;)</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 32 - Bitte um Feedback</title>
 	  <link>//tagesform-32/</link>
 	  <author>Casper McFadden</author>
@@ -136,21 +149,6 @@ und damit verbunden das verantwortlich machen von Verantwortlichen
 für &quot;falsche&quot; Konsequenzen zu Befindlichkeiten.</p>
 
 <p>Außerdem hatte ich 6 Bier</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 23 - Zehntausend Ideen</title>
-	  <link>//tagesform-23/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-05-11T21:20:26+00:00</pubDate>
-	  <guid>//tagesform-23/</guid>
-	  <description><![CDATA[
-	     <p>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne
-webseite gebaut: http://zehntausend.xiphe.net/<br>
-Heute spreche ich darüber warum ich das immer noch für nen 
-interessanten Plan halte.</p>
 
 	  ]]></description>
 	</item>

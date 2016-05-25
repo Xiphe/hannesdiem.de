@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Tue, 24 May 2016 20:46:16 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 25 May 2016 22:07:50 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 33 - Ich hätte also könnt ich</title>
+			<link>http://diem-musik.de/tagesform-33/</link>
+			<guid>http://diem-musik.de/tagesform-33</guid>
+			<pubDate>Wed, 25 May 2016 21:01:00 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-33/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Eine Liste von Dingen, die ich eventuell tun könnte wenn sie euch wichtig wären ;)</description>
+			<content:encoded><![CDATA[<p>Eine Liste von Dingen, die ich eventuell tun könnte
+wenn sie euch wichtig wären ;)</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_33.mp3" length="18972940" type="audio/mpeg" />
+			<itunes:subtitle>Eine Liste von Dingen, die ich eventuell tun könnte wenn sie euch wichtig wären ;)</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Eine Liste von Dingen, die ich eventuell tun könnte
+wenn sie euch wichtig wären ;)</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:15:02</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 32 - Bitte um Feedback</title>
 			<link>http://diem-musik.de/tagesform-32/</link>
