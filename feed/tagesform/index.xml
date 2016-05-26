@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Wed, 25 May 2016 22:07:50 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 26 May 2016 22:13:36 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,27 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 34 - Kreativität in der Band</title>
+			<link>http://diem-musik.de/tagesform-34/</link>
+			<guid>http://diem-musik.de/tagesform-34</guid>
+			<pubDate>Thu, 26 May 2016 21:03:23 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-34/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers erzähle ich wie der kreative Prozess innerhalb meiner Bands so abläuft und worauf man als Bandleader achten sollte.</description>
+			<content:encoded><![CDATA[<p>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers
+erzähle ich wie der kreative Prozess innerhalb meiner 
+Bands so abläuft und worauf man als Bandleader achten sollte.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_34.mp3" length="16077006" type="audio/mpeg" />
+			<itunes:subtitle>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers erzähle ich wie der kreative Prozess innerhalb meiner Bands so abläuft und worauf man als Bandleader achten sollte.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers
+erzähle ich wie der kreative Prozess innerhalb meiner 
+Bands so abläuft und worauf man als Bandleader achten sollte.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:12:44</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 33 - Ich hätte also könnt ich</title>
 			<link>http://diem-musik.de/tagesform-33/</link>
