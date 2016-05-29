@@ -8,7 +8,20 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Thu, 26 May 2016 21:03:23 +0000</pubDate>
+    <pubDate>Sat, 28 May 2016 21:53:30 +0000</pubDate>
+    <item>
+      <title>Tagesform 35 - (Band) Retrospektiven</title>
+      <link>http://diem-musik.de/tagesform-35/</link>
+      <description>Nach einem Wunderbaren Gig mit [Absolem Max](http://absolem-max.com),
+El Rey &amp; The Twisters und [UEBERTRIBE](http://www.uebertribe.de/), 
+rede ich darüber was Retrospektiven für mich sind und dass man
+sie auch gerne häufiger im Privaten einsetzen sollte.
+
+
+</description>
+      <pubDate>Sat, 28 May 2016 21:53:30 +0000</pubDate>
+      <dc:date>2016-05-28T21:53:30+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 34 - Kreativität in der Band</title>
       <link>http://diem-musik.de/tagesform-34/</link>
@@ -475,6 +488,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-05-26T21:03:23+00:00</dc:date>
+    <dc:date>2016-05-28T21:53:30+00:00</dc:date>
   </channel>
 </rss>
