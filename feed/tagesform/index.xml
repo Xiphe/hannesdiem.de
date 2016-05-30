@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 29 May 2016 00:03:43 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 30 May 2016 16:06:31 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -46,7 +46,7 @@ El Rey &amp; The Twisters und <a href="http://www.uebertribe.de/">UEBERTRIBE</a>
 rede ich darüber was Retrospektiven für mich sind und dass man
 sie auch gerne häufiger im Privaten einsetzen sollte.</p>
 ]]></content:encoded>
-			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_35.mp3" length="" type="audio/mpeg" />
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_35.mp3" length="19696506" type="audio/mpeg" />
 			<itunes:subtitle>Nach einem Wunderbaren Gig mit Absolem Max, El Rey &amp; The Twisters und UEBERTRIBE, rede ich darüber was Retrospektiven für mich sind und dass man sie auch gerne häufiger im Privaten einsetzen sollte.</itunes:subtitle>
 			<itunes:summary><![CDATA[<p>Nach einem Wunderbaren Gig mit <a href="http://absolem-max.com">Absolem Max</a>,
 El Rey &amp; The Twisters und <a href="http://www.uebertribe.de/">UEBERTRIBE</a>, 
@@ -54,7 +54,7 @@ rede ich darüber was Retrospektiven für mich sind und dass man
 sie auch gerne häufiger im Privaten einsetzen sollte.</p>
 ]]></itunes:summary>
 			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
-			<itunes:duration>00:00:00</itunes:duration>
+			<itunes:duration>00:15:37</itunes:duration>
 		</item>
 		<item>
 			<title>Tagesform 34 - Kreativität in der Band</title>
