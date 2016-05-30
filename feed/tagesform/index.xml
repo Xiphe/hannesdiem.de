@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Mon, 30 May 2016 16:06:31 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 30 May 2016 21:05:11 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,46 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 37 - Risse in der Seele</title>
+			<link>http://diem-musik.de/tagesform-37/</link>
+			<guid>http://diem-musik.de/tagesform-37</guid>
+			<pubDate>Mon, 30 May 2016 21:56:11 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-37/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Wenn ich zu spät losgehe ist es oft unvermeidbar, dass ich zu spät ankomme.</description>
+			<content:encoded><![CDATA[<p>Wenn ich zu spät losgehe ist es oft unvermeidbar, 
+dass ich zu spät ankomme.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_37.mp3" length="19011874" type="audio/mpeg" />
+			<itunes:subtitle>Wenn ich zu spät losgehe ist es oft unvermeidbar, dass ich zu spät ankomme.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Wenn ich zu spät losgehe ist es oft unvermeidbar, 
+dass ich zu spät ankomme.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:15:04</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 36 - Band T-Shirt Börse</title>
+			<link>http://diem-musik.de/tagesform-36/</link>
+			<guid>http://diem-musik.de/tagesform-36</guid>
+			<pubDate>Sun, 29 May 2016 21:51:35 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-36/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Eine frische Idee wie wir Bands und Kleinkünstler für einander werben könnten. Aufgenommen auf dem beschwerlichen Fußmarsch von Barmbek nach Winterhude.</description>
+			<content:encoded><![CDATA[<p>Eine frische Idee wie wir Bands und Kleinkünstler 
+für einander werben könnten. Aufgenommen auf dem 
+beschwerlichen Fußmarsch von Barmbek nach Winterhude.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_36.mp3" length="11335102" type="audio/mpeg" />
+			<itunes:subtitle>Eine frische Idee wie wir Bands und Kleinkünstler für einander werben könnten. Aufgenommen auf dem beschwerlichen Fußmarsch von Barmbek nach Winterhude.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Eine frische Idee wie wir Bands und Kleinkünstler 
+für einander werben könnten. Aufgenommen auf dem 
+beschwerlichen Fußmarsch von Barmbek nach Winterhude.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:08:59</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 35 - (Band) Retrospektiven</title>
 			<link>http://diem-musik.de/tagesform-35/</link>

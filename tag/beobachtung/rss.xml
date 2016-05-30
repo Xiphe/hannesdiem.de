@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 37 - Risse in der Seele</title>
+	  <link>//tagesform-37/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-30T21:56:11+00:00</pubDate>
+	  <guid>//tagesform-37/</guid>
+	  <description><![CDATA[
+	     <p>Wenn ich zu spät losgehe ist es oft unvermeidbar, 
+dass ich zu spät ankomme.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
