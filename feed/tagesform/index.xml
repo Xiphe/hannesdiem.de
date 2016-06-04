@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Wed, 01 Jun 2016 21:50:28 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 04 Jun 2016 22:55:42 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 40 - Bewegung auf der Bühne</title>
+			<link>http://diem-musik.de/tagesform-40/</link>
+			<guid>http://diem-musik.de/tagesform-40</guid>
+			<pubDate>Sat, 04 Jun 2016 21:49:11 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-40/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>These: Bewegung auf der Bühne sieht nicht nur besser aus, sondern klingt auch besser.</description>
+			<content:encoded><![CDATA[<p>These: Bewegung auf der Bühne sieht nicht nur
+besser aus, sondern klingt auch besser.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_40.mp3" length="13004982" type="audio/mpeg" />
+			<itunes:subtitle>These: Bewegung auf der Bühne sieht nicht nur besser aus, sondern klingt auch besser.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>These: Bewegung auf der Bühne sieht nicht nur
+besser aus, sondern klingt auch besser.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:10:18</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 39 - Viel nichts und dann Routinen 2</title>
 			<link>http://diem-musik.de/tagesform-39/</link>
