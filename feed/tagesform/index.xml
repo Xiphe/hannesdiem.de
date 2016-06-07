@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sat, 04 Jun 2016 22:55:42 +0000</lastBuildDate>
+		<lastBuildDate>Tue, 07 Jun 2016 22:03:21 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 41 - Ich schlafe also sag ich nein</title>
+			<link>http://diem-musik.de/tagesform-41/</link>
+			<guid>http://diem-musik.de/tagesform-41</guid>
+			<pubDate>Tue, 07 Jun 2016 23:53:12 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-41/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ein paar Minuten darüber dass mehr schlafen ganz gut ist aber die Nicht-Schlaf-Zeit dadurch wertvoller ist.</description>
+			<content:encoded><![CDATA[<p>Ein paar Minuten darüber dass mehr schlafen ganz gut ist
+aber die Nicht-Schlaf-Zeit dadurch wertvoller ist.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_41.mp3" length="10126584" type="audio/mpeg" />
+			<itunes:subtitle>Ein paar Minuten darüber dass mehr schlafen ganz gut ist aber die Nicht-Schlaf-Zeit dadurch wertvoller ist.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ein paar Minuten darüber dass mehr schlafen ganz gut ist
+aber die Nicht-Schlaf-Zeit dadurch wertvoller ist.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:08:01</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 40 - Bewegung auf der Bühne</title>
 			<link>http://diem-musik.de/tagesform-40/</link>

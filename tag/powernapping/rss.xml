@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 38 - Reich und Berühmt durch verstärktes Dösen</title>
+	  <link>//tagesform-38/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-31T21:22:54+00:00</pubDate>
+	  <guid>//tagesform-38/</guid>
+	  <description><![CDATA[
+	     <p>Nachdem ich heute zwei mal 20 minuten mit &quot;powernapping&quot;
+verbracht hab, rede ich mir die Situation schön indem ich 
+behaupte: &quot;Es macht alles viel besser!&quot;</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
