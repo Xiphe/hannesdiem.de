@@ -12,6 +12,18 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 42 - Pair-Producing</title>
+	  <link>//tagesform-42/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-08T21:04:50+00:00</pubDate>
+	  <guid>//tagesform-42/</guid>
+	  <description><![CDATA[
+	     <p>Mit Ohrenschmerzen über Pairing und Meditation</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 41 - Ich schlafe also sag ich nein</title>
 	  <link>//tagesform-41/</link>
 	  <author>Casper McFadden</author>
@@ -130,21 +142,6 @@ Bands so abläuft und worauf man als Bandleader achten sollte.</p>
 	  <description><![CDATA[
 	     <p>Eine Liste von Dingen, die ich eventuell tun könnte
 wenn sie euch wichtig wären ;)</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 32 - Bitte um Feedback</title>
-	  <link>//tagesform-32/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-05-24T21:14:15+00:00</pubDate>
-	  <guid>//tagesform-32/</guid>
-	  <description><![CDATA[
-	     <p>Was müsste ich tun damit euch dieses Format einen
-Euro im Monat wert ist?</p>
-
-<p>Ich freue mich über Feedback an <a href="mailto:tagesform@diem-musik.de">tagesform@diem-musik.de</a> oder in die Kommentare.</p>
 
 	  ]]></description>
 	</item>
