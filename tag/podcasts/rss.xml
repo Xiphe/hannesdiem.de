@@ -12,6 +12,21 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 43 - Stille</title>
+	  <link>//tagesform-43/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-10T15:55:49+00:00</pubDate>
+	  <guid>//tagesform-43/</guid>
+	  <description><![CDATA[
+	     <p>Nach der Lektüre von &quot;<a href="https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3#.ct4rnuwku">How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist</a>&quot;
+habe ich (fast) all meinen Programmen verboten mir Benachrichtigungen zu schicken.</p>
+
+<p>Heute erzähl ich von den Gedanken dahinter.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 42 - Pair-Producing</title>
 	  <link>//tagesform-42/</link>
 	  <author>Casper McFadden</author>
@@ -129,19 +144,6 @@ sie auch gerne häufiger im Privaten einsetzen sollte.</p>
 	     <p>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers
 erzähle ich wie der kreative Prozess innerhalb meiner 
 Bands so abläuft und worauf man als Bandleader achten sollte.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 33 - Ich hätte also könnt ich</title>
-	  <link>//tagesform-33/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-05-25T21:01:00+00:00</pubDate>
-	  <guid>//tagesform-33/</guid>
-	  <description><![CDATA[
-	     <p>Eine Liste von Dingen, die ich eventuell tun könnte
-wenn sie euch wichtig wären ;)</p>
 
 	  ]]></description>
 	</item>
