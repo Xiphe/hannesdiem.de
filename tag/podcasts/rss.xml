@@ -12,6 +12,19 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 44 - 2048 oder "Der Sinn des Lebens"</title>
+	  <link>//tagesform-44/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-11T21:23:45+00:00</pubDate>
+	  <guid>//tagesform-44/</guid>
+	  <description><![CDATA[
+	     <p>Ich erkläre euch anhand des Spieles <a href="https://gabrielecirulli.github.io/2048/">2048</a> den Sinn des Lebens.
+Viel Spaß.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 43 - Stille</title>
 	  <link>//tagesform-43/</link>
 	  <author>Casper McFadden</author>
@@ -130,20 +143,6 @@ beschwerlichen Fußmarsch von Barmbek nach Winterhude.</p>
 El Rey &amp; The Twisters und <a href="http://www.uebertribe.de/">UEBERTRIBE</a>, 
 rede ich darüber was Retrospektiven für mich sind und dass man
 sie auch gerne häufiger im Privaten einsetzen sollte.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 34 - Kreativität in der Band</title>
-	  <link>//tagesform-34/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-05-26T21:03:23+00:00</pubDate>
-	  <guid>//tagesform-34/</guid>
-	  <description><![CDATA[
-	     <p>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers
-erzähle ich wie der kreative Prozess innerhalb meiner 
-Bands so abläuft und worauf man als Bandleader achten sollte.</p>
 
 	  ]]></description>
 	</item>
