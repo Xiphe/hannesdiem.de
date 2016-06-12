@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sat, 11 Jun 2016 19:31:24 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 12 Jun 2016 19:31:22 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -44,13 +44,13 @@
 			<content:encoded><![CDATA[<p>Ich erkläre euch anhand des Spieles <a href="https://gabrielecirulli.github.io/2048/">2048</a> den Sinn des Lebens.
 Viel Spaß.</p>
 ]]></content:encoded>
-			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_44.mp3" length="6334856" type="audio/mpeg" />
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_44.mp3" length="11453052" type="audio/mpeg" />
 			<itunes:subtitle>Ich erkläre euch anhand des Spieles 2048 den Sinn des Lebens. Viel Spaß.</itunes:subtitle>
 			<itunes:summary><![CDATA[<p>Ich erkläre euch anhand des Spieles <a href="https://gabrielecirulli.github.io/2048/">2048</a> den Sinn des Lebens.
 Viel Spaß.</p>
 ]]></itunes:summary>
 			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
-			<itunes:duration>00:05:01</itunes:duration>
+			<itunes:duration>00:09:04</itunes:duration>
 		</item>
 		<item>
 			<title>Tagesform 43 - Stille</title>
