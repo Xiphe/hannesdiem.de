@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Mon, 13 Jun 2016 14:13:14 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 15 Jun 2016 22:36:46 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 45 - Fremdverschuldet Reich werden</title>
+			<link>http://diem-musik.de/tagesform-45/</link>
+			<guid>http://diem-musik.de/tagesform-45</guid>
+			<pubDate>Thu, 16 Jun 2016 00:29:42 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-45/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten und den Restaurants anderer, richtig Kohle machen kann.</description>
+			<content:encoded><![CDATA[<p>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten
+und den Restaurants anderer, richtig Kohle machen kann.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_45.mp3" length="7633872" type="audio/mpeg" />
+			<itunes:subtitle>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten und den Restaurants anderer, richtig Kohle machen kann.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten
+und den Restaurants anderer, richtig Kohle machen kann.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:06:03</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 44 - 2048 oder "Der Sinn des Lebens"</title>
 			<link>http://diem-musik.de/tagesform-44/</link>

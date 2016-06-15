@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 11 Jun 2016 21:23:45 +0000</pubDate>
+    <pubDate>Thu, 16 Jun 2016 00:29:42 +0000</pubDate>
+    <item>
+      <title>Tagesform 45 - Fremdverschuldet Reich werden</title>
+      <link>http://diem-musik.de/tagesform-45/</link>
+      <description>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten
+und den Restaurants anderer, richtig Kohle machen kann.
+
+
+</description>
+      <pubDate>Thu, 16 Jun 2016 00:29:42 +0000</pubDate>
+      <dc:date>2016-06-16T00:29:42+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 44 - 2048 oder &quot;Der Sinn des Lebens&quot;</title>
       <link>http://diem-musik.de/tagesform-44/</link>
@@ -588,6 +599,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-06-11T21:23:45+00:00</dc:date>
+    <dc:date>2016-06-16T00:29:42+00:00</dc:date>
   </channel>
 </rss>
