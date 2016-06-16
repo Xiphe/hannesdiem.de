@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Thu, 16 Jun 2016 00:29:42 +0000</pubDate>
+    <pubDate>Thu, 16 Jun 2016 21:58:12 +0000</pubDate>
+    <item>
+      <title>Tagesform 46 - Lachen und Lächeln 1</title>
+      <link>http://diem-musik.de/tagesform-46/</link>
+      <description>Gut gelaunt spreche ich lachend und lächelnd übers Lachen und Lächeln.
+Hab ich schon Lachen und Lächeln gesagt? 
+
+
+</description>
+      <pubDate>Thu, 16 Jun 2016 21:58:12 +0000</pubDate>
+      <dc:date>2016-06-16T21:58:12+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 45 - Fremdverschuldet Reich werden</title>
       <link>http://diem-musik.de/tagesform-45/</link>
@@ -599,6 +610,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-06-16T00:29:42+00:00</dc:date>
+    <dc:date>2016-06-16T21:58:12+00:00</dc:date>
   </channel>
 </rss>
