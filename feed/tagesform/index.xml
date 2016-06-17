@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Thu, 16 Jun 2016 21:04:04 +0000</lastBuildDate>
+		<lastBuildDate>Fri, 17 Jun 2016 21:56:13 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,24 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 47 - Achterbahnen, Regen und Nebel</title>
+			<link>http://diem-musik.de/tagesform-47/</link>
+			<guid>http://diem-musik.de/tagesform-47</guid>
+			<pubDate>Fri, 17 Jun 2016 21:48:08 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Heute war ich Achterbahn fahren und hab ne potentielle Strophe für nen Track von anti.held zu zeigen.</description>
+			<content:encoded><![CDATA[<p>Heute war ich Achterbahn fahren und hab ne potentielle
+Strophe für nen Track von <a href="https://www.facebook.com/antiheldmusic/">anti.held</a> zu zeigen.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_47.mp3" length="11051500" type="audio/mpeg" />
+			<itunes:subtitle>Heute war ich Achterbahn fahren und hab ne potentielle Strophe für nen Track von anti.held zu zeigen.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Heute war ich Achterbahn fahren und hab ne potentielle
+Strophe für nen Track von <a href="https://www.facebook.com/antiheldmusic/">anti.held</a> zu zeigen.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:08:45</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 46 - Lachen und Lächeln 1</title>
 			<link>http://diem-musik.de/tagesform-46/</link>

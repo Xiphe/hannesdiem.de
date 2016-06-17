@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 47 - Achterbahnen, Regen und Nebel</title>
+	  <link>//tagesform-47/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-17T21:48:08+00:00</pubDate>
+	  <guid>//tagesform-47/</guid>
+	  <description><![CDATA[
+	     <p>Heute war ich Achterbahn fahren und hab ne potentielle
+Strophe für nen Track von <a href="https://www.facebook.com/antiheldmusic/">anti.held</a> zu zeigen.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
