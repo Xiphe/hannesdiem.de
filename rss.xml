@@ -8,7 +8,19 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Fri, 17 Jun 2016 21:48:08 +0000</pubDate>
+    <pubDate>Sat, 18 Jun 2016 21:44:07 +0000</pubDate>
+    <item>
+      <title>Tagesform 48 - Das Kuchenmodell</title>
+      <link>http://diem-musik.de/tagesform-48/</link>
+      <description>Die liebe July von [Federkiel Fotografie](http://federkiel-fotografie.de/)
+hat mir beigebracht wie ich weniger Zeit mit &quot;kannst du mir mal kurz helfen&quot;-
+Gefallen verbringe. Das gute ist: Alle gewinnen!
+
+
+</description>
+      <pubDate>Sat, 18 Jun 2016 21:44:07 +0000</pubDate>
+      <dc:date>2016-06-18T21:44:07+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 47 - Achterbahnen, Regen und Nebel</title>
       <link>http://diem-musik.de/tagesform-47/</link>
@@ -621,6 +633,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-06-17T21:48:08+00:00</dc:date>
+    <dc:date>2016-06-18T21:44:07+00:00</dc:date>
   </channel>
 </rss>

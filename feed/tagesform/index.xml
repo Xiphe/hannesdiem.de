@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Fri, 17 Jun 2016 21:56:13 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 18 Jun 2016 20:59:27 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -34,10 +34,32 @@
 		<itunes:explicit>No</itunes:explicit>
 		
 		<item>
+			<title>Tagesform 48 - Das Kuchenmodell</title>
+			<link>http://diem-musik.de/tagesform-48/</link>
+			<guid>http://diem-musik.de/tagesform-48</guid>
+			<pubDate>Sat, 18 Jun 2016 21:44:07 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-48/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Die liebe July von Federkiel Fotografie hat mir beigebracht wie ich weniger Zeit mit &quot;kannst du mir mal kurz helfen&quot;- Gefallen verbringe. Das gute ist: Alle gewinnen!</description>
+			<content:encoded><![CDATA[<p>Die liebe July von <a href="http://federkiel-fotografie.de/">Federkiel Fotografie</a>
+hat mir beigebracht wie ich weniger Zeit mit &quot;kannst du mir mal kurz helfen&quot;-
+Gefallen verbringe. Das gute ist: Alle gewinnen!</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_48.mp3" length="15080276" type="audio/mpeg" />
+			<itunes:subtitle>Die liebe July von Federkiel Fotografie hat mir beigebracht wie ich weniger Zeit mit &quot;kannst du mir mal kurz helfen&quot;- Gefallen verbringe. Das gute ist: Alle gewinnen!</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Die liebe July von <a href="http://federkiel-fotografie.de/">Federkiel Fotografie</a>
+hat mir beigebracht wie ich weniger Zeit mit &quot;kannst du mir mal kurz helfen&quot;-
+Gefallen verbringe. Das gute ist: Alle gewinnen!</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:11:57</itunes:duration>
+		</item>
+		<item>
 			<title>Tagesform 47 - Achterbahnen, Regen und Nebel</title>
 			<link>http://diem-musik.de/tagesform-47/</link>
 			<guid>http://diem-musik.de/tagesform-47</guid>
 			<pubDate>Fri, 17 Jun 2016 21:48:08 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-47/#disqus_thread</comments>
 			<itunes:explicit>No</itunes:explicit>
 			<description>Heute war ich Achterbahn fahren und hab ne potentielle Strophe für nen Track von anti.held zu zeigen.</description>
 			<content:encoded><![CDATA[<p>Heute war ich Achterbahn fahren und hab ne potentielle
