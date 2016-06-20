@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sat, 18 Jun 2016 20:59:27 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 20 Jun 2016 22:14:58 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 49 - FaceBook ausschalten?</title>
+			<link>http://diem-musik.de/tagesform-49/</link>
+			<guid>http://diem-musik.de/tagesform-49</guid>
+			<pubDate>Mon, 20 Jun 2016 21:07:40 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-49/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>An diesem verregneten Montag Abend sinniere ich darüber ob ich nicht einfach mal mit FaceBook aufhören sollte.</description>
+			<content:encoded><![CDATA[<p>An diesem verregneten Montag Abend sinniere ich darüber
+ob ich nicht einfach mal mit FaceBook aufhören sollte.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_49.mp3" length="19547764" type="audio/mpeg" />
+			<itunes:subtitle>An diesem verregneten Montag Abend sinniere ich darüber ob ich nicht einfach mal mit FaceBook aufhören sollte.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>An diesem verregneten Montag Abend sinniere ich darüber
+ob ich nicht einfach mal mit FaceBook aufhören sollte.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:15:29</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 48 - Das Kuchenmodell</title>
 			<link>http://diem-musik.de/tagesform-48/</link>
