@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Mon, 20 Jun 2016 22:14:58 +0000</lastBuildDate>
+		<lastBuildDate>Tue, 21 Jun 2016 22:24:56 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,27 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 50 - Lächeln und Winken</title>
+			<link>http://diem-musik.de/tagesform-50/</link>
+			<guid>http://diem-musik.de/tagesform-50</guid>
+			<pubDate>Tue, 21 Jun 2016 21:15:31 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-50/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Die 50 ist keine besondere Zahl, solange man nicht dafür sorgt, Stattdessen gibts Gedanken darüber warum wir evtl. nicht so viel Winken und Lächeln und, dass wir das trozdem tun sollten :)</description>
+			<content:encoded><![CDATA[<p>Die 50 ist keine besondere Zahl, solange man nicht dafür sorgt,
+Stattdessen gibts Gedanken darüber warum wir evtl. nicht so
+viel Winken und Lächeln und, dass wir das trozdem tun sollten :)</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_50.mp3" length="18733700" type="audio/mpeg" />
+			<itunes:subtitle>Die 50 ist keine besondere Zahl, solange man nicht dafür sorgt, Stattdessen gibts Gedanken darüber warum wir evtl. nicht so viel Winken und Lächeln und, dass wir das trozdem tun sollten :)</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Die 50 ist keine besondere Zahl, solange man nicht dafür sorgt,
+Stattdessen gibts Gedanken darüber warum wir evtl. nicht so
+viel Winken und Lächeln und, dass wir das trozdem tun sollten :)</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:14:51</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 49 - FaceBook ausschalten?</title>
 			<link>http://diem-musik.de/tagesform-49/</link>
