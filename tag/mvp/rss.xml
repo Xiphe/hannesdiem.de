@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 51 - houseonahill.de</title>
+	  <link>//tagesform-51/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-22T21:26:10+00:00</pubDate>
+	  <guid>//tagesform-51/</guid>
+	  <description><![CDATA[
+	     <p>Ich erzähle von der <a href="http://houseonahill.de">neuen House on a Hill Webseite</a>
+und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem
+in den hinteren 20% noch ewig hinziehen.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

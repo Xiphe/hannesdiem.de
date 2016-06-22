@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Tue, 21 Jun 2016 22:24:56 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 22 Jun 2016 21:33:36 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,27 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 51 - houseonahill.de</title>
+			<link>http://diem-musik.de/tagesform-51/</link>
+			<guid>http://diem-musik.de/tagesform-51</guid>
+			<pubDate>Wed, 22 Jun 2016 21:26:10 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-51/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich erzähle von der neuen House on a Hill Webseite und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem in den hinteren 20% noch ewig hinziehen.</description>
+			<content:encoded><![CDATA[<p>Ich erzähle von der <a href="http://houseonahill.de">neuen House on a Hill Webseite</a>
+und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem
+in den hinteren 20% noch ewig hinziehen.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_51.mp3" length="14333120" type="audio/mpeg" />
+			<itunes:subtitle>Ich erzähle von der neuen House on a Hill Webseite und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem in den hinteren 20% noch ewig hinziehen.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich erzähle von der <a href="http://houseonahill.de">neuen House on a Hill Webseite</a>
+und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem
+in den hinteren 20% noch ewig hinziehen.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:11:21</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 50 - Lächeln und Winken</title>
 			<link>http://diem-musik.de/tagesform-50/</link>

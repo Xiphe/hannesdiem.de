@@ -12,6 +12,20 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 51 - houseonahill.de</title>
+	  <link>//tagesform-51/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-22T21:26:10+00:00</pubDate>
+	  <guid>//tagesform-51/</guid>
+	  <description><![CDATA[
+	     <p>Ich erzähle von der <a href="http://houseonahill.de">neuen House on a Hill Webseite</a>
+und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem
+in den hinteren 20% noch ewig hinziehen.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 50 - Lächeln und Winken</title>
 	  <link>//tagesform-50/</link>
 	  <author>Casper McFadden</author>
@@ -127,19 +141,6 @@ habe ich (fast) all meinen Programmen verboten mir Benachrichtigungen zu schicke
 	  <guid>//tagesform-42/</guid>
 	  <description><![CDATA[
 	     <p>Mit Ohrenschmerzen über Pairing und Meditation</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 41 - Ich schlafe also sag ich nein</title>
-	  <link>//tagesform-41/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-06-07T23:53:12+00:00</pubDate>
-	  <guid>//tagesform-41/</guid>
-	  <description><![CDATA[
-	     <p>Ein paar Minuten darüber dass mehr schlafen ganz gut ist
-aber die Nicht-Schlaf-Zeit dadurch wertvoller ist.</p>
 
 	  ]]></description>
 	</item>
