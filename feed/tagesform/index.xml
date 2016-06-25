@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Wed, 22 Jun 2016 21:33:36 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 25 Jun 2016 18:02:46 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,55 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 52 - Stand der Dinge (Jun 16)</title>
+			<link>http://diem-musik.de/tagesform-52/</link>
+			<guid>http://diem-musik.de/tagesform-52</guid>
+			<pubDate>Sat, 25 Jun 2016 19:51:28 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-52/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Im grunde beantworte ich in dieser Folge die Frage: &quot;Und sonst so?&quot; Unter anderem mit: Der schönsten Stunde Musik, die ich zuletzt höre: I Forget Where We Were - Ben Howard Dem Werwolf Spiel Diesem Podcast Nichtrauchen Mehr schlafen Powernappen Meditieren...</description>
+			<content:encoded><![CDATA[<p>Im grunde beantworte ich in dieser Folge die Frage:
+&quot;Und sonst so?&quot;</p>
+
+<!-- more -->
+
+<p>Unter anderem mit:</p>
+
+<ul>
+<li>Der schönsten Stunde Musik, die ich zuletzt höre: <a href="https://itunes.apple.com/de/album/i-forget-where-we-were/id911839995">I Forget Where We Were - 
+Ben Howard</a></li>
+<li><a href="https://www.google.de/search?q=werwolf+spiel">Dem Werwolf Spiel</a></li>
+<li>Diesem Podcast</li>
+<li>Nichtrauchen</li>
+<li>Mehr schlafen</li>
+<li>Powernappen</li>
+<li>Meditieren</li>
+</ul>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_52.mp3" length="20390428" type="audio/mpeg" />
+			<itunes:subtitle>Im grunde beantworte ich in dieser Folge die Frage: &quot;Und sonst so?&quot;</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Im grunde beantworte ich in dieser Folge die Frage:
+&quot;Und sonst so?&quot;</p>
+
+<!-- more -->
+
+<p>Unter anderem mit:</p>
+
+<ul>
+<li>Der schönsten Stunde Musik, die ich zuletzt höre: <a href="https://itunes.apple.com/de/album/i-forget-where-we-were/id911839995">I Forget Where We Were - 
+Ben Howard</a></li>
+<li><a href="https://www.google.de/search?q=werwolf+spiel">Dem Werwolf Spiel</a></li>
+<li>Diesem Podcast</li>
+<li>Nichtrauchen</li>
+<li>Mehr schlafen</li>
+<li>Powernappen</li>
+<li>Meditieren</li>
+</ul>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:16:10</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 51 - houseonahill.de</title>
 			<link>http://diem-musik.de/tagesform-51/</link>
