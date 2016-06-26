@@ -12,6 +12,25 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 53 - Projekt-Priorisierung</title>
+	  <link>//tagesform-53/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-26T18:27:00+00:00</pubDate>
+	  <guid>//tagesform-53/</guid>
+	  <description><![CDATA[
+	     <p>Im ersten Teil meiner Serie über Todos verrate ich wie ich
+meine Projekte priorisiere.</p>
+
+<!-- more -->
+
+<p>Ich hab außerdem ein <a href="https://docs.google.com/spreadsheets/d/1x-Apjz45OorKjSbDYojW9GjfnudNJd2KBSYWNPcvUUw/edit?usp=sharing">Google-Spreadsheet</a>
+gebaut, das dieses Modell implementiert.
+(Unter <code>Datei/Eine Kopie erzeugen</code> lässt sich eine Version zum Bearbeiten erstellen)</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 52 - Stand der Dinge (Jun 16)</title>
 	  <link>//tagesform-52/</link>
 	  <author>Casper McFadden</author>
@@ -142,21 +161,6 @@ und den Restaurants anderer, richtig Kohle machen kann.</p>
 	  <description><![CDATA[
 	     <p>Ich erkläre euch anhand des Spieles <a href="https://gabrielecirulli.github.io/2048/">2048</a> den Sinn des Lebens.
 Viel Spaß.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 43 - Stille</title>
-	  <link>//tagesform-43/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-06-10T15:55:49+00:00</pubDate>
-	  <guid>//tagesform-43/</guid>
-	  <description><![CDATA[
-	     <p>Nach der Lektüre von &quot;<a href="https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3#.ct4rnuwku">How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist</a>&quot;
-habe ich (fast) all meinen Programmen verboten mir Benachrichtigungen zu schicken.</p>
-
-<p>Heute erzähl ich von den Gedanken dahinter.</p>
 
 	  ]]></description>
 	</item>

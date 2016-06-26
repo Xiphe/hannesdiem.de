@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sat, 25 Jun 2016 18:02:46 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 26 Jun 2016 22:04:22 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,37 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 53 - Projekt-Priorisierung</title>
+			<link>http://diem-musik.de/tagesform-53/</link>
+			<guid>http://diem-musik.de/tagesform-53</guid>
+			<pubDate>Sun, 26 Jun 2016 18:27:00 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-53/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Im ersten Teil meiner Serie über Todos verrate ich wie ich meine Projekte priorisiere. Ich hab außerdem ein Google-Spreadsheet gebaut, das dieses Modell implementiert. (Unter Datei/Eine Kopie erzeugen lässt sich eine Version zum Bearbeiten erstellen)</description>
+			<content:encoded><![CDATA[<p>Im ersten Teil meiner Serie über Todos verrate ich wie ich
+meine Projekte priorisiere.</p>
+
+<!-- more -->
+
+<p>Ich hab außerdem ein <a href="https://docs.google.com/spreadsheets/d/1x-Apjz45OorKjSbDYojW9GjfnudNJd2KBSYWNPcvUUw/edit?usp=sharing">Google-Spreadsheet</a>
+gebaut, das dieses Modell implementiert.
+(Unter <code>Datei/Eine Kopie erzeugen</code> lässt sich eine Version zum Bearbeiten erstellen)</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_53.mp3" length="13521144" type="audio/mpeg" />
+			<itunes:subtitle>Im ersten Teil meiner Serie über Todos verrate ich wie ich meine Projekte priorisiere.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Im ersten Teil meiner Serie über Todos verrate ich wie ich
+meine Projekte priorisiere.</p>
+
+<!-- more -->
+
+<p>Ich hab außerdem ein <a href="https://docs.google.com/spreadsheets/d/1x-Apjz45OorKjSbDYojW9GjfnudNJd2KBSYWNPcvUUw/edit?usp=sharing">Google-Spreadsheet</a>
+gebaut, das dieses Modell implementiert.
+(Unter <code>Datei/Eine Kopie erzeugen</code> lässt sich eine Version zum Bearbeiten erstellen)</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:10:43</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 52 - Stand der Dinge (Jun 16)</title>
 			<link>http://diem-musik.de/tagesform-52/</link>

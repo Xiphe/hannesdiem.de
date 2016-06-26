@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 25 Jun 2016 19:51:28 +0000</pubDate>
+    <pubDate>Sun, 26 Jun 2016 18:27:00 +0000</pubDate>
+    <item>
+      <title>Tagesform 53 - Projekt-Priorisierung</title>
+      <link>http://diem-musik.de/tagesform-53/</link>
+      <description>Im ersten Teil meiner Serie über Todos verrate ich wie ich
+meine Projekte priorisiere.
+
+</description>
+      <pubDate>Sun, 26 Jun 2016 18:27:00 +0000</pubDate>
+      <dc:date>2016-06-26T18:27:00+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 52 - Stand der Dinge (Jun 16)</title>
       <link>http://diem-musik.de/tagesform-52/</link>
@@ -678,6 +688,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-06-25T19:51:28+00:00</dc:date>
+    <dc:date>2016-06-26T18:27:00+00:00</dc:date>
   </channel>
 </rss>
