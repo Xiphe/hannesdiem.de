@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 54 - Selbstreflexion bei Stress</title>
+	  <link>//tagesform-54/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-27T21:44:53+00:00</pubDate>
+	  <guid>//tagesform-54/</guid>
+	  <description><![CDATA[
+	     <p>Während ich des Nachts durch Hamburg latsche, berichte ich
+von einer Situation, die mich in Stress versetzt hat
+und wie ich damit umgegangen bin.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

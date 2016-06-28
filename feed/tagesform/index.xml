@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 26 Jun 2016 22:05:28 +0000</lastBuildDate>
+		<lastBuildDate>Tue, 28 Jun 2016 21:54:15 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,45 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 55 - 0,27%</title>
+			<link>http://diem-musik.de/tagesform-55/</link>
+			<guid>http://diem-musik.de/tagesform-55</guid>
+			<pubDate>Tue, 28 Jun 2016 21:44:56 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;, sind wir nach einem Jahr doppelt so gut.</description>
+			<content:encoded><![CDATA[<p>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;,
+sind wir nach einem Jahr doppelt so gut.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_55.mp3" length="5542816" type="audio/mpeg" />
+			<itunes:subtitle>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;, sind wir nach einem Jahr doppelt so gut.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;,
+sind wir nach einem Jahr doppelt so gut.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:04:23</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 54 - Selbstreflexion bei Stress</title>
+			<link>http://diem-musik.de/tagesform-54/</link>
+			<guid>http://diem-musik.de/tagesform-54</guid>
+			<pubDate>Mon, 27 Jun 2016 21:44:53 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-54/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Während ich des Nachts durch Hamburg latsche, berichte ich von einer Situation, die mich in Stress versetzt hat und wie ich damit umgegangen bin.</description>
+			<content:encoded><![CDATA[<p>Während ich des Nachts durch Hamburg latsche, berichte ich
+von einer Situation, die mich in Stress versetzt hat
+und wie ich damit umgegangen bin.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_54.mp3" length="14432908" type="audio/mpeg" />
+			<itunes:subtitle>Während ich des Nachts durch Hamburg latsche, berichte ich von einer Situation, die mich in Stress versetzt hat und wie ich damit umgegangen bin.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Während ich des Nachts durch Hamburg latsche, berichte ich
+von einer Situation, die mich in Stress versetzt hat
+und wie ich damit umgegangen bin.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:11:26</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 53 - Projekt-Priorisierung</title>
 			<link>http://diem-musik.de/tagesform-53/</link>

@@ -12,6 +12,33 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 55 - 0,27%</title>
+	  <link>//tagesform-55/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-28T21:44:56+00:00</pubDate>
+	  <guid>//tagesform-55/</guid>
+	  <description><![CDATA[
+	     <p>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;,
+sind wir nach einem Jahr doppelt so gut.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Tagesform 54 - Selbstreflexion bei Stress</title>
+	  <link>//tagesform-54/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-27T21:44:53+00:00</pubDate>
+	  <guid>//tagesform-54/</guid>
+	  <description><![CDATA[
+	     <p>Während ich des Nachts durch Hamburg latsche, berichte ich
+von einer Situation, die mich in Stress versetzt hat
+und wie ich damit umgegangen bin.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 53 - Projekt-Priorisierung</title>
 	  <link>//tagesform-53/</link>
 	  <author>Casper McFadden</author>
@@ -135,32 +162,6 @@ Strophe für nen Track von <a href="https://www.facebook.com/antiheldmusic/">ant
 	  <description><![CDATA[
 	     <p>Gut gelaunt spreche ich lachend und lächelnd übers Lachen und Lächeln.
 Hab ich schon Lachen und Lächeln gesagt? </p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 45 - Fremdverschuldet Reich werden</title>
-	  <link>//tagesform-45/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-06-16T00:29:42+00:00</pubDate>
-	  <guid>//tagesform-45/</guid>
-	  <description><![CDATA[
-	     <p>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten
-und den Restaurants anderer, richtig Kohle machen kann.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 44 - 2048 oder "Der Sinn des Lebens"</title>
-	  <link>//tagesform-44/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-06-11T21:23:45+00:00</pubDate>
-	  <guid>//tagesform-44/</guid>
-	  <description><![CDATA[
-	     <p>Ich erkläre euch anhand des Spieles <a href="https://gabrielecirulli.github.io/2048/">2048</a> den Sinn des Lebens.
-Viel Spaß.</p>
 
 	  ]]></description>
 	</item>
