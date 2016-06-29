@@ -12,6 +12,23 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 56 - ToDos, Reminder und Termine</title>
+	  <link>//tagesform-56/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-06-29T21:57:53+00:00</pubDate>
+	  <guid>//tagesform-56/</guid>
+	  <description><![CDATA[
+	     <p>Aufbauend auf der Folge 53 über Projekt-Priorisierung gebe ich Einblicke
+darüber wie ich meine ToDos verwalte und was überhaupt ToDos sind.</p>
+
+<!-- more -->
+
+<p>Teil 1 aus der Serie über ToDos: <a href="http://diem-musik.de/tagesform-53/">Tagesform 53 - Projekt-Priorisierung</a></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 53 - Projekt-Priorisierung</title>
 	  <link>//tagesform-53/</link>
 	  <author>Casper McFadden</author>

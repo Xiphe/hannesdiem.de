@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Tue, 28 Jun 2016 21:44:56 +0000</pubDate>
+    <pubDate>Wed, 29 Jun 2016 21:57:53 +0000</pubDate>
+    <item>
+      <title>Tagesform 56 - ToDos, Reminder und Termine</title>
+      <link>http://diem-musik.de/tagesform-56/</link>
+      <description>Aufbauend auf der Folge 53 über Projekt-Priorisierung gebe ich Einblicke
+darüber wie ich meine ToDos verwalte und was überhaupt ToDos sind.
+
+</description>
+      <pubDate>Wed, 29 Jun 2016 21:57:53 +0000</pubDate>
+      <dc:date>2016-06-29T21:57:53+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 55 - 0,27%</title>
       <link>http://diem-musik.de/tagesform-55/</link>
@@ -711,6 +721,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-06-28T21:44:56+00:00</dc:date>
+    <dc:date>2016-06-29T21:57:53+00:00</dc:date>
   </channel>
 </rss>
