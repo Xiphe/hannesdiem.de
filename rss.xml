@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Wed, 29 Jun 2016 21:57:53 +0000</pubDate>
+    <pubDate>Thu, 30 Jun 2016 21:28:05 +0000</pubDate>
+    <item>
+      <title>Tagesform 57 - Über blocker reden</title>
+      <link>http://diem-musik.de/tagesform-57/</link>
+      <description>Ich hab heute mit Klartexter weiter an &quot;Kopfstand&quot; gearbeitet
+und er hat mir dabei einen sehr wertvollen Tipp gegeben.
+
+
+</description>
+      <pubDate>Thu, 30 Jun 2016 21:28:05 +0000</pubDate>
+      <dc:date>2016-06-30T21:28:05+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 56 - ToDos, Reminder und Termine</title>
       <link>http://diem-musik.de/tagesform-56/</link>
@@ -721,6 +732,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-06-29T21:57:53+00:00</dc:date>
+    <dc:date>2016-06-30T21:28:05+00:00</dc:date>
   </channel>
 </rss>

@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Wed, 29 Jun 2016 22:07:43 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 30 Jun 2016 22:33:15 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 57 - Über blocker reden</title>
+			<link>http://diem-musik.de/tagesform-57/</link>
+			<guid>http://diem-musik.de/tagesform-57</guid>
+			<pubDate>Thu, 30 Jun 2016 21:28:05 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-57/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich hab heute mit Klartexter weiter an &quot;Kopfstand&quot; gearbeitet und er hat mir dabei einen sehr wertvollen Tipp gegeben.</description>
+			<content:encoded><![CDATA[<p>Ich hab heute mit Klartexter weiter an &quot;Kopfstand&quot; gearbeitet
+und er hat mir dabei einen sehr wertvollen Tipp gegeben.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_57.mp3" length="7611952" type="audio/mpeg" />
+			<itunes:subtitle>Ich hab heute mit Klartexter weiter an &quot;Kopfstand&quot; gearbeitet und er hat mir dabei einen sehr wertvollen Tipp gegeben.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich hab heute mit Klartexter weiter an &quot;Kopfstand&quot; gearbeitet
+und er hat mir dabei einen sehr wertvollen Tipp gegeben.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:06:02</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 56 - ToDos, Reminder und Termine</title>
 			<link>http://diem-musik.de/tagesform-56/</link>
