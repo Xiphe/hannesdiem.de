@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Thu, 30 Jun 2016 22:33:15 +0000</lastBuildDate>
+		<lastBuildDate>Fri, 01 Jul 2016 21:54:29 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,27 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 58 - Tages-Experiment-Form</title>
+			<link>http://diem-musik.de/tagesform-58/</link>
+			<guid>http://diem-musik.de/tagesform-58</guid>
+			<pubDate>Fri, 01 Jul 2016 21:48:09 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-58/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Eine Idee: Vielleicht verbringe ich mal einen Monat damit Experimente zu machen, die genau einen Tag dauern und berichte dann Abends davon.</description>
+			<content:encoded><![CDATA[<p>Eine Idee: Vielleicht verbringe ich mal einen Monat damit 
+Experimente zu machen, die genau einen Tag dauern und 
+berichte dann Abends davon.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_58.mp3" length="6841832" type="audio/mpeg" />
+			<itunes:subtitle>Eine Idee: Vielleicht verbringe ich mal einen Monat damit Experimente zu machen, die genau einen Tag dauern und berichte dann Abends davon.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Eine Idee: Vielleicht verbringe ich mal einen Monat damit 
+Experimente zu machen, die genau einen Tag dauern und 
+berichte dann Abends davon.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:05:25</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 57 - Über blocker reden</title>
 			<link>http://diem-musik.de/tagesform-57/</link>
