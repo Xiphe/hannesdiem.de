@@ -8,7 +8,19 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Fri, 01 Jul 2016 21:48:09 +0000</pubDate>
+    <pubDate>Sat, 02 Jul 2016 21:30:57 +0000</pubDate>
+    <item>
+      <title>Tagesform 59 - Portraits üben</title>
+      <link>http://diem-musik.de/tagesform-59/</link>
+      <description>Ich hab tolle Menschen von [Bony Divesuit](https://www.facebook.com/bonydivesuit/) 
+kennengelernt, mit [House on a Hill](http://houseonahill.de) akustisch im Regen 
+gespielt und möchte üben Portraits von mir machen zu lassen :P
+
+
+</description>
+      <pubDate>Sat, 02 Jul 2016 21:30:57 +0000</pubDate>
+      <dc:date>2016-07-02T21:30:57+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 58 - Tages-Experiment-Form</title>
       <link>http://diem-musik.de/tagesform-58/</link>
@@ -744,6 +756,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-01T21:48:09+00:00</dc:date>
+    <dc:date>2016-07-02T21:30:57+00:00</dc:date>
   </channel>
 </rss>
