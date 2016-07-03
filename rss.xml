@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 02 Jul 2016 21:30:57 +0000</pubDate>
+    <pubDate>Sun, 03 Jul 2016 21:29:33 +0000</pubDate>
+    <item>
+      <title>Tagesform 60 - Immer wieder Sonntags</title>
+      <link>http://diem-musik.de/tagesform-60/</link>
+      <description>Eine belanglose Jubiläumsausgabe :P
+
+
+</description>
+      <pubDate>Sun, 03 Jul 2016 21:29:33 +0000</pubDate>
+      <dc:date>2016-07-03T21:29:33+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 59 - Portraits üben</title>
       <link>http://diem-musik.de/tagesform-59/</link>
@@ -756,6 +766,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-02T21:30:57+00:00</dc:date>
+    <dc:date>2016-07-03T21:29:33+00:00</dc:date>
   </channel>
 </rss>

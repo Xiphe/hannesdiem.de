@@ -12,6 +12,18 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 60 - Immer wieder Sonntags</title>
+	  <link>//tagesform-60/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-03T21:29:33+00:00</pubDate>
+	  <guid>//tagesform-60/</guid>
+	  <description><![CDATA[
+	     <p>Eine belanglose Jubiläumsausgabe :P</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 59 - Portraits üben</title>
 	  <link>//tagesform-59/</link>
 	  <author>Casper McFadden</author>
@@ -153,20 +165,6 @@ Ben Howard</a></li>
 	     <p>Ich erzähle von der <a href="http://houseonahill.de">neuen House on a Hill Webseite</a>
 und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem
 in den hinteren 20% noch ewig hinziehen.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 50 - Lächeln und Winken</title>
-	  <link>//tagesform-50/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-06-21T21:15:31+00:00</pubDate>
-	  <guid>//tagesform-50/</guid>
-	  <description><![CDATA[
-	     <p>Die 50 ist keine besondere Zahl, solange man nicht dafür sorgt,
-Stattdessen gibts Gedanken darüber warum wir evtl. nicht so
-viel Winken und Lächeln und, dass wir das trozdem tun sollten :)</p>
 
 	  ]]></description>
 	</item>

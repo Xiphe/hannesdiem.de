@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sat, 02 Jul 2016 20:47:43 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 03 Jul 2016 22:34:37 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,23 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 60 - Immer wieder Sonntags</title>
+			<link>http://diem-musik.de/tagesform-60/</link>
+			<guid>http://diem-musik.de/tagesform-60</guid>
+			<pubDate>Sun, 03 Jul 2016 21:29:33 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-60/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Eine belanglose Jubiläumsausgabe :P...</description>
+			<content:encoded><![CDATA[<p>Eine belanglose Jubiläumsausgabe :P</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_60.mp3" length="7493480" type="audio/mpeg" />
+			<itunes:subtitle>Eine belanglose Jubiläumsausgabe :P...</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Eine belanglose Jubiläumsausgabe :P</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:05:56</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 59 - Portraits üben</title>
 			<link>http://diem-musik.de/tagesform-59/</link>
