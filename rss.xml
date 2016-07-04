@@ -8,7 +8,19 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sun, 03 Jul 2016 21:29:33 +0000</pubDate>
+    <pubDate>Mon, 04 Jul 2016 21:14:46 +0000</pubDate>
+    <item>
+      <title>Tagesform 61 - TE1 - Keine ungefragten Ratschläge</title>
+      <link>http://diem-musik.de/tagesform-61/</link>
+      <description>Tages-Experiement 1:
+Einfach mal Probleme Probleme sein lassen und nicht 
+direkt mit einem Lösungsansatz (aus der Kategorie
+&quot;Man müsste mal&quot;) daherkommen.
+
+</description>
+      <pubDate>Mon, 04 Jul 2016 21:14:46 +0000</pubDate>
+      <dc:date>2016-07-04T21:14:46+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 60 - Immer wieder Sonntags</title>
       <link>http://diem-musik.de/tagesform-60/</link>
@@ -766,6 +778,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-03T21:29:33+00:00</dc:date>
+    <dc:date>2016-07-04T21:14:46+00:00</dc:date>
   </channel>
 </rss>

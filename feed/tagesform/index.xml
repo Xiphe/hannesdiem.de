@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 03 Jul 2016 22:34:37 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 04 Jul 2016 22:34:49 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,41 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 61 - TE1 - Keine ungefragten Ratschläge</title>
+			<link>http://diem-musik.de/tagesform-61/</link>
+			<guid>http://diem-musik.de/tagesform-61</guid>
+			<pubDate>Mon, 04 Jul 2016 21:14:46 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-61/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Tages-Experiement 1: Einfach mal Probleme Probleme sein lassen und nicht direkt mit einem Lösungsansatz (aus der Kategorie &quot;Man müsste mal&quot;) daherkommen. Hintergund: Ich neige dazu, für alles und immer eine Problemlösung zu suchen, obwohl ich weiß, dass oftmals zuhören auch schon Hilfe genug ist.</description>
+			<content:encoded><![CDATA[<p>Tages-Experiement 1:
+Einfach mal Probleme Probleme sein lassen und nicht 
+direkt mit einem Lösungsansatz (aus der Kategorie
+&quot;Man müsste mal&quot;) daherkommen.</p>
+
+<!-- more -->
+
+<p>Hintergund: Ich neige dazu, für alles und immer
+eine Problemlösung zu suchen, obwohl ich weiß, dass oftmals
+zuhören auch schon Hilfe genug ist.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_61.mp3" length="7981146" type="audio/mpeg" />
+			<itunes:subtitle>Tages-Experiement 1: Einfach mal Probleme Probleme sein lassen und nicht direkt mit einem Lösungsansatz (aus der Kategorie &quot;Man müsste mal&quot;) daherkommen.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Tages-Experiement 1:
+Einfach mal Probleme Probleme sein lassen und nicht 
+direkt mit einem Lösungsansatz (aus der Kategorie
+&quot;Man müsste mal&quot;) daherkommen.</p>
+
+<!-- more -->
+
+<p>Hintergund: Ich neige dazu, für alles und immer
+eine Problemlösung zu suchen, obwohl ich weiß, dass oftmals
+zuhören auch schon Hilfe genug ist.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:06:19</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 60 - Immer wieder Sonntags</title>
 			<link>http://diem-musik.de/tagesform-60/</link>
