@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Tue, 05 Jul 2016 21:12:53 +0000</pubDate>
+    <pubDate>Thu, 07 Jul 2016 23:41:08 +0000</pubDate>
+    <item>
+      <title>Tagesform 63 - TE3+4 - Kein Weizen und keine Beschwerden</title>
+      <link>http://diem-musik.de/tagesform-63/</link>
+      <description>Gestern habe ich keinen Weizen gegessen und heute dann 
+vergebens versucht mich nicht zu beschweren :P
+
+
+</description>
+      <pubDate>Thu, 07 Jul 2016 23:41:08 +0000</pubDate>
+      <dc:date>2016-07-07T23:41:08+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 62 - TE2 - Keinen Sarkasmus</title>
       <link>http://diem-musik.de/tagesform-62/</link>
@@ -789,6 +800,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-05T21:12:53+00:00</dc:date>
+    <dc:date>2016-07-07T23:41:08+00:00</dc:date>
   </channel>
 </rss>

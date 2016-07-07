@@ -12,6 +12,19 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 63 - TE3+4 - Kein Weizen und keine Beschwerden</title>
+	  <link>//tagesform-63/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-07T23:41:08+00:00</pubDate>
+	  <guid>//tagesform-63/</guid>
+	  <description><![CDATA[
+	     <p>Gestern habe ich keinen Weizen gegessen und heute dann 
+vergebens versucht mich nicht zu beschweren :P</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 62 - TE2 - Keinen Sarkasmus</title>
 	  <link>//tagesform-62/</link>
 	  <author>Casper McFadden</author>
@@ -143,25 +156,6 @@ sind wir nach einem Jahr doppelt so gut.</p>
 	     <p>Während ich des Nachts durch Hamburg latsche, berichte ich
 von einer Situation, die mich in Stress versetzt hat
 und wie ich damit umgegangen bin.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 53 - Projekt-Priorisierung</title>
-	  <link>//tagesform-53/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-06-26T18:27:00+00:00</pubDate>
-	  <guid>//tagesform-53/</guid>
-	  <description><![CDATA[
-	     <p>Im ersten Teil meiner Serie über Todos verrate ich wie ich
-meine Projekte priorisiere.</p>
-
-<!-- more -->
-
-<p>Ich hab außerdem ein <a href="https://docs.google.com/spreadsheets/d/1x-Apjz45OorKjSbDYojW9GjfnudNJd2KBSYWNPcvUUw/edit?usp=sharing">Google-Spreadsheet</a>
-gebaut, das dieses Modell implementiert.
-(Unter <code>Datei/Kopie erstellen</code> lässt sich eine Version zum Bearbeiten erzeugen)</p>
 
 	  ]]></description>
 	</item>
