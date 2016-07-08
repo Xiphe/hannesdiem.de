@@ -12,6 +12,20 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 64 - TE5 - Produktivität Tracken</title>
+	  <link>//tagesform-64/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-09T00:32:41+00:00</pubDate>
+	  <guid>//tagesform-64/</guid>
+	  <description><![CDATA[
+	     <p>Ich stelle den Weltrekord im verhaspeln auf, und erläutere
+die Produktivität des heutigen Tages, die ich als Experiment
+einfach mal alle 30 minuten aufgeschriben habe.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 63 - TE3+4 - Kein Weizen und keine Beschwerden</title>
 	  <link>//tagesform-63/</link>
 	  <author>Casper McFadden</author>
@@ -142,20 +156,6 @@ darüber wie ich meine ToDos verwalte und was überhaupt ToDos sind.</p>
 	  <description><![CDATA[
 	     <p>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;,
 sind wir nach einem Jahr doppelt so gut.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 54 - Selbstreflexion bei Stress</title>
-	  <link>//tagesform-54/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-06-27T21:44:53+00:00</pubDate>
-	  <guid>//tagesform-54/</guid>
-	  <description><![CDATA[
-	     <p>Während ich des Nachts durch Hamburg latsche, berichte ich
-von einer Situation, die mich in Stress versetzt hat
-und wie ich damit umgegangen bin.</p>
 
 	  ]]></description>
 	</item>
