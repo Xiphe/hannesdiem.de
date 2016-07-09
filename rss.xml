@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 09 Jul 2016 00:32:41 +0000</pubDate>
+    <pubDate>Sat, 09 Jul 2016 18:46:11 +0000</pubDate>
+    <item>
+      <title>Tagesform 65 - TE6 - Keinen Zucker Essen</title>
+      <link>http://diem-musik.de/tagesform-65/</link>
+      <description>Wenn man nichts isst, isst man keinen Zucker!
+
+
+</description>
+      <pubDate>Sat, 09 Jul 2016 18:46:11 +0000</pubDate>
+      <dc:date>2016-07-09T18:46:11+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 64 - TE5 - Produktivität Tracken</title>
       <link>http://diem-musik.de/tagesform-64/</link>
@@ -812,6 +822,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-09T00:32:41+00:00</dc:date>
+    <dc:date>2016-07-09T18:46:11+00:00</dc:date>
   </channel>
 </rss>

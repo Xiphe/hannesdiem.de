@@ -12,6 +12,18 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 65 - TE6 - Keinen Zucker Essen</title>
+	  <link>//tagesform-65/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-09T18:46:11+00:00</pubDate>
+	  <guid>//tagesform-65/</guid>
+	  <description><![CDATA[
+	     <p>Wenn man nichts isst, isst man keinen Zucker!</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 64 - TE5 - Produktivität Tracken</title>
 	  <link>//tagesform-64/</link>
 	  <author>Casper McFadden</author>
@@ -143,19 +155,6 @@ darüber wie ich meine ToDos verwalte und was überhaupt ToDos sind.</p>
 <!-- more -->
 
 <p>Teil 1 aus der Serie über ToDos: <a href="http://diem-musik.de/tagesform-53/">Tagesform 53 - Projekt-Priorisierung</a></p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 55 - 0,27%</title>
-	  <link>//tagesform-55/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-06-28T21:44:56+00:00</pubDate>
-	  <guid>//tagesform-55/</guid>
-	  <description><![CDATA[
-	     <p>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;,
-sind wir nach einem Jahr doppelt so gut.</p>
 
 	  ]]></description>
 	</item>
