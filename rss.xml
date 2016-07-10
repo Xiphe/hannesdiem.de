@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 09 Jul 2016 18:46:11 +0000</pubDate>
+    <pubDate>Sun, 10 Jul 2016 19:56:22 +0000</pubDate>
+    <item>
+      <title>Tagesform 66 - Sonntag</title>
+      <link>http://diem-musik.de/tagesform-66/</link>
+      <description>Es gab heute viel Musik mit [House on a Hill](http://houseonahill.de)
+und noch einen kleinen nachtrag zu Gestern :)
+
+
+</description>
+      <pubDate>Sun, 10 Jul 2016 19:56:22 +0000</pubDate>
+      <dc:date>2016-07-10T19:56:22+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 65 - TE6 - Keinen Zucker Essen</title>
       <link>http://diem-musik.de/tagesform-65/</link>
@@ -822,6 +833,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-09T18:46:11+00:00</dc:date>
+    <dc:date>2016-07-10T19:56:22+00:00</dc:date>
   </channel>
 </rss>
