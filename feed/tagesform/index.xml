@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 10 Jul 2016 18:01:57 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 11 Jul 2016 19:48:12 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,37 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 67 - Könnte, hätte und sollte tracken</title>
+			<link>http://diem-musik.de/tagesform-67/</link>
+			<guid>http://diem-musik.de/tagesform-67</guid>
+			<pubDate>Mon, 11 Jul 2016 21:39:50 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-67/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Wieso mach ich das hier überhaupt? Sollte ich weitermachen? Unter welchen umständen? Mit wem? Für wen? Fragen über fragen, die ich fast alle (noch) nicht beantworten kann.</description>
+			<content:encoded><![CDATA[<p>Wieso mach ich das hier überhaupt? Sollte ich
+weitermachen? Unter welchen umständen? Mit wem?
+Für wen?</p>
+
+<!-- more -->
+
+<p>Fragen über fragen, die ich fast alle (noch) nicht
+beantworten kann.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_67.mp3" length="12464082" type="audio/mpeg" />
+			<itunes:subtitle>Wieso mach ich das hier überhaupt? Sollte ich weitermachen? Unter welchen umständen? Mit wem? Für wen?</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Wieso mach ich das hier überhaupt? Sollte ich
+weitermachen? Unter welchen umständen? Mit wem?
+Für wen?</p>
+
+<!-- more -->
+
+<p>Fragen über fragen, die ich fast alle (noch) nicht
+beantworten kann.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:09:52</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 66 - Sonntag</title>
 			<link>http://diem-musik.de/tagesform-66/</link>

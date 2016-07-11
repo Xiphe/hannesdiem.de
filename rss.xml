@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sun, 10 Jul 2016 19:56:22 +0000</pubDate>
+    <pubDate>Mon, 11 Jul 2016 21:39:50 +0000</pubDate>
+    <item>
+      <title>Tagesform 67 - Könnte, hätte und sollte tracken</title>
+      <link>http://diem-musik.de/tagesform-67/</link>
+      <description>Wieso mach ich das hier überhaupt? Sollte ich
+weitermachen? Unter welchen umständen? Mit wem?
+Für wen?
+
+</description>
+      <pubDate>Mon, 11 Jul 2016 21:39:50 +0000</pubDate>
+      <dc:date>2016-07-11T21:39:50+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 66 - Sonntag</title>
       <link>http://diem-musik.de/tagesform-66/</link>
@@ -833,6 +844,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-10T19:56:22+00:00</dc:date>
+    <dc:date>2016-07-11T21:39:50+00:00</dc:date>
   </channel>
 </rss>
