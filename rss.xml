@@ -8,7 +8,27 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Mon, 11 Jul 2016 21:39:50 +0000</pubDate>
+    <pubDate>Wed, 13 Jul 2016 21:24:58 +0000</pubDate>
+    <item>
+      <title>Tagesform 68 - Gescheiterte Experimente und gelungene Produktionen</title>
+      <link>http://diem-musik.de/tagesform-68/</link>
+      <description>Die [Tagesexperimente](http://diem-musik.de/tag/tagesexperiment/) sind erst mal abgeblasen
+aber dafür hab ich [einen neuen Track mit Video](/wandern/)!
+
+
+</description>
+      <pubDate>Wed, 13 Jul 2016 21:24:58 +0000</pubDate>
+      <dc:date>2016-07-13T21:24:58+00:00</dc:date>
+    </item>
+    <item>
+      <title>wandern</title>
+      <link>http://diem-musik.de/wandern/</link>
+      <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/n7ZFwlbOhf0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</description>
+      <pubDate>Tue, 12 Jul 2016 20:28:42 +0000</pubDate>
+      <dc:date>2016-07-12T20:28:42+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 67 - Könnte, hätte und sollte tracken</title>
       <link>http://diem-musik.de/tagesform-67/</link>
@@ -844,6 +864,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-11T21:39:50+00:00</dc:date>
+    <dc:date>2016-07-13T21:24:58+00:00</dc:date>
   </channel>
 </rss>
