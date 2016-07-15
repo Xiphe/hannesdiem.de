@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 69 - Einfach mal anrufen</title>
+	  <link>//tagesform-69/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-14T21:24:28+00:00</pubDate>
+	  <guid>//tagesform-69/</guid>
+	  <description><![CDATA[
+	     <p>Wenn man was zu sagen hat oder sich aus den Augen verliert:
+Einfach mal anrufen.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

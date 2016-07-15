@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Wed, 13 Jul 2016 21:33:04 +0000</lastBuildDate>
+		<lastBuildDate>Fri, 15 Jul 2016 22:02:45 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,44 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 70 - Mehr davon</title>
+			<link>http://diem-musik.de/tagesform-70/</link>
+			<guid>http://diem-musik.de/tagesform-70</guid>
+			<pubDate>Fri, 15 Jul 2016 21:56:39 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-70/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich möchte gerne mehr Musik, Videos und Podcasts machen und ihr könnt mir dabei helfen unter diem-musik.de/mehr-davon. &lt;3...</description>
+			<content:encoded><![CDATA[<p>Ich möchte gerne mehr Musik, Videos und Podcasts machen
+und ihr könnt mir dabei helfen unter <a href="http://diem-musik.de/mehr-davon">diem-musik.de/mehr-davon</a>. &lt;3</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_70.mp3" length="12424000" type="audio/mpeg" />
+			<itunes:subtitle>Ich möchte gerne mehr Musik, Videos und Podcasts machen und ihr könnt mir dabei helfen unter diem-musik.de/mehr-davon. &lt;3...</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich möchte gerne mehr Musik, Videos und Podcasts machen
+und ihr könnt mir dabei helfen unter <a href="http://diem-musik.de/mehr-davon">diem-musik.de/mehr-davon</a>. &lt;3</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:09:51</itunes:duration>
+		</item>
+		<item>
+			<title>Tagesform 69 - Einfach mal anrufen</title>
+			<link>http://diem-musik.de/tagesform-69/</link>
+			<guid>http://diem-musik.de/tagesform-69</guid>
+			<pubDate>Thu, 14 Jul 2016 21:24:28 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-69/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Wenn man was zu sagen hat oder sich aus den Augen verliert: Einfach mal anrufen.</description>
+			<content:encoded><![CDATA[<p>Wenn man was zu sagen hat oder sich aus den Augen verliert:
+Einfach mal anrufen.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_69.mp3" length="6127034" type="audio/mpeg" />
+			<itunes:subtitle>Wenn man was zu sagen hat oder sich aus den Augen verliert: Einfach mal anrufen.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Wenn man was zu sagen hat oder sich aus den Augen verliert:
+Einfach mal anrufen.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:04:51</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 68 - Gescheiterte Experimente und gelungene Produktionen</title>
 			<link>http://diem-musik.de/tagesform-68/</link>

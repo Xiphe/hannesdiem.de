@@ -12,6 +12,32 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 70 - Mehr davon</title>
+	  <link>//tagesform-70/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-15T21:56:39+00:00</pubDate>
+	  <guid>//tagesform-70/</guid>
+	  <description><![CDATA[
+	     <p>Ich möchte gerne mehr Musik, Videos und Podcasts machen
+und ihr könnt mir dabei helfen unter <a href="http://diem-musik.de/mehr-davon">diem-musik.de/mehr-davon</a>. &lt;3</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Tagesform 69 - Einfach mal anrufen</title>
+	  <link>//tagesform-69/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-14T21:24:28+00:00</pubDate>
+	  <guid>//tagesform-69/</guid>
+	  <description><![CDATA[
+	     <p>Wenn man was zu sagen hat oder sich aus den Augen verliert:
+Einfach mal anrufen.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 68 - Gescheiterte Experimente und gelungene Produktionen</title>
 	  <link>//tagesform-68/</link>
 	  <author>Casper McFadden</author>
@@ -130,32 +156,6 @@ direkt mit einem Lösungsansatz (aus der Kategorie
 <p>Hintergund: Ich neige dazu, für alles und immer
 eine Problemlösung zu suchen, obwohl ich weiß, dass oftmals
 zuhören auch schon Hilfe genug ist.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 60 - Immer wieder Sonntags</title>
-	  <link>//tagesform-60/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-07-03T21:29:33+00:00</pubDate>
-	  <guid>//tagesform-60/</guid>
-	  <description><![CDATA[
-	     <p>Eine belanglose Jubiläumsausgabe :P</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 59 - Portraits üben</title>
-	  <link>//tagesform-59/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-07-02T21:30:57+00:00</pubDate>
-	  <guid>//tagesform-59/</guid>
-	  <description><![CDATA[
-	     <p>Ich hab tolle Menschen von <a href="https://www.facebook.com/bonydivesuit/">Bony Divesuit</a> 
-kennengelernt, mit <a href="http://houseonahill.de">House on a Hill</a> akustisch im Regen 
-gespielt und möchte üben Portraits von mir machen zu lassen :P</p>
 
 	  ]]></description>
 	</item>

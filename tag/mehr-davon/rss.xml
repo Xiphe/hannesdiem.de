@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 70 - Mehr davon</title>
+	  <link>//tagesform-70/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-15T21:56:39+00:00</pubDate>
+	  <guid>//tagesform-70/</guid>
+	  <description><![CDATA[
+	     <p>Ich möchte gerne mehr Musik, Videos und Podcasts machen
+und ihr könnt mir dabei helfen unter <a href="http://diem-musik.de/mehr-davon">diem-musik.de/mehr-davon</a>. &lt;3</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

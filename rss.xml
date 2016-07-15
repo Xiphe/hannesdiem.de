@@ -8,7 +8,29 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Wed, 13 Jul 2016 21:24:58 +0000</pubDate>
+    <pubDate>Fri, 15 Jul 2016 21:56:39 +0000</pubDate>
+    <item>
+      <title>Tagesform 70 - Mehr davon</title>
+      <link>http://diem-musik.de/tagesform-70/</link>
+      <description>Ich möchte gerne mehr Musik, Videos und Podcasts machen
+und ihr könnt mir dabei helfen unter [diem-musik.de/mehr-davon](http://diem-musik.de/mehr-davon). &lt;3
+
+
+</description>
+      <pubDate>Fri, 15 Jul 2016 21:56:39 +0000</pubDate>
+      <dc:date>2016-07-15T21:56:39+00:00</dc:date>
+    </item>
+    <item>
+      <title>Tagesform 69 - Einfach mal anrufen</title>
+      <link>http://diem-musik.de/tagesform-69/</link>
+      <description>Wenn man was zu sagen hat oder sich aus den Augen verliert:
+Einfach mal anrufen.
+
+
+</description>
+      <pubDate>Thu, 14 Jul 2016 21:24:28 +0000</pubDate>
+      <dc:date>2016-07-14T21:24:28+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 68 - Gescheiterte Experimente und gelungene Produktionen</title>
       <link>http://diem-musik.de/tagesform-68/</link>
@@ -864,6 +886,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-13T21:24:58+00:00</dc:date>
+    <dc:date>2016-07-15T21:56:39+00:00</dc:date>
   </channel>
 </rss>
