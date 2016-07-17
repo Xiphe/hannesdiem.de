@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Fri, 15 Jul 2016 22:02:45 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 17 Jul 2016 17:39:56 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,26 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 71 - Bühnenknigge</title>
+			<link>http://diem-musik.de/tagesform-71/</link>
+			<guid>http://diem-musik.de/tagesform-71</guid>
+			<pubDate>Sun, 17 Jul 2016 19:28:38 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Wir (Absolem Max) durften uns heute mit Blowm &amp; Maddin un de Maudefaades die Bühne teilen - geile mukke! Das hat mich daran erinnert, dass ich immer schon mal über meine persönliche &quot;Bühnenknigge&quot; reden wollte.</description>
+			<content:encoded><![CDATA[<p>Wir (<a href="http://absolem-max.com">Absolem Max</a>) durften uns heute mit <a href="http://plattdeutsch.tumblr.com/">Blowm &amp; Maddin un de Maudefaades</a> die Bühne teilen - geile mukke!
+Das hat mich daran erinnert, dass ich immer schon mal über meine 
+persönliche &quot;Bühnenknigge&quot; reden wollte.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_71.mp3" length="15888286" type="audio/mpeg" />
+			<itunes:subtitle>Wir (Absolem Max) durften uns heute mit Blowm &amp; Maddin un de Maudefaades die Bühne teilen - geile mukke! Das hat mich daran erinnert, dass ich immer schon mal über meine persönliche &quot;Bühnenknigge&quot; reden wollte.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Wir (<a href="http://absolem-max.com">Absolem Max</a>) durften uns heute mit <a href="http://plattdeutsch.tumblr.com/">Blowm &amp; Maddin un de Maudefaades</a> die Bühne teilen - geile mukke!
+Das hat mich daran erinnert, dass ich immer schon mal über meine 
+persönliche &quot;Bühnenknigge&quot; reden wollte.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:12:35</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 70 - Mehr davon</title>
 			<link>http://diem-musik.de/tagesform-70/</link>
