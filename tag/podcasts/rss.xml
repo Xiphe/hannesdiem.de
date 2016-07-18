@@ -12,6 +12,19 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 72 - Features</title>
+	  <link>//tagesform-72/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-18T21:16:28+00:00</pubDate>
+	  <guid>//tagesform-72/</guid>
+	  <description><![CDATA[
+	     <p>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch
+gerne bei mir: <a href="mailto:tagesform@diem-musik.de">tagesform@diem-musik.de</a></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 71 - Bühnenknigge</title>
 	  <link>//tagesform-71/</link>
 	  <author>Casper McFadden</author>
@@ -131,24 +144,6 @@ einfach mal alle 30 minuten aufgeschriben habe.</p>
 	  <description><![CDATA[
 	     <p>Gestern habe ich keinen Weizen gegessen und heute dann 
 vergebens versucht mich nicht zu beschweren :P</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 62 - TE2 - Keinen Sarkasmus</title>
-	  <link>//tagesform-62/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-07-05T21:12:53+00:00</pubDate>
-	  <guid>//tagesform-62/</guid>
-	  <description><![CDATA[
-	     <p>Tages-Experiement 2:
-Einfach mal Blöde Kommentare verkneifen und konstruktiv
-sein. Konkrete Vorschläge anstelle von bösen Seitenhieben.</p>
-
-<!-- more -->
-
-<p>... so zumindest der Plan.</p>
 
 	  ]]></description>
 	</item>

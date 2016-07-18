@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 17 Jul 2016 17:39:56 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 18 Jul 2016 20:23:10 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -34,10 +34,30 @@
 		<itunes:explicit>No</itunes:explicit>
 		
 		<item>
+			<title>Tagesform 72 - Features</title>
+			<link>http://diem-musik.de/tagesform-72/</link>
+			<guid>http://diem-musik.de/tagesform-72</guid>
+			<pubDate>Mon, 18 Jul 2016 21:16:28 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-72/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch gerne bei mir: tagesform@diem-musik.de...</description>
+			<content:encoded><![CDATA[<p>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch
+gerne bei mir: <a href="mailto:tagesform@diem-musik.de">tagesform@diem-musik.de</a></p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_72.mp3" length="8008598" type="audio/mpeg" />
+			<itunes:subtitle>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch gerne bei mir: tagesform@diem-musik.de...</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch
+gerne bei mir: <a href="mailto:tagesform@diem-musik.de">tagesform@diem-musik.de</a></p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:06:20</itunes:duration>
+		</item>
+		<item>
 			<title>Tagesform 71 - Bühnenknigge</title>
 			<link>http://diem-musik.de/tagesform-71/</link>
 			<guid>http://diem-musik.de/tagesform-71</guid>
 			<pubDate>Sun, 17 Jul 2016 19:28:38 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-71/#disqus_thread</comments>
 			<itunes:explicit>No</itunes:explicit>
 			<description>Wir (Absolem Max) durften uns heute mit Blowm &amp; Maddin un de Maudefaades die Bühne teilen - geile mukke! Das hat mich daran erinnert, dass ich immer schon mal über meine persönliche &quot;Bühnenknigge&quot; reden wollte.</description>
 			<content:encoded><![CDATA[<p>Wir (<a href="http://absolem-max.com">Absolem Max</a>) durften uns heute mit <a href="http://plattdeutsch.tumblr.com/">Blowm &amp; Maddin un de Maudefaades</a> die Bühne teilen - geile mukke!

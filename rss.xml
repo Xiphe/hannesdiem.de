@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sun, 17 Jul 2016 19:28:38 +0000</pubDate>
+    <pubDate>Mon, 18 Jul 2016 21:16:28 +0000</pubDate>
+    <item>
+      <title>Tagesform 72 - Features</title>
+      <link>http://diem-musik.de/tagesform-72/</link>
+      <description>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch
+gerne bei mir: [tagesform@diem-musik.de](mailto:tagesform@diem-musik.de)
+
+</description>
+      <pubDate>Mon, 18 Jul 2016 21:16:28 +0000</pubDate>
+      <dc:date>2016-07-18T21:16:28+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 71 - Bühnenknigge</title>
       <link>http://diem-musik.de/tagesform-71/</link>
@@ -898,6 +908,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-17T19:28:38+00:00</dc:date>
+    <dc:date>2016-07-18T21:16:28+00:00</dc:date>
   </channel>
 </rss>
