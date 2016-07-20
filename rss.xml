@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Tue, 19 Jul 2016 21:04:26 +0000</pubDate>
+    <pubDate>Wed, 20 Jul 2016 21:16:25 +0000</pubDate>
+    <item>
+      <title>Tagesform 74 - Mit Startschwierigkeiten aus der Liegeposition über Basilikum</title>
+      <link>http://diem-musik.de/tagesform-74/</link>
+      <description>siehe titel
+
+
+</description>
+      <pubDate>Wed, 20 Jul 2016 21:16:25 +0000</pubDate>
+      <dc:date>2016-07-20T21:16:25+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 73 - Kopfbrücke</title>
       <link>http://diem-musik.de/tagesform-73/</link>
@@ -919,6 +929,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-19T21:04:26+00:00</dc:date>
+    <dc:date>2016-07-20T21:16:25+00:00</dc:date>
   </channel>
 </rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 74 - Mit Startschwierigkeiten aus der Liegeposition über Basilikum</title>
+	  <link>//tagesform-74/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-20T21:16:25+00:00</pubDate>
+	  <guid>//tagesform-74/</guid>
+	  <description><![CDATA[
+	     <p>siehe titel</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
