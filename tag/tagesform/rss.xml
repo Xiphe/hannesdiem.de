@@ -12,6 +12,19 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 73 - Kopfbrücke</title>
+	  <link>//tagesform-73/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-07-19T21:04:26+00:00</pubDate>
+	  <guid>//tagesform-73/</guid>
+	  <description><![CDATA[
+	     <p>Kurzes hallo von unterwegs mit einer potentiellen Bridge von
+Kopfstand.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 72 - Features</title>
 	  <link>//tagesform-72/</link>
 	  <author>Casper McFadden</author>
@@ -131,19 +144,6 @@ und noch einen kleinen nachtrag zu Gestern :)</p>
 	     <p>Ich stelle den Weltrekord im verhaspeln auf, und erläutere
 die Produktivität des heutigen Tages, die ich als Experiment
 einfach mal alle 30 minuten aufgeschriben habe.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 63 - TE3+4 - Kein Weizen und keine Beschwerden</title>
-	  <link>//tagesform-63/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-07-07T23:41:08+00:00</pubDate>
-	  <guid>//tagesform-63/</guid>
-	  <description><![CDATA[
-	     <p>Gestern habe ich keinen Weizen gegessen und heute dann 
-vergebens versucht mich nicht zu beschweren :P</p>
 
 	  ]]></description>
 	</item>
