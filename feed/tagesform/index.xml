@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Wed, 20 Jul 2016 19:22:06 +0000</lastBuildDate>
+		<lastBuildDate>Mon, 25 Jul 2016 19:05:54 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 75 - Die Band - mal groß gedacht</title>
+			<link>http://diem-musik.de/tagesform-75/</link>
+			<guid>http://diem-musik.de/tagesform-75</guid>
+			<pubDate>Mon, 25 Jul 2016 20:50:11 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-75/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich bin schon seit langem der überzeugung, dass eine Band nicht nur aus Musikern bestehen sollte. Hier erfahrt ihr warum :)</description>
+			<content:encoded><![CDATA[<p>Ich bin schon seit langem der überzeugung, dass eine Band
+nicht nur aus Musikern bestehen sollte. Hier erfahrt ihr warum :)</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_75.mp3" length="15429638" type="audio/mpeg" />
+			<itunes:subtitle>Ich bin schon seit langem der überzeugung, dass eine Band nicht nur aus Musikern bestehen sollte. Hier erfahrt ihr warum :)</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich bin schon seit langem der überzeugung, dass eine Band
+nicht nur aus Musikern bestehen sollte. Hier erfahrt ihr warum :)</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:12:14</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 74 - Mit Startschwierigkeiten aus der Liegeposition über Basilikum</title>
 			<link>http://diem-musik.de/tagesform-74/</link>
