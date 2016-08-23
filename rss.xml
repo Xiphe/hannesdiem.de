@@ -8,7 +8,19 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Mon, 25 Jul 2016 20:50:11 +0000</pubDate>
+    <pubDate>Wed, 24 Aug 2016 00:10:34 +0000</pubDate>
+    <item>
+      <title>Tagesform 76 - Mal was neues</title>
+      <link>http://diem-musik.de/tagesform-76/</link>
+      <description>Ein Monat Pause generiert wenig Content, aber viele Erkentnisse,
+einiges an Ungewohntheit und viel Geschwebe. Einiges davon
+probiere ich hiermit zu teilen &lt;3
+
+
+</description>
+      <pubDate>Wed, 24 Aug 2016 00:10:34 +0000</pubDate>
+      <dc:date>2016-08-24T00:10:34+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 75 - Die Band - mal groß gedacht</title>
       <link>http://diem-musik.de/tagesform-75/</link>
@@ -940,6 +952,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-07-25T20:50:11+00:00</dc:date>
+    <dc:date>2016-08-24T00:10:34+00:00</dc:date>
   </channel>
 </rss>
