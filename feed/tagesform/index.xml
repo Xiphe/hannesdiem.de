@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Thu, 25 Aug 2016 22:06:00 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 01 Sep 2016 22:47:49 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,27 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 78 - 96 Kilogramm</title>
+			<link>http://diem-musik.de/tagesform-78/</link>
+			<guid>http://diem-musik.de/tagesform-78</guid>
+			<pubDate>Thu, 01 Sep 2016 21:28:13 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-78/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Er stieg auf eine Waage und was dann passierte raubte ihm den Atem XD Ich empfehle außerdem wärmstens Käptn Peng.</description>
+			<content:encoded><![CDATA[<p>Er stieg auf eine Waage und was dann passierte raubte
+ihm den Atem XD<br>
+Ich empfehle außerdem wärmstens <a href="https://www.youtube.com/watch?v=apCal7ihvy0">Käptn Peng</a>.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_78.mp3" length="10433254" type="audio/mpeg" />
+			<itunes:subtitle>Er stieg auf eine Waage und was dann passierte raubte ihm den Atem XD Ich empfehle außerdem wärmstens Käptn Peng.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Er stieg auf eine Waage und was dann passierte raubte
+ihm den Atem XD<br>
+Ich empfehle außerdem wärmstens <a href="https://www.youtube.com/watch?v=apCal7ihvy0">Käptn Peng</a>.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:08:16</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 77 - Optimal</title>
 			<link>http://diem-musik.de/tagesform-77/</link>
