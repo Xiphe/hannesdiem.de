@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 79 - weiter im text</title>
+	  <link>//tagesform-79/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-11-07T21:36:26+00:00</pubDate>
+	  <guid>//tagesform-79/</guid>
+	  <description><![CDATA[
+	     <p>Nach zwei Monaten und einer Woche gehts jetzt weiter mit Tagesformen! Yay!</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

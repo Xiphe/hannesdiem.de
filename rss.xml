@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Thu, 01 Sep 2016 21:28:13 +0000</pubDate>
+    <pubDate>Mon, 07 Nov 2016 21:36:26 +0000</pubDate>
+    <item>
+      <title>Tagesform 79 - weiter im text</title>
+      <link>http://diem-musik.de/tagesform-79/</link>
+      <description>Nach zwei Monaten und einer Woche gehts jetzt weiter mit Tagesformen! Yay!
+
+
+</description>
+      <pubDate>Mon, 07 Nov 2016 21:36:26 +0000</pubDate>
+      <dc:date>2016-11-07T21:36:26+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 78 - 96 Kilogramm</title>
       <link>http://diem-musik.de/tagesform-78/</link>
@@ -975,6 +985,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-09-01T21:28:13+00:00</dc:date>
+    <dc:date>2016-11-07T21:36:26+00:00</dc:date>
   </channel>
 </rss>
