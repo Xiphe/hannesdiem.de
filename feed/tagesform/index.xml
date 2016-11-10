@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Wed, 09 Nov 2016 22:20:37 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 10 Nov 2016 17:00:47 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 82 - Kaputte Wecker wecken nicht</title>
+			<link>http://diem-musik.de/tagesform-82/</link>
+			<guid>http://diem-musik.de/tagesform-82</guid>
+			<pubDate>Thu, 10 Nov 2016 17:54:32 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-82/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Heute im schnelldurchlauf eine kurze Abhandlung zu Moop Mama und kaputten Weckern.</description>
+			<content:encoded><![CDATA[<p>Heute im schnelldurchlauf eine kurze Abhandlung zu <a href="http://www.moopmama.com/">Moop Mama</a>
+und kaputten Weckern.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_82.mp3" length="5487912" type="audio/mpeg" />
+			<itunes:subtitle>Heute im schnelldurchlauf eine kurze Abhandlung zu Moop Mama und kaputten Weckern.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Heute im schnelldurchlauf eine kurze Abhandlung zu <a href="http://www.moopmama.com/">Moop Mama</a>
+und kaputten Weckern.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:04:21</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 81 - Verloren</title>
 			<link>http://diem-musik.de/tagesform-81/</link>

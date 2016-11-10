@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Wed, 09 Nov 2016 23:03:40 +0000</pubDate>
+    <pubDate>Thu, 10 Nov 2016 17:54:32 +0000</pubDate>
+    <item>
+      <title>Tagesform 82 - Kaputte Wecker wecken nicht</title>
+      <link>http://diem-musik.de/tagesform-82/</link>
+      <description>Heute im schnelldurchlauf eine kurze Abhandlung zu [Moop Mama](http://www.moopmama.com/)
+und kaputten Weckern.
+
+
+</description>
+      <pubDate>Thu, 10 Nov 2016 17:54:32 +0000</pubDate>
+      <dc:date>2016-11-10T17:54:32+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 81 - Verloren</title>
       <link>http://diem-musik.de/tagesform-81/</link>
@@ -1007,6 +1018,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-11-09T23:03:40+00:00</dc:date>
+    <dc:date>2016-11-10T17:54:32+00:00</dc:date>
   </channel>
 </rss>
