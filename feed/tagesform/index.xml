@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Thu, 10 Nov 2016 17:00:47 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 12 Nov 2016 19:04:26 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 83 - Vom Vortäuschen vollendeter Tatsachen</title>
+			<link>http://diem-musik.de/tagesform-83/</link>
+			<guid>http://diem-musik.de/tagesform-83</guid>
+			<pubDate>Sat, 12 Nov 2016 18:57:05 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-83/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob sich das überhaupt lohnt.</description>
+			<content:encoded><![CDATA[<p>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob
+sich das überhaupt lohnt.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_83.mp3" length="10070636" type="audio/mpeg" />
+			<itunes:subtitle>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob sich das überhaupt lohnt.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob
+sich das überhaupt lohnt.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:07:59</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 82 - Kaputte Wecker wecken nicht</title>
 			<link>http://diem-musik.de/tagesform-82/</link>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 83 - Vom Vortäuschen vollendeter Tatsachen</title>
+	  <link>//tagesform-83/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-11-12T18:57:05+00:00</pubDate>
+	  <guid>//tagesform-83/</guid>
+	  <description><![CDATA[
+	     <p>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob
+sich das überhaupt lohnt.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
