@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesform 85 - Projektmanagement im Privaten</title>
+	  <link>//tagesform-85/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-11-15T19:44:31+00:00</pubDate>
+	  <guid>//tagesform-85/</guid>
+	  <description><![CDATA[
+	     <p>Nach einem recht produktiven Tag erzähl ich wie ich mir gerade einen besseren
+Überblick über meine Baustellen gemacht habe.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

@@ -8,7 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Mon, 14 Nov 2016 20:34:19 +0000</pubDate>
+    <pubDate>Tue, 15 Nov 2016 19:44:31 +0000</pubDate>
+    <item>
+      <title>Tagesform 85 - Projektmanagement im Privaten</title>
+      <link>http://diem-musik.de/tagesform-85/</link>
+      <description>Nach einem recht produktiven Tag erzähl ich wie ich mir gerade einen besseren
+Überblick über meine Baustellen gemacht habe.
+
+
+</description>
+      <pubDate>Tue, 15 Nov 2016 19:44:31 +0000</pubDate>
+      <dc:date>2016-11-15T19:44:31+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 84 - Produkte Kopfstand und Strand</title>
       <link>http://diem-musik.de/tagesform-84/</link>
@@ -1041,6 +1052,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-11-14T20:34:19+00:00</dc:date>
+    <dc:date>2016-11-15T19:44:31+00:00</dc:date>
   </channel>
 </rss>
