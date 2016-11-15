@@ -8,7 +8,19 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 12 Nov 2016 18:57:05 +0000</pubDate>
+    <pubDate>Mon, 14 Nov 2016 20:34:19 +0000</pubDate>
+    <item>
+      <title>Tagesform 84 - Produkte Kopfstand und Strand</title>
+      <link>http://diem-musik.de/tagesform-84/</link>
+      <description>Ich bin Bettreif und sabbel trozdem noch über alles was mir in den Kopf kommt.
+Von Produktrecherche über Pomodors, meinen nächsten Track bis zu nächtlichen
+Strandausflügen.
+
+
+</description>
+      <pubDate>Mon, 14 Nov 2016 20:34:19 +0000</pubDate>
+      <dc:date>2016-11-14T20:34:19+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 83 - Vom Vortäuschen vollendeter Tatsachen</title>
       <link>http://diem-musik.de/tagesform-83/</link>
@@ -1029,6 +1041,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-11-12T18:57:05+00:00</dc:date>
+    <dc:date>2016-11-14T20:34:19+00:00</dc:date>
   </channel>
 </rss>
