@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Tue, 15 Nov 2016 18:49:45 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 17 Nov 2016 00:48:53 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 86 - Das Bus-Experiment</title>
+			<link>http://diem-musik.de/tagesform-86/</link>
+			<guid>http://diem-musik.de/tagesform-86</guid>
+			<pubDate>Wed, 16 Nov 2016 20:35:12 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-86/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich habe den verwegenen Plan in einen VW Bus um zu ziehen und erzähle Heute davon wie ich mich auf dieses Vorhaben vorbereite.</description>
+			<content:encoded><![CDATA[<p>Ich habe den verwegenen Plan in einen VW Bus um zu ziehen und erzähle Heute
+davon wie ich mich auf dieses Vorhaben vorbereite.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_86.mp3" length="" type="audio/mpeg" />
+			<itunes:subtitle>Ich habe den verwegenen Plan in einen VW Bus um zu ziehen und erzähle Heute davon wie ich mich auf dieses Vorhaben vorbereite.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich habe den verwegenen Plan in einen VW Bus um zu ziehen und erzähle Heute
+davon wie ich mich auf dieses Vorhaben vorbereite.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:00:00</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 85 - Projektmanagement im Privaten</title>
 			<link>http://diem-musik.de/tagesform-85/</link>

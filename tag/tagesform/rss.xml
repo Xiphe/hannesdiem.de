@@ -12,6 +12,19 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 86 - Das Bus-Experiment</title>
+	  <link>//tagesform-86/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-11-16T20:35:12+00:00</pubDate>
+	  <guid>//tagesform-86/</guid>
+	  <description><![CDATA[
+	     <p>Ich habe den verwegenen Plan in einen VW Bus um zu ziehen und erzähle Heute
+davon wie ich mich auf dieses Vorhaben vorbereite.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 85 - Projektmanagement im Privaten</title>
 	  <link>//tagesform-85/</link>
 	  <author>Casper McFadden</author>
@@ -128,20 +141,6 @@ Ich empfehle außerdem wärmstens <a href="https://www.youtube.com/watch?v=apCal
 	  <description><![CDATA[
 	     <p>Ich hab gestern <a href="http://kiddo-kat.de/">Kiddo Kat</a> gesehen und für großartig befunden. Und hab außerdem gemerkt, dass glücklich sein und gute Laune haben
 eine aktive Entscheidung sein kann. &lt;3</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 76 - Mal was neues</title>
-	  <link>//tagesform-76/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-08-24T00:10:34+00:00</pubDate>
-	  <guid>//tagesform-76/</guid>
-	  <description><![CDATA[
-	     <p>Ein Monat Pause generiert wenig Content, aber viele Erkentnisse,
-einiges an Ungewohntheit und viel Geschwebe. Einiges davon
-probiere ich hiermit zu teilen &lt;3</p>
 
 	  ]]></description>
 	</item>
