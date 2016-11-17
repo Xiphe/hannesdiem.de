@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Wed, 16 Nov 2016 20:35:12 +0000</pubDate>
+    <pubDate>Thu, 17 Nov 2016 18:07:15 +0000</pubDate>
+    <item>
+      <title>Tagesform 87 - Schall und Rauch</title>
+      <link>http://diem-musik.de/tagesform-87/</link>
+      <description>Ich denke darüber nach meinen Künstlernamen mal wieder zu wechseln und
+erzähle heute ein bisschen darüber.
+
+</description>
+      <pubDate>Thu, 17 Nov 2016 18:07:15 +0000</pubDate>
+      <dc:date>2016-11-17T18:07:15+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 86 - Das Bus-Experiment</title>
       <link>http://diem-musik.de/tagesform-86/</link>
@@ -1063,6 +1073,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-11-16T20:35:12+00:00</dc:date>
+    <dc:date>2016-11-17T18:07:15+00:00</dc:date>
   </channel>
 </rss>

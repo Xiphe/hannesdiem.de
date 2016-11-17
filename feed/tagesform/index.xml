@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Thu, 17 Nov 2016 00:48:53 +0000</lastBuildDate>
+		<lastBuildDate>Thu, 17 Nov 2016 17:17:53 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,29 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 87 - Schall und Rauch</title>
+			<link>http://diem-musik.de/tagesform-87/</link>
+			<guid>http://diem-musik.de/tagesform-87</guid>
+			<pubDate>Thu, 17 Nov 2016 18:07:15 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-87/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich denke darüber nach meinen Künstlernamen mal wieder zu wechseln und erzähle heute ein bisschen darüber. Wenn ihr ne Meinung oder Idee dazu habt, teilt sie mir gerne mit: https://docs.google.com/forms/d/e/1FAIpQLSdLQ1-mhFjBk4rad4V0-aDbDoxnzzk7NDtltCybVqPkbWgLTQ/viewform...</description>
+			<content:encoded><![CDATA[<p>Ich denke darüber nach meinen Künstlernamen mal wieder zu wechseln und
+erzähle heute ein bisschen darüber.</p>
+
+<p>Wenn ihr ne Meinung oder Idee dazu habt, teilt sie mir gerne mit: https://docs.google.com/forms/d/e/1FAIpQLSdLQ1-mhFjBk4rad4V0-aDbDoxnzzk7NDtltCybVqPkbWgLTQ/viewform</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_87.mp3" length="11247318" type="audio/mpeg" />
+			<itunes:subtitle>Ich denke darüber nach meinen Künstlernamen mal wieder zu wechseln und erzähle heute ein bisschen darüber. Wenn ihr ne Meinung oder Idee dazu habt, teilt sie mir gerne mit: https://docs.google.com/forms/d/e/1FAIpQLSdLQ1-mhFjBk4rad4V0-aDbDoxnzzk7NDtltC...</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich denke darüber nach meinen Künstlernamen mal wieder zu wechseln und
+erzähle heute ein bisschen darüber.</p>
+
+<p>Wenn ihr ne Meinung oder Idee dazu habt, teilt sie mir gerne mit: https://docs.google.com/forms/d/e/1FAIpQLSdLQ1-mhFjBk4rad4V0-aDbDoxnzzk7NDtltCybVqPkbWgLTQ/viewform</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:08:55</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 86 - Das Bus-Experiment</title>
 			<link>http://diem-musik.de/tagesform-86/</link>
