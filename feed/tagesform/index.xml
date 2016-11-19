@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Fri, 18 Nov 2016 16:24:19 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 19 Nov 2016 15:45:46 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,24 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 89 - Demonstrieren gehen</title>
+			<link>http://diem-musik.de/tagesform-89/</link>
+			<guid>http://diem-musik.de/tagesform-89</guid>
+			<pubDate>Sat, 19 Nov 2016 16:38:55 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich habe heute verschlafen mich öffentlich gegen eine Nazi-Demonstration zu stellen und ärgere mich darüber!</description>
+			<content:encoded><![CDATA[<p>Ich habe heute verschlafen mich öffentlich gegen eine Nazi-Demonstration
+zu stellen und ärgere mich darüber!</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_89.mp3" length="9340494" type="audio/mpeg" />
+			<itunes:subtitle>Ich habe heute verschlafen mich öffentlich gegen eine Nazi-Demonstration zu stellen und ärgere mich darüber!</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich habe heute verschlafen mich öffentlich gegen eine Nazi-Demonstration
+zu stellen und ärgere mich darüber!</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:07:24</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 88 - Langeweile ist super!</title>
 			<link>http://diem-musik.de/tagesform-88/</link>
