@@ -10,7 +10,7 @@
 		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://diem-musik.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 20 Nov 2016 23:10:02 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 20 Nov 2016 23:21:51 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,25 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 90 - Das Bus-Experiment Teil2</title>
+			<link>http://diem-musik.de/tagesform-90/</link>
+			<guid>http://diem-musik.de/tagesform-90</guid>
+			<pubDate>Sun, 20 Nov 2016 21:03:34 +0000</pubDate>
+			<comments>http://diem-musik.de/tagesform-90/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Einige Biere bewegen mich heute dazu von Caravan Palace zu schwärmen und von ein paar Details meines kommenden Experiements zu erzählen.</description>
+			<content:encoded><![CDATA[<p>Einige Biere bewegen mich heute dazu von <a href="">Caravan Palace</a> zu schwärmen
+und von ein paar Details meines kommenden Experiements zu erzählen.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_90.mp3" length="10366868" type="audio/mpeg" />
+			<itunes:subtitle>Einige Biere bewegen mich heute dazu von Caravan Palace zu schwärmen und von ein paar Details meines kommenden Experiements zu erzählen.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Einige Biere bewegen mich heute dazu von <a href="">Caravan Palace</a> zu schwärmen
+und von ein paar Details meines kommenden Experiements zu erzählen.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:08:13</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 89 - Demonstrieren gehen</title>
 			<link>http://diem-musik.de/tagesform-89/</link>
