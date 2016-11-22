@@ -8,7 +8,16 @@
     <title>Hannes Diem</title>
     <link>http://diem-musik.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sun, 20 Nov 2016 21:03:34 +0000</pubDate>
+    <pubDate>Tue, 22 Nov 2016 02:03:10 +0000</pubDate>
+    <item>
+      <title>Tagesvorm 1 - Eine Woche aus dem Rucksack leben - Klamotten as a service</title>
+      <link>http://diem-musik.de/tagesvorm-91/</link>
+      <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ldKrN3Ev5Ns&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</description>
+      <pubDate>Tue, 22 Nov 2016 02:03:10 +0000</pubDate>
+      <dc:date>2016-11-22T02:03:10+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 90 - Das Bus-Experiment Teil2</title>
       <link>http://diem-musik.de/tagesform-90/</link>
@@ -1104,6 +1113,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-11-20T21:03:34+00:00</dc:date>
+    <dc:date>2016-11-22T02:03:10+00:00</dc:date>
   </channel>
 </rss>

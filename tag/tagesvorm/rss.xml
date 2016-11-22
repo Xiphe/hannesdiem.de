@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>diem-musik.de</title>
+   
+   <link>http://diem-musik.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Tagesvorm 1 - Eine Woche aus dem Rucksack leben - Klamotten as a service</title>
+	  <link>//tagesvorm-91/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-11-22T02:03:10+00:00</pubDate>
+	  <guid>//tagesvorm-91/</guid>
+	  <description><![CDATA[
+	     <iframe width="560" height="315" src="https://www.youtube.com/embed/ldKrN3Ev5Ns" frameborder="0" allowfullscreen></iframe>
+
+<p>Ich probiere raus zu finden ob ich ohne (m)eine feste Wohnung auskommen kann und laufe darum eine Woche lang nur mit meinem Rucksack durch Hamburg.</p>
+
+<p>Heute mit Aufbruchsstimmung, Abhipstern in nem Café, Songwriting in meinem Proberaum, und abendliche Startup-Philosophie in der WG eines lieben Freundes.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
