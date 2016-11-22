@@ -10,8 +10,8 @@ layout: null
 >
 	<channel>
 		<title>Tagesform - über die Musik, das Leben und den ganzen Rest</title>
-		<atom:link href="http://diem-musik.de/feed/tagesform/" rel="self" type="application/rss+xml" />
-		<link>http://diem-musik.de</link>
+		<atom:link href="http://hannesdiem.de/feed/tagesform/" rel="self" type="application/rss+xml" />
+		<link>http://hannesdiem.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<language>de-DE</language>
@@ -19,13 +19,13 @@ layout: null
 		<image>
 			<title>Tagesform - ...über die Musik, das Leben und den ganzen Rest</title>
 			<url>https://res.cloudinary.com/xiphe/image/upload/c_fill,g_south_west,h_3000,q_80,w_3000/v1460755546/tagesform_cover_jtbc9y.jpg</url>
-			<link>http://diem-musik.de</link>
+			<link>http://hannesdiem.de</link>
 		</image>
 
 		<sy:updatePeriod>daily</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
 
-		<itunes:new-feed-url>http://diem-musik.de/feed/tagesform/</itunes:new-feed-url>
+		<itunes:new-feed-url>http://hannesdiem.de/feed/tagesform/</itunes:new-feed-url>
 		<itunes:author>Diem</itunes:author>
 		<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_south_west,h_3000,q_80,w_3000/v1460755546/tagesform_cover_jtbc9y.jpg" />
 		<itunes:category text="Music" />

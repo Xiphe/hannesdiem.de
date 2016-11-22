@@ -14,9 +14,9 @@ author: 'Casper McFadden'
 username: casper
 bio: 'A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.'
 location: 'Maine, USA'
-url: 'http://diem-musik.de'
+url: 'http://hannesdiem.de'
 
-short_url: 'diem-musik.de'
+short_url: 'hannesdiem.de'
 google_analytics: UA-65675428-2
 disqus: diemmusik
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
@@ -59,7 +59,7 @@ username: Xiphe
 repo: diem-musik.de
 branch: master
 destination: ../diem-musik.de-pages/
-production_url:  http://diem-musik.de
+production_url:  http://hannesdiem.de
 source_url:      https://github.com/Xiphe/diem-musik.de
 
 exclude:

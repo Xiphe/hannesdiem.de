@@ -15,8 +15,8 @@ Preystraße 4
 ### Kontakt:
 
 Telefon: +49 151 40511198  
-E-Mail:	impressum-diem-musik.de@xiphe.net
- 
+E-Mail:	impressum-hannesdiem.de@xiphe.net
+
 
 Quelle: http://www.e-recht24.de
 
