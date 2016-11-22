@@ -3,9 +3,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
    
-      <title>diem-musik.de</title>
+      <title>hannesdiem.de</title>
    
-   <link>http://diem-musik.de</link>
+   <link>http://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -19,12 +19,12 @@
 	  <guid>//tagesform-15/</guid>
 	  <description><![CDATA[
 	     <p>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat
-und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser 
+und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser
 Podcast jetzt aboniert werden!</p>
 
 <!-- more -->
 
-<p>Einfach <code>http://diem-musik.de/feed/tagesform/</code> in eine Podcast-App eures
+<p>Einfach <code>http://hannesdiem.de/feed/tagesform/</code> in eine Podcast-App eures
 vertrauens eintagen und glücklich sein.</p>
 
 <p>Ansonsten just another lazy sunday.</p>
