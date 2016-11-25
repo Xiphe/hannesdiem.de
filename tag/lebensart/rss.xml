@@ -12,7 +12,23 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
-	  <title>Tagesvorm 3 - Eine Woche aus dem Rucksack leben - Kontoführung und betahaus</title>
+	  <title>Tagesvorm 4 - Eine Woche aus dem Rucksack leben - Kontoführung und betahaus</title>
+	  <link>//tagesvorm-4/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-11-24T21:32:13+00:00</pubDate>
+	  <guid>//tagesvorm-4/</guid>
+	  <description><![CDATA[
+	     <iframe width="560" height="315" src="https://www.youtube.com/embed/G5EZM6v4AZ4" frameborder="0" allowfullscreen></iframe>
+
+<p>Ich probiere raus zu finden ob ich ohne (m)eine feste Wohnung auskommen kann und laufe darum eine Woche lang nur mit meinem Rucksack durch Hamburg.</p>
+
+<p>Heute mit Minimal zum aufwachen, einer Skate-tour von der Reeperbahn zur oberen Außenalster, serverless programmierung und Rums.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Tagesvorm 3 - Eine Woche aus dem Rucksack leben - Kopfstand und Skaten</title>
 	  <link>//tagesvorm-3/</link>
 	  <author>Casper McFadden</author>
 	  <pubDate>2016-11-23T01:21:24+00:00</pubDate>

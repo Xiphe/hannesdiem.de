@@ -8,9 +8,18 @@
     <title>Hannes Diem</title>
     <link>http://hannesdiem.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Wed, 23 Nov 2016 01:21:24 +0000</pubDate>
+    <pubDate>Thu, 24 Nov 2016 21:32:13 +0000</pubDate>
     <item>
-      <title>Tagesvorm 3 - Eine Woche aus dem Rucksack leben - Kontoführung und betahaus</title>
+      <title>Tagesvorm 4 - Eine Woche aus dem Rucksack leben - Kontoführung und betahaus</title>
+      <link>http://hannesdiem.de/tagesvorm-4/</link>
+      <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/G5EZM6v4AZ4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</description>
+      <pubDate>Thu, 24 Nov 2016 21:32:13 +0000</pubDate>
+      <dc:date>2016-11-24T21:32:13+00:00</dc:date>
+    </item>
+    <item>
+      <title>Tagesvorm 3 - Eine Woche aus dem Rucksack leben - Kopfstand und Skaten</title>
       <link>http://hannesdiem.de/tagesvorm-3/</link>
       <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/N4KbwLHv9gk&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -1132,6 +1141,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-11-23T01:21:24+00:00</dc:date>
+    <dc:date>2016-11-24T21:32:13+00:00</dc:date>
   </channel>
 </rss>
