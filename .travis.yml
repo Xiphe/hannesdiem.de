@@ -11,14 +11,6 @@ install:
 
 script: bundle exec rake site:deploy --quiet #--trace
 
-# Generate your secure token with the travis gem:
-# get Github token from your Travis CI profile page
-# gem install travis
-# GH_TOKEN from https://github.com/settings/tokens
-# travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
-env:
-  global:
-    secure: "BMb4yMdl4Sc1s7LYq2zu/U8Q2oX0rIytY3mqleTprx6HHjNhYSMT6SR3Vwj/5kArKs1zsM8chS36ECIkEJ8EVIKs75NemavIGLmJUbO+6HA5RWW3l80DMsn3gXaogA7EnMJvZOd1sVTRjnmt3VDDrc9pXGHVMl1mIlhi3Epg9po="
 branches:
   only:
     - master
