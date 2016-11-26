@@ -4,12 +4,12 @@
   "main": "new_post.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Xiphe/diem-musik.de.git"
+    "url": "git+https://github.com/Xiphe/hannesdiem.de.git"
   },
   "bugs": {
-    "url": "https://github.com/Xiphe/diem-musik.de/issues"
+    "url": "https://github.com/Xiphe/hannesdiem.de/issues"
   },
-  "homepage": "https://github.com/Xiphe/diem-musik.de#readme",
+  "homepage": "https://github.com/Xiphe/hannesdiem.de#readme",
   "devDependencies": {
     "minimist": "^1.2.0"
   }

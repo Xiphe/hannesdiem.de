@@ -1,6 +1,6 @@
 ## hannesdiem.de
 
-[![Build Status](https://travis-ci.org/Xiphe/diem-musik.de.svg?branch=master)](https://travis-ci.org/Xiphe/diem-musik.de)
+[![Build Status](https://travis-ci.org/Xiphe/hannesdiem.de.svg?branch=master)](https://travis-ci.org/Xiphe/hannesdiem.de)
 
 based on [biomadeira/jasper](https://github.com/biomadeira/jasper)
 
@@ -8,7 +8,7 @@ This repo generates [hannesdiem.de](http://hannesdiem.de)
 
 ## Copyright & License
 
-### Text contents (everything in [_posts](https://github.com/Xiphe/diem-musik.de/tree/master/_posts) + entry pages in root)
+### Text contents (everything in [_posts](https://github.com/Xiphe/hannesdiem.de/tree/master/_posts) + entry pages in root)
 
 __if not stated otherwise:__
 
@@ -22,10 +22,10 @@ Copyright (C) 2015 - Hannes Diercks
 
 #### (C) 2015 - [Federkiel Fotografie](https://www.facebook.com/FederkielFotografie)
 
- - [cover_diem_himmel.jpg](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_diem_himmel.jpg)
- - [cover_diem_logo_floating.jpg](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_diem_logo_floating.jpg)
- - [cover_logo_scatter.jpg](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_logo_scatter.jpg)
- - [cover_small_path.jpg](https://github.com/Xiphe/diem-musik.de/blob/master/assets/images/cover_small_path.jpg)
+ - [cover_diem_himmel.jpg](https://github.com/Xiphe/hannesdiem.de/blob/master/assets/images/cover_diem_himmel.jpg)
+ - [cover_diem_logo_floating.jpg](https://github.com/Xiphe/hannesdiem.de/blob/master/assets/images/cover_diem_logo_floating.jpg)
+ - [cover_logo_scatter.jpg](https://github.com/Xiphe/hannesdiem.de/blob/master/assets/images/cover_logo_scatter.jpg)
+ - [cover_small_path.jpg](https://github.com/Xiphe/hannesdiem.de/blob/master/assets/images/cover_small_path.jpg)
 
 ### code-modifications by [Xiphe](https://github.com/Xiphe) and [biomadeira/jasper](https://github.com/biomadeira/jasper) released under
 

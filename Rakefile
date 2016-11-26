@@ -67,7 +67,7 @@ namespace :site do
     Dir.chdir(CONFIG["destination"]) { sh "touch .nojekyll" }
 
     # Add CNAME
-    Dir.chdir(CONFIG["destination"]) { sh "echo #{CONFIG['short_url']} > ../diem-musik.de-pages/CNAME" }
+    Dir.chdir(CONFIG["destination"]) { sh "echo #{CONFIG['short_url']} > ../hannesdiem.de-pages/CNAME" }
 
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
