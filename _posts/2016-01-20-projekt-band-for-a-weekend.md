@@ -16,7 +16,7 @@ Was Passiert wenn man eine gute Hand voll Musikerinnen und Musiker für ein Woch
 
 ### Wie komme ich da darauf?
 
-Ich kenne so viele tolle Musikerinnen und hab zuletzt schon immer versucht mit einigen von Euch im Rahmen meiner “Songwriting-Sessions” oder Ähnlichem nicht nur Musik zu machen, sondern das auch zu veröffentlichen. Als [Album](https://open.spotify.com/album/3xyDFiDX6YaylTOaeQW8Dw), [Video](https://www.youtube.com/watch?v=EFMol2OKfqI), [Podcast](http://aethermonolog.de/episode-003.html), [Musikschnipsel](https://soundcloud.com/diem-musik/tanz) uvm.
+Ich kenne so viele tolle Musikerinnen und hab zuletzt schon immer versucht mit einigen von Euch im Rahmen meiner “Songwriting-Sessions” oder Ähnlichem nicht nur Musik zu machen, sondern das auch zu veröffentlichen. Als [Album](https://open.spotify.com/album/3xyDFiDX6YaylTOaeQW8Dw), [Video](https://www.youtube.com/watch?v=EFMol2OKfqI), [Podcast](http://aethermonolog.de/episode-003.html), [Musikschnipsel](https://soundcloud.com/hannesdiem/tanz) uvm.
 
 Das werde ich auch weiterhin alleine oder unter vier bis sechs Augen in meinen Proberaum tun, hab aber grad großen Bock das Ganze größer auf zu ziehen.
 
