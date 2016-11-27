@@ -8,7 +8,16 @@
     <title>Hannes Diem</title>
     <link>http://hannesdiem.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Fri, 25 Nov 2016 21:19:50 +0000</pubDate>
+    <pubDate>Sun, 27 Nov 2016 17:05:57 +0000</pubDate>
+    <item>
+      <title>Tagesvorm 6 - Eine Woche aus dem Rucksack leben - Wohnen und Feiern</title>
+      <link>http://hannesdiem.de/tagesvorm-6/</link>
+      <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/afzJ7CIRH8Y&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</description>
+      <pubDate>Sun, 27 Nov 2016 17:05:57 +0000</pubDate>
+      <dc:date>2016-11-27T17:05:57+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesvorm 5 - Eine Woche aus dem Rucksack leben - Eieruhren und Sofas</title>
       <link>http://hannesdiem.de/tagesvorm-5/</link>
@@ -47,7 +56,7 @@
     </item>
     <item>
       <title>Tagesvorm 1 - Eine Woche aus dem Rucksack leben - Klamotten as a service</title>
-      <link>http://hannesdiem.de/tagesvorm-91/</link>
+      <link>http://hannesdiem.de/tagesvorm-1/</link>
       <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ldKrN3Ev5Ns&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
 </description>
@@ -1150,6 +1159,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-11-25T21:19:50+00:00</dc:date>
+    <dc:date>2016-11-27T17:05:57+00:00</dc:date>
   </channel>
 </rss>
