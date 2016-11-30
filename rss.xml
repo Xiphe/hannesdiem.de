@@ -8,7 +8,19 @@
     <title>Hannes Diem</title>
     <link>http://hannesdiem.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sun, 27 Nov 2016 17:05:57 +0000</pubDate>
+    <pubDate>Thu, 01 Dec 2016 00:43:53 +0000</pubDate>
+    <item>
+      <title>Tagesform 91 - Lazy Habits in Brighton</title>
+      <link>http://hannesdiem.de/tagesform-91/</link>
+      <description>Ich war die letzten Tage in Brighton unterwegs und habe mir [Lazy Habits](http://lazyhabits.com/)
+angesehen und ihr solltet das auch tun :)
+Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im
+[Cafe Coho](http://www.cafecoho.co.uk/).
+
+</description>
+      <pubDate>Thu, 01 Dec 2016 00:43:53 +0000</pubDate>
+      <dc:date>2016-12-01T00:43:53+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesvorm 6 - Eine Woche aus dem Rucksack leben - Wohnen und Feiern</title>
       <link>http://hannesdiem.de/tagesvorm-6/</link>
@@ -1159,6 +1171,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-11-27T17:05:57+00:00</dc:date>
+    <dc:date>2016-12-01T00:43:53+00:00</dc:date>
   </channel>
 </rss>

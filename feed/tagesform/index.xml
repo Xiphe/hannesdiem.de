@@ -10,7 +10,7 @@
 		<atom:link href="http://hannesdiem.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://hannesdiem.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sun, 27 Nov 2016 16:15:42 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 30 Nov 2016 23:51:30 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -33,6 +33,29 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 91 - Lazy Habits in Brighton</title>
+			<link>http://hannesdiem.de/tagesform-91/</link>
+			<guid>http://hannesdiem.de/tagesform-91</guid>
+			<pubDate>Thu, 01 Dec 2016 00:43:53 +0000</pubDate>
+			<comments>http://hannesdiem.de/tagesform-91/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Ich war die letzten Tage in Brighton unterwegs und habe mir Lazy Habits angesehen und ihr solltet das auch tun :) Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im Cafe Coho.</description>
+			<content:encoded><![CDATA[<p>Ich war die letzten Tage in Brighton unterwegs und habe mir <a href="http://lazyhabits.com/">Lazy Habits</a>
+angesehen und ihr solltet das auch tun :)
+Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im
+<a href="http://www.cafecoho.co.uk/">Cafe Coho</a>.</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_91.mp3" length="16983238" type="audio/mpeg" />
+			<itunes:subtitle>Ich war die letzten Tage in Brighton unterwegs und habe mir Lazy Habits angesehen und ihr solltet das auch tun :) Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im Cafe Coho.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Ich war die letzten Tage in Brighton unterwegs und habe mir <a href="http://lazyhabits.com/">Lazy Habits</a>
+angesehen und ihr solltet das auch tun :)
+Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im
+<a href="http://www.cafecoho.co.uk/">Cafe Coho</a>.</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:13:27</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 90 - Das Bus-Experiment Teil2</title>
 			<link>http://hannesdiem.de/tagesform-90/</link>
