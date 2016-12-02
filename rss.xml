@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://hannesdiem.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Thu, 01 Dec 2016 00:43:53 +0000</pubDate>
+    <pubDate>Fri, 02 Dec 2016 01:32:21 +0000</pubDate>
+    <item>
+      <title>Tagesform 92 - Von Freundschaften und Winken</title>
+      <link>http://hannesdiem.de/tagesform-92/</link>
+      <description>Mal wieder eine recht Ideenlose Episode :)
+
+
+</description>
+      <pubDate>Fri, 02 Dec 2016 01:32:21 +0000</pubDate>
+      <dc:date>2016-12-02T01:32:21+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 91 - Lazy Habits in Brighton</title>
       <link>http://hannesdiem.de/tagesform-91/</link>
@@ -1171,6 +1181,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-12-01T00:43:53+00:00</dc:date>
+    <dc:date>2016-12-02T01:32:21+00:00</dc:date>
   </channel>
 </rss>

@@ -12,6 +12,18 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Tagesform 92 - Von Freundschaften und Winken</title>
+	  <link>//tagesform-92/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-12-02T01:32:21+00:00</pubDate>
+	  <guid>//tagesform-92/</guid>
+	  <description><![CDATA[
+	     <p>Mal wieder eine recht Ideenlose Episode :)</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Tagesform 91 - Lazy Habits in Brighton</title>
 	  <link>//tagesform-91/</link>
 	  <author>Casper McFadden</author>
@@ -130,19 +142,6 @@ Strandausflügen.</p>
 	  <description><![CDATA[
 	     <p>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob
 sich das überhaupt lohnt.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Tagesform 82 - Kaputte Wecker wecken nicht</title>
-	  <link>//tagesform-82/</link>
-	  <author>Casper McFadden</author>
-	  <pubDate>2016-11-10T17:54:32+00:00</pubDate>
-	  <guid>//tagesform-82/</guid>
-	  <description><![CDATA[
-	     <p>Heute im schnelldurchlauf eine kurze Abhandlung zu <a href="http://www.moopmama.com/">Moop Mama</a>
-und kaputten Weckern.</p>
 
 	  ]]></description>
 	</item>
