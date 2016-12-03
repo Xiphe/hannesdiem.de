@@ -3,7 +3,7 @@ layout: post
 cover: irgendwann_bf7cld
 title: Diem & Klartexter - Irgendwann
 date: 2016-01-23 20:00:00
-tags: veroeffentlichungen alben diem klartexter
+tags: veroeffentlichungen alben single klartexter
 navigation: true
 logo: 'assets/images/logo.svg'
 ---
