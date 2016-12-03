@@ -3,7 +3,7 @@ layout: post
 cover: kopfstand_banner
 title: Klartexter und Hannes Diem - Kopfstand
 date: 2016-12-03 01:10:04
-tags: veroeffentlichungen alben single klartexter
+tags: veroeffentlichungen alben single klartexter kopfstand
 navigation: true
 disqus: true
 logo: 'assets/images/logo.svg'
