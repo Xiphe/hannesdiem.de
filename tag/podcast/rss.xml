@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>hannesdiem.de</title>
+   
+   <link>http://hannesdiem.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Vom Songwriting in Iterationen</title>
+	  <link>//vom-songwriting-in-iterationen/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2016-05-15T21:51:48+00:00</pubDate>
+	  <guid>//vom-songwriting-in-iterationen/</guid>
+	  <description><![CDATA[
+	     <p>Ich war mal wieder zu gast im <a href="https://aethermonolog.de/podcast/episode-019.html">aethermonolog Episode 19</a>
+und spreche mit Kai über Songwriting in Iterationen.
+Zu hören gibt es dazu 3 verschiedene Entwicklungsstadien unseres neuen Songs “Kopfstand”.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
