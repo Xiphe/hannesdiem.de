@@ -8,7 +8,16 @@
     <title>Hannes Diem</title>
     <link>http://hannesdiem.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Fri, 02 Dec 2016 01:32:21 +0000</pubDate>
+    <pubDate>Sat, 03 Dec 2016 01:10:04 +0000</pubDate>
+    <item>
+      <title>Klartexter und Hannes Diem - Kopfstand</title>
+      <link>http://hannesdiem.de/kopfstand/</link>
+      <description>&lt;img class=&quot;cover&quot;src=&quot;http://res.cloudinary.com/xiphe/image/upload/c_scale,w_400/v1480724520/kopfstand_cover.png&quot; alt=&quot;cover Klartexter und Hannes Diem - Kopfstand&quot;&gt;
+
+</description>
+      <pubDate>Sat, 03 Dec 2016 01:10:04 +0000</pubDate>
+      <dc:date>2016-12-03T01:10:04+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 92 - Von Freundschaften und Winken</title>
       <link>http://hannesdiem.de/tagesform-92/</link>
@@ -1181,6 +1190,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-12-02T01:32:21+00:00</dc:date>
+    <dc:date>2016-12-03T01:10:04+00:00</dc:date>
   </channel>
 </rss>
