@@ -8,7 +8,17 @@
     <title>Hannes Diem</title>
     <link>http://hannesdiem.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 03 Dec 2016 01:10:04 +0000</pubDate>
+    <pubDate>Sat, 03 Dec 2016 02:16:25 +0000</pubDate>
+    <item>
+      <title>Tagesform 93 - Kopfstand Spezial</title>
+      <link>http://hannesdiem.de/tagesform-93/</link>
+      <description>Heute ist [Kopfstand](http://hannesdiem.de/kopfstand/) rausgekommen und darum 
+erzähle ich ein bisschen was zum inhaltlichen Hintergrund.
+
+</description>
+      <pubDate>Sat, 03 Dec 2016 02:16:25 +0000</pubDate>
+      <dc:date>2016-12-03T02:16:25+00:00</dc:date>
+    </item>
     <item>
       <title>Klartexter und Hannes Diem - Kopfstand</title>
       <link>http://hannesdiem.de/kopfstand/</link>
@@ -1190,6 +1200,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-12-03T01:10:04+00:00</dc:date>
+    <dc:date>2016-12-03T02:16:25+00:00</dc:date>
   </channel>
 </rss>

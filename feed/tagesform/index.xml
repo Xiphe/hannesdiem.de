@@ -10,7 +10,7 @@
 		<atom:link href="http://hannesdiem.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://hannesdiem.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Sat, 03 Dec 2016 00:42:57 +0000</lastBuildDate>
+		<lastBuildDate>Sat, 03 Dec 2016 02:46:26 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2016</copyright>
 		<image>
@@ -34,6 +34,39 @@
 		<itunes:explicit>No</itunes:explicit>
 		
 		<item>
+			<title>Tagesform 93 - Kopfstand Spezial</title>
+			<link>http://hannesdiem.de/tagesform-93/</link>
+			<guid>http://hannesdiem.de/tagesform-93</guid>
+			<pubDate>Sat, 03 Dec 2016 02:16:25 +0000</pubDate>
+			<comments>http://hannesdiem.de/tagesform-93/#disqus_thread</comments>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Heute ist Kopfstand rausgekommen und darum erzähle ich ein bisschen was zum inhaltlichen Hintergrund. Hier gibt es alle Artikel und Episoden mit dem Thema Kopfstand. Und schaut bitte bei Charlotte Ortmann und Klartexter vorbei &lt;3...</description>
+			<content:encoded><![CDATA[<p>Heute ist <a href="http://hannesdiem.de/kopfstand/">Kopfstand</a> rausgekommen und darum 
+erzähle ich ein bisschen was zum inhaltlichen Hintergrund.</p>
+
+<!-- more -->
+
+<p>Hier gibt es alle <a href="http://hannesdiem.de/tag/kopfstand/">Artikel und Episoden mit dem Thema Kopfstand</a>.</p>
+
+<p>Und schaut bitte bei <a href="http://www.charlotteortmann.de/">Charlotte Ortmann</a>
+und <a href="https://klartexter.net/">Klartexter vorbei</a> &lt;3</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_93.mp3" length="32931856" type="audio/mpeg" />
+			<itunes:subtitle>Heute ist Kopfstand rausgekommen und darum erzähle ich ein bisschen was zum inhaltlichen Hintergrund.</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Heute ist <a href="http://hannesdiem.de/kopfstand/">Kopfstand</a> rausgekommen und darum 
+erzähle ich ein bisschen was zum inhaltlichen Hintergrund.</p>
+
+<!-- more -->
+
+<p>Hier gibt es alle <a href="http://hannesdiem.de/tag/kopfstand/">Artikel und Episoden mit dem Thema Kopfstand</a>.</p>
+
+<p>Und schaut bitte bei <a href="http://www.charlotteortmann.de/">Charlotte Ortmann</a>
+und <a href="https://klartexter.net/">Klartexter vorbei</a> &lt;3</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:26:06</itunes:duration>
+		</item>
+		<item>
 			<title>Tagesform 92 - Von Freundschaften und Winken</title>
 			<link>http://hannesdiem.de/tagesform-92/</link>
 			<guid>http://hannesdiem.de/tagesform-92</guid>
@@ -43,12 +76,12 @@
 			<description>Mal wieder eine recht Ideenlose Episode :)</description>
 			<content:encoded><![CDATA[<p>Mal wieder eine recht Ideenlose Episode :)</p>
 ]]></content:encoded>
-			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_92.mp3" length="" type="audio/mpeg" />
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_92.mp3" length="8110056" type="audio/mpeg" />
 			<itunes:subtitle>Mal wieder eine recht Ideenlose Episode :)</itunes:subtitle>
 			<itunes:summary><![CDATA[<p>Mal wieder eine recht Ideenlose Episode :)</p>
 ]]></itunes:summary>
 			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
-			<itunes:duration>00:00:00</itunes:duration>
+			<itunes:duration>00:06:25</itunes:duration>
 		</item>
 		<item>
 			<title>Tagesform 91 - Lazy Habits in Brighton</title>
