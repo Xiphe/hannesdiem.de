@@ -8,7 +8,16 @@
     <title>Hannes Diem</title>
     <link>http://hannesdiem.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Sat, 03 Dec 2016 02:16:25 +0000</pubDate>
+    <pubDate>Mon, 30 Jan 2017 00:42:23 +0000</pubDate>
+    <item>
+      <title>Irgendwann 2017</title>
+      <link>http://hannesdiem.de/irgendwann_2017/</link>
+      <description>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/mN8YszVR4Y4&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+</description>
+      <pubDate>Mon, 30 Jan 2017 00:42:23 +0000</pubDate>
+      <dc:date>2017-01-30T00:42:23+00:00</dc:date>
+    </item>
     <item>
       <title>Tagesform 93 - Kopfstand Spezial</title>
       <link>http://hannesdiem.de/tagesform-93/</link>
@@ -1212,6 +1221,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2016-12-03T02:16:25+00:00</dc:date>
+    <dc:date>2017-01-30T00:42:23+00:00</dc:date>
   </channel>
 </rss>

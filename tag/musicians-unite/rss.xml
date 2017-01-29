@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>hannesdiem.de</title>
+   
+   <link>http://hannesdiem.de</link>
+   <description>...über die Musik, das Leben und den ganzen Rest</description>
+   <language>de-de</language>
+   <managingEditor> Casper McFadden</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Irgendwann 2017</title>
+	  <link>//irgendwann_2017/</link>
+	  <author>Casper McFadden</author>
+	  <pubDate>2017-01-30T00:42:23+00:00</pubDate>
+	  <guid>//irgendwann_2017/</guid>
+	  <description><![CDATA[
+	     <iframe width="560" height="315" src="https://www.youtube.com/embed/mN8YszVR4Y4" frameborder="0" allowfullscreen></iframe>
+
+<p>Ich schenke 2017 dieses Zeilen! 
+Ihr seid herzlich eingeladen zu covern, zu remixen oder neue Texte dazu zu schreiben. </p>
+
+<!-- more -->
+
+<p>Macht es zu eurem Lied!</p>
+
+<p>Lasst uns gemeinsam aufstehen gegen Faschismus und Narzissmus.
+Lasst uns jetzt etwas ändern und nicht irgendwann,
+denn irgendwann könnt&#39; auch Heute sein, vielleicht war&#39;s Gestern :)</p>
+
+<p>Anbei die Wave Files und Texte von allen drei Versionen
+(Original mit <a href="https://klartexter.net/">Klartexter</a>, die Akustik Version im Video und neue Vox auf dem Original).
+Macht was draus und tut es für Liebe, für Frieden und von ganzem Herzen!</p>
+
+<p>https://www.dropbox.com/sh/k3ojzlczvw2t2st/AABgYsuxU6bQDtthTyFPFepMa?dl=0</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
