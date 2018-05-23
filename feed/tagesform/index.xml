@@ -10,7 +10,7 @@
 		<atom:link href="http://hannesdiem.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>http://hannesdiem.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Wed, 23 May 2018 20:52:53 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 23 May 2018 21:05:50 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2018</copyright>
 		<image>
@@ -2035,7 +2035,7 @@ von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt v
 
 <!-- more -->
 
-<p><img src="http://res.cloudinary.com/xiphe/image/upload/c_scale,w_600/v1460755515/tagesform1_c7ld9y.png"></p>
+<p><img src="https://res.cloudinary.com/xiphe/image/upload/c_scale,w_600/v1460755515/tagesform1_c7ld9y.png"></p>
 ]]></content:encoded>
 			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_1.mp3" length="4647544" type="audio/mpeg" />
 			<itunes:subtitle>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</itunes:subtitle>
@@ -2043,7 +2043,7 @@ von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt v
 
 <!-- more -->
 
-<p><img src="http://res.cloudinary.com/xiphe/image/upload/c_scale,w_600/v1460755515/tagesform1_c7ld9y.png"></p>
+<p><img src="https://res.cloudinary.com/xiphe/image/upload/c_scale,w_600/v1460755515/tagesform1_c7ld9y.png"></p>
 ]]></itunes:summary>
 			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
 			<itunes:duration>00:03:41</itunes:duration>
