@@ -11,7 +11,7 @@ logo: 'assets/images/logo.svg'
 
 Mein Serie über Cajon-Technik richtet sich an ambitionierte Anfänger, Fortgeschrittene und umsteigende Schlagzeuger. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N2KCQ23JIb0" frameborder="0" allowfullscreen></iframe><br>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N2KCQ23JIb0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <!-- more -->
 
@@ -19,6 +19,6 @@ In Teil 1 zeige ich die Grundschläge auf dem Instrument und einen einfachen Bea
 
 Und im Vorwort stelle ich euch meine "Martin Röttger Signature" Cajon von  Pepote vor und zeige euch kurz meinen Proberaum.<br><br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Gpaotp40oQ4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gpaotp40oQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Danke an Lasse und July für's erste Feedback <3
