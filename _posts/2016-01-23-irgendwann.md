@@ -21,7 +21,7 @@ Dann war es längere Zeit still, bis Klartexter und ich im frühen Sommer angefa
  - ["Irgendwann" @ Spotify](https://open.spotify.com/track/35QnHUOxM0gSCL8YKULtyH)
 
 
-__Cover-Foto__: [Chris Zielecki](http://www.zielecki.com/)
+__Cover-Foto__: [Chris Zielecki](https://www.zielecki.com/)
 __Produziert, aufgenommen und gemixt__ von Kai Birkenfeld und Hannes Diercks  
 __Gitarre__: Lasse Diercks  
 __Gemastert__ von Carl Albrecht, [Music Made Me Millionaire](http://www.musicmadememillionaire.de/)

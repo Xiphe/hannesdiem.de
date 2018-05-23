@@ -22,9 +22,9 @@ logo: 'assets/images/logo.svg'
 	<small><em>Foto von Meike Schlier</em></small>
 </div>
 
-Zwei der Stücke sind bereits auf der “[Hannes Diem EP](http://hannesdiem.de/ep-hannes-diem/)” erschienen und sind hier neu interpretiert und mit dieser Geilen Band aufgenommen.
+Zwei der Stücke sind bereits auf der “[Hannes Diem EP](https://hannesdiem.de/ep-hannes-diem/)” erschienen und sind hier neu interpretiert und mit dieser Geilen Band aufgenommen.
 
-Das “Digitale Booklet” mit allen Texten, hübschen Fotos und mehr findet ihr unter [unbeschrieben.hannesdiem.de](http://unbeschrieben.hannesdiem.de/).
+Das “Digitale Booklet” mit allen Texten, hübschen Fotos und mehr findet ihr unter [unbeschrieben.hannesdiem.de](https://unbeschrieben.hannesdiem.de/).
 
 Und laden kann man das gute Stück z. B. hier:
 

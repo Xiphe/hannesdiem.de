@@ -14,7 +14,7 @@ logo: 'assets/images/logo.svg'
 
 <!-- more -->
 
-[iTunes](https://itunes.apple.com/us/album/trigonometry/id793517248) &bull; [Amazon](http://www.amazon.de/gp/product/B000MGAZ9I?qid=1449784703)
+[iTunes](https://itunes.apple.com/us/album/trigonometry/id793517248) &bull; [Amazon](https://www.amazon.de/gp/product/B000MGAZ9I?qid=1449784703)
 
 __Geschrieben 2005 - 2006__ von Hege Winckler, Axel Feige und Hannes Diercks  
 __Aufgenommen und gemixt__ von Hannes Diercks  

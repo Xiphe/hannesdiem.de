@@ -4,7 +4,7 @@
 
 based on [biomadeira/jasper](https://github.com/biomadeira/jasper)
 
-This repo generates [hannesdiem.de](http://hannesdiem.de)
+This repo generates [hannesdiem.de](https://hannesdiem.de)
 
 ## Copyright & License
 

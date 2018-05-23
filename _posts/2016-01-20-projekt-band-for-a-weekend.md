@@ -15,13 +15,13 @@ Was Passiert wenn man eine gute Hand voll Musikerinnen und Musiker für ein Woch
 
 ### Wie komme ich da darauf?
 
-Ich kenne so viele tolle Musikerinnen und hab zuletzt schon immer versucht mit einigen von Euch im Rahmen meiner “Songwriting-Sessions” oder Ähnlichem nicht nur Musik zu machen, sondern das auch zu veröffentlichen. Als [Album](https://open.spotify.com/album/3xyDFiDX6YaylTOaeQW8Dw), [Video](https://www.youtube.com/watch?v=EFMol2OKfqI), [Podcast](http://aethermonolog.de/episode-003.html), [Musikschnipsel](https://soundcloud.com/hannesdiem/tanz) uvm.
+Ich kenne so viele tolle Musikerinnen und hab zuletzt schon immer versucht mit einigen von Euch im Rahmen meiner “Songwriting-Sessions” oder Ähnlichem nicht nur Musik zu machen, sondern das auch zu veröffentlichen. Als [Album](https://open.spotify.com/album/3xyDFiDX6YaylTOaeQW8Dw), [Video](https://www.youtube.com/watch?v=EFMol2OKfqI), [Podcast](https://aethermonolog.de/episode-003.html), [Musikschnipsel](https://soundcloud.com/hannesdiem/tanz) uvm.
 
 Das werde ich auch weiterhin alleine oder unter vier bis sechs Augen in meinen Proberaum tun, hab aber grad großen Bock das Ganze größer auf zu ziehen.
 
 ![House on a Hill beim Proben]({{ site.baseurl }}assets/images/post/hoah_probewochenende.jpg)
 
-Vor etwa einem Jahr waren wir mit meiner Band [House on a Hill](http://houseonahill.de) ein Wochenende lang in einem süßen Häuschen mitten im Nirgendwo. Wir haben viel gequatscht, getrunken, uns gegenseitig Musik vorgespielt, neue Stücke geprobt und ganz einfach eine wunderschöne Zeit gehabt.  
+Vor etwa einem Jahr waren wir mit meiner Band [House on a Hill](https://houseonahill.de) ein Wochenende lang in einem süßen Häuschen mitten im Nirgendwo. Wir haben viel gequatscht, getrunken, uns gegenseitig Musik vorgespielt, neue Stücke geprobt und ganz einfach eine wunderschöne Zeit gehabt.  
 Und als ich da grad so noch mal drüber nachgedacht hab, dachte ich mir: 
 
 > “Das geht doch bestimmt auch mit einer ganz bunten Mischung von Menschen und dem festen Ziel in 2 Tagen etwas neues zu erschaffen”

@@ -23,9 +23,9 @@ zum Beispiel hier:
 
 Lasst uns gerne nen Kommentar da, wenn's euch gefällt <3
 
-__Cover-Foto__: [Chris Zielecki](http://www.zielecki.com/)  
+__Cover-Foto__: [Chris Zielecki](https://www.zielecki.com/)  
 __Produziert, aufgenommen und gemixt__ von [Kai Birkenfeld](https://klartexter.net/) und
-[Hannes Diercks](http://hannesdiem.de)  
-__Saxophon__: [Charlotte Ortmann](http://www.charlotteortmann.de/)  
+[Hannes Diercks](https://hannesdiem.de)  
+__Saxophon__: [Charlotte Ortmann](https://www.charlotteortmann.de/)  
 __Gemastert__ von Carl Albrecht, [Music Made Me Millionaire](http://www.musicmadememillionaire.de/)
 

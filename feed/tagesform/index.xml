@@ -3,15 +3,15 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
-	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:atom="https://www.w3.org/2005/Atom"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
 	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
 	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 >
 	<channel>
 		<title>Tagesform - über die Musik, das Leben und den ganzen Rest</title>
-		<atom:link href="http://hannesdiem.de/feed/tagesform/" rel="self" type="application/rss+xml" />
-		<link>http://hannesdiem.de</link>
+		<atom:link href="https://hannesdiem.de/feed/tagesform/" rel="self" type="application/rss+xml" />
+		<link>https://hannesdiem.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
 		<lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
 		<language>de-DE</language>
@@ -19,13 +19,13 @@ layout: null
 		<image>
 			<title>Tagesform - ...über die Musik, das Leben und den ganzen Rest</title>
 			<url>https://res.cloudinary.com/xiphe/image/upload/c_fill,g_south_west,h_3000,q_80,w_3000/v1460755546/tagesform_cover_jtbc9y.jpg</url>
-			<link>http://hannesdiem.de</link>
+			<link>https://hannesdiem.de</link>
 		</image>
 
 		<sy:updatePeriod>daily</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
 
-		<itunes:new-feed-url>http://hannesdiem.de/feed/tagesform/</itunes:new-feed-url>
+		<itunes:new-feed-url>https://hannesdiem.de/feed/tagesform/</itunes:new-feed-url>
 		<itunes:author>Diem</itunes:author>
 		<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_south_west,h_3000,q_80,w_3000/v1460755546/tagesform_cover_jtbc9y.jpg" />
 		<itunes:category text="Music" />

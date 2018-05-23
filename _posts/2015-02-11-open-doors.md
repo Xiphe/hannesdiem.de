@@ -16,7 +16,7 @@ logo: 'assets/images/logo.svg'
 > bockt einfach nur derbe.
 
 
-[Amazon](http://www.amazon.de/Open-Doors-House-Hill/dp/B00YC1P9JA)
+[Amazon](https://www.amazon.de/Open-Doors-House-Hill/dp/B00YC1P9JA)
 
 __Produziert, aufgenommen und gemixt__ von Matthias Schwarz-Tkotz, [Milchkettenmusik 2.0](http://mkm2.de/)
 __Gemastert__ von Tom Mayer, [Master & Servant](http://www.master-servant.de/)
