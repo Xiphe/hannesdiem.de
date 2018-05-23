@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -18,7 +18,7 @@
 	  <pubDate>2016-05-28T21:53:30+00:00</pubDate>
 	  <guid>//tagesform-35/</guid>
 	  <description><![CDATA[
-	     <p>Nach einem Wunderbaren Gig mit <a href="http://absolem-max.com">Absolem Max</a>,
+	     <p>Nach einem Wunderbaren Gig mit <a href="https://absolem-max.com">Absolem Max</a>,
 El Rey &amp; The Twisters und <a href="http://www.uebertribe.de/">UEBERTRIBE</a>, 
 rede ich darüber was Retrospektiven für mich sind und dass man
 sie auch gerne häufiger im Privaten einsetzen sollte.</p>

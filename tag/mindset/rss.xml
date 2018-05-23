@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -49,7 +49,7 @@ nicht mag, und welche Chancen trozdem darin stecken.</p>
 
 <!-- more -->
 
-<p>Inspiriert von <a href="http://fourhourworkweek.com/2016/05/13/how-to-optimize-creative-output-jarvis-versus-ferriss/">How to Optimize Creative Output — Jarvis versus Ferriss</a></p>
+<p>Inspiriert von <a href="https://fourhourworkweek.com/2016/05/13/how-to-optimize-creative-output-jarvis-versus-ferriss/">How to Optimize Creative Output — Jarvis versus Ferriss</a></p>
 
 	  ]]></description>
 	</item>

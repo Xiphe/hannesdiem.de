@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -24,7 +24,7 @@ Podcast jetzt aboniert werden!</p>
 
 <!-- more -->
 
-<p>Einfach <code>http://hannesdiem.de/feed/tagesform/</code> in eine Podcast-App eures
+<p>Einfach <code>https://hannesdiem.de/feed/tagesform/</code> in eine Podcast-App eures
 vertrauens eintagen und glücklich sein.</p>
 
 <p>Ansonsten just another lazy sunday.</p>

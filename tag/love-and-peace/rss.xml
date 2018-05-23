@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -56,7 +56,7 @@ und eine Gruppe Menschen verachtet habe.</p>
 
 <p>Ausgelößt von <a href="https://www.youtube.com/watch?v=BNLhT5hZaV8">Kübra Gümüşay: Organisierte Liebe</a></p>
 
-<p><a href="https://github.com/love-and-peace/love-and-peace/blob/master/versions/karma/v1.0-karma1/de.md"><img src="http://love-and-peace.github.io/love-and-peace/badges/karma/v1.0-karma1.svg" alt="Love and Peace"></a></p>
+<p><a href="https://github.com/love-and-peace/love-and-peace/blob/master/versions/karma/v1.0-karma1/de.md"><img src="https://love-and-peace.github.io/love-and-peace/badges/karma/v1.0-karma1.svg" alt="Love and Peace"></a></p>
 
 	  ]]></description>
 	</item>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -18,10 +18,10 @@
 	  <pubDate>2016-12-01T00:43:53+00:00</pubDate>
 	  <guid>//tagesform-91/</guid>
 	  <description><![CDATA[
-	     <p>Ich war die letzten Tage in Brighton unterwegs und habe mir <a href="http://lazyhabits.com/">Lazy Habits</a>
+	     <p>Ich war die letzten Tage in Brighton unterwegs und habe mir <a href="https://lazyhabits.com/">Lazy Habits</a>
 angesehen und ihr solltet das auch tun :)
 Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im
-<a href="http://www.cafecoho.co.uk/">Cafe Coho</a>.</p>
+<a href="https://www.cafecoho.co.uk/">Cafe Coho</a>.</p>
 
 	  ]]></description>
 	</item>

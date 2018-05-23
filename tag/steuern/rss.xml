@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -20,7 +20,7 @@
 	  <description><![CDATA[
 	     <p>Ich hab schlechte Laune, weil ich Steuern zahlen muss.
 Aber die neuste Folge vom aethermonolog podcast ist draußen
-<a href="http://aethermonolog.de/episode-019.html">#019 - Vom Songwriting in Iterationen</a>
+<a href="https://aethermonolog.de/episode-019.html">#019 - Vom Songwriting in Iterationen</a>
 und ich durfte, wie angekündigt mitreden.</p>
 
 	  ]]></description>

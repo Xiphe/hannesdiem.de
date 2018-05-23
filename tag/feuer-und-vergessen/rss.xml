@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -18,7 +18,7 @@
 	  <pubDate>2016-05-10T21:24:59+00:00</pubDate>
 	  <guid>//tagesform-22/</guid>
 	  <description><![CDATA[
-	     <p>Nachdem ich mit Kai eine Episode seines <a href="http://aethermonolog.de/">aethermonologs</a> eingesprochen habe, Zeige ich einen Schnippsel von dem was ich 
+	     <p>Nachdem ich mit Kai eine Episode seines <a href="https://aethermonolog.de/">aethermonologs</a> eingesprochen habe, Zeige ich einen Schnippsel von dem was ich 
 gestern im Proberaum gebastelt habe und rede über meine neu gewonnene
 Vorliebe für Synthesizer und moderne Sprache.</p>
 

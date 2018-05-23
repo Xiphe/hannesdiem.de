@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -24,7 +24,7 @@ zu zucken, drei Stunden lang Snoozen kann.</p>
 <!-- more -->
 
 <p>Außerdem gibt es eine Hörprobe von Michael Jacksons &quot;Billy Jean&quot; in der bearbeitung
-von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt von <a href="http://houseonahill.de/">&quot;House on a Hill&quot;</a>.</p>
+von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt von <a href="https://houseonahill.de/">&quot;House on a Hill&quot;</a>.</p>
 
 	  ]]></description>
 	</item>

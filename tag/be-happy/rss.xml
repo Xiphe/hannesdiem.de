@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -18,7 +18,7 @@
 	  <pubDate>2016-08-25T23:42:25+00:00</pubDate>
 	  <guid>//tagesform-77/</guid>
 	  <description><![CDATA[
-	     <p>Ich hab gestern <a href="http://kiddo-kat.de/">Kiddo Kat</a> gesehen und für großartig befunden. Und hab außerdem gemerkt, dass glücklich sein und gute Laune haben
+	     <p>Ich hab gestern <a href="https://www.kiddo-kat.com/">Kiddo Kat</a> gesehen und für großartig befunden. Und hab außerdem gemerkt, dass glücklich sein und gute Laune haben
 eine aktive Entscheidung sein kann. &lt;3</p>
 
 	  ]]></description>

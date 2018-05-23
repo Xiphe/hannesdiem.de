@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
 <channel>
    
       <title>hannesdiem.de</title>
    
-   <link>http://hannesdiem.de</link>
+   <link>https://hannesdiem.de</link>
    <description>...über die Musik, das Leben und den ganzen Rest</description>
    <language>de-de</language>
    <managingEditor> Casper McFadden</managingEditor>
@@ -26,7 +26,7 @@
 
 <!-- more -->
 
-<p><a href="https://itunes.apple.com/us/album/trigonometry/id793517248">iTunes</a> &bull; <a href="http://www.amazon.de/gp/product/B000MGAZ9I?qid=1449784703">Amazon</a></p>
+<p><a href="https://itunes.apple.com/us/album/trigonometry/id793517248">iTunes</a> &bull; <a href="https://www.amazon.de/gp/product/B000MGAZ9I?qid=1449784703">Amazon</a></p>
 
 <p><strong>Geschrieben 2005 - 2006</strong> von Hege Winckler, Axel Feige und Hannes Diercks<br>
 <strong>Aufgenommen und gemixt</strong> von Hannes Diercks<br>
