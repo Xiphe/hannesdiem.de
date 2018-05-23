@@ -23,7 +23,7 @@ description: Tag übersicht
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
 <!-- If we have a tag cover, display that - else blog cover - else nothing -->
-<header class="main-header tag-head {% if new_cover %}" style="background-image: url(http://res.cloudinary.com/xiphe/image/upload/c_scale,w_1600,q_80/v1460755546/{% if new_cover %}{{ new_cover }}{% else %}{{ page.cover }}{% endif%}.png) {% else %}no-cover{% endif %}">
+<header class="main-header tag-head {% if new_cover %}" style="background-image: url(https://res.cloudinary.com/xiphe/image/upload/c_scale,w_1600,q_80/v1460755546/{% if new_cover %}{{ new_cover }}{% else %}{{ page.cover }}{% endif%}.png) {% else %}no-cover{% endif %}">
     <nav class="main-nav overlay clearfix">
         {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
         {% if page.navigation %}

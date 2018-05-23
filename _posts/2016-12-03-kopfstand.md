@@ -9,7 +9,7 @@ disqus: true
 logo: 'assets/images/logo.svg'
 ---
 
-<img class="cover"src="http://res.cloudinary.com/xiphe/image/upload/c_scale,w_400/v1480724520/kopfstand_cover.png" alt="cover Klartexter und Hannes Diem - Kopfstand">
+<img class="cover"src="https://res.cloudinary.com/xiphe/image/upload/c_scale,w_400/v1480724520/kopfstand_cover.png" alt="cover Klartexter und Hannes Diem - Kopfstand">
 
 Was lange währt steht endlich Kopf!
 
