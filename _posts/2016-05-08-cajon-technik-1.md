@@ -5,7 +5,6 @@ title: Cajon-Technik Teil 1 (und Vorwort)
 date: 2016-05-07 19:00:21
 tags: cajon cajon-technik 
 navigation: true
-disqus: true
 logo: 'assets/images/logo.svg'
 ---
 

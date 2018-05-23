@@ -5,7 +5,6 @@ title: Projekt - Band for a Weekend
 date: 2016-01-20 20:00:00
 tags: projekte band-for-a-weekend
 navigation: true
-disqus: true
 logo: 'assets/images/logo.svg'
 ---
 

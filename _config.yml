@@ -17,7 +17,6 @@ location: 'Maine, USA'
 url: 'http://hannesdiem.de'
 
 short_url: 'hannesdiem.de'
-disqus: diemmusik
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /
 
