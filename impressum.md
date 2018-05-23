@@ -9,8 +9,8 @@ current: impressum
 ###### Angaben gemäß § 5 TMG:
 
 Hannes Diercks  
-Preystraße 4  
-22303 Hamburg
+Rotdornallee 16  
+22175 Hamburg
 
 ### Kontakt:
 
