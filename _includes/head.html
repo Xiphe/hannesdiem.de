@@ -2,7 +2,7 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.content and page.except_desc != false %}{{ page.content | markdownify | excerptify:'all' }}{% else %}{{ site.description }}{% endif %}" />
 
     <link rel="canonical" href="{{ site.url }}{% if page.url %}{{ page.url }}{% else %}{{ site.baseurl }}{% endif %}" />
-    <meta name="referrer" content="origin" />
+    <meta name="referrer" content="no-referrer">
 
     <meta property="og:site_name" content="{{ site.name }}" />
     <meta property="og:type" content="website" />
