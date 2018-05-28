@@ -10,8 +10,8 @@ current: datenschutz
 
 ## Verantwortlicher
 
-Hannes Diercks
-Rotdornallee 16
+Hannes Diercks  
+Rotdornallee 16  
 22175 Hamburg
 
 
