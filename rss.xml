@@ -8,7 +8,16 @@
     <title>Hannes Diem</title>
     <link>https://hannesdiem.de</link>
     <description>...über die Musik, das Leben und den ganzen Rest</description>
-    <pubDate>Mon, 30 Jan 2017 00:42:23 +0000</pubDate>
+    <pubDate>Tue, 25 Sep 2018 21:54:25 +0000</pubDate>
+    <item>
+      <title>Tagesform 94 - R3</title>
+      <link>https://hannesdiem.de/tagesform-94/</link>
+      <description>Tagesform is Back! Heute auf der metaebene, wie es mit diesem format in Zukunft vielleicht weiter geht :)
+
+</description>
+      <pubDate>Tue, 25 Sep 2018 21:54:25 +0000</pubDate>
+      <dc:date>2018-09-25T21:54:25+00:00</dc:date>
+    </item>
     <item>
       <title>Irgendwann 2017</title>
       <link>https://hannesdiem.de/irgendwann_2017/</link>
@@ -1221,6 +1230,6 @@ zu zucken, drei Stunden lang Snoozen kann.
       <pubDate>Wed, 01 Feb 2006 20:00:00 +0000</pubDate>
       <dc:date>2006-02-01T20:00:00+00:00</dc:date>
     </item>
-    <dc:date>2017-01-30T00:42:23+00:00</dc:date>
+    <dc:date>2018-09-25T21:54:25+00:00</dc:date>
   </channel>
 </rss>

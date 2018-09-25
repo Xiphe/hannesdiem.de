@@ -10,7 +10,7 @@
 		<atom:link href="https://hannesdiem.de/feed/tagesform/" rel="self" type="application/rss+xml" />
 		<link>https://hannesdiem.de</link>
 		<description>Musiker und Programmierer Hannes Diem redet täglich 3 - 15 Minuten darüber was ihn gerade beschäftigt. Von Songwriting, Studioequipment, dem Job in einem Startup-Unternehmen, Open Source Mentalität bis zu Wäsche aufhängen und anderen trivialen Tagesformen.</description>
-		<lastBuildDate>Mon, 28 May 2018 13:28:24 +0000</lastBuildDate>
+		<lastBuildDate>Tue, 25 Sep 2018 20:17:16 +0000</lastBuildDate>
 		<language>de-DE</language>
 		<copyright>Hannes Diercks 2018</copyright>
 		<image>
@@ -33,6 +33,42 @@
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
 		
+		<item>
+			<title>Tagesform 94 - R3</title>
+			<link>https://hannesdiem.de/tagesform-94/</link>
+			<guid>https://hannesdiem.de/tagesform-94</guid>
+			<pubDate>Tue, 25 Sep 2018 21:54:25 +0000</pubDate>
+			<itunes:explicit>No</itunes:explicit>
+			<description>Tagesform is Back! Heute auf der metaebene, wie es mit diesem format in Zukunft vielleicht weiter geht :) ...und zwar vermutlich mit neuen Gedanken zum Musik-Business, Self-Managed-Bands, wie z. B. Absolem Max und allgemeinen Gedanken dazu. Die how-we-work Jimdo-Seite gibt es seit #jimdoquit nicht mehr. Dafür hat der von uns erwänte Simon Michael eine Seite bei dem Laden XD...</description>
+			<content:encoded><![CDATA[<p>Tagesform is Back! Heute auf der metaebene, wie es mit diesem format in Zukunft vielleicht weiter geht :)</p>
+
+<!-- more -->
+
+<p>...und zwar vermutlich mit neuen Gedanken zum Musik-Business, Self-Managed-Bands,
+wie z. B. <a href="https://absolem-max.com">Absolem Max</a> und allgemeinen Gedanken dazu.</p>
+
+<p>Die how-we-work Jimdo-Seite gibt es seit <a href="https://mchls.works/2017/jimdoquit-one-year-later">#jimdoquit</a> nicht mehr.</p>
+
+<p>Dafür hat der von uns erwänte <a href="https://www.simon-m.com/">Simon Michael</a>
+eine Seite bei dem Laden XD</p>
+]]></content:encoded>
+			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_94.mp3" length="12733648" type="audio/mpeg" />
+			<itunes:subtitle>Tagesform is Back! Heute auf der metaebene, wie es mit diesem format in Zukunft vielleicht weiter geht :)</itunes:subtitle>
+			<itunes:summary><![CDATA[<p>Tagesform is Back! Heute auf der metaebene, wie es mit diesem format in Zukunft vielleicht weiter geht :)</p>
+
+<!-- more -->
+
+<p>...und zwar vermutlich mit neuen Gedanken zum Musik-Business, Self-Managed-Bands,
+wie z. B. <a href="https://absolem-max.com">Absolem Max</a> und allgemeinen Gedanken dazu.</p>
+
+<p>Die how-we-work Jimdo-Seite gibt es seit <a href="https://mchls.works/2017/jimdoquit-one-year-later">#jimdoquit</a> nicht mehr.</p>
+
+<p>Dafür hat der von uns erwänte <a href="https://www.simon-m.com/">Simon Michael</a>
+eine Seite bei dem Laden XD</p>
+]]></itunes:summary>
+			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+			<itunes:duration>00:10:05</itunes:duration>
+		</item>
 		<item>
 			<title>Tagesform 93 - Kopfstand Spezial</title>
 			<link>https://hannesdiem.de/tagesform-93/</link>
