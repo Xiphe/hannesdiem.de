@@ -3,7 +3,7 @@ language: ruby
 cache: bundler
 rvm:
 #- 2.1
-- 2.1.1
+- 2.5.3
 
 install:
   # Install Jekyll and dependencies
