@@ -27,13 +27,18 @@ const remixHandler =
         return createRequestHandler({ build, mode: MODE })(req, res, next);
       };
 const proxy = createProxyMiddleware({
-  target: 'https://hannesdiem.de/',
+  target: 'https://xiphe.net/hannesdiem.de/',
   changeOrigin: true,
 });
 
 app.all('*', (req, res, next) => {
-  if (req.url.startsWith('/assets/') || req.url === '/') {
+  const [path, query] = req.url.split('?');
+  if (path === '/' || path === '/assets/css/screen.css') {
     proxy(req, res, next);
+  } else if (path.startsWith('/assets/')) {
+    res.redirect(301, `https://xiphe.net/hannesdiem.de${req.url}`);
+  } else if (!path.match(/\/$/)) {
+    res.redirect(301, `${path}${query ? `/?${query}` : '/'}`);
   } else {
     const originalEnd = res.end;
     res.end = (...args) => {
@@ -44,9 +49,7 @@ app.all('*', (req, res, next) => {
         originalEnd.apply(res, args);
       }
     };
-    remixHandler(req, res, (err) => {
-      console.log('NEXT', err);
-    });
+    remixHandler(req, res, next);
   }
 });
 
