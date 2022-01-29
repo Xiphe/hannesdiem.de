@@ -3,6 +3,7 @@ const express = require('express');
 const compression = require('compression');
 const morgan = require('morgan');
 const { createRequestHandler } = require('@remix-run/express');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const MODE = process.env.NODE_ENV;
 const BUILD_DIR = path.join(process.cwd(), 'server/build');
@@ -17,20 +18,41 @@ app.use(express.static('public', { maxAge: '1h' }));
 app.use(express.static('public/build', { immutable: true, maxAge: '1y' }));
 
 app.use(morgan('tiny'));
-app.all(
-  '*',
+const remixHandler =
   MODE === 'production'
     ? createRequestHandler({ build: require('./build') })
     : (req, res, next) => {
         purgeRequireCache();
         const build = require('./build');
         return createRequestHandler({ build, mode: MODE })(req, res, next);
-      },
-);
+      };
+const proxy = createProxyMiddleware({
+  target: 'https://hannesdiem.de/',
+  changeOrigin: true,
+});
+
+app.all('*', (req, res, next) => {
+  if (req.url.startsWith('/assets/') || req.url === '/') {
+    proxy(req, res, next);
+  } else {
+    const originalEnd = res.end;
+    res.end = (...args) => {
+      if (res.statusCode === 404) {
+        res.end = originalEnd;
+        proxy(req, res, next);
+      } else {
+        originalEnd.apply(res, args);
+      }
+    };
+    remixHandler(req, res, (err) => {
+      console.log('NEXT', err);
+    });
+  }
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Express server listening on port ${port}`);
+  console.log(`Express server listening on http://localhost:${port}`);
 });
 
 ////////////////////////////////////////////////////////////////////////////////
