@@ -1,0 +1,2734 @@
+export default `
+    <item>
+      <title>R3</title>
+      <itunes:episode>94</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Roxanna Diercks</atom:name>
+        <atom:uri>https://roxanna-diercks.de/</atom:uri>
+      </atom:contributor>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-94/</link>
+      <guid>https://hannesdiem.de/tagesform-94</guid>
+      <pubDate>Tue, 25 Sep 2018 21:54:25 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Tagesform is Back! Heute auf der metaebene, wie es mit diesem format in Zukunft vielleicht weiter geht :) ...und zwar vermutlich mit neuen Gedanken zum Musik-Business, Self-Managed-Bands, wie z. B. Absolem Max und allgemeinen Gedanken dazu. Die how-we-work Jimdo-Seite gibt es seit #jimdoquit nicht mehr. Dafür hat der von uns erwänte Simon Michael eine Seite bei dem Laden XD...</description>
+      <content:encoded><![CDATA[<p>Tagesform is Back! Heute auf der metaebene, wie es mit diesem format in Zukunft vielleicht weiter geht :)</p>
+
+<!-- more -->
+
+<p>...und zwar vermutlich mit neuen Gedanken zum Musik-Business, Self-Managed-Bands,
+wie z. B. <a href="https://absolem-max.com">Absolem Max</a> und allgemeinen Gedanken dazu.</p>
+
+<p>Die how-we-work Jimdo-Seite gibt es seit <a href="https://mchls.works/2017/jimdoquit-one-year-later">#jimdoquit</a> nicht mehr.</p>
+
+<p>Dafür hat der von uns erwänte <a href="https://www.simon-m.com/">Simon Michael</a>
+eine Seite bei dem Laden XD</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_94.mp3" length="12733648" type="audio/mpeg" />
+      <itunes:subtitle>Tagesform is Back! Heute auf der metaebene, wie es mit diesem format in Zukunft vielleicht weiter geht :)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Tagesform is Back! Heute auf der metaebene, wie es mit diesem format in Zukunft vielleicht weiter geht :)</p>
+
+<!-- more -->
+
+<p>...und zwar vermutlich mit neuen Gedanken zum Musik-Business, Self-Managed-Bands,
+wie z. B. <a href="https://absolem-max.com">Absolem Max</a> und allgemeinen Gedanken dazu.</p>
+
+<p>Die how-we-work Jimdo-Seite gibt es seit <a href="https://mchls.works/2017/jimdoquit-one-year-later">#jimdoquit</a> nicht mehr.</p>
+
+<p>Dafür hat der von uns erwänte <a href="https://www.simon-m.com/">Simon Michael</a>
+eine Seite bei dem Laden XD</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:10:05</itunes:duration>
+    </item>
+    <item>
+      <title>Kopfstand Spezial</title>
+      <itunes:episode>93</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-93/</link>
+      <guid>https://hannesdiem.de/tagesform-93</guid>
+      <pubDate>Sat, 03 Dec 2016 02:16:25 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Heute ist Kopfstand rausgekommen und darum erzähle ich ein bisschen was zum inhaltlichen Hintergrund. Hier gibt es alle Artikel und Episoden mit dem Thema Kopfstand. Und schaut bitte bei Charlotte Ortmann und Klartexter vorbei &lt;3...</description>
+      <content:encoded><![CDATA[<p>Heute ist <a href="https://hannesdiem.de/kopfstand/">Kopfstand</a> rausgekommen und darum
+erzähle ich ein bisschen was zum inhaltlichen Hintergrund.</p>
+
+<!-- more -->
+
+<p>Hier gibt es alle <a href="https://hannesdiem.de/tag/kopfstand/">Artikel und Episoden mit dem Thema Kopfstand</a>.</p>
+
+<p>Und schaut bitte bei <a href="https://www.charlotteortmann.de/">Charlotte Ortmann</a>
+und <a href="https://klartexter.net/">Klartexter vorbei</a> &lt;3</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_93.mp3" length="32931856" type="audio/mpeg" />
+      <itunes:subtitle>Heute ist Kopfstand rausgekommen und darum erzähle ich ein bisschen was zum inhaltlichen Hintergrund.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Heute ist <a href="https://hannesdiem.de/kopfstand/">Kopfstand</a> rausgekommen und darum
+erzähle ich ein bisschen was zum inhaltlichen Hintergrund.</p>
+
+<!-- more -->
+
+<p>Hier gibt es alle <a href="https://hannesdiem.de/tag/kopfstand/">Artikel und Episoden mit dem Thema Kopfstand</a>.</p>
+
+<p>Und schaut bitte bei <a href="https://www.charlotteortmann.de/">Charlotte Ortmann</a>
+und <a href="https://klartexter.net/">Klartexter vorbei</a> &lt;3</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:26:06</itunes:duration>
+    </item>
+    <item>
+      <title>Von Freundschaften und Winken</title>
+      <itunes:episode>92</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-92/</link>
+      <guid>https://hannesdiem.de/tagesform-92</guid>
+      <pubDate>Fri, 02 Dec 2016 01:32:21 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Mal wieder eine recht Ideenlose Episode :)</description>
+      <content:encoded><![CDATA[<p>Mal wieder eine recht Ideenlose Episode :)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_92.mp3" length="8110056" type="audio/mpeg" />
+      <itunes:subtitle>Mal wieder eine recht Ideenlose Episode :)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Mal wieder eine recht Ideenlose Episode :)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:25</itunes:duration>
+    </item>
+    <item>
+      <title>Lazy Habits in Brighton</title>
+      <itunes:episode>91</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-91/</link>
+      <guid>https://hannesdiem.de/tagesform-91</guid>
+      <pubDate>Thu, 01 Dec 2016 00:43:53 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich war die letzten Tage in Brighton unterwegs und habe mir Lazy Habits angesehen und ihr solltet das auch tun :) Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im Cafe Coho.</description>
+      <content:encoded><![CDATA[<p>Ich war die letzten Tage in Brighton unterwegs und habe mir <a href="https://lazyhabits.com/">Lazy Habits</a>
+angesehen und ihr solltet das auch tun :)
+Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im
+<a href="https://www.cafecoho.co.uk/">Cafe Coho</a>.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_91.mp3" length="16983238" type="audio/mpeg" />
+      <itunes:subtitle>Ich war die letzten Tage in Brighton unterwegs und habe mir Lazy Habits angesehen und ihr solltet das auch tun :) Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im Cafe Coho.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich war die letzten Tage in Brighton unterwegs und habe mir <a href="https://lazyhabits.com/">Lazy Habits</a>
+angesehen und ihr solltet das auch tun :)
+Außerdem habe ich ohne Handy die wohl besten Pancakes der Stadt gefunden und zwar im
+<a href="https://www.cafecoho.co.uk/">Cafe Coho</a>.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:13:27</itunes:duration>
+    </item>
+    <item>
+      <title>Das Bus-Experiment Teil2</title>
+      <itunes:episode>90</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-90/</link>
+      <guid>https://hannesdiem.de/tagesform-90</guid>
+      <pubDate>Sun, 20 Nov 2016 21:03:34 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Einige Biere bewegen mich heute dazu von Caravan Palace zu schwärmen und von ein paar Details meines kommenden Experiements zu erzählen.</description>
+      <content:encoded><![CDATA[<p>Einige Biere bewegen mich heute dazu von <a href="">Caravan Palace</a> zu schwärmen
+und von ein paar Details meines kommenden Experiements zu erzählen.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_90.mp3" length="10366868" type="audio/mpeg" />
+      <itunes:subtitle>Einige Biere bewegen mich heute dazu von Caravan Palace zu schwärmen und von ein paar Details meines kommenden Experiements zu erzählen.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Einige Biere bewegen mich heute dazu von <a href="">Caravan Palace</a> zu schwärmen
+und von ein paar Details meines kommenden Experiements zu erzählen.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:13</itunes:duration>
+    </item>
+    <item>
+      <title>Demonstrieren gehen</title>
+      <itunes:episode>89</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-89/</link>
+      <guid>https://hannesdiem.de/tagesform-89</guid>
+      <pubDate>Sat, 19 Nov 2016 16:38:55 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich habe heute verschlafen mich öffentlich gegen eine Nazi-Demonstration zu stellen und ärgere mich darüber!</description>
+      <content:encoded><![CDATA[<p>Ich habe heute verschlafen mich öffentlich gegen eine Nazi-Demonstration
+zu stellen und ärgere mich darüber!</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_89.mp3" length="9340494" type="audio/mpeg" />
+      <itunes:subtitle>Ich habe heute verschlafen mich öffentlich gegen eine Nazi-Demonstration zu stellen und ärgere mich darüber!</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich habe heute verschlafen mich öffentlich gegen eine Nazi-Demonstration
+zu stellen und ärgere mich darüber!</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:07:24</itunes:duration>
+    </item>
+    <item>
+      <title>Langeweile ist super!</title>
+      <itunes:episode>88</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-88/</link>
+      <guid>https://hannesdiem.de/tagesform-88</guid>
+      <pubDate>Fri, 18 Nov 2016 17:12:57 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Warum es unter umständen eine gute Idee ist, Langeweile zu haben... Ich erwähne außerdem die Episode 53 - Projekt-Priorisierung...</description>
+      <content:encoded><![CDATA[<p>Warum es unter umständen eine gute Idee ist, Langeweile zu haben...</p>
+
+<p>Ich erwähne außerdem die <a href="https://hannesdiem.de/tagesform-53/">Episode 53 - Projekt-Priorisierung</a></p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_88.mp3" length="17155988" type="audio/mpeg" />
+      <itunes:subtitle>Warum es unter umständen eine gute Idee ist, Langeweile zu haben... Ich erwähne außerdem die Episode 53 - Projekt-Priorisierung...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Warum es unter umständen eine gute Idee ist, Langeweile zu haben...</p>
+
+<p>Ich erwähne außerdem die <a href="https://hannesdiem.de/tagesform-53/">Episode 53 - Projekt-Priorisierung</a></p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:13:36</itunes:duration>
+    </item>
+    <item>
+      <title>Schall und Rauch</title>
+      <itunes:episode>87</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-87/</link>
+      <guid>https://hannesdiem.de/tagesform-87</guid>
+      <pubDate>Thu, 17 Nov 2016 18:07:15 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich denke darüber nach meinen Künstlernamen mal wieder zu wechseln und erzähle heute ein bisschen darüber. Wenn ihr ne Meinung oder Idee dazu habt, teilt sie mir gerne mit: https://docs.google.com/forms/d/e/1FAIpQLSdLQ1-mhFjBk4rad4V0-aDbDoxnzzk7NDtltCybVqPkbWgLTQ/viewform...</description>
+      <content:encoded><![CDATA[<p>Ich denke darüber nach meinen Künstlernamen mal wieder zu wechseln und
+erzähle heute ein bisschen darüber.</p>
+
+<p>Wenn ihr ne Meinung oder Idee dazu habt, teilt sie mir gerne mit: https://docs.google.com/forms/d/e/1FAIpQLSdLQ1-mhFjBk4rad4V0-aDbDoxnzzk7NDtltCybVqPkbWgLTQ/viewform</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_87.mp3" length="11247318" type="audio/mpeg" />
+      <itunes:subtitle>Ich denke darüber nach meinen Künstlernamen mal wieder zu wechseln und erzähle heute ein bisschen darüber. Wenn ihr ne Meinung oder Idee dazu habt, teilt sie mir gerne mit: https://docs.google.com/forms/d/e/1FAIpQLSdLQ1-mhFjBk4rad4V0-aDbDoxnzzk7NDtltC...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich denke darüber nach meinen Künstlernamen mal wieder zu wechseln und
+erzähle heute ein bisschen darüber.</p>
+
+<p>Wenn ihr ne Meinung oder Idee dazu habt, teilt sie mir gerne mit: https://docs.google.com/forms/d/e/1FAIpQLSdLQ1-mhFjBk4rad4V0-aDbDoxnzzk7NDtltCybVqPkbWgLTQ/viewform</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:55</itunes:duration>
+    </item>
+    <item>
+      <title>Das Bus-Experiment</title>
+      <itunes:episode>86</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-86/</link>
+      <guid>https://hannesdiem.de/tagesform-86</guid>
+      <pubDate>Wed, 16 Nov 2016 20:35:12 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich habe den verwegenen Plan in einen VW Bus um zu ziehen und erzähle Heute davon wie ich mich auf dieses Vorhaben vorbereite.</description>
+      <content:encoded><![CDATA[<p>Ich habe den verwegenen Plan in einen VW Bus um zu ziehen und erzähle Heute
+davon wie ich mich auf dieses Vorhaben vorbereite.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_86.mp3" length="11974746" type="audio/mpeg" />
+      <itunes:subtitle>Ich habe den verwegenen Plan in einen VW Bus um zu ziehen und erzähle Heute davon wie ich mich auf dieses Vorhaben vorbereite.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich habe den verwegenen Plan in einen VW Bus um zu ziehen und erzähle Heute
+davon wie ich mich auf dieses Vorhaben vorbereite.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:29</itunes:duration>
+    </item>
+    <item>
+      <title>Projektmanagement im Privaten</title>
+      <itunes:episode>85</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-85/</link>
+      <guid>https://hannesdiem.de/tagesform-85</guid>
+      <pubDate>Tue, 15 Nov 2016 19:44:31 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Nach einem recht produktiven Tag erzähl ich wie ich mir gerade einen besseren Überblick über meine Baustellen gemacht habe.</description>
+      <content:encoded><![CDATA[<p>Nach einem recht produktiven Tag erzähl ich wie ich mir gerade einen besseren
+Überblick über meine Baustellen gemacht habe.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_85.mp3" length="8824332" type="audio/mpeg" />
+      <itunes:subtitle>Nach einem recht produktiven Tag erzähl ich wie ich mir gerade einen besseren Überblick über meine Baustellen gemacht habe.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Nach einem recht produktiven Tag erzähl ich wie ich mir gerade einen besseren
+Überblick über meine Baustellen gemacht habe.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:59</itunes:duration>
+    </item>
+    <item>
+      <title>Produkte Kopfstand und Strand</title>
+      <itunes:episode>84</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-84/</link>
+      <guid>https://hannesdiem.de/tagesform-84</guid>
+      <pubDate>Mon, 14 Nov 2016 20:34:19 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich bin Bettreif und sabbel trozdem noch über alles was mir in den Kopf kommt. Von Produktrecherche über Pomodors, meinen nächsten Track bis zu nächtlichen Strandausflügen.</description>
+      <content:encoded><![CDATA[<p>Ich bin Bettreif und sabbel trozdem noch über alles was mir in den Kopf kommt.
+Von Produktrecherche über Pomodors, meinen nächsten Track bis zu nächtlichen
+Strandausflügen.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_84.mp3" length="9675138" type="audio/mpeg" />
+      <itunes:subtitle>Ich bin Bettreif und sabbel trozdem noch über alles was mir in den Kopf kommt. Von Produktrecherche über Pomodors, meinen nächsten Track bis zu nächtlichen Strandausflügen.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich bin Bettreif und sabbel trozdem noch über alles was mir in den Kopf kommt.
+Von Produktrecherche über Pomodors, meinen nächsten Track bis zu nächtlichen
+Strandausflügen.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:07:40</itunes:duration>
+    </item>
+    <item>
+      <title>Vom Vortäuschen vollendeter Tatsachen</title>
+      <itunes:episode>83</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-83/</link>
+      <guid>https://hannesdiem.de/tagesform-83</guid>
+      <pubDate>Sat, 12 Nov 2016 18:57:05 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob sich das überhaupt lohnt.</description>
+      <content:encoded><![CDATA[<p>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob
+sich das überhaupt lohnt.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_83.mp3" length="10070636" type="audio/mpeg" />
+      <itunes:subtitle>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob sich das überhaupt lohnt.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich plane ein Produkt zu Programmieren und werde vorher aber rausfinden ob
+sich das überhaupt lohnt.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:07:59</itunes:duration>
+    </item>
+    <item>
+      <title>Kaputte Wecker wecken nicht</title>
+      <itunes:episode>82</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-82/</link>
+      <guid>https://hannesdiem.de/tagesform-82</guid>
+      <pubDate>Thu, 10 Nov 2016 17:54:32 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Heute im schnelldurchlauf eine kurze Abhandlung zu Moop Mama und kaputten Weckern.</description>
+      <content:encoded><![CDATA[<p>Heute im schnelldurchlauf eine kurze Abhandlung zu <a href="http://www.moopmama.com/">Moop Mama</a>
+und kaputten Weckern.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_82.mp3" length="5487912" type="audio/mpeg" />
+      <itunes:subtitle>Heute im schnelldurchlauf eine kurze Abhandlung zu Moop Mama und kaputten Weckern.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Heute im schnelldurchlauf eine kurze Abhandlung zu <a href="http://www.moopmama.com/">Moop Mama</a>
+und kaputten Weckern.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:04:21</itunes:duration>
+    </item>
+    <item>
+      <title>Verloren</title>
+      <itunes:episode>81</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-81/</link>
+      <guid>https://hannesdiem.de/tagesform-81</guid>
+      <pubDate>Wed, 09 Nov 2016 23:03:40 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich habe ein paar wichtige und unwichtige Dinge verloren und beschwere mich in dieser Episode hauptsächlich darüber :) Morgen muss ich mal wieder anfangen zu erzählen was ich gelernt habe!</description>
+      <content:encoded><![CDATA[<p>Ich habe ein paar wichtige und unwichtige Dinge verloren und beschwere mich
+in dieser Episode hauptsächlich darüber :)</p>
+
+<p>Morgen muss ich mal wieder anfangen zu erzählen was ich gelernt habe!</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_81.mp3" length="12550718" type="audio/mpeg" />
+      <itunes:subtitle>Ich habe ein paar wichtige und unwichtige Dinge verloren und beschwere mich in dieser Episode hauptsächlich darüber :) Morgen muss ich mal wieder anfangen zu erzählen was ich gelernt habe!</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich habe ein paar wichtige und unwichtige Dinge verloren und beschwere mich
+in dieser Episode hauptsächlich darüber :)</p>
+
+<p>Morgen muss ich mal wieder anfangen zu erzählen was ich gelernt habe!</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:57</itunes:duration>
+    </item>
+    <item>
+      <title>Streberhafte Produktivität</title>
+      <itunes:episode>80</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-80/</link>
+      <guid>https://hannesdiem.de/tagesform-80</guid>
+      <pubDate>Tue, 08 Nov 2016 16:07:58 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Nicht sonderlich effizient, aber mit gewissenhafter sorgfalt habe ich heute ein Video für House on a Hill geschnitten und weiter probiert meiner Zettelwirtschaft Herr zu werden.</description>
+      <content:encoded><![CDATA[<p>Nicht sonderlich effizient, aber mit gewissenhafter sorgfalt
+habe ich heute ein Video für House on a Hill geschnitten
+und weiter probiert meiner Zettelwirtschaft Herr zu werden.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_80.mp3" length="10231904" type="audio/mpeg" />
+      <itunes:subtitle>Nicht sonderlich effizient, aber mit gewissenhafter sorgfalt habe ich heute ein Video für House on a Hill geschnitten und weiter probiert meiner Zettelwirtschaft Herr zu werden.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Nicht sonderlich effizient, aber mit gewissenhafter sorgfalt
+habe ich heute ein Video für House on a Hill geschnitten
+und weiter probiert meiner Zettelwirtschaft Herr zu werden.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:06</itunes:duration>
+    </item>
+    <item>
+      <title>weiter im text</title>
+      <itunes:episode>79</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-79/</link>
+      <guid>https://hannesdiem.de/tagesform-79</guid>
+      <pubDate>Mon, 07 Nov 2016 21:36:26 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Nach zwei Monaten und einer Woche gehts jetzt weiter mit Tagesformen! Yay!</description>
+      <content:encoded><![CDATA[<p>Nach zwei Monaten und einer Woche gehts jetzt weiter mit Tagesformen! Yay!</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_79.mp3" length="10769046" type="audio/mpeg" />
+      <itunes:subtitle>Nach zwei Monaten und einer Woche gehts jetzt weiter mit Tagesformen! Yay!</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Nach zwei Monaten und einer Woche gehts jetzt weiter mit Tagesformen! Yay!</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:32</itunes:duration>
+    </item>
+    <item>
+      <title>96 Kilogramm</title>
+      <itunes:episode>78</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-78/</link>
+      <guid>https://hannesdiem.de/tagesform-78</guid>
+      <pubDate>Thu, 01 Sep 2016 21:28:13 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Er stieg auf eine Waage und was dann passierte raubte ihm den Atem XD Ich empfehle außerdem wärmstens Käptn Peng.</description>
+      <content:encoded><![CDATA[<p>Er stieg auf eine Waage und was dann passierte raubte
+ihm den Atem XD<br>
+Ich empfehle außerdem wärmstens <a href="https://www.youtube.com/watch?v=apCal7ihvy0">Käptn Peng</a>.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_78.mp3" length="10433254" type="audio/mpeg" />
+      <itunes:subtitle>Er stieg auf eine Waage und was dann passierte raubte ihm den Atem XD Ich empfehle außerdem wärmstens Käptn Peng.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Er stieg auf eine Waage und was dann passierte raubte
+ihm den Atem XD<br>
+Ich empfehle außerdem wärmstens <a href="https://www.youtube.com/watch?v=apCal7ihvy0">Käptn Peng</a>.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:16</itunes:duration>
+    </item>
+    <item>
+      <title>Optimal</title>
+      <itunes:episode>77</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-77/</link>
+      <guid>https://hannesdiem.de/tagesform-77</guid>
+      <pubDate>Thu, 25 Aug 2016 23:42:25 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich hab gestern Kiddo Kat gesehen und für großartig befunden. Und hab außerdem gemerkt, dass glücklich sein und gute Laune haben eine aktive Entscheidung sein kann. &lt;3...</description>
+      <content:encoded><![CDATA[<p>Ich hab gestern <a href="https://www.kiddo-kat.com/">Kiddo Kat</a> gesehen und für großartig befunden. Und hab außerdem gemerkt, dass glücklich sein und gute Laune haben
+eine aktive Entscheidung sein kann. &lt;3</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_77.mp3" length="12511262" type="audio/mpeg" />
+      <itunes:subtitle>Ich hab gestern Kiddo Kat gesehen und für großartig befunden. Und hab außerdem gemerkt, dass glücklich sein und gute Laune haben eine aktive Entscheidung sein kann. &lt;3...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich hab gestern <a href="https://www.kiddo-kat.com/">Kiddo Kat</a> gesehen und für großartig befunden. Und hab außerdem gemerkt, dass glücklich sein und gute Laune haben
+eine aktive Entscheidung sein kann. &lt;3</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:55</itunes:duration>
+    </item>
+    <item>
+      <title>Mal was neues</title>
+      <itunes:episode>76</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-76/</link>
+      <guid>https://hannesdiem.de/tagesform-76</guid>
+      <pubDate>Wed, 24 Aug 2016 00:10:34 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ein Monat Pause generiert wenig Content, aber viele Erkentnisse, einiges an Ungewohntheit und viel Geschwebe. Einiges davon probiere ich hiermit zu teilen &lt;3...</description>
+      <content:encoded><![CDATA[<p>Ein Monat Pause generiert wenig Content, aber viele Erkentnisse,
+einiges an Ungewohntheit und viel Geschwebe. Einiges davon
+probiere ich hiermit zu teilen &lt;3</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_76.mp3" length="30382674" type="audio/mpeg" />
+      <itunes:subtitle>Ein Monat Pause generiert wenig Content, aber viele Erkentnisse, einiges an Ungewohntheit und viel Geschwebe. Einiges davon probiere ich hiermit zu teilen &lt;3...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ein Monat Pause generiert wenig Content, aber viele Erkentnisse,
+einiges an Ungewohntheit und viel Geschwebe. Einiges davon
+probiere ich hiermit zu teilen &lt;3</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/alster_mal_anders_ojk2n9.jpg" />
+      <itunes:duration>00:24:05</itunes:duration>
+    </item>
+    <item>
+      <title>Die Band - mal groß gedacht</title>
+      <itunes:episode>75</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-75/</link>
+      <guid>https://hannesdiem.de/tagesform-75</guid>
+      <pubDate>Mon, 25 Jul 2016 20:50:11 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich bin schon seit langem der überzeugung, dass eine Band nicht nur aus Musikern bestehen sollte. Hier erfahrt ihr warum :)</description>
+      <content:encoded><![CDATA[<p>Ich bin schon seit langem der überzeugung, dass eine Band
+nicht nur aus Musikern bestehen sollte. Hier erfahrt ihr warum :)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_75.mp3" length="15429638" type="audio/mpeg" />
+      <itunes:subtitle>Ich bin schon seit langem der überzeugung, dass eine Band nicht nur aus Musikern bestehen sollte. Hier erfahrt ihr warum :)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich bin schon seit langem der überzeugung, dass eine Band
+nicht nur aus Musikern bestehen sollte. Hier erfahrt ihr warum :)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:12:14</itunes:duration>
+    </item>
+    <item>
+      <title>Mit Startschwierigkeiten aus der Liegeposition über Basilikum</title>
+      <itunes:episode>74</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-74/</link>
+      <guid>https://hannesdiem.de/tagesform-74</guid>
+      <pubDate>Wed, 20 Jul 2016 21:16:25 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>siehe titel...</description>
+      <content:encoded><![CDATA[<p>siehe titel</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_74.mp3" length="7614770" type="audio/mpeg" />
+      <itunes:subtitle>siehe titel...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>siehe titel</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:02</itunes:duration>
+    </item>
+    <item>
+      <title>Kopfbrücke</title>
+      <itunes:episode>73</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-73/</link>
+      <guid>https://hannesdiem.de/tagesform-73</guid>
+      <pubDate>Tue, 19 Jul 2016 21:04:26 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Kurzes hallo von unterwegs mit einer potentiellen Bridge von Kopfstand.</description>
+      <content:encoded><![CDATA[<p>Kurzes hallo von unterwegs mit einer potentiellen Bridge von
+Kopfstand.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_73.mp3" length="3792772" type="audio/mpeg" />
+      <itunes:subtitle>Kurzes hallo von unterwegs mit einer potentiellen Bridge von Kopfstand.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Kurzes hallo von unterwegs mit einer potentiellen Bridge von
+Kopfstand.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:03:00</itunes:duration>
+    </item>
+    <item>
+      <title>Features</title>
+      <itunes:episode>72</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-72/</link>
+      <guid>https://hannesdiem.de/tagesform-72</guid>
+      <pubDate>Mon, 18 Jul 2016 21:16:28 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch gerne bei mir: tagesform@hannesdiem.de...</description>
+      <content:encoded><![CDATA[<p>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch
+gerne bei mir: <a href="mailto:tagesform@hannesdiem.de">tagesform@hannesdiem.de</a></p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_72.mp3" length="8008598" type="audio/mpeg" />
+      <itunes:subtitle>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch gerne bei mir: tagesform@hannesdiem.de...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich möchte mit der ganzen Welt features aufnehmen! Meldet euch
+gerne bei mir: <a href="mailto:tagesform@hannesdiem.de">tagesform@hannesdiem.de</a></p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:20</itunes:duration>
+    </item>
+    <item>
+      <title>Bühnenknigge</title>
+      <itunes:episode>71</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-71/</link>
+      <guid>https://hannesdiem.de/tagesform-71</guid>
+      <pubDate>Sun, 17 Jul 2016 19:28:38 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Wir (Absolem Max) durften uns heute mit Blowm &amp; Maddin un de Maudefaades die Bühne teilen - geile mukke! Das hat mich daran erinnert, dass ich immer schon mal über meine persönliche &quot;Bühnenknigge&quot; reden wollte.</description>
+      <content:encoded><![CDATA[<p>Wir (<a href="https://absolem-max.com">Absolem Max</a>) durften uns heute mit <a href="https://plattdeutsch.tumblr.com/">Blowm &amp; Maddin un de Maudefaades</a> die Bühne teilen - geile mukke!
+Das hat mich daran erinnert, dass ich immer schon mal über meine
+persönliche &quot;Bühnenknigge&quot; reden wollte.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_71.mp3" length="15888286" type="audio/mpeg" />
+      <itunes:subtitle>Wir (Absolem Max) durften uns heute mit Blowm &amp; Maddin un de Maudefaades die Bühne teilen - geile mukke! Das hat mich daran erinnert, dass ich immer schon mal über meine persönliche &quot;Bühnenknigge&quot; reden wollte.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Wir (<a href="https://absolem-max.com">Absolem Max</a>) durften uns heute mit <a href="https://plattdeutsch.tumblr.com/">Blowm &amp; Maddin un de Maudefaades</a> die Bühne teilen - geile mukke!
+Das hat mich daran erinnert, dass ich immer schon mal über meine
+persönliche &quot;Bühnenknigge&quot; reden wollte.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:12:35</itunes:duration>
+    </item>
+    <item>
+      <title>Mehr davon</title>
+      <itunes:episode>70</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-70/</link>
+      <guid>https://hannesdiem.de/tagesform-70</guid>
+      <pubDate>Fri, 15 Jul 2016 21:56:39 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich möchte gerne mehr Musik, Videos und Podcasts machen und ihr könnt mir dabei helfen unter hannesdiem.de/mehr-davon. &lt;3...</description>
+      <content:encoded><![CDATA[<p>Ich möchte gerne mehr Musik, Videos und Podcasts machen
+und ihr könnt mir dabei helfen unter <a href="https://hannesdiem.de/mehr-davon">hannesdiem.de/mehr-davon</a>. &lt;3</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_70.mp3" length="12424000" type="audio/mpeg" />
+      <itunes:subtitle>Ich möchte gerne mehr Musik, Videos und Podcasts machen und ihr könnt mir dabei helfen unter hannesdiem.de/mehr-davon. &lt;3...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich möchte gerne mehr Musik, Videos und Podcasts machen
+und ihr könnt mir dabei helfen unter <a href="https://hannesdiem.de/mehr-davon">hannesdiem.de/mehr-davon</a>. &lt;3</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:51</itunes:duration>
+    </item>
+    <item>
+      <title>Einfach mal anrufen</title>
+      <itunes:episode>69</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-69/</link>
+      <guid>https://hannesdiem.de/tagesform-69</guid>
+      <pubDate>Thu, 14 Jul 2016 21:24:28 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Wenn man was zu sagen hat oder sich aus den Augen verliert: Einfach mal anrufen.</description>
+      <content:encoded><![CDATA[<p>Wenn man was zu sagen hat oder sich aus den Augen verliert:
+Einfach mal anrufen.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_69.mp3" length="6127034" type="audio/mpeg" />
+      <itunes:subtitle>Wenn man was zu sagen hat oder sich aus den Augen verliert: Einfach mal anrufen.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Wenn man was zu sagen hat oder sich aus den Augen verliert:
+Einfach mal anrufen.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:04:51</itunes:duration>
+    </item>
+    <item>
+      <title>Gescheiterte Experimente und gelungene Produktionen</title>
+      <itunes:episode>68</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-68/</link>
+      <guid>https://hannesdiem.de/tagesform-68</guid>
+      <pubDate>Wed, 13 Jul 2016 21:24:58 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Die Tagesexperimente sind erst mal abgeblasen aber dafür hab ich einen neuen Track mit Video!</description>
+      <content:encoded><![CDATA[<p>Die <a href="https://hannesdiem.de/tag/tagesexperiment/">Tagesexperimente</a> sind erst mal abgeblasen
+aber dafür hab ich <a href="/wandern/">einen neuen Track mit Video</a>!</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_68.mp3" length="6190080" type="audio/mpeg" />
+      <itunes:subtitle>Die Tagesexperimente sind erst mal abgeblasen aber dafür hab ich einen neuen Track mit Video!</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Die <a href="https://hannesdiem.de/tag/tagesexperiment/">Tagesexperimente</a> sind erst mal abgeblasen
+aber dafür hab ich <a href="/wandern/">einen neuen Track mit Video</a>!</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:04:54</itunes:duration>
+    </item>
+    <item>
+      <title>Könnte, hätte und sollte tracken</title>
+      <itunes:episode>67</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-67/</link>
+      <guid>https://hannesdiem.de/tagesform-67</guid>
+      <pubDate>Mon, 11 Jul 2016 21:39:50 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Wieso mach ich das hier überhaupt? Sollte ich weitermachen? Unter welchen umständen? Mit wem? Für wen? Fragen über fragen, die ich fast alle (noch) nicht beantworten kann.</description>
+      <content:encoded><![CDATA[<p>Wieso mach ich das hier überhaupt? Sollte ich
+weitermachen? Unter welchen umständen? Mit wem?
+Für wen?</p>
+
+<!-- more -->
+
+<p>Fragen über fragen, die ich fast alle (noch) nicht
+beantworten kann.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_67.mp3" length="12464082" type="audio/mpeg" />
+      <itunes:subtitle>Wieso mach ich das hier überhaupt? Sollte ich weitermachen? Unter welchen umständen? Mit wem? Für wen?</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Wieso mach ich das hier überhaupt? Sollte ich
+weitermachen? Unter welchen umständen? Mit wem?
+Für wen?</p>
+
+<!-- more -->
+
+<p>Fragen über fragen, die ich fast alle (noch) nicht
+beantworten kann.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:52</itunes:duration>
+    </item>
+    <item>
+      <title>Sonntag</title>
+      <itunes:episode>66</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-66/</link>
+      <guid>https://hannesdiem.de/tagesform-66</guid>
+      <pubDate>Sun, 10 Jul 2016 19:56:22 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Es gab heute viel Musik mit House on a Hill und noch einen kleinen nachtrag zu Gestern :)</description>
+      <content:encoded><![CDATA[<p>Es gab heute viel Musik mit <a href="https://houseonahill.de">House on a Hill</a>
+und noch einen kleinen nachtrag zu Gestern :)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_66.mp3" length="6555934" type="audio/mpeg" />
+      <itunes:subtitle>Es gab heute viel Musik mit House on a Hill und noch einen kleinen nachtrag zu Gestern :)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Es gab heute viel Musik mit <a href="https://houseonahill.de">House on a Hill</a>
+und noch einen kleinen nachtrag zu Gestern :)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:05:11</itunes:duration>
+    </item>
+    <item>
+      <title>TE6 - Keinen Zucker Essen</title>
+      <itunes:episode>65</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-65/</link>
+      <guid>https://hannesdiem.de/tagesform-65</guid>
+      <pubDate>Sat, 09 Jul 2016 18:46:11 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Wenn man nichts isst, isst man keinen Zucker!</description>
+      <content:encoded><![CDATA[<p>Wenn man nichts isst, isst man keinen Zucker!</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_65.mp3" length="5119240" type="audio/mpeg" />
+      <itunes:subtitle>Wenn man nichts isst, isst man keinen Zucker!</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Wenn man nichts isst, isst man keinen Zucker!</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:04:03</itunes:duration>
+    </item>
+    <item>
+      <title>TE5 - Produktivität Tracken</title>
+      <itunes:episode>64</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-64/</link>
+      <guid>https://hannesdiem.de/tagesform-64</guid>
+      <pubDate>Sat, 09 Jul 2016 00:32:41 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich stelle den Weltrekord im verhaspeln auf, und erläutere die Produktivität des heutigen Tages, die ich als Experiment einfach mal alle 30 minuten aufgeschriben habe.</description>
+      <content:encoded><![CDATA[<p>Ich stelle den Weltrekord im verhaspeln auf, und erläutere
+die Produktivität des heutigen Tages, die ich als Experiment
+einfach mal alle 30 minuten aufgeschriben habe.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_64.mp3" length="12357092" type="audio/mpeg" />
+      <itunes:subtitle>Ich stelle den Weltrekord im verhaspeln auf, und erläutere die Produktivität des heutigen Tages, die ich als Experiment einfach mal alle 30 minuten aufgeschriben habe.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich stelle den Weltrekord im verhaspeln auf, und erläutere
+die Produktivität des heutigen Tages, die ich als Experiment
+einfach mal alle 30 minuten aufgeschriben habe.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:47</itunes:duration>
+    </item>
+    <item>
+      <title>TE3+4 - Kein Weizen und keine Beschwerden</title>
+      <itunes:episode>63</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-63/</link>
+      <guid>https://hannesdiem.de/tagesform-63</guid>
+      <pubDate>Thu, 07 Jul 2016 23:41:08 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Gestern habe ich keinen Weizen gegessen und heute dann vergebens versucht mich nicht zu beschweren :P...</description>
+      <content:encoded><![CDATA[<p>Gestern habe ich keinen Weizen gegessen und heute dann
+vergebens versucht mich nicht zu beschweren :P</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_63.mp3" length="10796394" type="audio/mpeg" />
+      <itunes:subtitle>Gestern habe ich keinen Weizen gegessen und heute dann vergebens versucht mich nicht zu beschweren :P...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Gestern habe ich keinen Weizen gegessen und heute dann
+vergebens versucht mich nicht zu beschweren :P</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:33</itunes:duration>
+    </item>
+    <item>
+      <title>TE2 - Keinen Sarkasmus</title>
+      <itunes:episode>62</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-62/</link>
+      <guid>https://hannesdiem.de/tagesform-62</guid>
+      <pubDate>Tue, 05 Jul 2016 21:12:53 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Tages-Experiement 2: Einfach mal Blöde Kommentare verkneifen und konstruktiv sein. Konkrete Vorschläge anstelle von bösen Seitenhieben. ... so zumindest der Plan.</description>
+      <content:encoded><![CDATA[<p>Tages-Experiement 2:
+Einfach mal Blöde Kommentare verkneifen und konstruktiv
+sein. Konkrete Vorschläge anstelle von bösen Seitenhieben.</p>
+
+<!-- more -->
+
+<p>... so zumindest der Plan.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_62.mp3" length="8180304" type="audio/mpeg" />
+      <itunes:subtitle>Tages-Experiement 2: Einfach mal Blöde Kommentare verkneifen und konstruktiv sein. Konkrete Vorschläge anstelle von bösen Seitenhieben.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Tages-Experiement 2:
+Einfach mal Blöde Kommentare verkneifen und konstruktiv
+sein. Konkrete Vorschläge anstelle von bösen Seitenhieben.</p>
+
+<!-- more -->
+
+<p>... so zumindest der Plan.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:29</itunes:duration>
+    </item>
+    <item>
+      <title>TE1 - Keine ungefragten Ratschläge</title>
+      <itunes:episode>61</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-61/</link>
+      <guid>https://hannesdiem.de/tagesform-61</guid>
+      <pubDate>Mon, 04 Jul 2016 21:14:46 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Tages-Experiement 1: Einfach mal Probleme Probleme sein lassen und nicht direkt mit einem Lösungsansatz (aus der Kategorie &quot;Man müsste mal&quot;) daherkommen. Hintergund: Ich neige dazu, für alles und immer eine Problemlösung zu suchen, obwohl ich weiß, dass oftmals zuhören auch schon Hilfe genug ist.</description>
+      <content:encoded><![CDATA[<p>Tages-Experiement 1:
+Einfach mal Probleme Probleme sein lassen und nicht
+direkt mit einem Lösungsansatz (aus der Kategorie
+&quot;Man müsste mal&quot;) daherkommen.</p>
+
+<!-- more -->
+
+<p>Hintergund: Ich neige dazu, für alles und immer
+eine Problemlösung zu suchen, obwohl ich weiß, dass oftmals
+zuhören auch schon Hilfe genug ist.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_61.mp3" length="7981146" type="audio/mpeg" />
+      <itunes:subtitle>Tages-Experiement 1: Einfach mal Probleme Probleme sein lassen und nicht direkt mit einem Lösungsansatz (aus der Kategorie &quot;Man müsste mal&quot;) daherkommen.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Tages-Experiement 1:
+Einfach mal Probleme Probleme sein lassen und nicht
+direkt mit einem Lösungsansatz (aus der Kategorie
+&quot;Man müsste mal&quot;) daherkommen.</p>
+
+<!-- more -->
+
+<p>Hintergund: Ich neige dazu, für alles und immer
+eine Problemlösung zu suchen, obwohl ich weiß, dass oftmals
+zuhören auch schon Hilfe genug ist.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:19</itunes:duration>
+    </item>
+    <item>
+      <title>Immer wieder Sonntags</title>
+      <itunes:episode>60</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-60/</link>
+      <guid>https://hannesdiem.de/tagesform-60</guid>
+      <pubDate>Sun, 03 Jul 2016 21:29:33 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Eine belanglose Jubiläumsausgabe :P...</description>
+      <content:encoded><![CDATA[<p>Eine belanglose Jubiläumsausgabe :P</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_60.mp3" length="7493480" type="audio/mpeg" />
+      <itunes:subtitle>Eine belanglose Jubiläumsausgabe :P...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Eine belanglose Jubiläumsausgabe :P</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:05:56</itunes:duration>
+    </item>
+    <item>
+      <title>Portraits üben</title>
+      <itunes:episode>59</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-59/</link>
+      <guid>https://hannesdiem.de/tagesform-59</guid>
+      <pubDate>Sat, 02 Jul 2016 21:30:57 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich hab tolle Menschen von Bony Divesuit kennengelernt, mit House on a Hill akustisch im Regen gespielt und möchte üben Portraits von mir machen zu lassen :P...</description>
+      <content:encoded><![CDATA[<p>Ich hab tolle Menschen von <a href="https://www.facebook.com/bonydivesuit/">Bony Divesuit</a>
+kennengelernt, mit <a href="https://houseonahill.de">House on a Hill</a> akustisch im Regen
+gespielt und möchte üben Portraits von mir machen zu lassen :P</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_59.mp3" length="10707044" type="audio/mpeg" />
+      <itunes:subtitle>Ich hab tolle Menschen von Bony Divesuit kennengelernt, mit House on a Hill akustisch im Regen gespielt und möchte üben Portraits von mir machen zu lassen :P...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich hab tolle Menschen von <a href="https://www.facebook.com/bonydivesuit/">Bony Divesuit</a>
+kennengelernt, mit <a href="https://houseonahill.de">House on a Hill</a> akustisch im Regen
+gespielt und möchte üben Portraits von mir machen zu lassen :P</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:29</itunes:duration>
+    </item>
+    <item>
+      <title>Tages-Experiment-Form</title>
+      <itunes:episode>58</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-58/</link>
+      <guid>https://hannesdiem.de/tagesform-58</guid>
+      <pubDate>Fri, 01 Jul 2016 21:48:09 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Eine Idee: Vielleicht verbringe ich mal einen Monat damit Experimente zu machen, die genau einen Tag dauern und berichte dann Abends davon.</description>
+      <content:encoded><![CDATA[<p>Eine Idee: Vielleicht verbringe ich mal einen Monat damit
+Experimente zu machen, die genau einen Tag dauern und
+berichte dann Abends davon.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_58.mp3" length="6841832" type="audio/mpeg" />
+      <itunes:subtitle>Eine Idee: Vielleicht verbringe ich mal einen Monat damit Experimente zu machen, die genau einen Tag dauern und berichte dann Abends davon.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Eine Idee: Vielleicht verbringe ich mal einen Monat damit
+Experimente zu machen, die genau einen Tag dauern und
+berichte dann Abends davon.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:05:25</itunes:duration>
+    </item>
+    <item>
+      <title>Über blocker reden</title>
+      <itunes:episode>57</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-57/</link>
+      <guid>https://hannesdiem.de/tagesform-57</guid>
+      <pubDate>Thu, 30 Jun 2016 21:28:05 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich hab heute mit Klartexter weiter an &quot;Kopfstand&quot; gearbeitet und er hat mir dabei einen sehr wertvollen Tipp gegeben.</description>
+      <content:encoded><![CDATA[<p>Ich hab heute mit Klartexter weiter an &quot;Kopfstand&quot; gearbeitet
+und er hat mir dabei einen sehr wertvollen Tipp gegeben.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_57.mp3" length="7611952" type="audio/mpeg" />
+      <itunes:subtitle>Ich hab heute mit Klartexter weiter an &quot;Kopfstand&quot; gearbeitet und er hat mir dabei einen sehr wertvollen Tipp gegeben.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich hab heute mit Klartexter weiter an &quot;Kopfstand&quot; gearbeitet
+und er hat mir dabei einen sehr wertvollen Tipp gegeben.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:02</itunes:duration>
+    </item>
+    <item>
+      <title>ToDos, Reminder und Termine</title>
+      <itunes:episode>56</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-56/</link>
+      <guid>https://hannesdiem.de/tagesform-56</guid>
+      <pubDate>Wed, 29 Jun 2016 21:57:53 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Aufbauend auf der Folge 53 über Projekt-Priorisierung gebe ich Einblicke darüber wie ich meine ToDos verwalte und was überhaupt ToDos sind. Teil 1 aus der Serie über ToDos: Tagesform 53 - Projekt-Priorisierung...</description>
+      <content:encoded><![CDATA[<p>Aufbauend auf der Folge 53 über Projekt-Priorisierung gebe ich Einblicke
+darüber wie ich meine ToDos verwalte und was überhaupt ToDos sind.</p>
+
+<!-- more -->
+
+<p>Teil 1 aus der Serie über ToDos: <a href="https://hannesdiem.de/tagesform-53/">Tagesform 53 - Projekt-Priorisierung</a></p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_56.mp3" length="18492372" type="audio/mpeg" />
+      <itunes:subtitle>Aufbauend auf der Folge 53 über Projekt-Priorisierung gebe ich Einblicke darüber wie ich meine ToDos verwalte und was überhaupt ToDos sind.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Aufbauend auf der Folge 53 über Projekt-Priorisierung gebe ich Einblicke
+darüber wie ich meine ToDos verwalte und was überhaupt ToDos sind.</p>
+
+<!-- more -->
+
+<p>Teil 1 aus der Serie über ToDos: <a href="https://hannesdiem.de/tagesform-53/">Tagesform 53 - Projekt-Priorisierung</a></p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:14:39</itunes:duration>
+    </item>
+    <item>
+      <title>0,27%</title>
+      <itunes:episode>55</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-55/</link>
+      <guid>https://hannesdiem.de/tagesform-55</guid>
+      <pubDate>Tue, 28 Jun 2016 21:44:56 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;, sind wir nach einem Jahr doppelt so gut.</description>
+      <content:encoded><![CDATA[<p>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;,
+sind wir nach einem Jahr doppelt so gut.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_55.mp3" length="5542816" type="audio/mpeg" />
+      <itunes:subtitle>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;, sind wir nach einem Jahr doppelt so gut.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ganz einfach: wenn wir uns täglich um 0,27% &quot;verbessern&quot;,
+sind wir nach einem Jahr doppelt so gut.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:04:23</itunes:duration>
+    </item>
+    <item>
+      <title>Selbstreflexion bei Stress</title>
+      <itunes:episode>54</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-54/</link>
+      <guid>https://hannesdiem.de/tagesform-54</guid>
+      <pubDate>Mon, 27 Jun 2016 21:44:53 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Während ich des Nachts durch Hamburg latsche, berichte ich von einer Situation, die mich in Stress versetzt hat und wie ich damit umgegangen bin.</description>
+      <content:encoded><![CDATA[<p>Während ich des Nachts durch Hamburg latsche, berichte ich
+von einer Situation, die mich in Stress versetzt hat
+und wie ich damit umgegangen bin.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_54.mp3" length="14432908" type="audio/mpeg" />
+      <itunes:subtitle>Während ich des Nachts durch Hamburg latsche, berichte ich von einer Situation, die mich in Stress versetzt hat und wie ich damit umgegangen bin.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Während ich des Nachts durch Hamburg latsche, berichte ich
+von einer Situation, die mich in Stress versetzt hat
+und wie ich damit umgegangen bin.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:11:26</itunes:duration>
+    </item>
+    <item>
+      <title>Projekt-Priorisierung</title>
+      <itunes:episode>53</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-53/</link>
+      <guid>https://hannesdiem.de/tagesform-53</guid>
+      <pubDate>Sun, 26 Jun 2016 18:27:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Im ersten Teil meiner Serie über Todos verrate ich wie ich meine Projekte priorisiere. Ich hab außerdem ein Google-Spreadsheet gebaut, das dieses Modell implementiert. (Unter Datei/Kopie erstellen lässt sich eine Version zum Bearbeiten erzeugen)</description>
+      <content:encoded><![CDATA[<p>Im ersten Teil meiner Serie über Todos verrate ich wie ich
+meine Projekte priorisiere.</p>
+
+<!-- more -->
+
+<p>Ich hab außerdem ein <a href="https://docs.google.com/spreadsheets/d/1x-Apjz45OorKjSbDYojW9GjfnudNJd2KBSYWNPcvUUw/edit?usp=sharing">Google-Spreadsheet</a>
+gebaut, das dieses Modell implementiert.
+(Unter <code>Datei/Kopie erstellen</code> lässt sich eine Version zum Bearbeiten erzeugen)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_53.mp3" length="13521144" type="audio/mpeg" />
+      <itunes:subtitle>Im ersten Teil meiner Serie über Todos verrate ich wie ich meine Projekte priorisiere.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Im ersten Teil meiner Serie über Todos verrate ich wie ich
+meine Projekte priorisiere.</p>
+
+<!-- more -->
+
+<p>Ich hab außerdem ein <a href="https://docs.google.com/spreadsheets/d/1x-Apjz45OorKjSbDYojW9GjfnudNJd2KBSYWNPcvUUw/edit?usp=sharing">Google-Spreadsheet</a>
+gebaut, das dieses Modell implementiert.
+(Unter <code>Datei/Kopie erstellen</code> lässt sich eine Version zum Bearbeiten erzeugen)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:10:43</itunes:duration>
+    </item>
+    <item>
+      <title>Stand der Dinge (Jun 16)</title>
+      <itunes:episode>52</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-52/</link>
+      <guid>https://hannesdiem.de/tagesform-52</guid>
+      <pubDate>Sat, 25 Jun 2016 19:51:28 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Im grunde beantworte ich in dieser Folge die Frage: &quot;Und sonst so?&quot; Unter anderem mit: Der schönsten Stunde Musik, die ich zuletzt höre: I Forget Where We Were - Ben Howard Dem Werwolf Spiel Diesem Podcast Nichtrauchen Mehr schlafen Powernappen Meditieren...</description>
+      <content:encoded><![CDATA[<p>Im grunde beantworte ich in dieser Folge die Frage:
+&quot;Und sonst so?&quot;</p>
+
+<!-- more -->
+
+<p>Unter anderem mit:</p>
+
+<ul>
+<li>Der schönsten Stunde Musik, die ich zuletzt höre: <a href="https://itunes.apple.com/de/album/i-forget-where-we-were/id911839995">I Forget Where We Were -
+Ben Howard</a></li>
+<li><a href="https://www.google.de/search?q=werwolf+spiel">Dem Werwolf Spiel</a></li>
+<li>Diesem Podcast</li>
+<li>Nichtrauchen</li>
+<li>Mehr schlafen</li>
+<li>Powernappen</li>
+<li>Meditieren</li>
+</ul>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_52.mp3" length="20390428" type="audio/mpeg" />
+      <itunes:subtitle>Im grunde beantworte ich in dieser Folge die Frage: &quot;Und sonst so?&quot;</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Im grunde beantworte ich in dieser Folge die Frage:
+&quot;Und sonst so?&quot;</p>
+
+<!-- more -->
+
+<p>Unter anderem mit:</p>
+
+<ul>
+<li>Der schönsten Stunde Musik, die ich zuletzt höre: <a href="https://itunes.apple.com/de/album/i-forget-where-we-were/id911839995">I Forget Where We Were -
+Ben Howard</a></li>
+<li><a href="https://www.google.de/search?q=werwolf+spiel">Dem Werwolf Spiel</a></li>
+<li>Diesem Podcast</li>
+<li>Nichtrauchen</li>
+<li>Mehr schlafen</li>
+<li>Powernappen</li>
+<li>Meditieren</li>
+</ul>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:16:10</itunes:duration>
+    </item>
+    <item>
+      <title>houseonahill.de</title>
+      <itunes:episode>51</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-51/</link>
+      <guid>https://hannesdiem.de/tagesform-51</guid>
+      <pubDate>Wed, 22 Jun 2016 21:26:10 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich erzähle von der neuen House on a Hill Webseite und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem in den hinteren 20% noch ewig hinziehen.</description>
+      <content:encoded><![CDATA[<p>Ich erzähle von der <a href="http://houseonahill.de">neuen House on a Hill Webseite</a>
+und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem
+in den hinteren 20% noch ewig hinziehen.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_51.mp3" length="14333120" type="audio/mpeg" />
+      <itunes:subtitle>Ich erzähle von der neuen House on a Hill Webseite und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem in den hinteren 20% noch ewig hinziehen.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich erzähle von der <a href="http://houseonahill.de">neuen House on a Hill Webseite</a>
+und damit auch von Aufgaben die, von allem Ballast befreit, sich trozdem
+in den hinteren 20% noch ewig hinziehen.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:11:21</itunes:duration>
+    </item>
+    <item>
+      <title>Lächeln und Winken</title>
+      <itunes:episode>50</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-50/</link>
+      <guid>https://hannesdiem.de/tagesform-50</guid>
+      <pubDate>Tue, 21 Jun 2016 21:15:31 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Die 50 ist keine besondere Zahl, solange man nicht dafür sorgt, Stattdessen gibts Gedanken darüber warum wir evtl. nicht so viel Winken und Lächeln und, dass wir das trozdem tun sollten :)</description>
+      <content:encoded><![CDATA[<p>Die 50 ist keine besondere Zahl, solange man nicht dafür sorgt,
+Stattdessen gibts Gedanken darüber warum wir evtl. nicht so
+viel Winken und Lächeln und, dass wir das trozdem tun sollten :)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_50.mp3" length="18733700" type="audio/mpeg" />
+      <itunes:subtitle>Die 50 ist keine besondere Zahl, solange man nicht dafür sorgt, Stattdessen gibts Gedanken darüber warum wir evtl. nicht so viel Winken und Lächeln und, dass wir das trozdem tun sollten :)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Die 50 ist keine besondere Zahl, solange man nicht dafür sorgt,
+Stattdessen gibts Gedanken darüber warum wir evtl. nicht so
+viel Winken und Lächeln und, dass wir das trozdem tun sollten :)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:14:51</itunes:duration>
+    </item>
+    <item>
+      <title>FaceBook ausschalten?</title>
+      <itunes:episode>49</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-49/</link>
+      <guid>https://hannesdiem.de/tagesform-49</guid>
+      <pubDate>Mon, 20 Jun 2016 21:07:40 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>An diesem verregneten Montag Abend sinniere ich darüber ob ich nicht einfach mal mit FaceBook aufhören sollte.</description>
+      <content:encoded><![CDATA[<p>An diesem verregneten Montag Abend sinniere ich darüber
+ob ich nicht einfach mal mit FaceBook aufhören sollte.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_49.mp3" length="19547764" type="audio/mpeg" />
+      <itunes:subtitle>An diesem verregneten Montag Abend sinniere ich darüber ob ich nicht einfach mal mit FaceBook aufhören sollte.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>An diesem verregneten Montag Abend sinniere ich darüber
+ob ich nicht einfach mal mit FaceBook aufhören sollte.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:15:29</itunes:duration>
+    </item>
+    <item>
+      <title>Das Kuchenmodell</title>
+      <itunes:episode>48</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-48/</link>
+      <guid>https://hannesdiem.de/tagesform-48</guid>
+      <pubDate>Sat, 18 Jun 2016 21:44:07 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Die liebe July von Federkiel Fotografie hat mir beigebracht wie ich weniger Zeit mit &quot;kannst du mir mal kurz helfen&quot;- Gefallen verbringe. Das gute ist: Alle gewinnen!</description>
+      <content:encoded><![CDATA[<p>Die liebe July von <a href="http://federkiel-fotografie.de/">Federkiel Fotografie</a>
+hat mir beigebracht wie ich weniger Zeit mit &quot;kannst du mir mal kurz helfen&quot;-
+Gefallen verbringe. Das gute ist: Alle gewinnen!</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_48.mp3" length="15080276" type="audio/mpeg" />
+      <itunes:subtitle>Die liebe July von Federkiel Fotografie hat mir beigebracht wie ich weniger Zeit mit &quot;kannst du mir mal kurz helfen&quot;- Gefallen verbringe. Das gute ist: Alle gewinnen!</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Die liebe July von <a href="http://federkiel-fotografie.de/">Federkiel Fotografie</a>
+hat mir beigebracht wie ich weniger Zeit mit &quot;kannst du mir mal kurz helfen&quot;-
+Gefallen verbringe. Das gute ist: Alle gewinnen!</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:11:57</itunes:duration>
+    </item>
+    <item>
+      <title>Achterbahnen, Regen und Nebel</title>
+      <itunes:episode>47</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-47/</link>
+      <guid>https://hannesdiem.de/tagesform-47</guid>
+      <pubDate>Fri, 17 Jun 2016 21:48:08 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Heute war ich Achterbahn fahren und hab ne potentielle Strophe für nen Track von anti.held zu zeigen.</description>
+      <content:encoded><![CDATA[<p>Heute war ich Achterbahn fahren und hab ne potentielle
+Strophe für nen Track von <a href="https://www.facebook.com/antiheldmusic/">anti.held</a> zu zeigen.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_47.mp3" length="11051500" type="audio/mpeg" />
+      <itunes:subtitle>Heute war ich Achterbahn fahren und hab ne potentielle Strophe für nen Track von anti.held zu zeigen.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Heute war ich Achterbahn fahren und hab ne potentielle
+Strophe für nen Track von <a href="https://www.facebook.com/antiheldmusic/">anti.held</a> zu zeigen.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:45</itunes:duration>
+    </item>
+    <item>
+      <title>Lachen und Lächeln 1</title>
+      <itunes:episode>46</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-46/</link>
+      <guid>https://hannesdiem.de/tagesform-46</guid>
+      <pubDate>Thu, 16 Jun 2016 21:58:12 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Gut gelaunt spreche ich lachend und lächelnd übers Lachen und Lächeln. Hab ich schon Lachen und Lächeln gesagt?</description>
+      <content:encoded><![CDATA[<p>Gut gelaunt spreche ich lachend und lächelnd übers Lachen und Lächeln.
+Hab ich schon Lachen und Lächeln gesagt? </p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_46.mp3" length="12080066" type="audio/mpeg" />
+      <itunes:subtitle>Gut gelaunt spreche ich lachend und lächelnd übers Lachen und Lächeln. Hab ich schon Lachen und Lächeln gesagt?</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Gut gelaunt spreche ich lachend und lächelnd übers Lachen und Lächeln.
+Hab ich schon Lachen und Lächeln gesagt? </p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:34</itunes:duration>
+    </item>
+    <item>
+      <title>Fremdverschuldet Reich werden</title>
+      <itunes:episode>45</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-45/</link>
+      <guid>https://hannesdiem.de/tagesform-45</guid>
+      <pubDate>Thu, 16 Jun 2016 00:29:42 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten und den Restaurants anderer, richtig Kohle machen kann.</description>
+      <content:encoded><![CDATA[<p>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten
+und den Restaurants anderer, richtig Kohle machen kann.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_45.mp3" length="7633872" type="audio/mpeg" />
+      <itunes:subtitle>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten und den Restaurants anderer, richtig Kohle machen kann.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Eine großartigste Idee, wie man mit der Leistung von Lieferdiensten
+und den Restaurants anderer, richtig Kohle machen kann.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:03</itunes:duration>
+    </item>
+    <item>
+      <title>2048 oder "Der Sinn des Lebens"</title>
+      <itunes:episode>44</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-44/</link>
+      <guid>https://hannesdiem.de/tagesform-44</guid>
+      <pubDate>Sat, 11 Jun 2016 21:23:45 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich erkläre euch anhand des Spieles 2048 den Sinn des Lebens. Viel Spaß.</description>
+      <content:encoded><![CDATA[<p>Ich erkläre euch anhand des Spieles <a href="https://gabrielecirulli.github.io/2048/">2048</a> den Sinn des Lebens.
+Viel Spaß.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_44.mp3" length="11453052" type="audio/mpeg" />
+      <itunes:subtitle>Ich erkläre euch anhand des Spieles 2048 den Sinn des Lebens. Viel Spaß.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich erkläre euch anhand des Spieles <a href="https://gabrielecirulli.github.io/2048/">2048</a> den Sinn des Lebens.
+Viel Spaß.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:04</itunes:duration>
+    </item>
+    <item>
+      <title>Stille</title>
+      <itunes:episode>43</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-43/</link>
+      <guid>https://hannesdiem.de/tagesform-43</guid>
+      <pubDate>Fri, 10 Jun 2016 15:55:49 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Nach der Lektüre von &quot;How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist&quot; habe ich (fast) all meinen Programmen verboten mir Benachrichtigungen zu schicken. Heute erzähl ich von den Gedanken dahinter.</description>
+      <content:encoded><![CDATA[<p>Nach der Lektüre von &quot;<a href="https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3#.ct4rnuwku">How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist</a>&quot;
+habe ich (fast) all meinen Programmen verboten mir Benachrichtigungen zu schicken.</p>
+
+<p>Heute erzähl ich von den Gedanken dahinter.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_43.mp3" length="12136640" type="audio/mpeg" />
+      <itunes:subtitle>Nach der Lektüre von &quot;How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist&quot; habe ich (fast) all meinen Programmen verboten mir Benachrichtigungen zu schicken. Heute erzähl ich von den Gedanken dahinter.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Nach der Lektüre von &quot;<a href="https://medium.com/swlh/how-technology-hijacks-peoples-minds-from-a-magician-and-google-s-design-ethicist-56d62ef5edf3#.ct4rnuwku">How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist</a>&quot;
+habe ich (fast) all meinen Programmen verboten mir Benachrichtigungen zu schicken.</p>
+
+<p>Heute erzähl ich von den Gedanken dahinter.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:37</itunes:duration>
+    </item>
+    <item>
+      <title>Pair-Producing</title>
+      <itunes:episode>42</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-42/</link>
+      <guid>https://hannesdiem.de/tagesform-42</guid>
+      <pubDate>Wed, 08 Jun 2016 21:04:50 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Mit Ohrenschmerzen über Pairing und Meditation...</description>
+      <content:encoded><![CDATA[<p>Mit Ohrenschmerzen über Pairing und Meditation</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_42.mp3" length="8141892" type="audio/mpeg" />
+      <itunes:subtitle>Mit Ohrenschmerzen über Pairing und Meditation...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Mit Ohrenschmerzen über Pairing und Meditation</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:27</itunes:duration>
+    </item>
+    <item>
+      <title>Ich schlafe also sag ich nein</title>
+      <itunes:episode>41</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-41/</link>
+      <guid>https://hannesdiem.de/tagesform-41</guid>
+      <pubDate>Tue, 07 Jun 2016 23:53:12 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ein paar Minuten darüber dass mehr schlafen ganz gut ist aber die Nicht-Schlaf-Zeit dadurch wertvoller ist.</description>
+      <content:encoded><![CDATA[<p>Ein paar Minuten darüber dass mehr schlafen ganz gut ist
+aber die Nicht-Schlaf-Zeit dadurch wertvoller ist.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_41.mp3" length="10126584" type="audio/mpeg" />
+      <itunes:subtitle>Ein paar Minuten darüber dass mehr schlafen ganz gut ist aber die Nicht-Schlaf-Zeit dadurch wertvoller ist.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ein paar Minuten darüber dass mehr schlafen ganz gut ist
+aber die Nicht-Schlaf-Zeit dadurch wertvoller ist.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:01</itunes:duration>
+    </item>
+    <item>
+      <title>Bewegung auf der Bühne</title>
+      <itunes:episode>40</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-40/</link>
+      <guid>https://hannesdiem.de/tagesform-40</guid>
+      <pubDate>Sat, 04 Jun 2016 21:49:11 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>These: Bewegung auf der Bühne sieht nicht nur besser aus, sondern klingt auch besser.</description>
+      <content:encoded><![CDATA[<p>These: Bewegung auf der Bühne sieht nicht nur
+besser aus, sondern klingt auch besser.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_40.mp3" length="13004982" type="audio/mpeg" />
+      <itunes:subtitle>These: Bewegung auf der Bühne sieht nicht nur besser aus, sondern klingt auch besser.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>These: Bewegung auf der Bühne sieht nicht nur
+besser aus, sondern klingt auch besser.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:10:18</itunes:duration>
+    </item>
+    <item>
+      <title>Viel nichts und dann Routinen 2</title>
+      <itunes:episode>39</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-39/</link>
+      <guid>https://hannesdiem.de/tagesform-39</guid>
+      <pubDate>Wed, 01 Jun 2016 23:43:09 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich täusche an nichts zu sagen zu haben und erzähle dann etwas mehr über Routinen bzw. die Abwesendheit von Aufregung bei zu viel Routine.</description>
+      <content:encoded><![CDATA[<p>Ich täusche an nichts zu sagen zu haben und erzähle
+dann etwas mehr über Routinen bzw. die Abwesendheit
+von Aufregung bei zu viel Routine.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_39.mp3" length="13639094" type="audio/mpeg" />
+      <itunes:subtitle>Ich täusche an nichts zu sagen zu haben und erzähle dann etwas mehr über Routinen bzw. die Abwesendheit von Aufregung bei zu viel Routine.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich täusche an nichts zu sagen zu haben und erzähle
+dann etwas mehr über Routinen bzw. die Abwesendheit
+von Aufregung bei zu viel Routine.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:10:48</itunes:duration>
+    </item>
+    <item>
+      <title>Reich und Berühmt durch verstärktes Dösen</title>
+      <itunes:episode>38</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-38/</link>
+      <guid>https://hannesdiem.de/tagesform-38</guid>
+      <pubDate>Tue, 31 May 2016 21:22:54 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Nachdem ich heute zwei mal 20 minuten mit &quot;powernapping&quot; verbracht hab, rede ich mir die Situation schön indem ich behaupte: &quot;Es macht alles viel besser!&quot;</description>
+      <content:encoded><![CDATA[<p>Nachdem ich heute zwei mal 20 minuten mit &quot;powernapping&quot;
+verbracht hab, rede ich mir die Situation schön indem ich
+behaupte: &quot;Es macht alles viel besser!&quot;</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_38.mp3" length="12761462" type="audio/mpeg" />
+      <itunes:subtitle>Nachdem ich heute zwei mal 20 minuten mit &quot;powernapping&quot; verbracht hab, rede ich mir die Situation schön indem ich behaupte: &quot;Es macht alles viel besser!&quot;</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Nachdem ich heute zwei mal 20 minuten mit &quot;powernapping&quot;
+verbracht hab, rede ich mir die Situation schön indem ich
+behaupte: &quot;Es macht alles viel besser!&quot;</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:10:07</itunes:duration>
+    </item>
+    <item>
+      <title>Risse in der Seele</title>
+      <itunes:episode>37</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-37/</link>
+      <guid>https://hannesdiem.de/tagesform-37</guid>
+      <pubDate>Mon, 30 May 2016 21:56:11 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Wenn ich zu spät losgehe ist es oft unvermeidbar, dass ich zu spät ankomme.</description>
+      <content:encoded><![CDATA[<p>Wenn ich zu spät losgehe ist es oft unvermeidbar,
+dass ich zu spät ankomme.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_37.mp3" length="19011874" type="audio/mpeg" />
+      <itunes:subtitle>Wenn ich zu spät losgehe ist es oft unvermeidbar, dass ich zu spät ankomme.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Wenn ich zu spät losgehe ist es oft unvermeidbar,
+dass ich zu spät ankomme.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:15:04</itunes:duration>
+    </item>
+    <item>
+      <title>Band T-Shirt Börse</title>
+      <itunes:episode>36</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-36/</link>
+      <guid>https://hannesdiem.de/tagesform-36</guid>
+      <pubDate>Sun, 29 May 2016 21:51:35 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Eine frische Idee wie wir Bands und Kleinkünstler für einander werben könnten. Aufgenommen auf dem beschwerlichen Fußmarsch von Barmbek nach Winterhude.</description>
+      <content:encoded><![CDATA[<p>Eine frische Idee wie wir Bands und Kleinkünstler
+für einander werben könnten. Aufgenommen auf dem
+beschwerlichen Fußmarsch von Barmbek nach Winterhude.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_36.mp3" length="11335102" type="audio/mpeg" />
+      <itunes:subtitle>Eine frische Idee wie wir Bands und Kleinkünstler für einander werben könnten. Aufgenommen auf dem beschwerlichen Fußmarsch von Barmbek nach Winterhude.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Eine frische Idee wie wir Bands und Kleinkünstler
+für einander werben könnten. Aufgenommen auf dem
+beschwerlichen Fußmarsch von Barmbek nach Winterhude.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:59</itunes:duration>
+    </item>
+    <item>
+      <title>(Band) Retrospektiven</title>
+      <itunes:episode>35</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-35/</link>
+      <guid>https://hannesdiem.de/tagesform-35</guid>
+      <pubDate>Sat, 28 May 2016 21:53:30 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Nach einem Wunderbaren Gig mit Absolem Max, El Rey &amp; The Twisters und UEBERTRIBE, rede ich darüber was Retrospektiven für mich sind und dass man sie auch gerne häufiger im Privaten einsetzen sollte.</description>
+      <content:encoded><![CDATA[<p>Nach einem Wunderbaren Gig mit <a href="https://absolem-max.com">Absolem Max</a>,
+El Rey &amp; The Twisters und <a href="http://www.uebertribe.de/">UEBERTRIBE</a>,
+rede ich darüber was Retrospektiven für mich sind und dass man
+sie auch gerne häufiger im Privaten einsetzen sollte.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_35.mp3" length="19696506" type="audio/mpeg" />
+      <itunes:subtitle>Nach einem Wunderbaren Gig mit Absolem Max, El Rey &amp; The Twisters und UEBERTRIBE, rede ich darüber was Retrospektiven für mich sind und dass man sie auch gerne häufiger im Privaten einsetzen sollte.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Nach einem Wunderbaren Gig mit <a href="https://absolem-max.com">Absolem Max</a>,
+El Rey &amp; The Twisters und <a href="http://www.uebertribe.de/">UEBERTRIBE</a>,
+rede ich darüber was Retrospektiven für mich sind und dass man
+sie auch gerne häufiger im Privaten einsetzen sollte.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:15:37</itunes:duration>
+    </item>
+    <item>
+      <title>Kreativität in der Band</title>
+      <itunes:episode>34</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-34/</link>
+      <guid>https://hannesdiem.de/tagesform-34</guid>
+      <pubDate>Thu, 26 May 2016 21:03:23 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers erzähle ich wie der kreative Prozess innerhalb meiner Bands so abläuft und worauf man als Bandleader achten sollte.</description>
+      <content:encoded><![CDATA[<p>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers
+erzähle ich wie der kreative Prozess innerhalb meiner
+Bands so abläuft und worauf man als Bandleader achten sollte.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_34.mp3" length="16077006" type="audio/mpeg" />
+      <itunes:subtitle>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers erzähle ich wie der kreative Prozess innerhalb meiner Bands so abläuft und worauf man als Bandleader achten sollte.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Aus der Perspektiven eines (Ex-)Bandleaders und Musikers
+erzähle ich wie der kreative Prozess innerhalb meiner
+Bands so abläuft und worauf man als Bandleader achten sollte.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:12:44</itunes:duration>
+    </item>
+    <item>
+      <title>Ich hätte also könnt ich</title>
+      <itunes:episode>33</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-33/</link>
+      <guid>https://hannesdiem.de/tagesform-33</guid>
+      <pubDate>Wed, 25 May 2016 21:01:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Eine Liste von Dingen, die ich eventuell tun könnte wenn sie euch wichtig wären ;)</description>
+      <content:encoded><![CDATA[<p>Eine Liste von Dingen, die ich eventuell tun könnte
+wenn sie euch wichtig wären ;)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_33.mp3" length="18972940" type="audio/mpeg" />
+      <itunes:subtitle>Eine Liste von Dingen, die ich eventuell tun könnte wenn sie euch wichtig wären ;)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Eine Liste von Dingen, die ich eventuell tun könnte
+wenn sie euch wichtig wären ;)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:15:02</itunes:duration>
+    </item>
+    <item>
+      <title>Bitte um Feedback</title>
+      <itunes:episode>32</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-32/</link>
+      <guid>https://hannesdiem.de/tagesform-32</guid>
+      <pubDate>Tue, 24 May 2016 21:14:15 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Was müsste ich tun damit euch dieses Format einen Euro im Monat wert ist? Ich freue mich über Feedback an tagesform@hannesdiem.de oder in die Kommentare.</description>
+      <content:encoded><![CDATA[<p>Was müsste ich tun damit euch dieses Format einen
+Euro im Monat wert ist?</p>
+
+<p>Ich freue mich über Feedback an <a href="mailto:tagesform@hannesdiem.de">tagesform@hannesdiem.de</a> oder in die Kommentare.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_32.mp3" length="6667934" type="audio/mpeg" />
+      <itunes:subtitle>Was müsste ich tun damit euch dieses Format einen Euro im Monat wert ist? Ich freue mich über Feedback an tagesform@hannesdiem.de oder in die Kommentare.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Was müsste ich tun damit euch dieses Format einen
+Euro im Monat wert ist?</p>
+
+<p>Ich freue mich über Feedback an <a href="mailto:tagesform@hannesdiem.de">tagesform@hannesdiem.de</a> oder in die Kommentare.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:05:17</itunes:duration>
+    </item>
+    <item>
+      <title>Ich gehe also denk ich</title>
+      <itunes:episode>31</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-31/</link>
+      <guid>https://hannesdiem.de/tagesform-31</guid>
+      <pubDate>Mon, 23 May 2016 21:18:17 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Zu Fuß gehen ist Teil meines kreativen Prozesses und hilft auch bei schlechter Laune :)</description>
+      <content:encoded><![CDATA[<p>Zu Fuß gehen ist Teil meines kreativen Prozesses und
+hilft auch bei schlechter Laune :)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_31.mp3" length="10743264" type="audio/mpeg" />
+      <itunes:subtitle>Zu Fuß gehen ist Teil meines kreativen Prozesses und hilft auch bei schlechter Laune :)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Zu Fuß gehen ist Teil meines kreativen Prozesses und
+hilft auch bei schlechter Laune :)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:31</itunes:duration>
+    </item>
+    <item>
+      <title>Ich bin, also kann ich mich ändern</title>
+      <itunes:episode>30</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-30/</link>
+      <guid>https://hannesdiem.de/tagesform-30</guid>
+      <pubDate>Sun, 22 May 2016 21:13:54 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Heute spreche ich darüber warum ich Sätze wie &quot;Ich bin ein Mensch der ...&quot; nicht mag, und welche Chancen trozdem darin stecken. Inspiriert von How to Optimize Creative Output — Jarvis versus Ferriss...</description>
+      <content:encoded><![CDATA[<p>Heute spreche ich darüber warum ich Sätze wie &quot;Ich bin ein Mensch der ...&quot;
+nicht mag, und welche Chancen trozdem darin stecken.</p>
+
+<!-- more -->
+
+<p>Inspiriert von <a href="https://fourhourworkweek.com/2016/05/13/how-to-optimize-creative-output-jarvis-versus-ferriss/">How to Optimize Creative Output — Jarvis versus Ferriss</a></p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_30.mp3" length="8795210" type="audio/mpeg" />
+      <itunes:subtitle>Heute spreche ich darüber warum ich Sätze wie &quot;Ich bin ein Mensch der ...&quot; nicht mag, und welche Chancen trozdem darin stecken.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Heute spreche ich darüber warum ich Sätze wie &quot;Ich bin ein Mensch der ...&quot;
+nicht mag, und welche Chancen trozdem darin stecken.</p>
+
+<!-- more -->
+
+<p>Inspiriert von <a href="https://fourhourworkweek.com/2016/05/13/how-to-optimize-creative-output-jarvis-versus-ferriss/">How to Optimize Creative Output — Jarvis versus Ferriss</a></p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:58</itunes:duration>
+    </item>
+    <item>
+      <title>Pfand gehört in die Beweismitteltüte</title>
+      <itunes:episode>29</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-29/</link>
+      <guid>https://hannesdiem.de/tagesform-29</guid>
+      <pubDate>Sat, 21 May 2016 17:51:08 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Just another lazy Saturday. Mit einer Idee aus der kategorie: harmlose Streiche ohne versteckte Kamera.</description>
+      <content:encoded><![CDATA[<p>Just another lazy Saturday. Mit einer Idee aus der kategorie:
+harmlose Streiche ohne versteckte Kamera.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_29.mp3" length="5377686" type="audio/mpeg" />
+      <itunes:subtitle>Just another lazy Saturday. Mit einer Idee aus der kategorie: harmlose Streiche ohne versteckte Kamera.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Just another lazy Saturday. Mit einer Idee aus der kategorie:
+harmlose Streiche ohne versteckte Kamera.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:04:15</itunes:duration>
+    </item>
+    <item>
+      <title>Das Bus Experiment Teil 1</title>
+      <itunes:episode>28</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-28/</link>
+      <guid>https://hannesdiem.de/tagesform-28</guid>
+      <pubDate>Thu, 19 May 2016 22:48:06 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Wie kann ich die Welt ein bisschen besser machen indem ich nicht mitdenkenden Menschen auf den Schlips trete?</description>
+      <content:encoded><![CDATA[<p>Wie kann ich die Welt ein bisschen besser machen indem ich
+nicht mitdenkenden Menschen auf den Schlips trete?</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_28.mp3" length="11957732" type="audio/mpeg" />
+      <itunes:subtitle>Wie kann ich die Welt ein bisschen besser machen indem ich nicht mitdenkenden Menschen auf den Schlips trete?</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Wie kann ich die Welt ein bisschen besser machen indem ich
+nicht mitdenkenden Menschen auf den Schlips trete?</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:28</itunes:duration>
+    </item>
+    <item>
+      <title>Was tun in der Pomodoro-Pause???</title>
+      <itunes:episode>27</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-27/</link>
+      <guid>https://hannesdiem.de/tagesform-27</guid>
+      <pubDate>Tue, 17 May 2016 21:30:56 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Heute gut gelaunt über Pomodoros und die Frage wie man in den Pausen etwas produktives machen kann :)</description>
+      <content:encoded><![CDATA[<p>Heute gut gelaunt über Pomodoros und die Frage wie man
+in den Pausen etwas produktives machen kann :)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_27.mp3" length="10127210" type="audio/mpeg" />
+      <itunes:subtitle>Heute gut gelaunt über Pomodoros und die Frage wie man in den Pausen etwas produktives machen kann :)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Heute gut gelaunt über Pomodoros und die Frage wie man
+in den Pausen etwas produktives machen kann :)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:01</itunes:duration>
+    </item>
+    <item>
+      <title>Arbeitszeit auf Vertrauensbasis</title>
+      <itunes:episode>26</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-26/</link>
+      <guid>https://hannesdiem.de/tagesform-26</guid>
+      <pubDate>Mon, 16 May 2016 21:27:35 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Mit Intro und Lampenfieber rede ich darüber warum es mich Glücklich macht, dass mein Arbeitgeber mir in Sachen Arbeitszeit und Anwesenheit vertraut.</description>
+      <content:encoded><![CDATA[<p>Mit Intro und Lampenfieber rede ich darüber warum es mich
+Glücklich macht, dass mein Arbeitgeber mir in Sachen
+Arbeitszeit und Anwesenheit vertraut.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_26.mp3" length="14432386" type="audio/mpeg" />
+      <itunes:subtitle>Mit Intro und Lampenfieber rede ich darüber warum es mich Glücklich macht, dass mein Arbeitgeber mir in Sachen Arbeitszeit und Anwesenheit vertraut.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Mit Intro und Lampenfieber rede ich darüber warum es mich
+Glücklich macht, dass mein Arbeitgeber mir in Sachen
+Arbeitszeit und Anwesenheit vertraut.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:11:26</itunes:duration>
+    </item>
+    <item>
+      <title>Steuersch**ß</title>
+      <itunes:episode>25</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-25/</link>
+      <guid>https://hannesdiem.de/tagesform-25</guid>
+      <pubDate>Sun, 15 May 2016 21:26:51 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich hab schlechte Laune, weil ich Steuern zahlen muss. Aber die neuste Folge vom aethermonolog podcast ist draußen #019 - Vom Songwriting in Iterationen und ich durfte, wie angekündigt mitreden.</description>
+      <content:encoded><![CDATA[<p>Ich hab schlechte Laune, weil ich Steuern zahlen muss.
+Aber die neuste Folge vom aethermonolog podcast ist draußen
+<a href="https://aethermonolog.de/episode-019.html">#019 - Vom Songwriting in Iterationen</a>
+und ich durfte, wie angekündigt mitreden.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_25.mp3" length="7735956" type="audio/mpeg" />
+      <itunes:subtitle>Ich hab schlechte Laune, weil ich Steuern zahlen muss. Aber die neuste Folge vom aethermonolog podcast ist draußen #019 - Vom Songwriting in Iterationen und ich durfte, wie angekündigt mitreden.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich hab schlechte Laune, weil ich Steuern zahlen muss.
+Aber die neuste Folge vom aethermonolog podcast ist draußen
+<a href="https://aethermonolog.de/episode-019.html">#019 - Vom Songwriting in Iterationen</a>
+und ich durfte, wie angekündigt mitreden.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:08</itunes:duration>
+    </item>
+    <item>
+      <title>Vorgesetzte und Verantwortung</title>
+      <itunes:episode>24</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-24/</link>
+      <guid>https://hannesdiem.de/tagesform-24</guid>
+      <pubDate>Thu, 12 May 2016 21:08:36 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Braindump über die Distribution von Befindlichkeiten an Verantwortliche und damit verbunden das verantwortlich machen von Verantwortlichen für &quot;falsche&quot; Konsequenzen zu Befindlichkeiten. Außerdem hatte ich 6 Bier...</description>
+      <content:encoded><![CDATA[<p>Braindump über die Distribution von Befindlichkeiten an Verantwortliche
+und damit verbunden das verantwortlich machen von Verantwortlichen
+für &quot;falsche&quot; Konsequenzen zu Befindlichkeiten.</p>
+
+<p>Außerdem hatte ich 6 Bier</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_24.mp3" length="16572292" type="audio/mpeg" />
+      <itunes:subtitle>Braindump über die Distribution von Befindlichkeiten an Verantwortliche und damit verbunden das verantwortlich machen von Verantwortlichen für &quot;falsche&quot; Konsequenzen zu Befindlichkeiten. Außerdem hatte ich 6 Bier...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Braindump über die Distribution von Befindlichkeiten an Verantwortliche
+und damit verbunden das verantwortlich machen von Verantwortlichen
+für &quot;falsche&quot; Konsequenzen zu Befindlichkeiten.</p>
+
+<p>Außerdem hatte ich 6 Bier</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:13:08</itunes:duration>
+    </item>
+    <item>
+      <title>Zehntausend Ideen</title>
+      <itunes:episode>23</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-23/</link>
+      <guid>https://hannesdiem.de/tagesform-23</guid>
+      <pubDate>Wed, 11 May 2016 21:20:26 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne webseite gebaut: https://zehntausend.xiphe.net/ Heute spreche ich darüber warum ich das immer noch für nen interessanten Plan halte.</description>
+      <content:encoded><![CDATA[<p>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne
+webseite gebaut: https://zehntausend.xiphe.net/<br>
+Heute spreche ich darüber warum ich das immer noch für nen
+interessanten Plan halte.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_23.mp3" length="11981948" type="audio/mpeg" />
+      <itunes:subtitle>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne webseite gebaut: https://zehntausend.xiphe.net/ Heute spreche ich darüber warum ich das immer noch für nen interessanten Plan halte.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ich hatte mir mal vorgenommen Zehntausend Ideen zu sammeln und dafür ne
+webseite gebaut: https://zehntausend.xiphe.net/<br>
+Heute spreche ich darüber warum ich das immer noch für nen
+interessanten Plan halte.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:30</itunes:duration>
+    </item>
+    <item>
+      <title>Feuer und Vergessen</title>
+      <itunes:episode>22</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-22/</link>
+      <guid>https://hannesdiem.de/tagesform-22</guid>
+      <pubDate>Tue, 10 May 2016 21:24:59 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Nachdem ich mit Kai eine Episode seines aethermonologs eingesprochen habe, Zeige ich einen Schnippsel von dem was ich gestern im Proberaum gebastelt habe und rede über meine neu gewonnene Vorliebe für Synthesizer und moderne Sprache. Hier ist noch das Video der ersten Songwriting Session von Feuer und Vergessen.</description>
+      <content:encoded><![CDATA[<p>Nachdem ich mit Kai eine Episode seines <a href="https://aethermonolog.de/">aethermonologs</a> eingesprochen habe, Zeige ich einen Schnippsel von dem was ich
+gestern im Proberaum gebastelt habe und rede über meine neu gewonnene
+Vorliebe für Synthesizer und moderne Sprache.</p>
+
+<!-- more -->
+
+<p>Hier ist noch das <a href="https://www.youtube.com/watch?v=b1-uTKl0Rqs">Video der ersten Songwriting Session von Feuer und Vergessen</a>.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_22.mp3" length="12891416" type="audio/mpeg" />
+      <itunes:subtitle>Nachdem ich mit Kai eine Episode seines aethermonologs eingesprochen habe, Zeige ich einen Schnippsel von dem was ich gestern im Proberaum gebastelt habe und rede über meine neu gewonnene Vorliebe für Synthesizer und moderne Sprache.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Nachdem ich mit Kai eine Episode seines <a href="https://aethermonolog.de/">aethermonologs</a> eingesprochen habe, Zeige ich einen Schnippsel von dem was ich
+gestern im Proberaum gebastelt habe und rede über meine neu gewonnene
+Vorliebe für Synthesizer und moderne Sprache.</p>
+
+<!-- more -->
+
+<p>Hier ist noch das <a href="https://www.youtube.com/watch?v=b1-uTKl0Rqs">Video der ersten Songwriting Session von Feuer und Vergessen</a>.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/feuer_und_vergessen_t4h1jt.jpg" />
+      <itunes:duration>00:10:13</itunes:duration>
+    </item>
+    <item>
+      <title>Selbstverständlichkeiten</title>
+      <itunes:episode>21</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-21/</link>
+      <guid>https://hannesdiem.de/tagesform-21</guid>
+      <pubDate>Sun, 08 May 2016 20:30:45 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Nach ausgesprochen anregenden Gesprächen mit Mutter und Bruder spreche ich über die Kraft des Einfachen und die folgende These: &quot;In der Zeit, in der man eine Tätigkeit ausübt wird man zwangsläufig schneller oder besser darin.&quot;</description>
+      <content:encoded><![CDATA[<p>Nach ausgesprochen anregenden Gesprächen mit Mutter und Bruder
+spreche ich über die Kraft des Einfachen und die folgende These:
+&quot;In der Zeit, in der man eine Tätigkeit ausübt wird man zwangsläufig
+schneller oder besser darin.&quot;</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_21.mp3" length="12077874" type="audio/mpeg" />
+      <itunes:subtitle>Nach ausgesprochen anregenden Gesprächen mit Mutter und Bruder spreche ich über die Kraft des Einfachen und die folgende These: &quot;In der Zeit, in der man eine Tätigkeit ausübt wird man zwangsläufig schneller oder besser darin.&quot;</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Nach ausgesprochen anregenden Gesprächen mit Mutter und Bruder
+spreche ich über die Kraft des Einfachen und die folgende These:
+&quot;In der Zeit, in der man eine Tätigkeit ausübt wird man zwangsläufig
+schneller oder besser darin.&quot;</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:34</itunes:duration>
+    </item>
+    <item>
+      <title>Lammfilet statt Blumen</title>
+      <itunes:episode>20</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-20/</link>
+      <guid>https://hannesdiem.de/tagesform-20</guid>
+      <pubDate>Sat, 07 May 2016 20:53:59 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Nach einem furiosen Auftritt mit House on a Hill spreche ich über Produktivität im Urlaub und Ähnlichem. Außerdem ist Morgen Muttertag :)</description>
+      <content:encoded><![CDATA[<p>Nach einem furiosen Auftritt mit <a href="http://houseonahill.de">House on a Hill</a>
+spreche ich über Produktivität im Urlaub und Ähnlichem.
+Außerdem ist Morgen Muttertag :)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_20.mp3" length="8643858" type="audio/mpeg" />
+      <itunes:subtitle>Nach einem furiosen Auftritt mit House on a Hill spreche ich über Produktivität im Urlaub und Ähnlichem. Außerdem ist Morgen Muttertag :)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Nach einem furiosen Auftritt mit <a href="http://houseonahill.de">House on a Hill</a>
+spreche ich über Produktivität im Urlaub und Ähnlichem.
+Außerdem ist Morgen Muttertag :)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:51</itunes:duration>
+    </item>
+    <item>
+      <title>Müde</title>
+      <itunes:episode>19</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-19/</link>
+      <guid>https://hannesdiem.de/tagesform-19</guid>
+      <pubDate>Fri, 06 May 2016 20:20:32 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Diese Episode existiert nur um meinen inneren Schweinehund zu ärgern! ... penner...</description>
+      <content:encoded><![CDATA[<p>Diese Episode existiert nur um meinen inneren Schweinehund zu ärgern!</p>
+
+<!-- more -->
+
+<p>...</p>
+
+<p>penner</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_19.mp3" length="5396892" type="audio/mpeg" />
+      <itunes:subtitle>Diese Episode existiert nur um meinen inneren Schweinehund zu ärgern!</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Diese Episode existiert nur um meinen inneren Schweinehund zu ärgern!</p>
+
+<!-- more -->
+
+<p>...</p>
+
+<p>penner</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:04:16</itunes:duration>
+    </item>
+    <item>
+      <title>Love and Peace</title>
+      <itunes:episode>18</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-18/</link>
+      <guid>https://hannesdiem.de/tagesform-18</guid>
+      <pubDate>Wed, 04 May 2016 22:49:32 +0000</pubDate>
+      <itunes:explicit>Yes</itunes:explicit>
+      <description>Ein Statement zur Liebe und zum Frieden. Mit Annekdoten, wie ich mal mit Nazis Bier getrunken und eine Gruppe Menschen verachtet habe. Ausgelößt von Kübra Gümüşay: Organisierte Liebe...</description>
+      <content:encoded><![CDATA[<p>Ein Statement zur Liebe und zum Frieden.</p>
+
+<!-- more -->
+
+<p>Mit Annekdoten, wie ich mal mit Nazis Bier getrunken
+und eine Gruppe Menschen verachtet habe.</p>
+
+<p>Ausgelößt von <a href="https://www.youtube.com/watch?v=BNLhT5hZaV8">Kübra Gümüşay: Organisierte Liebe</a></p>
+
+<p><a href="https://github.com/love-and-peace/love-and-peace/blob/master/versions/karma/v1.0-karma1/de.md"><img src="https://love-and-peace.github.io/love-and-peace/badges/karma/v1.0-karma1.svg" alt="Love and Peace"></a></p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_18.mp3" length="17111626" type="audio/mpeg" />
+      <itunes:subtitle>Ein Statement zur Liebe und zum Frieden.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Ein Statement zur Liebe und zum Frieden.</p>
+
+<!-- more -->
+
+<p>Mit Annekdoten, wie ich mal mit Nazis Bier getrunken
+und eine Gruppe Menschen verachtet habe.</p>
+
+<p>Ausgelößt von <a href="https://www.youtube.com/watch?v=BNLhT5hZaV8">Kübra Gümüşay: Organisierte Liebe</a></p>
+
+<p><a href="https://github.com/love-and-peace/love-and-peace/blob/master/versions/karma/v1.0-karma1/de.md"><img src="https://love-and-peace.github.io/love-and-peace/badges/karma/v1.0-karma1.svg" alt="Love and Peace"></a></p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/love_and_peace_hipster_tf1zsv.jpg" />
+      <itunes:duration>00:13:34</itunes:duration>
+    </item>
+    <item>
+      <title>Afenginn</title>
+      <itunes:episode>17</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-17/</link>
+      <guid>https://hannesdiem.de/tagesform-17</guid>
+      <pubDate>Tue, 03 May 2016 20:12:07 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>An diesem wunderschönen Dienstag mit wenig schlaf übers Cajon-Video schneiden und ein grandioses Afenginn Konzert...</description>
+      <content:encoded><![CDATA[<p>An diesem wunderschönen Dienstag mit wenig schlaf übers
+Cajon-Video schneiden und ein grandioses <a href="http://www.afenginn.dk/">Afenginn</a> Konzert</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_17.mp3" length="12168372" type="audio/mpeg" />
+      <itunes:subtitle>An diesem wunderschönen Dienstag mit wenig schlaf übers Cajon-Video schneiden und ein grandioses Afenginn Konzert...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>An diesem wunderschönen Dienstag mit wenig schlaf übers
+Cajon-Video schneiden und ein grandioses <a href="http://www.afenginn.dk/">Afenginn</a> Konzert</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:09:38</itunes:duration>
+    </item>
+    <item>
+      <title>Cajongedöns</title>
+      <itunes:episode>16</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-16/</link>
+      <guid>https://hannesdiem.de/tagesform-16</guid>
+      <pubDate>Mon, 02 May 2016 22:19:01 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Hannes macht Cajon-Videos und probt mit House on a Hill. Besagter Auftritt: 07.5.16 - HOUSE ON A HILL, feat. Claus Ulrich @ Music Club Live – HAMBURG...</description>
+      <content:encoded><![CDATA[<p>Hannes macht Cajon-Videos und probt mit House on a Hill.</p>
+
+<!-- more -->
+
+<p>Besagter Auftritt: <a href="https://houseonahill.de/events/house-on-a-hill-music-club-live-hamburg-3/">07.5.16 - HOUSE ON A HILL, feat. Claus Ulrich @ Music Club Live – HAMBURG</a></p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_16.mp3" length="5286562" type="audio/mpeg" />
+      <itunes:subtitle>Hannes macht Cajon-Videos und probt mit House on a Hill.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Hannes macht Cajon-Videos und probt mit House on a Hill.</p>
+
+<!-- more -->
+
+<p>Besagter Auftritt: <a href="https://houseonahill.de/events/house-on-a-hill-music-club-live-hamburg-3/">07.5.16 - HOUSE ON A HILL, feat. Claus Ulrich @ Music Club Live – HAMBURG</a></p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/cajongedoens_banner_oxvz2l.jpg" />
+      <itunes:duration>00:04:11</itunes:duration>
+    </item>
+    <item>
+      <title>Jetzt mit Feed</title>
+      <itunes:episode>15</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-15/</link>
+      <guid>https://hannesdiem.de/tagesform-15</guid>
+      <pubDate>Sun, 01 May 2016 20:41:14 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser Podcast jetzt aboniert werden! Einfach https://hannesdiem.de/feed/tagesform/ in eine Podcast-App eures vertrauens eintagen und glücklich sein. Ansonsten just another lazy sunday.</description>
+      <content:encoded><![CDATA[<p>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat
+und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser
+Podcast jetzt aboniert werden!</p>
+
+<!-- more -->
+
+<p>Einfach <code>https://hannesdiem.de/feed/tagesform/</code> in eine Podcast-App eures
+vertrauens eintagen und glücklich sein.</p>
+
+<p>Ansonsten just another lazy sunday.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_15.mp3" length="8265896" type="audio/mpeg" />
+      <itunes:subtitle>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser Podcast jetzt aboniert werden!</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Auch wenn iTunes mich noch nicht ins Podcast-Verzeichnis aufgenommen hat
+und andere Verzeichnisse noch nicht mal von mir wissen, kann dieser
+Podcast jetzt aboniert werden!</p>
+
+<!-- more -->
+
+<p>Einfach <code>https://hannesdiem.de/feed/tagesform/</code> in eine Podcast-App eures
+vertrauens eintagen und glücklich sein.</p>
+
+<p>Ansonsten just another lazy sunday.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:33</itunes:duration>
+    </item>
+    <item>
+      <title>Jubiläumse</title>
+      <itunes:episode>14</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-14/</link>
+      <guid>https://hannesdiem.de/tagesform-14</guid>
+      <pubDate>Sat, 30 Apr 2016 20:13:19 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu finden sein wird.</description>
+      <content:encoded><![CDATA[<p>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts,
+der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu
+finden sein wird.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_14.mp3" length="7716750" type="audio/mpeg" />
+      <itunes:subtitle>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts, der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu finden sein wird.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Zwischen den Ähms befinden sich Anekdoten zu den vielen Jubiläen dieses Podcasts,
+der dank des RSS feeds bald auch in iTunes und anderen Podcast-Verzeichnissen zu
+finden sein wird.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_14_g5zq9n.jpg" />
+      <itunes:duration>00:06:07</itunes:duration>
+    </item>
+    <item>
+      <title>Weiter</title>
+      <itunes:episode>13</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-13/</link>
+      <guid>https://hannesdiem.de/tagesform-13</guid>
+      <pubDate>Fri, 29 Apr 2016 20:12:21 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</description>
+      <content:encoded><![CDATA[<p>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_13.mp3" length="6235590" type="audio/mpeg" />
+      <itunes:subtitle>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Mit Melodien beim Aufstehen und Aufnahme-Equipment.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:04:56</itunes:duration>
+    </item>
+    <item>
+      <title>YNAB</title>
+      <itunes:episode>12</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-12/</link>
+      <guid>https://hannesdiem.de/tagesform-12</guid>
+      <pubDate>Thu, 28 Apr 2016 20:05:24 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</description>
+      <content:encoded><![CDATA[<p>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_12.mp3" length="16605276" type="audio/mpeg" />
+      <itunes:subtitle>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Von und mit Plan über Popschutz und &quot;You Need a Budget&quot;</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:13:09</itunes:duration>
+    </item>
+    <item>
+      <title>Bla bla</title>
+      <itunes:episode>11</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_11/</link>
+      <guid>https://hannesdiem.de/tagesform_11</guid>
+      <pubDate>Wed, 27 Apr 2016 20:23:46 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Über Urlaub, tolle Menschen und Trivia.</description>
+      <content:encoded><![CDATA[<p>Über Urlaub, tolle Menschen und Trivia.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_11.mp3" length="7385446" type="audio/mpeg" />
+      <itunes:subtitle>Über Urlaub, tolle Menschen und Trivia.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Über Urlaub, tolle Menschen und Trivia.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:05:51</itunes:duration>
+    </item>
+    <item>
+      <title>commit message formate</title>
+      <itunes:episode>10</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_10/</link>
+      <guid>https://hannesdiem.de/tagesform_10</guid>
+      <pubDate>Mon, 25 Apr 2016 20:12:05 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen. Hier gibt es die Slides zu besagtem Vortrag: stop writing commitMESSages, please...</description>
+      <content:encoded><![CDATA[<p>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</p>
+
+<!-- more -->
+
+<p>Hier gibt es die Slides zu besagtem Vortrag: <a href="https://docs.google.com/a/jimdo.com/presentation/d/1EXXRzbT17rbD7CFXugPZgvgMhsoVE1XXSA7UxBl3iXw/edit?usp=sharing">stop writing commitMESSages, please</a></p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_10.mp3" length="10918728" type="audio/mpeg" />
+      <itunes:subtitle>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Das erste Jubiläum verbringe ich damit über commit message formate zu sprechen.</p>
+
+<!-- more -->
+
+<p>Hier gibt es die Slides zu besagtem Vortrag: <a href="https://docs.google.com/a/jimdo.com/presentation/d/1EXXRzbT17rbD7CFXugPZgvgMhsoVE1XXSA7UxBl3iXw/edit?usp=sharing">stop writing commitMESSages, please</a></p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:08:39</itunes:duration>
+    </item>
+    <item>
+      <title>Zuhören</title>
+      <itunes:episode>9</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_9/</link>
+      <guid>https://hannesdiem.de/tagesform_9</guid>
+      <pubDate>Sat, 23 Apr 2016 20:11:11 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und keinen Erfolg beim songwriting.</description>
+      <content:encoded><![CDATA[<p>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
+keinen Erfolg beim songwriting.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_9.mp3" length="6637142" type="audio/mpeg" />
+      <itunes:subtitle>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und keinen Erfolg beim songwriting.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Etwas zu spät und zu sehr in den Themen springend über Zuhörer, JS-Unconf, Verkabelungen und
+keinen Erfolg beim songwriting.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/studio_wu3hcy.jpg" />
+      <itunes:duration>00:05:15</itunes:duration>
+    </item>
+    <item>
+      <title>Tagesform 8.5 - 25:05 Uhr</title>
+      <link>https://hannesdiem.de/tagesform_8.5/</link>
+      <guid>https://hannesdiem.de/tagesform_8.5</guid>
+      <pubDate>Fri, 22 Apr 2016 20:34:26 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach'm Aufstehen ist.</description>
+      <content:encoded><![CDATA[<p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.5.mp3" length="3809786" type="audio/mpeg" />
+      <itunes:subtitle>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach'm Aufstehen ist.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Bonusgeschwafel über Uhrzeiten &gt; 24:00 und den Fakt, dass &quot;Morgen&quot; nach&#39;m Aufstehen ist.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/IMG_4605_ilkljw.jpg" />
+      <itunes:duration>00:03:01</itunes:duration>
+    </item>
+    <item>
+      <title>Horizont</title>
+      <itunes:episode>8</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_8/</link>
+      <guid>https://hannesdiem.de/tagesform_8</guid>
+      <pubDate>Fri, 22 Apr 2016 20:26:37 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</description>
+      <content:encoded><![CDATA[<p>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_8.mp3" length="12496440" type="audio/mpeg" />
+      <itunes:subtitle>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Heute Nacht über Horizonte, Burger, Unkonferenzen und Synthesizer.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/IMG_4605_ilkljw.jpg" />
+      <itunes:duration>00:09:54</itunes:duration>
+    </item>
+    <item>
+      <title>Routinen</title>
+      <itunes:episode>7</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_7/</link>
+      <guid>https://hannesdiem.de/tagesform_7</guid>
+      <pubDate>Thu, 21 Apr 2016 20:28:14 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Leicht angeheitert über das an und abgewöhnen von Routinen.</description>
+      <content:encoded><![CDATA[<p>Leicht angeheitert über das an und abgewöhnen von Routinen.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_7.mp3" length="9759686" type="audio/mpeg" />
+      <itunes:subtitle>Leicht angeheitert über das an und abgewöhnen von Routinen.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Leicht angeheitert über das an und abgewöhnen von Routinen.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:07:44</itunes:duration>
+    </item>
+    <item>
+      <title>Verkehr</title>
+      <itunes:episode>6</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_6/</link>
+      <guid>https://hannesdiem.de/tagesform_6</guid>
+      <pubDate>Wed, 20 Apr 2016 20:24:07 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Von hamburger Fußwegen und blühenden Bäumen...</description>
+      <content:encoded><![CDATA[<p>Von hamburger Fußwegen und blühenden Bäumen</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_6.mp3" length="4445672" type="audio/mpeg" />
+      <itunes:subtitle>Von hamburger Fußwegen und blühenden Bäumen...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Von hamburger Fußwegen und blühenden Bäumen</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:03:31</itunes:duration>
+    </item>
+    <item>
+      <title>Selbsttrollung</title>
+      <itunes:episode>5</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_5/</link>
+      <guid>https://hannesdiem.de/tagesform_5</guid>
+      <pubDate>Tue, 19 Apr 2016 20:32:20 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Über Selbsttrollung, diese Webseite, Aufnahmesetup und Absolem Max Proben. Hier ist ein Link zu unserem Auftritt am 28.05.2016 in der Astrastube.</description>
+      <content:encoded><![CDATA[<p>Über Selbsttrollung, diese Webseite, Aufnahmesetup und <a href="https://www.absolem-max.com/">Absolem Max</a> Proben.</p>
+
+<!-- more -->
+
+<p>Hier ist ein Link zu <a href="https://www.facebook.com/events/155714938135011/">unserem Auftritt am 28.05.2016 in der Astrastube</a>.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_5.mp3" length="7699736" type="audio/mpeg" />
+      <itunes:subtitle>Über Selbsttrollung, diese Webseite, Aufnahmesetup und Absolem Max Proben.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Über Selbsttrollung, diese Webseite, Aufnahmesetup und <a href="https://www.absolem-max.com/">Absolem Max</a> Proben.</p>
+
+<!-- more -->
+
+<p>Hier ist ein Link zu <a href="https://www.facebook.com/events/155714938135011/">unserem Auftritt am 28.05.2016 in der Astrastube</a>.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:06:06</itunes:duration>
+    </item>
+    <item>
+      <title>aus dem Proberaum</title>
+      <itunes:episode>4</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_4/</link>
+      <guid>https://hannesdiem.de/tagesform_4</guid>
+      <pubDate>Mon, 18 Apr 2016 20:47:04 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</description>
+      <content:encoded><![CDATA[<p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_4.mp3" length="2864098" type="audio/mpeg" />
+      <itunes:subtitle>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Heute live und zeitverzögert aus dem wunderschönsten Proberaum der Welt. Darum mit besserem Mikro :)</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/FullSizeRender_2_dx8nc7.jpg" />
+      <itunes:duration>00:02:16</itunes:duration>
+    </item>
+    <item>
+      <title>Rule of three</title>
+      <itunes:episode>3</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_3/</link>
+      <guid>https://hannesdiem.de/tagesform_3</guid>
+      <pubDate>Sun, 17 Apr 2016 21:25:31 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper zu zucken, drei Stunden lang Snoozen kann. Außerdem gibt es eine Hörprobe von Michael Jacksons &quot;Billy Jean&quot; in der bearbeitung von &quot;The Civil Wars&quot;, geprobt von &quot;House on a Hill&quot;.</description>
+      <content:encoded><![CDATA[<p>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper
+zu zucken, drei Stunden lang Snoozen kann.</p>
+
+<!-- more -->
+
+<p>Außerdem gibt es eine Hörprobe von Michael Jacksons &quot;Billy Jean&quot; in der bearbeitung
+von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt von <a href="https://houseonahill.de/">&quot;House on a Hill&quot;</a>.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_3.mp3" length="9331204" type="audio/mpeg" />
+      <itunes:subtitle>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper zu zucken, drei Stunden lang Snoozen kann.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Heute über die &quot;Rule of three&quot; beim erstellen von Presets und dem Mann, der ohne mit der Wimper
+zu zucken, drei Stunden lang Snoozen kann.</p>
+
+<!-- more -->
+
+<p>Außerdem gibt es eine Hörprobe von Michael Jacksons &quot;Billy Jean&quot; in der bearbeitung
+von <a href="http://thecivilwars.com/">&quot;The Civil Wars&quot;</a>, geprobt von <a href="https://houseonahill.de/">&quot;House on a Hill&quot;</a>.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/FullSizeRender_rfjqdv.jpg" />
+      <itunes:duration>00:07:23</itunes:duration>
+    </item>
+    <item>
+      <title>Verfolgende Papierstapel</title>
+      <itunes:episode>2</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_2/</link>
+      <guid>https://hannesdiem.de/tagesform_2</guid>
+      <pubDate>Sat, 16 Apr 2016 21:01:51 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</description>
+      <content:encoded><![CDATA[<p>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_2.mp3" length="6334856" type="audio/mpeg" />
+      <itunes:subtitle>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Heute über das Proben mit House on a Hill und verfolgende Papierstapel.</p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:05:01</itunes:duration>
+    </item>
+    <item>
+      <title>Pilot</title>
+      <itunes:episode>1</itunes:episode>
+      <itunes:season>1</itunes:season>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>http://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform_1/</link>
+      <guid>https://hannesdiem.de/tagesform_1</guid>
+      <pubDate>Fri, 15 Apr 2016 20:52:40 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</description>
+      <content:encoded><![CDATA[<p>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</p>
+
+<!-- more -->
+
+<p><img src="https://res.cloudinary.com/xiphe/image/upload/c_scale,w_600/v1460755515/tagesform1_c7ld9y.png"></p>
+]]></content:encoded>
+      <enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_1.mp3" length="4647544" type="audio/mpeg" />
+      <itunes:subtitle>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</itunes:subtitle>
+      <itunes:summary><![CDATA[<p>Das hier passiert, wenn ich &quot;unvorbereitet&quot; in ein Aufnahmeprogramm quassel...</p>
+
+<!-- more -->
+
+<p><img src="https://res.cloudinary.com/xiphe/image/upload/c_scale,w_600/v1460755515/tagesform1_c7ld9y.png"></p>
+]]></itunes:summary>
+      <itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
+      <itunes:duration>00:03:41</itunes:duration>
+    </item>
+`;

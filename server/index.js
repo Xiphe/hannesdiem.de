@@ -37,7 +37,7 @@ app.all('*', (req, res, next) => {
     proxy(req, res, next);
   } else if (path.startsWith('/assets/')) {
     res.redirect(301, `https://xiphe.net/hannesdiem.de${req.url}`);
-  } else if (!path.match(/\/$/)) {
+  } else if (!path.match(/\/$/) && !path.match(/\.xml$/)) {
     res.redirect(301, `${path}${query ? `/?${query}` : '/'}`);
   } else {
     const originalEnd = res.end;
