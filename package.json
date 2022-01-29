@@ -9,7 +9,7 @@
     "dev:remix": "remix watch",
     "dev:express": "cross-env NODE_ENV=development node-dev --notify=false server/index.js",
     "postinstall": "remix setup node",
-    "start": "cross-env NODE_ENV=production node server/index.js"
+    "start": "cross-env NODE_ENV=production PORT=8080 node server/index.js"
   },
   "dependencies": {
     "@remix-run/express": "1.1.3",
