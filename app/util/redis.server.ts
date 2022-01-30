@@ -21,7 +21,7 @@ if (!global.redis_client) {
   global.redis_client = new RedisConstr(REDIS_URL);
 
   global.redis_client.on('error', (error: string) => {
-    console.error(`REDIS ${name} (${new URL(REDIS_URL).host}) ERROR:`, error);
+    console.error(`REDIS (${new URL(REDIS_URL).host}) ERROR:`, error);
   });
 }
 
