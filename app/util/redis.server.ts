@@ -11,53 +11,21 @@ declare global {
   // This prevents us from making multiple connections to the db when the
   // require cache is cleared.
   // eslint-disable-next-line
-  var replicaClient: Redis | undefined, primaryClient: Redis | undefined;
+  var redis_client: Redis | undefined;
 }
 
 const REDIS_URL = getRequiredServerEnvVar('REDIS_URL');
-const replica = new URL(REDIS_URL);
-const isLocalHost = replica.hostname === 'localhost';
-const isInternal = replica.hostname.includes('.internal');
+const FLY_REGION = getRequiredServerEnvVar('FLY_REGION');
 
-const isMultiRegion = !isLocalHost && isInternal;
+if (!global.redis_client) {
+  global.redis_client = new RedisConstr(REDIS_URL);
 
-const PRIMARY_REGION = isMultiRegion
-  ? getRequiredServerEnvVar('PRIMARY_REGION')
-  : null;
-const FLY_REGION = isMultiRegion ? getRequiredServerEnvVar('FLY_REGION') : null;
-
-if (FLY_REGION) {
-  replica.host = `${FLY_REGION}.${replica.host}`;
+  global.redis_client.on('error', (error: string) => {
+    console.error(`REDIS ${name} (${new URL(REDIS_URL).host}) ERROR:`, error);
+  });
 }
 
-const replicaClient = createClient('replicaClient', replica.toString());
-
-let primaryClient: Redis | null = null;
-if (FLY_REGION !== PRIMARY_REGION) {
-  const primary = new URL(REDIS_URL);
-  if (!isLocalHost) {
-    primary.host = `${PRIMARY_REGION}.${primary.host}`;
-  }
-  primaryClient = createClient('primaryClient', primary.toString());
-}
-
-function createClient(
-  name: 'replicaClient' | 'primaryClient',
-  url: string,
-): Redis {
-  let client = global[name];
-  if (!client) {
-    client = global[name] = new RedisConstr(url);
-
-    client.on('error', (error: string) => {
-      console.error(`REDIS ${name} (${new URL(url).host}) ERROR:`, error);
-    });
-  }
-  return client;
-}
-
-// NOTE: Caching should never crash the app, so instead of rejecting all these
-// promises, we'll just resolve things with null and log the error.
+const replicaClient = global.redis_client;
 
 async function get<Value = unknown>(key: string): Promise<Value | null> {
   try {
@@ -81,9 +49,9 @@ async function set<Value>(key: string, value: Value): Promise<'OK'> {
 async function del(key: string): Promise<string> {
   try {
     // fire and forget on primary, we only care about replica
-    primaryClient?.del(key).catch((err) => {
-      console.error('Primary delete error', err);
-    });
+    // primaryClient?.del(key).catch((err) => {
+    //   console.error('Primary delete error', err);
+    // });
 
     const result = await replicaClient.del(key);
     return `${key} deleted: ${result}`;
