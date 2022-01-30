@@ -42,6 +42,7 @@ export const loader: LoaderFunction = async ({ request }) => {
       <itunes:subtitle>Ein Tagebuch zum mithören - über die Musik, das Leben und den ganzen Rest</itunes:subtitle>
       <itunes:block>no</itunes:block>
       <itunes:explicit>no</itunes:explicit>
+      <fyyd:verify xmlns:fyyd="https://fyyd.de/fyyd-ns/">vw374msen1xi5wuop5l85wofIdpfv6ciaLu2718s</fyyd:verify>
       <atom:link rel="me" href="https://podcasts.apple.com/podcast/id1109789077"/>
       `.replace(/^    /gm, '');
 
