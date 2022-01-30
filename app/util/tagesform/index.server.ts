@@ -6,6 +6,10 @@ import formatTagesformFeedDate from './formatDate';
 
 const BUCKET_URL = 'https://s3.eu-central-1.amazonaws.com/tagesform';
 
+// TODO:
+// - remove Title prefix in meta extractor
+// - url encode filename in meta extractor
+
 const ArrayOfStrings = z.array(z.string());
 const EpisodeMeta = z.object({
   title: z.string().transform((s) => s.replace(/^Tagesform [0-9]+ - /, '')),

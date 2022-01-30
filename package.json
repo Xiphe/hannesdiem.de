@@ -8,7 +8,7 @@
     "dev": "concurrently npm:dev:*",
     "wait": "concurrently -r npm:wait:*",
     "open": "OPEN_MATCH_HOST_ONLY=true; node -e 'require(\"better-opn\")(\"http://localhost:3000\")'",
-    "start": "cross-env NODE_ENV=production PORT=8080 node server/index.js",
+    "start": "node server/index.js",
     "dev:remix": "npm run wait && remix watch",
     "dev:express": "npm run wait && cross-env NODE_ENV=development node-dev --notify=false server/index.js --ignore server/build/index.js",
     "dev:docker": "docker-compose up",
