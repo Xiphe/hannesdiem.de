@@ -1,5 +1,5 @@
 import { LoaderFunction } from 'remix';
-import cover from '~/assets/tagesform/tagesform_s2_1280.jpg';
+import cover from '~/assets/tagesform/tagesform_s2_2000.jpg';
 import { format } from 'date-fns';
 import s1Episodes from '~/util/tagesformS1Episodes';
 
@@ -32,15 +32,18 @@ export const loader: LoaderFunction = async ({ request }) => {
       <itunes:summary><![CDATA[Tagesform ist ein potentiell täglich erscheinender Podcast in dem Ich (Hannes) 3 - 15 Minuten darüber rede was mich gerade beschäftigt. Von Mentaler Gesundheit, Songwriting, Kite-Surfing, Studioequipment, dem Liebesleben und Programieren bis Wäsche aufhängen und anderen Trivialitäten.]]></itunes:summary>
       <itunes:author>Hannes Diem</itunes:author>
       <itunes:image href="${url.origin}${cover}"/>
-      <itunes:category text="Music" />
+      <itunes:category text="Music Commentary" />
       <itunes:category text="Technology" />
+      <itunes:category text="Mental Health" />
       <itunes:owner>
         <itunes:name>Hannes Diercks</itunes:name>
         <itunes:email>apple@xiphe.net</itunes:email>
       </itunes:owner>
       <itunes:subtitle>Ein Tagebuch zum mithören - über die Musik, das Leben und den ganzen Rest</itunes:subtitle>
       <itunes:block>no</itunes:block>
-      <itunes:explicit>no</itunes:explicit>`.replace(/^    /gm, '');
+      <itunes:explicit>no</itunes:explicit>
+      <atom:link rel="me" href="https://podcasts.apple.com/podcast/id1109789077"/>
+      `.replace(/^    /gm, '');
 
   return new Response(
     [RSS_HEAD, s1Episodes.trim(), `  </channel>\n</rss>`].join('\n'),
