@@ -1,5 +1,5 @@
-import { cachified } from '../cache.server';
-import { redisCache } from '../redis.server';
+import { cachified, lruCache } from '../cache.server';
+// import { redisCache } from '../redis.server';
 import { z } from 'zod';
 import { markdownToHtml, stripHtml } from '../markdown.server';
 import formatTagesformFeedDate from './formatDate';
@@ -32,7 +32,7 @@ const EpisodeMeta = z.object({
 async function getIndex() {
   return cachified({
     key: 'tagesform-s2-index',
-    cache: redisCache,
+    cache: lruCache,
     maxAge: 1000 * 60 * 60,
     async getFreshValue() {
       const res = await fetch(`${BUCKET_URL}/s2/X/meta/index.json`);
@@ -45,7 +45,7 @@ async function getIndex() {
 async function getEpisodeMeta(fileName: string) {
   return cachified({
     key: `tagesform-s2-meta-${encodeURIComponent(fileName)}`,
-    cache: redisCache,
+    cache: lruCache,
     maxAge: 1000 * 60 * 60 * 24,
     async getFreshValue() {
       const res = await fetch(`${BUCKET_URL}/s2/X/meta/${fileName}`);
