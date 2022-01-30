@@ -1,3 +1,12 @@
+import { set, get } from '~/util/redis.server';
+
+export const loader = async () => {
+  console.log('from-cache', await get('drr'));
+  set('drr', 'asdk');
+  // console.log({ set, get });
+
+  return null;
+};
 export default function Index() {
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>

@@ -1,9 +1,8 @@
 import { LoaderFunction } from 'remix';
 import cover from '~/assets/tagesform/tagesform_s2_2000.jpg';
-import { format } from 'date-fns';
-import s1Episodes from '~/util/tagesformS1Episodes';
-
-const TIME_FORMAT = 'iii, dd MMM yyyy HH:mm:ss OOO';
+import formatTagesformFeedDate from '~/util/tagesform/formatDate';
+import s1Episodes from '~/util/tagesform/s1Episodes';
+import getS2Episodes from '~/util/tagesform/index.server';
 
 export const loader: LoaderFunction = async ({ request }) => {
   const url = new URL(request.url);
@@ -25,7 +24,7 @@ export const loader: LoaderFunction = async ({ request }) => {
         <url>${url.origin}${cover}</url>
         <link>${url.origin}</link>
       </image>
-      <lastBuildDate>${format(new Date(), TIME_FORMAT)}</lastBuildDate>
+      <lastBuildDate>${formatTagesformFeedDate(new Date())}</lastBuildDate>
       <language>de</language>
       <copyright>Hannes Diercks</copyright>
       <itunes:type>episodic</itunes:type>
@@ -47,7 +46,12 @@ export const loader: LoaderFunction = async ({ request }) => {
       `.replace(/^    /gm, '');
 
   return new Response(
-    [RSS_HEAD, s1Episodes.trim(), `  </channel>\n</rss>`].join('\n'),
+    [
+      RSS_HEAD,
+      await getS2Episodes(),
+      s1Episodes.trim(),
+      `  </channel>\n</rss>`,
+    ].join('\n'),
     {
       headers: {
         'Content-Type': 'application/xml',
