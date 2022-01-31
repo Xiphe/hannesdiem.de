@@ -1,5 +1,5 @@
-import { cachified, lruCache } from '../cache.server';
-// import { redisCache } from '../redis.server';
+import { cachified } from '../cache.server';
+import { redisCache } from '../redis.server';
 import { z } from 'zod';
 import { createHash } from 'crypto';
 import { markdownToHtml, stripHtml } from '../markdown.server';
@@ -37,7 +37,7 @@ type Episode = z.infer<typeof EpisodeMeta> & {
 async function getEpisodeMeta(fileName: string) {
   return cachified({
     key: `tagesform-s2-meta-${encodeURIComponent(fileName)}`,
-    cache: lruCache,
+    cache: redisCache,
     maxAge: 1000 * 60 * 60 * 24,
     async getFreshValue() {
       const res = await fetch(`${BUCKET_URL}/s2/X/meta/${fileName}`);
@@ -60,7 +60,7 @@ async function getEpisodeMeta(fileName: string) {
 async function getS3Episodes() {
   return cachified({
     key: 'tagesform-s2-episodes',
-    cache: lruCache,
+    cache: redisCache,
     maxAge: 1000 * 60 * 60,
     async getFreshValue() {
       const res = await fetch(`${BUCKET_URL}/s2/X/meta/index.json`);
@@ -77,7 +77,7 @@ async function getS3Episodes() {
       const lastUpdate = (
         await cachified({
           key: 'tagesform-s2-last-update',
-          cache: lruCache,
+          cache: redisCache,
           checkValue([_, h]: [number, string]) {
             return hash === h ? true : 'content updated';
           },

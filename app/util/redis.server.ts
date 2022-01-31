@@ -14,14 +14,24 @@ declare global {
   var redis_client: Redis | undefined;
 }
 
-const REDIS_URL = getRequiredServerEnvVar('REDIS_URL');
 const FLY_REGION = getRequiredServerEnvVar('FLY_REGION');
+const REDIS_URL = getRequiredServerEnvVar('REDIS_URL');
+const replica = new URL(REDIS_URL);
+const isInternal = replica.hostname.includes('.internal');
 
 if (!global.redis_client) {
-  global.redis_client = new RedisConstr(REDIS_URL);
+  const config = {
+    host: replica.hostname,
+    port: parseInt(replica.port, 10),
+    path: replica.pathname,
+    password: replica.password,
+    username: replica.username,
+    family: isInternal ? 6 : 4,
+  };
+  global.redis_client = new RedisConstr(config);
 
   global.redis_client.on('error', (error: string) => {
-    console.error(`REDIS (${new URL(REDIS_URL).host}) ERROR:`, error);
+    console.error(`REDIS (${replica.host}) ERROR:`, error);
   });
 }
 

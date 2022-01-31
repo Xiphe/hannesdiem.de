@@ -1,7 +1,13 @@
+import { json, LoaderFunction, useLoaderData } from 'remix';
+
+export const loader: LoaderFunction = async () => {
+  return json(null);
+};
+
 export default function Index() {
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h1>Welcome to Remix</h1>
+      <h1>Welcome to Remix 2</h1>
       <ul>
         <li>
           <a
