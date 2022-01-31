@@ -17,6 +17,10 @@ processes = []
   allowed_public_ports = []
   auto_rollback = true
 
+[mounts]
+  destination = "/app/.cache"
+  source = "image_cache"
+
 [[services]]
   http_checks = []
   internal_port = 8080
