@@ -57,4 +57,4 @@ COPY --from=build /app/server /app/server
 COPY --from=build /app/public /app/public
 ADD . .
 
-CMD ["npm", "run", "start"]
+CMD ["node", "server/index.js"]
