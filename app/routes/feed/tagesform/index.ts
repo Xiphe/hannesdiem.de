@@ -33,9 +33,13 @@ export const loader: LoaderFunction = async ({ request }) => {
       <itunes:summary><![CDATA[Tagesform ist ein potentiell täglich erscheinender Podcast in dem Ich (Hannes) 3 - 15 Minuten darüber rede was mich gerade beschäftigt. Von Mentaler Gesundheit, Songwriting, Kite-Surfing, Studioequipment, dem Liebesleben und Programieren bis Wäsche aufhängen und anderen Trivialitäten.]]></itunes:summary>
       <itunes:author>Hannes Diem</itunes:author>
       <itunes:image href="${origin}${cover}"/>
-      <itunes:category text="Music Commentary" />
+      <itunes:category text="Music">
+        <itunes:category text="Music Commentary" />
+      </itunes:category>
       <itunes:category text="Technology" />
-      <itunes:category text="Mental Health" />
+      <itunes:category text="Health &amp; Fitness">
+        <itunes:category text="Mental Health" />
+      </itunes:category>
       <itunes:owner>
         <itunes:name>Hannes Diercks</itunes:name>
         <itunes:email>apple@xiphe.net</itunes:email>
