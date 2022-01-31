@@ -86,8 +86,8 @@ export default async function getEpisodesForFeed() {
         length,
         duration,
         image,
-      }) =>
-        `
+      }) => {
+        return `
           <item>
             <title>${title}</title>
             <itunes:episode>${episode}</itunes:episode>
@@ -107,12 +107,15 @@ export default async function getEpisodesForFeed() {
               extra.explicit === true ? 'Yes' : 'No'
             }</itunes:explicit>
             <description>${excerpt}</description>
+            <itunes:subtitle>${excerpt}</itunes:subtitle>
             <content:encoded><![CDATA[${htmlText}]]></content:encoded>
+            <itunes:summary><![CDATA[${htmlText}]]></itunes:summary>
             <itunes:image href="${BUCKET_URL}/${image}" />
           </item>
         `
           .replace(/^        /gm, '')
-          .trim(),
+          .trim();
+      },
     )
     .join('\n  ');
 }
