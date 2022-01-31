@@ -6,6 +6,10 @@ import getS2Episodes from '~/util/tagesform/index.server';
 
 export const loader: LoaderFunction = async ({ request }) => {
   const url = new URL(request.url);
+  const origin =
+    url.hostname === 'localhost' ? url.origin : `https://${url.host}`;
+
+  const { lastUpdate, items: s2Episodes } = await getS2Episodes();
 
   const RSS_HEAD = `<?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0"
@@ -15,22 +19,20 @@ export const loader: LoaderFunction = async ({ request }) => {
     <channel>
       <title>Tagesform</title>
       <description><![CDATA[Ein Tagebuch zum mithören - über die Musik, das Leben und den ganzen Rest]]></description>
-      <atom:link href="${
-        url.origin
-      }/feed/tagesform/" rel="self" type="application/rss+xml" />
-      <link>${url.origin}</link>
+      <atom:link href="${origin}/feed/tagesform/" rel="self" type="application/rss+xml" />
+      <link>${origin}</link>
       <image>
         <title>Tagesform</title>
-        <url>${url.origin}${cover}</url>
-        <link>${url.origin}</link>
+        <url>${origin}${cover}</url>
+        <link>${origin}</link>
       </image>
-      <lastBuildDate>${formatTagesformFeedDate(new Date())}</lastBuildDate>
+      <lastBuildDate>${formatTagesformFeedDate(lastUpdate)}</lastBuildDate>
       <language>de</language>
       <copyright>Hannes Diercks</copyright>
       <itunes:type>episodic</itunes:type>
       <itunes:summary><![CDATA[Tagesform ist ein potentiell täglich erscheinender Podcast in dem Ich (Hannes) 3 - 15 Minuten darüber rede was mich gerade beschäftigt. Von Mentaler Gesundheit, Songwriting, Kite-Surfing, Studioequipment, dem Liebesleben und Programieren bis Wäsche aufhängen und anderen Trivialitäten.]]></itunes:summary>
       <itunes:author>Hannes Diem</itunes:author>
-      <itunes:image href="${url.origin}${cover}"/>
+      <itunes:image href="${origin}${cover}"/>
       <itunes:category text="Music Commentary" />
       <itunes:category text="Technology" />
       <itunes:category text="Mental Health" />
@@ -48,7 +50,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   return new Response(
     [
       RSS_HEAD,
-      await getS2Episodes(),
+      s2Episodes.trim(),
       s1Episodes.trim(),
       `  </channel>\n</rss>`,
     ].join('\n'),

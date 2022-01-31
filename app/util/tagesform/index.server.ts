@@ -1,6 +1,7 @@
 import { cachified, lruCache } from '../cache.server';
 // import { redisCache } from '../redis.server';
 import { z } from 'zod';
+import { createHash } from 'crypto';
 import { markdownToHtml, stripHtml } from '../markdown.server';
 import formatTagesformFeedDate from './formatDate';
 
@@ -28,20 +29,11 @@ const EpisodeMeta = z.object({
   image: z.string(),
   transcription: z.string(),
 });
+type Episode = z.infer<typeof EpisodeMeta> & {
+  excerpt: string;
+  htmlText: string;
+};
 
-async function getIndex() {
-  return cachified({
-    key: 'tagesform-s2-index',
-    cache: lruCache,
-    maxAge: 1000 * 60 * 60,
-    async getFreshValue() {
-      const res = await fetch(`${BUCKET_URL}/s2/X/meta/index.json`);
-      return ArrayOfStrings.parse(await res.json()).filter(
-        (v) => v !== 'index.json',
-      );
-    },
-  });
-}
 async function getEpisodeMeta(fileName: string) {
   return cachified({
     key: `tagesform-s2-meta-${encodeURIComponent(fileName)}`,
@@ -66,56 +58,85 @@ async function getEpisodeMeta(fileName: string) {
 }
 
 async function getS3Episodes() {
-  const index = await getIndex();
-  const episodes = await Promise.all(index.map(getEpisodeMeta));
-  return episodes.sort(({ episode: a }, { episode: b }) => b - a);
+  return cachified({
+    key: 'tagesform-s2-episodes',
+    cache: lruCache,
+    maxAge: 1000 * 60 * 60,
+    async getFreshValue() {
+      const res = await fetch(`${BUCKET_URL}/s2/X/meta/index.json`);
+      const index = ArrayOfStrings.parse(await res.json());
+
+      const episodes = (await Promise.all(index.map(getEpisodeMeta))).sort(
+        ({ episode: a }, { episode: b }) => b - a,
+      );
+
+      const hash = createHash('sha256')
+        .update(JSON.stringify(episodes) + Math.random())
+        .digest('hex');
+
+      const lastUpdate = (
+        await cachified({
+          key: 'tagesform-s2-last-update',
+          cache: lruCache,
+          checkValue([_, h]: [number, string]) {
+            return hash === h ? true : 'content updated';
+          },
+          async getFreshValue(): Promise<[number, string]> {
+            return [Date.now(), hash];
+          },
+        })
+      )[0];
+
+      return { episodes, hash, lastUpdate };
+    },
+  });
 }
 
 export default async function getEpisodesForFeed() {
-  return (await getS3Episodes())
-    .map(
-      ({
-        title,
-        episode,
-        season,
-        date,
-        extra,
-        excerpt,
-        htmlText,
-        file,
-        length,
-        duration,
-        image,
-      }) => {
-        return `
-          <item>
-            <title>${title}</title>
-            <itunes:episode>${episode}</itunes:episode>
-            <itunes:season>${season}</itunes:season>
-            <enclosure url="${BUCKET_URL}/${file}" length="${length}" type="audio/mpeg" />
-            <itunes:duration>${duration}</itunes:duration>
-            <itunes:episodeType>full</itunes:episodeType>
-            <itunes:author>Hannes Diem</itunes:author>
-            <atom:contributor>
-              <atom:name>Hannes Diem</atom:name>
-              <atom:uri>http://hannesdiem.de/</atom:uri>
-            </atom:contributor>
-            <link>https://hannesdiem.de/tagesform-${episode}/</link>
-            <guid>https://hannesdiem.de/tagesform-${episode}</guid>
-            <pubDate>${formatTagesformFeedDate(new Date(date))}</pubDate>
-            <itunes:explicit>${
-              extra.explicit === true ? 'Yes' : 'No'
-            }</itunes:explicit>
-            <description>${excerpt}</description>
-            <itunes:subtitle>${excerpt}</itunes:subtitle>
-            <content:encoded><![CDATA[${htmlText}]]></content:encoded>
-            <itunes:summary><![CDATA[${htmlText}]]></itunes:summary>
-            <itunes:image href="${BUCKET_URL}/${image}" />
-          </item>
-        `
-          .replace(/^        /gm, '')
-          .trim();
-      },
-    )
-    .join('\n  ');
+  const { episodes, lastUpdate } = await getS3Episodes();
+  return {
+    items: episodes.map(episodeToRssItem).join('\n  '),
+    lastUpdate,
+  };
+}
+
+export function episodeToRssItem({
+  title,
+  episode,
+  season,
+  date,
+  extra,
+  excerpt,
+  htmlText,
+  file,
+  length,
+  duration,
+  image,
+}: Episode) {
+  return `
+    <item>
+      <title>${title}</title>
+      <itunes:episode>${episode}</itunes:episode>
+      <itunes:season>${season}</itunes:season>
+      <enclosure url="${BUCKET_URL}/${file}" length="${length}" type="audio/mpeg" />
+      <itunes:duration>${duration}</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Hannes Diem</itunes:author>
+      <atom:contributor>
+        <atom:name>Hannes Diem</atom:name>
+        <atom:uri>https://hannesdiem.de/</atom:uri>
+      </atom:contributor>
+      <link>https://hannesdiem.de/tagesform-${episode}/</link>
+      <guid>https://hannesdiem.de/tagesform-${episode}</guid>
+      <pubDate>${formatTagesformFeedDate(new Date(date))}</pubDate>
+      <itunes:explicit>${
+        extra.explicit === true ? 'Yes' : 'No'
+      }</itunes:explicit>
+      <description>${excerpt}</description>
+      <itunes:subtitle>${excerpt}</itunes:subtitle>
+      <content:encoded><![CDATA[${htmlText}]]></content:encoded>
+      <itunes:summary><![CDATA[${htmlText}]]></itunes:summary>
+      <itunes:image href="${BUCKET_URL}/${image}" />
+    </item>
+  `.trim();
 }
