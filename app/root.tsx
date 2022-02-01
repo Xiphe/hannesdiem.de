@@ -32,6 +32,14 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         {process.env.NODE_ENV === 'development' && <LiveReload />}
+        <script async defer src="https://sa.hannesdiem.de/latest.js"></script>
+        <noscript>
+          <img
+            src="https://sa.hannesdiem.de/noscript.gif"
+            alt=""
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </noscript>
       </body>
     </html>
   );
