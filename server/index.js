@@ -20,16 +20,28 @@ app.use(express.static('public/build', { immutable: true, maxAge: '1y' }));
 app.use(morgan('tiny'));
 const remixHandler =
   MODE === 'production'
-    ? createRequestHandler({ build: require('./build') })
+    ? createRequestHandler({ build: getBuild() })
     : (req, res, next) => {
         purgeRequireCache();
-        const build = require('./build');
-        return createRequestHandler({ build, mode: MODE })(req, res, next);
+        return createRequestHandler({ build: getBuild(), mode: MODE })(
+          req,
+          res,
+          next,
+        );
       };
 const proxy = createProxyMiddleware({
   target: 'https://xiphe.net/hannesdiem.de/',
   changeOrigin: true,
 });
+
+/**
+ * @returns {import('remix').ServerBuild}
+ */
+function getBuild() {
+  /** @type {any} */
+  const build = require('./build');
+  return build;
+}
 
 app.all('*', (req, res, next) => {
   const [path, query] = req.url.split('?');
@@ -41,6 +53,8 @@ app.all('*', (req, res, next) => {
     res.redirect(301, `${path}${query ? `/?${query}` : '/'}`);
   } else {
     const originalEnd = res.end;
+
+    // @ts-ignore
     res.end = (...args) => {
       if (res.statusCode === 404) {
         res.end = originalEnd;
