@@ -17,7 +17,7 @@ export function episodeToRssItem({
 }: Episode) {
   return `
     <item>
-      <title>${title}</title>
+      <title>T-${episode} ${title}</title>
       <itunes:episode>${episode}</itunes:episode>
       <itunes:season>${season}</itunes:season>
       <enclosure url="${BUCKET_URL}/${file}" length="${length}" type="audio/mpeg" />
