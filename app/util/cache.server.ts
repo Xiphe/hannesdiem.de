@@ -53,29 +53,30 @@ function shouldRefresh(metadata: CacheMetadata) {
 }
 
 type VNUP<Value> = Value | null | undefined | Promise<Value | null | undefined>;
+export type Cache<Value> = {
+  name: string;
+  get: (key: string) => VNUP<{
+    metadata: CacheMetadata;
+    value: Value;
+  }>;
+  set: (
+    key: string,
+    value: {
+      metadata: CacheMetadata;
+      value: Value;
+    },
+  ) => unknown | Promise<unknown>;
+  del: (key: string) => unknown | Promise<unknown>;
+};
 
 const keysRefreshing = new Set();
 
 async function cachified<
   Value,
-  Cache extends {
-    name: string;
-    get: (key: string) => VNUP<{
-      metadata: CacheMetadata;
-      value: Value;
-    }>;
-    set: (
-      key: string,
-      value: {
-        metadata: CacheMetadata;
-        value: Value;
-      },
-    ) => unknown | Promise<unknown>;
-    del: (key: string) => unknown | Promise<unknown>;
-  },
+  CacheImplementation extends Cache<Value>,
 >(options: {
   key: string;
-  cache: Cache;
+  cache: CacheImplementation;
   getFreshValue: () => Promise<Value>;
   checkValue?: (value: Value) => boolean | string;
   forceFresh?: boolean | string;

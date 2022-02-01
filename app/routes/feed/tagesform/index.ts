@@ -1,15 +1,19 @@
 import { LoaderFunction } from 'remix';
 import cover from '~/assets/images/tagesform_s2_2000.jpg';
 import formatTagesformFeedDate from '~/util/tagesform/formatDate';
-import s1Episodes from '~/util/tagesform/s1Episodes';
-import getS2Episodes from '~/util/tagesform/index.server';
+import getS2Episodes from '~/util/tagesform/s2.server';
+import getS1Episodes from '~/util/tagesform/s1.server';
+import { episodeToRssItem } from '~/util/tagesform/episodeToRssItem';
 
 export const loader: LoaderFunction = async ({ request }) => {
   const url = new URL(request.url);
   const origin =
     url.hostname === 'localhost' ? url.origin : `https://${url.host}`;
 
-  const { lastUpdate, items: s2Episodes } = await getS2Episodes();
+  const [
+    { lastUpdate: s2LastUpdate, episodes: s2Episodes },
+    { lastUpdate: s1LastUpdate, episodes: s1Episodes },
+  ] = await Promise.all([getS2Episodes(), getS1Episodes()]);
 
   const RSS_HEAD = `<?xml version="1.0" encoding="UTF-8"?>
     <rss version="2.0"
@@ -26,7 +30,9 @@ export const loader: LoaderFunction = async ({ request }) => {
         <url>${origin}${cover}</url>
         <link>${origin}</link>
       </image>
-      <lastBuildDate>${formatTagesformFeedDate(lastUpdate)}</lastBuildDate>
+      <lastBuildDate>${formatTagesformFeedDate(
+        Math.max(s2LastUpdate, s1LastUpdate),
+      )}</lastBuildDate>
       <language>de</language>
       <copyright>Hannes Diercks</copyright>
       <itunes:type>episodic</itunes:type>
@@ -54,8 +60,8 @@ export const loader: LoaderFunction = async ({ request }) => {
   return new Response(
     [
       RSS_HEAD,
-      s2Episodes.trim(),
-      s1Episodes.trim(),
+      s2Episodes.map(episodeToRssItem),
+      s1Episodes.map(episodeToRssItem),
       `  </channel>\n</rss>`,
     ].join('\n'),
     {
