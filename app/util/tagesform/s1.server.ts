@@ -63,7 +63,7 @@ const MetaSchema = z.object({
 
 function getEpisode(sha: string): Promise<Episode> {
   return cachified({
-    key: `tagesform-s1-episode-${sha}`,
+    key: `tagesform-s1-episode-v2-${sha}`,
     cache: redisCache,
     async getFreshValue() {
       const res = await github.rest.git.getBlob({
@@ -85,7 +85,9 @@ function getEpisode(sha: string): Promise<Episode> {
       );
 
       const htmlText = await markdownToHtml(parsedContent.body);
-      const excerpt = await stripHtml(htmlText.split('<!-- more -->')[0]);
+      const excerpt = await stripHtml(
+        await markdownToHtml(parsedContent.body.split('<!-- more -->')[0]),
+      );
 
       return {
         ...partial,
@@ -103,6 +105,14 @@ function getEpisode(sha: string): Promise<Episode> {
       };
     },
   });
+}
+
+export async function getEpisodeByNumber(
+  number: number,
+): Promise<Episode | undefined> {
+  const { episodes } = await getTagesformS1Episodes();
+
+  return episodes.find(({ episode }) => episode === number);
 }
 
 export default async function getTagesformS1Episodes() {

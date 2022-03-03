@@ -2,7 +2,7 @@ import { cachified } from '../cache.server';
 import { redisCache } from '../redis.server';
 import { z } from 'zod';
 import { markdownToHtml, stripHtml } from '../markdown.server';
-import { BUCKET_URL, EpisodeSchema } from './common';
+import { BUCKET_URL, Episode, EpisodeSchema } from './common';
 import { lastUpdate } from '../lastUpdate';
 
 const ArrayOfStrings = z.array(z.string());
@@ -28,6 +28,10 @@ async function getEpisodeMeta(fileName: string) {
       };
     },
   });
+}
+
+export async function getEpisodeByNumber(number: number): Promise<Episode> {
+  console.log('GET', number);
 }
 
 export default async function getS2Episodes() {

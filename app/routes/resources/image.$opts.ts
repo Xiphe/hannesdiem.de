@@ -1,5 +1,5 @@
 /**
- * Stolen from
+ * Mainly from
  * https://github.com/jacob-ebey/remix-ecommerce/blob/4c47e73cbef231b86bf83b562d87a3d857b352fa/images/route.server.ts
  */
 
@@ -14,13 +14,14 @@ import type { LoaderFunction } from 'remix';
 import sharp from 'sharp';
 import type { Request as NodeRequest } from '@remix-run/node';
 import { Response as NodeResponse } from '@remix-run/node';
+import { decodeImageOpts } from '~/util/optimizedImage.server';
 
 let badImageBase64 = 'R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
-function badImageResponse() {
+function badImageResponse(status: number = 500) {
   let buffer = Buffer.from(badImageBase64, 'base64');
   return new Response(buffer, {
-    status: 500,
+    status,
     headers: {
       'Cache-Control': 'max-age=0',
       'Content-Type': 'image/gif;base64',
@@ -29,44 +30,29 @@ function badImageResponse() {
   });
 }
 
-function getIntOrNull(value: string | null) {
-  if (value === null) {
-    return null;
-  }
-
-  return Number.parseInt(value);
-}
-
 export let loader: LoaderFunction = async ({ request }) => {
-  let url = new URL(request.url);
-
-  let src = url.searchParams.get('src');
-  if (!src) {
-    return badImageResponse();
+  try {
+    const url = new URL(request.url);
+    var [src, options] = decodeImageOpts(url.searchParams.get('token') || '');
+  } catch {
+    return badImageResponse(400);
   }
 
-  let width = getIntOrNull(url.searchParams.get('width'));
-  let height = getIntOrNull(url.searchParams.get('height'));
-  let fit: any = url.searchParams.get('fit') || 'cover';
-
-  let hash = createHash('sha256');
+  const hash = createHash('sha256');
   hash.update('v1');
-  hash.update(request.method);
-  hash.update(request.url);
-  hash.update(width?.toString() || '0');
-  hash.update(height?.toString() || '0');
-  hash.update(fit);
-  let key = hash.digest('hex');
-  let cachedFile = path.resolve(path.join('.cache/images', key + '.webp'));
+  hash.update(src);
+  hash.update(JSON.stringify(options));
+  const key = hash.digest('hex');
+  const cachedFile = path.resolve(path.join('.cache/images', key + '.webp'));
 
   try {
-    let exists = await fsp
+    const exists = await fsp
       .stat(cachedFile)
       .then((s) => s.isFile())
       .catch(() => false);
 
     if (exists) {
-      let fileStream = fs.createReadStream(cachedFile);
+      const fileStream = fs.createReadStream(cachedFile);
 
       return new NodeResponse(fileStream, {
         status: 200,
@@ -107,8 +93,11 @@ export let loader: LoaderFunction = async ({ request }) => {
       console.error(error);
     });
 
-    if (width || height) {
-      sharpInstance.resize(width, height, { fit });
+    if (options.resize) {
+      sharpInstance.resize(options.resize);
+    }
+    if (options.blur) {
+      sharpInstance.blur(options.blur);
     }
     sharpInstance.webp({ reductionEffort: 6 });
 
