@@ -93,9 +93,16 @@ interface LoaderData {
 }
 
 export const loader: LoaderFunction = async () => {
-  return json<LoaderData>({
-    portrait: await optimizedImage(portrait),
-  });
+  return json<LoaderData>(
+    {
+      portrait: await optimizedImage(portrait),
+    },
+    {
+      headers: {
+        'Cache-Control': `public, max-age=${60 * 60 * 24}`,
+      },
+    },
+  );
 };
 
 export default function LinkTreePage() {
