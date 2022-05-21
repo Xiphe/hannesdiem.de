@@ -84,7 +84,7 @@ async function getImageMeta(src: string) {
       const imgBuf = res
         ? Buffer.from(await res.arrayBuffer())
         : await readFile(
-            path.join(__dirname, '../..', 'public', src.replace(/^\//, '')),
+            path.join(__dirname, '../..', 'server', src.replace(/^\//, '')),
           );
       const image = sharp(imgBuf);
       const { width = 0, height = 0 } = await image.metadata();
