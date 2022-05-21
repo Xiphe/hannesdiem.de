@@ -12,7 +12,7 @@
     "start:express": "npm run wait && cross-env NODE_ENV=development node-dev --notify=false server/index.js --ignore server/build",
     "start:docker": "docker-compose up",
     "start:open": "wait-on tcp:3000 && npm run open",
-    "start:css": "tailwindcss -o ./app/tailwind.css --watch",
+    "start:css": "tailwindcss -i ./app/custom.css -o ./app/tailwind.css --watch",
     "build:remix": "remix build",
     "prebuild:remix": "tailwindcss -o ./app/tailwind.css -m",
     "postinstall": "remix setup node",
