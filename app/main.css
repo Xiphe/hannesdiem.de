@@ -4,6 +4,14 @@
 
 @layer utilities {
   .gradient-full {
-    --tw-gradient-stops: theme('colors.black.800') 0%,  theme('colors.black.50') 26%, theme('colors.blue.500') 44%, theme('colors.blue.50') 60%, theme('colors.violet.300') 75%, theme('colors.pink.900') 85%, theme('colors.pink.600') 89%, theme('colors.pink.100') 100%;
+    --tw-gradient-stops:
+      theme('colors.blue.900') 0%,
+      theme('colors.blue.600') 26%,
+      theme('colors.violet.600') 44%,
+      theme('colors.violet.400') 60%,
+      theme('colors.pink.700') 75%,
+      theme('colors.pink.400') 85%,
+      theme('colors.pink.200') 89%,
+      theme('colors.gray.50') 100%;
   }
 }

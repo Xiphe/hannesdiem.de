@@ -7,7 +7,7 @@ import { readFile } from 'fs/promises';
 import { decrypt, encrypt } from './encrypt.server';
 import { redisCache } from './redis.server';
 import assert from 'assert';
-import rgbToHex, { RGBColor } from './rgbToHex';
+import { rgbToHex, RGBColor } from './color';
 
 assert(
   process.env.IMAGE_TOKEN_IV,

@@ -21,9 +21,9 @@ const focusStyle =
 
 const liClass = clsx(
   'rounded',
-  'bg-gradient-to-b from-pink-100 to-pink-300',
-  'text-black focus:outline-none',
-  'hover:to-pink-100',
+  'bg-gradient-to-b from-blue-800 to-blue-900',
+  'text-white focus:outline-none',
+  'hover:from-blue-900 hover:text-pink-200',
   focusStyle,
 );
 
@@ -112,14 +112,14 @@ export default function LinkTreePage() {
     <div className="min-h-screen bg-gradient-to-b gradient-full">
       <div className="container mx-auto max-w-lg">
         <div className="flex flex-col md:flex-row mx-4 pt-4 md:pt-8 md:pb-6">
-          <div className="md:-ml-10 z-10 rounded-full h-20 w-20 md:h-28 md:w-28 overflow-hidden border-2 border-pink-100  shrink-0">
+          <div className="md:-ml-10 z-10 rounded-full h-20 w-20 md:h-28 md:w-28 overflow-hidden border-2 border-white shrink-0">
             <OptimizedImage {...portrait} />
           </div>
-          <p className="md:-ml-16 md:pl-20 md:mt-0 -mt-4 py-4 px-4  flex flex-col justify-center bg-black-600 rounded-md  border-2 border-blue-100">
-            <span className="text-base font-bold text-pink-200">
+          <p className="md:-ml-16 md:pl-20 md:mt-0 -mt-4 py-4 px-4  flex flex-col justify-center bg-blue-800 rounded-md  border-2 border-blue-500">
+            <span className="text-base font-bold text-pink-50">
               Yooo! so good to see you here 💙
             </span>
-            <span className="text-pink-300 text-sm text-opacity-60 ">
+            <span className="text-violet-100 text-sm ">
               Please be kindly invited to connect with me and find more content
               on these platforms:
             </span>
