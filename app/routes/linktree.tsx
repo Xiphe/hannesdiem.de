@@ -9,12 +9,13 @@ import portrait from '~/assets/images/portrait.png';
 // import SoundCloudIcon from '~/components/icons/SoundCloud';
 // import GlobeIcon from '~/components/icons/Globe';
 import clsx from 'clsx';
-import { ComponentPropsWithoutRef, ComponentType, ReactNode } from 'react';
+import { ComponentPropsWithoutRef, ComponentType } from 'react';
 import OptimizedImage, {
   OptimizedImageProps,
 } from '~/components/OptimizedImage';
-import { json, LoaderFunction, useLoaderData } from 'remix';
+import { json, LoaderFunction } from '@remix-run/node';
 import { optimizedImage } from '~/util/optimizedImage.server';
+import { useLoaderData } from '@remix-run/react';
 
 const focusStyle =
   'focus-visible:outline-pink focus-visible:outline-offset-4 focus-visible:outline-4';

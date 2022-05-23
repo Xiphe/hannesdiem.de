@@ -1,4 +1,5 @@
-import { json, LoaderFunction, useLoaderData } from 'remix';
+import { json, LoaderFunction } from '@remix-run/node';
+import { useLoaderData } from '@remix-run/react';
 import Header from '~/components/Header';
 import OptimizedImage, {
   OptimizedImageProps,

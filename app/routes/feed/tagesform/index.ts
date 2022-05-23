@@ -1,4 +1,4 @@
-import { LoaderFunction } from 'remix';
+import { LoaderFunction } from '@remix-run/node';
 import cover from '~/assets/images/tagesform_s2_2000.jpg';
 import formatTagesformFeedDate from '~/util/tagesform/formatDate';
 import getS2Episodes from '~/util/tagesform/s2.server';
