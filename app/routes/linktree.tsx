@@ -4,10 +4,10 @@ import YouTubeIcon from '~/components/icons/YouTube';
 import TikTokIcon from '~/components/icons/TikTok';
 import TwitterIcon from '~/components/icons/Twitter';
 import InstagramIcon from '~/components/icons/Instagram';
-import FacebookIcon from '~/components/icons/Facebook';
+// import FacebookIcon from '~/components/icons/Facebook';
 import portrait from '~/assets/images/portrait.png';
 // import SoundCloudIcon from '~/components/icons/SoundCloud';
-// import GlobeIcon from '~/components/icons/Globe';
+import GlobeIcon from '~/components/icons/Globe';
 import clsx from 'clsx';
 import { ComponentPropsWithoutRef, ComponentType } from 'react';
 import OptimizedImage, {
@@ -36,39 +36,33 @@ const links: {
 }[] = [
   {
     title: 'Twitch',
-    href: 'https://www.twitch.tv/hannesdiem',
-    description: 'join me live every Thursday at 18:00 CET',
+    href: 'https://www.twitch.tv/astrella_pink',
+    description: 'join me live every now and then, usually tuesdays',
     Icon: TwitchIcon,
   },
   {
     title: 'YouTube',
-    href: 'https://www.youtube.com/channel/UCONYaNqDnjsfxIjkWgd_f8w',
+    href: 'https://www.youtube.com/@astrella_pink',
     description: 'get some danceable emotions on demand',
     Icon: YouTubeIcon,
   },
   {
     title: 'Instagram',
-    href: 'https://www.instagram.com/hannes.diem/',
+    href: 'https://www.instagram.com/astrella.pink/',
     description: 'experience my musical world in pictures',
     Icon: InstagramIcon,
   },
   {
     title: 'TikTok',
-    href: 'https://www.tiktok.com/@hannesdiem',
+    href: 'https://www.tiktok.com/@astrella.pink',
     description: "let's duet!",
     Icon: TikTokIcon,
   },
   {
-    title: 'Twitter',
-    href: 'https://twitter.com/DiemHannes',
-    description: "not sure what this is for, but i'm there",
-    Icon: TwitterIcon,
-  },
-  {
-    title: 'Facebook',
-    href: 'https://www.facebook.com/hannesdiem',
-    description: 'come get oldschool with me',
-    Icon: FacebookIcon,
+    title: 'Website',
+    href: 'https://hannesdiem.de',
+    description: 'All the rest of me',
+    Icon: GlobeIcon,
   },
 ];
 
