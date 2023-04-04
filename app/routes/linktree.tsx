@@ -36,25 +36,25 @@ const links: {
 }[] = [
   {
     title: 'Twitch',
-    href: 'https://www.twitch.tv/astrella_pink',
+    href: 'https://www.twitch.tv/hannes_im',
     description: 'join me live every now and then, usually tuesdays',
     Icon: TwitchIcon,
   },
   {
     title: 'YouTube',
-    href: 'https://www.youtube.com/@astrella_pink',
+    href: 'https://www.youtube.com/@hannes_im',
     description: 'get some danceable emotions on demand',
     Icon: YouTubeIcon,
   },
   {
     title: 'Instagram',
-    href: 'https://www.instagram.com/astrella.pink/',
+    href: 'https://www.instagram.com/hannes.im/',
     description: 'experience my musical world in pictures',
     Icon: InstagramIcon,
   },
   {
     title: 'TikTok',
-    href: 'https://www.tiktok.com/@astrella.pink',
+    href: 'https://www.tiktok.com/@hannes.im',
     description: "let's duet!",
     Icon: TikTokIcon,
   },
@@ -112,7 +112,7 @@ export default function LinkTreePage() {
           </div>
           <p className="md:-ml-16 md:pl-20 md:mt-0 -mt-4 py-4 px-4  flex flex-col justify-center bg-blue-800 rounded-md  border-2 border-blue-500">
             <span className="text-base font-bold text-pink-50">
-              Yooo! so good to see you here 💙
+              Hi I'm Hannes, so good to see you here 💙
             </span>
             <span className="text-violet-100 text-sm ">
               Please be kindly invited to connect with me and find more content
