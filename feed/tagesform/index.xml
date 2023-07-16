@@ -559,12 +559,12 @@ Einfach mal anrufen.</p>
 			<itunes:explicit>No</itunes:explicit>
 			<description>Die Tagesexperimente sind erst mal abgeblasen aber dafür hab ich einen neuen Track mit Video!</description>
 			<content:encoded><![CDATA[<p>Die <a href="https://xiphe.net/hannesdiem.de/tag/tagesexperiment/">Tagesexperimente</a> sind erst mal abgeblasen
-aber dafür hab ich <a href="/wandern/">einen neuen Track mit Video</a>!</p>
+aber dafür hab ich <a href="https://xiphe.net/hannesdiem.de/wandern/">einen neuen Track mit Video</a>!</p>
 ]]></content:encoded>
 			<enclosure url="https://s3.eu-central-1.amazonaws.com/tagesform/tagesform_68.mp3" length="6190080" type="audio/mpeg" />
 			<itunes:subtitle>Die Tagesexperimente sind erst mal abgeblasen aber dafür hab ich einen neuen Track mit Video!</itunes:subtitle>
 			<itunes:summary><![CDATA[<p>Die <a href="https://xiphe.net/hannesdiem.de/tag/tagesexperiment/">Tagesexperimente</a> sind erst mal abgeblasen
-aber dafür hab ich <a href="/wandern/">einen neuen Track mit Video</a>!</p>
+aber dafür hab ich <a href="https://xiphe.net/hannesdiem.de/wandern/">einen neuen Track mit Video</a>!</p>
 ]]></itunes:summary>
 			<itunes:image href="https://res.cloudinary.com/xiphe/image/upload/c_fill,g_face,h_1400,q_80,w_1400/v1460755546/tagesform_cover_jtbc9y.jpg" />
 			<itunes:duration>00:04:54</itunes:duration>
