@@ -4,3 +4,8 @@ export * from "./Deezer";
 export * from "./AmazonMusic";
 export * from "./Tidal";
 export * from "./SoundCloud";
+export * from "./Awa";
+export * from "./YouTubeMusic";
+export * from "./Pandora";
+export * from "./Anghami";
+export * from "./Qobuz";

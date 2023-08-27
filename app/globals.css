@@ -7,12 +7,18 @@
   .gradient-full {
     --tw-gradient-stops:
       theme('colors.blue.900') 0%,
-      theme('colors.blue.600') 26%,
-      theme('colors.violet.600') 44%,
-      theme('colors.violet.400') 60%,
-      theme('colors.pink.700') 75%,
-      theme('colors.pink.400') 85%,
-      theme('colors.pink.200') 89%,
-      theme('colors.gray.50') 100%;
+      theme('colors.blue.600') 50%,
+      theme('colors.violet.600') 90%,
+      theme('colors.violet.400') 100%;
+  }
+
+  @media (prefers-color-scheme: light) {
+    .gradient-full {
+      --tw-gradient-stops:
+      theme('colors.white') 0%,
+      theme('colors.pink.50') 50%,
+      theme('colors.pink.100') 75%,
+      theme('colors.violet.200') 100%;
+    }
   }
 }

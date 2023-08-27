@@ -14,9 +14,7 @@ import {
 import Image from "next/image";
 import clsx from "clsx";
 import { ComponentPropsWithoutRef, ComponentType } from "react";
-
-const focusStyles =
-  "focus-visible:outline-pink focus-visible:outline-offset-4 focus-visible:outline-4";
+import { focusStyles } from "@/utils";
 
 const liStyles =
   "rounded bg-gradient-to-b from-blue-800 to-blue-900 text-white focus:outline-none hover:from-blue-900 hover:to-blue-900 hover:text-pink-200";
