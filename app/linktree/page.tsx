@@ -10,6 +10,7 @@ import {
   AmazonMusicLogo,
   TidalLogo,
   SoundCloudLogo,
+  GlobeIcon,
 } from "@components";
 import Image from "next/image";
 import clsx from "clsx";
@@ -42,7 +43,7 @@ const links: {
   {
     title: "Instagram",
     href: "https://www.instagram.com/hannes.im/",
-    description: "experience my musical world in pictures",
+    description: "shiny feelings for shily people",
     Icon: InstagramIcon,
   },
   {
@@ -129,6 +130,7 @@ export default function LinkTreePage() {
             </li>
           ))}
         </ul>
+        <h3 className="dark: text-white p-4">Find my music on:</h3>
         {smallIcons.length ? (
           <ul className="grid grid-cols-3 gap-4 mx-4">
             {smallIcons.map(({ title, Icon, href }) => (
@@ -147,12 +149,43 @@ export default function LinkTreePage() {
           </ul>
         ) : null}
 
-        <div className="flex justify-center items-center my-5">
-          <Logo className="h-20 z-10 relative mr-2" aria-hidden="true" />
+        <div className="flex justify-center items-center my-5 mb-64">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.svg"
+            alt=""
+            className="h-20 z-10 relative mr-2"
+            aria-hidden
+          />
           <div className="flex flex-col items-center">
-            <p className="text-3xl font-extralight text-black">Hannes Diem</p>
+            <p className="text-3xl font-extralight text-black dark:text-white">
+              Hannes Diem
+            </p>
           </div>
         </div>
+
+        <h3 className="dark: text-white p-4">You found my other side...</h3>
+        <a
+          className={clsx("flex items-center m-4 px-5 py-4", liClass)}
+          href="https://instagram.com/susy.world"
+        >
+          <InstagramIcon height={40} className="mr-4" aria-hidden="true" />
+          <span>
+            <h4 className="font-bold text-lg">susy.world</h4>
+            <p className="text-sm opacity-60">vanlifing around europe</p>
+          </span>
+        </a>
+        <a
+          className={clsx("flex items-center m-4 px-5 py-4", liClass)}
+          href="https://xiphe.net"
+        >
+          <GlobeIcon height={40} className="mr-4" aria-hidden="true" />
+          <span>
+            <h4 className="font-bold text-lg">Xiphe</h4>
+            <p className="text-sm opacity-60">computer/web magic</p>
+          </span>
+        </a>
+        <div className="w-full h-4" />
       </div>
     </div>
   );
