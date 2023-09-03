@@ -97,7 +97,7 @@ export default function LinkTreePage() {
         <div className="flex flex-col md:flex-row mx-4 pt-4 md:pt-8 md:pb-6">
           <div className="md:-ml-10 z-10 rounded-full h-20 w-20 md:h-28 md:w-28 overflow-hidden border-2 border-white shrink-0">
             <Image
-              src="/images/portrait.png"
+              src="/image/portrait.png"
               alt="Portrait of Hannes"
               width={112}
               height={112}
