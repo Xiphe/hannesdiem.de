@@ -130,7 +130,7 @@ export default function LinkTreePage() {
             </li>
           ))}
         </ul>
-        <h3 className="dark: text-white p-4">Find my music on:</h3>
+        <h3 className="dark: text-white p-4 opacity-50">Find my music on:</h3>
         {smallIcons.length ? (
           <ul className="grid grid-cols-3 gap-4 mx-4">
             {smallIcons.map(({ title, Icon, href }) => (
@@ -164,9 +164,11 @@ export default function LinkTreePage() {
           </div>
         </div>
 
-        <h3 className="dark: text-white p-4">You found my other side...</h3>
+        <h3 className="dark: text-white p-4 opacity-50">
+          You found my other side 🌗
+        </h3>
         <a
-          className={clsx("flex items-center m-4 px-5 py-4", liClass)}
+          className={clsx("flex items-center m-4 mt-0 px-5 py-4", liClass)}
           href="https://instagram.com/susy.world"
         >
           <InstagramIcon height={40} className="mr-4" aria-hidden="true" />
@@ -182,7 +184,10 @@ export default function LinkTreePage() {
           <GlobeIcon height={40} className="mr-4" aria-hidden="true" />
           <span>
             <h4 className="font-bold text-lg">Xiphe</h4>
-            <p className="text-sm opacity-60">computer/web magic</p>
+            <p className="text-sm opacity-60">
+              improving the &quot;web&quot; | &quot;team&quot; |
+              &quot;process&quot; | &quot;world&quot;
+            </p>
           </span>
         </a>
         <div className="w-full h-4" />
