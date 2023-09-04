@@ -65,7 +65,7 @@ export default function ReleaseRenderer({
         <div className={proseStyles}>
           <h3>Stream now on</h3>
         </div>
-        <p className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-5 mt-4">
+        <p className="grid gap-4 grid-cols-2 md:grid-cols-5 mt-4">
           {shops
             .sort(
               ({ type: a }, { type: b }) =>
