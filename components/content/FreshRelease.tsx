@@ -72,7 +72,12 @@ export default function FreshRelease() {
         </span>
       </span>
       <span className="flex items-center justify-center">
-        <span className={clsx(buttonStyles, "whitespace-nowrap text-blue-900")}>
+        <span
+          className={clsx(
+            buttonStyles,
+            "whitespace-nowrap  text-blue-900 dark:text-white"
+          )}
+        >
           Check it out!
         </span>
       </span>
