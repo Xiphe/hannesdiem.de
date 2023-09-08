@@ -11,7 +11,7 @@ export default async function SpotifyPreSaveButton({
     return (
       <NewWindowLink className={buttonStyles} href={safe.link}>
         <DeezerLogo
-          className="max-h-10 xl:max-h-14"
+          className="h-screen max-h-10 xl:max-h-14"
           role="img"
           aria-label={"Pre-Save on Deezer"}
         />

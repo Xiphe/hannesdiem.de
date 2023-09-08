@@ -2,10 +2,9 @@ import { headers } from "next/headers";
 
 export function getOrigin() {
   const headersList = headers();
+  const proto = (headersList.get("x-forwarded-proto") || "https").split(",")[0];
 
-  return `${
-    headersList.get("x-forwarded-proto") || "https"
-  }://${headersList.get("host")}`;
+  return `${proto}://${headersList.get("host")}`;
 }
 
 export function getServerUrl() {

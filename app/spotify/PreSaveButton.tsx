@@ -14,7 +14,7 @@ export default async function SpotifyPreSaveButton({
     return (
       <NewWindowLink className={buttonStyles} href={safe.link}>
         <SpotifyLogo
-          className="max-h-12 xl:max-h-16"
+          className="h-screen max-h-12 xl:max-h-16"
           role="img"
           aria-label={"Pre-Save on Spotify"}
         />
@@ -27,7 +27,7 @@ export default async function SpotifyPreSaveButton({
   if (hasSaved) {
     return (
       <span className={clsx(disabledButtonStyles, "flex gap-4")}>
-        <SpotifyLogo className="max-h-12 xl:max-h-16 shrink-0" />
+        <SpotifyLogo className="h-screen max-h-12 xl:max-h-16 shrink-0" />
         <span className="block h-full p-2">
           <span className="block border-l-2 border-current h-full" />
         </span>
@@ -46,7 +46,7 @@ export default async function SpotifyPreSaveButton({
       className={buttonStyles}
     >
       <SpotifyLogo
-        className="max-h-12 xl:max-h-16"
+        className="h-screen max-h-12 xl:max-h-16"
         role="img"
         aria-label={"Pre-Save on Spotify"}
       />
