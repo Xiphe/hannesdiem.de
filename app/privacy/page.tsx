@@ -46,15 +46,15 @@ export default function Privacy() {
             <em>
               Cookies themselves are not evil, unfortunately they are just used
               by many companies nowadays to track users. I do not track you.
-              <br />
+              {/* <br />
               <br />
               What I do for example is: When you pre-save a track on Spotify or
               Deezer I will store an encryption code in your browser that
               ensures that I can only use your Spotify login when you are
               interacting with the site – many other pages don&apos;t do this,
-              trust me I&apos;m working in this industry.
+              trust me I&apos;m working in this industry. */}
             </em>{" "}
-            😅
+            {/* 😅 */}
           </span>
           <br />
           Since I don&apos;t have the capacity to run my own data center, this
