@@ -7,7 +7,7 @@ import {
   Release,
   shops as shopTypes,
 } from "@/content";
-import { buttonStyles, focusStyles, getOrigin, getServerUrl } from "@/utils";
+import { buttonStyles, focusStyles, getOrigin } from "@/utils";
 import SpotifyPreSaveButton from "@/app/spotify/PreSaveButton";
 import DeezerPreSaveButton from "@/app/deezer/PreSaveButton";
 
@@ -31,9 +31,12 @@ export default function ReleaseRenderer({
   shops,
   preSaves = [],
   slug,
-}: Release & { slug: string }) {
-  const url = new URL(getServerUrl());
-  const presavePreview = url.searchParams.get("presave_preview");
+  searchParams,
+}: Release & {
+  slug: string;
+  searchParams: Record<string, string | string[]>;
+}) {
+  const preSavePreview = Boolean(searchParams.presave_preview);
 
   return (
     <div className="container max-w-screen-xl mx-auto text-black dark:text-white pb-8">
@@ -79,7 +82,7 @@ export default function ReleaseRenderer({
         </div>
       </div>
 
-      {preSaves.length && (presavePreview || releaseDate > Date.now()) ? (
+      {preSaves.length && (preSavePreview || releaseDate > Date.now()) ? (
         <div className="px-6 xl:px-0 mb-12">
           <div className={proseStyles}>
             <h3>Pre-Save on</h3>
@@ -89,8 +92,8 @@ export default function ReleaseRenderer({
               const Comp = PreSaveButtons[service];
 
               if (
-                (presavePreview && save.type !== "internal") ||
-                (!presavePreview && save.type !== "external")
+                (!preSavePreview && save.type === "internal") ||
+                (preSavePreview && save.type === "external")
               ) {
                 return null;
               }
@@ -107,7 +110,7 @@ export default function ReleaseRenderer({
         </div>
       ) : null}
 
-      {!presavePreview && shops.length && releaseDate <= Date.now() ? (
+      {!preSavePreview && shops.length && releaseDate <= Date.now() ? (
         <div className="px-6 xl:px-0 mb-12">
           <div className={proseStyles}>
             <h3>Stream now on</h3>

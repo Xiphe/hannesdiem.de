@@ -1,4 +1,4 @@
-import { getOrigin } from "./serverUrl";
+import { getOrigin } from "./origin";
 
 const DEFAULT_REDIRECT = "/";
 

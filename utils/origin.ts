@@ -6,7 +6,3 @@ export function getOrigin() {
 
   return `${proto}://${headersList.get("host")}`;
 }
-
-export function getServerUrl() {
-  return `${getOrigin()}${headers().get("next-url") || ""}`;
-}

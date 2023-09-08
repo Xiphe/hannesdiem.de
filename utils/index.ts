@@ -1,5 +1,5 @@
 export * from "./styles";
-export * from "./serverUrl";
+export * from "./origin";
 export * from "./safeRedirect";
 export * from "./env";
 export * from "./encrypt";

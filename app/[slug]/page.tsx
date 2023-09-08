@@ -4,9 +4,10 @@ import { Release } from "@/components";
 
 interface Props {
   params: { slug: string };
+  searchParams: Record<string, string | string[]>;
 }
 
-export default function ContentPage({ params: { slug } }: Props) {
+export default function ContentPage({ params: { slug }, searchParams }: Props) {
   const post = content[slug];
 
   if (!post) {
@@ -15,7 +16,9 @@ export default function ContentPage({ params: { slug } }: Props) {
 
   return (
     <main className="min-h-screen bg-gradient-to-b gradient-full">
-      {post.type === "release" ? <Release {...post} slug={slug} /> : null}
+      {post.type === "release" ? (
+        <Release {...post} slug={slug} searchParams={searchParams} />
+      ) : null}
     </main>
   );
 }
