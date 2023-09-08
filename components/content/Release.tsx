@@ -10,6 +10,7 @@ import {
 import { buttonStyles, focusStyles, getOrigin, proseStyles } from "@/utils";
 import SpotifyPreSaveButton from "@/app/spotify/PreSaveButton";
 import DeezerPreSaveButton from "@/app/deezer/PreSaveButton";
+import { LocalTime } from "../LocalTime";
 
 const PreSaveButtons: Record<PreSaveService, ComponentType<PreSaveProps>> = {
   spotify: SpotifyPreSaveButton,
@@ -64,14 +65,7 @@ export default function ReleaseRenderer({
               <span className="opacity-60">
                 {releaseDate > Date.now() ? "Release" : "Released"}:{" "}
               </span>
-              {new Date(releaseDate).toLocaleDateString(
-                undefined,
-                releaseDateFormat || {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                }
-              )}
+              <LocalTime timeStamp={releaseDate} format={releaseDateFormat} />
               <br />
               <span className="opacity-60">Genre: </span>
               {genres.join(", ")}

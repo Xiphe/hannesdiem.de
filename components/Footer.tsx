@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="container max-w-screen-xl mx-auto px-6 flex justify-between items-end py-20">
+    <footer className="container max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 py-20">
       <div />
       <Link
         href={getOrigin()}
@@ -26,20 +26,22 @@ export default function Footer() {
           </span>
         </span>
       </Link>
-      <div className="opacity-50">
-        <Link
-          href="/imprint"
-          className={clsx(focusStyles, "underline rounded")}
-        >
-          imprint
-        </Link>{" "}
-        &bull;{" "}
-        <Link
-          href="/privacy"
-          className={clsx(focusStyles, "underline rounded")}
-        >
-          privacy
-        </Link>
+      <div className="flex justify-end items-end mt-20 md:mt-0">
+        <div className="opacity-50">
+          <Link
+            href="/imprint"
+            className={clsx(focusStyles, "underline rounded")}
+          >
+            imprint
+          </Link>{" "}
+          &bull;{" "}
+          <Link
+            href="/privacy"
+            className={clsx(focusStyles, "underline rounded")}
+          >
+            privacy
+          </Link>
+        </div>
       </div>
     </footer>
   );
