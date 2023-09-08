@@ -7,3 +7,6 @@ export * from "./Globe";
 export * from "./SoundCloud";
 export * from "./Twitch";
 export * from "./Spotify";
+export * from "./ExclamationCircle";
+export * from "./CheckCircle";
+export * from "./XMark";

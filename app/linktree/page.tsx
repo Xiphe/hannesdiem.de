@@ -93,78 +93,84 @@ const smallIcons: {
 
 export default function LinkTreePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b gradient-full">
+    <div className="bg-gradient-to-b gradient-full">
       <div className="container mx-auto max-w-lg">
-        <div className="flex flex-col md:flex-row mx-4 pt-4 md:pt-8 md:pb-6">
-          <div className="md:-ml-10 z-10 rounded-full h-20 w-20 md:h-28 md:w-28 overflow-hidden border-2 border-white shrink-0">
-            <Image
-              src="/image/portrait.png"
-              alt="Portrait of Hannes"
-              width={112}
-              height={112}
-            />
-          </div>
-          <p className="md:-ml-16 md:pl-20 md:mt-0 -mt-4 py-4 px-4  flex flex-col justify-center bg-blue-800 rounded-md  border-2 border-blue-500">
-            <span className="text-base font-bold text-pink-50">
-              Hi I&apos;m Hannes, so good to see you here 💙
-            </span>
-            <span className="text-violet-100 text-sm ">
-              Please be kindly invited to connect with me and find more content
-              on these platforms:
-            </span>
-          </p>
-        </div>
-        <ul>
-          {links.map(({ title, Icon, description, href }) => (
-            <li key={title}>
-              <a
-                className={clsx("flex items-center m-4 px-5 py-4", liClass)}
-                href={href}
-              >
-                <Icon height={40} className="mr-4" aria-hidden="true" />
-                <span>
-                  <h4 className="font-bold text-lg">{title}</h4>
-                  <p className="text-sm opacity-60">{description}</p>
+        <div className="min-h-screen flex flex-col justify-between">
+          <div>
+            <div className="flex flex-col md:flex-row mx-4 pt-4 md:pt-8 md:pb-6">
+              <div className="md:-ml-10 z-10 rounded-full h-20 w-20 md:h-28 md:w-28 overflow-hidden border-2 border-white shrink-0">
+                <Image
+                  src="/image/portrait.png"
+                  alt="Portrait of Hannes"
+                  width={112}
+                  height={112}
+                />
+              </div>
+              <p className="md:-ml-16 md:pl-20 md:mt-0 -mt-4 py-4 px-4  flex flex-col justify-center bg-blue-800 rounded-md  border-2 border-blue-500">
+                <span className="text-base font-bold text-pink-50">
+                  Hi I&apos;m Hannes, so good to see you here 💙
                 </span>
-              </a>
-            </li>
-          ))}
-        </ul>
-        <h3 className="dark: text-white p-4 opacity-50">Find my music on:</h3>
-        {smallIcons.length ? (
-          <ul className="grid grid-cols-3 gap-4 mx-4">
-            {smallIcons.map(({ title, Icon, href }) => (
-              <li key={title}>
-                <a
-                  className={clsx(
-                    liClass,
-                    "flex aspect-video items-center justify-center p-2"
-                  )}
-                  href={href}
-                >
-                  <Icon aria-label={title} width="90%" />
-                </a>
-              </li>
-            ))}
-          </ul>
-        ) : null}
+                <span className="text-violet-100 text-sm ">
+                  Please be kindly invited to connect with me and find more
+                  content on these platforms:
+                </span>
+              </p>
+            </div>
+            <ul>
+              {links.map(({ title, Icon, description, href }) => (
+                <li key={title}>
+                  <a
+                    className={clsx("flex items-center m-4 px-5 py-4", liClass)}
+                    href={href}
+                  >
+                    <Icon height={40} className="mr-4" aria-hidden="true" />
+                    <span>
+                      <h4 className="font-bold text-lg">{title}</h4>
+                      <p className="text-sm opacity-60">{description}</p>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <h3 className="dark: text-white p-4 opacity-50">
+              Find my music on:
+            </h3>
+            {smallIcons.length ? (
+              <ul className="grid grid-cols-3 gap-4 mx-4">
+                {smallIcons.map(({ title, Icon, href }) => (
+                  <li key={title}>
+                    <a
+                      className={clsx(
+                        liClass,
+                        "flex aspect-video items-center justify-center p-2"
+                      )}
+                      href={href}
+                    >
+                      <Icon aria-label={title} width="90%" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
 
-        <div className="flex justify-center items-center my-5 mb-64">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logo.svg"
-            alt=""
-            className="h-20 z-10 relative mr-2"
-            aria-hidden
-          />
-          <div className="flex flex-col items-center">
-            <p className="text-3xl font-extralight text-black dark:text-white">
-              Hannes Diem
-            </p>
+          <div className="flex justify-center items-center my-20">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.svg"
+              alt=""
+              className="h-20 z-10 relative mr-2"
+              aria-hidden
+            />
+            <div className="flex flex-col items-center">
+              <p className="text-3xl font-extralight text-black dark:text-white">
+                Hannes Diem
+              </p>
+            </div>
           </div>
         </div>
 
-        <h3 className="dark: text-white p-4 opacity-50">
+        <h3 className="dark: text-white p-4 opacity-50 mt-64">
           You found my other side 🌗
         </h3>
         <a

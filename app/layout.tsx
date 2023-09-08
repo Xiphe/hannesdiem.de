@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import SpotifyFeedback from "./spotify/SpotifyFeedback";
 
 export const metadata: Metadata = {
   title: "Hannes Diem",
@@ -16,8 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="en" className="dark:bg-blue-900">
+      <body>
+        {children}
+        <SpotifyFeedback />
+      </body>
     </html>
   );
 }

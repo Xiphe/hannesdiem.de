@@ -35,6 +35,26 @@ export interface Shop {
   link: string;
 }
 
+export type PreSaveService = "spotify" | "deezer";
+
+export interface PreSave {
+  service: PreSaveService;
+  type: "internal";
+  id: string;
+}
+
+export interface ExternalPreSave {
+  service: PreSaveService;
+  type: "external";
+  link: string;
+}
+
+export type PreSaveProps =
+  | { returnUrl: string } & (
+      | Omit<PreSave, "service">
+      | Omit<ExternalPreSave, "service">
+    );
+
 export interface Release {
   type: "release";
   title: string;
@@ -47,6 +67,7 @@ export interface Release {
   Description?: ComponentType;
   contributors: Contributor[];
   shops: Shop[];
+  preSaves?: (PreSave | ExternalPreSave)[];
 }
 
 export type Post = Release;

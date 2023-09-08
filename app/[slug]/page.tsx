@@ -15,7 +15,7 @@ export default function ContentPage({ params: { slug } }: Props) {
 
   return (
     <main className="min-h-screen bg-gradient-to-b gradient-full">
-      {post.type === "release" ? <Release {...post} /> : null}
+      {post.type === "release" ? <Release {...post} slug={slug} /> : null}
     </main>
   );
 }
