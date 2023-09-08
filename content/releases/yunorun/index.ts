@@ -17,6 +17,10 @@ export default {
   Description,
   contributors: [
     {
+      ...CarlAlbrecht,
+      roles: ["Programming", "Mixing", "Mastering"],
+    },
+    {
       ...HannesDiem,
       roles: [
         "Composition",
@@ -26,11 +30,6 @@ export default {
         "Programming",
         "Mixing",
       ],
-    },
-
-    {
-      ...CarlAlbrecht,
-      roles: ["Programming", "Mixing", "Mastering"],
     },
   ],
   preSaves: [

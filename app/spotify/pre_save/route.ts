@@ -1,60 +1,10 @@
-import { buttonStyles, getOrigin, primaryButtonStyles } from "@/utils";
 import { safeRedirect } from "@/utils/safeRedirect";
-import { cookies } from "next/headers";
-import Link from "next/link";
 import {
   getSpotifyAccessToken,
   initiateSpotifyLogin,
   saveAlbumsForUser,
 } from "../spotifyApi";
 import { NextResponse } from "next/server";
-
-// interface Props {
-//   params: { id: string };
-//   searchParams: { return_uri?: string };
-// }
-
-// export default async function PreSave({ params, searchParams }: Props) {
-//   const returnUrl = safeRedirect(searchParams.return_uri);
-//   const success_redirect = `${getOrigin()}/spotify/pre_save/${
-//     params.id
-//   }?return_uri=${searchParams.return_uri}`;
-
-//   const accessToken = await getSpotifyAuthToken();
-//   // const loginParams = new URLSearchParams({
-
-//   // }):
-
-//   return (
-//     <main className="min-h-screen bg-gradient-to-b gradient-full dark:text-white">
-//       <div className="container max-w-screen-sm mx-auto py-8">
-//         <h1 className="text-5xl mb-5">Spotify Pre-Save</h1>
-
-//         <p>
-//           In order to perform the pre-save for you, I will need some permissions
-//           on your Spotify account.
-//         </p>
-
-//         <form className="mt-8" method="POST" action="/spotify/login_init">
-//           <div className="flex gap-4">
-//             <input
-//               type="hidden"
-//               name="success_redirect"
-//               value={success_redirect}
-//             />
-//             <input type="hidden" name="error_redirect" value={returnUrl} />
-//             <Link href={returnUrl} className={buttonStyles}>
-//               I&apos;d rather not pre-save then
-//             </Link>
-//             <button className={primaryButtonStyles} type="submit">
-//               Ok, let&apos;s go
-//             </button>
-//           </div>
-//         </form>
-//       </div>
-//     </main>
-//   );
-// }
 
 export async function GET(request: Request) {
   const url = new URL(request.url);

@@ -27,18 +27,6 @@ export default {
   Description,
   contributors: [
     {
-      ...HannesDiem,
-      roles: [
-        "Composition",
-        "Lyrics",
-        "Vocals",
-        "Piano",
-        "Drums",
-        "Programming",
-        "Mixing",
-      ],
-    },
-    {
       ...ChristinaDuewel,
       roles: ["Vocals"],
     },
@@ -65,6 +53,18 @@ export default {
     {
       ...PeterBischoff,
       roles: ["Label"],
+    },
+    {
+      ...HannesDiem,
+      roles: [
+        "Composition",
+        "Lyrics",
+        "Vocals",
+        "Piano",
+        "Drums",
+        "Programming",
+        "Mixing",
+      ],
     },
   ],
   shops: [

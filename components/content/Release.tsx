@@ -98,11 +98,17 @@ export default function ReleaseRenderer({
                 return null;
               }
 
+              const returnUrl = new URL(getOrigin());
+              returnUrl.pathname = slug;
+              if (preSavePreview) {
+                returnUrl.searchParams.set("presave_preview", "1");
+              }
+
               return (
                 <Comp
                   {...save}
                   key={service}
-                  returnUrl={`${getOrigin()}/${slug}`}
+                  returnUrl={returnUrl.toString()}
                 />
               );
             })}
