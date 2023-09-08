@@ -16,6 +16,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { ComponentPropsWithoutRef, ComponentType } from "react";
 import { focusStyles } from "@/utils";
+import Footer from "@/components/Footer";
 
 const liStyles =
   "rounded bg-gradient-to-b from-blue-800 to-blue-900 text-white focus:outline-none hover:from-blue-900 hover:to-blue-900 hover:text-pink-200";
@@ -153,21 +154,7 @@ export default function LinkTreePage() {
               </ul>
             ) : null}
           </div>
-
-          <div className="flex justify-center items-center my-20">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/logo.svg"
-              alt=""
-              className="h-20 z-10 relative mr-2"
-              aria-hidden
-            />
-            <div className="flex flex-col items-center">
-              <p className="text-3xl font-extralight text-black dark:text-white">
-                Hannes Diem
-              </p>
-            </div>
-          </div>
+          <Footer />
         </div>
 
         <h3 className="dark: text-white p-4 opacity-50 mt-64">

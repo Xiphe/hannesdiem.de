@@ -5,7 +5,7 @@ import { CarlAlbrecht, HannesDiem } from "@/content/meta/people";
 export default {
   type: "release",
   title: "Y U NO RUN?",
-  releaseDate: 1695333600000,
+  releaseDate: 1695343600000,
   cover: {
     src: "/cover/hannes_diem_yunorun.png",
     alt: "Cover of Y U NO RUN?",

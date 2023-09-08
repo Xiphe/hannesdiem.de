@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark:bg-blue-900">
-      <body>
+    <html lang="en" className="dark:bg-blue-900 text-black dark:text-white">
+      <body className="bg-gradient-to-b gradient-full">
         {children}
         <SpotifyFeedback />
       </body>

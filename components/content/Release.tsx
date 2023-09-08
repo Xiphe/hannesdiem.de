@@ -7,7 +7,7 @@ import {
   Release,
   shops as shopTypes,
 } from "@/content";
-import { buttonStyles, focusStyles, getOrigin } from "@/utils";
+import { buttonStyles, focusStyles, getOrigin, proseStyles } from "@/utils";
 import SpotifyPreSaveButton from "@/app/spotify/PreSaveButton";
 import DeezerPreSaveButton from "@/app/deezer/PreSaveButton";
 
@@ -16,7 +16,6 @@ const PreSaveButtons: Record<PreSaveService, ComponentType<PreSaveProps>> = {
   deezer: DeezerPreSaveButton,
 };
 const shopOrder = Object.keys(shopTypes);
-const proseStyles = "prose prose-zinc dark:prose-invert lg:prose-xl";
 
 export default function ReleaseRenderer({
   cover,
@@ -39,9 +38,9 @@ export default function ReleaseRenderer({
   const preSavePreview = Boolean(searchParams.presave_preview);
 
   return (
-    <div className="container max-w-screen-xl mx-auto text-black dark:text-white pb-8">
+    <div className="container max-w-screen-xl mx-auto pb-8">
       <div className="gap-6 lg:gap-16 sm:p-6 md:flex mb-4">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 shrink-0">
           <div
             className="sm:rounded-lg overflow-hidden relative  sm:shadow-md shadow-black"
             style={{ aspectRatio: `${cover.width} / ${cover.height}` }}
@@ -55,66 +54,68 @@ export default function ReleaseRenderer({
             />
           </div>
         </div>
-        <div className={`p-6 sm:px-0 md:pt-0 ${proseStyles}`}>
-          <h1>
-            {artist ? <>{artist} - </> : null}
-            {title}
-          </h1>
-          <p>
-            <span className="opacity-60">
-              {releaseDate > Date.now() ? "Release" : "Released"}:{" "}
-            </span>
-            {new Date(releaseDate).toLocaleDateString(
-              undefined,
-              releaseDateFormat || {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              }
-            )}
-            <br />
-            <span className="opacity-60">Genre: </span>
-            {genres.join(", ")}
-            <br />
-            <span className="opacity-60">Language: </span>
-            {languages.join(", ")}
-          </p>
+        <div className="flex flex-col-reverse md:flex-col gap-12 w-full p-6 sm:px-0 md:pt-0">
+          <div className={proseStyles}>
+            <h1>
+              {artist ? <>{artist} - </> : null}
+              {title}
+            </h1>
+            <p>
+              <span className="opacity-60">
+                {releaseDate > Date.now() ? "Release" : "Released"}:{" "}
+              </span>
+              {new Date(releaseDate).toLocaleDateString(
+                undefined,
+                releaseDateFormat || {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                }
+              )}
+              <br />
+              <span className="opacity-60">Genre: </span>
+              {genres.join(", ")}
+              <br />
+              <span className="opacity-60">Language: </span>
+              {languages.join(", ")}
+            </p>
+          </div>
+
+          {preSaves.length && (preSavePreview || releaseDate > Date.now()) ? (
+            <div>
+              <div className={proseStyles}>
+                <h3>Pre-Save on</h3>
+              </div>
+              <p className="flex flex-col gap-4 mt-4">
+                {preSaves.map(({ service, ...save }) => {
+                  const Comp = PreSaveButtons[service];
+
+                  if (
+                    (!preSavePreview && save.type === "internal") ||
+                    (preSavePreview && save.type === "external")
+                  ) {
+                    return null;
+                  }
+
+                  const returnUrl = new URL(getOrigin());
+                  returnUrl.pathname = slug;
+                  if (preSavePreview) {
+                    returnUrl.searchParams.set("presave_preview", "1");
+                  }
+
+                  return (
+                    <Comp
+                      {...save}
+                      key={service}
+                      returnUrl={returnUrl.toString()}
+                    />
+                  );
+                })}
+              </p>
+            </div>
+          ) : null}
         </div>
       </div>
-
-      {preSaves.length && (preSavePreview || releaseDate > Date.now()) ? (
-        <div className="px-6 xl:px-0 mb-12">
-          <div className={proseStyles}>
-            <h3>Pre-Save on</h3>
-          </div>
-          <p className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
-            {preSaves.map(({ service, ...save }) => {
-              const Comp = PreSaveButtons[service];
-
-              if (
-                (!preSavePreview && save.type === "internal") ||
-                (preSavePreview && save.type === "external")
-              ) {
-                return null;
-              }
-
-              const returnUrl = new URL(getOrigin());
-              returnUrl.pathname = slug;
-              if (preSavePreview) {
-                returnUrl.searchParams.set("presave_preview", "1");
-              }
-
-              return (
-                <Comp
-                  {...save}
-                  key={service}
-                  returnUrl={returnUrl.toString()}
-                />
-              );
-            })}
-          </p>
-        </div>
-      ) : null}
 
       {!preSavePreview && shops.length && releaseDate <= Date.now() ? (
         <div className="px-6 xl:px-0 mb-12">
