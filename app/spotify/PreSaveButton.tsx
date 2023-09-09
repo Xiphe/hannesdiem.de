@@ -11,13 +11,18 @@ export default async function SpotifyPreSaveButton({
 }: PreSaveProps) {
   if (safe.type === "external") {
     return (
-      <a className={buttonStyles} href={safe.link}>
+      <Link
+        className={buttonStyles}
+        href={safe.link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <SpotifyLogo
           className="h-screen max-h-12 xl:max-h-16"
           role="img"
           aria-label={"Pre-Save on Spotify"}
         />
-      </a>
+      </Link>
     );
   }
 

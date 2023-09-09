@@ -37,12 +37,12 @@ export default {
     {
       service: "spotify",
       type: "external",
-      link: "https://accounts.spotify.com/authorize?response_type=code&client_id=089f7b64ea634ac696028a96cd1266ae&scope=user-library-modify,user-read-email&redirect_uri=https%3A%2F%2Fmusic.imusician.pro%2Fpresave%2Fspotify%2F",
+      link: "https://music.imusician.pro/a/wMv-0eI1",
     },
     {
       service: "deezer",
       type: "external",
-      link: "https://connect.deezer.com/oauth/auth.php?app_id=531842&redirect_uri=https%3A%2F%2Fmusic.imusician.pro%2Fpresave%2Fdeezer%2F&perms=basic_access,email,offline_access,manage_library",
+      link: "https://music.imusician.pro/a/wMv-0eI1",
     },
   ],
   shops: [],
