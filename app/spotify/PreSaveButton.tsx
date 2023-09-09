@@ -4,7 +4,6 @@ import { buttonStyles, disabledButtonStyles } from "@/utils";
 import { getSpotifyAccessToken, checkUsersSavedAlbums } from "./spotifyApi";
 import clsx from "clsx";
 import { PreSaveProps } from "@/content";
-import NewWindowLink from "@/components/NewWindowLink";
 
 export default async function SpotifyPreSaveButton({
   returnUrl,
@@ -12,13 +11,13 @@ export default async function SpotifyPreSaveButton({
 }: PreSaveProps) {
   if (safe.type === "external") {
     return (
-      <NewWindowLink className={buttonStyles} href={safe.link}>
+      <a className={buttonStyles} href={safe.link}>
         <SpotifyLogo
           className="h-screen max-h-12 xl:max-h-16"
           role="img"
           aria-label={"Pre-Save on Spotify"}
         />
-      </NewWindowLink>
+      </a>
     );
   }
 
