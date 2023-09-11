@@ -1,17 +1,13 @@
 import { notFound } from "next/navigation";
 import { content } from "@/content";
 import { Release } from "@/components";
-import { focusStyles, getOrigin } from "@/utils";
-import Link from "next/link";
-import clsx from "clsx";
 import Footer from "@/components/Footer";
+import { PageProps } from "@/utils/types";
 
-interface Props {
-  params: { slug: string };
-  searchParams: Record<string, string | string[]>;
-}
-
-export default function ContentPage({ params: { slug }, searchParams }: Props) {
+export default function ContentPage({
+  params: { slug },
+  searchParams,
+}: PageProps<{ slug: string }>) {
   const post = content[slug];
 
   if (!post) {

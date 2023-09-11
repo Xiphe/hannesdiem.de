@@ -3,6 +3,7 @@ export * from "./Instagram";
 export * from "./Twitter";
 export * from "./TikTok";
 export * from "./YouTube";
+export * from "./Songtradr";
 export * from "./Globe";
 export * from "./SoundCloud";
 export * from "./Twitch";
