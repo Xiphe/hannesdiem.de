@@ -45,5 +45,26 @@ export default {
       link: "https://music.imusician.pro/a/wMv-0eI1",
     },
   ],
-  shops: [],
+  shops: [
+    { type: "amazonmusic", link: "https://music.amazon.de/albums/B0CG27MGT3" },
+    { type: "deezer", link: "https://www.deezer.com/album/477996575" },
+    { type: "tidal", link: "https://www.tidal.com/album/311632173" },
+    {
+      type: "spotify",
+      link: "https://open.spotify.com/album/14t6dx7ZvRGjKucQwJftrM",
+    },
+    {
+      type: "applemusic",
+      link: "https://geo.music.apple.com/album/y-u-no-run-single/1703273342?app=music",
+    },
+    {
+      type: "pandora",
+      link: "https://www.pandora.com/artist/hannes-diem/y-u-no-run/AL9V67pb7X2KcJ4",
+    },
+    {
+      type: "youtubemusic",
+      link: "https://music.youtube.com/channel/MPREb_TpleMTdz5FA",
+    },
+    { type: "awa", link: "https://s.awa.fm/album/ee59d3120aff3d0e4f71" },
+  ],
 } satisfies Release;
