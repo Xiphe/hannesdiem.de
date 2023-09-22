@@ -62,7 +62,7 @@ export default function FreshRelease() {
               <LocalTime timeStamp={releaseDate} format={releaseDateFormat} />
             </>
           ) : (
-            "has just been released"
+            " has just been released"
           )}
           !
         </span>
