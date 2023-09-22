@@ -132,7 +132,11 @@ export default function ReleaseRenderer({
                     rel="noopener"
                     className={buttonStyles}
                   >
-                    <Logo role="img" aria-label={name} />
+                    <Logo
+                      role="img"
+                      className="h-screen max-h-9 xl:max-h-12"
+                      aria-label={name}
+                    />
                   </a>
                 );
               })}
