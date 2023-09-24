@@ -62,6 +62,10 @@ export default {
       link: "https://www.pandora.com/artist/hannes-diem/y-u-no-run/AL9V67pb7X2KcJ4",
     },
     {
+      type: "qobuz",
+      link: "https://open.qobuz.com/album/rxakr0icosv1b",
+    },
+    {
       type: "youtubemusic",
       link: "https://music.youtube.com/channel/MPREb_TpleMTdz5FA",
     },
