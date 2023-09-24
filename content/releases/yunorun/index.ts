@@ -5,7 +5,10 @@ import { CarlAlbrecht, HannesDiem } from "@/content/meta/people";
 export default {
   type: "release",
   title: "Y U NO RUN?",
+  slug: "yunorun",
   releaseDate: 1695340800000,
+  summary:
+    '"Y U NO RUN?" delves into the intricate relationship between the logical mind and emotional heart, examining the pitfalls of perfectionism and the challenge of slowing down amidst life\'s momentum. The single questions why seemingly simple choices can be so complex to make, offering an introspective look into the struggles of decision-making.',
   cover: {
     src: "/cover/hannes_diem_yunorun.png",
     alt: "Cover of Y U NO RUN?",
@@ -30,6 +33,18 @@ export default {
         "Programming",
         "Mixing",
       ],
+    },
+  ],
+  tracks: [
+    {
+      title: "Y U NO RUN?",
+      song: "/song/yunorun?version=yunorun",
+      duration: 323,
+    },
+    {
+      title: "Y U NO RUN?",
+      addition: "- Instrumental",
+      duration: 323,
     },
   ],
   preSaves: [

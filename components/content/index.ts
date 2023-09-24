@@ -1,1 +1,3 @@
-export { default as Release } from "./Release";
+export * from "./Release";
+export * from "./Song";
+export * from "./FreshRelease";

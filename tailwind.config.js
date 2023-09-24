@@ -18,6 +18,9 @@ module.exports = {
       backgroundImage: {
         "full-gradient": "url('/img/hero-pattern.svg')",
       },
+      fontFamily: {
+        fuggles: ["Fuggles", "display"],
+      },
     },
   },
 

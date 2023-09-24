@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-display: swap;
+    font-family: 'Fuggles';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/font/fuggles-v12-latin-regular.woff2') format('woff2');
+  }
+}
 
 @layer utilities {
   .gradient-full {

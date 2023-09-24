@@ -1,3 +1,4 @@
+import { Metadata, ResolvingMetadata } from "next";
 import { ComponentType, Fragment } from "react";
 import Image from "next/image";
 import clsx from "clsx";
@@ -7,7 +8,14 @@ import {
   Release,
   shops as shopTypes,
 } from "@/content";
-import { buttonStyles, focusStyles, getOrigin, proseStyles } from "@/utils";
+import {
+  buttonStyles,
+  exists,
+  focusStyles,
+  getOrigin,
+  proseStyles,
+  secondsToDuration,
+} from "@/utils";
 import SpotifyPreSaveButton from "@/app/spotify/PreSaveButton";
 import DeezerPreSaveButton from "@/app/deezer/PreSaveButton";
 import { LocalTime } from "../LocalTime";
@@ -18,7 +26,48 @@ const PreSaveButtons: Record<PreSaveService, ComponentType<PreSaveProps>> = {
 };
 const shopOrder = Object.keys(shopTypes);
 
-export default function ReleaseRenderer({
+export async function generateReleaseMetadata(
+  release: Release,
+  searchParams: Record<string, string | string[]>,
+  parent: ResolvingMetadata
+) {
+  const url = new URL(getOrigin());
+  url.pathname = release.slug;
+
+  const image = new URL(getOrigin());
+  const imageHeight = Math.min(release.cover.height, 1200);
+  const imageRatio = release.cover.width / release.cover.height;
+  const imageWidth = imageHeight * imageRatio;
+
+  image.pathname = "/_next/image";
+  image.searchParams.set("url", release.cover.src);
+  image.searchParams.set("w", String(imageHeight));
+  image.searchParams.set("h", String(imageWidth));
+  image.searchParams.set("q", "75");
+
+  return {
+    title: release.title,
+    description: release.summary,
+    openGraph: {
+      title: release.title,
+      description: release.summary,
+      images: {
+        url: image.href,
+        width: imageWidth,
+        height: imageHeight,
+        alt: `Cover of "${release.title}"`,
+      },
+      type: "music.album",
+      url: url.href,
+      musicians: release.contributors
+        .map(({ ogProfile }) => ogProfile)
+        .filter(exists),
+      songs: release.tracks.map(({ song }) => song).filter(exists),
+    },
+  } satisfies Metadata;
+}
+
+export function Release({
   cover,
   title,
   artist,
@@ -31,9 +80,9 @@ export default function ReleaseRenderer({
   shops,
   preSaves = [],
   slug,
+  tracks,
   searchParams,
 }: Release & {
-  slug: string;
   searchParams: Record<string, string | string[]>;
 }) {
   const preSavePreview = Boolean(searchParams.presave_preview);
@@ -73,6 +122,70 @@ export default function ReleaseRenderer({
               <span className="opacity-60">Language: </span>
               {languages.join(", ")}
             </p>
+            {tracks.length ? (
+              <>
+                <h3>Tracklist</h3>
+                <div role="table" className="table w-full">
+                  <div role="rowgroup" className="sr-only">
+                    <div role="row">
+                      <span role="columnheader">Song Nr.</span>
+                      <span role="columnheader">Title</span>
+                      <span role="columnheader">Duration</span>
+                    </div>
+                  </div>
+                  <div role="rowgroup" className="table-row-group">
+                    {tracks.map(({ title, addition, duration, song }, i) => {
+                      const Comp = song ? "a" : "div";
+
+                      return (
+                        <Comp
+                          role="row"
+                          className={clsx(
+                            focusStyles,
+                            "table-row no-underline bg-purple-400 dark:bg-blue-400",
+                            i % 2 === 0
+                              ? "bg-opacity-5 dark:bg-opacity-5"
+                              : "bg-opacity-10 dark:bg-opacity-10",
+                            song ? "hover:bg-opacity-20" : ""
+                          )}
+                          key={title + addition}
+                          href={song}
+                          title={
+                            song
+                              ? `Details and Lyrics for "${title}"`
+                              : undefined
+                          }
+                        >
+                          <span
+                            role="cell"
+                            className="table-cell opacity-40 italic font-extralight pl-4 py-2"
+                          >
+                            {i + 1}.{" "}
+                          </span>
+                          <span role="cell" className="table-cell">
+                            {title}
+                            {addition ? (
+                              <span className="opacity-60 font-normal">
+                                {" "}
+                                {addition}
+                              </span>
+                            ) : null}
+                          </span>
+                          <span role="cell" className="table-cell">
+                            <time
+                              className="!mb-0 opacity-40 italic font-extralight"
+                              dateTime={secondsToDuration(duration, "iso8601")}
+                            >
+                              {secondsToDuration(duration)}
+                            </time>
+                          </span>
+                        </Comp>
+                      );
+                    })}
+                  </div>
+                </div>
+              </>
+            ) : null}
           </div>
 
           {preSaves.length && (preSavePreview || releaseDate > Date.now()) ? (
@@ -151,7 +264,7 @@ export default function ReleaseRenderer({
         <p>
           {contributors.map(({ name, link, roles, description }) => (
             <Fragment key={name}>
-              <strong>
+              <strong title={description}>
                 {link ? (
                   <a
                     href={link}

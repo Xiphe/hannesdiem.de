@@ -7,10 +7,18 @@ export interface Image {
   height: number;
 }
 
-export interface Contributor {
+export interface Person {
   name: string;
   link?: string;
+  ogProfile?: string;
+}
+
+export interface Contributor extends Person {
   roles: string[];
+  description?: string;
+}
+
+export interface Author extends Person {
   description?: string;
 }
 
@@ -55,19 +63,43 @@ export type PreSaveProps =
       | Omit<ExternalPreSave, "service">
     );
 
+export interface Song {
+  type: "song";
+  title: string;
+  subtitle?: string;
+  slug: `song/${string}`;
+  summary?: string;
+  authors?: Author[];
+  createdDate: number;
+  createdDateFormat?: Intl.DateTimeFormatOptions;
+  Lyrics?: ComponentType;
+  Description?: ComponentType;
+  releasedOn?: string[];
+}
+
+export interface Track {
+  title: string;
+  addition?: string;
+  song?: string;
+  duration: number;
+}
+
 export interface Release {
   type: "release";
   title: string;
+  slug: string;
   artist?: string;
   releaseDate: number;
   releaseDateFormat?: Intl.DateTimeFormatOptions;
   cover: Image;
   genres: string[];
   languages: string[];
+  summary?: string;
   Description?: ComponentType;
   contributors: Contributor[];
+  tracks: Track[];
   shops: Shop[];
   preSaves?: (PreSave | ExternalPreSave)[];
 }
 
-export type Post = Release;
+export type Post = Release | Song;

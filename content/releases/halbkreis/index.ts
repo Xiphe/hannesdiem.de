@@ -14,6 +14,7 @@ import {
 export default {
   type: "release",
   title: "Halbkreis",
+  slug: "halbkreis",
   releaseDate: 1280613600000,
   releaseDateFormat: { year: "numeric", month: "long" },
   cover: {
@@ -65,6 +66,35 @@ export default {
         "Programming",
         "Mixing",
       ],
+    },
+  ],
+  tracks: [
+    {
+      title: "Alles Brennt",
+      song: "/song/alles-brennt?version=halbkreis",
+      duration: 229,
+    },
+    {
+      title: "Bruder",
+      addition: "(Hilf mir mein Freund)",
+      song: "/song/bruder?version=halbkreis",
+      duration: 250,
+    },
+    {
+      title: "Die Mühle",
+      addition: "(feat. Christina Düwel)",
+      song: "/song/die-muehle?version=halbkreis",
+      duration: 317,
+    },
+    {
+      title: "Pidder Lüng",
+      song: "/song/pidder-lueng?version=halbkreis",
+      duration: 219,
+    },
+    {
+      title: "Wie es mir Gefällt",
+      song: "/song/wie-es-mir-gefaellt?version=halbkreis",
+      duration: 365,
     },
   ],
   shops: [
