@@ -8,9 +8,9 @@ import { buttonStyles, focusStyles } from "@/utils";
 
 export default function FreshRelease() {
   const now = Date.now();
-  const fresh: [string, Release] | undefined = Object.entries(releases)
-    .sort(([_, a], [__, b]) => b.releaseDate - a.releaseDate)
-    .find(([_, release]) => {
+  const fresh: Release | undefined = releases
+    .sort(({ releaseDate: a }, { releaseDate: b }) => b - a)
+    .find((release) => {
       const fourWeeksAgo = now - 1000 * 60 * 60 * 24 * 7 * 4;
       const threeWeeksAhead = now + 1000 * 60 * 60 * 24 * 7 * 3;
       return (
@@ -23,7 +23,7 @@ export default function FreshRelease() {
     return null;
   }
 
-  const [slug, { cover, releaseDate, title, releaseDateFormat }] = fresh;
+  const { cover, releaseDate, title, releaseDateFormat, slug } = fresh;
   const isFutureRelease = releaseDate > now;
 
   return (
