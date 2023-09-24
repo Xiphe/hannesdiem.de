@@ -3,7 +3,10 @@ import type { Metadata } from "next";
 import SpotifyFeedback from "./spotify/SpotifyFeedback";
 
 export const metadata: Metadata = {
-  title: "Hannes Diem",
+  title: {
+    template: "%s • Hannes Diem",
+    default: "Hannes Diem",
+  },
   description: "...about Music, Life, and Everything",
   icons: {
     icon: "/logo.svg",
