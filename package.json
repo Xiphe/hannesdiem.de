@@ -11,23 +11,23 @@
   "dependencies": {
     "@mdx-js/loader": "2.3.0",
     "@mdx-js/react": "2.3.0",
-    "@next/mdx": "13.5.2",
-    "@types/mdx": "2.0.7",
-    "@types/node": "20.6.3",
-    "@types/react": "18.2.22",
-    "@types/react-dom": "18.2.7",
+    "@next/mdx": "13.5.4",
+    "@types/mdx": "2.0.8",
+    "@types/node": "20.8.3",
+    "@types/react": "18.2.25",
+    "@types/react-dom": "18.2.11",
     "@vercel/kv": "0.2.3",
     "autoprefixer": "10.4.16",
     "clsx": "2.0.0",
-    "eslint": "8.49.0",
-    "eslint-config-next": "13.5.2",
-    "next": "13.5.2",
-    "postcss": "8.4.30",
+    "eslint": "8.51.0",
+    "eslint-config-next": "13.5.4",
+    "next": "13.5.4",
+    "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2",
-    "zod": "3.22.2"
+    "zod": "3.22.4"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.10"
