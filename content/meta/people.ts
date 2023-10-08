@@ -1,5 +1,30 @@
 import { Person } from "./types";
 
+export const IuliBanu = {
+  name: "Iuli Banu",
+  link: "https://iuliversum.com/",
+} satisfies Person;
+
+export const LeonWeickert = {
+  name: "Leon Weickert",
+  link: "https://devert.net/",
+} satisfies Person;
+
+export const KhamkeoVilaysing = {
+  name: "Khamkéo Vilaysing",
+  link: "https://www.kham-keo.com/",
+} satisfies Person;
+
+export const LindaLane = {
+  name: "Linda Lane",
+  link: "https://wonderlane.com",
+} satisfies Person;
+
+export const LanceAnderson = {
+  name: "Lance Anderson",
+  link: "https://www.lanceanderson.net/",
+} satisfies Person;
+
 export const AlexHenke = {
   name: "Alex Henke",
   link: "https://skill-music.de/",

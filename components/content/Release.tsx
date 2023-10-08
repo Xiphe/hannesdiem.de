@@ -70,6 +70,7 @@ export async function generateReleaseMetadata(
 export function Release({
   cover,
   title,
+  subtitle,
   artist,
   releaseDate,
   releaseDateFormat,
@@ -106,10 +107,13 @@ export function Release({
         </div>
         <div className="flex flex-col-reverse md:flex-col gap-12 w-full p-6 sm:px-0 md:pt-0">
           <div className={proseStyles}>
-            <h1>
+            <h1 className={subtitle ? "!mb-0" : ""}>
               {artist ? <>{artist} - </> : null}
               {title}
             </h1>
+            {subtitle ? (
+              <h2 className="!text-3xl !font-normal !mt-2">{subtitle}</h2>
+            ) : null}
             <p>
               <span className="opacity-60">
                 {releaseDate > Date.now() ? "Release" : "Released"}:{" "}
@@ -260,7 +264,7 @@ export function Release({
       <div className={`px-6 ${proseStyles}`}>
         {Description ? <Description /> : null}
 
-        <h3>Contributors</h3>
+        <h3 className="!mt-24">Contributors</h3>
         <p>
           {contributors.map(({ name, link, roles, description }) => (
             <Fragment key={name}>

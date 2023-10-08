@@ -4,6 +4,7 @@ import bruder from "./bruder";
 import dieMuehle from "./die-muehle";
 import pidderLueng from "./pidder-lueng";
 import wieEsMirGefaellt from "./wie-es-mir-gefaellt";
+import resolveYourself from "./resolve-yourself";
 
 export const songs = [
   yunorun,
@@ -12,4 +13,5 @@ export const songs = [
   dieMuehle,
   pidderLueng,
   wieEsMirGefaellt,
+  resolveYourself,
 ];

@@ -87,6 +87,7 @@ export interface Track {
 export interface Release {
   type: "release";
   title: string;
+  subtitle?: string;
   slug: string;
   artist?: string;
   releaseDate: number;
