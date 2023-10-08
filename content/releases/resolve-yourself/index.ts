@@ -16,7 +16,8 @@ export default {
   subtitle: "with Iuli Banu",
   slug: "resolve-yourself",
   releaseDate: 1700870400000,
-  summary: "",
+  summary:
+    '"Resolve Yourself" is a musical journey through diverse emotional landscapes, blending danceable grooves with introspective meditations. Inspired by a serene walk in Tarifa and shaped by collaborations with emotional coach Iuli Banu and musician CArl, the song invites listeners to explore self-awareness in a joyful, rhythmic way',
   cover: {
     src: "/cover/hannes_diem_resolve_yourself.png",
     alt: "Cover of Resolve Yourself",
