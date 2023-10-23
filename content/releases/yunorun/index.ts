@@ -61,7 +61,7 @@ export default {
     },
   ],
   shops: [
-    { type: "amazonmusic", link: "https://music.amazon.de/albums/B0CG27MGT3" },
+    { type: "amazonmusic", link: "https://music.amazon.de/albums/B0CG24X1LZ" },
     { type: "deezer", link: "https://www.deezer.com/album/477996575" },
     { type: "tidal", link: "https://www.tidal.com/album/311632173" },
     {
