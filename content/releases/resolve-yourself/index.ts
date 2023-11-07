@@ -86,6 +86,17 @@ export default {
       duration: 335,
     },
   ],
-  preSaves: [],
+  preSaves: [
+    {
+      "type": "internal",
+      "service": "spotify",
+      "id": "1JHlS2iQP5EU8UPAMOCA8q"
+    },
+    {
+      "type": "external",
+      "seevice": "deezer",
+      "link": "https://music.imusician.pro/a/GzLz-DoC"
+    }
+  ],
   shops: [],
 } satisfies Release;
