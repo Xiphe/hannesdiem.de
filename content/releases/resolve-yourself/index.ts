@@ -88,14 +88,14 @@ export default {
   ],
   preSaves: [
     {
-      "type": "internal",
-      "service": "spotify",
-      "id": "1JHlS2iQP5EU8UPAMOCA8q"
+      type: "internal",
+      service: "spotify",
+      id: "1JHlS2iQP5EU8UPAMOCA8q"
     },
     {
-      "type": "external",
-      "seevice": "deezer",
-      "link": "https://music.imusician.pro/a/GzLz-DoC"
+      type: "external",
+      service: "deezer",
+      link: "https://music.imusician.pro/a/GzLz-DoC"
     }
   ],
   shops: [],
