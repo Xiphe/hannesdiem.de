@@ -201,13 +201,6 @@ export function Release({
                 {preSaves.map(({ service, ...save }) => {
                   const Comp = PreSaveButtons[service];
 
-                  if (
-                    (!preSavePreview && save.type === "internal") ||
-                    (preSavePreview && save.type === "external")
-                  ) {
-                    return null;
-                  }
-
                   const returnUrl = new URL(getOrigin());
                   returnUrl.pathname = slug;
                   if (preSavePreview) {
