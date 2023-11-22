@@ -33,8 +33,8 @@ const links: {
 }[] = [
   {
     title: "Twitch",
-    href: "https://www.twitch.tv/hannes_im",
-    description: "join me live every now and then, usually Thursdays",
+    href: "https://www.twitch.tv/hannes_diem",
+    description: "join me transforming emotions to sounds, usually Thursdays",
     Icon: TwitchIcon,
   },
   {
@@ -46,12 +46,12 @@ const links: {
   {
     title: "Instagram",
     href: "https://www.instagram.com/hannes.im/",
-    description: "shiny feelings for shily people",
+    description: "shiny feelings for shiny people",
     Icon: InstagramIcon,
   },
   {
     title: "TikTok",
-    href: "https://www.tiktok.com/@hannes.im",
+    href: "https://www.tiktok.com/@hannes.diem",
     description: "let's duet!",
     Icon: TikTokIcon,
   },
