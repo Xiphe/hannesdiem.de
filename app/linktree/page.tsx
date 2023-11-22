@@ -39,7 +39,7 @@ const links: {
   },
   {
     title: "YouTube",
-    href: "https://www.youtube.com/@hannes_im",
+    href: "https://www.youtube.com/@hannes_diem",
     description: "get some danceable emotions on demand",
     Icon: YouTubeIcon,
   },
