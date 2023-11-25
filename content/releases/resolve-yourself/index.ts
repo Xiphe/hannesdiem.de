@@ -90,13 +90,42 @@ export default {
     {
       type: "internal",
       service: "spotify",
-      id: "1JHlS2iQP5EU8UPAMOCA8q"
+      id: "1JHlS2iQP5EU8UPAMOCA8q",
     },
     {
       type: "external",
       service: "deezer",
-      link: "https://music.imusician.pro/a/GzLz-DoC"
-    }
+      link: "https://music.imusician.pro/a/GzLz-DoC",
+    },
   ],
-  shops: [],
+  shops: [
+    {
+      link: "https://open.spotify.com/album/1JHlS2iQP5EU8UPAMOCA8q",
+      type: "spotify",
+    },
+    {
+      type: "deezer",
+      link: "https://www.deezer.com/album/508138171",
+    },
+    {
+      type: "amazonmusic",
+      link: "https://music.amazon.com/albums/B0CMDHH872",
+    },
+    {
+      type: "tidal",
+      link: "https://tidal.com/album/326275254",
+    },
+    {
+      type: "applemusic",
+      link: "https://music.apple.com/album/resolve-yourself-single/1715203861",
+    },
+    {
+      type: "qobuz",
+      link: "https://open.qobuz.com/album/qd2r173t9288b",
+    },
+    {
+      type: "soundcloud",
+      link: "https://soundcloud.com/hannesdiem/resolveyourself",
+    },
+  ],
 } satisfies Release;

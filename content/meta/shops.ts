@@ -11,6 +11,7 @@ import {
   AnghamiLogo,
   AwaLogo,
   QobuzLogo,
+  SoundCloudLogo,
 } from "@/components/logos";
 
 export const shops: Record<
@@ -56,5 +57,9 @@ export const shops: Record<
   qobuz: {
     name: "Qobuz",
     Logo: QobuzLogo,
+  },
+  soundcloud: {
+    name: "SoundCloud",
+    Logo: SoundCloudLogo,
   },
 };

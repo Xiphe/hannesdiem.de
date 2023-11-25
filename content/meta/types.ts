@@ -32,7 +32,8 @@ export type ShopType =
   | "applemusic"
   | "pandora"
   | "youtubemusic"
-  | "awa";
+  | "awa"
+  | "soundcloud";
 
 /*
 Script to extract shop links from the imusician website:
