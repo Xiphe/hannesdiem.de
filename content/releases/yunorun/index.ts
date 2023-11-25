@@ -70,7 +70,7 @@ export default {
     },
     {
       type: "applemusic",
-      link: "https://geo.music.apple.com/album/y-u-no-run-single/1703273342",
+      link: "https://geo.music.apple.com/album/y-u-no-run-single/1703273342?app=music",
     },
     {
       type: "pandora",
