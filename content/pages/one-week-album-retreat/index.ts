@@ -8,7 +8,7 @@ export default {
   slug: "one-week-album-retreat",
   type: "page",
   description:
-    "Join us this September for the One Week Album retreat, where musicians, songwriters, and creatives come together to form a temporary band, write, and record an album in just seven days. Experience an inspiring space filled with collaboration, creativity, and connection, set in beautiful natural surroundings.",
+    "This September, join a group of fellow musicians to write and record an album in a seven-day journey of collaboration, creativity, and connection in a beautiful natural setting.",
   date: 1718654200784,
   Content,
 } satisfies Page;
