@@ -104,4 +104,15 @@ export interface Release {
   preSaves?: (PreSave | ExternalPreSave)[];
 }
 
-export type Post = Release | Song;
+export interface Page {
+  type: "page";
+  title: string;
+  subtitle?: string;
+  slug: string;
+  description: string;
+  date?: number;
+  dateFormat?: Intl.DateTimeFormatOptions;
+  Content: ComponentType;
+}
+
+export type Post = Release | Song | Page;

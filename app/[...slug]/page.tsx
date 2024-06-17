@@ -6,8 +6,11 @@ import {
   generateReleaseMetadata,
   Song,
   generateSongMetadata,
+  Footer,
+  generatePageMetadata,
+  Page,
 } from "@/components";
-import Footer from "@/components/Footer";
+
 import { PageProps } from "@/utils/types";
 
 export async function generateMetadata(
@@ -25,6 +28,8 @@ export async function generateMetadata(
       return generateReleaseMetadata(post, searchParams, parent);
     case "song":
       return generateSongMetadata(post, searchParams, parent);
+    case "page":
+      return generatePageMetadata(post, searchParams, parent);
   }
 }
 
@@ -45,6 +50,8 @@ export default function ContentPage({
           <Release {...post} searchParams={searchParams} />
         ) : post.type === "song" ? (
           <Song {...post} searchParams={searchParams} />
+        ) : post.type === "page" ? (
+          <Page {...post} searchParams={searchParams} />
         ) : null}
       </main>
       <Footer />

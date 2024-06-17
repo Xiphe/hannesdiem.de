@@ -1,4 +1,4 @@
-import { Song } from "@/content";
+import { type Song } from "@/content";
 import { getOrigin } from "@/utils";
 import { Metadata, ResolvingMetadata } from "next";
 import { Letter } from "../Letter";

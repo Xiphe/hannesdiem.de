@@ -5,7 +5,7 @@ import clsx from "clsx";
 import {
   PreSaveProps,
   PreSaveService,
-  Release,
+  type Release,
   shops as shopTypes,
 } from "@/content";
 import {
