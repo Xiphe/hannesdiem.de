@@ -34,7 +34,7 @@ export function Page({
   searchParams: Record<string, string | string[]>;
 }) {
   return (
-    <div className="prose lg:prose-xl dark:prose-invert mx-auto pt-16 pb-24">
+    <div className="prose lg:prose-xl dark:prose-invert mx-auto px-4 pt-16 pb-24">
       <h1 className="mb-0 lg:mb-0">{title}</h1>
       {subtitle ? (
         <h2 className="mt-2 mb-0 lg:mt-4 lg:mb-0">{subtitle}</h2>
