@@ -1,4 +1,4 @@
-import { ComponentType } from "react";
+import { ComponentType, ReactNode } from "react";
 
 export interface Image {
   src: string;
@@ -107,6 +107,12 @@ export interface Release {
 export interface Page {
   type: "page";
   title: string;
+  cta?: {
+    href: string;
+    children: ReactNode;
+  };
+  externalTitle?: string;
+  banner?: Image;
   subtitle?: string;
   slug: string;
   description: string;

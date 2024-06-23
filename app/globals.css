@@ -5,29 +5,24 @@
 @layer base {
   @font-face {
     font-display: swap;
-    font-family: 'Fuggles';
+    font-family: "Fuggles";
     font-style: normal;
     font-weight: 400;
-    src: url('/font/fuggles-v12-latin-regular.woff2') format('woff2');
+    src: url("/font/fuggles-v12-latin-regular.woff2") format("woff2");
   }
 }
 
 @layer utilities {
   .gradient-full {
-    --tw-gradient-stops:
-      theme('colors.blue.900') 0%,
-      theme('colors.blue.600') 50%,
-      theme('colors.violet.600') 90%,
-      theme('colors.violet.400') 100%;
+    --tw-gradient-stops: theme("colors.blue.900") 0%,
+      theme("colors.blue.600") 50%, theme("colors.violet.600") 90%,
+      theme("colors.violet.400") 100%;
   }
 
   @media (prefers-color-scheme: light) {
     .gradient-full {
-      --tw-gradient-stops:
-      theme('colors.white') 0%,
-      theme('colors.pink.50') 50%,
-      theme('colors.pink.100') 75%,
-      theme('colors.violet.200') 100%;
+      --tw-gradient-stops: theme("colors.white") 0%, theme("colors.pink.50") 50%,
+        theme("colors.pink.100") 75%, theme("colors.violet.200") 100%;
     }
   }
 }
