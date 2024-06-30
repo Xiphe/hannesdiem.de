@@ -7,6 +7,11 @@ const nextConfig = {
         destination: "/linktree",
         permanent: false,
       },
+      {
+        source: "/cv",
+        destination: "/",
+        permanent: false,
+      },
     ];
   },
   experimental: {
