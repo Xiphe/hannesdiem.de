@@ -9,7 +9,7 @@ const nextConfig = {
       },
       {
         source: "/cv",
-        destination: "/",
+        destination: "https://docs.google.com/document/d/1LEo6Z-sLCULuJikA1JjbfcQTfP6UavQyjM7DehcMZeQ/edit?usp=sharing",
         permanent: false,
       },
     ];
