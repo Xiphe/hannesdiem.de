@@ -25,4 +25,13 @@
         theme("colors.pink.100") 75%, theme("colors.violet.200") 100%;
     }
   }
+
+  .image-text {
+    & > :first-child {
+      margin-top: 0;
+    }
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
 }

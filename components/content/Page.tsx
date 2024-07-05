@@ -44,7 +44,7 @@ function OptionBanner({ children, image }: OptionBannerProps) {
       style={{
         backgroundImage: `url(${image.src})`,
       }}
-      className="bg-cover bg-center min-h-[80vh] py-12 flex justify-center items-center mb-12"
+      className="bg-cover bg-center min-h-[80vh] py-12 flex justify-center items-center"
     >
       {children}
     </div>
@@ -112,6 +112,8 @@ export function Page({
 
 function DefaultWrapper({ children }: PropsWithChildren) {
   return (
-    <div className={clsx(proseStyles, "mx-auto px-4 pb-24")}>{children}</div>
+    <div className={clsx(proseStyles, "mx-auto px-4 pb-24 mt-12")}>
+      {children}
+    </div>
   );
 }

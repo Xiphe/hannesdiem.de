@@ -1,5 +1,9 @@
+import clsx from "clsx";
 import { PropsWithChildren } from "react";
 
-export function FullWidthLayout({ children }: PropsWithChildren) {
-  return children;
+export function FullWidthLayout({
+  children,
+  className,
+}: PropsWithChildren<{ className: string }>) {
+  return <div className={clsx("pb-24", className)}>{children}</div>;
 }
