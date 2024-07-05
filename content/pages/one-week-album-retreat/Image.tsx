@@ -37,8 +37,7 @@ export default function Image({
   children,
   ...imageDimensions
 }: PropsWithChildren<ImageProps>) {
-  const id = useId();
-  const { aspectRatio, maxWidth, maxHeight } = {
+  const styles = {
     ...(isStaticImageData(src)
       ? ({
           aspectRatio: `${src.width}/${src.height}`,
@@ -53,40 +52,35 @@ export default function Image({
 
   return (
     <>
-      <div style={{ aspectRatio, maxWidth, maxHeight }} className={className}>
-        <div style={{ height: 0 }}>
+      <div className={clsx("relative sm:py-16", className)}>
+        <NextImage
+          priority={priority}
+          className="!m-0 object-cover hidden sm:block"
+          src={src}
+          alt={alt}
+          fill
+          sizes={sizes}
+        />
+        <div className={clsx("relative z-1 mx-auto", proseStyles, "")}>
           <div
-            className={clsx("relative overflow-hidden mx-auto")}
-            style={{ aspectRatio, maxWidth, maxHeight }}
+            className={clsx(
+              "px-2 pt-4 pb-6 sm:px-8 sm:-mx-8 sm:bg-white/60 sm:dark:bg-blue-900/60 sm:backdrop-blur-lg",
+              `image-text`
+            )}
           >
-            <NextImage
-              priority={priority}
-              className="!m-0"
-              src={src}
-              alt={alt}
-              fill
-              sizes={sizes}
-            />
+            {children}
           </div>
         </div>
-        {children ? (
-          <>
-            <div
-              style={{ aspectRatio, width: "40%" }}
-              className="sm:hidden"
-            ></div>
-            <div className={clsx("relative z-1 mx-auto mt-8", proseStyles, "")}>
-              <div
-                className={clsx(
-                  "mx-4 px-4 pt-4 pb-6 md:px-8 md:-mx-8 bg-white/60 dark:bg-blue-900/60 backdrop-blur-lg",
-                  `image-text`
-                )}
-              >
-                {children}
-              </div>
-            </div>
-          </>
-        ) : null}
+      </div>
+      <div className="relative sm:hidden" style={styles}>
+        <NextImage
+          priority={priority}
+          className="!m-0  sm:hidden"
+          src={src}
+          alt={alt}
+          fill
+          sizes={sizes}
+        />
       </div>
     </>
   );

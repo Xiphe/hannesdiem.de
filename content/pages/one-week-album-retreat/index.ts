@@ -20,6 +20,6 @@ export default {
   type: "page",
   description:
     "This September, join a group of fellow musicians to write and record an album in a seven-day journey of collaboration, creativity, and connection in a beautiful natural setting.",
-  date: 1718654200784,
+  // date: 1718654200784,
   Content,
 } satisfies Page;
