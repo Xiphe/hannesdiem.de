@@ -1,13 +1,12 @@
-import { Song } from "@/content/meta";
+import { Song, people } from "../../meta";
 import Lyrics from "./DieMuehle.mdx";
-import { ChristinaDuewel, HannesDiem } from "@/content/meta/people";
 
 export default {
   type: "song",
   title: "Die Mühle",
   slug: "song/die-muehle",
   Lyrics,
-  authors: [HannesDiem, ChristinaDuewel],
+  authors: [people.HannesDiem, people.ChristinaDuewel],
   createdDate: 1249084800000,
   createdDateFormat: {
     year: "numeric",

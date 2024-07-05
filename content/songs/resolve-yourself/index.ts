@@ -1,13 +1,12 @@
-import { Song } from "@/content/meta";
+import { Song, people } from "../../meta";
 import Lyrics from "./ResolveYourself.mdx";
-import { HannesDiem } from "@/content/meta/people";
 
 export default {
   type: "song",
   title: "Resolve Yourself",
   slug: "song/resolve-yourself",
   Lyrics,
-  authors: [HannesDiem],
+  authors: [people.HannesDiem],
   createdDate: 1686787200000,
   releasedOn: ["resolve-yourself"],
 } satisfies Song;

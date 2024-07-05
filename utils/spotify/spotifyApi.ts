@@ -1,10 +1,12 @@
-import { decrypt, encrypt, env, getOrigin } from "@/utils";
 import { kv } from "@vercel/kv";
-import { spotifyAuth, spotifyLogin } from "@/utils/cookies";
+import { spotifyAuth, spotifyLogin } from "../cookies";
 import { randomBytes } from "crypto";
 import { NextResponse } from "next/server";
 import zod from "zod";
 import { SPOTIFY_STATUS } from "./status";
+import { env } from "../env";
+import { getOrigin } from "../origin";
+import { decrypt, encrypt } from "../encrypt";
 
 const SpotifyTokenSchema = zod.object({
   access_token: zod.string().nonempty(),
@@ -74,7 +76,9 @@ interface RequestAccessTokenOpts {
   code: string;
 }
 
-export async function requestAccessToken({ code }: RequestAccessTokenOpts) {
+export async function requestSpotifyAccessToken({
+  code,
+}: RequestAccessTokenOpts) {
   const res = await fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
     body: new URLSearchParams({
@@ -121,9 +125,9 @@ export async function getSpotifyAccessToken() {
     }
 
     if (Date.now() > userTokenData.validUntil) {
-      const refreshedTokenData = await refreshToken(userTokenData);
+      const refreshedTokenData = await refreshSpotifyToken(userTokenData);
 
-      await setUserTokenData(
+      await setSpotifyUserTokenData(
         spotifyAuthData.id,
         Buffer.from(spotifyAuthData.encryptionKey, "hex"),
         {
@@ -144,7 +148,7 @@ export async function getSpotifyAccessToken() {
   }
 }
 
-export async function refreshToken(userTokenData: SpotifyUserTokenData) {
+export async function refreshSpotifyToken(userTokenData: SpotifyUserTokenData) {
   const res = await fetch("https://accounts.spotify.com/api/token", {
     method: "POST",
     body: new URLSearchParams({
@@ -174,7 +178,10 @@ export async function refreshToken(userTokenData: SpotifyUserTokenData) {
   return spotifyTokenData.data;
 }
 
-export async function saveAlbumsForUser(accessToken: string, albums: string[]) {
+export async function saveSpotifyAlbumsForUser(
+  accessToken: string,
+  albums: string[]
+) {
   const res = await fetch("https://api.spotify.com/v1/me/albums", {
     method: "PUT",
     headers: {
@@ -195,7 +202,7 @@ export async function saveAlbumsForUser(accessToken: string, albums: string[]) {
 
 const SpotifyCheckSavedAlbumsSchema = zod.array(zod.boolean());
 
-export async function checkUsersSavedAlbums(
+export async function checkSpotifyUsersSavedAlbums(
   accessToken: string,
   albums: string[]
 ) {
@@ -227,7 +234,7 @@ export const SpotifyUserTokenDataSchema = zod.object({
 });
 export type SpotifyUserTokenData = zod.infer<typeof SpotifyUserTokenDataSchema>;
 
-export async function setUserTokenData(
+export async function setSpotifyUserTokenData(
   id: string,
   encryptionKey: Buffer,
   data: SpotifyUserTokenData

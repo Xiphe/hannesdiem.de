@@ -1,6 +1,5 @@
-import { Song } from "@/content/meta";
+import { Song, people } from "../../meta";
 import Lyrics from "./WieEsMirGefaellt.mdx";
-import { HannesDiem } from "@/content/meta/people";
 
 export default {
   type: "song",
@@ -8,7 +7,7 @@ export default {
   subtitle: "für July",
   slug: "song/wie-es-mir-gefaellt",
   Lyrics,
-  authors: [HannesDiem],
+  authors: [people.HannesDiem],
   createdDate: 1249084800000,
   createdDateFormat: {
     year: "numeric",

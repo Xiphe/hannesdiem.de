@@ -3,10 +3,12 @@ import {
   getOrigin,
   primaryButtonDarkStyles,
   primaryButtonStyles,
+  proseStyles,
 } from "@/utils";
 import { Metadata, ResolvingMetadata } from "next";
 import { LocalTime } from "../LocalTime";
 import { PropsWithChildren } from "react";
+import clsx from "clsx";
 
 export async function generatePageMetadata(
   page: Page,
@@ -102,9 +104,14 @@ export function Page({
           ) : null}
         </div>
       </OptionBanner>
-      <div className="prose lg:prose-xl dark:prose-invert mx-auto px-4 pb-24">
-        <Content />
-      </div>
+
+      <Content components={{ wrapper: DefaultWrapper }} />
     </div>
+  );
+}
+
+function DefaultWrapper({ children }: PropsWithChildren) {
+  return (
+    <div className={clsx(proseStyles, "mx-auto px-4 pb-24")}>{children}</div>
   );
 }

@@ -1,13 +1,12 @@
-import { Song } from "@/content/meta";
+import { Song, people } from "../../meta";
 import Lyrics from "./AllesBrennt.mdx";
-import { HannesDiem } from "@/content/meta/people";
 
 export default {
   type: "song",
   title: "Alles Brennt",
   slug: "song/alles-brennt",
   Lyrics,
-  authors: [HannesDiem],
+  authors: [people.HannesDiem],
   createdDate: 1217548800000,
   createdDateFormat: {
     year: "numeric",

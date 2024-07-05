@@ -1,13 +1,12 @@
-import { Song } from "@/content/meta";
+import { Song, people } from "../../meta";
 import Lyrics from "./YUNORUN.mdx";
-import { HannesDiem } from "@/content/meta/people";
 
 export default {
   type: "song",
   title: "Y U NO RUN?",
   slug: "song/yunorun",
   Lyrics,
-  authors: [HannesDiem],
+  authors: [people.HannesDiem],
   createdDate: 1675209600000,
   releasedOn: ["yunorun"],
 } satisfies Song;

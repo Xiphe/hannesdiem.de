@@ -2,9 +2,9 @@
 
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
-import { SPOTIFY_STATUS } from "./status";
 import clsx from "clsx";
 import { CheckCircle, ExclamationCircle, XMark } from "@/components/icons";
+import { SPOTIFY_STATUS } from "@/utils/spotify/status";
 import { baseFocusStyles } from "@/utils/styles";
 
 type FeedbackType = "success" | "error";

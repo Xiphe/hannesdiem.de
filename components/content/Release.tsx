@@ -16,15 +16,14 @@ import {
   proseStyles,
   secondsToDuration,
 } from "@/utils";
-import SpotifyPreSaveButton from "@/app/spotify/PreSaveButton";
-import DeezerPreSaveButton from "@/app/deezer/PreSaveButton";
+import SpotifyPreSaveButton from "../spotify/PreSaveButton";
+import DeezerPreSaveButton from "../deezer/PreSaveButton";
 import { LocalTime } from "../LocalTime";
 
 const PreSaveButtons: Record<PreSaveService, ComponentType<PreSaveProps>> = {
   spotify: SpotifyPreSaveButton,
   deezer: DeezerPreSaveButton,
 };
-const shopOrder = Object.keys(shopTypes);
 
 export async function generateReleaseMetadata(
   release: Release,
@@ -86,6 +85,7 @@ export function Release({
 }: Release & {
   searchParams: Record<string, string | string[]>;
 }) {
+  const shopOrder = Object.keys(shopTypes);
   const preSavePreview = Boolean(searchParams.presave_preview);
 
   return (

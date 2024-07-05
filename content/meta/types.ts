@@ -1,3 +1,4 @@
+import { MDXContent } from "mdx/types";
 import { ComponentType, ReactNode } from "react";
 
 export interface Image {
@@ -118,7 +119,7 @@ export interface Page {
   description: string;
   date?: number;
   dateFormat?: Intl.DateTimeFormatOptions;
-  Content: ComponentType;
+  Content: MDXContent;
 }
 
 export type Post = Release | Song | Page;

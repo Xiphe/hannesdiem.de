@@ -1,9 +1,13 @@
 import Link from "next/link";
-import { SpotifyLogo } from "@/components";
-import { buttonStyles, disabledButtonStyles } from "@/utils";
-import { getSpotifyAccessToken, checkUsersSavedAlbums } from "./spotifyApi";
+import { SpotifyLogo } from "../logos";
+import {
+  buttonStyles,
+  disabledButtonStyles,
+  getSpotifyAccessToken,
+  checkSpotifyUsersSavedAlbums,
+} from "@/utils";
 import clsx from "clsx";
-import { PreSaveProps } from "@/content";
+import { type PreSaveProps } from "@/content";
 
 export default async function SpotifyPreSaveButton({
   returnUrl,
@@ -66,7 +70,7 @@ async function hasPreSave(albumId: string) {
       return false;
     }
 
-    const [has] = await checkUsersSavedAlbums(accessToken, [albumId]);
+    const [has] = await checkSpotifyUsersSavedAlbums(accessToken, [albumId]);
     return has;
   } catch (err) {
     console.error(err);
