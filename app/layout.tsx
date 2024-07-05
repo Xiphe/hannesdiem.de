@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import SpotifyFeedback from "./spotify/SpotifyFeedback";
 import { getOrigin } from "@/utils";
+import { Suspense } from "react";
 
 export async function generateMetadata() {
   const origin = getOrigin();
@@ -33,7 +34,9 @@ export default function RootLayout({
     <html lang="en" className="dark:bg-blue-900 text-black dark:text-white">
       <body className="bg-gradient-to-b gradient-full">
         {children}
-        <SpotifyFeedback />
+        <Suspense>
+          <SpotifyFeedback />
+        </Suspense>
       </body>
     </html>
   );
