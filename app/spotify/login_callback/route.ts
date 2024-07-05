@@ -1,13 +1,17 @@
 import { NextResponse } from "next/server";
-import { spotifyAuth, spotifyLogin } from "@/utils/cookies";
-import { requestAccessToken, setUserTokenData } from "../spotifyApi";
+import {
+  cookies,
+  requestSpotifyAccessToken,
+  setSpotifyUserTokenData,
+  SPOTIFY_STATUS,
+  isSpotifyStatus,
+} from "@/utils";
 import { randomBytes, randomUUID } from "crypto";
-import { SPOTIFY_STATUS, isSpotifyStatus } from "../status";
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
-  const cookie = spotifyLogin.get();
-  spotifyLogin.delete();
+  const cookie = cookies.spotifyLogin.get();
+  cookies.spotifyLogin.delete();
 
   if (!cookie) {
     return NextResponse.json(
@@ -37,18 +41,18 @@ export async function GET(request: Request) {
       throw SPOTIFY_STATUS.CODE_MISSING;
     }
 
-    const spotifyTokenData = await requestAccessToken({ code });
+    const spotifyTokenData = await requestSpotifyAccessToken({ code });
     const spotifyAuthId = randomUUID();
     const encryptionKey = randomBytes(32);
 
-    await setUserTokenData(spotifyAuthId, encryptionKey, {
+    await setSpotifyUserTokenData(spotifyAuthId, encryptionKey, {
       accessToken: spotifyTokenData.access_token,
       refreshToken: spotifyTokenData.refresh_token,
       scope: spotifyTokenData.scope,
       validUntil: Date.now() + (spotifyTokenData.expires_in - 60) * 1000,
     });
 
-    spotifyAuth.set({
+    cookies.spotifyAuth.set({
       id: spotifyAuthId,
       encryptionKey: encryptionKey.toString("hex"),
     });

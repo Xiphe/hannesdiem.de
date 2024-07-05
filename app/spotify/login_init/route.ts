@@ -1,8 +1,7 @@
 import { safeRedirect } from "@/utils/safeRedirect";
 import { NextResponse } from "next/server";
 import { randomBytes } from "node:crypto";
-import { spotifyLogin } from "@/utils/cookies";
-import { getSpotifyLoginUrl } from "../spotifyApi";
+import { cookies, getSpotifyLoginUrl } from "@/utils";
 
 export async function POST(request: Request) {
   const formData = await request.formData();
@@ -16,7 +15,7 @@ export async function POST(request: Request) {
 
   const state = randomBytes(16).toString("hex");
 
-  spotifyLogin.set({
+  cookies.spotifyLogin.set({
     state,
     successUrl: safeRedirect(successRedirect),
     errorUrl: safeRedirect(errorRedirect),

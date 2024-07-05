@@ -1,9 +1,9 @@
-import { safeRedirect } from "@/utils/safeRedirect";
 import {
+  safeRedirect,
   getSpotifyAccessToken,
   initiateSpotifyLogin,
-  saveAlbumsForUser,
-} from "../spotifyApi";
+  saveSpotifyAlbumsForUser,
+} from "@/utils";
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
@@ -40,7 +40,7 @@ export async function GET(request: Request) {
     });
   }
 
-  await saveAlbumsForUser(accessToken, [id]);
+  await saveSpotifyAlbumsForUser(accessToken, [id]);
 
   const nextUrl = new URL(returnUrl);
   nextUrl.searchParams.append("spotify_pre_save_status", "success");
