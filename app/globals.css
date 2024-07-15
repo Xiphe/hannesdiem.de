@@ -13,17 +13,61 @@
 }
 
 @layer utilities {
-  .gradient-full {
+  .bg-images-container {
+    aspect-ratio: var(--stacked-aspect);
+    @media screen(sm) {
+      aspect-ratio: var(--parallel-aspect);
+    }
+  }
+
+  .text-box-block {
+    background-color: var(--box-bg);
+    h1,
+    h2,
+    h3,
+    h4 {
+      &:first-child {
+        background-color: var(--box-headline);
+        margin: -2rem -2rem 1rem -2rem;
+        padding: 1.5rem;
+        @media screen(md) {
+          margin: -4rem 0 1rem -4rem;
+        }
+      }
+    }
+  }
+
+  .electrocute-gradient-full {
     --tw-gradient-stops: theme("colors.blue.900") 0%,
       theme("colors.blue.600") 50%, theme("colors.violet.600") 90%,
       theme("colors.violet.400") 100%;
   }
 
+  .beach-gradient-full {
+    --box-bg: #161717;
+    --box-second: #232b39;
+    --box-headline: #2e3e48;
+    --tw-gradient-stops: var(--box-bg) 0%, var(--box-second) 50%, #2f5a57 80%,
+      #b7a850 100%;
+  }
+
   @media (prefers-color-scheme: light) {
-    .gradient-full {
+    .electrocute-gradient-full {
       --tw-gradient-stops: theme("colors.white") 0%, theme("colors.pink.50") 50%,
         theme("colors.pink.100") 75%, theme("colors.violet.200") 100%;
     }
+
+    .beach-gradient-full {
+      --box-bg: #fbf2eb;
+      --box-second: #edd8c8;
+      --box-headline: #c2c9d0;
+      --tw-gradient-stops: var(--box-bg) 0%, var(--box-second) 50%, #eabe9a 80%,
+        #bdc8d8 100%;
+    }
+  }
+
+  .text-contrast-shadow-black {
+    text-shadow: 0 0 50px black, 0 0 5px rgba(0, 0, 0, 0.5);
   }
 
   .image-text {

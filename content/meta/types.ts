@@ -65,7 +65,11 @@ export type PreSaveProps =
       | Omit<ExternalPreSave, "service">
     );
 
-export interface Song {
+export interface PostCommon {
+  theme?: "electrocute" | "beach";
+}
+
+export interface Song extends PostCommon {
   type: "song";
   title: string;
   subtitle?: string;
@@ -86,7 +90,7 @@ export interface Track {
   duration: number;
 }
 
-export interface Release {
+export interface Release extends PostCommon {
   type: "release";
   title: string;
   subtitle?: string;
@@ -105,7 +109,7 @@ export interface Release {
   preSaves?: (PreSave | ExternalPreSave)[];
 }
 
-export interface Page {
+export interface Page extends PostCommon {
   type: "page";
   title: string;
   cta?: {
@@ -113,8 +117,8 @@ export interface Page {
     children: ReactNode;
   };
   externalTitle?: string;
-  banner?: Image;
-  subtitle?: string;
+  banner?: Image & { className?: string };
+  subtitle?: ReactNode;
   slug: string;
   description: string;
   date?: number;

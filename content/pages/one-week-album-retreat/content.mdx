@@ -1,141 +1,285 @@
-import { primaryButtonStyles } from '@/utils'
+import { primaryButtonStyles, focusStyles } from '@/utils'
 import { TextBlock } from '@/components';
 export { FullWidthLayout as default } from '@/components';
 import clsx from 'clsx'
 import ImageComp from  './Image';
+import BgImages from  './BgImages';
 import mixingSceneImage from './mixing-scene-one-week-retreat.jpg'
 import hannesOnPianoImage from './hannes-diem-on-grand-piano-one-week-album.jpg'
 import hannesOnGuitarImage from './hannes-diem-on-guitar-one-week-album.jpg'
+import hannesPortraitImage from './portrait_hannes.png'
+import moodBeachImage from './lokken_beach.jpg'
+import moodCollabImage from './mood_studio_pic.jpeg'
+import denmarkCoastImage from './denmark-coast-one-week-album-retreat.jpg'
+import campFireImage from './camp_fire.jpg'
+import ampImage from './mood_amp.jpeg'
+import roxyPortraitImage from './portrait_roxy.png'
+import { activityRoomImage, bedRoomImage, livingRoomImage } from './externalImages';
 
-
-
-<ImageComp
-  src={mixingSceneImage}
-  className="w-full "
-  alt="A mixer and a laptop, ready to record"
+<div
+  className="bg-teal-900 bg-cover bg-center min-h-[80vh] pt-12 pb-20 flex justify-center items-center relative overflow-hidden"
 >
+  <ImageComp
+    priority
+    src={denmarkCoastImage}
+    wrapper={false}
+    title="Picture by Lasse Diercks"
+    sizes="(max-width: 639px) 200vw, 100vw"
+    alt="The coastline of Løkken"
+  />
+  <div className="relative z-10">
+    <div className="prose lg:prose-xl prose-invert mx-auto px-4">
+      <div className="text-contrast-shadow-black">
+        <h1 className="mb-0 lg:mb-0 -ml-1.5 !text-7xl sm:!text-8xl">One Week Album</h1>
+        <h2 className="mb-0 !-mt-1 lg:mb-0 font-normal !text-2xl">seven days of collaboration, creativity and connection.</h2>
 
-This September, join a select group of musicians, songwriters, and creatives for an extraordinary week-long retreat.  
-Together, we will form a temporary band to write, and record an album in just seven days.
-
-
-### 🌟 What Awaits You
-
-Step into an inspiring space where creativity flows freely and distractions are left behind. Picture yourself surrounded by like-minded creatives, all proficient with their instruments and tools, ready to turn ideas into tangible art.  
-This retreat is about collaboration, connection, and creativity coming together to produce something fresh, raw, and authentic.
-
-</ImageComp>
-
-
-
-<ImageComp
-  src={hannesOnPianoImage}
-  className="w-full "
-  alt="Hannes Diem playing on a grand piano"
->
-
-### 🎤 The Experience
-
-<div className="grid md:grid-cols-2 gap-x-8">
-
-<div>
-#### 🌞 Activate Your Creativity
-
-Begin each day with energizing activities that awaken your body and mind, setting the tone for a productive and inspiring day ahead, ensuring you are fully prepared to dive into the creative process.
+        <h3 className="!mt-8 !text-3xl !sm:text-4xl ml-0.5">
+          <span className="bg-black">Løkken, Denmark<br />September 14-21, 2024</span>
+        </h3>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div>
-#### 🤝 Foster Deep Connections 
+<TextBlock className="relative z-10">
 
-Engage in group bonding sessions to build trust and create a safe space where the intimate and vulnerable aspects of music and poetry can be shared and celebrated among fellow creatives.
+
+## Do you answer YES to these questions?
+
+Are you keen to meet your inspirational depth?    
+Do you want to create music not only from the mind, but also from the heart and body?    
+Are you experienced creating sound with either your voice, an instrument or programmatically?  
+Do you seek connection and co-creation among curious people? 
+
+<div className="text-center font-bold text-2xl">
+Then this reateat is for you!
 </div>
-
-<div>
-#### 💡 Spark Inspiration
-
-
-Participate in workshops that ignite your creativity and encourage collaboration. These sessions provide you with essential tools and techniques to explore new ideas, foster innovative thinking, and push the boundaries of your artistic expression.
-</div>
-
-<div>
-#### 🎼 Realize Your Vision
-
-Spend dedicated time composing, writing, and recording your music. Capture the raw essence of your creations, focusing on collaboration. Document your journey and create behind-the-scenes content to share your creative process and experiences.
-</div>
-
-<div>
-#### 🌙 Reflect and Relax
-
-As the sun sets, unwind with evening jams and reflection sessions. These moments offer the chance to share your work, enjoy spontaneous performances, and connect over a shared love of music.
-</div>
-
-</div>
-
-
-
-</ImageComp>
-
-<ImageComp
-  src={hannesOnGuitarImage}
-  className="w-full"
-  alt="Hannes Diem playing Guitar in the sun"
->
-
-
-### 🏡 What We Provide
-
-- **Accommodations**: A welcoming house with spaces for sleeping and working
-- **Nourishing Meals**: Delicious food prepared to sustain your creativity and keep you energized.
-- **Recording Tools**: Equipment to authentically capture our musical creations.
-- **Inspiring Environment**: Access to beautiful natural surroundings, such as beaches, forests, or villages, perfect for walks and inspiration.
-- **Supportive Structure**: A balanced environment with activities to guide your creative process and foster a collaborative atmosphere.
-
-
-
-</ImageComp>
-
-
-<TextBlock className="my-16">
-
-&nbsp;
-
-### 🎒 What to Bring
-
-- **Your Musical Tools**: Instruments, voices, or production gear — whatever you need to create and share your music proficiently.
-- **Open Mind and Collaborative Spirit**: Be ready to fully engage with the group and embrace new ideas.
-- **Comfortable Attire**: Suitable for movement, outdoor activities, and relaxed creative sessions.
-- **Personal Essentials**: Items you need for comfort and convenience, including toiletries.
-- **Commitment to Unplug**: Clear your schedule, disconnect from distractions, and immerse yourself in the creative process.
-
-&nbsp;
-
-### 🌈 What to Expect
-
-Throughout this retreat, you will:
-
-- **Dive Deep into Creativity**: Follow a schedule that maximizes your creative potential through diverse activities and workshops.
-- **Forge Meaningful Relationships**: Build deep connections with fellow creatives through shared experiences and collaborative efforts.
-- **Create New Music**: Complete the retreat with new compositions and recordings that reflect the collective creativity of the group.
-- **Grow Artistically**: Push your creative boundaries, learn new techniques, and discover new aspects of your artistic self.
-- **Document Your Journey**: Share your experience on social media, creating engaging behind-the-scenes content.
-
-&nbsp;
-
-### 🎟️ Join Us
-
-This is our first-ever retreat, and we're offering it at a unique, cost-only rate to cover just the basic expenses for accommodations and meals. Your participation is crucial in shaping the future of these events. We look forward to your feedback to refine and enhance the experience for future iterations.
-
-Join us for an unforgettable week of music, creativity, and connection. Let's create something extraordinary together.
-
-
-For more information and to register, [contact us](mailto:album-retreat@hannesdiem.de).
 
 </TextBlock>
 
-&nbsp;
-
-<div className="flex content-center justify-center">
-  <a href="mailto:album-retreat@hannesdiem.de" className={primaryButtonStyles}>Join us!</a>
+<div className="flex content-center justify-center -mt-8 sm:-mt-16 relative z-20">
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLScipgLryLEnfyoDgXDqukDVx7YrTU_2SRyQtwXL2f-E0oPAVw/viewform?usp=sf_link"
+    className={primaryButtonStyles}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Join us!
+  </a>
 </div>
 
 
+<BgImages 
+  className="mt-16"
+  images={[
+    [hannesOnPianoImage, 'Hannes Diem playing on a grand piano'],
+    [mixingSceneImage, 'Hannes Diem playing on a grand piano', undefined, false],
+  ]}
+>
+  <h4
+    className="text-5xl sm:text-6xl xl:text-8xl text-white font-bold md:text-center ml-8 text-contrast-shadow-black"
+  >
+    <span className="bg-[rgba(16,17,17,0.8)]">Feel. <br className="sm:hidden" />Connect. <br className="sm:hidden" />Create.</span>
+</h4>
+</BgImages>
+
+
+<TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
+
+## What's gonna happen?
+
+A week of inner work, group building, creative practice and music making.  
+Together we transform a group of strangers into an orchestra bursting with ideas.
+
+- We build an appreciative band of trust and support within the group
+- We establish techniques to quickly communicate our raw creative ideas
+- We tap into our unconscious inspiration 
+- We wield our emotions into sound
+- We practice rituals of actualization 
+
+**This is an unforgettable experience where true connections are formed as well as fresh, raw and authentic music is being created.**
+
+</TextBlock>
+
+<BgImages 
+  className="lg:mt-16"
+  images={[
+    [moodBeachImage, 'Løkken beach drone shot', 'Photo by Lasse Diercks'],
+    [moodCollabImage, 'A studio table', 'Photo by Lasse Diercks', false],
+    [campFireImage, 'A group of people enjoying a campfire', 'Photo by Lasse Diercks', false],
+  ]}
+/>
+
+
+<TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
+
+## A typical day
+
+**8:00**:  Wake up the body with an active meditation  
+**9:00**:  Breakfast with Granola, fresh baked bread and fruits  
+**10:30**: Morning session about body-percussion and overcoming shame  
+**13:00**: Soulful Shakshuka for lunch and time to unwind, take a walk on the beach or do yoga   
+**15:00**: Afternoon session writing the "worst song ever" and dealing with perfectionism  
+**19:00**: Dinner, p. ex. “Smørrebrød” _(a traditional open-faced sandwich in the cuisines of Denmark)_ expanding into a jam session in front of the fireplace  
+**21:00**: "Open Mic" style concert   
+
+**Inspiration is a wonderful, yet unpredictable fairy.**  
+During all times we might spontaneously follow the flow of things, tape a vocal line, record a live jam or dance to a beat we just came up with. 
+
+</TextBlock>
+
+
+
+<h2 className="text-center text-6xl font-bold my-8 md:my-16">About us</h2>
+
+<div className="flex flex-col gap-8 lg:flex-row lg:gap-20 lg:px-24 mx-auto justify-center">
+
+<div>
+
+<div className="max-w-96 mx-auto px-8 -mb-8 sm:-mb-16 lg:mb-0">
+  <ImageComp 
+    src={hannesPortraitImage}
+    alt="Portrait of Hannes Diem"
+    className="rounded-full overflow-hidden"
+    title="Photo by Lasse Diercks"
+    sizes="320px"
+  />
+</div>
+
+<TextBlock bigOnLg={false}>
+
+### Hannes
+
+Greeted into this world with the soulful blues music of his father he grew up with instruments and music all around him and learned to play drums, percussion and piano at a young age.
+
+At age 17 he recorded his first progressive metal album and from there on journeys through the genres from gothic over rap, singer-songwriter and alternative to electronic music.  
+2022 and counting he is coming up with over 356 song ideas per year when doing livestream improvisation sessions where he transmutes emotions to sounds.
+
+For over 6 years he has been living in his Campervan and practicing a digital nomad lifestyle.  
+Despite living "the dream" at marvelous places, working remotely, surfing and partying, he had increasing difficulties accessing his musical roots and eventually faced a series of severe depressive episodes.  
+These times of darkness and struggle ultimately led him on a path of recalibrating beliefs, befriending shadows, and finding new ways to grow. Similar to his fluidity in genres he values approaches from conventional movement and psychotherapy as well as breathwork, yoga, tantra and more.
+
+**It's this careful mixture of inner work and musical expression that he is inviting you in. Come and join a dance between bliss and anger, between tears and laughter, between industrial and funk.**
+
+
+</TextBlock>
+
+</div>
+
+<div>
+
+
+<div className="max-w-96 mx-auto px-8 -mb-8 sm:-mb-16 lg:mb-0">
+<ImageComp 
+  src={roxyPortraitImage}
+  alt="Portrait of Roxanna Diercks"
+  className="rounded-full overflow-hidden"
+  title="Photo by Jochen Kilian"
+  sizes="320px"
+/>
+</div>
+
+<TextBlock bigOnLg={false}>
+
+### Roxanna
+
+born in 1988, she lives in Hamburg or in her van somewhere between Denmark and Spain. 
+
+She studied business administration and cultural management. She has worked in marketing and event management for the last 15 years. 
+
+In search of freedom, reflection on the essentials and the sea, she shares her stories. Her passions are writing and cooking. She has spent a lot of time at the sea and has a fable for Scandinavian culture. Her buttermilk-yellow vintage car "Susy" has become a complex attitude to life and an engine of thought. If there's enough wind, she'll be kitesurfing.
+
+**In this week she will be our feel good partner, supporting where it's useful, creating the meals, holding the space or as an active listener to everybody who needs one. 
+Her vision for the retreat is: Lagom. It describes a deeply Swedish attitude to life and means “not too much, not too little”, or “just right”.**
+
+
+</TextBlock>
+
+</div>
+
+</div>
+
+
+
+<BgImages 
+  className="lg:mt-16"
+  images={[
+    [bedRoomImage, 'comfortable bed room','© 2024 Ferienhaus.de GmbH', false],
+    [livingRoomImage, 'Dining room of our house','© 2024 Ferienhaus.de GmbH', false],
+    [activityRoomImage, 'Activity room, showing lots of space and a piano','© 2024 Ferienhaus.de GmbH'],
+  ]}
+>
+
+</BgImages>
+
+
+<TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
+
+
+## The location
+
+We meet in a cozy, hygge location that's about feeling comfortable. Our creations will take place in a living room, the kitchen or in the garden and we're gonna capture that vibe when we record.
+
+Our accommodation is a former farmer yard with two 3-person bedrooms and 2 rooms with double beds and a shared bathroom. It has a sauna, a dining hall, an activity room and a hang-out area with a fireplace as well as endless access to nature. The beach is 1 km away.
+
+Løkken is an old, small fishing town. Løkken's beach is lined with a beautiful dune landscape, which becomes rougher as you go north and turns into a cliff. Small bathing houses decorate the sandy beach.
+
+<a href="https://www.daenemark.de/haus/43136/?date_from=2024-09-14&date_to=2024-09-21&adults=8&order=space_living_desc&discount=yes&page=1" target="_blank" rel="noopener noreferrer" className={focusStyles}>Learn more about the accommodation</a>
+
+
+</TextBlock>
+
+
+
+<BgImages 
+  className="lg:mt-16"
+  images={[
+    [ampImage, 'A guitar amp', 'Photo by Lasse Diercks'],
+    [hannesOnGuitarImage, 'Hannes Diem playing on a guitar', undefined, false],
+  ]}
+>
+  <h4
+    className="text-4xl sm:text-7xl xl:text-9xl text-white font-bold md:text-center ml-8 text-contrast-shadow-black"
+  >
+    <span className="bg-[rgba(16,17,17,0.8)]">Come as you are.</span>
+</h4>
+</BgImages>
+
+
+<TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
+
+
+## What to bring
+
+**Bring all your aspects! We want to see and welcome all of you!**
+
+- Idea capturing devices  
+  _Notebook, dictation app, paper and pen,..._
+- Your Instruments or tools you use to create
+- Commitment to unplug and a clear schedule
+- Comfortable clothes, suitable for outdoor movement, swimming and relaxing  
+  _we recommend a rain jacket and warm clothes! It's still Denmark and September ;)_
+- Bedsheets including blanket cover and pillowcases and towels
+- Personal items to make you feel comfortable  
+  _p. Ex. blanket, favorite tea, nut butter, yoga mat..._
+
+</TextBlock>
+
+<hr className="border-black dark:border-white w-64 border-4 mx-auto mt-16" />
+
+<h4 className="text-center text-5xl sm:text-6xl font-bold my-8 px-4">This is gonna be wonderful</h4>
+
+<div className="flex content-center justify-center">
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLScipgLryLEnfyoDgXDqukDVx7YrTU_2SRyQtwXL2f-E0oPAVw/viewform?usp=sf_link"
+    className={primaryButtonStyles}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Join us!
+  </a>
+</div>
+
+<div className="text-center mt-8 mb-32 italic opacity-80">
+Questions, uncertainties, feedback? Please <a href="mailto:oneweekalbum@hannesdiem.de" className={clsx("underline", focusStyles)}>get in touch with us</a>!
+</div>

@@ -1,15 +1,23 @@
-import { proseStyles } from "@/utils/styles";
 import clsx from "clsx";
 import { ComponentPropsWithoutRef } from "react";
+
+interface TextBlockProps extends ComponentPropsWithoutRef<"div"> {
+  bigOnLg?: false;
+}
 
 export function TextBlock({
   children,
   className,
+  bigOnLg,
   ...props
-}: ComponentPropsWithoutRef<"div">) {
+}: TextBlockProps) {
   return (
     <div
-      className={clsx(proseStyles, "px-2 md:px-0 mx-auto", className)}
+      className={clsx(
+        "text-box-block sm:mb-8 prose dark:prose-invert  p-8 mx-auto shadow-sm",
+        bigOnLg !== false && "lg:prose-xl",
+        className
+      )}
       {...props}
     >
       {children}

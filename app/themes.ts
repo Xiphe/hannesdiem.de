@@ -1,0 +1,20 @@
+// import { proseNormalStyles } from "@/utils";
+// import clsx from "clsx";
+// import { createServerContext, useContext } from "react";
+
+export interface Theme {
+  htmlStyles?: string;
+  bodyStyles?: string;
+  // proseColors?: string;
+}
+
+export const electrocuteTheme = {
+  htmlStyles: "dark:bg-blue-900 text-black dark:text-white",
+  bodyStyles: "bg-gradient-to-b electrocute-gradient-full prose-zinc",
+} satisfies Theme;
+
+export const beachTheme: Theme = {
+  htmlStyles: "dark:bg-blue-900 text-black dark:text-white",
+  bodyStyles:
+    "bg-gradient-to-b beach-gradient-full prose-stone dark:prose-gray",
+};

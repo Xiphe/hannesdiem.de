@@ -47,5 +47,4 @@ export const primaryButtonDarkStyles = clsx(
   pbDarkStyles
 );
 
-export const proseNormalStyles = "prose dark:prose-invert lg:prose-xl";
-export const proseStyles = `prose-zinc ${proseNormalStyles}`;
+export const proseStyles = "prose dark:prose-invert lg:prose-xl";

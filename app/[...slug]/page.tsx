@@ -1,6 +1,6 @@
 import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
-import { content } from "@/content";
+
 import {
   Release,
   generateReleaseMetadata,
@@ -12,12 +12,13 @@ import {
 } from "@/components";
 
 import { PageProps } from "@/utils/types";
+import { getPost } from "./getPost";
 
 export async function generateMetadata(
   { params: { slug }, searchParams }: PageProps<{ slug: string }>,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const post = content[joinedSlug(slug)];
+  const post = getPost(slug);
 
   if (!post) {
     return notFound();
@@ -36,8 +37,8 @@ export async function generateMetadata(
 export default function ContentPage({
   params: { slug },
   searchParams,
-}: PageProps<{ slug: string }>) {
-  const post = content[joinedSlug(slug)];
+}: PageProps<{ slug: string | string[] }>) {
+  const post = getPost(slug);
 
   if (!post) {
     return notFound();
@@ -57,8 +58,4 @@ export default function ContentPage({
       <Footer />
     </div>
   );
-}
-
-function joinedSlug(slug: string[] | string) {
-  return Array.isArray(slug) ? slug.join("/") : slug;
 }
