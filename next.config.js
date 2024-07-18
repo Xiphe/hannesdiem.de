@@ -8,6 +8,11 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: "/owa",
+        destination: "/one-week-album-retreat",
+        permanent: true,
+      },
+      {
         source: "/cv",
         destination:
           "https://docs.google.com/document/d/1LEo6Z-sLCULuJikA1JjbfcQTfP6UavQyjM7DehcMZeQ/edit?usp=sharing",
