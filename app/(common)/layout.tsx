@@ -1,10 +1,10 @@
 import "../globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import SpotifyFeedback from "./spotify/SpotifyFeedback";
 import { getOrigin } from "@/utils";
 import { PropsWithChildren, Suspense } from "react";
 import { Theme, electrocuteTheme } from "../themes";
-import clsx from "clsx";
 
 export async function generateMetadata() {
   const origin = getOrigin();
@@ -44,6 +44,7 @@ export default function RootLayout({
         <Suspense>
           <SpotifyFeedback />
         </Suspense>
+        <Analytics />
       </body>
     </html>
   );
