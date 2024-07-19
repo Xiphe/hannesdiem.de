@@ -11,12 +11,13 @@ export async function generatePageMetadata(
   url.pathname = page.slug;
 
   return {
-    title: page.externalTitle ?? page.title,
+    title: page.title,
     description: page.description,
     openGraph: {
       title: page.title,
       description: page.description,
       type: "website",
+      images: page.ogImage,
       url: url.href,
     },
   } satisfies Metadata;

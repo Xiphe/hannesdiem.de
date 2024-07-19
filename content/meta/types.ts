@@ -1,4 +1,5 @@
 import { MDXContent } from "mdx/types";
+import { Metadata } from "next";
 import { ComponentType, ReactNode } from "react";
 
 export interface Image {
@@ -116,7 +117,7 @@ export interface Page extends PostCommon {
     href: string;
     children: ReactNode;
   };
-  externalTitle?: string;
+  ogImage?: NonNullable<Metadata["openGraph"]>["images"];
   banner?: Image & { className?: string };
   subtitle?: ReactNode;
   slug: string;
