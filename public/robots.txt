@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hannesdiem.de/
+
+# Sitemaps
+Sitemap: https://hannesdiem.de/sitemap.xml

@@ -30,6 +30,8 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "0.5.13"
+    "@tailwindcss/typography": "0.5.13",
+    "@types/micromatch": "4.0.9",
+    "micromatch": "4.0.7"
   }
 }
