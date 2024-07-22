@@ -13,6 +13,6 @@ export default {
   slug: "one-week-album-retreat",
   type: "page",
   description:
-    "September 14-21, 2024 join seven creatives in Løkken to grow into a band and create soulful music",
+    "September 14-21, 2024 join seven artist in Løkken to grow into a band and create soulful music",
   Content,
 } satisfies Page;
