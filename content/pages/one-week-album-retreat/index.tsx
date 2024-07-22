@@ -7,8 +7,8 @@ export default {
   theme: "beach",
   title: "One Week Album",
   ogImage: [
-    { ...ogLandscape, url: ogLandscape.src },
     { ...ogSquare, url: ogSquare.src },
+    { ...ogLandscape, url: ogLandscape.src },
   ],
   slug: "one-week-album-retreat",
   type: "page",
