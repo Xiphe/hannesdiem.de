@@ -4,6 +4,7 @@ import {
 } from "next/dist/shared/lib/get-img-props";
 import { PropsWithChildren } from "react";
 import Image from "./Image";
+import clsx from "clsx";
 
 type BgImagesProps = {
   className?: string;
@@ -63,7 +64,10 @@ export default function BgImages({
                 }vw`}
                 key={src.src}
                 title={title}
-                className={includeStacked === false ? "hidden sm:block" : ""}
+                className={clsx(
+                  includeStacked === false ? "hidden sm:block" : "",
+                  "w-full"
+                )}
               />
             ))}
           </div>

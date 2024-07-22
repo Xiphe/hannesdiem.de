@@ -16,7 +16,9 @@ import ampImage from './mood_amp.jpeg'
 import roxyPortraitImage from './portrait_roxy.png'
 import { activityRoomImage, bedRoomImage, livingRoomImage } from './externalImages';
 
-<div
+<article>
+
+<header
   className="bg-teal-900 bg-cover bg-center min-h-[80vh] pt-12 pb-20 flex flex-col relative overflow-hidden"
 >
   <ImageComp
@@ -32,19 +34,18 @@ import { activityRoomImage, bedRoomImage, livingRoomImage } from './externalImag
     <div className="prose lg:prose-xl prose-invert mx-auto px-4">
       <div className="text-contrast-shadow-black flex flex-col">
         <h1 className="mb-0 lg:mb-0 -ml-1.5 !text-7xl sm:!text-8xl">One Week Album</h1>
-        <h2 className="mb-0 !-mt-1 lg:mb-0 font-medium !text-2xl">7 artist spend 7 days to grow into a band and create soulful music.</h2>
+        <h2 className="">7 artist spend 7 days to grow into a band and create soulful music.</h2>
 
-        <h3 className="!mt-8 !text-3xl !sm:text-4xl ml-0.5">
-          <span className="bg-black">Løkken, Denmark<br />September 14-21, 2024</span>
+        <h3 className="">
+          Løkken, Denmark<br />September 14-21, 2024
         </h3>
       </div>
     </div>
   </div>
   <div className="grow" />
-</div>
+</header>
 
 <TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
-
 
 ## Do you answer YES to these questions?
 
@@ -130,14 +131,12 @@ During all times we might spontaneously follow the flow of things, capture a voc
 
 </TextBlock>
 
-
-
+<section>
 <h2 className="text-center text-6xl font-bold my-8 md:my-16">About us</h2>
-
 <div className="flex flex-col gap-8 lg:flex-row lg:gap-20 lg:px-24 mx-auto justify-center">
 
+{/* Hannes */}
 <div>
-
 <div className="max-w-96 mx-auto px-8 -mb-8 sm:-mb-16 lg:mb-0">
   <ImageComp 
     src={hannesPortraitImage}
@@ -147,8 +146,7 @@ During all times we might spontaneously follow the flow of things, capture a voc
     sizes="320px"
   />
 </div>
-
-<TextBlock bigOnLg={false}>
+<TextBlock bigOnLg={false} as="div">
 
 ### Hannes
 
@@ -163,14 +161,11 @@ These times of darkness and struggle ultimately led him on a path of recalibrati
 
 **It's this careful mixture of inner work and musical expression that he is inviting you in. Come and join a dance between bliss and anger, between tears and laughter, between industrial and funk.**
 
-
 </TextBlock>
-
 </div>
 
+{/* Roxy */}
 <div>
-
-
 <div className="max-w-96 mx-auto px-8 -mb-8 sm:-mb-16 lg:mb-0">
 <ImageComp 
   src={roxyPortraitImage}
@@ -180,8 +175,7 @@ These times of darkness and struggle ultimately led him on a path of recalibrati
   sizes="320px"
 />
 </div>
-
-<TextBlock bigOnLg={false}>
+<TextBlock bigOnLg={false} as="div">
 
 ### Roxanna
 
@@ -194,14 +188,12 @@ In search of freedom, reflection on the essentials and the sea, she shares her s
 **In this week she will be our feel good partner, supporting where it's useful, creating the meals, holding the space or as an active listener to everybody who needs one. 
 Her vision for the retreat is: Lagom. It describes a deeply Swedish attitude to life and means “not too much, not too little”, or “just right”.**
 
-
 </TextBlock>
-
 </div>
 
 </div>
-
-
+</section>
+{/* // ABOUT */}
 
 <BgImages 
   className="lg:mt-16"
@@ -217,7 +209,6 @@ Her vision for the retreat is: Lagom. It describes a deeply Swedish attitude to 
 
 <TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
 
-
 ## The location
 
 We meet in a cozy, hygge location that's about feeling comfortable. Our creations will take place in a living room, the kitchen or in the garden and we're gonna capture that vibe when we record.
@@ -228,10 +219,7 @@ Løkken is an old, small fishing town. Løkken's beach is lined with a beautiful
 
 <a href="https://www.daenemark.de/haus/43136/?date_from=2024-09-14&date_to=2024-09-21&adults=8&order=space_living_desc&discount=yes&page=1" target="_blank" rel="noopener noreferrer" className={focusStyles}>Learn more about the accommodation</a>
 
-
 </TextBlock>
-
-
 
 <BgImages 
   className="lg:mt-16"
@@ -249,7 +237,6 @@ Løkken is an old, small fishing town. Løkken's beach is lined with a beautiful
 
 
 <TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
-
 
 ## What to bring
 
@@ -324,6 +311,8 @@ so we can get to learn a bit about you. We will get in touch shortly after that 
 
 You will also need to plan your travels to <a href="https://www.rome2rio.com/map/Honolulu/L%C3%B8kken#trips" target="_blank" rel="noopener noreferrer">Løkken</a>.
 
-When there are any questions, please <a href="mailto:oneweekalbum@hannesdiem.de" target="_blank" rel="noopener noreferrer">get in touch with us</a>.
+When you have questions, please <a href="mailto:oneweekalbum@hannesdiem.de" target="_blank" rel="noopener noreferrer">get in touch with us</a>.
 
 </TextBlock>
+
+</article>
