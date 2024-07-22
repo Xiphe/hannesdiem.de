@@ -1,11 +1,15 @@
 import { Page } from "@/content";
 import Content from "./content.mdx";
-import ogImage from "./ogImage_feel_connect_create.png";
+import ogLandscape from "./og_landscape.jpg";
+import ogSquare from "./og_square.jpg";
 
 export default {
   theme: "beach",
   title: "One Week Album",
-  ogImage: { ...ogImage, url: ogImage.src },
+  ogImage: [
+    { ...ogLandscape, url: ogLandscape.src },
+    { ...ogSquare, url: ogSquare.src },
+  ],
   slug: "one-week-album-retreat",
   type: "page",
   description:
