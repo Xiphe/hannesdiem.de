@@ -15,6 +15,7 @@ import campFireImage from './camp_fire.jpg'
 import ampImage from './mood_amp.jpeg'
 import roxyPortraitImage from './portrait_roxy.png'
 import { activityRoomImage, bedRoomImage, livingRoomImage } from './externalImages';
+import { SparklesIcon, FireIcon, MusicalNoteIcon, UserGroupIcon, SunIcon, MoonIcon } from '@heroicons/react/24/solid'
 
 <article>
 
@@ -49,10 +50,12 @@ import { activityRoomImage, bedRoomImage, livingRoomImage } from './externalImag
 
 ## Do you answer YES to these questions?
 
-Are you keen to meet your inspirational depth?    
-Do you want to create music from the mind, heart, and body?  
-Are you experienced creating sound with either your voice, an instrument or programmatically?  
-Do you seek connection and co-creation among curious people? 
+<ul className="list-none !p-0">
+  <li className="flex !m-0 !p-0"><SparklesIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Are you keen to meet your inspirational depth?</li>
+  <li className="flex !m-0 !p-0"><FireIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Do you want to create music from the mind, heart, and body?</li>
+  <li className="flex !m-0 !p-0"><MusicalNoteIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Are you experienced creating sound with either your voice, an instrument or programmatically?</li>
+  <li className="flex !m-0 !p-0"><UserGroupIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Do you seek connection and co-creation among curious people?</li>
+</ul>
 
 <div className="text-center font-bold text-2xl">
 Then this retreat is for you!
@@ -118,13 +121,22 @@ Together we transform a group of strangers into an orchestra bursting with ideas
 
 ## A typical day
 
-**8:00**:  Wake up the body with an active meditation  
-**9:00**:  Breakfast with Granola, fresh baked bread and fruits  
-**10:30**: Morning session about body-percussion and overcoming shame  
-**13:00**: Soulful Shakshuka for lunch and time to unwind, take a walk on the beach or do yoga   
-**15:00**: Afternoon session writing the "worst song ever" and dealing with perfectionism  
-**19:00**: Dinner, p. ex. “Smørrebrød” _(a traditional open-faced sandwich in the cuisines of Denmark)_ expanding into a jam session in front of the fireplace  
-**21:00**: "Open Mic" style concert   
+<div className="flex gap-4">
+  <div className="flex gap-4 flex-col justify-between items-center">
+    <SunIcon className="w-8" />
+    <div className="grow w-px bg-current" />
+    <MoonIcon className="w-6 mb-1 lg:mb-2" />
+  </div>
+  <ul className="list-none !p-0 !m-0.5 lg:!mt-0">
+    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**8:00**:</span><span> Wake up the body with an active meditation</span></li>
+    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**9:00**:</span><span> Breakfast with Granola, fresh baked bread and fruits</span></li>
+    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**10:30**:</span><span>Morning session about body-percussion and overcoming shame</span></li>
+    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**13:00**:</span><span>Soulful Shakshuka for lunch and time to unwind, take a walk on the beach or do yoga </span></li>
+    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**15:00**:</span><span>Afternoon session writing the "worst song ever" and dealing with perfectionism</span></li>
+    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**19:00**:</span><span>Dinner, p. ex. “Smørrebrød” _(a traditional open-faced sandwich in the cuisines of Denmark)_ expanding into a jam session in front of the fireplace</span></li>
+    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**21:00**:</span><span>"Open Mic" style concert </span></li>
+  </ul>
+</div>
 
 **Inspiration is a wonderful, yet unpredictable fairy.**  
 During all times we might spontaneously follow the flow of things, capture a vocal line, record a live jam or dance to a beat we just came up with. 
