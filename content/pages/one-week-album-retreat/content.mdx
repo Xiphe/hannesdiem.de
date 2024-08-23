@@ -4,9 +4,13 @@ export { FullWidthLayout as default } from '@/components';
 import clsx from 'clsx'
 import ImageComp from  './Image';
 import BgImages from  './BgImages';
+import EventLocation from './EventLocation';
 import mixingSceneImage from './mixing-scene-one-week-retreat.jpg'
 import hannesOnPianoImage from './hannes-diem-on-grand-piano-one-week-album.jpg'
 import hannesOnGuitarImage from './hannes-diem-on-guitar-one-week-album.jpg'
+import tarifaBudhaWalkImage from './tarifa_budha_walk.jpeg'
+import portugalImage from './portugal.jpg'
+import germanyImage from './nothern_germany.jpeg'
 import hannesPortraitImage from './portrait_hannes.png'
 import moodBeachImage from './lokken_beach.jpg'
 import moodCollabImage from './mood_studio_pic.jpeg'
@@ -35,11 +39,7 @@ import { SparklesIcon, FireIcon, MusicalNoteIcon, UserGroupIcon, SunIcon, MoonIc
     <div className="prose lg:prose-xl prose-invert mx-auto px-4">
       <div className="text-contrast-shadow-black flex flex-col">
         <h1 className="mb-0 lg:mb-0 -ml-1.5 !text-7xl sm:!text-8xl">One Week Album</h1>
-        <h2 className="">7 artist spend 7 days to grow into a band and create soulful music.</h2>
-
-        <h3 className="">
-          Løkken, Denmark<br />September 14-21, 2024
-        </h3>
+        <h2 className="">7 random artist spend 7 days to grow into a band and unleash their creativity</h2>
       </div>
     </div>
   </div>
@@ -63,6 +63,7 @@ Then this retreat is for you!
 
 </TextBlock>
 
+{/*
 <div className="flex content-center justify-center -mt-8 sm:-mt-16 relative z-20">
   <a
     href="https://docs.google.com/forms/d/e/1FAIpQLScipgLryLEnfyoDgXDqukDVx7YrTU_2SRyQtwXL2f-E0oPAVw/viewform?usp=sf_link"
@@ -73,7 +74,39 @@ Then this retreat is for you!
     Join us!
   </a>
 </div>
+*/}
 
+<div className="flex flex-wrap content-center justify-center gap-16 lg:gap-6 max-w-7xl md:px-8 lg:px-0 mx-auto mb-16 lg:mb-32 mt-16 lg:-mt-12 relative z-20">
+  <EventLocation
+    title="Løkken, Denmark"
+    date="September 14-21, 2024"
+    image={moodBeachImage}
+    alt="Løkken Beach"
+    cta="Apply now!"
+    ctaHref="https://docs.google.com/forms/d/e/1FAIpQLScipgLryLEnfyoDgXDqukDVx7YrTU_2SRyQtwXL2f-E0oPAVw/viewform?usp=sf_link"
+  />
+  <EventLocation
+    title="Andalusia, Spain"
+    waitList
+    date="Spring 2025"
+    image={tarifaBudhaWalkImage}
+    alt=""
+  />
+  <EventLocation
+    title="Portugal"
+    waitList
+    date="Spring 2025"
+    image={portugalImage}
+    alt=""
+  />
+  <EventLocation
+    title="Northern Germany"
+    waitList
+    date="Summer 2025"
+    image={germanyImage}
+    alt=""
+  />
+</div>
 
 <BgImages 
   className="mt-16"

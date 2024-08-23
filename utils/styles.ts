@@ -8,10 +8,16 @@ export const focusStyles = clsx(
   "focus-visible:outline-blue-800 dark:focus-visible:outline-pink-200 "
 );
 
-const baseButtonStyles =
-  "font-bold text-lg inline-flex items-center justify-center px-6 py-4 rounded-lg no-underline disabled:opacity-50";
+export const bareBaseButtonStyles =
+  "font-bold inline-flex items-center justify-center rounded-lg no-underline";
 
-const buttonColorStyles = "bg-pink-50 border-2 border-current dark:bg-blue-600";
+export const baseButtonStyles = clsx(
+  bareBaseButtonStyles,
+  "text-lg px-6 py-4 disabled:opacity-50"
+);
+
+export const buttonColorStyles =
+  "bg-pink-50 border-2 border-current dark:bg-blue-600";
 
 const buttonHoverStyles = "hover:bg-pink-100 dark:hover:bg-blue-500";
 
@@ -29,8 +35,13 @@ export const disabledButtonStyles = clsx(
   disabledButtonExtraStyles
 );
 
-const pbDarkStyles =
-  "shadow-md border-2 border-current bg-gradient-to-b text-white from-pink-700 to-pink-500 hover:from-pink-600 hover:to-pink-400";
+export const primaryButtonDarkColors =
+  "bg-gradient-to-b border-current text-white from-pink-700 to-pink-500";
+
+const pbDarkStyles = clsx(
+  primaryButtonDarkColors,
+  "shadow-md border-2 hover:from-pink-600 hover:to-pink-400"
+);
 
 const pbStyles =
   "shadow-md border-2 border-current bg-gradient-to-b text-black dark:text-white from-blue-50 to-blue-200 hover:from-blue-200 hover:to-blue-300  dark:from-pink-700 dark:to-pink-500 dark:hover:from-pink-600 dark:hover:to-pink-400";
