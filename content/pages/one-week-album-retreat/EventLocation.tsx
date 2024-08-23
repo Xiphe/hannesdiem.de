@@ -31,8 +31,8 @@ export default function EventLocation({
   return (
     <Container
       className={clsx(
-        "w-2/3 sm:w-2/5 lg:w-1/5 max-w-72 block text-center",
-        waitList && "opacity-65"
+        "w-2/3 sm:w-2/5 lg:w-1/5 max-w-72 block text-center hover:scale-105 transition",
+        waitList && "opacity-65 hover:opacity-90"
       )}
       href={
         waitList
@@ -57,7 +57,7 @@ export default function EventLocation({
             src={image}
             alt={alt}
             className="object-cover"
-            sizes="25vw"
+            sizes="272px"
             fill
           />
         </span>
