@@ -9,13 +9,15 @@ const DEFAULT_REDIRECT = "/";
  * @param {string} to The redirect destination
  * @param {string} defaultRedirect The redirect to use if the to is unsafe.
  */
-export function safeRedirect(
+export async function safeRedirect(
   to: FormDataEntryValue | string | null | undefined,
   defaultRedirect: string = DEFAULT_REDIRECT
 ) {
   if (
     typeof to === "string" &&
-    (to.startsWith("/") || to.startsWith("//") || to.startsWith(getOrigin()))
+    (to.startsWith("/") ||
+      to.startsWith("//") ||
+      to.startsWith(await getOrigin()))
   ) {
     return to;
   }

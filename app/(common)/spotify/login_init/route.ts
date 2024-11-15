@@ -17,8 +17,8 @@ export async function POST(request: Request) {
 
   cookies.spotifyLogin.set({
     state,
-    successUrl: safeRedirect(successRedirect),
-    errorUrl: safeRedirect(errorRedirect),
+    successUrl: await safeRedirect(successRedirect),
+    errorUrl: await safeRedirect(errorRedirect),
   });
 
   return NextResponse.redirect(getSpotifyLoginUrl({ scope, state }), {

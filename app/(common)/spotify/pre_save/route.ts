@@ -15,7 +15,7 @@ export async function GET(request: Request) {
   }
 
   const loginStatus = url.searchParams.get("spotify_login_status");
-  const returnUrl = safeRedirect(url.searchParams.get("return_uri"));
+  const returnUrl = await safeRedirect(url.searchParams.get("return_uri"));
   const accessToken = await getSpotifyAccessToken();
 
   if (!accessToken) {

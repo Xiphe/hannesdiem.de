@@ -2,12 +2,12 @@ import { focusStyles, getOrigin } from "@/utils";
 import clsx from "clsx";
 import Link from "next/link";
 
-export default function Footer() {
+export default async function Footer() {
   return (
     <footer className="container max-w-screen-xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 py-20">
       <div />
       <Link
-        href={getOrigin()}
+        href={await getOrigin()}
         className={clsx(
           focusStyles,
           "rounded flex justify-center items-center"
