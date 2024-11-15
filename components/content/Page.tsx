@@ -7,7 +7,7 @@ export async function generatePageMetadata(
   searchParams: Record<string, string | string[]>,
   parent: ResolvingMetadata
 ) {
-  const url = new URL(getOrigin());
+  const url = new URL(await getOrigin());
   url.pathname = page.slug;
 
   return {

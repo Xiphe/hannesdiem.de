@@ -2,7 +2,7 @@ import { Author } from "@/content";
 import clsx from "clsx";
 import { LocalTime } from "./LocalTime";
 import { focusStyles } from "@/utils";
-import { ComponentPropsWithoutRef } from "react";
+import { ComponentPropsWithoutRef, Fragment } from "react";
 
 export interface LetterProps {
   title: string;
@@ -42,7 +42,7 @@ export function Letter({
       ) : null}
       <p className="font-fuggles text-4xl text-center pr-4 sm:pr-12 !mt-2 mb-8">
         {authors?.map(({ name, description, link }, i) => (
-          <>
+          <Fragment key={name + link}>
             {link ? (
               <a
                 title={description}
@@ -60,7 +60,7 @@ export function Letter({
               </span>
             )}
             {i < authors.length - 1 ? ", " : null}
-          </>
+          </Fragment>
         ))}
         {authors?.length ? " - " : null}
         <LocalTime timeStamp={createdDate} format={createdDateFormat} />

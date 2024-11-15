@@ -7,7 +7,7 @@ import { PropsWithChildren, Suspense } from "react";
 import { Theme, electrocuteTheme } from "../themes";
 
 export async function generateMetadata() {
-  const origin = getOrigin();
+  const origin = await getOrigin();
   return {
     metadataBase: new URL(origin),
     applicationName: "Hannes Diem",

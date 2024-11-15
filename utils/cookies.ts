@@ -1,25 +1,29 @@
-import { cookies } from "next/headers";
+import { cookies, type UnsafeUnwrappedCookies } from "next/headers";
 import { decrypt, encrypt } from "./encrypt";
 import { env } from "./env";
 import zod from "zod";
 
 const encryptionKey = Buffer.from(env.COOKIE_ENCRYPTION_KEY, "hex");
 
-function set(name: string, data: unknown) {
-  return cookies().set(name, encrypt(JSON.stringify(data), encryptionKey), {
-    secure: true,
-  });
+async function set(name: string, data: unknown) {
+  return (await cookies()).set(
+    name,
+    encrypt(JSON.stringify(data), encryptionKey),
+    {
+      secure: true,
+    }
+  );
 }
 
-function del(name: string) {
-  return cookies().set(name, "", {
+async function del(name: string) {
+  return (await cookies()).set(name, "", {
     maxAge: 0,
     secure: true,
   });
 }
 
-function read(name: string) {
-  const cookie = cookies().get(name);
+async function read(name: string) {
+  const cookie = (await cookies()).get(name);
   if (!cookie) {
     return undefined;
   }

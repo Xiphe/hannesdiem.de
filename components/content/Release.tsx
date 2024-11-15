@@ -30,10 +30,11 @@ export async function generateReleaseMetadata(
   searchParams: Record<string, string | string[]>,
   parent: ResolvingMetadata
 ) {
-  const url = new URL(getOrigin());
+  const url = new URL(await getOrigin());
+  const image = new URL(url);
+
   url.pathname = release.slug;
 
-  const image = new URL(getOrigin());
   const imageHeight = Math.min(release.cover.height, 1200);
   const imageRatio = release.cover.width / release.cover.height;
   const imageWidth = imageHeight * imageRatio;
@@ -66,7 +67,7 @@ export async function generateReleaseMetadata(
   } satisfies Metadata;
 }
 
-export function Release({
+export async function Release({
   cover,
   title,
   subtitle,
@@ -85,6 +86,7 @@ export function Release({
 }: Release & {
   searchParams: Record<string, string | string[]>;
 }) {
+  const origin = await getOrigin();
   const shopOrder = Object.keys(shopTypes);
   const preSavePreview = Boolean(searchParams.presave_preview);
 
@@ -201,7 +203,7 @@ export function Release({
                 {preSaves.map(({ service, ...save }) => {
                   const Comp = PreSaveButtons[service];
 
-                  const returnUrl = new URL(getOrigin());
+                  const returnUrl = new URL(origin);
                   returnUrl.pathname = slug;
                   if (preSavePreview) {
                     returnUrl.searchParams.set("presave_preview", "1");

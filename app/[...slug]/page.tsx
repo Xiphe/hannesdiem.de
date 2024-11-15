@@ -15,9 +15,14 @@ import { PageProps } from "@/utils/types";
 import { getPost } from "./getPost";
 
 export async function generateMetadata(
-  { params: { slug }, searchParams }: PageProps<{ slug: string }>,
+  props: PageProps<{ slug: string }>,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
+
+  const { slug } = params;
+
   const post = getPost(slug);
 
   if (!post) {
@@ -34,10 +39,14 @@ export async function generateMetadata(
   }
 }
 
-export default function ContentPage({
-  params: { slug },
-  searchParams,
-}: PageProps<{ slug: string | string[] }>) {
+export default async function ContentPage(
+  props: PageProps<{ slug: string | string[] }>
+) {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
+
+  const { slug } = params;
+
   const post = getPost(slug);
 
   if (!post) {

@@ -8,7 +8,7 @@ export async function generateSongMetadata(
   searchParams: Record<string, string | string[]>,
   parent: ResolvingMetadata
 ) {
-  const url = new URL(getOrigin());
+  const url = new URL(await getOrigin());
   url.pathname = song.slug;
 
   const description =

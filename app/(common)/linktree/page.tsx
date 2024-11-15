@@ -10,7 +10,6 @@ import {
   TidalLogo,
   SoundCloudLogo,
   GlobeIcon,
-  SongtradrIcon,
 } from "@components";
 import Image from "next/image";
 import clsx from "clsx";
@@ -18,7 +17,6 @@ import { ComponentPropsWithoutRef, ComponentType, useMemo } from "react";
 import { focusStyles, PageProps } from "@/utils";
 import Footer from "@/components/Footer";
 import FreshRelease from "@/components/content/FreshRelease";
-import Link from "next/link";
 
 const liStyles =
   "rounded bg-gradient-to-b from-blue-800 to-blue-900 text-white focus:outline-none hover:from-blue-900 hover:to-blue-900 hover:text-pink-200";
@@ -94,9 +92,7 @@ const smallIcons: {
   },
 ];
 
-export default function LinkTreePage({ searchParams, ...props }: PageProps) {
-  const withSongtradr = searchParams.with === "songtradr";
-
+export default async function LinkTreePage(_: PageProps) {
   return (
     <div className="bg-gradient-to-b gradient-full">
       <div>
@@ -118,53 +114,12 @@ export default function LinkTreePage({ searchParams, ...props }: PageProps) {
                     Hi I&apos;m Hannes, so good to see you here 💙
                   </span>
                   <span className="text-violet-100 text-sm">
-                    {withSongtradr ? (
-                      <>
-                        I&apos;m one of the application engineers at{" "}
-                        <Link
-                          href="https://www.songtradr.com/"
-                          className="underline"
-                        >
-                          Songtradr
-                        </Link>{" "}
-                        and you landed on my personal website.
-                      </>
-                    ) : (
-                      <>
-                        Please be kindly invited to connect with me and find
-                        more content on these platforms:
-                      </>
-                    )}
+                    Please be kindly invited to connect with me and find more
+                    content on these platforms:
                   </span>
                 </p>
               </div>
               <ul>
-                {withSongtradr ? (
-                  <>
-                    <li className="mb-12">
-                      <a
-                        className={clsx(
-                          "flex items-center m-4 px-5 py-4",
-                          liClass
-                        )}
-                        href="mailto:hannes.diercks@songtradr.com"
-                      >
-                        <span className="h-10 w-10 mr-4 flex justify-center">
-                          <SongtradrIcon aria-hidden="true" className="h-10" />
-                        </span>
-                        <span>
-                          <h4 className="font-bold text-lg">Songtradr</h4>
-                          <p className="text-sm opacity-60">
-                            Write me an email for everything Songtradr related
-                          </p>
-                        </span>
-                      </a>
-                    </li>
-                    <li className="opacity-50 px-4">
-                      My Social Media channels:
-                    </li>
-                  </>
-                ) : null}
                 {links.map(({ title, Icon, description, href }) => (
                   <li key={title}>
                     <a

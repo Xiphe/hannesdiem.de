@@ -1,11 +1,11 @@
 export interface Params<
   Params extends Record<string, string | string[]> | never = never
 > {
-  params: Params;
+  params: Promise<Params>;
 }
 
 export interface PageProps<
   T extends Record<string, string | string[]> | never = never
 > extends Params<T> {
-  searchParams: Record<string, string | string[]>;
+  searchParams: Promise<Record<string, string | string[]>>;
 }
