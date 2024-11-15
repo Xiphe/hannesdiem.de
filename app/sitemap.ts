@@ -8,18 +8,22 @@ const ignoreRoutes = ["/spotify/**", "/_not-found", "/sitemap.xml"];
 
 const additionalData: Record<string, Partial<MetadataRoute.Sitemap[number]>> = {
   "/(privacy|imprint)": { priority: 0.1 },
-  "/work": { changeFrequency: "weekly" },
-  "/one-week-album-retreat": { priority: 1, changeFrequency: "daily" },
+  "/one-week-album-retreat": { priority: 1 },
   "/linktree": { priority: 0.9 },
 };
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const {
-    default: { staticRoutes },
-  } = await import("../.next/routes-manifest.json");
+  const path = Promise.resolve("../routes-manifest.json");
+
+  let staticRoutes: { page: string }[] = [];
+  try {
+    staticRoutes = (await import(await path)).default.staticRoutes;
+  } catch (_) {
+    // ¯\_(ツ)_/¯
+  }
 
   return [
-    ...staticRoutes.map(({ page }) => page),
+    ...staticRoutes.map(({ page }: { page: string }) => page),
     ...Object.keys(content).map((page) => `/${page}`),
   ]
     .filter((page) => !micromatch([page], ignoreRoutes).length)
