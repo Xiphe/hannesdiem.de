@@ -20,10 +20,7 @@ const isDev = process.env.NODE_ENV === "development";
 const PAYLOAD_SECRET = process.env.PAYLOAD_SECRET;
 assert(PAYLOAD_SECRET, "PAYLOAD_SECRET env must be set");
 
-const BLOB_READ_WRITE_TOKEN =
-  !process.env.NODE_ENV || isDev ? "s3cr3t" : process.env.BLOB_READ_WRITE_TOKEN;
-assert(BLOB_READ_WRITE_TOKEN, "BLOB_READ_WRITE_TOKEN env must be set");
-
+console.log({ isDev });
 export default buildConfig({
   admin: {
     autoLogin: isDev
