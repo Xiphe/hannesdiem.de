@@ -1,6 +1,6 @@
 import sharp from "sharp";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
-import { sqliteAdapter } from "@payloadcms/db-sqlite";
+import { postgresAdapter } from "@payloadcms/db-postgres";
 import { vercelPostgresAdapter } from "@payloadcms/db-vercel-postgres";
 import { buildConfig, Plugin } from "payload";
 import assert from "node:assert";
@@ -20,7 +20,9 @@ const isDev = process.env.NODE_ENV === "development";
 const PAYLOAD_SECRET = process.env.PAYLOAD_SECRET;
 assert(PAYLOAD_SECRET, "PAYLOAD_SECRET env must be set");
 
-console.log({ isDev });
+const DATABASE_URI = process.env.DATABASE_URI;
+assert(DATABASE_URI, "DATABASE_URI env must be set");
+
 export default buildConfig({
   admin: {
     autoLogin: isDev
@@ -34,15 +36,12 @@ export default buildConfig({
   editor: lexicalEditor(),
   collections: [Persons, CoverArts, Releases, ContributionRoles],
   secret: PAYLOAD_SECRET,
-  db: isDev
-    ? sqliteAdapter({
-        migrationDir,
-        client: {
-          url: "file:./.data/payload.dev.sqlite",
-        },
-      })
-    : vercelPostgresAdapter({ migrationDir }),
-
+  db: (isDev ? postgresAdapter : vercelPostgresAdapter)({
+    migrationDir,
+    pool: {
+      connectionString: DATABASE_URI,
+    },
+  }),
   plugins: ([] as Plugin[]).concat(
     process.env.BLOB_READ_WRITE_TOKEN
       ? [

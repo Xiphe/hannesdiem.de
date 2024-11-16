@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "reset": "rm -rf .data && mkdir .data && touch .data/.gitkeep",
+    "reset-data": "rm -rf .data && mkdir .data && touch .data/.gitkeep",
     "build": "next build && cp .next/routes-manifest.json ./routes-manifest.json && next build",
     "payload": "PAYLOAD_CONFIG_PATH=payload/payload.config.ts payload",
     "start": "next start",
@@ -41,7 +41,7 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
-    "@payloadcms/db-sqlite": "3.0.0-beta.132",
+    "@payloadcms/db-postgres": "3.0.0-beta.132",
     "@tailwindcss/typography": "0.5.15",
     "@types/micromatch": "4.0.9",
     "micromatch": "4.0.8"
