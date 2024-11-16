@@ -20,8 +20,8 @@ const isDev = process.env.NODE_ENV === "development";
 const PAYLOAD_SECRET = process.env.PAYLOAD_SECRET;
 assert(PAYLOAD_SECRET, "PAYLOAD_SECRET env must be set");
 
-const DATABASE_URI = process.env.DATABASE_URI;
-assert(DATABASE_URI, "DATABASE_URI env must be set");
+const POSTGRESQL_DATABASE_URL = process.env.POSTGRESQL_DATABASE_URL;
+assert(POSTGRESQL_DATABASE_URL, "POSTGRESQL_DATABASE_URL env must be set");
 
 export default buildConfig({
   admin: {
@@ -39,7 +39,7 @@ export default buildConfig({
   db: (isDev ? postgresAdapter : vercelPostgresAdapter)({
     migrationDir,
     pool: {
-      connectionString: DATABASE_URI,
+      connectionString: POSTGRESQL_DATABASE_URL,
     },
   }),
   plugins: ([] as Plugin[]).concat(
