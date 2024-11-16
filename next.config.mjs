@@ -1,3 +1,6 @@
+import { withPayload } from "@payloadcms/next/withPayload";
+import withMDX from "@next/mdx";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async redirects() {
@@ -41,5 +44,4 @@ const nextConfig = {
   },
 };
 
-const withMDX = require("@next/mdx")();
-module.exports = withMDX(nextConfig);
+export default withPayload(withMDX()(nextConfig));

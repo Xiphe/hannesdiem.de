@@ -6,7 +6,7 @@ import { beachTheme } from "../themes";
 export { generateMetadata } from "../(common)/layout";
 
 export default async function Layout(
-  props: PropsWithChildren<Params<{ slug: string | string[] }>>
+  props: PropsWithChildren<Params<{ slug: string | string[] }>>,
 ) {
   const params = await props.params;
 
