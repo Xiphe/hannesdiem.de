@@ -46,7 +46,11 @@ export default buildConfig({
     process.env.BLOB_READ_WRITE_TOKEN
       ? [
           vercelBlobStorage({
-            collections: { "cover-arts": true },
+            collections: {
+              "cover-arts": {
+                prefix: "cover-arts",
+              },
+            },
             token: process.env.BLOB_READ_WRITE_TOKEN,
           }),
         ]
