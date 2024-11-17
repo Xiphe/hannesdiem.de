@@ -23,6 +23,9 @@ assert(PAYLOAD_SECRET, "PAYLOAD_SECRET env must be set");
 const POSTGRESQL_DATABASE_URL = process.env.POSTGRESQL_DATABASE_URL;
 assert(POSTGRESQL_DATABASE_URL, "POSTGRESQL_DATABASE_URL env must be set");
 
+const BLOB_READ_WRITE_TOKEN = process.env.BLOB_READ_WRITE_TOKEN;
+assert(BLOB_READ_WRITE_TOKEN, "BLOB_READ_WRITE_TOKEN env must be set");
+
 export default buildConfig({
   admin: {
     autoLogin: isDev
@@ -43,18 +46,19 @@ export default buildConfig({
     },
   }),
   plugins: ([] as Plugin[]).concat(
-    process.env.BLOB_READ_WRITE_TOKEN
-      ? [
+    isDev
+      ? []
+      : [
           vercelBlobStorage({
             collections: {
               "cover-arts": {
                 prefix: "cover-arts",
               },
             },
-            token: process.env.BLOB_READ_WRITE_TOKEN,
+            addRandomSuffix: true,
+            token: BLOB_READ_WRITE_TOKEN,
           }),
-        ]
-      : [],
+        ],
   ),
 
   sharp,
