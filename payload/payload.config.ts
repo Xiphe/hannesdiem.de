@@ -55,7 +55,6 @@ export default buildConfig({
                 prefix: "cover-arts",
               },
             },
-            addRandomSuffix: true,
             token: BLOB_READ_WRITE_TOKEN,
           }),
         ],
