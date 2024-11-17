@@ -1,4 +1,5 @@
 import type { CollectionConfig } from "payload";
+import { SHOPS } from "../utils/shops";
 
 export const Releases: CollectionConfig = {
   slug: "releases",
@@ -51,9 +52,9 @@ export const Releases: CollectionConfig = {
         {
           name: "roles",
           type: "relationship",
-          relationTo: "contribution-roles", // Reference the contribution-roles collection
-          hasMany: true, // Allow multiple roles per contributor
-          required: true, // Ensure at least one role is selected
+          relationTo: "contribution-roles",
+          hasMany: true,
+          required: true,
         },
         {
           name: "description",
@@ -61,17 +62,61 @@ export const Releases: CollectionConfig = {
         },
       ],
     },
+    {
+      name: "genres",
+      type: "relationship",
+      relationTo: "genres",
+      hasMany: true,
+    },
+    {
+      name: "languages",
+      type: "select",
+      options: [
+        { value: "english", label: "English" },
+        { value: "german", label: "German" },
+      ],
+      hasMany: true,
+    },
+    {
+      name: "summary",
+      type: "textarea",
+    },
+    {
+      name: "description",
+      type: "richText",
+    },
+    {
+      name: "tracks",
+      type: "array",
+      fields: [
+        {
+          name: "title",
+          type: "text",
+          required: true,
+        },
+        {
+          name: "addition",
+          type: "text",
+        },
+        {
+          name: "duration",
+          type: "number",
+        },
+        {
+          name: "song",
+          type: "relationship",
+          relationTo: "songs",
+          hasMany: false,
+        },
+      ],
+    },
+    {
+      name: "shops",
+      type: "group",
+      fields: SHOPS.map((name) => ({
+        name,
+        type: "text",
+      })),
+    },
   ],
 };
-
-// export interface Release extends PostCommon {
-//   type: "release";
-//   genres: string[];
-//   languages: string[];
-//   summary?: string;
-//   Description?: ComponentType;
-//   contributors: Contributor[];
-//   tracks: Track[];
-//   shops: Shop[];
-//   preSaves?: (PreSave | ExternalPreSave)[];
-// }

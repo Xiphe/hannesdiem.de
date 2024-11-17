@@ -11,6 +11,8 @@ import { Releases } from "./collections/Releases";
 import { ContributionRoles } from "./collections/ContributionRoles";
 import { vercelBlobStorage } from "@payloadcms/storage-vercel-blob";
 import path from "node:path";
+import { Genres } from "./collections/Genres";
+import { Songs } from "./collections/Songs";
 
 const rootDir = path.resolve(__dirname, "..");
 const migrationDir = path.join(rootDir, "payload/migrations");
@@ -37,7 +39,7 @@ export default buildConfig({
       : undefined,
   },
   editor: lexicalEditor(),
-  collections: [Persons, CoverArts, Releases, ContributionRoles],
+  collections: [Genres, Persons, CoverArts, Releases, ContributionRoles, Songs],
   secret: PAYLOAD_SECRET,
   db: (isDev ? postgresAdapter : vercelPostgresAdapter)({
     migrationDir,
@@ -59,7 +61,6 @@ export default buildConfig({
           }),
         ],
   ),
-
   sharp,
   async onInit(payload) {
     await seedDevDB(payload);

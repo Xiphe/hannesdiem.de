@@ -11,10 +11,12 @@ export interface Config {
     users: UserAuthOperations;
   };
   collections: {
+    genres: Genre;
     persons: Person;
     'cover-arts': CoverArt;
     releases: Release;
     'contribution-roles': ContributionRole;
+    songs: Song;
     users: User;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -22,10 +24,12 @@ export interface Config {
   };
   collectionsJoins: {};
   collectionsSelect: {
+    genres: GenresSelect<false> | GenresSelect<true>;
     persons: PersonsSelect<false> | PersonsSelect<true>;
     'cover-arts': CoverArtsSelect<false> | CoverArtsSelect<true>;
     releases: ReleasesSelect<false> | ReleasesSelect<true>;
     'contribution-roles': ContributionRolesSelect<false> | ContributionRolesSelect<true>;
+    songs: SongsSelect<false> | SongsSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -65,6 +69,16 @@ export interface UserAuthOperations {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "genres".
+ */
+export interface Genre {
+  id: number;
+  name: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "persons".
  */
 export interface Person {
@@ -82,6 +96,7 @@ export interface Person {
 export interface CoverArt {
   id: number;
   alt?: string | null;
+  prefix?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -115,6 +130,46 @@ export interface Release {
         id?: string | null;
       }[]
     | null;
+  genres?: (number | Genre)[] | null;
+  languages?: ('english' | 'german')[] | null;
+  summary?: string | null;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  tracks?:
+    | {
+        title: string;
+        addition?: string | null;
+        duration?: number | null;
+        song?: (number | null) | Song;
+        id?: string | null;
+      }[]
+    | null;
+  shops?: {
+    amazonmusic?: string | null;
+    deezer?: string | null;
+    qobuz?: string | null;
+    tidal?: string | null;
+    spotify?: string | null;
+    anghami?: string | null;
+    applemusic?: string | null;
+    pandora?: string | null;
+    youtubemusic?: string | null;
+    awa?: string | null;
+    soundcloud?: string | null;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -125,6 +180,59 @@ export interface Release {
 export interface ContributionRole {
   id: number;
   role: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "songs".
+ */
+export interface Song {
+  id: number;
+  title: string;
+  subtitle?: string | null;
+  slug: string;
+  sumrary?: string | null;
+  creationDate?: string | null;
+  hideCreationDay?: boolean | null;
+  authors?:
+    | {
+        person: number | Person;
+        roles: (number | ContributionRole)[];
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  lyrics?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -153,6 +261,10 @@ export interface PayloadLockedDocument {
   id: number;
   document?:
     | ({
+        relationTo: 'genres';
+        value: number | Genre;
+      } | null)
+    | ({
         relationTo: 'persons';
         value: number | Person;
       } | null)
@@ -167,6 +279,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'contribution-roles';
         value: number | ContributionRole;
+      } | null)
+    | ({
+        relationTo: 'songs';
+        value: number | Song;
       } | null)
     | ({
         relationTo: 'users';
@@ -216,6 +332,15 @@ export interface PayloadMigration {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "genres_select".
+ */
+export interface GenresSelect<T extends boolean = true> {
+  name?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "persons_select".
  */
 export interface PersonsSelect<T extends boolean = true> {
@@ -231,6 +356,7 @@ export interface PersonsSelect<T extends boolean = true> {
  */
 export interface CoverArtsSelect<T extends boolean = true> {
   alt?: T;
+  prefix?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -263,6 +389,34 @@ export interface ReleasesSelect<T extends boolean = true> {
         description?: T;
         id?: T;
       };
+  genres?: T;
+  languages?: T;
+  summary?: T;
+  description?: T;
+  tracks?:
+    | T
+    | {
+        title?: T;
+        addition?: T;
+        duration?: T;
+        song?: T;
+        id?: T;
+      };
+  shops?:
+    | T
+    | {
+        amazonmusic?: T;
+        deezer?: T;
+        qobuz?: T;
+        tidal?: T;
+        spotify?: T;
+        anghami?: T;
+        applemusic?: T;
+        pandora?: T;
+        youtubemusic?: T;
+        awa?: T;
+        soundcloud?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -272,6 +426,30 @@ export interface ReleasesSelect<T extends boolean = true> {
  */
 export interface ContributionRolesSelect<T extends boolean = true> {
   role?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "songs_select".
+ */
+export interface SongsSelect<T extends boolean = true> {
+  title?: T;
+  subtitle?: T;
+  slug?: T;
+  sumrary?: T;
+  creationDate?: T;
+  hideCreationDay?: T;
+  authors?:
+    | T
+    | {
+        person?: T;
+        roles?: T;
+        description?: T;
+        id?: T;
+      };
+  lyrics?: T;
+  description?: T;
   updatedAt?: T;
   createdAt?: T;
 }
