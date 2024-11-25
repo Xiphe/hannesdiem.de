@@ -96,7 +96,6 @@ export interface Person {
 export interface CoverArt {
   id: number;
   alt?: string | null;
-  prefix?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -356,7 +355,6 @@ export interface PersonsSelect<T extends boolean = true> {
  */
 export interface CoverArtsSelect<T extends boolean = true> {
   alt?: T;
-  prefix?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;

@@ -7,16 +7,21 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/linktree",
+        destination: "/hannesdiem.de",
         permanent: false,
       },
       {
-        source: "/owa",
-        destination: "/one-week-album-retreat",
+        source: "/hannesdiem.de",
+        destination: "/hannesdiem.de/linktree",
+        permanent: false,
+      },
+      {
+        source: "/hannesdiem.de/owa",
+        destination: "/hannesdiem.de/one-week-album-retreat",
         permanent: true,
       },
       {
-        source: "/cv",
+        source: "/hannesdiem.de/cv",
         destination:
           "https://docs.google.com/document/d/1LEo6Z-sLCULuJikA1JjbfcQTfP6UavQyjM7DehcMZeQ/edit?usp=sharing",
         permanent: false,
