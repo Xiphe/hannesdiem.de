@@ -6,7 +6,7 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "",
+        source: "/",
         destination: "/linktree",
         permanent: false,
       },
