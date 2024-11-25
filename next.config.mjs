@@ -6,22 +6,17 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/",
-        destination: "/hannesdiem.de",
+        source: "",
+        destination: "/linktree",
         permanent: false,
       },
       {
-        source: "/hannesdiem.de",
-        destination: "/hannesdiem.de/linktree",
-        permanent: false,
-      },
-      {
-        source: "/hannesdiem.de/owa",
-        destination: "/hannesdiem.de/one-week-album-retreat",
+        source: "/owa",
+        destination: "/one-week-album-retreat",
         permanent: true,
       },
       {
-        source: "/hannesdiem.de/cv",
+        source: "/cv",
         destination:
           "https://docs.google.com/document/d/1LEo6Z-sLCULuJikA1JjbfcQTfP6UavQyjM7DehcMZeQ/edit?usp=sharing",
         permanent: false,

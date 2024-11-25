@@ -1,15 +1,18 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { isMatch } from "micromatch";
 
-const ROOT_PATHS = ["_next", "/_next/*"];
-const PAYLOAD_PATHS = ["/admin", "/admin/*", "/api", "/api/*"];
+const ROOT_PATHS = [/^\/_next(\/|$)/];
+const PAYLOAD_PATHS = [/^\/admin(\/|$)/, /^\/api(\/|$)/];
 const PAYLOAD_DOMAIN = "cms.xiphe.net";
 const enableRewrites = process.env.NODE_ENV === "production";
 
 export function middleware(req: NextRequest) {
   let host = req.headers.get("host");
-  const isPayloadReq = isMatch(req.nextUrl.pathname, PAYLOAD_PATHS);
-  const isRootRequest = isMatch(req.nextUrl.pathname, ROOT_PATHS);
+  const isPayloadReq = Boolean(
+    PAYLOAD_PATHS.find((p) => p.test(req.nextUrl.pathname)),
+  );
+  const isRootRequest = Boolean(
+    !isPayloadReq && ROOT_PATHS.find((p) => p.test(req.nextUrl.pathname)),
+  );
 
   if (enableRewrites && isPayloadReq && host !== PAYLOAD_DOMAIN) {
     req.nextUrl.host = PAYLOAD_DOMAIN;
