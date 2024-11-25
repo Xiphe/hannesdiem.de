@@ -21,8 +21,6 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@components": ["./components/index.ts"],
-      "@components/*": ["./components/*"],
       "@payload-config": ["./payload/payload.config.ts"]
     }
   },

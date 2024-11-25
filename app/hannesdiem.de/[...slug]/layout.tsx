@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 import { default as BaseLayout } from "../(common)/layout";
 import { getPost } from "./getPost";
 import { Params } from "@/utils";
-import { beachTheme } from "../themes";
+import { beachTheme } from "../_src/themes";
 export { generateMetadata } from "../(common)/layout";
 
 export default async function Layout(

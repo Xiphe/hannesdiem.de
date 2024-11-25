@@ -1,12 +1,9 @@
+const path = require("node:path");
+const projectRoot = path.resolve(__dirname, "../..");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./utils/**/*.{js,ts,jsx,tsx,mdx}",
-    "./content/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: [path.join(projectRoot, "**/*.{js,ts,jsx,tsx,mdx}")],
   darkMode: "media",
   theme: {
     extend: {

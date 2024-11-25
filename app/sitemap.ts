@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 import micromatch from "micromatch";
-import { content } from "../content";
+import { content } from "./hannesdiem.de/_src/content";
 
 const baseUrl = "https://hannesdiem.de";
 
@@ -33,7 +33,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.8,
       ...(Object.entries(additionalData).find(
-        ([path]) => micromatch([page], path).length
+        ([path]) => micromatch([page], path).length,
       ) || ["", {}])[1],
     }));
 }

@@ -10,7 +10,7 @@ export default async function Footer() {
         href={await getOrigin()}
         className={clsx(
           focusStyles,
-          "rounded flex justify-center items-center"
+          "rounded flex justify-center items-center",
         )}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}

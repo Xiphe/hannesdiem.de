@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["_src/*"],
+      "@components": ["_src/components/index.ts"],
+      "@components/*": ["_src/components/*"],
+      "@payload-config": ["../../payload/payload.config.ts"]
+    }
+  }
+}

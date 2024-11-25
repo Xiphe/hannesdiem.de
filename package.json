@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "reset-data": "rm -rf .data && mkdir .data && touch .data/.gitkeep",
+    "dev": "concurrently -p none \"npm run build-tailwind -- --watch\" \"npm run dev:next\"",
     "build": "next build && cp .next/routes-manifest.json ./routes-manifest.json && next build",
+    "lint": "next lint",
     "payload": "PAYLOAD_CONFIG_PATH=payload/payload.config.ts payload",
+    "reset-data": "rm -rf .data && mkdir .data && touch .data/.gitkeep",
     "start": "next start",
-    "lint": "next lint"
+    "build-tailwind": "node scripts/build-tailwind.mjs",
+    "dev:next": "next dev --turbopack",
+    "predev": "npm run build-tailwind",
+    "prebuild": "npm run build-tailwind --minify"
   },
   "dependencies": {
     "@heroicons/react": "2.1.5",
@@ -44,6 +48,8 @@
     "@payloadcms/db-postgres": "3.0.0-beta.132",
     "@tailwindcss/typography": "0.5.15",
     "@types/micromatch": "4.0.9",
+    "concurrently": "9.1.0",
+    "http-proxy-cli": "2.1.0",
     "micromatch": "4.0.8"
   },
   "overrides": {

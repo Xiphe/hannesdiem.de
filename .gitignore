@@ -38,3 +38,6 @@ next-env.d.ts
 # dev-data
 .data/*
 !.data/.gitkeep
+
+# tailwind
+styles.build.css
