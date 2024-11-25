@@ -1,11 +1,6 @@
-// import { proseNormalStyles } from "@/utils";
-// import clsx from "clsx";
-// import { createServerContext, useContext } from "react";
-
 export interface Theme {
   htmlStyles?: string;
   bodyStyles?: string;
-  // proseColors?: string;
 }
 
 export const electrocuteTheme = {

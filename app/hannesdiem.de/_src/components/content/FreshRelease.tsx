@@ -1,10 +1,10 @@
-import { releases } from "@/content/releases";
 import { LocalTime } from "../LocalTime";
-import { Release } from "@/content";
 import Link from "next/link";
 import clsx from "clsx";
 import Image from "next/image";
-import { buttonStyles, focusStyles } from "@/utils";
+import { Release } from "@hd/content";
+import { releases } from "@hd/content/releases";
+import { buttonStyles, focusStyles } from "@hd/utils/styles";
 
 export default function FreshRelease() {
   const now = Date.now();
@@ -33,14 +33,14 @@ export default function FreshRelease() {
         focusStyles,
         "px-6 mb-8 pb-4 md:pb-0 text-center md:text-left",
         "gap-4 md:gap-6 flex flex-col items-center justify-center md:flex-row ",
-        "bg-gradient-to-b from-purple-700 to-purple-600 text-white"
+        "bg-gradient-to-b from-purple-700 to-purple-600 text-white",
       )}
     >
       <span
         className={clsx(
           "block overflow-hidden relative w-40 shrink-0 mt-2 md:mt-0 rounded-sm md:rounded-none",
           "md:scale-110 md:translate-y-2",
-          "md:border-b-4 border-purple-700"
+          "md:border-b-4 border-purple-700",
         )}
         style={{ aspectRatio: `${cover.width} / ${cover.height}` }}
       >
@@ -75,7 +75,7 @@ export default function FreshRelease() {
         <span
           className={clsx(
             buttonStyles,
-            "whitespace-nowrap  text-blue-900 dark:text-white"
+            "whitespace-nowrap  text-blue-900 dark:text-white",
           )}
         >
           Check it out!

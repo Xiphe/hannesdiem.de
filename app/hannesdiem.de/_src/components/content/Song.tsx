@@ -1,12 +1,12 @@
-import { type Song } from "@/content";
-import { getOrigin } from "@/utils";
+import { type Song } from "@hd/content";
+import { getOrigin } from "@utils/origin";
 import { Metadata, ResolvingMetadata } from "next";
 import { Letter } from "../Letter";
 
 export async function generateSongMetadata(
   song: Song,
   searchParams: Record<string, string | string[]>,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ) {
   const url = new URL(await getOrigin());
   url.pathname = song.slug;

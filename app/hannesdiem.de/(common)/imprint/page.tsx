@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
-import { proseStyles } from "@/utils";
+import Footer from "@hd/components/Footer";
+import { proseStyles } from "@hd/utils/styles";
 import clsx from "clsx";
 
 export default function Imprint() {

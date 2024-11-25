@@ -2,23 +2,19 @@ import { Metadata, ResolvingMetadata } from "next";
 import { ComponentType, Fragment } from "react";
 import Image from "next/image";
 import clsx from "clsx";
-import {
-  PreSaveProps,
-  PreSaveService,
-  type Release,
-  shops as shopTypes,
-} from "@/content";
-import {
-  buttonStyles,
-  exists,
-  focusStyles,
-  getOrigin,
-  proseStyles,
-  secondsToDuration,
-} from "@/utils";
 import SpotifyPreSaveButton from "../spotify/PreSaveButton";
 import DeezerPreSaveButton from "../deezer/PreSaveButton";
 import { LocalTime } from "../LocalTime";
+import {
+  PreSaveProps,
+  PreSaveService,
+  shops as shopTypes,
+  type Release,
+} from "@hd/content";
+import { getOrigin } from "@utils/origin";
+import { exists } from "@utils/exists";
+import { buttonStyles, focusStyles, proseStyles } from "@hd/utils/styles";
+import { secondsToDuration } from "@utils/secondsToDuration";
 
 const PreSaveButtons: Record<PreSaveService, ComponentType<PreSaveProps>> = {
   spotify: SpotifyPreSaveButton,
@@ -28,7 +24,7 @@ const PreSaveButtons: Record<PreSaveService, ComponentType<PreSaveProps>> = {
 export async function generateReleaseMetadata(
   release: Release,
   searchParams: Record<string, string | string[]>,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ) {
   const url = new URL(await getOrigin());
   const image = new URL(url);
@@ -152,7 +148,7 @@ export async function Release({
                             i % 2 === 0
                               ? "bg-opacity-5 dark:bg-opacity-5"
                               : "bg-opacity-10 dark:bg-opacity-10",
-                            song ? "hover:bg-opacity-20" : ""
+                            song ? "hover:bg-opacity-20" : "",
                           )}
                           key={title + addition}
                           href={song}
@@ -232,7 +228,7 @@ export async function Release({
             {shops
               .sort(
                 ({ type: a }, { type: b }) =>
-                  shopOrder.indexOf(a) - shopOrder.indexOf(b)
+                  shopOrder.indexOf(a) - shopOrder.indexOf(b),
               )
               .map(({ type, link }) => {
                 const { Logo, name } = shopTypes[type];

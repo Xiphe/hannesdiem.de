@@ -1,4 +1,4 @@
-import { Page } from "@/content";
+import { Page } from "@hd/content";
 import Content from "./content.mdx";
 import ogLandscape from "./og_landscape.jpg";
 import ogSquare from "./og_square.jpg";

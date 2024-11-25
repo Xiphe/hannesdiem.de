@@ -2,7 +2,7 @@ import {
   bareBaseButtonStyles,
   buttonColorStyles,
   primaryButtonDarkColors,
-} from "@/utils";
+} from "@hd/utils/styles";
 import clsx from "clsx";
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import NextImage from "next/image";
@@ -32,14 +32,14 @@ export default function EventLocation({
     <Container
       className={clsx(
         "w-2/3 sm:w-2/5 lg:w-1/5 max-w-72 block text-center hover:scale-105 transition",
-        waitList && "opacity-65 hover:opacity-90"
+        waitList && "opacity-65 hover:opacity-90",
       )}
       href={
         waitList
           ? `mailto:oneweekalbum@hannesdiem.de?subject=${encodeURIComponent(
-              `One Week Album in ${title}`
+              `One Week Album in ${title}`,
             )}&body=${encodeURIComponent(
-              `Hey Roxy & Hannes,\n\nI'm interested in joining you for the One Week Album retreat in ${date}.\nLet's discuss dates and location soon.\n\nCheers`
+              `Hey Roxy & Hannes,\n\nI'm interested in joining you for the One Week Album retreat in ${date}.\nLet's discuss dates and location soon.\n\nCheers`,
             )}`
           : ctaHref
       }
@@ -68,7 +68,7 @@ export default function EventLocation({
             className={clsx(
               bareBaseButtonStyles,
               "px-4 py-2 border-2 text-lg",
-              waitList ? buttonColorStyles : primaryButtonDarkColors
+              waitList ? buttonColorStyles : primaryButtonDarkColors,
             )}
           >
             <span className={waitList ? "font-normal" : ""}>

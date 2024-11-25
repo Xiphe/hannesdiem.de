@@ -1,4 +1,4 @@
-import { Release } from "@/content";
+import { Release } from "@hd/content";
 import Description from "./description.mdx";
 import {
   CarlAlbrecht,
@@ -8,7 +8,7 @@ import {
   LanceAnderson,
   LeonWeickert,
   LindaLane,
-} from "@/content/meta/people";
+} from "@hd/content/meta/people";
 
 export default {
   type: "release",

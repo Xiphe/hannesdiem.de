@@ -1,5 +1,5 @@
 import { cookies, type UnsafeUnwrappedCookies } from "next/headers";
-import { decrypt, encrypt } from "./encrypt";
+import { decrypt, encrypt } from "../../../(common)/utils/encrypt";
 import { env } from "./env";
 import zod from "zod";
 
@@ -11,7 +11,7 @@ async function set(name: string, data: unknown) {
     encrypt(JSON.stringify(data), encryptionKey),
     {
       secure: true,
-    }
+    },
   );
 }
 

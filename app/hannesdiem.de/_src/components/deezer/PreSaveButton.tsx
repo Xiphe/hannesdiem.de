@@ -1,6 +1,6 @@
-import { DeezerLogo } from "@/components";
-import { buttonStyles } from "@/utils";
-import { PreSaveProps } from "@/content";
+import { DeezerLogo } from "@hd/components";
+import { buttonStyles } from "@hd/utils/styles";
+import { PreSaveProps } from "@hd/content";
 import Link from "next/link";
 
 export default async function SpotifyPreSaveButton({

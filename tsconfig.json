@@ -20,8 +20,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "@payload-config": ["./payload/payload.config.ts"]
+      "@hd/*": ["./app/hannesdiem.de/_src/*"],
+      "@utils/*": ["./app/(common)/utils/*"],
+      "@payload-config": ["./payload/payload.config.ts"],
+      "@/*": ["./*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -1,4 +1,3 @@
-import { proseStyles } from "@/utils";
 import clsx from "clsx";
 import {
   StaticImageData,

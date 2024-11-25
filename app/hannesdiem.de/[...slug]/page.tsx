@@ -9,14 +9,14 @@ import {
   Footer,
   generatePageMetadata,
   Page,
-} from "@/components";
+} from "@hd/components";
 
-import { PageProps } from "@/utils/types";
+import { PageProps } from "@hd/utils/types";
 import { getPost } from "./getPost";
 
 export async function generateMetadata(
   props: PageProps<{ slug: string }>,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   const searchParams = await props.searchParams;
   const params = await props.params;
@@ -40,7 +40,7 @@ export async function generateMetadata(
 }
 
 export default async function ContentPage(
-  props: PageProps<{ slug: string | string[] }>
+  props: PageProps<{ slug: string | string[] }>,
 ) {
   const searchParams = await props.searchParams;
   const params = await props.params;

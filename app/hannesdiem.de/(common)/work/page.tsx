@@ -1,8 +1,8 @@
-import Footer from "@/components/Footer";
-import { LocalTime } from "@/components/LocalTime";
-import { type Release } from "@/content";
-import { releases } from "@/content/releases";
-import { focusStyles } from "@/utils";
+import { Footer } from "@hd/components";
+import { LocalTime } from "@hd/components/LocalTime";
+import { Release } from "@hd/content";
+import { releases } from "@hd/content/releases";
+import { focusStyles } from "@hd/utils/styles";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,7 +33,7 @@ export default function ReleasesPage() {
                   href={`/${release.slug}`}
                   className={clsx(
                     focusStyles,
-                    "block rounded-sm hover:bg-blue-700 hover:ring-8 hover:ring-blue-700"
+                    "block rounded-sm hover:bg-blue-700 hover:ring-8 hover:ring-blue-700",
                   )}
                 >
                   <div

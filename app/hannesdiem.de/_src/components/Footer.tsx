@@ -1,4 +1,5 @@
-import { focusStyles, getOrigin } from "@/utils";
+import { focusStyles } from "@hd/utils/styles";
+import { getOrigin } from "@utils/origin";
 import clsx from "clsx";
 import Link from "next/link";
 

@@ -1,9 +1,9 @@
 import {
-  safeRedirect,
   getSpotifyAccessToken,
   initiateSpotifyLogin,
   saveSpotifyAlbumsForUser,
-} from "@/utils";
+} from "@hd/utils/spotify";
+import { safeRedirect } from "@utils/safeRedirect";
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMounted } from "@/utils/useMounted";
+import { useMounted } from "@utils/useMounted";
 import { ComponentPropsWithoutRef } from "react";
 
 export interface LocalDateProps {

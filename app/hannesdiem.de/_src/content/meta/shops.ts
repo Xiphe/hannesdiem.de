@@ -12,7 +12,7 @@ import {
   AwaLogo,
   QobuzLogo,
   SoundCloudLogo,
-} from "@/components/logos";
+} from "@hd/components/logos";
 
 export const shops: Record<
   ShopType,

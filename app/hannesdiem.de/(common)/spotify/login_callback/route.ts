@@ -1,22 +1,22 @@
 import { NextResponse } from "next/server";
+import { randomBytes, randomUUID } from "crypto";
+import { spotifyAuth, spotifyLogin } from "@hd/utils/cookies";
 import {
-  cookies,
+  isSpotifyStatus,
   requestSpotifyAccessToken,
   setSpotifyUserTokenData,
   SPOTIFY_STATUS,
-  isSpotifyStatus,
-} from "@/utils";
-import { randomBytes, randomUUID } from "crypto";
+} from "@hd/utils/spotify";
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
-  const cookie = cookies.spotifyLogin.get();
-  cookies.spotifyLogin.delete();
+  const cookie = spotifyLogin.get();
+  spotifyLogin.delete();
 
   if (!cookie) {
     return NextResponse.json(
       { status: SPOTIFY_STATUS.COOKIE_MISSING },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
@@ -52,7 +52,7 @@ export async function GET(request: Request) {
       validUntil: Date.now() + (spotifyTokenData.expires_in - 60) * 1000,
     });
 
-    cookies.spotifyAuth.set({
+    spotifyAuth.set({
       id: spotifyAuthId,
       encryptionKey: encryptionKey.toString("hex"),
     });
@@ -69,7 +69,7 @@ export async function GET(request: Request) {
 
     return NextResponse.json(
       { error: err instanceof Error ? err.message : String(err) },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

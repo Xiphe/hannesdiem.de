@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { SpotifyLogo } from "../logos";
-import {
-  buttonStyles,
-  disabledButtonStyles,
-  getSpotifyAccessToken,
-  checkSpotifyUsersSavedAlbums,
-} from "@/utils";
+import { buttonStyles, disabledButtonStyles } from "@hd/utils/styles";
 import clsx from "clsx";
-import { type PreSaveProps } from "@/content";
+import { type PreSaveProps } from "@hd/content";
+import {
+  checkSpotifyUsersSavedAlbums,
+  getSpotifyAccessToken,
+} from "@hd/utils/spotify";
 
 export default async function SpotifyPreSaveButton({
   returnUrl,

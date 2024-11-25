@@ -3,9 +3,9 @@
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
 import clsx from "clsx";
-import { CheckCircle, ExclamationCircle, XMark } from "@/components/icons";
-import { SPOTIFY_STATUS } from "@/utils/spotify/status";
-import { baseFocusStyles } from "@/utils/styles";
+import { CheckCircle, ExclamationCircle, XMark } from "@hd/components/icons";
+import { SPOTIFY_STATUS } from "@hd/utils/spotify/status";
+import { baseFocusStyles } from "@hd/utils/styles";
 
 type FeedbackType = "success" | "error";
 interface Feedback {
@@ -27,7 +27,7 @@ export default function SpotifyFeedback() {
     if (preSaveStatus || spotifyLoginStatus) {
       setFeedback(
         (preSaveStatus && getPreSaveStatusFeedback(preSaveStatus)) ||
-          getLoginStatusFeedback(spotifyLoginStatus)
+          getLoginStatusFeedback(spotifyLoginStatus),
       );
       const nextUrl = new URL(window.location.href);
       nextUrl.searchParams.delete("spotify_pre_save_status");
@@ -44,7 +44,7 @@ export default function SpotifyFeedback() {
         "rounded-lg p-4 max-w-screen-xl fixed bottom-4 left-1/2 -translate-x-1/2",
         feedback.type === "error"
           ? "bg-pink-600 dark:bg-pink-500 text-pink-50"
-          : "bg-blue-200 text-blue-700"
+          : "bg-blue-200 text-blue-700",
       )}
     >
       {feedback.type === "error" ? (
@@ -58,7 +58,7 @@ export default function SpotifyFeedback() {
           "self-start rounded-full p-1",
           baseFocusStyles,
           "focus-visible:outline-blue-800 transition-colors hover:transition-none",
-          feedback.type === "error" ? "hover:bg-pink-800" : "hover:bg-blue-300"
+          feedback.type === "error" ? "hover:bg-pink-800" : "hover:bg-blue-300",
         )}
         onClick={() => setFeedback(null)}
       >
@@ -144,7 +144,7 @@ function getLoginStatusFeedback(status: string | null): Feedback | null {
                 href="mailto:support@hannesdiem.de"
                 className={clsx(
                   baseFocusStyles,
-                  "focus-visible:outline-blue-800 rounded underline"
+                  "focus-visible:outline-blue-800 rounded underline",
                 )}
               >
                 contact me

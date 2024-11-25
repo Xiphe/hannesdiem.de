@@ -1,4 +1,4 @@
-import { proseStyles } from "@/utils";
+import { proseStyles } from "@hd/utils/styles";
 import clsx from "clsx";
 import {
   StaticImageData,
@@ -65,7 +65,7 @@ export default function Image({
           <div
             className={clsx(
               "px-2 pt-4 pb-6 sm:px-8 sm:-mx-8 sm:bg-white/60 sm:dark:bg-blue-900/60 sm:backdrop-blur-lg",
-              `image-text`
+              `image-text`,
             )}
           >
             {children}

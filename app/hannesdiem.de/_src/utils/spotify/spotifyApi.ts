@@ -5,8 +5,8 @@ import { NextResponse } from "next/server";
 import zod from "zod";
 import { SPOTIFY_STATUS } from "./status";
 import { env } from "../env";
-import { getOrigin } from "../origin";
-import { decrypt, encrypt } from "../encrypt";
+import { getOrigin } from "../../../../(common)/utils/origin";
+import { decrypt, encrypt } from "../../../../(common)/utils/encrypt";
 
 const SpotifyTokenSchema = zod.object({
   access_token: zod.string().nonempty(),
@@ -41,7 +41,7 @@ export function getSpotifyLoginUrl({
   url.searchParams.append("show_dialog", "true");
   url.searchParams.append(
     "redirect_uri",
-    `${getOrigin()}/spotify/login_callback`
+    `${getOrigin()}/spotify/login_callback`,
   );
   url.searchParams.append("state", state);
 
@@ -89,7 +89,7 @@ export async function requestSpotifyAccessToken({
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
       Authorization: `Basic ${Buffer.from(
-        `${env.SPOTIFY_CLIENT_ID}:${env.SPOTIFY_CLIENT_SECRET}`
+        `${env.SPOTIFY_CLIENT_ID}:${env.SPOTIFY_CLIENT_SECRET}`,
       ).toString("base64")}`,
     },
   });
@@ -117,7 +117,7 @@ export async function getSpotifyAccessToken() {
 
     const userTokenData = await getUserTokenData(
       spotifyAuthData.id,
-      Buffer.from(spotifyAuthData.encryptionKey, "hex")
+      Buffer.from(spotifyAuthData.encryptionKey, "hex"),
     );
 
     if (!userTokenData) {
@@ -135,7 +135,7 @@ export async function getSpotifyAccessToken() {
           refreshToken: userTokenData.refreshToken,
           scope: refreshedTokenData.scope,
           validUntil: Date.now() + (refreshedTokenData.expires_in - 60) * 1000,
-        }
+        },
       );
 
       return refreshedTokenData.access_token;
@@ -158,7 +158,7 @@ export async function refreshSpotifyToken(userTokenData: SpotifyUserTokenData) {
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
       Authorization: `Basic ${Buffer.from(
-        `${env.SPOTIFY_CLIENT_ID}:${env.SPOTIFY_CLIENT_SECRET}`
+        `${env.SPOTIFY_CLIENT_ID}:${env.SPOTIFY_CLIENT_SECRET}`,
       ).toString("base64")}`,
     },
   });
@@ -168,7 +168,7 @@ export async function refreshSpotifyToken(userTokenData: SpotifyUserTokenData) {
   }
 
   const spotifyTokenData = SpotifyRefreshedTokenSchema.safeParse(
-    await res.json()
+    await res.json(),
   );
 
   if (!spotifyTokenData.success) {
@@ -180,7 +180,7 @@ export async function refreshSpotifyToken(userTokenData: SpotifyUserTokenData) {
 
 export async function saveSpotifyAlbumsForUser(
   accessToken: string,
-  albums: string[]
+  albums: string[],
 ) {
   const res = await fetch("https://api.spotify.com/v1/me/albums", {
     method: "PUT",
@@ -204,7 +204,7 @@ const SpotifyCheckSavedAlbumsSchema = zod.array(zod.boolean());
 
 export async function checkSpotifyUsersSavedAlbums(
   accessToken: string,
-  albums: string[]
+  albums: string[],
 ) {
   const url = new URL("https://api.spotify.com/v1/me/albums/contains");
   url.searchParams.append("ids", albums.join(","));
@@ -219,7 +219,7 @@ export async function checkSpotifyUsersSavedAlbums(
     throw new Error(
       `Failed to get saved albums(${res.status}): ${await res
         .text()
-        .catch(() => "unknown error")}`
+        .catch(() => "unknown error")}`,
     );
   }
 
@@ -237,7 +237,7 @@ export type SpotifyUserTokenData = zod.infer<typeof SpotifyUserTokenDataSchema>;
 export async function setSpotifyUserTokenData(
   id: string,
   encryptionKey: Buffer,
-  data: SpotifyUserTokenData
+  data: SpotifyUserTokenData,
 ) {
   const cypher = encrypt(JSON.stringify(data), encryptionKey);
   await kv.set(`SPOTIFY_AUTH:${id}`, cypher, { ex: 60 * 60 * 24 * 365 });

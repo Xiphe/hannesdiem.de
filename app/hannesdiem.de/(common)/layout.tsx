@@ -2,7 +2,7 @@ import "../_src/styles/styles.build.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import SpotifyFeedback from "./spotify/SpotifyFeedback";
-import { getOrigin } from "@/utils";
+import { getOrigin } from "@utils/origin";
 import { PropsWithChildren, Suspense } from "react";
 import { Theme, electrocuteTheme } from "../_src/themes";
 

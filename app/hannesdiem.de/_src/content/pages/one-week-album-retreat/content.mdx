@@ -1,31 +1,40 @@
-import { primaryButtonStyles, focusStyles } from '@/utils'
-import { TextBlock } from '@/components';
-export { FullWidthLayout as default } from '@/components';
-import clsx from 'clsx'
-import ImageComp from  './Image';
-import BgImages from  './BgImages';
-import EventLocation from './EventLocation';
-import mixingSceneImage from './mixing-scene-one-week-retreat.jpg'
-import hannesOnPianoImage from './hannes-diem-on-grand-piano-one-week-album.jpg'
-import hannesOnGuitarImage from './hannes-diem-on-guitar-one-week-album.jpg'
-import tarifaBudhaWalkImage from './tarifa_budha_walk.jpeg'
-import portugalImage from './portugal.jpg'
-import germanyImage from './nothern_germany.jpeg'
-import hannesPortraitImage from './portrait_hannes.png'
-import moodBeachImage from './lokken_beach.jpg'
-import moodCollabImage from './mood_studio_pic.jpeg'
-import denmarkCoastImage from './denmark-coast-one-week-album-retreat.jpg'
-import campFireImage from './camp_fire.jpg'
-import ampImage from './mood_amp.jpeg'
-import roxyPortraitImage from './portrait_roxy.png'
-import { activityRoomImage, bedRoomImage, livingRoomImage } from './externalImages';
-import { SparklesIcon, FireIcon, MusicalNoteIcon, UserGroupIcon, SunIcon, MoonIcon } from '@heroicons/react/24/solid'
+import { primaryButtonStyles, focusStyles } from "@hd/utils/styles";
+import { TextBlock } from "@hd/components";
+export { FullWidthLayout as default } from "@hd/components";
+import clsx from "clsx";
+import ImageComp from "./Image";
+import BgImages from "./BgImages";
+import EventLocation from "./EventLocation";
+import mixingSceneImage from "./mixing-scene-one-week-retreat.jpg";
+import hannesOnPianoImage from "./hannes-diem-on-grand-piano-one-week-album.jpg";
+import hannesOnGuitarImage from "./hannes-diem-on-guitar-one-week-album.jpg";
+import tarifaBudhaWalkImage from "./tarifa_budha_walk.jpeg";
+import portugalImage from "./portugal.jpg";
+import germanyImage from "./nothern_germany.jpeg";
+import hannesPortraitImage from "./portrait_hannes.png";
+import moodBeachImage from "./lokken_beach.jpg";
+import moodCollabImage from "./mood_studio_pic.jpeg";
+import denmarkCoastImage from "./denmark-coast-one-week-album-retreat.jpg";
+import campFireImage from "./camp_fire.jpg";
+import ampImage from "./mood_amp.jpeg";
+import roxyPortraitImage from "./portrait_roxy.png";
+import {
+  activityRoomImage,
+  bedRoomImage,
+  livingRoomImage,
+} from "./externalImages";
+import {
+  SparklesIcon,
+  FireIcon,
+  MusicalNoteIcon,
+  UserGroupIcon,
+  SunIcon,
+  MoonIcon,
+} from "@heroicons/react/24/solid";
 
 <article>
 
-<header
-  className="bg-teal-900 bg-cover bg-center min-h-[80vh] pt-12 pb-20 flex flex-col relative overflow-hidden"
->
+<header className="bg-teal-900 bg-cover bg-center min-h-[80vh] pt-12 pb-20 flex flex-col relative overflow-hidden">
   <ImageComp
     priority
     src={denmarkCoastImage}
@@ -38,8 +47,12 @@ import { SparklesIcon, FireIcon, MusicalNoteIcon, UserGroupIcon, SunIcon, MoonIc
   <div className="relative z-10">
     <div className="prose lg:prose-xl prose-invert mx-auto px-4">
       <div className="text-contrast-shadow-black flex flex-col">
-        <h1 className="mb-0 lg:mb-0 -ml-1.5 !text-7xl sm:!text-8xl">One Week Album</h1>
-        <h2 className="!mt-4 font-normal">7 artist spend 7 days to grow into a band and unleash their creativity</h2>
+        <h1 className="mb-0 lg:mb-0 -ml-1.5 !text-7xl sm:!text-8xl">
+          One Week Album
+        </h1>
+        <h2 className="!mt-4 font-normal">
+          7 artist spend 7 days to grow into a band and unleash their creativity
+        </h2>
       </div>
     </div>
   </div>
@@ -51,30 +64,30 @@ import { SparklesIcon, FireIcon, MusicalNoteIcon, UserGroupIcon, SunIcon, MoonIc
 ## Do you answer YES to these questions?
 
 <ul className="list-none !p-0">
-  <li className="flex !m-0 !p-0"><SparklesIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Are you keen to meet your inspirational depth?</li>
-  <li className="flex !m-0 !p-0"><FireIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Do you want to create music from the mind, heart, and body?</li>
-  <li className="flex !m-0 !p-0"><MusicalNoteIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Are you experienced creating sound with either your voice, an instrument or programmatically?</li>
-  <li className="flex !m-0 !p-0"><UserGroupIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Do you seek connection and co-creation among curious people?</li>
+  <li className="flex !m-0 !p-0">
+    <SparklesIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Are you
+    keen to meet your inspirational depth?
+  </li>
+  <li className="flex !m-0 !p-0">
+    <FireIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Do you want to
+    create music from the mind, heart, and body?
+  </li>
+  <li className="flex !m-0 !p-0">
+    <MusicalNoteIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Are you
+    experienced creating sound with either your voice, an instrument or
+    programmatically?
+  </li>
+  <li className="flex !m-0 !p-0">
+    <UserGroupIcon className="h-[1.2em] shrink-0 m-2 mt-1 lg:mt-2" /> Do you
+    seek connection and co-creation among curious people?
+  </li>
 </ul>
 
 <div className="text-center font-bold text-2xl">
-Then this retreat is for you!
+  Then this retreat is for you!
 </div>
 
 </TextBlock>
-
-{/*
-<div className="flex content-center justify-center -mt-8 sm:-mt-16 relative z-20">
-  <a
-    href="https://docs.google.com/forms/d/e/1FAIpQLScipgLryLEnfyoDgXDqukDVx7YrTU_2SRyQtwXL2f-E0oPAVw/viewform?usp=sf_link"
-    className={primaryButtonStyles}
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Join us!
-  </a>
-</div>
-*/}
 
 <div className="flex flex-wrap content-center justify-center gap-16 lg:gap-6 max-w-7xl md:px-8 lg:px-0 mx-auto mb-16 lg:mb-32 mt-16 lg:-mt-12 relative z-20">
   <EventLocation
@@ -108,20 +121,26 @@ Then this retreat is for you!
   />
 </div>
 
-<BgImages 
+<BgImages
   className="mt-16"
   images={[
-    [hannesOnPianoImage, 'Hannes Diem playing on a grand piano'],
-    [mixingSceneImage, 'Hannes Diem playing on a grand piano', undefined, false],
+    [hannesOnPianoImage, "Hannes Diem playing on a grand piano"],
+    [
+      mixingSceneImage,
+      "Hannes Diem playing on a grand piano",
+      undefined,
+      false,
+    ],
   ]}
 >
-  <h4
-    className="text-5xl sm:text-6xl xl:text-8xl text-white font-bold md:text-center ml-8 text-contrast-shadow-black"
-  >
-    <span className="bg-[rgba(16,17,17,0.8)]">Feel. <br className="sm:hidden" />Connect. <br className="sm:hidden" />Create.</span>
-</h4>
+  <h4 className="text-5xl sm:text-6xl xl:text-8xl text-white font-bold md:text-center ml-8 text-contrast-shadow-black">
+    <span className="bg-[rgba(16,17,17,0.8)]">
+      Feel. <br className="sm:hidden" />
+      Connect. <br className="sm:hidden" />
+      Create.
+    </span>
+  </h4>
 </BgImages>
-
 
 <TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
 
@@ -132,23 +151,27 @@ Together we transform a group of strangers into an orchestra bursting with ideas
 
 - We build an appreciative band of trust and support within the group
 - We establish techniques to quickly communicate our raw creative ideas
-- We tap into our unconscious inspiration 
+- We tap into our unconscious inspiration
 - We wield our emotions into sound
-- We practice rituals of actualization 
+- We practice rituals of actualization
 
 **This unforgettable experience fosters true connections and the creation of fresh, raw, and authentic music.**
 
 </TextBlock>
 
-<BgImages 
+<BgImages
   className="lg:mt-16"
   images={[
-    [moodBeachImage, 'Løkken beach drone shot', 'Photo by Lasse Diercks'],
-    [moodCollabImage, 'A studio table', 'Photo by Lasse Diercks', false],
-    [campFireImage, 'A group of people enjoying a campfire', 'Photo by Lasse Diercks', false],
+    [moodBeachImage, "Løkken beach drone shot", "Photo by Lasse Diercks"],
+    [moodCollabImage, "A studio table", "Photo by Lasse Diercks", false],
+    [
+      campFireImage,
+      "A group of people enjoying a campfire",
+      "Photo by Lasse Diercks",
+      false,
+    ],
   ]}
 />
-
 
 <TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
 
@@ -161,18 +184,49 @@ Together we transform a group of strangers into an orchestra bursting with ideas
     <MoonIcon className="w-6 mb-1 lg:mb-2" />
   </div>
   <ul className="list-none !p-0 !m-0.5 lg:!mt-0">
-    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**8:00**:</span><span> Wake up the body with an active meditation</span></li>
-    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**9:00**:</span><span> Breakfast with Granola, fresh baked bread and fruits</span></li>
-    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**10:30**:</span><span>Morning session about body-percussion and overcoming shame</span></li>
-    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**13:00**:</span><span>Soulful Shakshuka for lunch and time to unwind, take a walk on the beach or do yoga </span></li>
-    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**15:00**:</span><span>Afternoon session writing the "worst song ever" and dealing with perfectionism</span></li>
-    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**19:00**:</span><span>Dinner, p. ex. “Smørrebrød” _(a traditional open-faced sandwich in the cuisines of Denmark)_ expanding into a jam session in front of the fireplace</span></li>
-    <li className="flex !m-0 !p-0"><span className="w-12 lg:w-16 text-right shrink-0 mr-2">**21:00**:</span><span>"Open Mic" style concert </span></li>
+    <li className="flex !m-0 !p-0">
+      <span className="w-12 lg:w-16 text-right shrink-0 mr-2">**8:00**:</span>
+      <span> Wake up the body with an active meditation</span>
+    </li>
+    <li className="flex !m-0 !p-0">
+      <span className="w-12 lg:w-16 text-right shrink-0 mr-2">**9:00**:</span>
+      <span> Breakfast with Granola, fresh baked bread and fruits</span>
+    </li>
+    <li className="flex !m-0 !p-0">
+      <span className="w-12 lg:w-16 text-right shrink-0 mr-2">**10:30**:</span>
+      <span>Morning session about body-percussion and overcoming shame</span>
+    </li>
+    <li className="flex !m-0 !p-0">
+      <span className="w-12 lg:w-16 text-right shrink-0 mr-2">**13:00**:</span>
+      <span>
+        Soulful Shakshuka for lunch and time to unwind, take a walk on the beach
+        or do yoga{" "}
+      </span>
+    </li>
+    <li className="flex !m-0 !p-0">
+      <span className="w-12 lg:w-16 text-right shrink-0 mr-2">**15:00**:</span>
+      <span>
+        Afternoon session writing the "worst song ever" and dealing with
+        perfectionism
+      </span>
+    </li>
+    <li className="flex !m-0 !p-0">
+      <span className="w-12 lg:w-16 text-right shrink-0 mr-2">**19:00**:</span>
+      <span>
+        Dinner, p. ex. “Smørrebrød” _(a traditional open-faced sandwich in the
+        cuisines of Denmark)_ expanding into a jam session in front of the
+        fireplace
+      </span>
+    </li>
+    <li className="flex !m-0 !p-0">
+      <span className="w-12 lg:w-16 text-right shrink-0 mr-2">**21:00**:</span>
+      <span>"Open Mic" style concert </span>
+    </li>
   </ul>
 </div>
 
 **Inspiration is a wonderful, yet unpredictable fairy.**  
-During all times we might spontaneously follow the flow of things, capture a vocal line, record a live jam or dance to a beat we just came up with. 
+During all times we might spontaneously follow the flow of things, capture a vocal line, record a live jam or dance to a beat we just came up with.
 
 </TextBlock>
 
@@ -181,6 +235,7 @@ During all times we might spontaneously follow the flow of things, capture a voc
 <div className="flex flex-col gap-8 lg:flex-row lg:gap-20 lg:px-24 mx-auto justify-center">
 
 {/* Hannes */}
+
 <div>
 <div className="max-w-96 mx-auto px-8 -mb-8 sm:-mb-16 lg:mb-0">
   <ImageComp 
@@ -210,6 +265,7 @@ These times of darkness and struggle ultimately led him on a path of recalibrati
 </div>
 
 {/* Roxy */}
+
 <div>
 <div className="max-w-96 mx-auto px-8 -mb-8 sm:-mb-16 lg:mb-0">
 <ImageComp 
@@ -224,13 +280,13 @@ These times of darkness and struggle ultimately led him on a path of recalibrati
 
 ### Roxanna
 
-born in 1988, she lives in Hamburg or in her van somewhere between Denmark and Spain. 
+born in 1988, she lives in Hamburg or in her van somewhere between Denmark and Spain.
 
-She studied business administration and cultural management. She has worked in marketing and event management for the last 15 years. 
+She studied business administration and cultural management. She has worked in marketing and event management for the last 15 years.
 
 In search of freedom, reflection on the essentials and the sea, she shares her stories. Her passions are writing and cooking. She has spent a lot of time at the sea and has a fable for Scandinavian culture. Her buttermilk-yellow vintage car "Susy" has become a complex attitude to life and an engine of thought. If there's enough wind, she'll be kitesurfing.
 
-**In this week she will be our feel good partner, supporting where it's useful, creating the meals, holding the space or as an active listener to everybody who needs one. 
+**In this week she will be our feel good partner, supporting where it's useful, creating the meals, holding the space or as an active listener to everybody who needs one.
 Her vision for the retreat is: Lagom. It describes a deeply Swedish attitude to life and means “not too much, not too little”, or “just right”.**
 
 </TextBlock>
@@ -251,7 +307,6 @@ Her vision for the retreat is: Lagom. It describes a deeply Swedish attitude to 
 
 </BgImages>
 
-
 <TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
 
 ## The location
@@ -262,24 +317,28 @@ Our accommodation is a former farmer yard with two 3-person bedrooms and 2 rooms
 
 Løkken is an old, small fishing town. Løkken's beach is lined with a beautiful dune landscape, which becomes rougher as you go north and turns into a cliff. Small bathing houses decorate the sandy beach.
 
-<a href="https://www.daenemark.de/haus/43136/?date_from=2024-09-14&date_to=2024-09-21&adults=8&order=space_living_desc&discount=yes&page=1" target="_blank" rel="noopener noreferrer" className={focusStyles}>Learn more about the accommodation</a>
+<a
+  href="https://www.daenemark.de/haus/43136/?date_from=2024-09-14&date_to=2024-09-21&adults=8&order=space_living_desc&discount=yes&page=1"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={focusStyles}
+>
+  Learn more about the accommodation
+</a>
 
 </TextBlock>
 
-<BgImages 
+<BgImages
   className="lg:mt-16"
   images={[
-    [ampImage, 'A guitar amp', 'Photo by Lasse Diercks'],
-    [hannesOnGuitarImage, 'Hannes Diem playing on a guitar', undefined, false],
+    [ampImage, "A guitar amp", "Photo by Lasse Diercks"],
+    [hannesOnGuitarImage, "Hannes Diem playing on a guitar", undefined, false],
   ]}
 >
-  <h4
-    className="text-4xl sm:text-7xl xl:text-9xl text-white font-bold md:text-center ml-8 text-contrast-shadow-black"
-  >
+  <h4 className="text-4xl sm:text-7xl xl:text-9xl text-white font-bold md:text-center ml-8 text-contrast-shadow-black">
     <span className="bg-[rgba(16,17,17,0.8)]">Come as you are.</span>
-</h4>
+  </h4>
 </BgImages>
-
 
 <TextBlock className="sm:-mt-2 md:-mt-8 lg:-mt-8 relative z-10">
 
@@ -301,7 +360,9 @@ Løkken is an old, small fishing town. Løkken's beach is lined with a beautiful
 
 <hr className="border-black dark:border-white w-64 border-4 mx-auto mt-16" />
 
-<h4 className="text-center text-5xl sm:text-6xl font-bold my-8 px-4">This is gonna be wonderful</h4>
+<h4 className="text-center text-5xl sm:text-6xl font-bold my-8 px-4">
+  This is gonna be wonderful
+</h4>
 
 <div className="flex content-center justify-center">
   <a
@@ -315,12 +376,19 @@ Løkken is an old, small fishing town. Løkken's beach is lined with a beautiful
 </div>
 
 <div className="text-center mt-8 mb-32 italic opacity-80 px-8">
-Questions, uncertainties, feedback?<br />Please <a href="mailto:oneweekalbum@hannesdiem.de" className={clsx("underline", focusStyles)}>get in touch with us</a>!
+  Questions, uncertainties, feedback?
+  <br />
+  Please{" "}
+  <a
+    href="mailto:oneweekalbum@hannesdiem.de"
+    className={clsx("underline", focusStyles)}
+  >
+    get in touch with us
+  </a>
+  !
 </div>
 
-
 <TextBlock className="">
-
 
 ## FAQ
 
@@ -339,20 +407,17 @@ We'll see! The intent is an invitation to create a strong focus and a motivation
 
 At the same time: If this creates negative stress such as incentivizing people to work during the night, we'll take a step back. This week is about discovery and connection as much as it's about creativity.
 
-
 ### How can I stay informed about future events?
-
 
 Find us on Instagram as <a href="https://www.instagram.com/hannes.im/" target="_blank" rel="noopener noreferrer">@hannes.im</a>
 and <a href="https://www.instagram.com/oneweekalbum/" target="_blank" rel="noopener noreferrer">@oneweekalbum</a>.  
-Sign up to our  <a href="mailto:oneweekalbumnewsletter@hannesdiem.de?subject=Newsletter%20Signup&body=Hi!%0A%0AI%20would%20like%20to%20stay%20informed%20about%20future%20%22One%20Week%20Album%22%20events.%0A%0ACheers" target="_blank" rel="noopener noreferrer">newsletter</a>.  
-Join our <a href="https://t.me/+40m9sJpUNzkyYmI6" target="_blank" rel="noopener noreferrer">Telegram channel</a>.  
-
+Sign up to our <a href="mailto:oneweekalbumnewsletter@hannesdiem.de?subject=Newsletter%20Signup&body=Hi!%0A%0AI%20would%20like%20to%20stay%20informed%20about%20future%20%22One%20Week%20Album%22%20events.%0A%0ACheers" target="_blank" rel="noopener noreferrer">newsletter</a>.  
+Join our <a href="https://t.me/+40m9sJpUNzkyYmI6" target="_blank" rel="noopener noreferrer">Telegram channel</a>.
 
 ### I would like to come! What do I need to do?
 
 Please go ahead and fill in our <a href="https://docs.google.com/forms/d/e/1FAIpQLScipgLryLEnfyoDgXDqukDVx7YrTU_2SRyQtwXL2f-E0oPAVw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Application Form</a>
-so we can get to learn a bit about you. We will get in touch shortly after that to schedule a quick 1 on 1.  
+so we can get to learn a bit about you. We will get in touch shortly after that to schedule a quick 1 on 1.
 
 You will also need to plan your travels to <a href="https://www.rome2rio.com/map/Honolulu/L%C3%B8kken#trips" target="_blank" rel="noopener noreferrer">Løkken</a>.
 

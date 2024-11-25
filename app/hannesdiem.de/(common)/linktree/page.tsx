@@ -10,13 +10,13 @@ import {
   TidalLogo,
   SoundCloudLogo,
   GlobeIcon,
-} from "@components";
+  Footer,
+} from "@hd/components";
 import Image from "next/image";
 import clsx from "clsx";
-import { ComponentPropsWithoutRef, ComponentType, useMemo } from "react";
-import { focusStyles, PageProps } from "@/utils";
-import Footer from "@/components/Footer";
-import FreshRelease from "@/components/content/FreshRelease";
+import { ComponentPropsWithoutRef, ComponentType } from "react";
+import { focusStyles } from "@hd/utils/styles";
+import FreshRelease from "@hd/components/content/FreshRelease";
 
 const liStyles =
   "rounded bg-gradient-to-b from-blue-800 to-blue-900 text-white focus:outline-none hover:from-blue-900 hover:to-blue-900 hover:text-pink-200";
@@ -92,7 +92,7 @@ const smallIcons: {
   },
 ];
 
-export default async function LinkTreePage(_: PageProps) {
+export default async function LinkTreePage() {
   return (
     <div className="bg-gradient-to-b gradient-full">
       <div>
@@ -125,7 +125,7 @@ export default async function LinkTreePage(_: PageProps) {
                     <a
                       className={clsx(
                         "flex items-center m-4 px-5 py-4",
-                        liClass
+                        liClass,
                       )}
                       href={href}
                     >
@@ -148,7 +148,7 @@ export default async function LinkTreePage(_: PageProps) {
                       <a
                         className={clsx(
                           liClass,
-                          "flex aspect-video items-center justify-center p-2"
+                          "flex aspect-video items-center justify-center p-2",
                         )}
                         href={href}
                       >

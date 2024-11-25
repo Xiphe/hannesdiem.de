@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
-import { focusStyles, proseStyles } from "@/utils";
+import { Footer } from "@hd/components";
+import { focusStyles, proseStyles } from "@hd/utils/styles";
 import clsx from "clsx";
 import Link from "next/link";
 

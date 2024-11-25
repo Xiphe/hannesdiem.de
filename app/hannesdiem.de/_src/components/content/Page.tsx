@@ -1,11 +1,11 @@
-import { type Page } from "@/content";
-import { getOrigin } from "@/utils";
+import { type Page } from "@hd/content";
+import { getOrigin } from "@utils/origin";
 import { Metadata, ResolvingMetadata } from "next";
 
 export async function generatePageMetadata(
   page: Page,
   searchParams: Record<string, string | string[]>,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ) {
   const url = new URL(await getOrigin());
   url.pathname = page.slug;

@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 import micromatch from "micromatch";
-import { content } from "./hannesdiem.de/_src/content";
+import { content } from "../hannesdiem.de/_src/content";
 
 const baseUrl = "https://hannesdiem.de";
 

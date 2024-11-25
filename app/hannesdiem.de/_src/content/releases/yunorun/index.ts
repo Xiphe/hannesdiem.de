@@ -1,6 +1,6 @@
-import { Release } from "@/content";
+import { Release } from "@hd/content";
 import Description from "./description.mdx";
-import { CarlAlbrecht, HannesDiem } from "@/content/meta/people";
+import { CarlAlbrecht, HannesDiem } from "@hd/content/meta/people";
 
 export default {
   type: "release",
