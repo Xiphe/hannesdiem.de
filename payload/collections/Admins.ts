@@ -45,6 +45,10 @@ export const Admins: CollectionConfig = {
           value: "rezepte.roxanna-diercks.de",
           label: "rezepte.roxanna-diercks.de",
         },
+        {
+          value: "dein-gedankenfluss.de",
+          label: "dein-gedankenfluss.de",
+        },
       ],
       hasMany: true,
     },

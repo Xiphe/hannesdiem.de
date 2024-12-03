@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-display: block;
+    font-family: "Montserrat Alternates";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/font/montserrat-alternates-v17-latin-regular.woff2")
+      format("woff2");
+  }
+
+  @font-face {
+    font-display: block;
+    font-family: "Licorice";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/font/licorice-v6-latin-regular.woff2") format("woff2");
+  }
+
+  * {
+    transition: box-shadow linear 0.2s;
+  }
+}

@@ -20,6 +20,7 @@
       }
     ],
     "paths": {
+      "@gf/*": ["./app/dein-gedankenfluss.de/_src/*"],
       "@hd/*": ["./app/hannesdiem.de/_src/*"],
       "@hdx/*": ["./app/hannesdiercks.de/_src/*"],
       "@utils/*": ["./app/(common)/utils/*"],

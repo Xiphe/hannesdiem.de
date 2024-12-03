@@ -12,6 +12,7 @@ import { mergeTenants } from "./utils/tenant";
 import { EN } from "./utils/locales";
 
 import { HannesDiemDeConfig } from "./tenants/hannesdiem.de";
+import { DeinGedankenflussDeConfig } from "./tenants/dein-gedankenfluss.de";
 import { RezepteRoxannaDiercksDeConfig } from "./tenants/rezepte.roxanna-diercks.de";
 import { getBlobStorageConfigs } from "./utils/uploadDir";
 import { fileURLToPath } from "node:url";
@@ -62,6 +63,7 @@ export default buildConfig(
       secret: PAYLOAD_SECRET,
       db: (isDev ? postgresAdapter : vercelPostgresAdapter)({
         migrationDir,
+        idType: "uuid",
         pool: {
           connectionString: POSTGRESQL_DATABASE_URL,
         },
@@ -87,6 +89,7 @@ export default buildConfig(
         );
       },
     },
+    DeinGedankenflussDeConfig,
     HannesDiemDeConfig,
     RezepteRoxannaDiercksDeConfig,
   ),

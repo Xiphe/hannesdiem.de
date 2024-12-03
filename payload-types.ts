@@ -13,6 +13,7 @@ export interface Config {
   collections: {
     admins: Admin;
     cache: Cache;
+    'gdf-pages': GdfPage;
     'hdm-persons': HdmPerson;
     'hdm-cover-arts': HdmCoverArt;
     'hdm-releases': HdmRelease;
@@ -32,6 +33,7 @@ export interface Config {
   collectionsSelect: {
     admins: AdminsSelect<false> | AdminsSelect<true>;
     cache: CacheSelect<false> | CacheSelect<true>;
+    'gdf-pages': GdfPagesSelect<false> | GdfPagesSelect<true>;
     'hdm-persons': HdmPersonsSelect<false> | HdmPersonsSelect<true>;
     'hdm-cover-arts': HdmCoverArtsSelect<false> | HdmCoverArtsSelect<true>;
     'hdm-releases': HdmReleasesSelect<false> | HdmReleasesSelect<true>;
@@ -48,7 +50,7 @@ export interface Config {
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
   db: {
-    defaultIDType: number;
+    defaultIDType: string;
   };
   globals: {};
   globalsSelect: {};
@@ -84,9 +86,9 @@ export interface AdminAuthOperations {
  * via the `definition` "admins".
  */
 export interface Admin {
-  id: number;
+  id: string;
   superadmin?: boolean | null;
-  tenants?: ('hannesdiem.de' | 'hannesdiercks.de' | 'rezepte.roxanna-diercks.de')[] | null;
+  tenants?: ('hannesdiem.de' | 'hannesdiercks.de' | 'rezepte.roxanna-diercks.de' | 'dein-gedankenfluss.de')[] | null;
   updatedAt: string;
   createdAt: string;
   email: string;
@@ -103,7 +105,7 @@ export interface Admin {
  * via the `definition` "cache".
  */
 export interface Cache {
-  id: number;
+  id: string;
   key: string;
   expires: number;
   value: {
@@ -119,10 +121,43 @@ export interface Cache {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "gdf-pages".
+ */
+export interface GdfPage {
+  id: string;
+  title: string;
+  slug: string;
+  content?:
+    | {
+        content?: {
+          root: {
+            type: string;
+            children: {
+              type: string;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'richtext';
+      }[]
+    | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "hdm-persons".
  */
 export interface HdmPerson {
-  id: number;
+  id: string;
   name: string;
   link?: string | null;
   ogProfile?: string | null;
@@ -134,7 +169,7 @@ export interface HdmPerson {
  * via the `definition` "hdm-cover-arts".
  */
 export interface HdmCoverArt {
-  id: number;
+  id: string;
   alt?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -153,23 +188,23 @@ export interface HdmCoverArt {
  * via the `definition` "hdm-releases".
  */
 export interface HdmRelease {
-  id: number;
+  id: string;
   title: string;
   slug: string;
   subtitle?: string | null;
   artist?: string | null;
   releaseDate?: string | null;
   hideReleaseDay?: boolean | null;
-  cover?: (number | null) | HdmCoverArt;
+  cover?: (string | null) | HdmCoverArt;
   contributors?:
     | {
-        person: number | HdmPerson;
-        roles: (number | HdmContributionRole)[];
+        person: string | HdmPerson;
+        roles: (string | HdmContributionRole)[];
         description?: string | null;
         id?: string | null;
       }[]
     | null;
-  genres?: (number | HdmGenre)[] | null;
+  genres?: (string | HdmGenre)[] | null;
   languages?: ('english' | 'german')[] | null;
   summary?: string | null;
   description?: {
@@ -192,7 +227,7 @@ export interface HdmRelease {
         title: string;
         addition?: string | null;
         duration?: number | null;
-        song?: (number | null) | HdmSong;
+        song?: (string | null) | HdmSong;
         id?: string | null;
       }[]
     | null;
@@ -217,7 +252,7 @@ export interface HdmRelease {
  * via the `definition` "hdm-contribution-roles".
  */
 export interface HdmContributionRole {
-  id: number;
+  id: string;
   role: string;
   updatedAt: string;
   createdAt: string;
@@ -227,7 +262,7 @@ export interface HdmContributionRole {
  * via the `definition` "hdm-genres".
  */
 export interface HdmGenre {
-  id: number;
+  id: string;
   name: string;
   updatedAt: string;
   createdAt: string;
@@ -237,7 +272,7 @@ export interface HdmGenre {
  * via the `definition` "hdm-songs".
  */
 export interface HdmSong {
-  id: number;
+  id: string;
   title: string;
   subtitle?: string | null;
   slug: string;
@@ -246,8 +281,8 @@ export interface HdmSong {
   hideCreationDay?: boolean | null;
   authors?:
     | {
-        person: number | HdmPerson;
-        roles: (number | HdmContributionRole)[];
+        person: string | HdmPerson;
+        roles: (string | HdmContributionRole)[];
         description?: string | null;
         id?: string | null;
       }[]
@@ -290,7 +325,7 @@ export interface HdmSong {
  * via the `definition` "rcps-recipes".
  */
 export interface Recipe {
-  id: number;
+  id: string;
   uuid?: string | null;
   name: string;
   /**
@@ -303,7 +338,7 @@ export interface Recipe {
   cookingDuration?: number | null;
   serves?: number | null;
   defaultScale?: number | null;
-  source?: (number | null) | RcpsSource;
+  source?: (string | null) | RcpsSource;
   'ingredient-sections'?:
     | {
         /**
@@ -313,8 +348,8 @@ export interface Recipe {
         'section-ingredients'?:
           | {
               quantity: number;
-              'quantity-type': number | QuantityType;
-              ingredient: number | Ingredient;
+              'quantity-type': string | QuantityType;
+              ingredient: string | Ingredient;
               id?: string | null;
             }[]
           | null;
@@ -352,7 +387,7 @@ export interface Recipe {
     | null;
   images?:
     | {
-        image?: (number | null) | RcpsImage;
+        image?: (string | null) | RcpsImage;
         id?: string | null;
       }[]
     | null;
@@ -395,7 +430,7 @@ export interface Recipe {
  * via the `definition` "rcps-sources".
  */
 export interface RcpsSource {
-  id: number;
+  id: string;
   name: string;
   url: string;
   updatedAt: string;
@@ -406,7 +441,7 @@ export interface RcpsSource {
  * via the `definition` "rcps-quantity-types".
  */
 export interface QuantityType {
-  id: number;
+  id: string;
   name: string;
   singular?: string | null;
   plural?: string | null;
@@ -419,10 +454,10 @@ export interface QuantityType {
  * via the `definition` "rcps-ingredients".
  */
 export interface Ingredient {
-  id: number;
+  id: string;
   name: string;
   plural: string;
-  recipe?: (number | null) | Recipe;
+  recipe?: (string | null) | Recipe;
   affiliateUrl?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -432,7 +467,7 @@ export interface Ingredient {
  * via the `definition` "rcps-images".
  */
 export interface RcpsImage {
-  id: number;
+  id: string;
   alt?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -469,64 +504,68 @@ export interface RcpsImage {
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
-  id: number;
+  id: string;
   document?:
     | ({
         relationTo: 'admins';
-        value: number | Admin;
+        value: string | Admin;
       } | null)
     | ({
         relationTo: 'cache';
-        value: number | Cache;
+        value: string | Cache;
+      } | null)
+    | ({
+        relationTo: 'gdf-pages';
+        value: string | GdfPage;
       } | null)
     | ({
         relationTo: 'hdm-persons';
-        value: number | HdmPerson;
+        value: string | HdmPerson;
       } | null)
     | ({
         relationTo: 'hdm-cover-arts';
-        value: number | HdmCoverArt;
+        value: string | HdmCoverArt;
       } | null)
     | ({
         relationTo: 'hdm-releases';
-        value: number | HdmRelease;
+        value: string | HdmRelease;
       } | null)
     | ({
         relationTo: 'hdm-contribution-roles';
-        value: number | HdmContributionRole;
+        value: string | HdmContributionRole;
       } | null)
     | ({
         relationTo: 'hdm-genres';
-        value: number | HdmGenre;
+        value: string | HdmGenre;
       } | null)
     | ({
         relationTo: 'hdm-songs';
-        value: number | HdmSong;
+        value: string | HdmSong;
       } | null)
     | ({
         relationTo: 'rcps-recipes';
-        value: number | Recipe;
+        value: string | Recipe;
       } | null)
     | ({
         relationTo: 'rcps-images';
-        value: number | RcpsImage;
+        value: string | RcpsImage;
       } | null)
     | ({
         relationTo: 'rcps-sources';
-        value: number | RcpsSource;
+        value: string | RcpsSource;
       } | null)
     | ({
         relationTo: 'rcps-quantity-types';
-        value: number | QuantityType;
+        value: string | QuantityType;
       } | null)
     | ({
         relationTo: 'rcps-ingredients';
-        value: number | Ingredient;
+        value: string | Ingredient;
       } | null);
   globalSlug?: string | null;
   user: {
     relationTo: 'admins';
-    value: number | Admin;
+    value: string | Admin;
   };
   updatedAt: string;
   createdAt: string;
@@ -536,10 +575,10 @@ export interface PayloadLockedDocument {
  * via the `definition` "payload-preferences".
  */
 export interface PayloadPreference {
-  id: number;
+  id: string;
   user: {
     relationTo: 'admins';
-    value: number | Admin;
+    value: string | Admin;
   };
   key?: string | null;
   value?:
@@ -559,7 +598,7 @@ export interface PayloadPreference {
  * via the `definition` "payload-migrations".
  */
 export interface PayloadMigration {
-  id: number;
+  id: string;
   name?: string | null;
   batch?: number | null;
   updatedAt: string;
@@ -590,6 +629,27 @@ export interface CacheSelect<T extends boolean = true> {
   key?: T;
   expires?: T;
   value?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "gdf-pages_select".
+ */
+export interface GdfPagesSelect<T extends boolean = true> {
+  title?: T;
+  slug?: T;
+  content?:
+    | T
+    | {
+        richtext?:
+          | T
+          | {
+              content?: T;
+              id?: T;
+              blockName?: T;
+            };
+      };
   updatedAt?: T;
   createdAt?: T;
 }
