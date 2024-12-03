@@ -8,17 +8,35 @@ const nextConfig = {
       {
         source: "/",
         destination: "/linktree",
+        has: [
+          {
+            type: "host",
+            value: "hannesdiem.de",
+          },
+        ],
         permanent: false,
       },
       {
         source: "/owa",
         destination: "/one-week-album-retreat",
+        has: [
+          {
+            type: "host",
+            value: "hannesdiem.de",
+          },
+        ],
         permanent: true,
       },
       {
         source: "/cv",
         destination:
           "https://docs.google.com/document/d/1LEo6Z-sLCULuJikA1JjbfcQTfP6UavQyjM7DehcMZeQ/edit?usp=sharing",
+        has: [
+          {
+            type: "host",
+            value: "hannesdiem.de",
+          },
+        ],
         permanent: false,
       },
     ];
