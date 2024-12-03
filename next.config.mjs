@@ -5,40 +5,24 @@ import withMDX from "@next/mdx";
 const nextConfig = {
   async redirects() {
     return [
-      {
-        source: "/",
-        destination: "/linktree",
-        has: [
-          {
-            type: "host",
-            value: "hannesdiem.de",
-          },
-        ],
-        permanent: false,
-      },
-      {
-        source: "/owa",
-        destination: "/one-week-album-retreat",
-        has: [
-          {
-            type: "host",
-            value: "hannesdiem.de",
-          },
-        ],
-        permanent: true,
-      },
-      {
-        source: "/cv",
-        destination:
-          "https://docs.google.com/document/d/1LEo6Z-sLCULuJikA1JjbfcQTfP6UavQyjM7DehcMZeQ/edit?usp=sharing",
-        has: [
-          {
-            type: "host",
-            value: "hannesdiem.de",
-          },
-        ],
-        permanent: false,
-      },
+      ...redirectsFor("hannesdiem.de", [
+        {
+          source: "/",
+          destination: "/linktree",
+          permanent: false,
+        },
+        {
+          source: "/owa",
+          destination: "/one-week-album-retreat",
+          permanent: true,
+        },
+        {
+          source: "/cv",
+          destination:
+            "https://docs.google.com/document/d/1LEo6Z-sLCULuJikA1JjbfcQTfP6UavQyjM7DehcMZeQ/edit?usp=sharing",
+          permanent: false,
+        },
+      ]),
     ];
   },
   images: {
@@ -63,3 +47,19 @@ const nextConfig = {
 };
 
 export default withPayload(withMDX()(nextConfig));
+
+/**
+ * @param {string} host
+ * @param {Awaited<ReturnType<NonNullable<import('next').NextConfig["redirects"]>>>} redirects
+ */
+function redirectsFor(host, redirects) {
+  return redirects.map(({ has = [], ...rest }) => ({
+    ...rest,
+    has: has.concat([
+      {
+        type: "host",
+        value: host,
+      },
+    ]),
+  }));
+}
