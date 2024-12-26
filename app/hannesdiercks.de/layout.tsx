@@ -24,13 +24,11 @@ export async function generateMetadata() {
   } satisfies Metadata;
 }
 
-export type LayoutProps = PropsWithChildren<{
-  lang?: string;
-}>;
+export type LayoutProps = PropsWithChildren;
 
-export default function RootLayout({ children, lang = "en" }: LayoutProps) {
+export default function RootLayout({ children }: LayoutProps) {
   return (
-    <html lang={lang}>
+    <html lang={"en"}>
       <body>
         {children}
         <Analytics />
