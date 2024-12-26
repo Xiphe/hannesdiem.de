@@ -23,6 +23,14 @@ const nextConfig = {
           permanent: false,
         },
       ]),
+      ...redirectsFor("hannesdiercks.de", [
+        {
+          source: "/cv",
+          destination:
+            "https://docs.google.com/document/d/1qjGGhtciJNSU7MJ4v0RRkJ3Q4uF_zA1Nu3tEPhL0Grc/edit?usp=sharing",
+          permanent: false,
+        },
+      ]),
     ];
   },
   images: {
