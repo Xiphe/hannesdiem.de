@@ -11,12 +11,17 @@ export interface Config {
     users: UserAuthOperations;
   };
   collections: {
-    genres: Genre;
+    images: Image;
     persons: Person;
     'cover-arts': CoverArt;
     releases: Release;
     'contribution-roles': ContributionRole;
+    genres: Genre;
     songs: Song;
+    recipes: Recipe;
+    'recipe-sources': RecipeSource;
+    'recipe-quantity-type': RecipeQuantityType;
+    'recipe-ingredient': RecipeIngredient;
     users: User;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -24,12 +29,17 @@ export interface Config {
   };
   collectionsJoins: {};
   collectionsSelect: {
-    genres: GenresSelect<false> | GenresSelect<true>;
+    images: ImagesSelect<false> | ImagesSelect<true>;
     persons: PersonsSelect<false> | PersonsSelect<true>;
     'cover-arts': CoverArtsSelect<false> | CoverArtsSelect<true>;
     releases: ReleasesSelect<false> | ReleasesSelect<true>;
     'contribution-roles': ContributionRolesSelect<false> | ContributionRolesSelect<true>;
+    genres: GenresSelect<false> | GenresSelect<true>;
     songs: SongsSelect<false> | SongsSelect<true>;
+    recipes: RecipesSelect<false> | RecipesSelect<true>;
+    'recipe-sources': RecipeSourcesSelect<false> | RecipeSourcesSelect<true>;
+    'recipe-quantity-type': RecipeQuantityTypeSelect<false> | RecipeQuantityTypeSelect<true>;
+    'recipe-ingredient': RecipeIngredientSelect<false> | RecipeIngredientSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -40,13 +50,13 @@ export interface Config {
   };
   globals: {};
   globalsSelect: {};
-  locale: null;
+  locale: 'en' | 'es' | 'de';
   user: User & {
     collection: 'users';
   };
-  jobs?: {
+  jobs: {
     tasks: unknown;
-    workflows?: unknown;
+    workflows: unknown;
   };
 }
 export interface UserAuthOperations {
@@ -69,13 +79,40 @@ export interface UserAuthOperations {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "genres".
+ * via the `definition` "images".
  */
-export interface Genre {
+export interface Image {
   id: number;
-  name: string;
+  alt?: string | null;
   updatedAt: string;
   createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+  sizes?: {
+    thumbnail?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    card?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+  };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -96,6 +133,7 @@ export interface Person {
 export interface CoverArt {
   id: number;
   alt?: string | null;
+  prefix?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -184,6 +222,16 @@ export interface ContributionRole {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "genres".
+ */
+export interface Genre {
+  id: number;
+  name: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "songs".
  */
 export interface Song {
@@ -237,6 +285,148 @@ export interface Song {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recipes".
+ */
+export interface Recipe {
+  id: number;
+  uuid?: string | null;
+  name: string;
+  /**
+   * Overall “prep” duration in minutes, if needed.
+   */
+  duration?: number | null;
+  /**
+   * Overall “cooking” duration in minutes, if needed.
+   */
+  cookingDuration?: number | null;
+  serves?: number | null;
+  defaultScale?: number | null;
+  source?: (number | null) | RecipeSource;
+  'ingredient-sections'?:
+    | {
+        /**
+         * Can be empty when there is only one section
+         */
+        title?: string | null;
+        'section-ingredients'?:
+          | {
+              quantity: number;
+              'quantity-type': number | RecipeQuantityType;
+              ingredient: number | RecipeIngredient;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  'step-sections'?:
+    | {
+        /**
+         * Can be empty when there is only one section
+         */
+        title?: string | null;
+        'section-steps'?:
+          | {
+              step?: {
+                root: {
+                  type: string;
+                  children: {
+                    type: string;
+                    version: number;
+                    [k: string]: unknown;
+                  }[];
+                  direction: ('ltr' | 'rtl') | null;
+                  format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                  indent: number;
+                  version: number;
+                };
+                [k: string]: unknown;
+              } | null;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  images?:
+    | {
+        image?: (number | null) | Image;
+        id?: string | null;
+      }[]
+    | null;
+  notes?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  neutritionalInfo?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recipe-sources".
+ */
+export interface RecipeSource {
+  id: number;
+  name: string;
+  url: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recipe-quantity-type".
+ */
+export interface RecipeQuantityType {
+  id: number;
+  name: string;
+  singular?: string | null;
+  plural?: string | null;
+  fraction?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recipe-ingredient".
+ */
+export interface RecipeIngredient {
+  id: number;
+  name: string;
+  plural: string;
+  recipe?: (number | null) | Recipe;
+  affiliateUrl?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "users".
  */
 export interface User {
@@ -260,8 +450,8 @@ export interface PayloadLockedDocument {
   id: number;
   document?:
     | ({
-        relationTo: 'genres';
-        value: number | Genre;
+        relationTo: 'images';
+        value: number | Image;
       } | null)
     | ({
         relationTo: 'persons';
@@ -280,8 +470,28 @@ export interface PayloadLockedDocument {
         value: number | ContributionRole;
       } | null)
     | ({
+        relationTo: 'genres';
+        value: number | Genre;
+      } | null)
+    | ({
         relationTo: 'songs';
         value: number | Song;
+      } | null)
+    | ({
+        relationTo: 'recipes';
+        value: number | Recipe;
+      } | null)
+    | ({
+        relationTo: 'recipe-sources';
+        value: number | RecipeSource;
+      } | null)
+    | ({
+        relationTo: 'recipe-quantity-type';
+        value: number | RecipeQuantityType;
+      } | null)
+    | ({
+        relationTo: 'recipe-ingredient';
+        value: number | RecipeIngredient;
       } | null)
     | ({
         relationTo: 'users';
@@ -331,12 +541,45 @@ export interface PayloadMigration {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "genres_select".
+ * via the `definition` "images_select".
  */
-export interface GenresSelect<T extends boolean = true> {
-  name?: T;
+export interface ImagesSelect<T extends boolean = true> {
+  alt?: T;
   updatedAt?: T;
   createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+  sizes?:
+    | T
+    | {
+        thumbnail?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        card?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+      };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -355,6 +598,7 @@ export interface PersonsSelect<T extends boolean = true> {
  */
 export interface CoverArtsSelect<T extends boolean = true> {
   alt?: T;
+  prefix?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -429,6 +673,15 @@ export interface ContributionRolesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "genres_select".
+ */
+export interface GenresSelect<T extends boolean = true> {
+  name?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "songs_select".
  */
 export interface SongsSelect<T extends boolean = true> {
@@ -448,6 +701,90 @@ export interface SongsSelect<T extends boolean = true> {
       };
   lyrics?: T;
   description?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recipes_select".
+ */
+export interface RecipesSelect<T extends boolean = true> {
+  uuid?: T;
+  name?: T;
+  duration?: T;
+  cookingDuration?: T;
+  serves?: T;
+  defaultScale?: T;
+  source?: T;
+  'ingredient-sections'?:
+    | T
+    | {
+        title?: T;
+        'section-ingredients'?:
+          | T
+          | {
+              quantity?: T;
+              'quantity-type'?: T;
+              ingredient?: T;
+              id?: T;
+            };
+        id?: T;
+      };
+  'step-sections'?:
+    | T
+    | {
+        title?: T;
+        'section-steps'?:
+          | T
+          | {
+              step?: T;
+              id?: T;
+            };
+        id?: T;
+      };
+  images?:
+    | T
+    | {
+        image?: T;
+        id?: T;
+      };
+  notes?: T;
+  neutritionalInfo?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recipe-sources_select".
+ */
+export interface RecipeSourcesSelect<T extends boolean = true> {
+  name?: T;
+  url?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recipe-quantity-type_select".
+ */
+export interface RecipeQuantityTypeSelect<T extends boolean = true> {
+  name?: T;
+  singular?: T;
+  plural?: T;
+  fraction?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "recipe-ingredient_select".
+ */
+export interface RecipeIngredientSelect<T extends boolean = true> {
+  name?: T;
+  plural?: T;
+  recipe?: T;
+  affiliateUrl?: T;
   updatedAt?: T;
   createdAt?: T;
 }

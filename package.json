@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently -p none \"npm run build-tailwind -- --watch\" \"npm run dev:next\" \"npm run dev:cms-proxy\"",
+    "dev": "run-p dev:*",
     "build": "next build && cp .next/routes-manifest.json ./routes-manifest.json && next build",
     "lint": "next lint",
     "payload": "PAYLOAD_CONFIG_PATH=payload/payload.config.ts payload",
@@ -11,6 +11,7 @@
     "start": "next start",
     "build-tailwind": "node scripts/build-tailwind.mjs",
     "dev:next": "next dev --turbopack",
+    "dev:tailwind": "npm run build-tailwind -- --watch",
     "dev:cms-proxy": "npx http-proxy 3000 -p 2999",
     "predev": "npm run build-tailwind",
     "prebuild": "npm run build-tailwind --minify"
@@ -21,10 +22,10 @@
     "@mdx-js/loader": "3.1.0",
     "@mdx-js/react": "3.1.0",
     "@next/mdx": "15.0.3",
-    "@payloadcms/db-vercel-postgres": "3.0.0-beta.132",
-    "@payloadcms/next": "3.0.0-beta.132",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.132",
-    "@payloadcms/storage-vercel-blob": "3.0.0-beta.132",
+    "@payloadcms/db-vercel-postgres": "3.11.0",
+    "@payloadcms/next": "3.11.0",
+    "@payloadcms/richtext-lexical": "3.11.0",
+    "@payloadcms/storage-vercel-blob": "3.11.0",
     "@types/mdx": "2.0.13",
     "@types/node": "22.9.0",
     "@types/react": "npm:types-react@19.0.0-rc.1",
@@ -38,7 +39,7 @@
     "graphql": "16.9.0",
     "motion": "11.15.0",
     "next": "15.0.3",
-    "payload": "3.0.0-beta.132",
+    "payload": "3.11.0",
     "postcss": "8.4.49",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
@@ -48,12 +49,13 @@
     "zod": "3.23.8"
   },
   "devDependencies": {
-    "@payloadcms/db-postgres": "3.0.0-beta.132",
+    "@payloadcms/db-postgres": "3.11.0",
     "@tailwindcss/typography": "0.5.15",
     "@types/micromatch": "4.0.9",
     "concurrently": "9.1.0",
     "http-proxy-cli": "2.1.0",
-    "micromatch": "4.0.8"
+    "micromatch": "4.0.8",
+    "npm-run-all": "4.1.5"
   },
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-rc.1",

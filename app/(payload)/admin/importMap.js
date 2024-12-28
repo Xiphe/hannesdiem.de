@@ -20,6 +20,13 @@ import { StrikethroughFeatureClient as StrikethroughFeatureClient_e70f5e05f09f93
 import { UnderlineFeatureClient as UnderlineFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { BoldFeatureClient as BoldFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
 import { ItalicFeatureClient as ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
+import { default as default_db7918ff547453e3c97b009dd25c3d6e } from '@payload/collections/rezepte.roxanna-diercks.de/components/IngredientRowLabel.tsx'
+import { default as default_7620d8b1dfed4fc681c4161ff3f83474 } from '@payload/collections/rezepte.roxanna-diercks.de/components/IngredientSectionLabel.tsx'
+import { default as default_b2fb986701bbb82fc2ebf78cfc591e05 } from '@payload/components/TitleRowLabel.tsx'
+import { BlocksFeatureClient as BlocksFeatureClient_e70f5e05f09f93e00b997edb1ef0c864 } from '@payloadcms/richtext-lexical/client'
+import { default as default_36c8373b6a97be2ac8718b99e24bc0c0 } from '@payload/blocks/timer/TimerLabel.tsx'
+import { default as default_065a3aaecf5bdde6037b6eb5c241688b } from '@payload/collections/rezepte.roxanna-diercks.de/components/IngredientLinkLabel.tsx'
+import { default as default_cb6cc8918149e44da91c36534ca24e0b } from '@payload/collections/rezepte.roxanna-diercks.de/components/IngredientStateProvider.tsx'
 
 export const importMap = {
   "@payloadcms/richtext-lexical/rsc#RscEntryLexicalCell": RscEntryLexicalCell_44fe37237e0ebf4470c9990d8cb7b07e,
@@ -43,5 +50,12 @@ export const importMap = {
   "@payloadcms/richtext-lexical/client#StrikethroughFeatureClient": StrikethroughFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#UnderlineFeatureClient": UnderlineFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   "@payloadcms/richtext-lexical/client#BoldFeatureClient": BoldFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
-  "@payloadcms/richtext-lexical/client#ItalicFeatureClient": ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0c864
+  "@payloadcms/richtext-lexical/client#ItalicFeatureClient": ItalicFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
+  "@payload/collections/rezepte.roxanna-diercks.de/components/IngredientRowLabel.tsx#default": default_db7918ff547453e3c97b009dd25c3d6e,
+  "@payload/collections/rezepte.roxanna-diercks.de/components/IngredientSectionLabel.tsx#default": default_7620d8b1dfed4fc681c4161ff3f83474,
+  "@payload/components/TitleRowLabel.tsx#default": default_b2fb986701bbb82fc2ebf78cfc591e05,
+  "@payloadcms/richtext-lexical/client#BlocksFeatureClient": BlocksFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
+  "@payload/blocks/timer/TimerLabel.tsx#default": default_36c8373b6a97be2ac8718b99e24bc0c0,
+  "@payload/collections/rezepte.roxanna-diercks.de/components/IngredientLinkLabel.tsx#default": default_065a3aaecf5bdde6037b6eb5c241688b,
+  "@payload/collections/rezepte.roxanna-diercks.de/components/IngredientStateProvider.tsx#default": default_cb6cc8918149e44da91c36534ca24e0b
 }

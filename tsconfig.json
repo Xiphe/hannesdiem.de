@@ -23,6 +23,7 @@
       "@hd/*": ["./app/hannesdiem.de/_src/*"],
       "@utils/*": ["./app/(common)/utils/*"],
       "@payload-config": ["./payload/payload.config.ts"],
+      "@payload/*": ["./payload/*"],
       "@/*": ["./*"]
     }
   },

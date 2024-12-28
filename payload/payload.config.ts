@@ -4,15 +4,12 @@ import { postgresAdapter } from "@payloadcms/db-postgres";
 import { vercelPostgresAdapter } from "@payloadcms/db-vercel-postgres";
 import { buildConfig, Plugin } from "payload";
 import assert from "node:assert";
-import { Persons } from "./collections/Persons";
-import { CoverArts } from "./collections/CoverArts";
 import { seedDevDB } from "./seed/dev-seeds";
-import { Releases } from "./collections/Releases";
-import { ContributionRoles } from "./collections/ContributionRoles";
 import { vercelBlobStorage } from "@payloadcms/storage-vercel-blob";
 import path from "node:path";
-import { Genres } from "./collections/Genres";
-import { Songs } from "./collections/Songs";
+import { HannesDiemDeCollections } from "./collections/hannesdiem.de";
+import { CommonCollections } from "./collections/common";
+import { RezepteRoxannaDiercksDeCollections } from "./collections/rezepte.roxanna-diercks.de";
 
 const rootDir = path.resolve(__dirname, "..");
 const migrationDir = path.join(rootDir, "payload/migrations");
@@ -37,9 +34,22 @@ export default buildConfig({
           prefillOnly: true,
         }
       : undefined,
+    components: {
+      providers: [
+        "@payload/collections/rezepte.roxanna-diercks.de/components/IngredientStateProvider.tsx",
+      ],
+    },
+  },
+  localization: {
+    locales: ["en", "es", "de"],
+    defaultLocale: "en",
   },
   editor: lexicalEditor(),
-  collections: [Genres, Persons, CoverArts, Releases, ContributionRoles, Songs],
+  collections: [
+    ...CommonCollections,
+    ...HannesDiemDeCollections,
+    ...RezepteRoxannaDiercksDeCollections,
+  ],
   secret: PAYLOAD_SECRET,
   db: (isDev ? postgresAdapter : vercelPostgresAdapter)({
     migrationDir,
