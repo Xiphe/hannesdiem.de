@@ -172,35 +172,38 @@ export default function HannesDiercksIndex() {
           >
             Hannes Diercks
           </a>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(true)}
-              className={clsx(
-                focusStyles,
-                "-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400",
-                mobileMenuOpen && " opacity-0",
-              )}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="size-6" />
-            </button>
-          </div>
+
           {navigation.length ? (
-            <div className="hidden lg:flex lg:gap-x-12">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
+            <>
+              <div className="flex lg:hidden">
+                <button
+                  type="button"
+                  onClick={() => setMobileMenuOpen(true)}
                   className={clsx(
                     focusStyles,
-                    "text-sm/6 rounded-sm font-semibold text-gray-800 dark:text-white",
+                    "-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400",
+                    mobileMenuOpen && " opacity-0",
                   )}
                 >
-                  {item.name}
-                </a>
-              ))}
-            </div>
+                  <span className="sr-only">Open main menu</span>
+                  <Bars3Icon aria-hidden="true" className="size-6" />
+                </button>
+              </div>
+              <div className="hidden lg:flex lg:gap-x-12">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className={clsx(
+                      focusStyles,
+                      "text-sm/6 rounded-sm font-semibold text-gray-800 dark:text-white",
+                    )}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </>
           ) : null}
         </nav>
         {navigation.length ? (
@@ -339,8 +342,8 @@ export default function HannesDiercksIndex() {
                   </motion.span>
                 </h1>
                 <p className="mt-8 max-w-2xl mx-auto text-pretty text-lg font-medium text-gray-600 dark:text-gray-400 sm:text-xl/8">
-                  making great ideas reality - with teams that care - for people
-                  we honor
+                  turning great ideas into reality - with teams that care - for
+                  people we honor
                   {/* crafting reliable systems - with teams that care - for users
                   we honor */}
                 </p>
