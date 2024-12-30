@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "run-p dev:*",
-    "build": "next build && cp .next/routes-manifest.json ./routes-manifest.json && next build",
+    "build": "next build",
     "lint": "next lint",
     "payload": "PAYLOAD_CONFIG_PATH=payload/payload.config.ts payload",
     "reset-data": "rm -rf .data && mkdir .data && touch .data/.gitkeep",
