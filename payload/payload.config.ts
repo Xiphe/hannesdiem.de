@@ -14,6 +14,9 @@ import { EN } from "./utils/locales";
 import { HannesDiemDeConfig } from "./tenants/hannesdiem.de";
 import { RezepteRoxannaDiercksDeConfig } from "./tenants/rezepte.roxanna-diercks.de";
 import { getBlobStorageConfigs } from "./utils/uploadDir";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const rootDir = path.resolve(__dirname, "..");
 const migrationDir = path.join(rootDir, "payload/migrations");
