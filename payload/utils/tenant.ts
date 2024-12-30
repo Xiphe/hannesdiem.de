@@ -65,6 +65,7 @@ export function withConfiguredTenant<T extends Record<string, unknown>>(
   return {
     ...config,
     hooks: {
+      ...(config.hooks as any),
       [WITH_CONFIGURED_TENANT_HOOK]: [
         ...((config as ConfigWithTenantHooks<T>).hooks?.[
           WITH_CONFIGURED_TENANT_HOOK
