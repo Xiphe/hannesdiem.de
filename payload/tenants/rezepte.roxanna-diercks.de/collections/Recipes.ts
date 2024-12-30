@@ -97,7 +97,7 @@ export const Recipes: CollectionConfig = {
       admin: {
         components: {
           Label:
-            "@payload/collections/rezepte.roxanna-diercks.de/components/IngredientSectionLabel.tsx",
+            "@payload/tenants/rezepte.roxanna-diercks.de/components/IngredientSectionLabel.tsx",
           RowLabel: "@payload/components/TitleRowLabel.tsx",
         },
       },
@@ -121,7 +121,7 @@ export const Recipes: CollectionConfig = {
           admin: {
             components: {
               RowLabel:
-                "@payload/collections/rezepte.roxanna-diercks.de/components/IngredientRowLabel.tsx",
+                "@payload/tenants/rezepte.roxanna-diercks.de/components/IngredientRowLabel.tsx",
             },
           },
           type: "array",
@@ -211,7 +211,7 @@ export const Recipes: CollectionConfig = {
                           admin: {
                             components: {
                               Label:
-                                "@payload/collections/rezepte.roxanna-diercks.de/components/IngredientLinkLabel.tsx",
+                                "@payload/tenants/rezepte.roxanna-diercks.de/components/IngredientLinkLabel.tsx",
                             },
                           },
                           fields: [

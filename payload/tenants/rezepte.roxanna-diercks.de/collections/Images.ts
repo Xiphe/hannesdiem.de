@@ -1,5 +1,5 @@
 import type { CollectionConfig } from "payload";
-import { withUploadDir } from "../../utils/uploadDir";
+import { withUploadDir } from "@payload/utils/uploadDir";
 
 export const Images: CollectionConfig = withUploadDir({
   slug: "images",

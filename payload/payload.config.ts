@@ -7,9 +7,13 @@ import assert from "node:assert";
 import { seedDevDB } from "./seed/dev-seeds";
 import { vercelBlobStorage } from "@payloadcms/storage-vercel-blob";
 import path from "node:path";
-import { HannesDiemDeCollections } from "./collections/hannesdiem.de";
-import { CommonCollections } from "./collections/common";
-import { RezepteRoxannaDiercksDeCollections } from "./collections/rezepte.roxanna-diercks.de";
+import { Admins } from "./collections/Admins";
+import { mergeTenants } from "./utils/tenant";
+import { EN } from "./utils/locales";
+
+import { HannesDiemDeConfig } from "./tenants/hannesdiem.de";
+import { RezepteRoxannaDiercksDeConfig } from "./tenants/rezepte.roxanna-diercks.de";
+import { getBlobStorageConfigs } from "./utils/uploadDir";
 
 const rootDir = path.resolve(__dirname, "..");
 const migrationDir = path.join(rootDir, "payload/migrations");
@@ -25,54 +29,54 @@ assert(POSTGRESQL_DATABASE_URL, "POSTGRESQL_DATABASE_URL env must be set");
 const BLOB_READ_WRITE_TOKEN = process.env.BLOB_READ_WRITE_TOKEN;
 assert(BLOB_READ_WRITE_TOKEN, "BLOB_READ_WRITE_TOKEN env must be set");
 
-export default buildConfig({
-  admin: {
-    user: "admins",
-    autoLogin: isDev
-      ? {
-          email: "admin@payload.local",
-          password: "admin123",
-          prefillOnly: true,
-        }
-      : undefined,
-    components: {
-      providers: [
-        "@payload/collections/rezepte.roxanna-diercks.de/components/IngredientStateProvider.tsx",
-      ],
+export default buildConfig(
+  mergeTenants(
+    {
+      admin: {
+        user: "admins",
+        autoLogin: isDev
+          ? {
+              email: "admin@payload.local",
+              password: "admin123",
+              prefillOnly: true,
+            }
+          : undefined,
+      },
+      localization: {
+        locales: [EN],
+        defaultLocale: "en",
+      },
+      editor: lexicalEditor(),
+      collections: [Admins],
+      secret: PAYLOAD_SECRET,
+      db: (isDev ? postgresAdapter : vercelPostgresAdapter)({
+        migrationDir,
+        pool: {
+          connectionString: POSTGRESQL_DATABASE_URL,
+        },
+      }),
+      plugins: ([] as Plugin[]).concat(
+        isDev
+          ? []
+          : [
+              vercelBlobStorage({
+                collections: {
+                  ...getBlobStorageConfigs(),
+                },
+                token: BLOB_READ_WRITE_TOKEN,
+              }),
+            ],
+      ),
+      sharp,
+      async onInit(payload) {
+        await seedDevDB(
+          payload,
+          HannesDiemDeConfig.devSeed,
+          RezepteRoxannaDiercksDeConfig.devSeed,
+        );
+      },
     },
-  },
-  localization: {
-    locales: ["en", "es", "de"],
-    defaultLocale: "en",
-  },
-  editor: lexicalEditor(),
-  collections: [
-    ...CommonCollections,
-    ...HannesDiemDeCollections,
-    ...RezepteRoxannaDiercksDeCollections,
-  ],
-  secret: PAYLOAD_SECRET,
-  db: (isDev ? postgresAdapter : vercelPostgresAdapter)({
-    migrationDir,
-    pool: {
-      connectionString: POSTGRESQL_DATABASE_URL,
-    },
-  }),
-  plugins: ([] as Plugin[]).concat(
-    isDev
-      ? []
-      : [
-          vercelBlobStorage({
-            collections: {
-              "hdm-cover-arts": true,
-              "rcps-images": true,
-            },
-            token: BLOB_READ_WRITE_TOKEN,
-          }),
-        ],
+    HannesDiemDeConfig,
+    RezepteRoxannaDiercksDeConfig,
   ),
-  sharp,
-  async onInit(payload) {
-    await seedDevDB(payload);
-  },
-});
+);

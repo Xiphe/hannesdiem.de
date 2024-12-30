@@ -4,30 +4,24 @@ import {
   RequiredDataFromCollectionSlug,
 } from "payload";
 
-export async function seedDevDB(payload: BasePayload) {
+export async function seedDevDB(
+  payload: BasePayload,
+  ...seeders: (((payload: BasePayload) => void | Promise<void>) | undefined)[]
+) {
   if (process.env.NODE_ENV !== "development") {
     return;
   }
 
-  seed(payload, "admins", [
+  await seed(payload, "admins", [
     { email: "admin@payload.local", password: "admin123", superadmin: true },
   ]);
 
-  seed(payload, "hdm-persons", [
-    {
-      name: "Hannes Diem",
-      link: "https://hannesdiem.de",
-      ogProfile: "https://hannesdiem.de/about",
-    },
-  ]);
-
-  seed(payload, "hdm-contribution-roles", [
-    { role: "Composition" },
-    { role: "Lyrics" },
-  ]);
+  for (const seeder of seeders) {
+    await seeder?.(payload);
+  }
 }
 
-async function seed<Collection extends CollectionSlug>(
+export async function seed<Collection extends CollectionSlug>(
   payload: BasePayload,
   collection: Collection,
   entries: RequiredDataFromCollectionSlug<Collection>[],
