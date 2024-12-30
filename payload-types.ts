@@ -8,39 +8,39 @@
 
 export interface Config {
   auth: {
-    users: UserAuthOperations;
+    admins: AdminAuthOperations;
   };
   collections: {
-    images: Image;
-    persons: Person;
-    'cover-arts': CoverArt;
-    releases: Release;
-    'contribution-roles': ContributionRole;
-    genres: Genre;
-    songs: Song;
-    recipes: Recipe;
-    'recipe-sources': RecipeSource;
-    'recipe-quantity-type': RecipeQuantityType;
-    'recipe-ingredient': RecipeIngredient;
-    users: User;
+    admins: Admin;
+    'hdm-persons': HdmPerson;
+    'hdm-cover-arts': HdmCoverArt;
+    'hdm-releases': HdmRelease;
+    'hdm-contribution-roles': HdmContributionRole;
+    'hdm-genres': HdmGenre;
+    'hdm-songs': HdmSong;
+    'rcps-recipes': RcpsRecipe;
+    'rcps-images': RcpsImage;
+    'rcps-sources': RcpsSource;
+    'rcps-quantity-types': RcpsQuantityType;
+    'rcps-ingredients': RcpsIngredient;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
   collectionsJoins: {};
   collectionsSelect: {
-    images: ImagesSelect<false> | ImagesSelect<true>;
-    persons: PersonsSelect<false> | PersonsSelect<true>;
-    'cover-arts': CoverArtsSelect<false> | CoverArtsSelect<true>;
-    releases: ReleasesSelect<false> | ReleasesSelect<true>;
-    'contribution-roles': ContributionRolesSelect<false> | ContributionRolesSelect<true>;
-    genres: GenresSelect<false> | GenresSelect<true>;
-    songs: SongsSelect<false> | SongsSelect<true>;
-    recipes: RecipesSelect<false> | RecipesSelect<true>;
-    'recipe-sources': RecipeSourcesSelect<false> | RecipeSourcesSelect<true>;
-    'recipe-quantity-type': RecipeQuantityTypeSelect<false> | RecipeQuantityTypeSelect<true>;
-    'recipe-ingredient': RecipeIngredientSelect<false> | RecipeIngredientSelect<true>;
-    users: UsersSelect<false> | UsersSelect<true>;
+    admins: AdminsSelect<false> | AdminsSelect<true>;
+    'hdm-persons': HdmPersonsSelect<false> | HdmPersonsSelect<true>;
+    'hdm-cover-arts': HdmCoverArtsSelect<false> | HdmCoverArtsSelect<true>;
+    'hdm-releases': HdmReleasesSelect<false> | HdmReleasesSelect<true>;
+    'hdm-contribution-roles': HdmContributionRolesSelect<false> | HdmContributionRolesSelect<true>;
+    'hdm-genres': HdmGenresSelect<false> | HdmGenresSelect<true>;
+    'hdm-songs': HdmSongsSelect<false> | HdmSongsSelect<true>;
+    'rcps-recipes': RcpsRecipesSelect<false> | RcpsRecipesSelect<true>;
+    'rcps-images': RcpsImagesSelect<false> | RcpsImagesSelect<true>;
+    'rcps-sources': RcpsSourcesSelect<false> | RcpsSourcesSelect<true>;
+    'rcps-quantity-types': RcpsQuantityTypesSelect<false> | RcpsQuantityTypesSelect<true>;
+    'rcps-ingredients': RcpsIngredientsSelect<false> | RcpsIngredientsSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
@@ -51,15 +51,15 @@ export interface Config {
   globals: {};
   globalsSelect: {};
   locale: 'en' | 'es' | 'de';
-  user: User & {
-    collection: 'users';
+  user: Admin & {
+    collection: 'admins';
   };
   jobs: {
     tasks: unknown;
     workflows: unknown;
   };
 }
-export interface UserAuthOperations {
+export interface AdminAuthOperations {
   forgotPassword: {
     email: string;
     password: string;
@@ -79,46 +79,28 @@ export interface UserAuthOperations {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "images".
+ * via the `definition` "admins".
  */
-export interface Image {
+export interface Admin {
   id: number;
-  alt?: string | null;
+  superadmin?: boolean | null;
+  tenants?: ('hannesdiem.de' | 'hannesdiercks.de' | 'rezepte.roxanna-diercks.de')[] | null;
   updatedAt: string;
   createdAt: string;
-  url?: string | null;
-  thumbnailURL?: string | null;
-  filename?: string | null;
-  mimeType?: string | null;
-  filesize?: number | null;
-  width?: number | null;
-  height?: number | null;
-  focalX?: number | null;
-  focalY?: number | null;
-  sizes?: {
-    thumbnail?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-    card?: {
-      url?: string | null;
-      width?: number | null;
-      height?: number | null;
-      mimeType?: string | null;
-      filesize?: number | null;
-      filename?: string | null;
-    };
-  };
+  email: string;
+  resetPasswordToken?: string | null;
+  resetPasswordExpiration?: string | null;
+  salt?: string | null;
+  hash?: string | null;
+  loginAttempts?: number | null;
+  lockUntil?: string | null;
+  password?: string | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "persons".
+ * via the `definition` "hdm-persons".
  */
-export interface Person {
+export interface HdmPerson {
   id: number;
   name: string;
   link?: string | null;
@@ -128,12 +110,11 @@ export interface Person {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cover-arts".
+ * via the `definition` "hdm-cover-arts".
  */
-export interface CoverArt {
+export interface HdmCoverArt {
   id: number;
   alt?: string | null;
-  prefix?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -148,9 +129,9 @@ export interface CoverArt {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "releases".
+ * via the `definition` "hdm-releases".
  */
-export interface Release {
+export interface HdmRelease {
   id: number;
   title: string;
   slug: string;
@@ -158,16 +139,16 @@ export interface Release {
   artist?: string | null;
   releaseDate?: string | null;
   hideReleaseDay?: boolean | null;
-  cover?: (number | null) | CoverArt;
+  cover?: (number | null) | HdmCoverArt;
   contributors?:
     | {
-        person: number | Person;
-        roles: (number | ContributionRole)[];
+        person: number | HdmPerson;
+        roles: (number | HdmContributionRole)[];
         description?: string | null;
         id?: string | null;
       }[]
     | null;
-  genres?: (number | Genre)[] | null;
+  genres?: (number | HdmGenre)[] | null;
   languages?: ('english' | 'german')[] | null;
   summary?: string | null;
   description?: {
@@ -190,7 +171,7 @@ export interface Release {
         title: string;
         addition?: string | null;
         duration?: number | null;
-        song?: (number | null) | Song;
+        song?: (number | null) | HdmSong;
         id?: string | null;
       }[]
     | null;
@@ -212,9 +193,9 @@ export interface Release {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contribution-roles".
+ * via the `definition` "hdm-contribution-roles".
  */
-export interface ContributionRole {
+export interface HdmContributionRole {
   id: number;
   role: string;
   updatedAt: string;
@@ -222,9 +203,9 @@ export interface ContributionRole {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "genres".
+ * via the `definition` "hdm-genres".
  */
-export interface Genre {
+export interface HdmGenre {
   id: number;
   name: string;
   updatedAt: string;
@@ -232,9 +213,9 @@ export interface Genre {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "songs".
+ * via the `definition` "hdm-songs".
  */
-export interface Song {
+export interface HdmSong {
   id: number;
   title: string;
   subtitle?: string | null;
@@ -244,8 +225,8 @@ export interface Song {
   hideCreationDay?: boolean | null;
   authors?:
     | {
-        person: number | Person;
-        roles: (number | ContributionRole)[];
+        person: number | HdmPerson;
+        roles: (number | HdmContributionRole)[];
         description?: string | null;
         id?: string | null;
       }[]
@@ -285,9 +266,9 @@ export interface Song {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recipes".
+ * via the `definition` "rcps-recipes".
  */
-export interface Recipe {
+export interface RcpsRecipe {
   id: number;
   uuid?: string | null;
   name: string;
@@ -301,7 +282,7 @@ export interface Recipe {
   cookingDuration?: number | null;
   serves?: number | null;
   defaultScale?: number | null;
-  source?: (number | null) | RecipeSource;
+  source?: (number | null) | RcpsSource;
   'ingredient-sections'?:
     | {
         /**
@@ -311,8 +292,8 @@ export interface Recipe {
         'section-ingredients'?:
           | {
               quantity: number;
-              'quantity-type': number | RecipeQuantityType;
-              ingredient: number | RecipeIngredient;
+              'quantity-type': number | RcpsQuantityType;
+              ingredient: number | RcpsIngredient;
               id?: string | null;
             }[]
           | null;
@@ -350,7 +331,7 @@ export interface Recipe {
     | null;
   images?:
     | {
-        image?: (number | null) | Image;
+        image?: (number | null) | RcpsImage;
         id?: string | null;
       }[]
     | null;
@@ -390,9 +371,9 @@ export interface Recipe {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recipe-sources".
+ * via the `definition` "rcps-sources".
  */
-export interface RecipeSource {
+export interface RcpsSource {
   id: number;
   name: string;
   url: string;
@@ -401,9 +382,9 @@ export interface RecipeSource {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recipe-quantity-type".
+ * via the `definition` "rcps-quantity-types".
  */
-export interface RecipeQuantityType {
+export interface RcpsQuantityType {
   id: number;
   name: string;
   singular?: string | null;
@@ -414,33 +395,53 @@ export interface RecipeQuantityType {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recipe-ingredient".
+ * via the `definition` "rcps-ingredients".
  */
-export interface RecipeIngredient {
+export interface RcpsIngredient {
   id: number;
   name: string;
   plural: string;
-  recipe?: (number | null) | Recipe;
+  recipe?: (number | null) | RcpsRecipe;
   affiliateUrl?: string | null;
   updatedAt: string;
   createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users".
+ * via the `definition` "rcps-images".
  */
-export interface User {
+export interface RcpsImage {
   id: number;
+  alt?: string | null;
   updatedAt: string;
   createdAt: string;
-  email: string;
-  resetPasswordToken?: string | null;
-  resetPasswordExpiration?: string | null;
-  salt?: string | null;
-  hash?: string | null;
-  loginAttempts?: number | null;
-  lockUntil?: string | null;
-  password?: string | null;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+  sizes?: {
+    thumbnail?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    card?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+  };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -450,57 +451,57 @@ export interface PayloadLockedDocument {
   id: number;
   document?:
     | ({
-        relationTo: 'images';
-        value: number | Image;
+        relationTo: 'admins';
+        value: number | Admin;
       } | null)
     | ({
-        relationTo: 'persons';
-        value: number | Person;
+        relationTo: 'hdm-persons';
+        value: number | HdmPerson;
       } | null)
     | ({
-        relationTo: 'cover-arts';
-        value: number | CoverArt;
+        relationTo: 'hdm-cover-arts';
+        value: number | HdmCoverArt;
       } | null)
     | ({
-        relationTo: 'releases';
-        value: number | Release;
+        relationTo: 'hdm-releases';
+        value: number | HdmRelease;
       } | null)
     | ({
-        relationTo: 'contribution-roles';
-        value: number | ContributionRole;
+        relationTo: 'hdm-contribution-roles';
+        value: number | HdmContributionRole;
       } | null)
     | ({
-        relationTo: 'genres';
-        value: number | Genre;
+        relationTo: 'hdm-genres';
+        value: number | HdmGenre;
       } | null)
     | ({
-        relationTo: 'songs';
-        value: number | Song;
+        relationTo: 'hdm-songs';
+        value: number | HdmSong;
       } | null)
     | ({
-        relationTo: 'recipes';
-        value: number | Recipe;
+        relationTo: 'rcps-recipes';
+        value: number | RcpsRecipe;
       } | null)
     | ({
-        relationTo: 'recipe-sources';
-        value: number | RecipeSource;
+        relationTo: 'rcps-images';
+        value: number | RcpsImage;
       } | null)
     | ({
-        relationTo: 'recipe-quantity-type';
-        value: number | RecipeQuantityType;
+        relationTo: 'rcps-sources';
+        value: number | RcpsSource;
       } | null)
     | ({
-        relationTo: 'recipe-ingredient';
-        value: number | RecipeIngredient;
+        relationTo: 'rcps-quantity-types';
+        value: number | RcpsQuantityType;
       } | null)
     | ({
-        relationTo: 'users';
-        value: number | User;
+        relationTo: 'rcps-ingredients';
+        value: number | RcpsIngredient;
       } | null);
   globalSlug?: string | null;
   user: {
-    relationTo: 'users';
-    value: number | User;
+    relationTo: 'admins';
+    value: number | Admin;
   };
   updatedAt: string;
   createdAt: string;
@@ -512,8 +513,8 @@ export interface PayloadLockedDocument {
 export interface PayloadPreference {
   id: number;
   user: {
-    relationTo: 'users';
-    value: number | User;
+    relationTo: 'admins';
+    value: number | Admin;
   };
   key?: string | null;
   value?:
@@ -541,51 +542,26 @@ export interface PayloadMigration {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "images_select".
+ * via the `definition` "admins_select".
  */
-export interface ImagesSelect<T extends boolean = true> {
-  alt?: T;
+export interface AdminsSelect<T extends boolean = true> {
+  superadmin?: T;
+  tenants?: T;
   updatedAt?: T;
   createdAt?: T;
-  url?: T;
-  thumbnailURL?: T;
-  filename?: T;
-  mimeType?: T;
-  filesize?: T;
-  width?: T;
-  height?: T;
-  focalX?: T;
-  focalY?: T;
-  sizes?:
-    | T
-    | {
-        thumbnail?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-        card?:
-          | T
-          | {
-              url?: T;
-              width?: T;
-              height?: T;
-              mimeType?: T;
-              filesize?: T;
-              filename?: T;
-            };
-      };
+  email?: T;
+  resetPasswordToken?: T;
+  resetPasswordExpiration?: T;
+  salt?: T;
+  hash?: T;
+  loginAttempts?: T;
+  lockUntil?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "persons_select".
+ * via the `definition` "hdm-persons_select".
  */
-export interface PersonsSelect<T extends boolean = true> {
+export interface HdmPersonsSelect<T extends boolean = true> {
   name?: T;
   link?: T;
   ogProfile?: T;
@@ -594,11 +570,10 @@ export interface PersonsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "cover-arts_select".
+ * via the `definition` "hdm-cover-arts_select".
  */
-export interface CoverArtsSelect<T extends boolean = true> {
+export interface HdmCoverArtsSelect<T extends boolean = true> {
   alt?: T;
-  prefix?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;
@@ -613,9 +588,9 @@ export interface CoverArtsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "releases_select".
+ * via the `definition` "hdm-releases_select".
  */
-export interface ReleasesSelect<T extends boolean = true> {
+export interface HdmReleasesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
   subtitle?: T;
@@ -664,27 +639,27 @@ export interface ReleasesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "contribution-roles_select".
+ * via the `definition` "hdm-contribution-roles_select".
  */
-export interface ContributionRolesSelect<T extends boolean = true> {
+export interface HdmContributionRolesSelect<T extends boolean = true> {
   role?: T;
   updatedAt?: T;
   createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "genres_select".
+ * via the `definition` "hdm-genres_select".
  */
-export interface GenresSelect<T extends boolean = true> {
+export interface HdmGenresSelect<T extends boolean = true> {
   name?: T;
   updatedAt?: T;
   createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "songs_select".
+ * via the `definition` "hdm-songs_select".
  */
-export interface SongsSelect<T extends boolean = true> {
+export interface HdmSongsSelect<T extends boolean = true> {
   title?: T;
   subtitle?: T;
   slug?: T;
@@ -706,9 +681,9 @@ export interface SongsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recipes_select".
+ * via the `definition` "rcps-recipes_select".
  */
-export interface RecipesSelect<T extends boolean = true> {
+export interface RcpsRecipesSelect<T extends boolean = true> {
   uuid?: T;
   name?: T;
   duration?: T;
@@ -756,9 +731,51 @@ export interface RecipesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recipe-sources_select".
+ * via the `definition` "rcps-images_select".
  */
-export interface RecipeSourcesSelect<T extends boolean = true> {
+export interface RcpsImagesSelect<T extends boolean = true> {
+  alt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+  sizes?:
+    | T
+    | {
+        thumbnail?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        card?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+      };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "rcps-sources_select".
+ */
+export interface RcpsSourcesSelect<T extends boolean = true> {
   name?: T;
   url?: T;
   updatedAt?: T;
@@ -766,9 +783,9 @@ export interface RecipeSourcesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recipe-quantity-type_select".
+ * via the `definition` "rcps-quantity-types_select".
  */
-export interface RecipeQuantityTypeSelect<T extends boolean = true> {
+export interface RcpsQuantityTypesSelect<T extends boolean = true> {
   name?: T;
   singular?: T;
   plural?: T;
@@ -778,30 +795,15 @@ export interface RecipeQuantityTypeSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "recipe-ingredient_select".
+ * via the `definition` "rcps-ingredients_select".
  */
-export interface RecipeIngredientSelect<T extends boolean = true> {
+export interface RcpsIngredientsSelect<T extends boolean = true> {
   name?: T;
   plural?: T;
   recipe?: T;
   affiliateUrl?: T;
   updatedAt?: T;
   createdAt?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "users_select".
- */
-export interface UsersSelect<T extends boolean = true> {
-  updatedAt?: T;
-  createdAt?: T;
-  email?: T;
-  resetPasswordToken?: T;
-  resetPasswordExpiration?: T;
-  salt?: T;
-  hash?: T;
-  loginAttempts?: T;
-  lockUntil?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

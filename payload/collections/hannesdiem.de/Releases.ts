@@ -33,7 +33,7 @@ export const Releases: CollectionConfig = {
     {
       name: "cover",
       type: "upload",
-      relationTo: "cover-arts",
+      relationTo: "hdm-cover-arts",
     },
     {
       name: "contributors",
@@ -46,13 +46,13 @@ export const Releases: CollectionConfig = {
         {
           name: "person",
           type: "relationship",
-          relationTo: "persons",
+          relationTo: "hdm-persons",
           required: true,
         },
         {
           name: "roles",
           type: "relationship",
-          relationTo: "contribution-roles",
+          relationTo: "hdm-contribution-roles",
           hasMany: true,
           required: true,
         },
@@ -65,7 +65,7 @@ export const Releases: CollectionConfig = {
     {
       name: "genres",
       type: "relationship",
-      relationTo: "genres",
+      relationTo: "hdm-genres",
       hasMany: true,
     },
     {
@@ -105,7 +105,7 @@ export const Releases: CollectionConfig = {
         {
           name: "song",
           type: "relationship",
-          relationTo: "songs",
+          relationTo: "hdm-songs",
           hasMany: false,
         },
       ],

@@ -1,3 +1,3 @@
-import { Images } from "./Images";
+import { Admins } from "./Admins";
 
-export const CommonCollections = [Images];
+export const CommonCollections = [Admins];

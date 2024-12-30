@@ -4,6 +4,8 @@ import { Releases } from "./Releases";
 import { ContributionRoles } from "./ContributionRoles";
 import { Genres } from "./Genres";
 import { Songs } from "./Songs";
+import { CollectionConfig } from "payload";
+import { toTenant } from "@payload/utils/toTenant";
 
 export const HannesDiemDeCollections = [
   Persons,
@@ -12,7 +14,4 @@ export const HannesDiemDeCollections = [
   ContributionRoles,
   Genres,
   Songs,
-].map((config) => ({
-  ...config,
-  admin: { group: "hannesdiem.de", ...config.admin },
-}));
+].map(toTenant("hannesdiem.de", "hdm"));

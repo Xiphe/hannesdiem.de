@@ -27,6 +27,7 @@ assert(BLOB_READ_WRITE_TOKEN, "BLOB_READ_WRITE_TOKEN env must be set");
 
 export default buildConfig({
   admin: {
+    user: "admins",
     autoLogin: isDev
       ? {
           email: "admin@payload.local",

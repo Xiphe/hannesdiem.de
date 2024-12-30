@@ -78,7 +78,7 @@ export const Recipes: CollectionConfig = {
           name: "source",
           label: "Source",
           type: "relationship",
-          relationTo: "recipe-sources",
+          relationTo: "rcps-sources",
           admin: {
             width: "40%",
           },
@@ -142,7 +142,7 @@ export const Recipes: CollectionConfig = {
                   required: true,
                   label: "Quantity Type",
                   type: "relationship",
-                  relationTo: "recipe-quantity-type",
+                  relationTo: "rcps-quantity-types",
                   admin: {
                     width: "30%",
                   },
@@ -152,7 +152,7 @@ export const Recipes: CollectionConfig = {
                   required: true,
                   label: "Ingredient",
                   type: "relationship",
-                  relationTo: "recipe-ingredient",
+                  relationTo: "rcps-ingredients",
                   admin: {
                     width: "60%",
                   },
@@ -218,7 +218,7 @@ export const Recipes: CollectionConfig = {
                               name: "ingredient",
                               label: false,
                               type: "relationship",
-                              relationTo: "recipe-ingredient",
+                              relationTo: "rcps-ingredients",
                               required: true,
                             },
                             {
@@ -246,7 +246,7 @@ export const Recipes: CollectionConfig = {
         {
           name: "image",
           type: "upload",
-          relationTo: "images",
+          relationTo: "rcps-images",
         },
       ],
     },

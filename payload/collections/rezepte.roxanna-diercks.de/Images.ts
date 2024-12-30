@@ -3,6 +3,10 @@ import { withUploadDir } from "../../utils/uploadDir";
 
 export const Images: CollectionConfig = withUploadDir({
   slug: "images",
+  labels: {
+    singular: "Image",
+    plural: "Images",
+  },
   upload: {
     imageSizes: [
       {

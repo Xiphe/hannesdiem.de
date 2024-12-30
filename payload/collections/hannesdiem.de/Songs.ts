@@ -40,13 +40,13 @@ export const Songs: CollectionConfig = {
         {
           name: "person",
           type: "relationship",
-          relationTo: "persons",
+          relationTo: "hdm-persons",
           required: true,
         },
         {
           name: "roles",
           type: "relationship",
-          relationTo: "contribution-roles",
+          relationTo: "hdm-contribution-roles",
           hasMany: true,
           required: true,
         },

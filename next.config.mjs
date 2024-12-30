@@ -5,6 +5,13 @@ import withMDX from "@next/mdx";
 const nextConfig = {
   async redirects() {
     return [
+      ...redirectsFor("cms.xiphe.net", [
+        {
+          source: "/",
+          destination: "/admin",
+          permanent: true,
+        },
+      ]),
       ...redirectsFor("hannesdiem.de", [
         {
           source: "/",

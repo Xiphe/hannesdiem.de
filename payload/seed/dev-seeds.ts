@@ -9,11 +9,11 @@ export async function seedDevDB(payload: BasePayload) {
     return;
   }
 
-  seed(payload, "users", [
-    { email: "admin@payload.local", password: "admin123" },
+  seed(payload, "admins", [
+    { email: "admin@payload.local", password: "admin123", superadmin: true },
   ]);
 
-  seed(payload, "persons", [
+  seed(payload, "hdm-persons", [
     {
       name: "Hannes Diem",
       link: "https://hannesdiem.de",
@@ -21,7 +21,7 @@ export async function seedDevDB(payload: BasePayload) {
     },
   ]);
 
-  seed(payload, "contribution-roles", [
+  seed(payload, "hdm-contribution-roles", [
     { role: "Composition" },
     { role: "Lyrics" },
   ]);
