@@ -18,11 +18,11 @@ export interface Config {
     'hdm-contribution-roles': HdmContributionRole;
     'hdm-genres': HdmGenre;
     'hdm-songs': HdmSong;
-    'rcps-recipes': RcpsRecipe;
+    'rcps-recipes': Recipe;
     'rcps-images': RcpsImage;
     'rcps-sources': RcpsSource;
-    'rcps-quantity-types': RcpsQuantityType;
-    'rcps-ingredients': RcpsIngredient;
+    'rcps-quantity-types': QuantityType;
+    'rcps-ingredients': Ingredient;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -268,7 +268,7 @@ export interface HdmSong {
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "rcps-recipes".
  */
-export interface RcpsRecipe {
+export interface Recipe {
   id: number;
   uuid?: string | null;
   name: string;
@@ -292,8 +292,8 @@ export interface RcpsRecipe {
         'section-ingredients'?:
           | {
               quantity: number;
-              'quantity-type': number | RcpsQuantityType;
-              ingredient: number | RcpsIngredient;
+              'quantity-type': number | QuantityType;
+              ingredient: number | Ingredient;
               id?: string | null;
             }[]
           | null;
@@ -384,7 +384,7 @@ export interface RcpsSource {
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "rcps-quantity-types".
  */
-export interface RcpsQuantityType {
+export interface QuantityType {
   id: number;
   name: string;
   singular?: string | null;
@@ -397,11 +397,11 @@ export interface RcpsQuantityType {
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "rcps-ingredients".
  */
-export interface RcpsIngredient {
+export interface Ingredient {
   id: number;
   name: string;
   plural: string;
-  recipe?: (number | null) | RcpsRecipe;
+  recipe?: (number | null) | Recipe;
   affiliateUrl?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -480,7 +480,7 @@ export interface PayloadLockedDocument {
       } | null)
     | ({
         relationTo: 'rcps-recipes';
-        value: number | RcpsRecipe;
+        value: number | Recipe;
       } | null)
     | ({
         relationTo: 'rcps-images';
@@ -492,11 +492,11 @@ export interface PayloadLockedDocument {
       } | null)
     | ({
         relationTo: 'rcps-quantity-types';
-        value: number | RcpsQuantityType;
+        value: number | QuantityType;
       } | null)
     | ({
         relationTo: 'rcps-ingredients';
-        value: number | RcpsIngredient;
+        value: number | Ingredient;
       } | null);
   globalSlug?: string | null;
   user: {

@@ -5,6 +5,7 @@ import { type CollectionConfig } from "payload";
 
 export const Recipes: CollectionConfig = {
   slug: "recipes",
+  typescript: { interface: "Recipe" },
   versions: {
     maxPerDoc: 25,
     drafts: {

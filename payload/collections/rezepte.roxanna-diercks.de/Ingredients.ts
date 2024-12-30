@@ -2,6 +2,9 @@ import { type CollectionConfig } from "payload";
 
 export const RecipeIngredient: CollectionConfig = {
   slug: "ingredients",
+  typescript: {
+    interface: "Ingredient",
+  },
   labels: {
     singular: "Ingredient",
     plural: "Ingredients",

@@ -1,9 +1,9 @@
-import { RecipeIngredient, RecipeQuantityType } from "@/payload-types";
+import { Ingredient, QuantityType } from "@/payload-types";
 
 export function ingredientWithQuantity(
   quantity: number = 1,
-  quantityType: RecipeQuantityType | null,
-  ingredient: RecipeIngredient,
+  quantityType: QuantityType | null,
+  ingredient: Ingredient,
 ) {
   const quantityLabel = !quantityType
     ? ""

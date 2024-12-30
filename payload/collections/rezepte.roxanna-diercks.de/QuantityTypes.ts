@@ -2,6 +2,9 @@ import { type CollectionConfig } from "payload";
 
 export const RecipeQuantityType: CollectionConfig = {
   slug: "quantity-types",
+  typescript: {
+    interface: "QuantityType",
+  },
   labels: {
     singular: "Quantity Type",
     plural: "Quantity Types",

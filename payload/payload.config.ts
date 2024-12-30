@@ -64,9 +64,8 @@ export default buildConfig({
       : [
           vercelBlobStorage({
             collections: {
-              "cover-arts": {
-                prefix: "cover-arts",
-              },
+              "hdm-cover-arts": true,
+              "rcps-images": true,
             },
             token: BLOB_READ_WRITE_TOKEN,
           }),
