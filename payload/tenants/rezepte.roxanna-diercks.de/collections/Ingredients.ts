@@ -10,11 +10,11 @@ export const RecipeIngredient: CollectionConfig = {
     plural: "Ingredients",
   },
   admin: {
-    useAsTitle: "name",
+    useAsTitle: "singular",
   },
   fields: [
     {
-      name: "name",
+      name: "singular",
       label: "Name",
       required: true,
       localized: true,
@@ -26,6 +26,12 @@ export const RecipeIngredient: CollectionConfig = {
       required: true,
       localized: true,
       type: "text",
+    },
+    {
+      name: "aliases",
+      label: "Alias",
+      type: "text",
+      hasMany: true,
     },
     {
       name: "recipe",

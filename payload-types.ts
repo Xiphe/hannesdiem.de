@@ -23,6 +23,8 @@ export interface Config {
     'rcps-sources': RcpsSource;
     'rcps-quantity-types': QuantityType;
     'rcps-ingredients': Ingredient;
+    'rcps-crumbles': RcpsCrumble;
+    'payload-jobs': PayloadJob;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -41,6 +43,8 @@ export interface Config {
     'rcps-sources': RcpsSourcesSelect<false> | RcpsSourcesSelect<true>;
     'rcps-quantity-types': RcpsQuantityTypesSelect<false> | RcpsQuantityTypesSelect<true>;
     'rcps-ingredients': RcpsIngredientsSelect<false> | RcpsIngredientsSelect<true>;
+    'rcps-crumbles': RcpsCrumblesSelect<false> | RcpsCrumblesSelect<true>;
+    'payload-jobs': PayloadJobsSelect<false> | PayloadJobsSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
@@ -55,8 +59,16 @@ export interface Config {
     collection: 'admins';
   };
   jobs: {
-    tasks: unknown;
-    workflows: unknown;
+    tasks: {
+      'rcps-extract-ingredients': TaskRcpsExtractIngredients;
+      inline: {
+        input: unknown;
+        output: unknown;
+      };
+    };
+    workflows: {
+      'rcps-import-recipe': WorkflowRcpsImportRecipe;
+    };
   };
 }
 export interface AdminAuthOperations {
@@ -386,10 +398,12 @@ export interface RcpsSource {
  */
 export interface QuantityType {
   id: number;
-  name: string;
-  singular?: string | null;
+  singular: string;
   plural?: string | null;
+  unit?: string | null;
   fraction?: string | null;
+  hidden?: ('singular' | 'plural' | 'fraction')[] | null;
+  aliases?: string[] | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -399,8 +413,9 @@ export interface QuantityType {
  */
 export interface Ingredient {
   id: number;
-  name: string;
+  singular: string;
   plural: string;
+  aliases?: string[] | null;
   recipe?: (number | null) | Recipe;
   affiliateUrl?: string | null;
   updatedAt: string;
@@ -442,6 +457,117 @@ export interface RcpsImage {
       filename?: string | null;
     };
   };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "rcps-crumbles".
+ */
+export interface RcpsCrumble {
+  id: number;
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-jobs".
+ */
+export interface PayloadJob {
+  id: number;
+  /**
+   * Input data provided to the job
+   */
+  input?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  taskStatus?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  completedAt?: string | null;
+  totalTried?: number | null;
+  /**
+   * If hasError is true this job will not be retried
+   */
+  hasError?: boolean | null;
+  /**
+   * If hasError is true, this is the error that caused it
+   */
+  error?:
+    | {
+        [k: string]: unknown;
+      }
+    | unknown[]
+    | string
+    | number
+    | boolean
+    | null;
+  /**
+   * Task execution log
+   */
+  log?:
+    | {
+        executedAt: string;
+        completedAt: string;
+        taskSlug: 'inline' | 'rcps-extract-ingredients';
+        taskID: string;
+        input?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
+        output?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
+        state: 'failed' | 'succeeded';
+        error?:
+          | {
+              [k: string]: unknown;
+            }
+          | unknown[]
+          | string
+          | number
+          | boolean
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  workflowSlug?: 'rcps-import-recipe' | null;
+  taskSlug?: ('inline' | 'rcps-extract-ingredients') | null;
+  queue?: string | null;
+  waitUntil?: string | null;
+  processing?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -497,6 +623,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'rcps-ingredients';
         value: number | Ingredient;
+      } | null)
+    | ({
+        relationTo: 'rcps-crumbles';
+        value: number | RcpsCrumble;
+      } | null)
+    | ({
+        relationTo: 'payload-jobs';
+        value: number | PayloadJob;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -786,10 +920,12 @@ export interface RcpsSourcesSelect<T extends boolean = true> {
  * via the `definition` "rcps-quantity-types_select".
  */
 export interface RcpsQuantityTypesSelect<T extends boolean = true> {
-  name?: T;
   singular?: T;
   plural?: T;
+  unit?: T;
   fraction?: T;
+  hidden?: T;
+  aliases?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -798,10 +934,60 @@ export interface RcpsQuantityTypesSelect<T extends boolean = true> {
  * via the `definition` "rcps-ingredients_select".
  */
 export interface RcpsIngredientsSelect<T extends boolean = true> {
-  name?: T;
+  singular?: T;
   plural?: T;
+  aliases?: T;
   recipe?: T;
   affiliateUrl?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "rcps-crumbles_select".
+ */
+export interface RcpsCrumblesSelect<T extends boolean = true> {
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "payload-jobs_select".
+ */
+export interface PayloadJobsSelect<T extends boolean = true> {
+  input?: T;
+  taskStatus?: T;
+  completedAt?: T;
+  totalTried?: T;
+  hasError?: T;
+  error?: T;
+  log?:
+    | T
+    | {
+        executedAt?: T;
+        completedAt?: T;
+        taskSlug?: T;
+        taskID?: T;
+        input?: T;
+        output?: T;
+        state?: T;
+        error?: T;
+        id?: T;
+      };
+  workflowSlug?: T;
+  taskSlug?: T;
+  queue?: T;
+  waitUntil?: T;
+  processing?: T;
   updatedAt?: T;
   createdAt?: T;
 }
@@ -836,6 +1022,35 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   batch?: T;
   updatedAt?: T;
   createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskRcps-extract-ingredients".
+ */
+export interface TaskRcpsExtractIngredients {
+  input: {
+    recipe:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+  output: {
+    postID: string;
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "WorkflowRcps-import-recipe".
+ */
+export interface WorkflowRcpsImportRecipe {
+  input: {
+    croutonRecipeId: number;
+  };
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

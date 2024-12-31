@@ -84,9 +84,13 @@ function finished<T extends Record<string, unknown>>(config: T) {
 }
 
 function brand<T extends { slug: string }>(prefix: string, config: T): T {
+  if (config.slug.startsWith(`${prefix}-`)) {
+    return config;
+  }
+
   return {
     ...config,
-    slug: [prefix, config.slug].filter(Boolean).join("-"),
+    slug: `${prefix}-${config.slug}`,
   };
 }
 

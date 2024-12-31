@@ -5,6 +5,9 @@ import { RecipeQuantityType } from "./collections/QuantityTypes";
 import { RecipeSources } from "./collections/Sources";
 import { Images } from "./collections/Images";
 import { DE, EN, ES } from "@payload/utils/locales";
+import { ExtractIngredients } from "./tasks/ExtractIngredients/ExtractIngredients";
+import { Crumbles } from "./collections/Crumbles";
+import { ImportRecipe } from "./workflows/ImportRecipe";
 
 export const RezepteRoxannaDiercksDeConfig = tenant({
   name: "rezepte.roxanna-diercks.de",
@@ -13,11 +16,16 @@ export const RezepteRoxannaDiercksDeConfig = tenant({
     "@payload/tenants/rezepte.roxanna-diercks.de/components/IngredientStateProvider.tsx",
   ],
   locales: [EN, ES, DE],
+  jobs: {
+    workflows: [ImportRecipe],
+    tasks: [ExtractIngredients],
+  },
   collections: [
     Recipes,
     Images,
     RecipeSources,
     RecipeQuantityType,
     RecipeIngredient,
+    Crumbles,
   ],
 });

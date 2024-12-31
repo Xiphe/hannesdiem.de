@@ -10,19 +10,13 @@ export const RecipeQuantityType: CollectionConfig = {
     plural: "Quantity Types",
   },
   admin: {
-    useAsTitle: "name",
+    useAsTitle: "singular",
   },
   fields: [
     {
-      name: "name",
-      label: "Name",
-      localized: true,
-      required: true,
-      type: "text",
-    },
-    {
       name: "singular",
       label: "Singular",
+      required: true,
       localized: true,
       type: "text",
     },
@@ -32,6 +26,26 @@ export const RecipeQuantityType: CollectionConfig = {
       localized: true,
       type: "text",
     },
+    {
+      name: "unit",
+      label: "Unit",
+      localized: true,
+      type: "text",
+    },
     { name: "fraction", localized: true, label: "Fraction", type: "text" },
+    {
+      name: "hidden",
+      label: "Hidden Labels",
+      type: "select",
+      localized: true,
+      hasMany: true,
+      options: ["singular", "plural", "fraction"],
+    },
+    {
+      name: "aliases",
+      label: "Aliases",
+      hasMany: true,
+      type: "text",
+    },
   ],
 };
