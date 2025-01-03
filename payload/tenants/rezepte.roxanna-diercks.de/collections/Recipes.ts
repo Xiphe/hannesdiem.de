@@ -1,10 +1,15 @@
+import { Recipe } from "@/payload-types";
 import { TimerBlock } from "@payload/blocks/timer/TimerBlock";
 import { BlocksFeature, lexicalEditor } from "@payloadcms/richtext-lexical";
 import { randomUUID } from "crypto";
-import { type CollectionConfig } from "payload";
+import {
+  CollectionBeforeChangeHook,
+  CollectionBeforeValidateHook,
+  type CollectionConfig,
+} from "payload";
 
 export const Recipes: CollectionConfig = {
-  slug: "recipes",
+  slug: "rcps-recipes",
   typescript: { interface: "Recipe" },
   versions: {
     maxPerDoc: 25,
@@ -31,6 +36,13 @@ export const Recipes: CollectionConfig = {
       },
     },
     {
+      name: "last-edit-by",
+      type: "number",
+      admin: {
+        hidden: true,
+      },
+    },
+    {
       name: "name",
       label: "Name",
       type: "text",
@@ -38,54 +50,86 @@ export const Recipes: CollectionConfig = {
       required: true,
     },
     {
-      type: "row",
+      type: "collapsible",
+      label: "Options",
+      admin: {
+        initCollapsed: true,
+      },
       fields: [
         {
-          name: "duration",
-          label: "Prep Duration",
-          type: "number",
+          name: "publish-imports",
+          type: "checkbox",
+          label: "Auto-Publish imports",
           admin: {
-            width: "20%",
-            description: "Overall “prep” duration in minutes, if needed.",
+            description:
+              "When active, a fresh import with this recipe will automatically be published",
           },
         },
         {
-          name: "cookingDuration",
-          label: "Cooking Duration",
-          type: "number",
-          admin: {
-            width: "20%",
-            description: "Overall “cooking” duration in minutes, if needed.",
-          },
+          type: "row",
+          fields: [
+            {
+              name: "duration",
+              label: "Prep Duration",
+              type: "number",
+              admin: {
+                width: "30%",
+                description: "Overall “prep” duration in minutes, if needed.",
+              },
+            },
+            {
+              name: "cookingDuration",
+              label: "Cooking Duration",
+              type: "number",
+              admin: {
+                width: "30%",
+                description:
+                  "Overall “cooking” duration in minutes, if needed.",
+              },
+            },
+            {
+              name: "serves",
+              label: "Servings",
+              type: "number",
+              admin: {
+                width: "20%",
+              },
+            },
+            {
+              name: "defaultScale",
+              label: "Default Scale",
+              type: "number",
+              defaultValue: 1,
+              admin: {
+                width: "20%",
+              },
+            },
+          ],
         },
         {
-          name: "serves",
-          label: "Servings",
-          type: "number",
-          admin: {
-            width: "10%",
-          },
-        },
-        {
-          name: "defaultScale",
-          label: "Default Scale",
-          type: "number",
-          defaultValue: 1,
-          admin: {
-            width: "10%",
-          },
-        },
-        {
-          name: "source",
-          label: "Source",
-          type: "relationship",
-          relationTo: "rcps-sources",
-          admin: {
-            width: "40%",
-          },
+          type: "row",
+          fields: [
+            {
+              name: "source",
+              label: "Source",
+              type: "text",
+              admin: {
+                width: "60%",
+              },
+            },
+            {
+              name: "source-name",
+              label: "Source Name",
+              type: "text",
+              admin: {
+                width: "40%",
+              },
+            },
+          ],
         },
       ],
     },
+
     {
       name: "ingredient-sections",
       label: "Ingredients",
@@ -145,7 +189,7 @@ export const Recipes: CollectionConfig = {
                   type: "relationship",
                   relationTo: "rcps-quantity-types",
                   admin: {
-                    width: "30%",
+                    width: "20%",
                   },
                 },
                 {
@@ -155,7 +199,15 @@ export const Recipes: CollectionConfig = {
                   type: "relationship",
                   relationTo: "rcps-ingredients",
                   admin: {
-                    width: "60%",
+                    width: "35%",
+                  },
+                },
+                {
+                  name: "note",
+                  label: "Note",
+                  type: "text",
+                  admin: {
+                    width: "35%",
                   },
                 },
               ],
@@ -203,7 +255,7 @@ export const Recipes: CollectionConfig = {
                       inlineBlocks: [
                         TimerBlock,
                         {
-                          slug: "ingredient-link",
+                          slug: "rcps-ingredient-link",
                           labels: {
                             singular: "Ingredient",
                             plural: "Ingredients",
@@ -217,14 +269,24 @@ export const Recipes: CollectionConfig = {
                           fields: [
                             {
                               name: "ingredient",
-                              label: false,
+                              label: "Ingredient",
                               type: "relationship",
                               relationTo: "rcps-ingredients",
                               required: true,
                             },
                             {
-                              name: "fraction",
+                              name: "quantity-type",
+                              label: "Quantity Type",
+                              type: "relationship",
+                              relationTo: "rcps-quantity-types",
+                            },
+                            {
+                              name: "quantity",
                               type: "number",
+                            },
+                            {
+                              name: "link-text",
+                              type: "text",
                             },
                           ],
                         },
@@ -281,6 +343,11 @@ export const Recipes: CollectionConfig = {
           data.uuid = randomUUID();
         }
       },
-    ],
+    ] satisfies CollectionBeforeValidateHook<Recipe>[],
+    beforeChange: [
+      ({ data, req }) => {
+        data["last-edit-by"] = req.user?.id || 0;
+      },
+    ] satisfies CollectionBeforeChangeHook<Recipe>[],
   },
 };

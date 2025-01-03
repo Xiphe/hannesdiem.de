@@ -23,11 +23,11 @@ export default function TitleRowLabel(props: unknown) {
   }, [ingredientSections, ingredientID]);
 
   const [{ data: ingredientDetails }] = usePayloadAPI(
-    ingredientID ? `/api/recipe-ingredient/${ingredientID}` : "",
+    ingredientID ? `/api/rcps-ingredients/${ingredientID}` : "",
   );
   const [{ data: quantityType }] = usePayloadAPI(
     ingredientWithQuantity?.["quantity-type"]
-      ? `/api/recipe-quantity-type/${ingredientWithQuantity?.["quantity-type"]}`
+      ? `/api/rcps-quantity-types/${ingredientWithQuantity?.["quantity-type"]}`
       : "",
   );
 

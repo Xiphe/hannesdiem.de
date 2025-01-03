@@ -26,59 +26,67 @@ const QuantityTypeSchema = z.object({
 });
 
 const cache: Record<string, Promise<number> | undefined> = {};
-export async function generateQuantityType(
+export async function ensureQuantityType(
   payload: BasePayload,
   quantityAbr: string,
 ): Promise<number> {
+  if (quantityAbr === "RECIPE") {
+    quantityAbr = "ITEM";
+  }
+
   if (cache[quantityAbr]) {
-    return cache[quantityAbr];
+    return cache[quantityAbr]!;
   }
 
   cache[quantityAbr] = new Promise<number>(async (resolve, reject) => {
-    const quantityTypeExists = await payload.find({
-      collection: "rcps-quantity-types",
-      where: {
-        aliases: { contains: quantityAbr },
-      },
-    });
+    try {
+      const quantityTypeExists = await payload.find({
+        collection: "rcps-quantity-types",
+        where: {
+          aliases: { contains: quantityAbr.toLowerCase() },
+        },
+      });
 
-    if (quantityTypeExists.totalDocs) {
-      return resolve(quantityTypeExists.docs[0].id);
+      if (quantityTypeExists.totalDocs) {
+        return resolve(quantityTypeExists.docs[0].id);
+      }
+
+      payload.logger.info(`Generating quantity type: ${quantityAbr}`);
+      const { data } = await complete(
+        `In the context of cooking recipe ingredients, please provide short ` +
+          `human-readable labels for the quantity type with the abbreviation ` +
+          `"${quantityAbr}" in english, german and spanish.` +
+          `Provide only the concise label how it would be used in a recipe without quantities.`,
+        {
+          schema: z.object({
+            en: QuantityTypeSchema.describe("English labels"),
+            de: QuantityTypeSchema.describe("German labels"),
+            es: QuantityTypeSchema.describe("Spanish labels"),
+          }),
+        },
+      );
+      payload.logger.debug(data);
+
+      let id: number | undefined;
+      for (const locale of Object.keys(data) as (keyof typeof data)[]) {
+        id = (
+          await payload[id ? "update" : "create"]({
+            collection: "rcps-quantity-types",
+            id: id!,
+            locale,
+            data: { ...data[locale], aliases: [quantityAbr.toLowerCase()] },
+          })
+        ).id;
+      }
+      payload.logger.info(
+        `Created quantity type: ${data.en.singular} with id ${id}`,
+      );
+
+      resolve(id!);
+    } catch (err) {
+      reject(err);
     }
-
-    payload.logger.info(`Generating quantity type: ${quantityAbr}`);
-    const { data } = await complete(
-      `In the context of recipe ingredients, please provide short ` +
-        `human-readable labels for the quantity type with the abbreviation ` +
-        `"${quantityAbr}" in English, German and Spanish.` +
-        `Provide only the concise label how it would be used in a recipe without quantities.`,
-      {
-        schema: z.object({
-          en: QuantityTypeSchema.describe("English labels"),
-          de: QuantityTypeSchema.describe("German labels"),
-          es: QuantityTypeSchema.describe("Spanish labels"),
-        }),
-      },
-    );
-    payload.logger.debug(data);
-
-    let id: number | undefined;
-    for (const locale of Object.keys(data) as (keyof typeof data)[]) {
-      id = (
-        await payload[id ? "update" : "create"]({
-          collection: "rcps-quantity-types",
-          id: id!,
-          locale,
-          data: { ...data[locale], aliases: [quantityAbr] },
-        })
-      ).id;
-    }
-    payload.logger.info(
-      `Created quantity type: ${data.en.singular} with id ${id}`,
-    );
-
-    resolve(id!);
   });
 
-  return cache[quantityAbr];
+  return cache[quantityAbr]!;
 }

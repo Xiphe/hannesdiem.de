@@ -1,7 +1,7 @@
 import type { CollectionConfig } from "payload";
 
 export const Genres: CollectionConfig = {
-  slug: "genres",
+  slug: "hdm-genres",
   admin: {
     useAsTitle: "name",
   },

@@ -55,6 +55,7 @@ export default buildConfig(
       db: (isDev ? postgresAdapter : vercelPostgresAdapter)({
         migrationDir,
         pool: {
+          idleTimeoutMillis: 1000,
           connectionString: POSTGRESQL_DATABASE_URL,
         },
       }),

@@ -2,7 +2,7 @@ import type { CollectionConfig } from "payload";
 import { withUploadDir } from "@payload/utils/uploadDir";
 
 export const Images: CollectionConfig = withUploadDir({
-  slug: "images",
+  slug: "rcps-images",
   labels: {
     singular: "Image",
     plural: "Images",

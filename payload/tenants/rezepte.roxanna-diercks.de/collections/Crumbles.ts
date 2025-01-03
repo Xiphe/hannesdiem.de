@@ -3,7 +3,7 @@ import { withUploadDir } from "@payload/utils/uploadDir";
 import config from "@payload-config";
 
 export const Crumbles: CollectionConfig = withUploadDir({
-  slug: "crumbles",
+  slug: "rcps-crumbles",
   labels: {
     singular: "Crouton Recipe",
     plural: "Crouton Recipes",

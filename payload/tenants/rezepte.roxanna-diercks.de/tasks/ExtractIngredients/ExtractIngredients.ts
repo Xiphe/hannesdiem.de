@@ -1,6 +1,30 @@
-import { complete } from "@payload/utils/complete";
 import { TaskConfig } from "payload";
-import { generateQuantityType } from "./ensureQuantityType";
+import { ensureQuantityType } from "./ensureQuantityType";
+import { ensureIngredient } from "./ensureIngredient";
+import { Recipe } from "@/payload-types";
+import { complete } from "@payload/utils/complete";
+import { TranslationsSchema } from "../TranslateSectionTitle";
+
+export type ExtractedIngredient = NonNullable<
+  NonNullable<Recipe["ingredient-sections"]>[number]["section-ingredients"]
+>[number];
+export type IngredientSectionTitle = {
+  type: "title";
+  en: string;
+  es: string;
+  de: string;
+};
+
+export type ExtractedIngredients = (
+  | ExtractedIngredient
+  | IngredientSectionTitle
+)[];
+
+export function isIngredientSectionTitle(
+  i: ExtractedIngredient | IngredientSectionTitle,
+): i is IngredientSectionTitle {
+  return "type" in i && i.type === "title";
+}
 
 export const ExtractIngredients: TaskConfig<"rcps-extract-ingredients"> = {
   slug: "rcps-extract-ingredients",
@@ -13,47 +37,65 @@ export const ExtractIngredients: TaskConfig<"rcps-extract-ingredients"> = {
   ],
   outputSchema: [
     {
-      name: "postID",
-      type: "text",
+      name: "ingredients",
+      type: "json",
       required: true,
     },
   ],
-  async handler({ req: { payload, user }, input: { recipe } }) {
-    const { ingredients } = recipe as any;
+  async handler({ req: { payload }, input: { recipe } }) {
+    try {
+      const { ingredients, name: recipeName } = recipe as any;
 
-    const created = [];
+      const output = {
+        ingredients: await Promise.all<ExtractedIngredients>(
+          ingredients.map(
+            async ({
+              ingredient: { name },
+              quantity: { amount, quantityType },
+            }: any) => {
+              if (quantityType === "SECTION") {
+                return {
+                  type: "title",
+                  ...(
+                    await complete(
+                      `In the context of a cooking recipe for "${recipeName}", translate the ingredient section "${name}" to english, german and spanish.`,
+                      { schema: TranslationsSchema },
+                    )
+                  ).data,
+                };
+              }
 
-    await Promise.all(
-      ingredients.map(
-        async ({
-          ingredient: { name, ...ing },
-          quantity: { amount, quantityType, ...rest },
-        }: any) => {
-          if (quantityType !== "RECIPE") {
-            const quantityId = await generateQuantityType(
-              payload,
-              quantityType,
-            );
-            console.log({ quantityType, quantityId, name });
-          } else {
-            console.log({ name, amount, quantityType, rest, ing });
-          }
+              const { id: ingredientId, notes } = await ensureIngredient(
+                payload,
+                name,
+              );
+
+              return {
+                quantity: amount,
+                "quantity-type": await ensureQuantityType(
+                  payload,
+                  quantityType,
+                ),
+                ingredient: ingredientId,
+                note: notes.join(", "),
+              };
+            },
+          ),
+        ),
+      };
+
+      return {
+        output,
+        state: "succeeded",
+      };
+    } catch (err) {
+      payload.logger.error(err);
+      return {
+        output: {
+          ingredients: null,
         },
-      ),
-    );
-
-    // for (const {
-    //   ingredient: { name },
-    //   quantity: { amount, quantityType },
-    // } of ingredients) {
-    //   break;
-    // }
-
-    return {
-      output: {
-        postID: "",
-      },
-      state: "succeeded",
-    };
+        state: "failed",
+      };
+    }
   },
 };

@@ -39,15 +39,17 @@ export function tenant({
   return {
     ...rest,
     collections: collections?.map((collection) =>
-      finished(lock(name, group(name, brand(prefix, collection)))),
+      finished(lock(name, group(name, ensureBranded(prefix, collection)))),
     ),
     globals: globals?.map((global) =>
-      finished(lock(name, group(name, brand(prefix, global)))),
+      finished(lock(name, group(name, ensureBranded(prefix, global)))),
     ),
     jobs: {
-      tasks: jobs?.tasks?.map((task) => finished(brand(prefix, task))) || [],
+      tasks:
+        jobs?.tasks?.map((task) => finished(ensureBranded(prefix, task))) || [],
       workflows:
-        jobs?.workflows?.map((task) => finished(brand(prefix, task))) || [],
+        jobs?.workflows?.map((task) => finished(ensureBranded(prefix, task))) ||
+        [],
     },
   };
 }
@@ -83,15 +85,15 @@ function finished<T extends Record<string, unknown>>(config: T) {
   ).reduce((memo, callback) => callback(memo), config);
 }
 
-function brand<T extends { slug: string }>(prefix: string, config: T): T {
-  if (config.slug.startsWith(`${prefix}-`)) {
-    return config;
+function ensureBranded<T extends { slug: string }>(
+  prefix: string,
+  config: T,
+): T {
+  if (!config.slug.startsWith(`${prefix}-`)) {
+    throw new Error(`${config.slug} has to be prefixed with ${prefix}-`);
   }
 
-  return {
-    ...config,
-    slug: `${prefix}-${config.slug}`,
-  };
+  return config;
 }
 
 function group<T extends CollectionConfig | GlobalConfig>(

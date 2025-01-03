@@ -1,7 +1,7 @@
 import type { CollectionConfig } from "payload";
 
 export const Songs: CollectionConfig = {
-  slug: "songs",
+  slug: "hdm-songs",
   fields: [
     {
       name: "title",

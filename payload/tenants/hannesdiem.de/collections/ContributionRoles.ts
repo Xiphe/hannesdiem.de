@@ -1,7 +1,7 @@
 import type { CollectionConfig } from "payload";
 
 export const ContributionRoles: CollectionConfig = {
-  slug: "contribution-roles",
+  slug: "hdm-contribution-roles",
   admin: {
     useAsTitle: "role",
   },

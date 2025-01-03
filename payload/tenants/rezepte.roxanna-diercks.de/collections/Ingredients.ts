@@ -1,7 +1,7 @@
 import { type CollectionConfig } from "payload";
 
 export const RecipeIngredient: CollectionConfig = {
-  slug: "ingredients",
+  slug: "rcps-ingredients",
   typescript: {
     interface: "Ingredient",
   },
@@ -38,6 +38,13 @@ export const RecipeIngredient: CollectionConfig = {
       label: "Recipe",
       type: "relationship",
       relationTo: "rcps-recipes",
+    },
+    {
+      name: "used-in",
+      label: "Used in",
+      type: "join",
+      collection: "rcps-recipes",
+      on: "ingredient-sections.section-ingredients.ingredient",
     },
     {
       name: "affiliateUrl",

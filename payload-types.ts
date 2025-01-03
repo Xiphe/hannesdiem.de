@@ -29,7 +29,11 @@ export interface Config {
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
-  collectionsJoins: {};
+  collectionsJoins: {
+    'rcps-ingredients': {
+      'used-in': 'rcps-recipes';
+    };
+  };
   collectionsSelect: {
     admins: AdminsSelect<false> | AdminsSelect<true>;
     'hdm-persons': HdmPersonsSelect<false> | HdmPersonsSelect<true>;
@@ -61,6 +65,8 @@ export interface Config {
   jobs: {
     tasks: {
       'rcps-extract-ingredients': TaskRcpsExtractIngredients;
+      'rcps-translate-step': TaskRcpsTranslateStep;
+      'rcps-translate-section-title': TaskRcpsTranslateSectionTitle;
       inline: {
         input: unknown;
         output: unknown;
@@ -283,7 +289,12 @@ export interface HdmSong {
 export interface Recipe {
   id: number;
   uuid?: string | null;
+  'last-edit-by'?: number | null;
   name: string;
+  /**
+   * When active, a fresh import with this recipe will automatically be published
+   */
+  'publish-imports'?: boolean | null;
   /**
    * Overall “prep” duration in minutes, if needed.
    */
@@ -294,7 +305,8 @@ export interface Recipe {
   cookingDuration?: number | null;
   serves?: number | null;
   defaultScale?: number | null;
-  source?: (number | null) | RcpsSource;
+  source?: string | null;
+  'source-name'?: string | null;
   'ingredient-sections'?:
     | {
         /**
@@ -306,6 +318,7 @@ export interface Recipe {
               quantity: number;
               'quantity-type': number | QuantityType;
               ingredient: number | Ingredient;
+              note?: string | null;
               id?: string | null;
             }[]
           | null;
@@ -383,17 +396,6 @@ export interface Recipe {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "rcps-sources".
- */
-export interface RcpsSource {
-  id: number;
-  name: string;
-  url: string;
-  updatedAt: string;
-  createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "rcps-quantity-types".
  */
 export interface QuantityType {
@@ -417,6 +419,10 @@ export interface Ingredient {
   plural: string;
   aliases?: string[] | null;
   recipe?: (number | null) | Recipe;
+  'used-in'?: {
+    docs?: (number | Recipe)[] | null;
+    hasNextPage?: boolean | null;
+  } | null;
   affiliateUrl?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -457,6 +463,17 @@ export interface RcpsImage {
       filename?: string | null;
     };
   };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "rcps-sources".
+ */
+export interface RcpsSource {
+  id: number;
+  name: string;
+  url: string;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -528,7 +545,7 @@ export interface PayloadJob {
     | {
         executedAt: string;
         completedAt: string;
-        taskSlug: 'inline' | 'rcps-extract-ingredients';
+        taskSlug: 'inline' | 'rcps-extract-ingredients' | 'rcps-translate-step' | 'rcps-translate-section-title';
         taskID: string;
         input?:
           | {
@@ -562,7 +579,7 @@ export interface PayloadJob {
       }[]
     | null;
   workflowSlug?: 'rcps-import-recipe' | null;
-  taskSlug?: ('inline' | 'rcps-extract-ingredients') | null;
+  taskSlug?: ('inline' | 'rcps-extract-ingredients' | 'rcps-translate-step' | 'rcps-translate-section-title') | null;
   queue?: string | null;
   waitUntil?: string | null;
   processing?: boolean | null;
@@ -819,12 +836,15 @@ export interface HdmSongsSelect<T extends boolean = true> {
  */
 export interface RcpsRecipesSelect<T extends boolean = true> {
   uuid?: T;
+  'last-edit-by'?: T;
   name?: T;
+  'publish-imports'?: T;
   duration?: T;
   cookingDuration?: T;
   serves?: T;
   defaultScale?: T;
   source?: T;
+  'source-name'?: T;
   'ingredient-sections'?:
     | T
     | {
@@ -835,6 +855,7 @@ export interface RcpsRecipesSelect<T extends boolean = true> {
               quantity?: T;
               'quantity-type'?: T;
               ingredient?: T;
+              note?: T;
               id?: T;
             };
         id?: T;
@@ -938,6 +959,7 @@ export interface RcpsIngredientsSelect<T extends boolean = true> {
   plural?: T;
   aliases?: T;
   recipe?: T;
+  'used-in'?: T;
   affiliateUrl?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -1040,7 +1062,72 @@ export interface TaskRcpsExtractIngredients {
       | null;
   };
   output: {
-    postID: string;
+    ingredients:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskRcps-translate-step".
+ */
+export interface TaskRcpsTranslateStep {
+  input: {
+    step:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+    ingredients:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+  output: {
+    translations:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskRcps-translate-section-title".
+ */
+export interface TaskRcpsTranslateSectionTitle {
+  input: {
+    title: string;
+  };
+  output: {
+    translations:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
   };
 }
 /**

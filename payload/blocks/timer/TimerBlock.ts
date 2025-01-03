@@ -1,7 +1,7 @@
 import { Block } from "payload";
 
 export const TimerBlock: Block = {
-  slug: "recipe-timer",
+  slug: "timer",
   labels: { singular: "Timer", plural: "Timers" },
   admin: {
     components: {
@@ -12,7 +12,13 @@ export const TimerBlock: Block = {
     {
       name: "time",
       type: "number",
+      required: true,
       admin: { description: "Time in Minutes" },
+    },
+    {
+      name: "link-text",
+      label: "Link Text",
+      type: "text",
     },
   ],
 };

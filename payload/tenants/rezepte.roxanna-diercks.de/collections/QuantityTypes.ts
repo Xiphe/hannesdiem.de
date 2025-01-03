@@ -1,7 +1,7 @@
 import { type CollectionConfig } from "payload";
 
 export const RecipeQuantityType: CollectionConfig = {
-  slug: "quantity-types",
+  slug: "rcps-quantity-types",
   typescript: {
     interface: "QuantityType",
   },

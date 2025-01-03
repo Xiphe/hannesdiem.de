@@ -11,12 +11,12 @@ export default function TitleRowLabel() {
   }>();
 
   const [{ data: ingredient }] = usePayloadAPI(
-    data?.ingredient ? `/api/recipe-ingredient/${data.ingredient}` : "",
+    data?.ingredient ? `/api/rcps-ingredients/${data.ingredient}` : "",
   );
 
   const [{ data: quantityType }] = usePayloadAPI(
     data?.["quantity-type"]
-      ? `/api/recipe-quantity-type/${data?.["quantity-type"]}`
+      ? `/api/rcps-quantity-types/${data?.["quantity-type"]}`
       : "",
   );
 

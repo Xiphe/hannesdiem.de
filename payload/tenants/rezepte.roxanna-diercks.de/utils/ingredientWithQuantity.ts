@@ -14,7 +14,9 @@ export function ingredientWithQuantity(
         : quantityType.singular;
 
   const ingredientLabel =
-    quantity > 1 && !quantityType?.plural ? ingredient.plural : ingredient.name;
+    quantity > 1 && !quantityType?.plural
+      ? ingredient.plural
+      : ingredient.singular;
 
   return [quantity, quantityLabel, ingredientLabel]
     .filter((f) => f != null)

@@ -1,7 +1,7 @@
 import { type CollectionConfig } from "payload";
 
 export const RecipeSources: CollectionConfig = {
-  slug: "sources",
+  slug: "rcps-sources",
   labels: {
     singular: "Source",
     plural: "Sources",

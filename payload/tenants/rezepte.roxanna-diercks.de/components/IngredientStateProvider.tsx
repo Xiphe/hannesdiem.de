@@ -34,7 +34,7 @@ export default function IngredientStateProvider({
 }
 
 export function useIngredientSections() {
-  return useContext(IngredientContext);
+  return useContext(IngredientContext) || [];
 }
 
 export function useSetIngredientSections() {
