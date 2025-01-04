@@ -43,11 +43,30 @@ export const Recipes: CollectionConfig = {
       },
     },
     {
-      name: "name",
-      label: "Name",
-      type: "text",
-      localized: true,
-      required: true,
+      type: "row",
+      fields: [
+        {
+          name: "name",
+          label: "Name",
+          type: "text",
+          localized: true,
+          required: true,
+          admin: {
+            width: "80%",
+          },
+        },
+        {
+          name: "slug",
+          label: "Slug",
+          type: "text",
+          localized: true,
+          required: true,
+          unique: true,
+          admin: {
+            width: "20%",
+          },
+        },
+      ],
     },
     {
       type: "collapsible",

@@ -292,6 +292,7 @@ export interface Recipe {
   uuid?: string | null;
   'last-edit-by'?: number | null;
   name: string;
+  slug: string;
   /**
    * When active, a fresh import with this recipe will automatically be published
    */
@@ -852,6 +853,7 @@ export interface RcpsRecipesSelect<T extends boolean = true> {
   uuid?: T;
   'last-edit-by'?: T;
   name?: T;
+  slug?: T;
   'publish-imports'?: T;
   duration?: T;
   cookingDuration?: T;
@@ -1065,16 +1067,7 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface TaskRcpsExtractIngredients {
   input: {
-    recipeName: string;
-    ingredients:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
+    'recipe-id': number;
   };
   output: {
     ingredients:

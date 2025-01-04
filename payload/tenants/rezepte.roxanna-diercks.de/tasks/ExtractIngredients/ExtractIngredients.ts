@@ -4,6 +4,7 @@ import { ensureIngredient } from "./ensureIngredient";
 import { Recipe } from "@/payload-types";
 import { complete } from "@payload/utils/complete";
 import { TranslationsSchema } from "../TranslateSectionTitle";
+import { fetchFile } from "@payload/utils/uploadDir";
 
 export type ExtractedIngredient = NonNullable<
   NonNullable<Recipe["ingredient-sections"]>[number]["section-ingredients"]
@@ -30,13 +31,8 @@ export const ExtractIngredients: TaskConfig<"rcps-extract-ingredients"> = {
   slug: "rcps-extract-ingredients",
   inputSchema: [
     {
-      name: "recipeName",
-      type: "text",
-      required: true,
-    },
-    {
-      name: "ingredients",
-      type: "json",
+      name: "recipe-id",
+      type: "number",
       required: true,
     },
   ],
@@ -47,10 +43,20 @@ export const ExtractIngredients: TaskConfig<"rcps-extract-ingredients"> = {
       required: true,
     },
   ],
-  async handler({ req: { payload }, input: { ingredients, recipeName } }) {
+  async handler({ req: { payload }, input: { "recipe-id": recipeId } }) {
+    const recipe = await payload.findByID({
+      collection: "rcps-crumbles",
+      id: recipeId,
+    });
+    if (!recipe || !recipe.url) {
+      throw new Error("Recipe not found");
+    }
+    const res = await fetchFile(recipe.url);
+    const data = await res.json();
+
     const output = {
       ingredients: await Promise.all<ExtractedIngredients>(
-        (ingredients as any).map(
+        (data.ingredients as any).map(
           async ({
             ingredient: { name },
             quantity: { amount, quantityType } = {},
@@ -60,7 +66,8 @@ export const ExtractIngredients: TaskConfig<"rcps-extract-ingredients"> = {
                 type: "title",
                 ...(
                   await complete(
-                    `In the context of a cooking recipe for "${recipeName}", translate the ingredient section "${name}" to english, german and spanish.`,
+                    `In the context of a cooking recipe for "${data.name}",
+translate the ingredient section "${name}" to english, german and spanish.`,
                     { schema: TranslationsSchema },
                   )
                 ).data,

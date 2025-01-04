@@ -1,4 +1,4 @@
-- [ ] Add slug 
+- [x] Add slug 
 - [ ] Remove recipe after import
 - [ ] Create import flow
 - [ ] Don't ref unknown ingredients

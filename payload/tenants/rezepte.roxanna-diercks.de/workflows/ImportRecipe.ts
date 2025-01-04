@@ -12,6 +12,7 @@ import {
   isIngredientSectionTitle,
 } from "../tasks/ExtractIngredients/ExtractIngredients";
 import { fetchFile } from "@payload/utils/uploadDir";
+import { toSlug } from "@payload/utils/toSlug";
 
 type StepsSection = NonNullable<Recipe["step-sections"]>[number];
 
@@ -51,7 +52,7 @@ export const ImportRecipe: WorkflowConfig<"rcps-import-recipe"> = {
         "rcps-import-recipe-extract-ingredients",
         {
           retries: RETRIES,
-          input: { ingredients: data.ingredients, recipeName: data.name },
+          input: { "recipe-id": job.input.croutonRecipeId },
         },
       )
     ).ingredients as ExtractedIngredients;
@@ -70,7 +71,9 @@ export const ImportRecipe: WorkflowConfig<"rcps-import-recipe"> = {
         }),
       ),
     );
+
     const steps = await getSteps(data.steps, tasks, ingredients);
+
     const translatedName = (
       await tasks["rcps-translate-section-title"](
         `rcps-import-recipe-translate-name`,
@@ -116,6 +119,7 @@ export const ImportRecipe: WorkflowConfig<"rcps-import-recipe"> = {
         _status: publish ? "published" : "draft",
         "publish-imports": publish,
         uuid: data.uuid,
+        slug: toSlug(translatedName[lang]),
         name: translatedName[lang],
         cookingDuration: data.cookingDuration,
         duration: data.duration,
