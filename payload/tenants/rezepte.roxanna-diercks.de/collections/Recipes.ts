@@ -175,7 +175,6 @@ export const Recipes: CollectionConfig = {
               fields: [
                 {
                   name: "quantity",
-                  required: true,
                   label: "Quantity",
                   type: "number",
                   admin: {
@@ -184,7 +183,6 @@ export const Recipes: CollectionConfig = {
                 },
                 {
                   name: "quantity-type",
-                  required: true,
                   label: "Quantity Type",
                   type: "relationship",
                   relationTo: "rcps-quantity-types",

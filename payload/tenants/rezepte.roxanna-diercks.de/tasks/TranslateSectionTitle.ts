@@ -28,40 +28,32 @@ export const TranslateSectionTitle: TaskConfig<"rcps-translate-section-title"> =
       },
     ],
     async handler({ req: { payload }, input: { title } }) {
-      try {
-        if (title.trim() === "") {
-          return {
-            output: {
-              translations: {
-                en: "",
-                de: "",
-                es: "",
-              },
-            },
-            state: "succeeded",
-          };
-        }
-
-        payload.logger.info(`Translating section title: ${title}`);
-        const { data } = await complete(
-          `In the context of a recipe, please translate the section title "${title}"
-      to english, german and spanish`,
-          {
-            schema: TranslationsSchema,
-          },
-        );
-        payload.logger.debug(data);
-
+      if (title.trim() === "") {
         return {
-          output: { translations: data },
+          output: {
+            translations: {
+              en: "",
+              de: "",
+              es: "",
+            },
+          },
           state: "succeeded",
         };
-      } catch (err) {
-        payload.logger.error(err);
-        return {
-          output: { translations: null },
-          state: "failed",
-        };
       }
+
+      payload.logger.info(`Translating section title: ${title}`);
+      const { data } = await complete(
+        `In the context of a recipe, please translate the section title "${title}"
+      to english, german and spanish`,
+        {
+          schema: TranslationsSchema,
+        },
+      );
+      payload.logger.debug(data);
+
+      return {
+        output: { translations: data },
+        state: "succeeded",
+      };
     },
   };

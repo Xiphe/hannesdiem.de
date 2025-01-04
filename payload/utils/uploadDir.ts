@@ -2,6 +2,7 @@ import { CollectionConfig, UploadCollectionSlug, UploadConfig } from "payload";
 import { type CollectionOptions } from "@payloadcms/plugin-cloud-storage/types";
 import { withConfiguredTenant } from "./tenant";
 import assert from "node:assert";
+import { RcpsImage, Config } from "@/payload-types";
 
 const context: Partial<
   Record<UploadCollectionSlug, Omit<CollectionOptions, "adapter"> | true>
@@ -38,6 +39,16 @@ export const withUploadDir = <T extends UploadCollectionConfig>(
 
           return config.access?.read?.(args) || false;
         },
+        create(args) {
+          if (
+            args.req.headers?.get("Authorization") ===
+            `Bearer ${INTERNAL_FILE_READ_KEY}`
+          ) {
+            return true;
+          }
+
+          return config.access?.create?.(args) || false;
+        },
       },
       upload: {
         ...config.upload,
@@ -50,4 +61,51 @@ export const withUploadDir = <T extends UploadCollectionConfig>(
 
 export function getBlobStorageConfigs() {
   return context;
+}
+
+export function fetchFile(url: string) {
+  return fetch(
+    (process.env.NODE_ENV === "development"
+      ? "http://localhost:2999"
+      : "https://cms.xiphe.net") + url,
+    {
+      headers: {
+        Authorization: `Bearer ${INTERNAL_FILE_READ_KEY}`,
+      },
+    },
+  );
+}
+
+export async function createFile<Slug extends UploadCollectionSlug>(
+  slug: Slug,
+  formData: FormData,
+): Promise<Config["collections"][Slug]> {
+  const res = await fetch(
+    `${
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:2999"
+        : "https://cms.xiphe.net"
+    }/api/${slug}`,
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${INTERNAL_FILE_READ_KEY}`,
+      },
+      body: formData,
+    },
+  );
+
+  if (res.status !== 201) {
+    console.error("Failed to upload file", await res.text());
+    throw new Error("Failed to upload file");
+  }
+
+  try {
+    const { doc } = await res.json();
+    assert(doc.id != null);
+    return doc;
+  } catch (err) {
+    console.error(err);
+    throw new Error("Failed to upload image");
+  }
 }

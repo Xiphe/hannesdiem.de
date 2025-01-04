@@ -48,57 +48,46 @@ export const ExtractIngredients: TaskConfig<"rcps-extract-ingredients"> = {
     },
   ],
   async handler({ req: { payload }, input: { ingredients, recipeName } }) {
-    try {
-      const output = {
-        ingredients: await Promise.all<ExtractedIngredients>(
-          (ingredients as any).map(
-            async ({
-              ingredient: { name },
-              quantity: { amount, quantityType },
-            }: any) => {
-              if (quantityType === "SECTION") {
-                return {
-                  type: "title",
-                  ...(
-                    await complete(
-                      `In the context of a cooking recipe for "${recipeName}", translate the ingredient section "${name}" to english, german and spanish.`,
-                      { schema: TranslationsSchema },
-                    )
-                  ).data,
-                };
-              }
-
-              const { id: ingredientId, notes } = await ensureIngredient(
-                payload,
-                name,
-              );
-
+    const output = {
+      ingredients: await Promise.all<ExtractedIngredients>(
+        (ingredients as any).map(
+          async ({
+            ingredient: { name },
+            quantity: { amount, quantityType } = {},
+          }: any) => {
+            if (quantityType === "SECTION") {
               return {
-                quantity: amount,
-                "quantity-type": await ensureQuantityType(
-                  payload,
-                  quantityType,
-                ),
-                ingredient: ingredientId,
-                note: notes.join(", "),
+                type: "title",
+                ...(
+                  await complete(
+                    `In the context of a cooking recipe for "${recipeName}", translate the ingredient section "${name}" to english, german and spanish.`,
+                    { schema: TranslationsSchema },
+                  )
+                ).data,
               };
-            },
-          ),
-        ),
-      };
+            }
 
-      return {
-        output,
-        state: "succeeded",
-      };
-    } catch (err) {
-      payload.logger.error(err);
-      return {
-        output: {
-          ingredients: null,
-        },
-        state: "failed",
-      };
-    }
+            const { id: ingredientId, notes } = await ensureIngredient(
+              payload,
+              name,
+            );
+
+            return {
+              quantity: amount,
+              "quantity-type": quantityType
+                ? await ensureQuantityType(payload, quantityType)
+                : undefined,
+              ingredient: ingredientId,
+              note: notes.join(", "),
+            };
+          },
+        ),
+      ),
+    };
+
+    return {
+      output,
+      state: "succeeded",
+    };
   },
 };

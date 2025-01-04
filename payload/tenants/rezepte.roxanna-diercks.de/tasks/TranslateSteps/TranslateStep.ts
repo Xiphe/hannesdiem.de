@@ -45,49 +45,38 @@ export const TranslateStep: TaskConfig<"rcps-translate-step"> = {
     },
   ],
   async handler({ req: { payload }, input: { step, ingredients } }) {
-    try {
-      const ingredientNames = (ingredients as Ingredient[]).map(
-        ({ singular }) => singular,
-      );
+    const ingredientNames = (ingredients as Ingredient[]).map(
+      ({ singular }) => singular,
+    );
 
-      const translatedSegments = await stepToSegments(
-        step as string,
-        ingredientNames,
-        payload,
-      );
+    const translatedSegments = await stepToSegments(
+      step as string,
+      ingredientNames,
+      payload,
+    );
 
-      return {
-        output: {
-          translations: {
-            de: await segmentsToLexical(
-              translatedSegments.de,
-              ingredients as any,
-              payload,
-            ),
-            en: await segmentsToLexical(
-              translatedSegments.en,
-              ingredients as any,
-              payload,
-            ),
-            es: await segmentsToLexical(
-              translatedSegments.es,
-              ingredients as any,
-              payload,
-            ),
-          },
-        } satisfies TranslateStepOutput,
-        state: "succeeded",
-      };
-    } catch (err) {
-      payload.logger.error(err);
-      return {
-        error: err,
-        output: {
-          translations: null,
+    return {
+      output: {
+        translations: {
+          de: await segmentsToLexical(
+            translatedSegments.de,
+            ingredients as any,
+            payload,
+          ),
+          en: await segmentsToLexical(
+            translatedSegments.en,
+            ingredients as any,
+            payload,
+          ),
+          es: await segmentsToLexical(
+            translatedSegments.es,
+            ingredients as any,
+            payload,
+          ),
         },
-        state: "failed",
-      };
-    }
+      } satisfies TranslateStepOutput,
+      state: "succeeded",
+    };
   },
 };
 

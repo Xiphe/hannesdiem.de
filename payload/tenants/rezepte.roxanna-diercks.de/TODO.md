@@ -3,5 +3,6 @@
 - [ ] Create import flow
 - [ ] Don't ref unknown ingredients
 - [ ] Ensure ingredient links don't overlap ("stick [the [cloves]()]()")
-- [ ] Handle images
+- [x] Handle images
 - [ ] Parallelize step translation
+- [ ] Minimalize task input (work with only ids and let task import file)

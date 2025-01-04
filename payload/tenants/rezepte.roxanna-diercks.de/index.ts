@@ -10,6 +10,7 @@ import { Crumbles } from "./collections/Crumbles";
 import { ImportRecipe } from "./workflows/ImportRecipe";
 import { TranslateStep } from "./tasks/TranslateSteps/TranslateStep";
 import { TranslateSectionTitle } from "./tasks/TranslateSectionTitle";
+import { ImportRecipeImages } from "./tasks/ImportRecipeImages";
 
 export const RezepteRoxannaDiercksDeConfig = tenant({
   name: "rezepte.roxanna-diercks.de",
@@ -20,7 +21,12 @@ export const RezepteRoxannaDiercksDeConfig = tenant({
   locales: [EN, ES, DE],
   jobs: {
     workflows: [ImportRecipe],
-    tasks: [ExtractIngredients, TranslateStep, TranslateSectionTitle],
+    tasks: [
+      ExtractIngredients,
+      TranslateStep,
+      TranslateSectionTitle,
+      ImportRecipeImages,
+    ],
   },
   collections: [
     Recipes,

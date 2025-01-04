@@ -1,5 +1,4 @@
 import { Ingredient, Recipe } from "@/payload-types";
-import { fetchFile } from "@payload/utils/fetchFile";
 import { WorkflowConfig, WorkflowHandler } from "payload";
 import { TranslatedTitle } from "../tasks/TranslateSectionTitle";
 import {
@@ -12,6 +11,7 @@ import {
   ExtractedIngredients,
   isIngredientSectionTitle,
 } from "../tasks/ExtractIngredients/ExtractIngredients";
+import { fetchFile } from "@payload/utils/uploadDir";
 
 type StepsSection = NonNullable<Recipe["step-sections"]>[number];
 
@@ -37,6 +37,15 @@ export const ImportRecipe: WorkflowConfig<"rcps-import-recipe"> = {
     }
     const res = await fetchFile(recipe.url);
     const data = await res.json();
+
+    const imageIdsP = tasks["rcps-import-recipe-images"](
+      "rcps-import-recipe-images",
+      {
+        retries: RETRIES,
+        input: { "recipe-id": job.input.croutonRecipeId },
+      },
+    );
+
     const ingredientsWithSections = (
       await tasks["rcps-extract-ingredients"](
         "rcps-import-recipe-extract-ingredients",
@@ -130,6 +139,9 @@ export const ImportRecipe: WorkflowConfig<"rcps-import-recipe"> = {
         "source-name": data.sourceName,
         "ingredient-sections": ingredientSections,
         "step-sections": steps[lang],
+        images: ((await imageIdsP).ids as any).map((id: number) => ({
+          image: id,
+        })),
       } satisfies Partial<Recipe>;
 
       payload.logger.info(`Writing ${lang}`);

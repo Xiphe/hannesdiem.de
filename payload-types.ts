@@ -67,6 +67,7 @@ export interface Config {
       'rcps-extract-ingredients': TaskRcpsExtractIngredients;
       'rcps-translate-step': TaskRcpsTranslateStep;
       'rcps-translate-section-title': TaskRcpsTranslateSectionTitle;
+      'rcps-import-recipe-images': TaskRcpsImportRecipeImages;
       inline: {
         input: unknown;
         output: unknown;
@@ -315,8 +316,8 @@ export interface Recipe {
         title?: string | null;
         'section-ingredients'?:
           | {
-              quantity: number;
-              'quantity-type': number | QuantityType;
+              quantity?: number | null;
+              'quantity-type'?: (number | null) | QuantityType;
               ingredient: number | Ingredient;
               note?: string | null;
               id?: string | null;
@@ -545,7 +546,12 @@ export interface PayloadJob {
     | {
         executedAt: string;
         completedAt: string;
-        taskSlug: 'inline' | 'rcps-extract-ingredients' | 'rcps-translate-step' | 'rcps-translate-section-title';
+        taskSlug:
+          | 'inline'
+          | 'rcps-extract-ingredients'
+          | 'rcps-translate-step'
+          | 'rcps-translate-section-title'
+          | 'rcps-import-recipe-images';
         taskID: string;
         input?:
           | {
@@ -579,7 +585,15 @@ export interface PayloadJob {
       }[]
     | null;
   workflowSlug?: 'rcps-import-recipe' | null;
-  taskSlug?: ('inline' | 'rcps-extract-ingredients' | 'rcps-translate-step' | 'rcps-translate-section-title') | null;
+  taskSlug?:
+    | (
+        | 'inline'
+        | 'rcps-extract-ingredients'
+        | 'rcps-translate-step'
+        | 'rcps-translate-section-title'
+        | 'rcps-import-recipe-images'
+      )
+    | null;
   queue?: string | null;
   waitUntil?: string | null;
   processing?: boolean | null;
@@ -1121,6 +1135,26 @@ export interface TaskRcpsTranslateSectionTitle {
   };
   output: {
     translations:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskRcps-import-recipe-images".
+ */
+export interface TaskRcpsImportRecipeImages {
+  input: {
+    'recipe-id': number;
+  };
+  output: {
+    ids:
       | {
           [k: string]: unknown;
         }
