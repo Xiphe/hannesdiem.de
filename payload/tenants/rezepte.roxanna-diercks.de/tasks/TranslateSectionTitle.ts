@@ -1,21 +1,22 @@
 import { complete } from "@payload/utils/complete";
 import { TaskConfig } from "payload";
-import { z } from "zod";
+import { getCruble } from "../utils/getCrumble";
+import { Translated } from "../utils/i18n";
+import { TranslationsSchema } from "./Translate";
 
-export const TranslationsSchema = z.object({
-  en: z.string(),
-  de: z.string(),
-  es: z.string(),
-});
-
-export type TranslatedTitle = z.TypeOf<typeof TranslationsSchema>;
+export type TranslatedTitle = Translated<string>;
 
 export const TranslateSectionTitle: TaskConfig<"rcps-translate-section-title"> =
   {
     slug: "rcps-translate-section-title",
     inputSchema: [
       {
-        name: "title",
+        name: "recipeId",
+        type: "number",
+        required: true,
+      },
+      {
+        name: "stepId",
         type: "text",
         required: true,
       },
@@ -27,7 +28,15 @@ export const TranslateSectionTitle: TaskConfig<"rcps-translate-section-title"> =
         required: true,
       },
     ],
-    async handler({ req: { payload }, input: { title } }) {
+    async handler({ req: { payload }, input: { recipeId, stepId } }) {
+      const { steps } = await getCruble(payload, recipeId);
+      const step = steps.find(({ uuid }) => uuid === stepId);
+
+      if (!step) {
+        throw new Error(`Could not find step ${stepId} in recipe ${recipeId}`);
+      }
+      const { step: title } = step;
+
       if (title.trim() === "") {
         return {
           output: {

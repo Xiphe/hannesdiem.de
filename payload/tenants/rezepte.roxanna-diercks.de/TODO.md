@@ -1,8 +1,9 @@
 - [x] Add slug 
 - [ ] Remove recipe after import
-- [ ] Create import flow
-- [ ] Don't ref unknown ingredients
-- [ ] Ensure ingredient links don't overlap ("stick [the [cloves]()]()")
+- [ ] Create import flow for iOS
+- [x] Don't ref unknown ingredients
+- [x] Ensure ingredient links don't overlap ("stick [the [cloves]()]()")
 - [x] Handle images
-- [ ] Parallelize step translation
+- [x] redo segments
+- [x] Parallelize step translation
 - [ ] Minimalize task input (work with only ids and let task import file)

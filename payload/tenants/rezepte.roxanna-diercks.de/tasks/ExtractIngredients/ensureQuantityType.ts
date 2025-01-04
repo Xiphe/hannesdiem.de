@@ -29,6 +29,7 @@ const cache: Record<string, Promise<number> | undefined> = {};
 export async function ensureQuantityType(
   payload: BasePayload,
   quantityAbr: string,
+  generate: boolean = true,
 ): Promise<number> {
   if (quantityAbr === "RECIPE") {
     quantityAbr = "ITEM";
@@ -49,6 +50,12 @@ export async function ensureQuantityType(
 
       if (quantityTypeExists.totalDocs) {
         return resolve(quantityTypeExists.docs[0].id);
+      }
+
+      if (!generate) {
+        throw new Error(
+          `Could not find quantity type ${quantityAbr} and generate is not allowed`,
+        );
       }
 
       payload.logger.info(`Generating quantity type: ${quantityAbr}`);
@@ -85,6 +92,7 @@ export async function ensureQuantityType(
       resolve(id!);
     } catch (err) {
       reject(err);
+      delete cache[quantityAbr];
     }
   });
 

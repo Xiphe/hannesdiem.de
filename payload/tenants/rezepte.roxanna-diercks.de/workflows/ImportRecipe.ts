@@ -1,4 +1,4 @@
-import { Ingredient, Recipe } from "@/payload-types";
+import { Recipe } from "@/payload-types";
 import { WorkflowConfig, WorkflowHandler } from "payload";
 import { TranslatedTitle } from "../tasks/TranslateSectionTitle";
 import {
@@ -6,13 +6,10 @@ import {
   segmentsToLexical,
   TranslateStepOutput,
 } from "../tasks/TranslateSteps/TranslateStep";
-import {
-  ExtractedIngredient,
-  ExtractedIngredients,
-  isIngredientSectionTitle,
-} from "../tasks/ExtractIngredients/ExtractIngredients";
-import { fetchFile } from "@payload/utils/uploadDir";
+import { ExtractedIngredients } from "../tasks/ExtractIngredients/ExtractIngredients";
 import { toSlug } from "@payload/utils/toSlug";
+import { LANGUAGES, Translated } from "../utils/i18n";
+import { CrumbleStep, getCruble } from "../utils/getCrumble";
 
 type StepsSection = NonNullable<Recipe["step-sections"]>[number];
 
@@ -28,119 +25,98 @@ export const ImportRecipe: WorkflowConfig<"rcps-import-recipe"> = {
     },
   ],
   retries: 2,
-  async handler({ req: { payload }, job, tasks }) {
-    const recipe = await payload.findByID({
-      collection: "rcps-crumbles",
-      id: job.input.croutonRecipeId,
-    });
-    if (!recipe || !recipe.url) {
-      throw new Error("Recipe not found");
-    }
-    const res = await fetchFile(recipe.url);
-    const data = await res.json();
+  async handler({
+    req: { payload },
+    job: {
+      input: { croutonRecipeId },
+    },
+    tasks,
+  }) {
+    const crumble = await getCruble(payload, croutonRecipeId);
 
     const imageIdsP = tasks["rcps-import-recipe-images"](
       "rcps-import-recipe-images",
       {
         retries: RETRIES,
-        input: { "recipe-id": job.input.croutonRecipeId },
+        input: { "recipe-id": croutonRecipeId },
       },
     );
 
-    const ingredientsWithSections = (
-      await tasks["rcps-extract-ingredients"](
-        "rcps-import-recipe-extract-ingredients",
-        {
-          retries: RETRIES,
-          input: { "recipe-id": job.input.croutonRecipeId },
-        },
-      )
-    ).ingredients as ExtractedIngredients;
-
-    const ingredientIds = ingredientsWithSections
-      .filter(
-        (i): i is ExtractedIngredient => !("type" in i && i.type === "title"),
-      )
-      .map((i) => i.ingredient)
-      .filter((i): i is number => typeof i === "number");
-    const ingredients = await Promise.all(
-      ingredientIds.map((id) =>
-        payload.findByID({
-          collection: "rcps-ingredients",
-          id,
-        }),
-      ),
+    const ingredientsWithSections = await runExtractIngredientsTask(
+      croutonRecipeId,
+      tasks,
     );
 
-    const steps = await getSteps(data.steps, tasks, ingredients);
+    const steps = await getSteps(croutonRecipeId, crumble.steps, tasks);
 
     const translatedName = (
-      await tasks["rcps-translate-section-title"](
-        `rcps-import-recipe-translate-name`,
-        {
-          retries: RETRIES,
-          input: { title: data.name },
-        },
-      )
+      await tasks["rcps-translate"](`rcps-import-recipe-translate-name`, {
+        retries: RETRIES,
+        input: { string: crumble.name },
+      })
     ).translations as TranslatedTitle;
+
     let existing = (
       await payload.find({
         collection: "rcps-recipes",
         locale: "en",
         where: {
-          uuid: { equals: data.uuid },
+          uuid: { equals: crumble.uuid },
         },
       })
     ).docs[0];
 
     const publish = Boolean(!existing || existing["publish-imports"]);
 
-    for (const lang of ["en" as const, "de" as const, "es" as const]) {
+    for (const lang of LANGUAGES) {
       const ingredientSections: Recipe["ingredient-sections"] = [
         { title: "", "section-ingredients": [] },
       ];
+
       for (const i of ingredientsWithSections) {
-        if (isIngredientSectionTitle(i)) {
+        if (i.type === "title") {
           if (
             ingredientSections.length === 1 &&
             ingredientSections[0]["section-ingredients"]?.length === 0
           ) {
             ingredientSections.pop();
           }
+
           ingredientSections.push({
-            title: i[lang],
+            title: i.title[lang],
             "section-ingredients": [],
           });
         } else {
-          ingredientSections.at(-1)!["section-ingredients"]!.push(i);
+          ingredientSections.at(-1)!["section-ingredients"]!.push(i.data[lang]);
         }
       }
+
       const recipe = {
         _status: publish ? "published" : "draft",
         "publish-imports": publish,
-        uuid: data.uuid,
+        uuid: crumble.uuid,
         slug: toSlug(translatedName[lang]),
         name: translatedName[lang],
-        cookingDuration: data.cookingDuration,
-        duration: data.duration,
-        serves: data.serves,
-        defaultScale: data.defaultScale,
-        neutritionalInfo: data.neutritionalInfo
+        cookingDuration: crumble.cookingDuration,
+        duration: crumble.duration,
+        serves: crumble.serves,
+        defaultScale: crumble.defaultScale,
+        neutritionalInfo: crumble.neutritionalInfo
           ? await segmentsToLexical(
-              [{ type: "text", children: data.neutritionalInfo }],
+              [{ type: "text", children: crumble.neutritionalInfo }],
               [],
               payload,
             )
           : undefined,
-        notes: data.notes
+        notes: crumble.notes
           ? await segmentsToLexical(
-              [{ type: "text", children: data.notes }],
+              [{ type: "text", children: crumble.notes }],
               [],
               payload,
             )
           : undefined,
-        source: data.webLink,
-        "source-name": data.sourceName,
+        source: crumble.webLink,
+        "source-name": crumble.sourceName,
         "ingredient-sections": ingredientSections,
         "step-sections": steps[lang],
         images: ((await imageIdsP).ids as any).map((id: number) => ({
@@ -167,7 +143,7 @@ export const ImportRecipe: WorkflowConfig<"rcps-import-recipe"> = {
       }
     }
     payload.logger.info(
-      `Successfully imported ${job.input.croutonRecipeId}: ${translatedName.en}`,
+      `Successfully imported ${croutonRecipeId}: ${translatedName.en}`,
     );
   },
 };
@@ -176,70 +152,119 @@ type RunTaskFunctions = Parameters<
   WorkflowHandler<"rcps-import-recipe">
 >[0]["tasks"];
 
-async function getSteps(
-  steps: any,
+async function runExtractIngredientsTask(
+  recipeId: number,
   tasks: RunTaskFunctions,
-  ingredients: Ingredient[],
 ) {
-  const sectionsEN: StepsSection[] = [{ title: "", "section-steps": [] }];
-  const sectionsDE: StepsSection[] = [{ title: "", "section-steps": [] }];
-  const sectionsES: StepsSection[] = [{ title: "", "section-steps": [] }];
+  return (
+    await tasks["rcps-extract-ingredients"](
+      "rcps-import-recipe-extract-ingredients",
+      {
+        retries: RETRIES,
+        input: { recipeId: recipeId },
+      },
+    )
+  ).ingredients as ExtractedIngredients;
+}
+
+async function getSteps(
+  recipeId: number,
+  steps: CrumbleStep[],
+  tasks: RunTaskFunctions,
+) {
+  const sections: Translated<StepsSection[]> = {
+    en: [{ title: "", "section-steps": [] }],
+    de: [{ title: "", "section-steps": [] }],
+    es: [{ title: "", "section-steps": [] }],
+  };
+
+  const processedSteps = await Promise.all(
+    steps.map((step) => processStep(recipeId, step, tasks)),
+  );
 
   let currentSectionIndex = 0;
-  for (const step of steps) {
-    if (step.isSection) {
-      if (
-        sectionsEN.length === 1 &&
-        sectionsEN[0]["section-steps"]?.length === 0
-      ) {
-        sectionsEN.pop();
-        sectionsDE.pop();
-        sectionsES.pop();
-      } else {
-        currentSectionIndex++;
+
+  for (const step of processedSteps) {
+    switch (step.type) {
+      case "section": {
+        if (
+          sections.en.length === 1 &&
+          sections.en[0]["section-steps"]?.length === 0
+        ) {
+          LANGUAGES.forEach((l) => {
+            sections[l].pop();
+          });
+        } else {
+          currentSectionIndex++;
+        }
+
+        LANGUAGES.forEach((l) => {
+          sections[l].push(step.sections[l]);
+        });
+
+        break;
       }
-
-      const translations = (
-        await tasks["rcps-translate-section-title"](
-          `rcps-import-recipe-translate-title-${step.uuid}`,
-          {
-            retries: RETRIES,
-            input: { title: step.step },
-          },
-        )
-      ).translations as TranslatedTitle;
-
-      sectionsEN.push({ title: translations.en, "section-steps": [] });
-      sectionsDE.push({ title: translations.de, "section-steps": [] });
-      sectionsES.push({ title: translations.es, "section-steps": [] });
-
-      continue;
+      case "step": {
+        LANGUAGES.forEach((l) => {
+          sections[l][currentSectionIndex]["section-steps"]?.push({
+            step: step.step[l],
+          });
+        });
+      }
     }
-
-    const stepRichText = (
-      (await tasks["rcps-translate-step"](
-        `rcps-import-recipe-to--${step.uuid}`,
-        {
-          retries: RETRIES,
-          input: { step: step.step, ingredients },
-        },
-      )) as TranslateStepOutput
-    ).translations;
-
-    sectionsDE[currentSectionIndex]["section-steps"]?.push({
-      step: stepRichText.de,
-    });
-    sectionsEN[currentSectionIndex]["section-steps"]?.push({
-      step: stepRichText.en,
-    });
-    sectionsES[currentSectionIndex]["section-steps"]?.push({
-      step: stepRichText.es,
-    });
   }
 
+  return sections;
+}
+
+async function processStep(
+  recipeId: number,
+  step: CrumbleStep,
+  tasks: RunTaskFunctions,
+) {
+  if (step.isSection) {
+    return processSection(recipeId, step.uuid, tasks);
+  } else {
+    return processStepRichtext(recipeId, step.uuid, tasks);
+  }
+}
+
+async function processSection(
+  recipeId: number,
+  stepId: string,
+  tasks: RunTaskFunctions,
+): Promise<{ type: "section"; sections: Translated<StepsSection> }> {
+  const translations = (
+    await tasks["rcps-translate-section-title"](
+      `rcps-import-recipe-translate-title-${stepId}`,
+      {
+        retries: RETRIES,
+        input: { recipeId, stepId },
+      },
+    )
+  ).translations as TranslatedTitle;
+
   return {
-    de: sectionsDE,
-    en: sectionsEN,
-    es: sectionsES,
+    type: "section",
+    sections: {
+      en: { title: translations.en, "section-steps": [] },
+      de: { title: translations.de, "section-steps": [] },
+      es: { title: translations.es, "section-steps": [] },
+    },
   };
+}
+
+async function processStepRichtext(
+  recipeId: number,
+  stepId: string,
+  tasks: RunTaskFunctions,
+): Promise<{ type: "step"; step: Translated<RichText> }> {
+  const stepRichText = (
+    (await tasks["rcps-translate-step"](`rcps-import-recipe-to--${stepId}`, {
+      retries: RETRIES,
+      input: { stepId, recipeId },
+    })) as TranslateStepOutput
+  ).translations;
+
+  return { type: "step", step: stepRichText };
 }

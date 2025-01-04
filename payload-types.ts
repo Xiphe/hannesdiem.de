@@ -29,11 +29,7 @@ export interface Config {
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
-  collectionsJoins: {
-    'rcps-ingredients': {
-      'used-in': 'rcps-recipes';
-    };
-  };
+  collectionsJoins: {};
   collectionsSelect: {
     admins: AdminsSelect<false> | AdminsSelect<true>;
     'hdm-persons': HdmPersonsSelect<false> | HdmPersonsSelect<true>;
@@ -68,6 +64,7 @@ export interface Config {
       'rcps-translate-step': TaskRcpsTranslateStep;
       'rcps-translate-section-title': TaskRcpsTranslateSectionTitle;
       'rcps-import-recipe-images': TaskRcpsImportRecipeImages;
+      'rcps-translate': TaskRcpsTranslate;
       inline: {
         input: unknown;
         output: unknown;
@@ -421,10 +418,6 @@ export interface Ingredient {
   plural: string;
   aliases?: string[] | null;
   recipe?: (number | null) | Recipe;
-  'used-in'?: {
-    docs?: (number | Recipe)[] | null;
-    hasNextPage?: boolean | null;
-  } | null;
   affiliateUrl?: string | null;
   updatedAt: string;
   createdAt: string;
@@ -552,7 +545,8 @@ export interface PayloadJob {
           | 'rcps-extract-ingredients'
           | 'rcps-translate-step'
           | 'rcps-translate-section-title'
-          | 'rcps-import-recipe-images';
+          | 'rcps-import-recipe-images'
+          | 'rcps-translate';
         taskID: string;
         input?:
           | {
@@ -593,6 +587,7 @@ export interface PayloadJob {
         | 'rcps-translate-step'
         | 'rcps-translate-section-title'
         | 'rcps-import-recipe-images'
+        | 'rcps-translate'
       )
     | null;
   queue?: string | null;
@@ -975,7 +970,6 @@ export interface RcpsIngredientsSelect<T extends boolean = true> {
   plural?: T;
   aliases?: T;
   recipe?: T;
-  'used-in'?: T;
   affiliateUrl?: T;
   updatedAt?: T;
   createdAt?: T;
@@ -1067,7 +1061,7 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface TaskRcpsExtractIngredients {
   input: {
-    'recipe-id': number;
+    recipeId: number;
   };
   output: {
     ingredients:
@@ -1087,24 +1081,8 @@ export interface TaskRcpsExtractIngredients {
  */
 export interface TaskRcpsTranslateStep {
   input: {
-    step:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
-    ingredients:
-      | {
-          [k: string]: unknown;
-        }
-      | unknown[]
-      | string
-      | number
-      | boolean
-      | null;
+    recipeId: number;
+    stepId: string;
   };
   output: {
     translations:
@@ -1124,7 +1102,8 @@ export interface TaskRcpsTranslateStep {
  */
 export interface TaskRcpsTranslateSectionTitle {
   input: {
-    title: string;
+    recipeId: number;
+    stepId: string;
   };
   output: {
     translations:
@@ -1148,6 +1127,26 @@ export interface TaskRcpsImportRecipeImages {
   };
   output: {
     ids:
+      | {
+          [k: string]: unknown;
+        }
+      | unknown[]
+      | string
+      | number
+      | boolean
+      | null;
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "TaskRcps-translate".
+ */
+export interface TaskRcpsTranslate {
+  input: {
+    string: string;
+  };
+  output: {
+    translations:
       | {
           [k: string]: unknown;
         }

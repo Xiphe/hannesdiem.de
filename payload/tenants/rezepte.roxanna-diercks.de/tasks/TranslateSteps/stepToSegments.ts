@@ -1,6 +1,7 @@
 import { complete } from "@payload/utils/complete";
 import { BasePayload } from "payload";
 import z from "zod";
+import { Language, LANGUAGES, LanguageSchema } from "../../utils/i18n";
 
 const TimingSchema = z.object({
   type: z.literal("timing"),
@@ -41,12 +42,6 @@ const TextSchema = z.object({
   children: z.string(),
 });
 
-const LanguageSchema = z.union([
-  z.literal("en"),
-  z.literal("de"),
-  z.literal("es"),
-]);
-
 const ParsedStepSchema = z.object({
   references: z.array(z.union([TimingSchema, IngredientSchema])),
   language: LanguageSchema.describe("The detected language of the given step"),
@@ -56,9 +51,6 @@ export type Timer = z.TypeOf<typeof TimingSchema>;
 export type Ingredient = z.TypeOf<typeof IngredientSchema>;
 export type Text = z.TypeOf<typeof TextSchema>;
 export type Segment = Timer | Ingredient | Text;
-type Language = z.TypeOf<typeof LanguageSchema>;
-
-const LANGUAGES = LanguageSchema._def.options.map((l) => l._def.value);
 
 export async function stepToSegments(
   step: string,
@@ -76,35 +68,35 @@ export async function stepToSegments(
   const translations = new Set(LANGUAGES);
   translations.delete(original.language);
 
-  for (const lang of Array.from(translations)) {
-    const language =
-      lang === "de" ? "german" : lang === "en" ? "english" : "spanish";
+  await Promise.all(
+    Array.from(translations).map(async (lang) => {
+      const language =
+        lang === "de" ? "german" : lang === "en" ? "english" : "spanish";
 
-    payload.logger.info(`Translating to ${language}`);
-    const res = await complete(
-      `Please translate this step of a cooking recipe into ${language}:
+      payload.logger.info(`Translating to ${language}`);
+      const res = await complete(
+        `Please translate this step of a cooking recipe into ${language}:
 \`\`\`
 ${step}
 \`\`\`
 `,
-      {
-        schema: z.object({
-          translation: z.string().describe(`${language} translation`),
-        }),
-      },
-    );
-
-    payload.logger.info(`Segmenting "${res.data.translation}"`);
-    const translated = await toSegments(res.data.translation, knownIngredients);
-    if (translated.language !== lang) {
-      throw new Error(
-        `Translated into wrong language. Should: ${lang} - Is: ${translated.language} (${res.data.translation})`,
+        {
+          schema: z.object({
+            translation: z.string().describe(`${language} translation`),
+          }),
+        },
       );
-    }
-    payload.logger.debug(translated);
 
-    translatedSegments[translated.language] = translated.segments;
-  }
+      payload.logger.info(`Segmenting "${res.data.translation}"`);
+      const translated = await toSegments(
+        res.data.translation,
+        knownIngredients,
+      );
+      payload.logger.debug(translated);
+
+      translatedSegments[lang] = translated.segments;
+    }),
+  );
 
   return translatedSegments as Required<typeof translatedSegments>;
 }
@@ -141,13 +133,21 @@ Known ingredients: [${knownIngredients.join(",")}]`,
     },
   );
 
+  const validReferences = data.references.filter((ref) => {
+    if (ref.type === "timing") {
+      return true;
+    }
+
+    return knownIngredients.includes(ref.ingredient);
+  });
+
   return {
-    segments: splitTextWithLinks(step, data.references),
+    segments: splitTextWithLinks(step, validReferences),
     language: data.language,
   };
 }
 
-function splitTextWithLinks(
+export function splitTextWithLinks(
   text: string,
   links: (Timer | Ingredient)[],
 ): Segment[] {
@@ -155,11 +155,19 @@ function splitTextWithLinks(
   let currentIndex = 0;
 
   // Sort links by their position in the text to ensure we handle them sequentially
+
   const sortedLinks = links
     .map((link) => ({ ...link, index: text.indexOf(link.children) }))
     .filter((link) => link.index !== -1) // Ensure valid matches only
-    .sort((a, b) => a.index - b.index);
+    .sort((a, b) => a.index - b.index)
+    .filter(({ index, children }) => {
+      // Make sure that links don't overlap
+      const valid = index > currentIndex;
+      currentIndex += children.length;
+      return valid;
+    });
 
+  currentIndex = 0;
   for (const link of sortedLinks) {
     const start = link.index;
     const end = start + link.children.length;

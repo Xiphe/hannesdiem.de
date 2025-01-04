@@ -153,6 +153,7 @@ export const Recipes: CollectionConfig = {
       name: "ingredient-sections",
       label: "Ingredients",
       type: "array",
+      localized: true,
       labels: {
         singular: "Ingredient Section",
         plural: "Ingredient Sections",
@@ -177,6 +178,7 @@ export const Recipes: CollectionConfig = {
         {
           name: "section-ingredients",
           label: "Ingredients",
+          localized: true,
           labels: {
             singular: "Ingredient",
             plural: "Ingredients",
@@ -223,6 +225,7 @@ export const Recipes: CollectionConfig = {
                   name: "note",
                   label: "Note",
                   type: "text",
+                  localized: true,
                   admin: {
                     width: "35%",
                   },

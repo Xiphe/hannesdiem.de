@@ -11,14 +11,16 @@ import {
 import { Segment, stepToSegments } from "./stepToSegments";
 import { ensureQuantityType } from "../ExtractIngredients/ensureQuantityType";
 import { ensureIngredient } from "../ExtractIngredients/ensureIngredient";
+import { Translated } from "../../utils/i18n";
+import { Crumble, getCruble } from "../../utils/getCrumble";
+import {
+  extractIngredients,
+  IngredientRelation,
+} from "../ExtractIngredients/ExtractIngredients";
+import { cached } from "@payload/utils/cachedFn";
 
 export type RichText = NonNullable<Recipe["notes"]>;
-
-export type TranslatedSteps = {
-  en: RichText;
-  de: RichText;
-  es: RichText;
-};
+export type TranslatedSteps = Translated<RichText>;
 export type TranslateStepOutput = {
   translations: TranslatedSteps;
 };
@@ -27,13 +29,13 @@ export const TranslateStep: TaskConfig<"rcps-translate-step"> = {
   slug: "rcps-translate-step",
   inputSchema: [
     {
-      name: "step",
-      type: "json",
+      name: "recipeId",
+      type: "number",
       required: true,
     },
     {
-      name: "ingredients",
-      type: "json",
+      name: "stepId",
+      type: "text",
       required: true,
     },
   ],
@@ -44,13 +46,18 @@ export const TranslateStep: TaskConfig<"rcps-translate-step"> = {
       required: true,
     },
   ],
-  async handler({ req: { payload }, input: { step, ingredients } }) {
-    const ingredientNames = (ingredients as Ingredient[]).map(
-      ({ singular }) => singular,
-    );
+  async handler({ req: { payload }, input: { recipeId, stepId } }) {
+    const crumble = await getCruble(payload, recipeId);
+    const step = crumble.steps.find(({ uuid }) => uuid === stepId);
+    if (!step) {
+      throw new Error(`Could not find step ${stepId} in recipe ${recipeId}`);
+    }
+
+    const ingredients = await getIngredients(crumble, payload);
+    const ingredientNames = ingredients.map(({ singular }) => singular);
 
     const translatedSegments = await stepToSegments(
-      step as string,
+      step.step,
       ingredientNames,
       payload,
     );
@@ -163,3 +170,28 @@ function getStepEditor(payload: BasePayload) {
 
   return getLexicalForField(stepField);
 }
+
+const getIngredients = cached(
+  async (crumble: Crumble, payload: BasePayload) => {
+    const ingredientsWithSections = await extractIngredients(
+      crumble,
+      payload,
+      false,
+    );
+
+    const ingredientIds = ingredientsWithSections
+      .filter((i): i is IngredientRelation => i.type === "ingredient")
+      .map((i) => i.data.ingredient)
+      .filter((i): i is number => typeof i === "number");
+
+    return Promise.all(
+      ingredientIds.map((id) =>
+        payload.findByID({
+          collection: "rcps-ingredients",
+          id,
+        }),
+      ),
+    );
+  },
+  ({ uuid }) => uuid,
+);

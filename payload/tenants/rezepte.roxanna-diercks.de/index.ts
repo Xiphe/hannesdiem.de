@@ -11,6 +11,7 @@ import { ImportRecipe } from "./workflows/ImportRecipe";
 import { TranslateStep } from "./tasks/TranslateSteps/TranslateStep";
 import { TranslateSectionTitle } from "./tasks/TranslateSectionTitle";
 import { ImportRecipeImages } from "./tasks/ImportRecipeImages";
+import { Translate } from "./tasks/Translate";
 
 export const RezepteRoxannaDiercksDeConfig = tenant({
   name: "rezepte.roxanna-diercks.de",
@@ -26,6 +27,7 @@ export const RezepteRoxannaDiercksDeConfig = tenant({
       TranslateStep,
       TranslateSectionTitle,
       ImportRecipeImages,
+      Translate,
     ],
   },
   collections: [

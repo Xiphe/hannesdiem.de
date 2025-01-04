@@ -10,6 +10,7 @@ const IngredientSchema = z.object({
 export async function ensureIngredient(
   payload: BasePayload,
   ingredient: string,
+  generate: boolean = true,
 ) {
   const notes: string[] = [];
   const sanitizedIngredient = ingredient
@@ -38,6 +39,12 @@ export async function ensureIngredient(
 
   if (ingredientExists.totalDocs) {
     return { id: ingredientExists.docs[0].id, notes };
+  }
+
+  if (!generate) {
+    throw new Error(
+      `Would generate ingredient ${sanitizedIngredient} but are not allowed to`,
+    );
   }
 
   payload.logger.info(`Generating ingredient: ${sanitizedIngredient}`);
