@@ -4,7 +4,7 @@ import z from "zod";
 
 const TimingSchema = z.object({
   type: z.literal("timing"),
-  time: z.number().describe("the referenced time in minutes"),
+  time: z.number().describe("the referenced time converted to minutes"),
   children: z
     .string()
     .describe(
@@ -49,7 +49,7 @@ const LanguageSchema = z.union([
 
 const ParsedStepSchema = z.object({
   references: z.array(z.union([TimingSchema, IngredientSchema])),
-  language: LanguageSchema,
+  language: LanguageSchema.describe("The detected language of the given step"),
 });
 
 export type Timer = z.TypeOf<typeof TimingSchema>;
@@ -97,7 +97,9 @@ ${step}
     payload.logger.info(`Segmenting "${res.data.translation}"`);
     const translated = await toSegments(res.data.translation, knownIngredients);
     if (translated.language !== lang) {
-      throw new Error("Translated into wrong language");
+      throw new Error(
+        `Translated into wrong language. Should: ${lang} - Is: ${translated.language} (${res.data.translation})`,
+      );
     }
     payload.logger.debug(translated);
 
@@ -109,8 +111,9 @@ ${step}
 
 async function toSegments(step: string, knownIngredients: string[]) {
   const { data } = await complete(
-    `In the context of a cooking recipe, I need you to identify references
-to ingredients and timings so I can later replace them with links.
+    `In the context of a cooking recipe, I need you to identify the language of
+a preparation step, as well as references to ingredients and timings so I can
+later replace them with links.
 
 The references must be minimal and atomic. No additional instructions, article
 or other references must be part of the children.

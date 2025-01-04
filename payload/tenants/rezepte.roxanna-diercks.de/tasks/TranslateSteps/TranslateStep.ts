@@ -6,6 +6,7 @@ import {
   $createParagraphNode,
   $createTextNode,
   $getRoot,
+  ParagraphNode,
 } from "@payloadcms/richtext-lexical/lexical";
 import { Segment, stepToSegments } from "./stepToSegments";
 import { ensureQuantityType } from "../ExtractIngredients/ensureQuantityType";
@@ -97,14 +98,16 @@ export async function segmentsToLexical(
 ) {
   const editor = getStepEditor(payload);
 
+  await editor.update(() => $getRoot().append($createParagraphNode()));
+
   for await (const segment of segments) {
     switch (segment.type) {
       case "timing": {
         if (segment.time > 0) {
           await editor.update(() =>
-            $getRoot().append(
+            ($getRoot().getFirstChild() as ParagraphNode).append(
               $createServerInlineBlockNode({
-                blocktype: "timer",
+                blockType: "timer",
                 time: segment.time,
                 "link-text": segment.children,
               } as any),
@@ -112,8 +115,8 @@ export async function segmentsToLexical(
           );
         } else {
           await editor.update(() =>
-            $getRoot().append(
-              $createParagraphNode().append($createTextNode(segment.children)),
+            ($getRoot().getFirstChild() as ParagraphNode).append(
+              $createTextNode(segment.children),
             ),
           );
         }
@@ -129,9 +132,9 @@ export async function segmentsToLexical(
           : undefined;
 
         await editor.update(() =>
-          $getRoot().append(
+          ($getRoot().getFirstChild() as ParagraphNode).append(
             $createServerInlineBlockNode({
-              blocktype: "rcps-ingredient-link",
+              blockType: "rcps-ingredient-link",
               ingredient,
               quantity: segment.quantity,
               quantityType,
@@ -143,8 +146,8 @@ export async function segmentsToLexical(
       }
       case "text": {
         await editor.update(() =>
-          $getRoot().append(
-            $createParagraphNode().append($createTextNode(segment.children)),
+          ($getRoot().getFirstChild() as ParagraphNode).append(
+            $createTextNode(segment.children),
           ),
         );
       }

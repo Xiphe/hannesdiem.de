@@ -1,0 +1,7 @@
+- [ ] Add slug 
+- [ ] Remove recipe after import
+- [ ] Create import flow
+- [ ] Don't ref unknown ingredients
+- [ ] Ensure ingredient links don't overlap ("stick [the [cloves]()]()")
+- [ ] Handle images
+- [ ] Parallelize step translation

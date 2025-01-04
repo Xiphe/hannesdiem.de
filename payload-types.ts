@@ -1051,7 +1051,8 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface TaskRcpsExtractIngredients {
   input: {
-    recipe:
+    recipeName: string;
+    ingredients:
       | {
           [k: string]: unknown;
         }

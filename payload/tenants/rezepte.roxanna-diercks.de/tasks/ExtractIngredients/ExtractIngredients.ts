@@ -30,7 +30,12 @@ export const ExtractIngredients: TaskConfig<"rcps-extract-ingredients"> = {
   slug: "rcps-extract-ingredients",
   inputSchema: [
     {
-      name: "recipe",
+      name: "recipeName",
+      type: "text",
+      required: true,
+    },
+    {
+      name: "ingredients",
       type: "json",
       required: true,
     },
@@ -42,13 +47,11 @@ export const ExtractIngredients: TaskConfig<"rcps-extract-ingredients"> = {
       required: true,
     },
   ],
-  async handler({ req: { payload }, input: { recipe } }) {
+  async handler({ req: { payload }, input: { ingredients, recipeName } }) {
     try {
-      const { ingredients, name: recipeName } = recipe as any;
-
       const output = {
         ingredients: await Promise.all<ExtractedIngredients>(
-          ingredients.map(
+          (ingredients as any).map(
             async ({
               ingredient: { name },
               quantity: { amount, quantityType },

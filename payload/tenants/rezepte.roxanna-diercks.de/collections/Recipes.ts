@@ -221,6 +221,7 @@ export const Recipes: CollectionConfig = {
       label: "Steps",
       labels: { singular: "Step Section", plural: "Step Sections" },
       type: "array",
+      localized: true,
       admin: {
         components: {
           RowLabel: "@payload/components/TitleRowLabel.tsx",
@@ -240,6 +241,7 @@ export const Recipes: CollectionConfig = {
           name: "section-steps",
           label: "Steps",
           labels: { singular: "Step", plural: "Steps" },
+          localized: true,
           type: "array",
           fields: [
             {
