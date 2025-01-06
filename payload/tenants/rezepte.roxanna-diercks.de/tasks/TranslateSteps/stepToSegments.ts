@@ -156,13 +156,14 @@ export function splitTextWithLinks(
 
   // Sort links by their position in the text to ensure we handle them sequentially
 
+  console.log(links);
   const sortedLinks = links
     .map((link) => ({ ...link, index: text.indexOf(link.children) }))
     .filter((link) => link.index !== -1) // Ensure valid matches only
     .sort((a, b) => a.index - b.index)
     .filter(({ index, children }) => {
       // Make sure that links don't overlap
-      const valid = index > currentIndex;
+      const valid = index >= currentIndex;
       currentIndex += children.length;
       return valid;
     });

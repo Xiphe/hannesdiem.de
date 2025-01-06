@@ -11,7 +11,7 @@ if (!docs.length) {
   console.log("Creating Task");
   await payload.jobs.queue({
     workflow: "rcps-import-recipe",
-    input: { croutonRecipeId: 3 },
+    input: { croutonRecipeId: 1 },
   });
 }
 

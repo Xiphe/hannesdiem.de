@@ -54,6 +54,7 @@ export const TranslateStep: TaskConfig<"rcps-translate-step"> = {
     }
 
     const ingredients = await getIngredients(crumble, payload);
+    console.log(ingredients);
     const ingredientNames = ingredients.map(({ singular }) => singular);
 
     const translatedSegments = await stepToSegments(
@@ -181,7 +182,7 @@ const getIngredients = cached(
 
     const ingredientIds = ingredientsWithSections
       .filter((i): i is IngredientRelation => i.type === "ingredient")
-      .map((i) => i.data.ingredient)
+      .map((i) => i.data.en.ingredient)
       .filter((i): i is number => typeof i === "number");
 
     return Promise.all(

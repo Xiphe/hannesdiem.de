@@ -110,8 +110,8 @@ translate the ingredient section "${name}" to english, german and spanish.`,
           const base = {
             quantity: amount,
             ingredient: ingredientId,
-            quantityType: resolvedQuantityType,
-          };
+            "quantity-type": resolvedQuantityType,
+          } satisfies Ingredient;
 
           return {
             type: "ingredient",

@@ -39,13 +39,6 @@ export const RecipeIngredient: CollectionConfig = {
       type: "relationship",
       relationTo: "rcps-recipes",
     },
-    // {
-    //   name: "used-in",
-    //   label: "Used in",
-    //   type: "join",
-    //   collection: "rcps-recipes",
-    //   on: "ingredient-sections.section-ingredients.ingredient",
-    // },
     {
       name: "affiliateUrl",
       label: "Affiliate URL",
