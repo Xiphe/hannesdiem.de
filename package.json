@@ -18,6 +18,7 @@
     "prebuild": "npm run build-tailwind --minify"
   },
   "dependencies": {
+    "@epic-web/cachified": "5.2.0",
     "@headlessui/react": "2.2.0",
     "@heroicons/react": "2.2.0",
     "@mdx-js/loader": "3.1.0",

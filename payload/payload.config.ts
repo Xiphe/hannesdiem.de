@@ -15,6 +15,8 @@ import { HannesDiemDeConfig } from "./tenants/hannesdiem.de";
 import { RezepteRoxannaDiercksDeConfig } from "./tenants/rezepte.roxanna-diercks.de";
 import { getBlobStorageConfigs } from "./utils/uploadDir";
 import { fileURLToPath } from "node:url";
+import { Cache } from "./collections/Cache";
+import { superadminOrCronjob } from "./access/superadminOrCronjob";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -50,7 +52,13 @@ export default buildConfig(
         defaultLocale: "en",
       },
       editor: lexicalEditor(),
-      collections: [Admins],
+      collections: [Admins, Cache],
+      jobs: {
+        access: {
+          run: superadminOrCronjob,
+        },
+        tasks: [],
+      },
       secret: PAYLOAD_SECRET,
       db: (isDev ? postgresAdapter : vercelPostgresAdapter)({
         migrationDir,

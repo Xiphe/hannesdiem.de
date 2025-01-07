@@ -12,6 +12,7 @@ export interface Config {
   };
   collections: {
     admins: Admin;
+    cache: Cache;
     'hdm-persons': HdmPerson;
     'hdm-cover-arts': HdmCoverArt;
     'hdm-releases': HdmRelease;
@@ -30,6 +31,7 @@ export interface Config {
   collectionsJoins: {};
   collectionsSelect: {
     admins: AdminsSelect<false> | AdminsSelect<true>;
+    cache: CacheSelect<false> | CacheSelect<true>;
     'hdm-persons': HdmPersonsSelect<false> | HdmPersonsSelect<true>;
     'hdm-cover-arts': HdmCoverArtsSelect<false> | HdmCoverArtsSelect<true>;
     'hdm-releases': HdmReleasesSelect<false> | HdmReleasesSelect<true>;
@@ -95,6 +97,25 @@ export interface Admin {
   loginAttempts?: number | null;
   lockUntil?: string | null;
   password?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cache".
+ */
+export interface Cache {
+  id: number;
+  key: string;
+  expires: number;
+  value: {
+    value: unknown;
+    metadata: {
+      createdTime: number;
+      ttl?: number | null;
+      swr?: number | null;
+    };
+  };
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -455,6 +476,10 @@ export interface PayloadLockedDocument {
         value: number | Admin;
       } | null)
     | ({
+        relationTo: 'cache';
+        value: number | Cache;
+      } | null)
+    | ({
         relationTo: 'hdm-persons';
         value: number | HdmPerson;
       } | null)
@@ -556,6 +581,17 @@ export interface AdminsSelect<T extends boolean = true> {
   hash?: T;
   loginAttempts?: T;
   lockUntil?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "cache_select".
+ */
+export interface CacheSelect<T extends boolean = true> {
+  key?: T;
+  expires?: T;
+  value?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
