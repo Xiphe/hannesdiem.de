@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { LocalTime } from "./LocalTime";
+import { LocalTime } from "../../../(common)/components/LocalTime";
 import { ComponentPropsWithoutRef, Fragment } from "react";
 import { Author } from "@hd/content";
 import { focusStyles } from "@hd/utils/styles";

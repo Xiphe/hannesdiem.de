@@ -11,7 +11,7 @@ import {
   Page,
 } from "@hd/components";
 
-import { PageProps } from "@hd/utils/types";
+import { PageProps } from "@utils/types";
 import { getPost } from "./getPost";
 
 export async function generateMetadata(

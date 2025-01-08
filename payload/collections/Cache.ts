@@ -1,3 +1,4 @@
+import { superadmin } from "@payload/access/superadmin";
 import type { CollectionConfig } from "payload";
 
 export const Cache: CollectionConfig = {
@@ -6,12 +7,12 @@ export const Cache: CollectionConfig = {
     singular: "Cache",
     plural: "Cached Things",
   },
-  // access: {
-  //   read: () => false,
-  //   update: () => false,
-  //   create: () => false,
-  //   delete: () => false,
-  // },
+  access: {
+    read: superadmin,
+    update: () => false,
+    create: () => false,
+    delete: superadmin,
+  },
   fields: [
     {
       name: "key",

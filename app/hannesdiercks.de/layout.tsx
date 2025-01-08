@@ -9,8 +9,8 @@ export async function generateMetadata() {
   return {
     metadataBase: new URL(origin),
     title: {
-      template: "%s • I'm Hannes",
-      default: "I'm Hannes",
+      template: "%s • Hannes Diercks",
+      default: "Home • Hannes Diercks",
     },
     // description: "...about Life, Music, Programming and Everything",
     // icons: {
@@ -29,7 +29,7 @@ export type LayoutProps = PropsWithChildren;
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang={"en"}>
-      <body>
+      <body className="bg-white dark:bg-gray-900">
         {children}
         <Analytics />
       </body>

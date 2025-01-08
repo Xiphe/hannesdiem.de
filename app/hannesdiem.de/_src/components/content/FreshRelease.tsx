@@ -1,4 +1,4 @@
-import { LocalTime } from "../LocalTime";
+import { LocalTime } from "../../../../(common)/components/LocalTime";
 import Link from "next/link";
 import clsx from "clsx";
 import Image from "next/image";

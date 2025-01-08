@@ -4,7 +4,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import SpotifyPreSaveButton from "../spotify/PreSaveButton";
 import DeezerPreSaveButton from "../deezer/PreSaveButton";
-import { LocalTime } from "../LocalTime";
+import { LocalTime } from "../../../../(common)/components/LocalTime";
 import {
   PreSaveProps,
   PreSaveService,

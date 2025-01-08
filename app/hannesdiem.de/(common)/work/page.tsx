@@ -1,5 +1,5 @@
 import { Footer } from "@hd/components";
-import { LocalTime } from "@hd/components/LocalTime";
+import { LocalTime } from "@/app/(common)/components/LocalTime";
 import { Release } from "@hd/content";
 import { releases } from "@hd/content/releases";
 import { focusStyles } from "@hd/utils/styles";
