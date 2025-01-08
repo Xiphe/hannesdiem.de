@@ -90,7 +90,7 @@ const coreValues: {
 export default function HannesDiercksIndex() {
   return (
     <div className="bg-stone-100 dark:bg-gray-800">
-      <Header />
+      <Header wide floating />
 
       <main>
         {/* Hero section */}

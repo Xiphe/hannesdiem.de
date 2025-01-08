@@ -1,5 +1,4 @@
-import { Dropbox, DropboxResponseError } from "dropbox";
-import assert from "node:assert";
+import { DropboxResponseError } from "dropbox";
 import { remark } from "remark";
 import html from "remark-html";
 import gfm from "remark-gfm";
@@ -9,27 +8,12 @@ import remarkFrontmatter from "remark-frontmatter";
 import { visit } from "unist-util-visit";
 import { parse as parseYaml } from "yaml";
 import { cachiPayload } from "@utils/payloadCache";
-import {
-  FOUR_WEEKS,
-  HALF_YEAR,
-  ONE_SECOND,
-  ONE_WEEK,
-  ONE_YEAR,
-} from "@utils/time";
+import { HALF_YEAR, ONE_SECOND, ONE_WEEK, ONE_YEAR } from "@utils/time";
 import { notFound } from "next/navigation";
 import { getPayload } from "@utils/getPayload";
 import { complete } from "@utils/complete";
 import { z } from "zod";
-
-const DROPBOX_REFRESH_TOKEN = process.env.DROPBOX_REFRESH_TOKEN;
-assert(DROPBOX_REFRESH_TOKEN, "DROPBOX_REFRESH_TOKEN environment must be set");
-const DROPBOX_APP_CLIENT_ID = process.env.DROPBOX_APP_CLIENT_ID;
-assert(DROPBOX_APP_CLIENT_ID, "DROPBOX_APP_CLIENT_ID environment must be set");
-const DROPBOX_APP_CLIENT_SECRET = process.env.DROPBOX_APP_CLIENT_SECRET;
-assert(
-  DROPBOX_APP_CLIENT_SECRET,
-  "DROPBOX_APP_CLIENT_SECRET environment must be set",
-);
+import { getDropbox } from "../getDropbox";
 
 interface GetPostFromDropboxOpts {
   slug: string[];
@@ -39,6 +23,7 @@ interface DropboxFile {
   status: "found";
   title: string;
   contentHash: string;
+  banner?: { src: string; alt?: string };
   description: string;
   published: number | false;
   tags: string[];
@@ -53,10 +38,15 @@ interface PublishedPost extends Omit<DropboxFile, "published"> {
 export async function getPostFromDropbox({
   slug,
 }: GetPostFromDropboxOpts): Promise<PublishedPost> {
+  const filePath = slug.join("/");
   const payload = await getPayload();
 
+  if (!filePath.endsWith(".html")) {
+    return notFound();
+  }
+
   const file = await cachiPayload({
-    key: `hdx-blog-file-v0-${slug.join("-")}`,
+    key: `hdx-blog-file-v0-${filePath}`,
     ttl: process.env.NODE_ENV === "development" ? ONE_SECOND * 5 : ONE_WEEK,
     swr: ONE_YEAR,
     async getFreshValue() {
@@ -66,14 +56,8 @@ export async function getPostFromDropbox({
         };
       }
 
-      const dbx = new Dropbox({
-        clientId: DROPBOX_APP_CLIENT_ID,
-        clientSecret: DROPBOX_APP_CLIENT_SECRET,
-        refreshToken: DROPBOX_REFRESH_TOKEN,
-        fetch,
-      });
-
-      const path = `/Apps/remotely-save/Hannes/Blog/${slug.join("/").replace(/\.html$/, ".md")}`;
+      const dbx = getDropbox();
+      const path = `/Apps/remotely-save/Hannes/Blog/${filePath.replace(/\.html$/, ".md")}`;
 
       try {
         payload.logger.info(`Get file: "${path}"`);
@@ -108,9 +92,10 @@ export async function getPostFromDropbox({
         "utf8",
       );
 
-      let frontMatter: Record<string, unknown> = {};
+      let frontMatter: DropboxFile["frontMatter"] = {};
       const { value: htmlDocument } = await remark()
         .use(gfm)
+        .use(handleReferences)
         .use(remarkFrontmatter, ["yaml"])
         .use(() => (tree: any) => {
           if (tree.type === "root" && tree.children[0].type === "yaml") {
@@ -121,10 +106,12 @@ export async function getPostFromDropbox({
         .process(document);
 
       let title = "";
+      let banner: DropboxFile["banner"];
       const { value: processedHtmlDocument } = await rehype()
         .use(rehypeHighlight)
         .use(() => (tree: any) => {
           while (true) {
+            // Unwrap <html>
             if (
               tree.children.length === 1 &&
               tree.children[0].tagName === "html"
@@ -132,21 +119,45 @@ export async function getPostFromDropbox({
               tree.children = tree.children[0].children;
               continue;
             }
+
+            // Unwrap <body>
             if (
               tree.children.length === 2 &&
-              tree.children[0].tagName === "head"
+              tree.children[1].tagName === "body"
             ) {
               tree.children = tree.children[1].children;
+              continue;
+            }
+
+            // Find first headline
+            if (tree.children[0].tagName === "h1") {
+              visit(tree.children[0], "text", (node) => {
+                title += node.value;
+              });
+              tree.children.splice(0, 1);
+              continue;
+            }
+
+            // Trim empty lines at beginning
+            if (
+              tree.children[0].type === "text" &&
+              tree.children[0].value.trim() === ""
+            ) {
+              tree.children.splice(0, 1);
+              continue;
+            }
+
+            if (
+              tree.children[0].tagName === "p" &&
+              tree.children[0].children.length === 1 &&
+              tree.children[0].children[0].tagName === "img"
+            ) {
+              banner = tree.children[0].children[0].properties;
+              tree.children.splice(0, 1);
+              continue;
             }
 
             break;
-          }
-
-          if (tree.children[0].tagName === "h1") {
-            visit(tree.children[0], "text", (node) => {
-              title += node.value;
-            });
-            tree.children.splice(0, 1);
           }
         })
         .process(htmlDocument);
@@ -158,6 +169,7 @@ export async function getPostFromDropbox({
       return {
         status: "found",
         title,
+        banner,
         contentHash: res.result.content_hash,
         description:
           typeof frontMatter.description === "string"
@@ -209,4 +221,16 @@ ${file.html}`,
   }
 
   return file as PublishedPost;
+}
+
+function handleReferences() {
+  return (tree: any) => {
+    visit(tree, ["link", "image"], (node) => {
+      if (node.url && node.url.startsWith("Blog/")) {
+        node.url = node.url
+          .replace(/^Blog\//, "/notes/")
+          .replace(/\.md$/, ".html");
+      }
+    });
+  };
 }

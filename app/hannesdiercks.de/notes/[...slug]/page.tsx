@@ -25,6 +25,9 @@ export async function generateMetadata(
     openGraph: {
       type: "article",
       title: post.title,
+      images: post.banner
+        ? [{ url: post.banner.src, alt: post.banner.alt }]
+        : undefined,
     },
   };
 }
@@ -37,20 +40,22 @@ export default async function Notes({ params }: PageProps<{ slug: string[] }>) {
   return (
     <>
       <Header
+        floating={Boolean(post.banner)}
+        sticky
         breadcrumbs={
-          <div className="text-stone-400 dark:text-gray-500 inline">
+          <div className="text-stone-400 dark:text-gray-400 inline">
             {["notes"]
               .concat(slug.slice(0, -1))
               .reverse()
               .reduce((children, slug, i, all) => {
                 return (
-                  <span className="text-stone-400 hover:text-gray-900 dark:text-gray-500 dark:hover:text-white transition-colors">
+                  <span className="text-stone-400 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">
                     <Link
                       key={i}
                       href={`/${all.slice(0, i + 1).join("/")}`}
                       className={clsx(focusStyles, "rounded-sm")}
                     >
-                      <span className="text-xl text-stone-400 dark:text-gray-500">
+                      <span className="text-xl text-stone-400 dark:text-gray-400">
                         /
                       </span>
                       {slug}
@@ -61,24 +66,42 @@ export default async function Notes({ params }: PageProps<{ slug: string[] }>) {
               }, null as ReactNode)}
           </div>
         }
+      />
+
+      {post.banner ? (
+        <div className="h-[60vh] lg:h-[80vh] relative">
+          <img
+            className="absolute inset-0 size-full object-cover"
+            {...post.banner}
+          />
+        </div>
+      ) : null}
+
+      <main
+        className={clsx(
+          "max-w-7xl mx-auto p-6 lg:px-8",
+          post.banner
+            ? "xl:-mt-12 bg-white dark:bg-gray-900 z-10 relative"
+            : "xl:mt-8",
+        )}
       >
-        <div className="dark:text-white mb-8 lg:mb-16 xl:mt-8">
+        <div className="dark:text-white mb-8 lg:mb-24">
           <LocalTime
             timeStamp={post.published}
             className="opacity-50 italic text-sm mb-1 ml-1"
           />
           <h1 className="font-serif text-4xl lg:text-5xl">{post.title}</h1>
         </div>
-      </Header>
 
-      <div
-        className={clsx(
-          "mx-auto p-6 lg:px-8 mb-24",
-          "prose lg:prose-xl prose-stone  dark:prose-gray dark:prose-invert",
-          "prose-pre:bg-stone-100 dark:prose-pre:bg-gray-950",
-        )}
-        dangerouslySetInnerHTML={{ __html: post.html }}
-      />
+        <div
+          className={clsx(
+            "mx-auto mb-24",
+            "prose lg:prose-xl prose-stone  dark:prose-gray dark:prose-invert",
+            "prose-pre:bg-stone-100 dark:prose-pre:bg-gray-950",
+          )}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </main>
       <Footer />
     </>
   );

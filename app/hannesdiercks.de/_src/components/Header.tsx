@@ -14,74 +14,89 @@ const navigation: { name: string; href: string }[] = [
 
 export type HeaderProps = {
   wide?: boolean;
+  banner?: { src: string; alt?: string };
   breadcrumbs?: ReactNode;
+  sticky?: boolean;
   floating?: boolean;
+  bg?: boolean;
 };
 export default function Header({
   floating,
+  sticky,
   wide,
   breadcrumbs,
-  children,
-}: PropsWithChildren<HeaderProps>) {
+  bg,
+}: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header
       className={clsx(
-        floating && "absolute inset-x-0 top-0 z-50",
-        !wide && "max-w-7xl mx-auto",
+        (floating || sticky) && "inset-x-0 top-0 z-50 ",
+        floating && !sticky && "absolute h-0",
+        floating && sticky && "sticky h-0",
+        !floating && sticky && "sticky",
       )}
     >
-      <nav
-        aria-label="Global"
-        className="flex items-baseline justify-between p-6 lg:px-8"
+      <div
+        className={clsx(
+          (sticky || bg) && "bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl",
+        )}
       >
-        <div>
-          <a
-            href="/#"
-            className={clsx(
-              focusStyles,
-              "-m-1.5 p-1.5 rounded-sm text-gray-900 dark:text-white font-serif text-xl",
-            )}
-          >
-            Hannes Diercks
-          </a>
-          {breadcrumbs}
-        </div>
+        <nav
+          aria-label="Global"
+          className={clsx(
+            "flex items-baseline justify-between p-6 lg:px-8",
+            !wide && "max-w-7xl mx-auto",
+          )}
+        >
+          <div>
+            <a
+              href="/#"
+              className={clsx(
+                focusStyles,
+                "-m-1.5 p-1.5 rounded-sm text-gray-900 dark:text-white font-serif text-xl",
+              )}
+            >
+              Hannes Diercks
+            </a>
+            {breadcrumbs}
+          </div>
 
-        {navigation.length ? (
-          <>
-            <div className="flex lg:hidden">
-              <button
-                type="button"
-                onClick={() => setMobileMenuOpen(true)}
-                className={clsx(
-                  focusStyles,
-                  "-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400",
-                  mobileMenuOpen && " opacity-0",
-                )}
-              >
-                <span className="sr-only">Open main menu</span>
-                <Bars3Icon aria-hidden="true" className="size-6" />
-              </button>
-            </div>
-            <div className="hidden lg:flex lg:gap-x-12">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
+          {navigation.length ? (
+            <>
+              <div className="flex lg:hidden">
+                <button
+                  type="button"
+                  onClick={() => setMobileMenuOpen(true)}
                   className={clsx(
                     focusStyles,
-                    "text-sm/6 rounded-sm font-semibold text-gray-800 dark:text-white",
+                    "-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-400",
+                    mobileMenuOpen && " opacity-0",
                   )}
                 >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-          </>
-        ) : null}
-      </nav>
+                  <span className="sr-only">Open main menu</span>
+                  <Bars3Icon aria-hidden="true" className="size-6" />
+                </button>
+              </div>
+              <div className="hidden lg:flex lg:gap-x-12">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className={clsx(
+                      focusStyles,
+                      "text-sm/6 rounded-sm font-semibold text-gray-800 dark:text-white",
+                    )}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </>
+          ) : null}
+        </nav>
+      </div>
       {navigation.length ? (
         <Dialog
           open={mobileMenuOpen}
@@ -135,7 +150,6 @@ export default function Header({
           </DialogPanel>
         </Dialog>
       ) : null}
-      <div className="p-6 lg:px-8">{children}</div>
     </header>
   );
 }

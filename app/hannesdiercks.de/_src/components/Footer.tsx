@@ -88,9 +88,9 @@ export default function Footer() {
           </div>
           <div className="mt-10 md:mt-0">
             <h3 className="text-xl text-white">&nbsp;</h3>
-            <ul role="list" className="mt-6 space-y-2">
+            <ul role="list" className="md:mt-6 space-y-2">
               {footerNavigation.links.map((item) => (
-                <li key={item.name} className="flex justify-end">
+                <li key={item.name} className="flex md:justify-end">
                   <a
                     href={item.href}
                     className={clsx(
