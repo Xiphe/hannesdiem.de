@@ -3,6 +3,9 @@ import clsx from "clsx";
 export const focusStyles =
   "focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-teal-900 dark:focus-visible:outline-fuchsia-100";
 
+export const linkStyles =
+  "underline text-blue-500 visited:text-purple-600 hover:text-gray-950 dark:hover:text-white";
+
 export const buttonDisabledStyles =
   "disabled:text-stone-300 disabled:from-stone-500/60 disabled:to-stone-500/60 hover:disabled:from-stone-500/60 hover:disabled:to-stone-500/60";
 

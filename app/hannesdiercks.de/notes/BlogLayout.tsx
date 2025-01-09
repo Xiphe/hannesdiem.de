@@ -4,6 +4,7 @@ import { focusStyles } from "@hdx/styles/styles";
 import clsx from "clsx";
 import { PropsWithChildren, ReactNode } from "react";
 import Footer from "@hdx/components/Footer";
+import Image from "next/image";
 
 type BlogLayoutProps = {
   slug: string[];
@@ -46,8 +47,10 @@ export async function BlogLayout({
 
       {banner ? (
         <div className="h-[60vh] lg:h-[80vh] relative">
-          <img
+          <Image
             className="absolute inset-0 size-full object-cover"
+            alt=""
+            fill
             {...banner}
           />
         </div>

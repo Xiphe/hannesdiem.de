@@ -5,7 +5,7 @@ import { Fragment, useMemo } from "react";
 import { shuffleArray } from "@utils/shuffleArray";
 
 export default async function NotesIndex() {
-  const posts = await getFolderFromDropbox("", Infinity);
+  const posts = await getFolderFromDropbox("");
   if (posts.status === "not-found") {
     return notFound();
   }

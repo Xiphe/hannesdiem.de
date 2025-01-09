@@ -11,7 +11,7 @@ type NoteProps = {
 };
 
 export async function List({ slug }: NoteProps) {
-  const index = await getFolderFromDropbox(slug.join("/"), Infinity);
+  const index = await getFolderFromDropbox(slug.join("/"));
 
   return <ListPosts slug={slug} {...index} />;
 }
