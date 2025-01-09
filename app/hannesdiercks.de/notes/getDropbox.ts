@@ -2,7 +2,7 @@ import { createCacheEntry } from "@epic-web/cachified";
 import { cached } from "@utils/cachedFn";
 import { decrypt, encrypt } from "@utils/encrypt";
 import { payloadCache } from "@utils/payloadCache";
-import { Dropbox, DropboxAuth } from "dropbox";
+import { type Dropbox, type DropboxAuth } from "dropbox";
 import assert from "node:assert";
 
 const DROPBOX_REFRESH_TOKEN = process.env.DROPBOX_REFRESH_TOKEN;
@@ -24,8 +24,9 @@ export const getDropbox = cached(async () => {
     (JSON.parse(
       decrypt(cached.value, Buffer.from(ENCRYPTION_KEY, "hex")),
     ) as CachedAccessToken);
+  const DBX = (await import("dropbox/es")).Dropbox;
 
-  const dbx = new Dropbox({
+  const dbx: Dropbox = new DBX({
     ...(incoming
       ? {
           accessToken: incoming.accessToken,

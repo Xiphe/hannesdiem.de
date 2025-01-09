@@ -8,7 +8,6 @@ import remarkFrontmatter from "remark-frontmatter";
 import { visit } from "unist-util-visit";
 import { parse as parseYaml } from "yaml";
 import { cachiPayload, payloadCache } from "@utils/payloadCache";
-import { softPurge } from "@epic-web/cachified";
 import { HALF_YEAR, ONE_WEEK, ONE_YEAR } from "@utils/time";
 import { getPayload } from "@utils/getPayload";
 import { complete } from "@utils/complete";
