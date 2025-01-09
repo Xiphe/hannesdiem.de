@@ -2,7 +2,7 @@ import { createCacheEntry } from "@epic-web/cachified";
 import { cached } from "@utils/cachedFn";
 import { decrypt, encrypt } from "@utils/encrypt";
 import { payloadCache } from "@utils/payloadCache";
-import { type Dropbox, type DropboxAuth } from "dropbox";
+import { DropboxResponse, type Dropbox, type DropboxAuth } from "dropbox";
 import assert from "node:assert";
 
 const DROPBOX_REFRESH_TOKEN = process.env.DROPBOX_REFRESH_TOKEN;
@@ -38,7 +38,27 @@ export const getDropbox = cached(async () => {
     fetch,
   });
 
-  eventuallyRefresh((dbx as any).auth, incoming).catch(console.error);
+  const auth: DropboxAuth = (dbx as any).auth;
+  eventuallyRefresh(auth, incoming).catch(console.error);
+
+  // by default, the sdk will try to use `res.buffer` in prod. So we need to overwrite
+  dbx.filesDownload = async function filesDownload({ path }) {
+    const res = await fetch("https://content.dropboxapi.com/2/files/download", {
+      method: "POST",
+      headers: {
+        "Dropbox-API-Arg": JSON.stringify({ path }),
+        Authorization: `Bearer ${auth.getAccessToken()}`,
+      },
+    });
+
+    const data = await res.blob();
+    const result = {
+      ...JSON.parse(res.headers.get("dropbox-api-result") || "{}"),
+      fileBlob: data,
+    };
+
+    return new DropboxResponse(res.status, res.headers, result);
+  };
 
   return dbx;
 });
