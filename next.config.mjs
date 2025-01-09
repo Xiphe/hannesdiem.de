@@ -58,6 +58,7 @@ const nextConfig = {
   },
   experimental: {
     mdxRs: true,
+    esmExternals: true,
     // dynamicIO: true,
   },
 };

@@ -58,6 +58,10 @@ export async function getPostFromDropbox({
       const dbx = await getDropbox();
       const path = `/Hannes/Blog/${filePath.replace(/\.html$/, ".md")}`;
 
+      if (forceFresh) {
+        await purgeParentFolders(filePath);
+      }
+
       try {
         payload.logger.info(`Get fresh file from Dropbox: "${path}"`);
         var res = await dbx.filesDownload({ path });
@@ -168,14 +172,8 @@ export async function getPostFromDropbox({
         title = filePath.split("/").at(-1)!;
       }
 
-      // Purge all parent folders from cache so that they are updated next time
-      const segments = filePath.split("/").slice(0, -1);
-      segments.unshift("");
-      for (let i = 0; i < segments.length + 1; i++) {
-        await softPurge({
-          cache: payloadCache,
-          key: `hdx-blog-folder-v0-${segments.slice(0, i).join("/").replace(/^\//, "")}`,
-        });
+      if (!forceFresh) {
+        await purgeParentFolders(filePath);
       }
 
       return {
@@ -237,6 +235,17 @@ ${file.html}`,
     description,
     published: file.published || Infinity,
   };
+}
+
+async function purgeParentFolders(filePath: string) {
+  // Purge all parent folders from cache so that they are updated next time
+  const segments = filePath.split("/").slice(0, -1);
+  segments.unshift("");
+  for (let i = 0; i < segments.length + 1; i++) {
+    await payloadCache.delete(
+      `hdx-blog-folder-v0-${segments.slice(0, i).join("/").replace(/^\//, "")}`,
+    );
+  }
 }
 
 function handleReferences() {

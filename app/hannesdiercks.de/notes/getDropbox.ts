@@ -17,10 +17,6 @@ interface CachedAccessToken {
   accessTokenExpiresAt: number;
 }
 
-if (!module) {
-  global.module = {} as any;
-}
-
 export const getDropbox = cached(async () => {
   const cached = await payloadCache.get("hdx-dropbox-access-token");
   const incoming =
