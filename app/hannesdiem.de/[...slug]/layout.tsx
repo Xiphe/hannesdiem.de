@@ -1,9 +1,9 @@
 import { PropsWithChildren } from "react";
-import { default as BaseLayout } from "../(common)/layout";
+import { default as BaseLayout } from "../layout";
 import { getPost } from "./getPost";
 import { beachTheme } from "../_src/themes";
 import { Params } from "@utils/types";
-export { generateMetadata } from "../(common)/layout";
+export { generateMetadata } from "../layout";
 
 export default async function Layout(
   props: PropsWithChildren<Params<{ slug: string | string[] }>>,
