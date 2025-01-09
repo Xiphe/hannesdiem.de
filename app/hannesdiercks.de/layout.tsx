@@ -29,7 +29,7 @@ export type LayoutProps = PropsWithChildren;
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang={"en"}>
-      <body className="bg-white dark:bg-gray-900">
+      <body className="bg-white dark:bg-gray-900 text-stone-900 dark:text-white min-h-screen flex flex-col items-stretch">
         {children}
         <Analytics />
       </body>

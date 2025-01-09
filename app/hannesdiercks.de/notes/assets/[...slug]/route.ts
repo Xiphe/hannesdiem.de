@@ -4,15 +4,15 @@ import { getDropbox } from "../../getDropbox";
 import { DropboxResponseError } from "dropbox";
 import { fileTypeFromBuffer } from "file-type";
 import { FOUR_WEEKS } from "@utils/time";
-import { unstable_cacheLife as cacheLife } from "next/cache";
+// import { unstable_cacheLife as cacheLife } from "next/cache";
 
 export async function GET(_: Request, { params }: Params<{ slug: string[] }>) {
-  "use cache";
-  cacheLife("weeks");
+  // "use cache";
+  // cacheLife("weeks");
 
   const { slug } = await params;
-  const dbx = getDropbox();
-  const path = `/Apps/remotely-save/Hannes/Blog/assets/${slug.join("/")}`;
+  const dbx = await getDropbox();
+  const path = `/Hannes/Blog/assets/${slug.join("/")}`;
 
   try {
     var res = await dbx.filesDownload({ path });

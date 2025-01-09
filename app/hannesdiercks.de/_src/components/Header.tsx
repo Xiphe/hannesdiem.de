@@ -3,7 +3,7 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
-import { PropsWithChildren, ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { focusStyles } from "../styles/styles";
 
 const navigation: { name: string; href: string }[] = [
@@ -28,6 +28,16 @@ export default function Header({
   bg,
 }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    function handler() {
+      setScrolled(window.scrollY !== 0);
+    }
+    window.addEventListener("scroll", handler);
+    return () => {
+      window.removeEventListener("scroll", handler);
+    };
+  }, []);
 
   return (
     <header
@@ -40,7 +50,11 @@ export default function Header({
     >
       <div
         className={clsx(
-          (sticky || bg) && "bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl",
+          scrolled
+            ? "border-stone-200 dark:border-gray-950/50"
+            : "border-transparent",
+          (sticky || bg) &&
+            "bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b transition-colors",
         )}
       >
         <nav

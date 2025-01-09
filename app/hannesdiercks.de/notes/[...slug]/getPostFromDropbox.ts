@@ -7,16 +7,18 @@ import rehypeHighlight from "rehype-highlight";
 import remarkFrontmatter from "remark-frontmatter";
 import { visit } from "unist-util-visit";
 import { parse as parseYaml } from "yaml";
-import { cachiPayload } from "@utils/payloadCache";
-import { HALF_YEAR, ONE_SECOND, ONE_WEEK, ONE_YEAR } from "@utils/time";
-import { notFound } from "next/navigation";
+import { cachiPayload, payloadCache } from "@utils/payloadCache";
+import { softPurge } from "@epic-web/cachified";
+import { HALF_YEAR, ONE_WEEK, ONE_YEAR } from "@utils/time";
 import { getPayload } from "@utils/getPayload";
 import { complete } from "@utils/complete";
 import { z } from "zod";
 import { getDropbox } from "../getDropbox";
 
 interface GetPostFromDropboxOpts {
-  slug: string[];
+  filePath: string;
+  includeUnpublished?: boolean;
+  forceFresh?: boolean;
 }
 
 interface DropboxFile {
@@ -24,45 +26,41 @@ interface DropboxFile {
   title: string;
   contentHash: string;
   banner?: { src: string; alt?: string };
-  description: string;
+  description?: string;
   published: number | false;
   tags: string[];
   frontMatter: Record<string, unknown>;
   html: string;
 }
 
-interface PublishedPost extends Omit<DropboxFile, "published"> {
+interface NotFound {
+  status: "not-found";
+}
+
+export interface PublishedPost
+  extends Omit<DropboxFile, "published" | "description"> {
   published: number;
+  description: string;
 }
 
 export async function getPostFromDropbox({
-  slug,
-}: GetPostFromDropboxOpts): Promise<PublishedPost> {
-  const filePath = slug.join("/");
+  filePath,
+  includeUnpublished,
+  forceFresh,
+}: GetPostFromDropboxOpts): Promise<PublishedPost | NotFound> {
   const payload = await getPayload();
-
-  if (!filePath.endsWith(".html")) {
-    return notFound();
-  }
-
   const file = await cachiPayload({
     key: `hdx-blog-file-v0-${filePath}`,
-    ttl: process.env.NODE_ENV === "development" ? ONE_SECOND * 5 : ONE_WEEK,
+    ttl: ONE_WEEK,
     swr: ONE_YEAR,
-    async getFreshValue() {
-      if (slug.join("/").endsWith(".md")) {
-        return {
-          status: "not-found",
-        };
-      }
-
-      const dbx = getDropbox();
-      const path = `/Apps/remotely-save/Hannes/Blog/${filePath.replace(/\.html$/, ".md")}`;
+    forceFresh,
+    async getFreshValue(): Promise<DropboxFile | NotFound> {
+      const dbx = await getDropbox();
+      const path = `/Hannes/Blog/${filePath.replace(/\.html$/, ".md")}`;
 
       try {
-        payload.logger.info(`Get file: "${path}"`);
+        payload.logger.info(`Get fresh file from Dropbox: "${path}"`);
         var res = await dbx.filesDownload({ path });
-
         if (!res.result.content_hash) {
           throw new Error("Missing Content Hash");
         }
@@ -75,7 +73,7 @@ export async function getPostFromDropbox({
         }
 
         return {
-          status: "not-found",
+          status: "not-found" as const,
         };
       }
 
@@ -111,6 +109,10 @@ export async function getPostFromDropbox({
         .use(rehypeHighlight)
         .use(() => (tree: any) => {
           while (true) {
+            if (tree.children.length === 0) {
+              break;
+            }
+
             // Unwrap <html>
             if (
               tree.children.length === 1 &&
@@ -163,11 +165,21 @@ export async function getPostFromDropbox({
         .process(htmlDocument);
 
       if (title === "") {
-        title = slug.at(-1)!;
+        title = filePath.split("/").at(-1)!;
+      }
+
+      // Purge all parent folders from cache so that they are updated next time
+      const segments = filePath.split("/").slice(0, -1);
+      segments.unshift("");
+      for (let i = 0; i < segments.length + 1; i++) {
+        await softPurge({
+          cache: payloadCache,
+          key: `hdx-blog-folder-v0-${segments.slice(0, i).join("/").replace(/^\//, "")}`,
+        });
       }
 
       return {
-        status: "found",
+        status: "found" as const,
         title,
         banner,
         contentHash: res.result.content_hash,
@@ -187,8 +199,17 @@ export async function getPostFromDropbox({
     },
   });
 
-  if (file.status !== "not-found" && !file.description) {
-    file.description = await cachiPayload({
+  if (file.status === "not-found") {
+    return file;
+  }
+
+  if (!includeUnpublished && (!file.published || file.published > Date.now())) {
+    return { status: "not-found" };
+  }
+
+  const description =
+    file.description ||
+    (await cachiPayload({
       key: `hdx-blog-description-v0-${file.contentHash}`,
       ttl: HALF_YEAR,
       swr: ONE_YEAR,
@@ -209,18 +230,13 @@ ${file.html}`,
 
         return description;
       },
-    });
-  }
+    }));
 
-  if (
-    file.status === "not-found" ||
-    !file.published ||
-    file.published > Date.now()
-  ) {
-    return notFound();
-  }
-
-  return file as PublishedPost;
+  return {
+    ...file,
+    description,
+    published: file.published || Infinity,
+  };
 }
 
 function handleReferences() {

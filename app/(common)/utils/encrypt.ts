@@ -34,7 +34,7 @@ export function encrypt(text: string, key: Buffer) {
   const encrypted = cipher.update(text);
   const checksum = createHash("sha256", key).update(text).digest("base64url");
   return [
-    checksum.substring(0, 4),
+    checksum.substring(0, 8),
     iv.toString("base64url"),
     Buffer.concat([encrypted, cipher.final()]).toString("base64url"),
   ].join("");
@@ -42,9 +42,9 @@ export function encrypt(text: string, key: Buffer) {
 
 export function decrypt(cipher: string, key: Buffer) {
   try {
-    const check = cipher.substring(0, 4);
-    const ivEncoded = cipher.substring(4, 26);
-    const encryptedData = cipher.substring(26);
+    const check = cipher.substring(0, 8);
+    const ivEncoded = cipher.substring(8, 30);
+    const encryptedData = cipher.substring(30);
     const iv = Buffer.from(ivEncoded, "base64url");
     const encryptedText = Buffer.from(encryptedData, "base64url");
     const decipher = createDecipheriv(algorithm, key, iv);
@@ -53,7 +53,7 @@ export function decrypt(cipher: string, key: Buffer) {
     const checksum = createHash("sha256", key)
       .update(final)
       .digest("base64url");
-    if (check !== checksum.substring(0, 4)) {
+    if (check !== checksum.substring(0, 8)) {
       throw new Error("Encryption checksum failed");
     }
     return final;
