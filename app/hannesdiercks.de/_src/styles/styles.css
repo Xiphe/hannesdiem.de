@@ -1,17 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .info {
-    @apply bg-blue-50 dark:bg-blue-950 p-4 lg:p-6 rounded border border-blue-500;
-
-    & > :first-child {
-      margin-top: 0;
-    }
-
-    & > :last-child {
-      margin-bottom: 0;
-    }
+.card-info,
+.card-warn,
+.card-error,
+.card-success,
+.card-neutral {
+  @apply p-4 lg:p-6 rounded border my-4 lg:my-8;
+  & > :first-child {
+    margin-top: 0;
   }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card-info {
+  @apply bg-blue-50 dark:bg-blue-950 border-blue-500;
+}
+.card-warn {
+  @apply bg-yellow-50 dark:bg-yellow-950 border-yellow-500;
+}
+.card-error {
+  @apply bg-red-50 dark:bg-red-950 border-red-500;
+}
+.card-success {
+  @apply bg-green-50 dark:bg-green-950 border-green-500;
+}
+.card-neutral {
+  @apply bg-stone-100 dark:bg-gray-800 border-stone-500 dark:border-gray-500;
 }
