@@ -66,7 +66,7 @@ export default function Footer() {
             <h3 className="font-serif text-xl dark:text-white">
               Hannes Diercks
             </h3>
-            <ul role="list" className="mt-6 space-y-2">
+            <ul role="list" className="mt-6 space-y-2" id="footer-contact">
               {footerNavigation.contact.map(
                 ({ className, children, icon, ...props }) => (
                   <li key={props.href}>

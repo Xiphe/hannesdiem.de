@@ -1,18 +1,13 @@
 import { DropboxResponseError } from "dropbox";
-import { remark } from "remark";
-import html from "remark-html";
-import gfm from "remark-gfm";
-import { rehype } from "rehype";
-import rehypeHighlight from "rehype-highlight";
-import remarkFrontmatter from "remark-frontmatter";
 import { visit } from "unist-util-visit";
-import { parse as parseYaml } from "yaml";
 import { cachiPayload, payloadCache } from "@utils/payloadCache";
 import { HALF_YEAR, ONE_WEEK, ONE_YEAR } from "@utils/time";
 import { getPayload } from "@utils/getPayload";
 import { complete } from "@utils/complete";
 import { z } from "zod";
 import { getDropbox } from "../getDropbox";
+import assert from "node:assert";
+import { processMarkdown } from "@utils/processMarkdown";
 
 interface GetPostFromDropboxOpts {
   filePath: string;
@@ -41,6 +36,9 @@ export interface PublishedPost
   published: number;
   description: string;
 }
+
+const HTML_SIGNATURE_PUBLIC_KEY = process.env.HTML_SIGNATURE_PUBLIC_KEY;
+assert(HTML_SIGNATURE_PUBLIC_KEY, "HTML_SIGNATURE_PUBLIC_KEY env must be set");
 
 export async function getPostFromDropbox({
   filePath,
@@ -93,79 +91,10 @@ export async function getPostFromDropbox({
         "utf8",
       );
 
-      let frontMatter: DropboxFile["frontMatter"] = {};
-      const { value: htmlDocument } = await remark()
-        .use(gfm)
-        .use(handleReferences)
-        .use(remarkFrontmatter, ["yaml"])
-        .use(() => (tree: any) => {
-          if (tree.type === "root" && tree.children[0].type === "yaml") {
-            frontMatter = parseYaml(tree.children[0].value);
-          }
-        })
-        .use(html)
-        .process(document);
-
-      let title = "";
-      let banner: DropboxFile["banner"];
-      const { value: processedHtmlDocument } = await rehype()
-        .use(rehypeHighlight)
-        .use(() => (tree: any) => {
-          while (true) {
-            if (tree.children.length === 0) {
-              break;
-            }
-
-            // Unwrap <html>
-            if (
-              tree.children.length === 1 &&
-              tree.children[0].tagName === "html"
-            ) {
-              tree.children = tree.children[0].children;
-              continue;
-            }
-
-            // Unwrap <body>
-            if (
-              tree.children.length === 2 &&
-              tree.children[1].tagName === "body"
-            ) {
-              tree.children = tree.children[1].children;
-              continue;
-            }
-
-            // Find first headline
-            if (tree.children[0].tagName === "h1") {
-              visit(tree.children[0], "text", (node) => {
-                title += node.value;
-              });
-              tree.children.splice(0, 1);
-              continue;
-            }
-
-            // Trim empty lines at beginning
-            if (
-              tree.children[0].type === "text" &&
-              tree.children[0].value.trim() === ""
-            ) {
-              tree.children.splice(0, 1);
-              continue;
-            }
-
-            if (
-              tree.children[0].tagName === "p" &&
-              tree.children[0].children.length === 1 &&
-              tree.children[0].children[0].tagName === "img"
-            ) {
-              banner = tree.children[0].children[0].properties;
-              tree.children.splice(0, 1);
-              continue;
-            }
-
-            break;
-          }
-        })
-        .process(htmlDocument);
+      let { title, banner, frontMatter, html } = await processMarkdown(
+        document,
+        handleReferences,
+      );
 
       if (title === "") {
         title = filePath.split("/").at(-1)!;
@@ -191,7 +120,7 @@ export async function getPostFromDropbox({
           (t): t is string => typeof t === "string",
         ),
         frontMatter,
-        html: String(processedHtmlDocument).trim(),
+        html: String(html).trim(),
       };
     },
   });

@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { BlogLayout } from "../BlogLayout";
-import { ReactNode } from "react";
 import { SkeletonParagraph, SkeletonWord } from "@components/SkeletonParagraph";
 
 export default async function Loading() {
