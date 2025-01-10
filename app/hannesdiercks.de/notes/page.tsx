@@ -1,8 +1,15 @@
 import { notFound } from "next/navigation";
 import { getFolderFromDropbox } from "./[...slug]/getFolderFromDropbox";
 import { ListPosts } from "./[...slug]/List";
-import { Fragment, useMemo } from "react";
+import { Fragment } from "react";
 import { shuffleArray } from "@utils/shuffleArray";
+import { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Blog - aka. my public notes",
+  };
+}
 
 export default async function NotesIndex() {
   const posts = await getFolderFromDropbox("");

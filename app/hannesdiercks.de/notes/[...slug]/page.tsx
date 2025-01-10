@@ -5,6 +5,7 @@ import { getPostFromDropbox } from "./getPostFromDropbox";
 import { Note } from "./Note";
 import { List } from "./List";
 import { notFound } from "next/navigation";
+import { getFolderFromDropbox } from "./getFolderFromDropbox";
 
 export async function generateMetadata(
   props: PageProps<{ slug: string[] }>,
@@ -14,8 +15,17 @@ export async function generateMetadata(
   const { slug } = params;
 
   if (!slug.join("/").endsWith(".html")) {
+    const index = await getFolderFromDropbox(slug.join("/"));
+    if (index.status === "not-found") {
+      return notFound();
+    }
+
     return {
-      title: "Overview",
+      title: index.info.title,
+      description:
+        typeof index.info.description === "string"
+          ? index.info.description
+          : undefined,
     };
   }
 
