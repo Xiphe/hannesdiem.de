@@ -30,7 +30,7 @@ export function ListPosts({ slug, ...index }: NoteProps & FolderIndex) {
         </p>
       </div>
 
-      <ul>
+      <ul className="mb-16">
         {index.posts.map((entry, i, list) => (
           <li
             key={entry.link}
@@ -58,7 +58,7 @@ export function ListPosts({ slug, ...index }: NoteProps & FolderIndex) {
                 </span>
               </span>
               {entry.description ? (
-                <span className="block p-4 md:p-6 !pt-2 text-stone-600 dark:text-gray-300 max-w-5xl">
+                <span className="block p-4 md:p-6 !pt-0 text-stone-600 dark:text-gray-300 max-w-5xl">
                   {entry.description}
                 </span>
               ) : null}

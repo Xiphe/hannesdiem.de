@@ -1,7 +1,8 @@
 "use client";
 
 import { useMounted } from "@utils/useMounted";
-import { ComponentPropsWithoutRef } from "react";
+import clsx from "clsx";
+import { ComponentPropsWithoutRef, useEffect, useState } from "react";
 
 export interface LocalDateProps {
   timeStamp: number;
@@ -11,6 +12,7 @@ export interface LocalDateProps {
 export function LocalTime({
   timeStamp,
   locales,
+  className,
   format = {
     year: "numeric",
     month: "long",
@@ -22,7 +24,15 @@ export function LocalTime({
   const mounted = useMounted();
 
   return (
-    <time dateTime={date.toISOString()} {...rest}>
+    <time
+      dateTime={date.toISOString()}
+      {...rest}
+      className={clsx(
+        className,
+        !mounted && "!opacity-0",
+        "transition-opacity duration-500",
+      )}
+    >
       {mounted ? date.toLocaleDateString(locales, format) : date.toUTCString()}
     </time>
   );
