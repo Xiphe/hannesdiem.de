@@ -41,14 +41,10 @@ export async function generateMetadata() {
   } satisfies Metadata;
 }
 
-export type LayoutProps = PropsWithChildren<{
-  lang?: string;
-}>;
-
-export default function RootLayout({ children, lang = "de" }: LayoutProps) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html
-      lang={lang}
+      lang={"de"}
       className={`${licorice.variable} ${montserratAlternates.variable} bg-paper-50 text-black dark:bg-water-900 dark:text-graphite-50`}
     >
       <LightDirectionProvider>
