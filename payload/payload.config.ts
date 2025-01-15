@@ -29,8 +29,8 @@ const isDev = process.env.NODE_ENV === "development";
 const PAYLOAD_SECRET = process.env.PAYLOAD_SECRET;
 assert(PAYLOAD_SECRET, "PAYLOAD_SECRET env must be set");
 
-const POSTGRESQL_DATABASE_URL = process.env.POSTGRESQL_DATABASE_URL;
-assert(POSTGRESQL_DATABASE_URL, "POSTGRESQL_DATABASE_URL env must be set");
+const POSTGRES_URL = process.env.POSTGRES_URL;
+assert(POSTGRES_URL, "POSTGRES_URL env must be set");
 
 const BLOB_READ_WRITE_TOKEN = process.env.BLOB_READ_WRITE_TOKEN;
 assert(BLOB_READ_WRITE_TOKEN, "BLOB_READ_WRITE_TOKEN env must be set");
@@ -65,7 +65,7 @@ export default buildConfig(
         migrationDir,
         idType: "uuid",
         pool: {
-          connectionString: POSTGRESQL_DATABASE_URL,
+          connectionString: POSTGRES_URL,
         },
       }),
       plugins: ([] as Plugin[]).concat(
