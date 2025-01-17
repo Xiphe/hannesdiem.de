@@ -1,0 +1,83 @@
+/** @type {any} */
+module.exports = (theme) => ({
+  DEFAULT: {
+    css: {
+      h1: {
+        fontFamily: theme("fontFamily.licorice.0"),
+        fontWeight: "normal",
+        fontSize: theme("fontSize.6xl"),
+        marginTop: theme("margin.16"),
+        marginBottom: 0,
+        [`@media (min-width: ${theme("screens.lg")})`]: {
+          fontSize: theme("fontSize.7xl"),
+        },
+      },
+      h2: {
+        fontFamily: theme("fontFamily.licorice.0"),
+        fontWeight: "normal",
+        fontSize: theme("fontSize.5xl"),
+        marginTop: theme("margin.12"),
+        marginBottom: "0",
+        [`@media (min-width: ${theme("screens.lg")})`]: {
+          fontSize: theme("fontSize.6xl"),
+        },
+      },
+      h3: {
+        fontFamily: theme("fontFamily.licorice.0"),
+        fontWeight: "normal",
+        fontSize: theme("fontSize.4xl"),
+        marginTop: theme("margin.8"),
+        marginBottom: "0",
+        [`@media (min-width: ${theme("screens.lg")})`]: {
+          fontSize: theme("fontSize.5xl"),
+        },
+      },
+      h4: {
+        fontFamily: theme("fontFamily.licorice.0"),
+        fontWeight: "normal",
+        fontSize: theme("fontSize.3xl"),
+        marginTop: theme("margin.4"),
+        marginBottom: "0",
+        [`@media (min-width: ${theme("screens.lg")})`]: {
+          fontSize: theme("fontSize.4xl"),
+        },
+      },
+    },
+  },
+  paper: {
+    css: {
+      "--tw-prose-body": theme("colors.ink[900]"),
+      "--tw-prose-headings": theme("colors.ink[900]"),
+      "--tw-prose-lead": theme("colors.ink[900]"),
+      "--tw-prose-links": theme("colors.ink[950]"),
+      "--tw-prose-bold": theme("colors.ink[950]"),
+      "--tw-prose-counters": theme("colors.ink[800]"),
+      "--tw-prose-bullets": theme("colors.ink[800]"),
+      "--tw-prose-hr": theme("colors.ink[800]"),
+      "--tw-prose-quotes": theme("colors.ink[900]"),
+      "--tw-prose-quote-borders": theme("colors.ink[800]"),
+      "--tw-prose-captions": theme("colors.ink[900]"),
+      "--tw-prose-code": theme("colors.ink[900]"),
+      "--tw-prose-pre-code": theme("colors.ink[100]"),
+      "--tw-prose-pre-bg": theme("colors.ink[900]"),
+      "--tw-prose-th-borders": theme("colors.ink[800]"),
+      "--tw-prose-td-borders": theme("colors.ink[800]"),
+      "--tw-prose-invert-body": theme("colors.paper[100]"),
+      "--tw-prose-invert-headings": theme("colors.white"),
+      "--tw-prose-invert-lead": theme("colors.paper[100]"),
+      "--tw-prose-invert-links": theme("colors.white"),
+      "--tw-prose-invert-bold": theme("colors.white"),
+      "--tw-prose-invert-counters": theme("colors.paper[300]"),
+      "--tw-prose-invert-bullets": theme("colors.paper[300]"),
+      "--tw-prose-invert-hr": theme("colors.white"),
+      "--tw-prose-invert-quotes": theme("colors.paper[100]"),
+      "--tw-prose-invert-quote-borders": theme("colors.paper[300]"),
+      "--tw-prose-invert-captions": theme("colors.paper[300]"),
+      "--tw-prose-invert-code": theme("colors.white"),
+      "--tw-prose-invert-pre-code": theme("colors.paper[300]"),
+      "--tw-prose-invert-pre-bg": "rgb(0 0 0 / 50%)",
+      "--tw-prose-invert-th-borders": theme("colors.paper[300]"),
+      "--tw-prose-invert-td-borders": theme("colors.paper[300]"),
+    },
+  },
+});

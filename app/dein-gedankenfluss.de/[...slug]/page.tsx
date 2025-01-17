@@ -51,7 +51,7 @@ export default async function ContentPage(
             return block.content ? (
               <RichText
                 key={block.id}
-                className={cx("prose dark:prose-invert", "mx-auto")}
+                className={cx("prose prose-paper dark:prose-invert", "mx-auto")}
                 data={block.content}
               />
             ) : null;
