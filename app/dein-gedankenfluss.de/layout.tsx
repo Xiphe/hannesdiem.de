@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { getOrigin } from "@utils/origin";
 import { PropsWithChildren } from "react";
-
 import { Licorice, Montserrat_Alternates } from "next/font/google";
 import { LightDirectionProvider } from "@utils/light-tailwind-plugin/ElementDirection";
+import favicon from "./_src/img/gedankenfluss_favicon.svg";
 
 const licorice = Licorice({
   subsets: ["latin"],
@@ -30,11 +30,9 @@ export async function generateMetadata() {
       template: "%s • Gedankenfluss",
       default: "Gedankenfluss",
     },
-    // icons: {
-    //   icon: "/logo.svg",
-    //   shortcut: "/logo.svg",
-    //   apple: "/logo.svg",
-    // },
+    icons: {
+      shortcut: favicon.src,
+    },
     openGraph: {
       type: "website",
     },
