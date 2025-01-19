@@ -8,15 +8,7 @@ import {
   useRef,
   createContext,
   use,
-  useState,
 } from "react";
-
-class DirectionBus extends EventTarget {
-  // Publish an event
-  emit(eventName: "update", detail: {}) {
-    this.dispatchEvent(new CustomEvent(eventName, { detail }));
-  }
-}
 
 interface DirectionUpdate {
   mouseX: number;
@@ -43,10 +35,6 @@ export function LightDirectionProvider({ children }: PropsWithChildren) {
       },
     };
   }, []);
-  const directionState = useRef({
-    scrollLeft: 0,
-    scrollTop: 0,
-  });
 
   useEffect(() => {
     let lastScrollTop = window.scrollY;
@@ -164,36 +152,23 @@ export function useRelativeLightDirection<Element extends HTMLElement>() {
       register(({ mouseX, mouseY }) => {
         if (ref.current) {
           const box = ref.current.getBoundingClientRect();
-          const boxY = box.top + scrollY;
-          const boxX = box.left + scrollX;
+          const padding = 50;
 
-          const minMouseY = boxY - 50; // Math.max(0, boxY - box.height);
-          const maxMouseY = boxY + box.height + 50; //Math.min(pageHeight, boxY + box.height * 2);
-
-          const clampedMouseY = Math.max(
-            minMouseY,
-            Math.min(mouseY, maxMouseY),
-          );
-          const transformedY =
-            ((clampedMouseY - minMouseY) / (maxMouseY - minMouseY)) * -2 - 1;
-
-          const minMouseX = boxX - 50; // Math.max(0, boxY - box.height);
-          const maxMouseX = boxX + box.width + 50; //Math.min(pageHeight, boxY + box.height * 2);
-
-          const clampedMouseX = Math.max(
-            minMouseX,
-            Math.min(mouseX, maxMouseX),
-          );
-          const transformedX =
-            ((clampedMouseX - minMouseX) / (maxMouseX - minMouseX)) * 2 - 1;
+          // Calculate boundaries with padding
+          const bounds = {
+            minX: box.left + scrollX - padding,
+            maxX: box.left + scrollX + box.width + padding,
+            minY: box.top + scrollY - padding,
+            maxY: box.top + scrollY + box.height + padding,
+          };
 
           ref.current.style.setProperty(
             "--tw-light-dir-x",
-            String(transformedX * -1),
+            normalizeAxis(mouseX, bounds.minX, bounds.maxX),
           );
           ref.current.style.setProperty(
             "--tw-light-dir-y",
-            String(transformedY * -1),
+            normalizeAxis(mouseY, bounds.minY, bounds.maxY),
           );
         }
       }),
@@ -210,4 +185,9 @@ export function useRelativeLightDirection<Element extends HTMLElement>() {
     }),
     [],
   );
+}
+// Clamp mouse position to boundaries and normalize to -1 to 1
+function normalizeAxis(value: number, min: number, max: number) {
+  const clamped = Math.max(min, Math.min(value, max));
+  return String(-1 * (((clamped - min) / (max - min)) * 2 - 1));
 }
