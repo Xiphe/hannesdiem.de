@@ -143,9 +143,27 @@ export function useGlobalLightDirection() {
   );
 }
 
-export function useRelativeLightDirection<Element extends HTMLElement>() {
+export type Strength = {
+  top?: number;
+  right?: number;
+  bottom?: number;
+  left?: number;
+};
+
+export function useRelativeLightDirection<Element extends HTMLElement>(
+  strength: Strength | number = 1,
+) {
   const register = useLightDirectionContext();
   const ref = useRef<Element>(null);
+
+  const strengthTop =
+    typeof strength === "object" ? (strength.top ?? 1) : strength;
+  const strengthRight =
+    typeof strength === "object" ? (strength.right ?? 1) : strength;
+  const strengthBottom =
+    typeof strength === "object" ? (strength.bottom ?? 1) : strength;
+  const strengthLeft =
+    typeof strength === "object" ? (strength.left ?? 1) : strength;
 
   useEffect(
     () =>
@@ -164,15 +182,27 @@ export function useRelativeLightDirection<Element extends HTMLElement>() {
 
           ref.current.style.setProperty(
             "--tw-light-dir-x",
-            normalizeAxis(mouseX, bounds.minX, bounds.maxX),
+            normalizeAxis(
+              mouseX,
+              bounds.minX,
+              bounds.maxX,
+              strengthLeft,
+              strengthRight,
+            ),
           );
           ref.current.style.setProperty(
             "--tw-light-dir-y",
-            normalizeAxis(mouseY, bounds.minY, bounds.maxY),
+            normalizeAxis(
+              mouseY,
+              bounds.minY,
+              bounds.maxY,
+              strengthTop,
+              strengthBottom,
+            ),
           );
         }
       }),
-    [register],
+    [register, strengthTop, strengthRight, strengthBottom, strengthLeft],
   );
 
   return useMemo(
@@ -186,8 +216,16 @@ export function useRelativeLightDirection<Element extends HTMLElement>() {
     [],
   );
 }
+
 // Clamp mouse position to boundaries and normalize to -1 to 1
-function normalizeAxis(value: number, min: number, max: number) {
+function normalizeAxis(
+  value: number,
+  min: number,
+  max: number,
+  strengthPos: number,
+  strengthNeg: number,
+) {
   const clamped = Math.max(min, Math.min(value, max));
-  return String(-1 * (((clamped - min) / (max - min)) * 2 - 1));
+  const normalized = -1 * (((clamped - min) / (max - min)) * 2 - 1);
+  return String(normalized * (normalized > 0 ? strengthPos : strengthNeg));
 }

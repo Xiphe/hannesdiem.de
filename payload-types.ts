@@ -127,6 +127,8 @@ export interface GdfPage {
   id: string;
   title: string;
   slug: string;
+  header?: boolean | null;
+  footer?: boolean | null;
   content?:
     | {
         content?: {
@@ -639,6 +641,8 @@ export interface CacheSelect<T extends boolean = true> {
 export interface GdfPagesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
+  header?: T;
+  footer?: T;
   content?:
     | T
     | {

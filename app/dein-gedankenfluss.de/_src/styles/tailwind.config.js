@@ -12,6 +12,13 @@ module.exports = {
   darkMode: "media",
   theme: {
     extend: {
+      aspectRatio: {
+        card: "59 / 92",
+      },
+      container: {
+        center: true,
+        padding: "0.5rem",
+      },
       colors: (theme) => ({
         paper: PAPER,
         graphite: GRAPHITE,
@@ -20,7 +27,7 @@ module.exports = {
         caramel: CARAMEL,
         error: ERROR,
       }),
-      borderRadius: { xs: "0.0625rem" },
+      borderRadius: { xs: "0.0625rem", card: "8.5% / 5.6%" },
       fontFamily: {
         montserrat: ["var(--font-montserrat-alternates)", "sans-serif"],
         licorice: ["var(--font-licorice)", "serif"],

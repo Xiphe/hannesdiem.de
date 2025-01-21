@@ -1,5 +1,29 @@
 /** @type {any} */
 module.exports = (theme) => ({
+  xl: {
+    css: {
+      h1: {
+        fontWeight: "normal",
+        fontSize: theme("fontSize.7xl"),
+        marginBottom: "0",
+      },
+      h2: {
+        fontWeight: "normal",
+        fontSize: theme("fontSize.6xl"),
+        marginBottom: "0",
+      },
+      h3: {
+        fontWeight: "normal",
+        fontSize: theme("fontSize.5xl"),
+        marginBottom: "0",
+      },
+      h4: {
+        fontWeight: "normal",
+        fontSize: theme("fontSize.4xl"),
+        marginBottom: "0",
+      },
+    },
+  },
   DEFAULT: {
     css: {
       h1: {
@@ -8,9 +32,6 @@ module.exports = (theme) => ({
         fontSize: theme("fontSize.6xl"),
         marginTop: theme("margin.16"),
         marginBottom: 0,
-        [`@media (min-width: ${theme("screens.lg")})`]: {
-          fontSize: theme("fontSize.7xl"),
-        },
       },
       h2: {
         fontFamily: theme("fontFamily.licorice.0"),
@@ -18,9 +39,6 @@ module.exports = (theme) => ({
         fontSize: theme("fontSize.5xl"),
         marginTop: theme("margin.12"),
         marginBottom: "0",
-        [`@media (min-width: ${theme("screens.lg")})`]: {
-          fontSize: theme("fontSize.6xl"),
-        },
       },
       h3: {
         fontFamily: theme("fontFamily.licorice.0"),
@@ -28,9 +46,6 @@ module.exports = (theme) => ({
         fontSize: theme("fontSize.4xl"),
         marginTop: theme("margin.8"),
         marginBottom: "0",
-        [`@media (min-width: ${theme("screens.lg")})`]: {
-          fontSize: theme("fontSize.5xl"),
-        },
       },
       h4: {
         fontFamily: theme("fontFamily.licorice.0"),
@@ -38,16 +53,13 @@ module.exports = (theme) => ({
         fontSize: theme("fontSize.3xl"),
         marginTop: theme("margin.4"),
         marginBottom: "0",
-        [`@media (min-width: ${theme("screens.lg")})`]: {
-          fontSize: theme("fontSize.4xl"),
-        },
       },
     },
   },
   paper: {
     css: {
       "--tw-prose-body": theme("colors.ink[900]"),
-      "--tw-prose-headings": theme("colors.ink[900]"),
+      "--tw-prose-headings": theme("colors.caramel[500]"),
       "--tw-prose-lead": theme("colors.ink[900]"),
       "--tw-prose-links": theme("colors.ink[950]"),
       "--tw-prose-bold": theme("colors.ink[950]"),

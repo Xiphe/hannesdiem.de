@@ -31,6 +31,7 @@ module.exports.GRAPHITE = {
 module.exports.WATER = {
   50: "#f3f7f8",
   100: "#d3dee3",
+  150: "#b8cdd6", // For CardSpacer
   200: "#b3c6ce",
   300: "#92adb8",
   400: "#7295a3",

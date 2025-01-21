@@ -30,6 +30,32 @@ export const Pages: CollectionConfig = {
       ],
     },
     {
+      type: "collapsible",
+      label: "Options",
+      admin: {
+        initCollapsed: true,
+      },
+      fields: [
+        {
+          type: "row",
+          fields: [
+            {
+              name: "header",
+              type: "checkbox",
+              label: "Header",
+              defaultValue: true,
+            },
+            {
+              name: "footer",
+              type: "checkbox",
+              label: "Footer",
+              defaultValue: true,
+            },
+          ],
+        },
+      ],
+    },
+    {
       type: "blocks",
       label: false,
       name: "content",

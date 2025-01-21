@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  interpolate-size: allow-keywords;
+}
+
 @layer base {
   * {
     transition: box-shadow linear 0.2s;
