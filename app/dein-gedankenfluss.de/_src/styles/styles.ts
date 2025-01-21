@@ -19,7 +19,7 @@ export const linkStyles = "hover:text-caramel dark:hover:text-paper-300";
 
 export const buttonBaseStyles = cx(
   "inline-flex items-center gap-4",
-  "rounded-md pl-4 pr-6 py-2",
+  "rounded-md px-6 py-2",
   "transition-colors",
 );
 

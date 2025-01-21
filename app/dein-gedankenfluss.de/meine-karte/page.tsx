@@ -1,20 +1,37 @@
-import { Card, isCategoryKey } from "@gf/components/Card";
+import { Footer } from "@gf/components/Footer";
+import { SchwingeLine } from "@gf/components/lines";
 import { PageProps } from "@utils/types";
+import { Metadata } from "next";
+import { CardCreator } from "./CardCreator";
+import { getFirst } from "./getFirst";
+
+export async function generateMetadata({ searchParams }: PageProps) {
+  const { title, body } = await searchParams;
+
+  return {
+    title: getFirst(title),
+    description: getFirst(body),
+    openGraph: {
+      title: getFirst(title),
+      description: getFirst(body),
+    },
+  } satisfies Metadata;
+}
 
 export default async function MeineKarte({ searchParams }: PageProps) {
-  const { title, body, optional, category } = await searchParams;
+  const { title, body, optional, category, owner } = await searchParams;
 
   return (
-    <div className="">
-      <Card
-        className="mx-auto mt-[5vh] max-w-[90vw] max-h-[90vh] "
+    <>
+      <CardCreator
+        owner={owner}
         title={title}
         body={body}
         optional={optional}
-        category={isCategoryKey(category) ? category : undefined}
+        category={category}
       />
-    </div>
+      <SchwingeLine spaced strokeClassName="stroke-graphite-50" />
+      <Footer />
+    </>
   );
 }
-
-// meine-karte?title=Schicke%20eine%20Karte!&body=Schicke%20den%20Menschen%20mit%20denen%20du%20Karten%20hersellst%20eine%20Karte!%0A%0AUm%20ihnen%20zu%20zeigen,%20dass%20du%20mal%20wieder%20alles%20over-engineerst.%0A%0A...und%20du%20sie%20lieb%20hast!&optional=Schick%20auch%20du%20jetzt%20eine%20Gedankenfluss-Karte.&category=dankbarkeit

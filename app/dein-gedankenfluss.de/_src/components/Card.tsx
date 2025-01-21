@@ -24,6 +24,8 @@ export function Card({
   category,
   ...props
 }: CardProps) {
+  const bodyLines = normalize(body).slice(0, 15);
+
   return (
     <Paper
       as={as}
@@ -80,7 +82,7 @@ export function Card({
             fill: "#152742",
           }}
         >
-          {normalize(body).map((line, index) => (
+          {bodyLines.map((line, index) => (
             <tspan
               key={index}
               x={416}
@@ -91,17 +93,19 @@ export function Card({
             </tspan>
           ))}
 
-          {normalize(optional).map((line, index) => (
-            <tspan
-              key={index}
-              x={416}
-              textAnchor="middle"
-              style={{ fill: "#527c8e" }}
-              dy={index !== 0 ? "1.26em" : "2.52em"}
-            >
-              {line === null ? <>&nbsp;</> : line}
-            </tspan>
-          ))}
+          {normalize(optional)
+            .slice(0, 14 - bodyLines.length)
+            .map((line, index) => (
+              <tspan
+                key={index}
+                x={416}
+                textAnchor="middle"
+                style={{ fill: "#527c8e" }}
+                dy={index !== 0 ? "1.26em" : "2.52em"}
+              >
+                {line === null ? <>&nbsp;</> : line}
+              </tspan>
+            ))}
         </text>
       </svg>
     </Paper>
@@ -132,21 +136,23 @@ export function Title({ title, as, style, className, ...props }: TitleProps) {
       }}
       {...props}
     >
-      {normalize(title, 15).map((line, index) => (
-        <tspan
-          key={index}
-          x={416}
-          textAnchor="middle"
-          dy={index !== 0 || title.length === 1 ? "0.86em" : undefined}
-        >
-          {line === null ? <>&nbsp;</> : line}
-        </tspan>
-      ))}
+      {normalize(title, 15)
+        .slice(0, 2)
+        .map((line, index) => (
+          <tspan
+            key={index}
+            x={416}
+            textAnchor="middle"
+            dy={index !== 0 || title.length === 1 ? "0.86em" : undefined}
+          >
+            {line === null ? <>&nbsp;</> : line}
+          </tspan>
+        ))}
     </Component>
   );
 }
 
-const categoryMap = {
+export const categoryMap = {
   dankbarkeit: {
     title: "Dankbarkeit",
     deco: "M226.802 1229.98c0 .81-.018.848-.591 1.421-.361.361-.918.462-1.411.591-.375.098-18.599-.758-34.819-.708-6.445.02-33.89.3-35.865.317-33.175.286-58.683-.61-76.497-.208-10.934.247-10.93.274-21.864.59-1.723.049-1.659-.399-2.317-1.993-.003-.008.579-1.419.591-1.431a2.103 2.103 0 0 1 1.411-.591c1.014-.015 20.342.754 34.978.707 6.195-.02 32.935-.299 34.993-.317 32.943-.289 59.534.626 77.914.196 10.495-.246 21.391-.621 21.475-.586.471.195 1.05.23 1.411.591.573.572.591.611.591 1.421ZM783.197 1229.98c0 .81-.019.848-.591 1.421-.361.361-.918.463-1.411.591-.376.098-18.725-.758-35.054-.708-6.488.02-34.119.3-36.107.317-33.399.286-59.079-.61-77.013-.208-11.009.247-11.005.274-22.012.59-1.723.049-1.66-.398-2.319-1.993-.003-.008.579-1.419.591-1.431a2.103 2.103 0 0 1 1.411-.591c1.02-.015 20.479.755 35.214.707 6.237-.02 33.158-.299 35.229-.317 33.165-.289 59.936.626 78.44.196 10.565-.246 21.536-.621 21.62-.586.47.195 1.05.23 1.411.591.572.572.591.611.591 1.421Z",

@@ -3,7 +3,7 @@ import { focusStyles, footerLinkStyles } from "@gf/styles/styles";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 
-export async function Footer({ children }: PropsWithChildren) {
+export function Footer({ children }: PropsWithChildren) {
   return (
     <footer>
       <div className="container mx-auto text-lg px-8 pb-16 text-graphite-200">
