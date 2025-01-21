@@ -275,32 +275,22 @@ export default function Home() {
         </FlyInPaper>
       </div>
 
-      <div className="h-16 mt-48 xl:mt-64">
-        <RioJaraLine strokeClassName="stroke-graphite-50" />
-      </div>
+      <RioJaraLine spaced strokeClassName="stroke-graphite-50" />
 
-      <Footer>
-        <li>
-          <Link
-            href="https://amazon.de/s?k=gedankenfluss"
-            className={cx(footerLinkStyles, focusStyles)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Amazon
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="https://www.etsy.com/shop/Gedankenfluss"
-            className={cx(footerLinkStyles, focusStyles)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Etsy
-          </Link>
-        </li>
-      </Footer>
+      <Footer
+        extraLinks={[
+          {
+            title: "Shops",
+            links: [
+              { href: "https://amazon.de/s?k=gedankenfluss", label: "Amazon" },
+              {
+                href: "https://www.etsy.com/shop/Gedankenfluss",
+                label: "Etsy",
+              },
+            ],
+          },
+        ]}
+      ></Footer>
     </>
   );
 }

@@ -3,98 +3,77 @@ import { focusStyles, footerLinkStyles } from "@gf/styles/styles";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
 
-export function Footer({ children }: PropsWithChildren) {
+type LinkGroup = {
+  title: string;
+  links: {
+    href: string;
+    label: string;
+  }[];
+};
+
+const contactLinks: LinkGroup = {
+  title: "Kontakt",
+  links: [
+    {
+      href: "https://www.instagram.com/dein_gedankenfluss/",
+      label: "Instagram",
+    },
+    {
+      href: "https://www.facebook.com/profile.php?id=61570476373100",
+      label: "Facebook",
+    },
+    { href: "https://pin.it/2Af6qPBaf", label: "Pinterest" },
+    { href: "mailto:support@dein-gedankenfluss.de", label: "Email" },
+  ],
+};
+
+const LegalLinks: LinkGroup = {
+  title: "Gedankenfluss",
+  links: [
+    { href: "/", label: "Startseite" },
+    { href: "/impressum", label: "Impressum" },
+    { href: "/datenschutz", label: "Datenschutz" },
+    { href: "/widerruf", label: "Widerrufsbelehrung" },
+  ],
+};
+
+const footerLinks = [contactLinks, LegalLinks];
+
+type FooterProps = PropsWithChildren<{
+  extraLinks?: LinkGroup[];
+  className?: string;
+}>;
+
+export function Footer({ children, className, extraLinks }: FooterProps) {
   return (
-    <footer>
-      <div className="container mx-auto text-lg px-8 pb-16 text-graphite-200">
-        <nav>
-          <ul>
-            <li className="mb-2">
-              <Link
-                href="/"
-                className={cx(
-                  footerLinkStyles,
-                  focusStyles,
-                  "font-bold text-xl text-graphite-50",
-                )}
-              >
-                Gedankenfluss
-              </Link>
-            </li>
-            {children}
-
-            <li>
-              <Link
-                href="https://www.instagram.com/dein_gedankenfluss/"
-                className={cx(footerLinkStyles, focusStyles)}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://www.facebook.com/profile.php?id=61570476373100"
-                className={cx(footerLinkStyles, focusStyles)}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://pin.it/2Af6qPBaf"
-                className={cx(footerLinkStyles, focusStyles)}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Pinterest
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="mailto:support@dein-gedankenfluss.de"
-                className={cx(footerLinkStyles, focusStyles)}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Kontakt
-              </Link>
-            </li>
-          </ul>
-        </nav>
-
-        <nav className="mt-6">
-          <ul>
-            <li>
-              <Link
-                href="/impressum"
-                className={cx(footerLinkStyles, focusStyles)}
-              >
-                Impressum
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/datenschutz"
-                className={cx(footerLinkStyles, focusStyles)}
-              >
-                Datenschutz
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/widerruf"
-                className={cx(footerLinkStyles, focusStyles)}
-              >
-                Widerrufsbelehrung
-              </Link>
-            </li>
-          </ul>
-        </nav>
+    <footer className={className}>
+      <div className="container mx-auto text-lg px-8 pb-16 text-graphite-200 flex flex-col gap-8 md:flex-row md:gap-16 lg:gap-32">
+        {[footerLinks[0], ...(extraLinks ?? []), ...footerLinks.slice(1)].map(
+          (group) => (
+            <nav key={group.title}>
+              <h4 className="text-xl font-bold text-graphite-50 mb-2">
+                {group.title}
+              </h4>
+              <ul>
+                {group.links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      {...(link.href.startsWith("http")
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
+                      className={cx(footerLinkStyles, focusStyles)}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ),
+        )}
       </div>
+      {children}
     </footer>
   );
 }

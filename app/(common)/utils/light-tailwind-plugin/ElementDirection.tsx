@@ -37,6 +37,7 @@ export function LightDirectionProvider({ children }: PropsWithChildren) {
   }, []);
 
   useEffect(() => {
+    const abortController = new AbortController();
     let lastScrollTop = window.scrollY;
     let lastScrollLeft = window.scrollX;
     let mousePos: { x: number; y: number } = {
@@ -44,27 +45,6 @@ export function LightDirectionProvider({ children }: PropsWithChildren) {
       y: document.documentElement.scrollHeight / 2,
     };
     handleMove();
-
-    function handleMouseMove(ev: MouseEvent) {
-      mousePos.x = ev.pageX;
-      mousePos.y = ev.pageY;
-      handleMove();
-    }
-
-    function handleScroll(ev: Event) {
-      const currentScrollTop = window.scrollY;
-      const currentScrollLeft = window.scrollX;
-
-      const deltaY = currentScrollTop - lastScrollTop;
-      const deltaX = currentScrollLeft - lastScrollLeft;
-
-      lastScrollTop = currentScrollTop;
-      lastScrollLeft = currentScrollLeft;
-
-      mousePos.x += deltaX;
-      mousePos.y += deltaY;
-      handleMove();
-    }
 
     function handleMove() {
       requestAnimationFrame(() => {
@@ -79,12 +59,39 @@ export function LightDirectionProvider({ children }: PropsWithChildren) {
       });
     }
 
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.body.removeEventListener("mousemove", handleMouseMove);
-      document.body.removeEventListener("scroll", handleScroll);
-    };
+    document.addEventListener(
+      "mousemove",
+      (ev) => {
+        mousePos.x = ev.pageX;
+        mousePos.y = ev.pageY;
+        handleMove();
+      },
+      {
+        signal: abortController.signal,
+      },
+    );
+    document.addEventListener(
+      "scroll",
+      (ev) => {
+        const currentScrollTop = window.scrollY;
+        const currentScrollLeft = window.scrollX;
+
+        const deltaY = currentScrollTop - lastScrollTop;
+        const deltaX = currentScrollLeft - lastScrollLeft;
+
+        lastScrollTop = currentScrollTop;
+        lastScrollLeft = currentScrollLeft;
+
+        mousePos.x += deltaX;
+        mousePos.y += deltaY;
+        handleMove();
+      },
+      {
+        signal: abortController.signal,
+      },
+    );
+
+    return abortController.abort;
   }, [listeners]);
 
   return (
@@ -120,11 +127,11 @@ export function useGlobalLightDirection() {
 
           ref.current.style.setProperty(
             "--tw-light-dir-x",
-            String((offsetX / pageWidth) * -2),
+            String(Math.round((offsetX / pageWidth) * -2 * 1000) / 1000),
           );
           ref.current.style.setProperty(
             "--tw-light-dir-y",
-            String((offsetY / pageHeight) * -2),
+            String(Math.round((offsetY / pageHeight) * -2 * 1000) / 1000),
           );
         }
       }),
@@ -227,5 +234,9 @@ function normalizeAxis(
 ) {
   const clamped = Math.max(min, Math.min(value, max));
   const normalized = -1 * (((clamped - min) / (max - min)) * 2 - 1);
-  return String(normalized * (normalized > 0 ? strengthPos : strengthNeg));
+  return String(
+    Math.round(
+      normalized * (normalized > 0 ? strengthPos : strengthNeg) * 1000,
+    ) / 1000,
+  );
 }
