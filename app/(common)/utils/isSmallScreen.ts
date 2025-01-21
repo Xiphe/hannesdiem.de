@@ -26,7 +26,7 @@ export function useIsScreenSize(size: ScreenSize) {
       signal: controller.signal,
     });
 
-    return controller.abort;
+    return () => controller.abort();
   }, [targetSize]);
 
   return matches;

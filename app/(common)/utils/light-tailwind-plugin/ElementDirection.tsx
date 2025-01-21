@@ -91,7 +91,7 @@ export function LightDirectionProvider({ children }: PropsWithChildren) {
       },
     );
 
-    return abortController.abort;
+    return () => abortController.abort();
   }, [listeners]);
 
   return (
