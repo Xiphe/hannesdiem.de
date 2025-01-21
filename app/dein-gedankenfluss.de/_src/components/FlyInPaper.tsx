@@ -57,7 +57,7 @@ export function FlyInPaper({
           y: useTransform(
             entry,
             [0, 1],
-            [smallScreen ? "0%" : "-60%", smallScreen ? "0%" : offsetY],
+            [smallScreen ? "0%" : "-30%", smallScreen ? "0%" : offsetY],
           ),
           x: useTransform(
             entry,
