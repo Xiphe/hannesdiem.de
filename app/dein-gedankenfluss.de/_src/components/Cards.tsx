@@ -32,10 +32,11 @@ export function Cards({ category, title, body, optional }: CardsProps) {
 
   return (
     <motion.div
-      className="w-1/2 md:w-2/3  relative aspect-card"
+      className="w-2/3  relative aspect-card"
       ref={ref}
       style={{
         y,
+        x: useTransform(rotate, [0, 1], [0, 20]),
         opacity: useTransform(scrollYProgress, [0, 0.05], [0, 1]),
         rotate: useTransform(rotate, [0, 1], [0, 3]),
       }}
