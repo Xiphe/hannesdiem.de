@@ -1,18 +1,16 @@
 import { cx } from "@gf/cx";
 import { ComponentPropsWithoutRef, Fragment, ReactNode } from "react";
 import { Paper } from "./Paper";
-import {
-  Strength,
-  useRelativeLightDirection,
-} from "@utils/light-tailwind-plugin/ElementDirection";
+import { Strength } from "@utils/light-tailwind-plugin/ElementDirection";
 
+export type Text = (string | null)[] | string;
 export interface CardProps
   extends Omit<ComponentPropsWithoutRef<"div">, "title"> {
   as?: React.ElementType;
   lightStrength?: Strength | number;
-  title?: (string | null)[] | string;
-  body?: (string | null)[] | string;
-  optional?: (string | null)[] | string;
+  title?: Text | ReactNode;
+  body?: Text;
+  optional?: Text;
   category?: keyof typeof categoryMap;
 }
 
@@ -70,27 +68,7 @@ export function Card({
           </>
         ) : null}
 
-        <text
-          x={0}
-          y={226}
-          className="font-licorice"
-          style={{
-            fontSize: 115,
-            letterSpacing: "0.01em",
-            fill: "#d68c45",
-          }}
-        >
-          {normalize(title, 15).map((line, index) => (
-            <tspan
-              key={index}
-              x={416}
-              textAnchor="middle"
-              dy={index !== 0 || title.length === 1 ? "0.86em" : undefined}
-            >
-              {line === null ? <>&nbsp;</> : line}
-            </tspan>
-          ))}
-        </text>
+        {isText(title) ? <Title title={title} /> : title}
 
         <text
           x={0}
@@ -127,6 +105,44 @@ export function Card({
         </text>
       </svg>
     </Paper>
+  );
+}
+
+function isText(text: Text | ReactNode): text is Text {
+  return typeof text === "string" || Array.isArray(text);
+}
+
+interface TitleProps extends ComponentPropsWithoutRef<"text"> {
+  title: Text;
+  as?: React.ElementType;
+}
+
+export function Title({ title, as, style, ...props }: TitleProps) {
+  const Component = as ?? "text";
+  return (
+    <Component
+      x={0}
+      y={226}
+      className="font-licorice"
+      style={{
+        fontSize: 115,
+        letterSpacing: "0.01em",
+        fill: "#d68c45",
+        ...style,
+      }}
+      {...props}
+    >
+      {normalize(title, 15).map((line, index) => (
+        <tspan
+          key={index}
+          x={416}
+          textAnchor="middle"
+          dy={index !== 0 || title.length === 1 ? "0.86em" : undefined}
+        >
+          {line === null ? <>&nbsp;</> : line}
+        </tspan>
+      ))}
+    </Component>
   );
 }
 

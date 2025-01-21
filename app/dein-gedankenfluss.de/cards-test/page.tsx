@@ -37,12 +37,6 @@ export default function Home() {
                 <br className="md:hidden" /> den Dialog
                 <br className="md:hidden" /> mit dir.
               </h1>
-              <ScrollAnchor
-                href="#karten"
-                className={cx(buttonInkStyles, focusStyles, "text-sm mt-8")}
-              >
-                ...mehr erfahren
-              </ScrollAnchor>
             </div>
           </div>
         </Header>

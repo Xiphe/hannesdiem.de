@@ -34,9 +34,18 @@ export function ScrollAnchor({
 
         if (targetElement) {
           ev.preventDefault();
-          targetElement.scrollIntoView({ behavior: "smooth" });
+          scrollTo(targetElement);
         }
       }}
     />
   );
+}
+
+export function scrollTo(target: string | HTMLElement) {
+  const targetElement =
+    typeof target === "string" ? document.getElementById(target) : target;
+
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: "smooth" });
+  }
 }
