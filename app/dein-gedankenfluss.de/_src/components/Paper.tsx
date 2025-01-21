@@ -13,8 +13,7 @@ export interface PaperProps extends ComponentPropsWithRef<"div"> {
   lightStrength?: Strength | number;
 }
 
-const sheetStyles =
-  "mx-auto px-4 sm:px-8 md:px-12 pt-12 pb-8 md:pt-16 md:pb-12 mb-8";
+const sheetStyles = "mx-auto px-4 sm:px-12 pt-12 pb-8 md:pt-16 md:pb-12 mb-8";
 
 export function Paper({
   className,

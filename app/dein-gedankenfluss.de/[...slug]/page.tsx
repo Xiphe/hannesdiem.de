@@ -62,7 +62,7 @@ export default async function ContentPage(
                   )}
                 >
                   {i === 0 ? (
-                    <h1 className="text-6xl md:text-7xl font-licorice mb-16 text-center">
+                    <h1 className="text-6xl md:text-7xl font-licorice font-normal mb-16 text-center">
                       {page.title}
                     </h1>
                   ) : null}
