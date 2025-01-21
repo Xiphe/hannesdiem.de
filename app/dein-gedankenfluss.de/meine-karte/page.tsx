@@ -6,14 +6,17 @@ import { CardCreator } from "./CardCreator";
 import { getFirst } from "./getFirst";
 
 export async function generateMetadata({ searchParams }: PageProps) {
-  const { title, body } = await searchParams;
+  const p = await searchParams;
 
+  const title = getFirst(p.title) || "Deine eigene Karte";
+  const description =
+    getFirst(p.body) || "Erstelle und teile deine eigene Gedankenfluss Karte";
   return {
-    title: getFirst(title),
-    description: getFirst(body),
+    title,
+    description,
     openGraph: {
-      title: getFirst(title),
-      description: getFirst(body),
+      title,
+      description,
     },
   } satisfies Metadata;
 }
