@@ -1,5 +1,3 @@
-import { cx } from "@utils/cx";
-
 export default function Home() {
   return (
     <>
