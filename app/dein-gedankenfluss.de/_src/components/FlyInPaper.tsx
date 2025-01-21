@@ -35,11 +35,15 @@ export function FlyInPaper({
     target: ref,
     offset: ["0 end", "-0.1 start"],
   });
-  const entry = useTransform(scrollYProgress, [0, 1], [0, 1], {
-    ease: easeOut,
-  });
-
   const smallScreen = !useIsScreenSize("md");
+  const entry = useTransform(
+    scrollYProgress,
+    [0, smallScreen ? 0.5 : 0.75],
+    [0, 1],
+    {
+      ease: easeOut,
+    },
+  );
 
   return (
     <Paper
