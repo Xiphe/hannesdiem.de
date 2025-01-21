@@ -43,7 +43,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html
       lang={"de"}
-      className={`${licorice.variable} ${montserratAlternates.variable} bg-paper-50 text-ink dark:bg-water-900 dark:text-graphite-50`}
+      className={`${licorice.variable} ${montserratAlternates.variable} bg-water-900 text-graphite-50`}
     >
       <LightDirectionProvider>
         <body className="font-montserrat">

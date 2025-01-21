@@ -5,9 +5,9 @@ import {
   useRelativeLightDirection,
 } from "@utils/light-tailwind-plugin/ElementDirection";
 import { cx } from "@gf/cx";
-import { ComponentPropsWithoutRef } from "react";
+import { ComponentPropsWithoutRef, ComponentPropsWithRef } from "react";
 
-export interface PaperProps extends ComponentPropsWithoutRef<"div"> {
+export interface PaperProps extends ComponentPropsWithRef<"div"> {
   as?: React.ElementType;
   lightStrength?: Strength | number;
 }

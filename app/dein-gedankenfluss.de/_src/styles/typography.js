@@ -15,7 +15,7 @@ module.exports = (theme) => ({
       h3: {
         fontWeight: "normal",
         fontSize: theme("fontSize.5xl"),
-        marginBottom: "0",
+        marginBottom: "0.5rem",
       },
       h4: {
         fontWeight: "normal",
@@ -45,7 +45,7 @@ module.exports = (theme) => ({
         fontWeight: "normal",
         fontSize: theme("fontSize.4xl"),
         marginTop: theme("margin.8"),
-        marginBottom: "0",
+        marginBottom: "0.5rem",
       },
       h4: {
         fontFamily: theme("fontFamily.licorice.0"),
@@ -54,10 +54,6 @@ module.exports = (theme) => ({
         marginTop: theme("margin.4"),
         marginBottom: "0",
       },
-    },
-  },
-  paper: {
-    css: {
       "--tw-prose-body": theme("colors.ink[900]"),
       "--tw-prose-headings": theme("colors.caramel[500]"),
       "--tw-prose-lead": theme("colors.ink[900]"),
@@ -92,4 +88,6 @@ module.exports = (theme) => ({
       "--tw-prose-invert-td-borders": theme("colors.paper[300]"),
     },
   },
+  // paper: {
+  // },
 });

@@ -31,7 +31,7 @@ export const buttonCaramelStyles = cx(
 
 export const buttonSecondaryStyles = cx(
   buttonBaseStyles,
-  "bg-ink dark:bg-paper text-paper dark:text-ink",
+  "bg-ink dark:bg-paper text-graphite-50 dark:text-ink",
   "hover:bg-ink-900 dark:hover:bg-paper-200",
 );
 
@@ -53,12 +53,22 @@ export const buttonOutlineStyles = cx(
   "hover:bg-white/80 dark:hover:bg-black/20",
 );
 
-export const inputStyles = cx(
+export const inputBaseStyles = cx(
   "border-2 bg-transparent rounded-md text-lg py-1.5 px-4",
-  "border-ink-950 dark:border-paper",
-  "focus:outline-none focus:ring-2 focus:ring-ink-950 dark:focus:ring-paper",
+  "focus:outline-none focus:ring-2",
+);
+
+export const inputStyles = cx(
+  inputBaseStyles,
+  "border-ink-950 dark:border-graphite-50",
+  "focus:ring-ink-950 dark:focus:ring-graphite-50",
+);
+
+export const inputLightStyles = cx(
+  inputStyles,
+  "border-graphite-50 focus:ring-graphite-50",
 );
 
 export const footerLinkStyles = cx(
-  "hover:text-caramel dark:hover:text-white inline-flex gap-1 items-center rounded-sm",
+  "hover:text-white inline-flex gap-1 items-center rounded-sm",
 );

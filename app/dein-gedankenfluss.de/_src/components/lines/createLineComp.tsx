@@ -16,6 +16,7 @@ interface CreateLineCompOptions {
 export interface LineProps extends GenerateAnimateAttributesConfig {
   className?: string;
   spaced?: boolean;
+  strokeClassName?: string;
   extraViewBoxWidth?: number;
   extraViewBoxHeight?: number;
 }
@@ -39,6 +40,7 @@ export function createLineComp({
     spaced = false,
     extraViewBoxHeight = 0,
     extraViewBoxWidth = 0,
+    strokeClassName,
   }: LineProps) => {
     const animateAttributes = generateAnimateAttributes(length, {
       duration,
@@ -60,14 +62,6 @@ export function createLineComp({
             : {}
         }
       >
-        {/* <OnViewEntry
-          threshold={0.5}
-          className={"w-full overflow-x-hidden flex justify-center"}
-          style={{
-            minWidth: `${viewBoxWidth / 2}px`,
-            aspectRatio: `${viewBoxWidth + extraViewBoxWidth} / ${viewBoxHeight + extraViewBoxHeight}`,
-          }}
-        > */}
         <OnViewEntry
           threshold={0.5}
           className="w-full overflow-x-clip flex justify-center"
@@ -105,7 +99,10 @@ export function createLineComp({
                 fill: "none",
                 strokeWidth: 11,
               }}
-              className="stroke-caramel dark:stroke-paper"
+              className={cx(
+                "stroke-caramel dark:stroke-paper",
+                strokeClassName,
+              )}
               mask={`url(#${id}-stroke-mask)`}
               strokeLinecap="round"
               strokeDasharray={length}
