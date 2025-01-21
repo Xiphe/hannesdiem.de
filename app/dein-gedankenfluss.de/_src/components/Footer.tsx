@@ -53,6 +53,16 @@ export async function Footer({ children }: PropsWithChildren) {
                 Pinterest
               </Link>
             </li>
+            <li>
+              <Link
+                href="mailto:support@dein-gedankenfluss.de"
+                className={cx(footerLinkStyles, focusStyles)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Kontakt
+              </Link>
+            </li>
           </ul>
         </nav>
 
