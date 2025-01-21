@@ -88,7 +88,7 @@ export function FlyInPaperImage({
       )}
       className={cx(
         "mb-8 -rotate-1 w-3/4 mx-auto shadow-md",
-        "md:w-1/2 md:mb-0 ",
+        "md:w-1/2 md:mb-4 ",
         position === "left" &&
           "md:mr-2 md:float-left md:-translate-x-16 md:scale-110",
         position === "right" &&
