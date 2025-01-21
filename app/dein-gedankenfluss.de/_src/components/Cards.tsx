@@ -86,12 +86,12 @@ export function Cards({ category, title, body, optional }: CardsProps) {
             rotate: useTransform(scrollYProgress, [0, 0.03, 0.3], [0, 0, -10]),
             x: useTransform(
               scrollYProgress,
-              [0, 0.03, 0.3],
+              [0, 0.03, 0.5],
               ["0%", "0%", "-100vw"],
             ),
             y: useTransform(
               scrollYProgress,
-              [0, 0.03, 0.3],
+              [0, 0.03, 0.5],
               ["0%", "0%", "20%"],
             ),
           } satisfies MotionStyle as any

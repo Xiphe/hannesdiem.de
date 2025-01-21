@@ -64,6 +64,44 @@ export const Pages: CollectionConfig = {
           slug: "richtext",
           fields: [
             {
+              type: "row",
+              fields: [
+                {
+                  name: "decorative",
+                  type: "checkbox",
+                  label: "Decorative",
+                  defaultValue: true,
+                },
+              ],
+            },
+            {
+              label: false,
+              name: "content",
+              type: "richText",
+            },
+          ],
+        },
+        {
+          slug: "paper",
+          fields: [
+            {
+              type: "row",
+              fields: [
+                {
+                  name: "fly-in",
+                  type: "select",
+                  options: ["none", "left", "right"],
+                  defaultValue: "none",
+                },
+                {
+                  name: "decorative",
+                  type: "checkbox",
+                  label: "Decorative",
+                  defaultValue: true,
+                },
+              ],
+            },
+            {
               label: false,
               name: "content",
               type: "richText",

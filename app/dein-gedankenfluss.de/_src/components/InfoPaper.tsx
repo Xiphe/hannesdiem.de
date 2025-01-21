@@ -47,7 +47,7 @@ export function InfoPaper({ children, className }: InfoPaperProps) {
         <div
           aria-hidden
           className={cx(
-            "absolute inset-0 flex items-center justify-center transition-opacity duration-300",
+            "text-ink-950 absolute inset-0 flex items-center justify-center transition-opacity duration-300",
             isExpanded ? "opacity-0" : "opacity-100",
           )}
         >
@@ -56,7 +56,7 @@ export function InfoPaper({ children, className }: InfoPaperProps) {
       </button>
       <div
         className={cx(
-          "shrink-0 prose lg:prose-xl prose-paper opacity-100 transition-all duration-300",
+          "shrink-0 prose prose-licorice lg:prose-xl opacity-100 transition-all duration-300",
           !isExpanded && "md:scale-0  md:opacity-0",
         )}
       >

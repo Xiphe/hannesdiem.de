@@ -81,7 +81,8 @@ export default function Home() {
           <div
             className={cx(
               "col-span-12 md:col-span-6 lg:col-span-7 xl:col-span-8",
-              "flex flex-col justify-center items-center md:items-start py-8 prose lg:prose-xl prose-invert",
+              "flex flex-col justify-center items-center md:items-start py-8 prose",
+              "lg:prose-xl prose-licorice prose-invert",
               "text-center md:text-left px-8 md:px-0 md:pl-4",
             )}
           >
@@ -188,20 +189,18 @@ export default function Home() {
       </h2> */}
 
       <div className="w-full overflow-x-clip">
-        <FlyInPaper direction="right">
+        <FlyInPaper direction="right" sheet>
           <FlyInPaperImage
             src={journalWavesImg}
             alt="Handgefertigtes Journal"
             position="right"
           />
 
-          <div className="prose md:prose-xl px-12">
+          <div className="prose prose-licorice md:prose-xl">
             <h3>Handgefertigt mit Liebe zum Detail</h3>
             <p>
               Jedes Journal wird mit größter Sorgfalt von Hand gefertigt und ist
               ein einzigartiges Stück. Wir legen besonderen Wert darauf
-              <br />
-              <br />
             </p>
             <p>
               Jedes Journal wird mit größter Sorgfalt von Hand gefertigt und ist
@@ -223,20 +222,18 @@ export default function Home() {
             </p>
           </div>
         </FlyInPaper>
-        <FlyInPaper>
+        <FlyInPaper sheet>
           <FlyInPaperImage
             src={journalWavesImg}
             alt="Handgefertigtes Journal"
             position="left"
           />
 
-          <div className="prose md:prose-xl px-12">
+          <div className="prose prose-licorice md:prose-xl">
             <h3>Handgefertigt mit Liebe zum Detail</h3>
             <p>
               Jedes Journal wird mit größter Sorgfalt von Hand gefertigt und ist
               ein einzigartiges Stück. Wir legen besonderen Wert darauf
-              <br />
-              <br />
             </p>
             <p>
               Jedes Journal wird mit größter Sorgfalt von Hand gefertigt und ist
@@ -253,14 +250,14 @@ export default function Home() {
             </p>
           </div>
         </FlyInPaper>
-        <FlyInPaper direction="right">
+        <FlyInPaper sheet direction="right">
           <FlyInPaperImage
             src={journalWavesImg}
             alt="Handgefertigtes Journal"
             position="left"
           />
 
-          <div className="prose md:prose-xl px-12">
+          <div className="prose prose-licorice md:prose-xl">
             <h3>Handgefertigt mit Liebe zum Detail</h3>
             <p>
               Jedes Journal wird mit größter Sorgfalt von Hand gefertigt und ist

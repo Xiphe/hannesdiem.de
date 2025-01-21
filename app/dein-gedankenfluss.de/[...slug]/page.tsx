@@ -8,6 +8,8 @@ import { Metadata } from "next";
 import { Header } from "@gf/components/Header";
 import { Footer } from "@gf/components/Footer";
 import { RioJaraLine, SchwingeLine } from "@gf/components/lines";
+import { FlyInPaper } from "@gf/components/FlyInPaper";
+import { Paper } from "@gf/components/Paper";
 
 export async function generateMetadata(
   props: PageProps<{ slug: string[] }>,
@@ -46,30 +48,66 @@ export default async function ContentPage(
   return (
     <>
       {page.header ? <Header /> : null}
-      <div className={cx("pb-24 px-4 md:px-8", !page.header && "pt-24")}>
-        <h1 className="text-6xl md:text-7xl font-licorice mb-16 text-center">
-          {page.title}
-        </h1>
-        {page.content?.map((block) => {
+      <div className={cx("pb-24 md:px-8", !page.header && "pt-24")}>
+        {page.content?.map((block, i) => {
           switch (block.blockType) {
             case "richtext":
               return block.content ? (
-                <RichText
+                <div
                   key={block.id}
                   className={cx(
-                    "prose prose-paper dark:prose-invert",
+                    "prose md:prose-xl px-4 prose-invert",
                     "mx-auto",
+                    block.decorative && "prose-licorice",
                   )}
-                  data={block.content}
-                />
+                >
+                  {i === 0 ? (
+                    <h1 className="text-6xl md:text-7xl font-licorice mb-16 text-center">
+                      {page.title}
+                    </h1>
+                  ) : null}
+                  <RichText
+                    key={block.id}
+                    disableContainer
+                    data={block.content}
+                  />
+                </div>
               ) : null;
+            case "paper": {
+              if (!block.content) {
+                return null;
+              }
+
+              const Comp = block["fly-in"] === "none" ? Paper : FlyInPaper;
+
+              return (
+                <Comp
+                  key={block.id}
+                  sheet="xl"
+                  className={cx(
+                    "prose md:prose-xl",
+                    block.decorative && "prose-licorice",
+                  )}
+                  direction={
+                    (block["fly-in"] !== "none" && block["fly-in"]) || undefined
+                  }
+                >
+                  {i === 0 ? (
+                    <h1 className="text-6xl md:text-7xl text-center font-licorice font-normal text-caramel">
+                      {page.title}
+                    </h1>
+                  ) : null}
+                  <RichText disableContainer data={block.content} />
+                </Comp>
+              );
+            }
           }
         })}
       </div>
       {page.footer ? (
         <>
           <div className="h-16 mt-32">
-            <RioJaraLine />
+            <RioJaraLine strokeClassName="stroke-graphite-50" />
           </div>
           <Footer />
         </>

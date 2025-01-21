@@ -44,10 +44,8 @@ export function FlyInPaper({
   return (
     <Paper
       ref={ref}
-      className={cx(
-        "max-w-screen-md mx-auto pt-12 pb-8 md:pt-16 md:pb-12 mb-8",
-        className,
-      )}
+      sheet
+      className={cx(className)}
       as={motion.div}
       style={
         {
@@ -91,8 +89,10 @@ export function FlyInPaperImage({
       className={cx(
         "mb-8 -rotate-1 w-3/4 mx-auto shadow-md",
         "md:w-1/2 md:mb-0 ",
-        position === "left" && "md:mr-2 md:float-left md:-translate-x-12",
-        position === "right" && "md:ml-2 md:float-right md:translate-x-12",
+        position === "left" &&
+          "md:mr-2 md:float-left md:-translate-x-16 md:scale-110",
+        position === "right" &&
+          "md:ml-2 md:float-right md:translate-x-16 md:scale-110",
         className,
       )}
     />

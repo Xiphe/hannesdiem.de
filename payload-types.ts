@@ -130,26 +130,51 @@ export interface GdfPage {
   header?: boolean | null;
   footer?: boolean | null;
   content?:
-    | {
-        content?: {
-          root: {
-            type: string;
-            children: {
-              type: string;
-              version: number;
+    | (
+        | {
+            decorative?: boolean | null;
+            content?: {
+              root: {
+                type: string;
+                children: {
+                  type: string;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
               [k: string]: unknown;
-            }[];
-            direction: ('ltr' | 'rtl') | null;
-            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-            indent: number;
-            version: number;
-          };
-          [k: string]: unknown;
-        } | null;
-        id?: string | null;
-        blockName?: string | null;
-        blockType: 'richtext';
-      }[]
+            } | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'richtext';
+          }
+        | {
+            'fly-in'?: ('none' | 'left' | 'right') | null;
+            decorative?: boolean | null;
+            content?: {
+              root: {
+                type: string;
+                children: {
+                  type: string;
+                  version: number;
+                  [k: string]: unknown;
+                }[];
+                direction: ('ltr' | 'rtl') | null;
+                format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+                indent: number;
+                version: number;
+              };
+              [k: string]: unknown;
+            } | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'paper';
+          }
+      )[]
     | null;
   updatedAt: string;
   createdAt: string;
@@ -649,6 +674,16 @@ export interface GdfPagesSelect<T extends boolean = true> {
         richtext?:
           | T
           | {
+              decorative?: T;
+              content?: T;
+              id?: T;
+              blockName?: T;
+            };
+        paper?:
+          | T
+          | {
+              'fly-in'?: T;
+              decorative?: T;
               content?: T;
               id?: T;
               blockName?: T;
