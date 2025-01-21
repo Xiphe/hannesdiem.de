@@ -117,13 +117,13 @@ interface TitleProps extends ComponentPropsWithoutRef<"text"> {
   as?: React.ElementType;
 }
 
-export function Title({ title, as, style, ...props }: TitleProps) {
+export function Title({ title, as, style, className, ...props }: TitleProps) {
   const Component = as ?? "text";
   return (
     <Component
       x={0}
       y={226}
-      className="font-licorice"
+      className={cx("font-licorice", className)}
       style={{
         fontSize: 115,
         letterSpacing: "0.01em",

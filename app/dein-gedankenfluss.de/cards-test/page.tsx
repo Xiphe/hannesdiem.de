@@ -28,14 +28,14 @@ import { ScrollAnchor } from "@gf/components/ScrollAnchor";
 export default function Home() {
   return (
     <>
-      <div className="relative min-h-screen">
+      <div className="relative min-h-[max(100vh,40rem)]">
         <Header>
           <div className="h-[50vh] flex items-center justify-center">
             <div className="flex flex-col items-center">
               <h1 className="text-white font-licorice drop-shadow-lg text-7xl md:text-[min(10vw,10rem)] text-center">
                 Tritt in
-                <br className="md:hidden" /> den Dialog
-                <br className="md:hidden" /> mit dir.
+                <br className="sm:hidden" /> den Dialog
+                <br className="sm:hidden" /> mit dir.
               </h1>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
           className={cx(
             "col-span-12 md:col-span-6 lg:col-span-7 xl:col-span-8",
             "flex flex-col justify-center items-center md:items-start py-8 prose lg:prose-xl prose-paper dark:prose-invert",
-            "text-center md:text-left px-8 md:px-0",
+            "text-center md:text-left px-8 md:px-0 md:pl-4",
           )}
         >
           <h2>Xoxoxoxoxo</h2>

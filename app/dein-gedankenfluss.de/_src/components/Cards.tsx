@@ -34,7 +34,7 @@ export function Cards({ category, title, body, optional }: CardsProps) {
 
   return (
     <motion.div
-      className="w-2/3  relative aspect-card"
+      className="w-2/3 md:w-3/4 relative aspect-card"
       ref={ref}
       style={{
         y,
@@ -79,9 +79,9 @@ export function Cards({ category, title, body, optional }: CardsProps) {
               }
             />
             <Title
-              onClick={() => {
+              onClick={(ev) => {
                 if (scrollYProgress.get() < 0.1) {
-                  scrollTo("karten");
+                  scrollTo("karten", ev);
                 }
               }}
               title={["Entdecken...", null]}

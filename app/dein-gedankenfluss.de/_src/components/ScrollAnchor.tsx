@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ComponentPropsWithoutRef } from "react";
+import { ComponentPropsWithoutRef, MouseEvent } from "react";
 
 export function ScrollAnchor({
   href,
@@ -27,25 +27,24 @@ export function ScrollAnchor({
           }
         }
 
-        const targetId = href.split("#").pop();
-        const targetElement = targetId
-          ? document.getElementById(targetId)
-          : null;
-
-        if (targetElement) {
-          ev.preventDefault();
-          scrollTo(targetElement);
-        }
+        scrollTo(href.split("#").pop(), ev);
       }}
     />
   );
 }
 
-export function scrollTo(target: string | HTMLElement) {
+export function scrollTo(target?: string | HTMLElement, ev?: MouseEvent) {
+  if (!target) {
+    return;
+  }
+
   const targetElement =
     typeof target === "string" ? document.getElementById(target) : target;
 
   if (targetElement) {
+    if (ev) {
+      ev.preventDefault();
+    }
     targetElement.scrollIntoView({ behavior: "smooth" });
   }
 }
