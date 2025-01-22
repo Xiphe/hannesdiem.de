@@ -23,17 +23,26 @@ const licoriceFont = readFileSync(
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
+  let scale = Number(searchParams.get("scale") || "1");
+  if (isNaN(scale) || scale < 0.1 || scale > 2) {
+    scale = 1;
+  }
   const title = searchParams.get("title") || "";
   const body = searchParams.get("body") || "";
   const optional = searchParams.get("optional") || "";
   const category = searchParams.get("category") || "";
 
+  const titleLines = normalizeLine(title, 15).slice(0, 2);
+  if (titleLines.length === 1) {
+    titleLines.unshift(null);
+  }
+
   return new ImageResponse(
     (
       <div
         style={{
-          width: "650px",
-          height: "980px",
+          width: `${650 * scale}px`,
+          height: `${980 * scale}px`,
           display: "flex",
           fontFamily: "montserrat",
           alignItems: "center",
@@ -44,10 +53,10 @@ export async function GET(request: Request) {
         <div
           style={{
             position: "absolute",
-            top: "25px",
-            left: "25px",
-            height: "920px",
-            width: "590px",
+            top: `${25 * scale}px`,
+            left: `${25 * scale}px`,
+            height: `${920 * scale}px`,
+            width: `${590 * scale}px`,
             borderRadius: "8.5% / 5.6%",
             backgroundColor: PAPER.DEFAULT,
           }}
@@ -55,21 +64,21 @@ export async function GET(request: Request) {
         <div
           style={{
             position: "absolute",
-            top: "113px",
-            left: "25px",
-            width: "590px",
+            top: `${113 * scale}px`,
+            left: `${25 * scale}px`,
+            width: `${590 * scale}px`,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
             fontFamily: "licorice",
             textAlign: "center",
-            fontSize: "84px",
+            fontSize: `${84 * scale}px`,
             color: CARAMEL.DEFAULT,
           }}
         >
-          {normalizeLine(title, 15).map((test, i) => (
-            <div key={i} style={{ height: "70px" }}>
+          {titleLines.map((test, i) => (
+            <div key={i} style={{ height: `${70 * scale}px` }}>
               {test}
             </div>
           ))}
@@ -77,26 +86,32 @@ export async function GET(request: Request) {
         <div
           style={{
             position: "absolute",
-            top: "310px",
-            left: "25px",
-            width: "590px",
+            top: `${310 * scale}px`,
+            left: `${25 * scale}px`,
+            width: `${590 * scale}px`,
             display: "flex",
-            letterSpacing: "0.5px",
+            letterSpacing: `${0.5 * scale}px`,
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            fontSize: "27px",
+            fontSize: `${27 * scale}px`,
           }}
         >
           {normalizeLine(body).map((test, i) => (
-            <div key={i} style={{ height: "33.55px", color: INK.DEFAULT }}>
+            <div
+              key={i}
+              style={{ height: `${33.55 * scale}px`, color: INK.DEFAULT }}
+            >
               {test}
             </div>
           ))}
-          <div style={{ height: "33.55px" }}></div>
+          <div style={{ height: `${33.55 * scale}px` }}></div>
           {normalizeLine(optional).map((test, i) => (
-            <div key={i} style={{ height: "33.55px", color: WATER.river }}>
+            <div
+              key={i}
+              style={{ height: `${33.55 * scale}px`, color: WATER.river }}
+            >
               {test}
             </div>
           ))}
@@ -107,10 +122,10 @@ export async function GET(request: Request) {
             viewBox="0 0 835 1302"
             style={{
               position: "absolute",
-              top: "23px",
-              left: "25px",
-              height: "920px",
-              width: "590px",
+              top: `${23 * scale}px`,
+              left: `${25 * scale}px`,
+              height: `${920 * scale}px`,
+              width: `${590 * scale}px`,
             }}
           >
             <path d={categoryMap[category].deco} />
@@ -120,14 +135,14 @@ export async function GET(request: Request) {
           <div
             style={{
               position: "absolute",
-              width: "590px",
+              width: `${590 * scale}px`,
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              letterSpacing: "6.55px",
-              top: "874px",
-              left: "27px",
-              fontSize: "27px",
+              letterSpacing: `${6.55 * scale}px`,
+              top: `${874 * scale}px`,
+              left: `${27 * scale}px`,
+              fontSize: `${27 * scale}px`,
               color: WATER.river,
             }}
           >
@@ -151,8 +166,8 @@ export async function GET(request: Request) {
           style: "normal",
         },
       ],
-      width: 650,
-      height: 980,
+      width: 640 * scale,
+      height: 970 * scale,
     },
   );
 }

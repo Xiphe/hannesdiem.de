@@ -148,6 +148,11 @@ interface TitleProps extends ComponentPropsWithoutRef<"text"> {
 
 export function Title({ title, as, style, className, ...props }: TitleProps) {
   const Component = as ?? "text";
+  const lines = normalizeLine(title, 15).slice(0, 2);
+  if (lines.length === 1) {
+    lines.unshift(null);
+  }
+
   return (
     <Component
       x={0}
@@ -161,18 +166,16 @@ export function Title({ title, as, style, className, ...props }: TitleProps) {
       }}
       {...props}
     >
-      {normalizeLine(title, 15)
-        .slice(0, 2)
-        .map((line, index) => (
-          <tspan
-            key={index}
-            x={416}
-            textAnchor="middle"
-            dy={index !== 0 || title.length === 1 ? "0.86em" : undefined}
-          >
-            {line === null ? <>&nbsp;</> : line}
-          </tspan>
-        ))}
+      {lines.map((line, index) => (
+        <tspan
+          key={index}
+          x={416}
+          textAnchor="middle"
+          dy={index !== 0 || title.length === 1 ? "0.86em" : undefined}
+        >
+          {line === null ? <>&nbsp;</> : line}
+        </tspan>
+      ))}
     </Component>
   );
 }
