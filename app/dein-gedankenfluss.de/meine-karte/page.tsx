@@ -22,6 +22,7 @@ export async function generateMetadata({ searchParams }: PageProps) {
           url: `/meine-karte/img?${new URLSearchParams({
             title,
             body: description,
+            scale: "0.8",
             optional: getFirst(p.optional) || "",
             category: getFirst(p.category) || "",
           }).toString()}`,
