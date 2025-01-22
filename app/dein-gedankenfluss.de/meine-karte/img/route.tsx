@@ -1,9 +1,8 @@
 import { ImageResponse } from "next/og";
-import fs from "fs";
-import { dirname, resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 import { normalizeLine } from "@gf/components/Card/normalizeLine";
 import { categoryMap, isCategoryKey } from "@gf/components/Card";
+import { readFileSync } from "node:fs";
 
 const {
   INK,
@@ -11,7 +10,16 @@ const {
   WATER,
   PAPER,
 } = require("../../_src/styles/swatches.cjs");
-const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const montserratFont = readFileSync(
+  join(
+    process.cwd(),
+    "public/dein-gedankenfluss.de/font/MontserratAlternates-Regular.ttf",
+  ),
+);
+const licoriceFont = readFileSync(
+  join(process.cwd(), "public/dein-gedankenfluss.de/font/Licorice-Regular.ttf"),
+);
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -132,15 +140,13 @@ export async function GET(request: Request) {
       fonts: [
         {
           name: "montserrat",
-          data: fs.readFileSync(
-            resolve(__dirname, "./MontserratAlternates-Regular.ttf"),
-          ),
+          data: montserratFont,
           weight: 400,
           style: "normal",
         },
         {
           name: "licorice",
-          data: fs.readFileSync(resolve(__dirname, "./Licorice-Regular.ttf")),
+          data: licoriceFont,
           weight: 400,
           style: "normal",
         },
