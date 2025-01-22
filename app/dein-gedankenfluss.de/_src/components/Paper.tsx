@@ -4,35 +4,20 @@ import {
   Strength,
   useRelativeLightDirection,
 } from "@utils/light-tailwind-plugin/ElementDirection";
-import { cx } from "@gf/cx";
-import { ComponentPropsWithoutRef, ComponentPropsWithRef } from "react";
+import { ServerPaper, ServerPaperProps } from "./ServerPaper";
 
-export interface PaperProps extends ComponentPropsWithRef<"div"> {
-  as?: React.ElementType;
-  sheet?: boolean | "xl";
+export interface PaperProps extends ServerPaperProps {
   lightStrength?: Strength | number;
 }
 
-const sheetStyles = "mx-auto px-4 sm:px-12 pt-12 pb-8 md:pt-16 md:pb-12 mb-8";
-
 export function Paper({
-  className,
   lightStrength,
-  as: Component = "div",
-  sheet,
+  style,
   ...props
-}: PaperProps) {
+}: Omit<PaperProps, "ref">) {
+  const { ref, style: lightStyle } =
+    useRelativeLightDirection<HTMLDivElement>(lightStrength);
   return (
-    <Component
-      className={cx(
-        "bg-paper light shadow rounded-xs ",
-        sheet && sheetStyles,
-        sheet === "xl" && "max-w-screen-lg",
-        sheet === true && "max-w-screen-md",
-        className,
-      )}
-      {...useRelativeLightDirection<HTMLDivElement>(lightStrength)}
-      {...props}
-    />
+    <ServerPaper ref={ref} style={{ ...style, ...lightStyle }} {...props} />
   );
 }

@@ -1,9 +1,18 @@
 import { cx } from "@gf/cx";
-import { ComponentPropsWithoutRef, Fragment, ReactNode } from "react";
-import { Paper } from "./Paper";
+import { ComponentPropsWithoutRef, ReactNode } from "react";
 import { Strength } from "@utils/light-tailwind-plugin/ElementDirection";
+import { Paper } from "../Paper";
+import { normalizeLine } from "./normalizeLine";
 
 export type Text = (string | null)[] | string;
+
+export interface CardSvgProps {
+  title?: Text | ReactNode;
+  body?: Text;
+  optional?: Text;
+  category?: keyof typeof categoryMap;
+}
+
 export interface CardProps
   extends Omit<ComponentPropsWithoutRef<"div">, "title"> {
   as?: React.ElementType;
@@ -24,8 +33,6 @@ export function Card({
   category,
   ...props
 }: CardProps) {
-  const bodyLines = normalize(body).slice(0, 15);
-
   return (
     <Paper
       as={as}
@@ -33,82 +40,100 @@ export function Card({
       className={cx("aspect-card relative rounded-card", className)}
       {...props}
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        xmlSpace="preserve"
+      <CardSvg
+        category={category}
+        title={title}
+        body={body}
+        optional={optional}
+      />
+    </Paper>
+  );
+}
+
+export function CardSvg({
+  category,
+  title = [],
+  body = [],
+  optional = [],
+}: CardSvgProps) {
+  const bodyLines = normalizeLine(body).slice(0, 15);
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlSpace="preserve"
+      style={{
+        fillRule: "evenodd",
+        clipRule: "evenodd",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        strokeMiterlimit: 1.5,
+      }}
+      viewBox="0 0 835 1302"
+    >
+      {category ? (
+        <>
+          <text
+            x={422}
+            y={1238}
+            className="font-montserrat"
+            textAnchor="middle"
+            style={{
+              fontSize: 38,
+              letterSpacing: "0.25em",
+              fill: "#527c8e",
+            }}
+          >
+            {categoryMap[category].title}
+          </text>
+          <path
+            d={categoryMap[category].deco}
+            style={{
+              transform: "translateY(-3px)",
+              fill: "#b8cdd6",
+            }}
+          />
+        </>
+      ) : null}
+
+      {isText(title) ? <Title title={title} /> : title}
+
+      <text
+        x={0}
+        y={440}
+        className="font-montserrat"
         style={{
-          fillRule: "evenodd",
-          clipRule: "evenodd",
-          strokeLinecap: "round",
-          strokeLinejoin: "round",
-          strokeMiterlimit: 1.5,
+          fontSize: 38,
+          letterSpacing: "0.025em",
+          fill: "#152742",
         }}
-        viewBox="0 0 835 1302"
       >
-        {category ? (
-          <>
-            <text
-              x={422}
-              y={1238}
-              className="font-montserrat"
-              textAnchor="middle"
-              style={{
-                fontSize: 38,
-                letterSpacing: "0.25em",
-                fill: "#527c8e",
-              }}
-            >
-              {categoryMap[category].title}
-            </text>
-            <path
-              d={categoryMap[category].deco}
-              style={{
-                transform: "translateY(-3px)",
-                fill: "#b8cdd6",
-              }}
-            />
-          </>
-        ) : null}
+        {bodyLines.map((line, index) => (
+          <tspan
+            key={index}
+            x={416}
+            textAnchor="middle"
+            dy={index !== 0 ? "1.26em" : undefined}
+          >
+            {line === null ? <>&nbsp;</> : line}
+          </tspan>
+        ))}
 
-        {isText(title) ? <Title title={title} /> : title}
-
-        <text
-          x={0}
-          y={440}
-          className="font-montserrat"
-          style={{
-            fontSize: 38,
-            letterSpacing: "0.025em",
-            fill: "#152742",
-          }}
-        >
-          {bodyLines.map((line, index) => (
+        {normalizeLine(optional)
+          .slice(0, 14 - bodyLines.length)
+          .map((line, index) => (
             <tspan
               key={index}
               x={416}
               textAnchor="middle"
-              dy={index !== 0 ? "1.26em" : undefined}
+              style={{ fill: "#527c8e" }}
+              dy={index !== 0 ? "1.26em" : "2.52em"}
             >
               {line === null ? <>&nbsp;</> : line}
             </tspan>
           ))}
-
-          {normalize(optional)
-            .slice(0, 14 - bodyLines.length)
-            .map((line, index) => (
-              <tspan
-                key={index}
-                x={416}
-                textAnchor="middle"
-                style={{ fill: "#527c8e" }}
-                dy={index !== 0 ? "1.26em" : "2.52em"}
-              >
-                {line === null ? <>&nbsp;</> : line}
-              </tspan>
-            ))}
-        </text>
-      </svg>
-    </Paper>
+      </text>
+    </svg>
   );
 }
 
@@ -136,7 +161,7 @@ export function Title({ title, as, style, className, ...props }: TitleProps) {
       }}
       {...props}
     >
-      {normalize(title, 15)
+      {normalizeLine(title, 15)
         .slice(0, 2)
         .map((line, index) => (
           <tspan
@@ -187,29 +212,4 @@ export const categoryMap = {
 
 export function isCategoryKey(key: unknown): key is keyof typeof categoryMap {
   return typeof key === "string" && key in categoryMap;
-}
-
-function normalize(
-  text: string | (string | null)[],
-  maxLineLength: number = 28,
-) {
-  if (typeof text === "string") {
-    return text
-      .split(/\n|\r\n/g)
-      .map((line) => {
-        if (line.trim() === "") return null;
-        const lines: string[] = [""];
-        line.split(" ").forEach((word) => {
-          if (lines.at(-1)!.length + word.length > maxLineLength) {
-            lines.push(word);
-          } else {
-            lines.splice(-1, 1, String(lines.at(-1)! + " " + word).trim());
-          }
-        });
-
-        return lines;
-      })
-      .flat();
-  }
-  return text;
 }

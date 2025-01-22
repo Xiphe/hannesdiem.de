@@ -11,11 +11,22 @@ export async function generateMetadata({ searchParams }: PageProps) {
   const title = getFirst(p.title) || "Deine eigene Karte";
   const description =
     getFirst(p.body) || "Erstelle und teile deine eigene Gedankenfluss Karte";
+
   return {
     title,
     description,
     openGraph: {
       title,
+      images: [
+        {
+          url: `/meine-karte/img?${new URLSearchParams({
+            title,
+            body: description,
+            optional: getFirst(p.optional) || "",
+            category: getFirst(p.category) || "",
+          }).toString()}`,
+        },
+      ],
       description,
     },
   } satisfies Metadata;
