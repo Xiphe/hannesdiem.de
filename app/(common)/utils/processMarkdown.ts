@@ -24,6 +24,10 @@ export async function processMarkdown(
   let title = "";
   let banner: { src: string; alt?: string } | undefined = undefined;
 
+  document = document
+    .replace(/^{{\.([a-z0-9-_\s]*?)$/gm, '\n<div class="$1">\n')
+    .replace(/^}}(\s*)$/gm, "\n</div>\n");
+
   const signedHtml: string[] = [];
   const { value: processedHtmlDocument } = await remark()
     .use(gfm)
